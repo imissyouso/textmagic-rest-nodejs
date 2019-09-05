@@ -2,7 +2,7 @@
 
 JavaScript client for TextMagic API
 
-For more information, please visit [https://www.textmagic.com/docs/api/](https://www.textmagic.com/docs/api/)
+For detailed documentation, please visit [https://www.textmagic.com/docs/api/](https://www.textmagic.com/docs/api/)
 
 ## Installation
 
@@ -33,17 +33,20 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var TextMagicApi = require('textmagic-client');
+const textmagicClient = require('textmagic-client');
 
-var defaultClient = TextMagicApi.ApiClient.instance;
+let client = textmagicClient.ApiClient.instance;
+let auth = client.authentications['BasicAuth'];
 
-var BasicAuth = defaultClient.authentications['BasicAuth'];
-BasicAuth.username = 'YOUR_USERNAME';
-BasicAuth.password = 'YOUR_PASSWORD';
+auth.username = 'YOUR_USERNAME';
+auth.password = 'YOUR_PASSWORD';
 
-var api = new TextMagicApi.TextMagicApi();
+let api = new textmagicClient.TextMagicApi();
 
-api.ping().then(function (data) {
+api.sendMessage({
+    'text': 'I love TextMagic!',
+    'phones': '+12341234123'
+}).then(function (data) {
     console.log(data);
 }).catch(function(err){
     console.error(err);
