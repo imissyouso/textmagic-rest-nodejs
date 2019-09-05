@@ -1,4 +1,4 @@
-# TextmagicClient.NotFoundResponse
+# TextmagicRest.NotFoundResponse
 
 ## Properties
 Name | Type | Description | Notes

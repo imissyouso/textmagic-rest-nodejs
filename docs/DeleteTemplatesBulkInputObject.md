@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteTemplatesBulkInputObject
+# TextmagicRest.DeleteTemplatesBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.MessageIn = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicRest.MessageIn = factory(root.TextmagicRest.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The MessageIn model module.
    * @module model/MessageIn
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

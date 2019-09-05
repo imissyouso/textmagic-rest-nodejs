@@ -1,4 +1,4 @@
-# TextmagicClient.UserCustomField
+# TextmagicRest.UserCustomField
 
 ## Properties
 Name | Type | Description | Notes

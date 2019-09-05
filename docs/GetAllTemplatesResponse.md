@@ -1,4 +1,4 @@
-# TextmagicClient.GetAllTemplatesResponse
+# TextmagicRest.GetAllTemplatesResponse
 
 ## Properties
 Name | Type | Description | Notes

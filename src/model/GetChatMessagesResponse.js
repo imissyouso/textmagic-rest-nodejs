@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Conversation'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetChatMessagesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Conversation);
+    root.TextmagicRest.GetChatMessagesResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Conversation);
   }
 }(this, function(ApiClient, Conversation) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetChatMessagesResponse model module.
    * @module model/GetChatMessagesResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

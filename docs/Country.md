@@ -1,4 +1,4 @@
-# TextmagicClient.Country
+# TextmagicRest.Country
 
 ## Properties
 Name | Type | Description | Notes

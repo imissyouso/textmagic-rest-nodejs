@@ -1,4 +1,4 @@
-# TextmagicClient.MessageTemplate
+# TextmagicRest.MessageTemplate
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.PingResponse
+# TextmagicRest.PingResponse
 
 ## Properties
 Name | Type | Description | Notes

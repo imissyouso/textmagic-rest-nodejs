@@ -1,4 +1,4 @@
-# TextmagicClient.UnsubscribedContact
+# TextmagicRest.UnsubscribedContact
 
 ## Properties
 Name | Type | Description | Notes

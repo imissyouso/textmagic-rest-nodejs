@@ -1,4 +1,4 @@
-# TextmagicClient.InviteSubaccountInputObject
+# TextmagicRest.InviteSubaccountInputObject
 
 ## Properties
 Name | Type | Description | Notes

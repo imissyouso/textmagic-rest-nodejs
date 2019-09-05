@@ -1,4 +1,4 @@
-# TextmagicClient.MessagesIcsParameters
+# TextmagicRest.MessagesIcsParameters
 
 ## Properties
 Name | Type | Description | Notes

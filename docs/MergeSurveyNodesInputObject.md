@@ -1,4 +1,4 @@
-# TextmagicClient.MergeSurveyNodesInputObject
+# TextmagicRest.MergeSurveyNodesInputObject
 
 ## Properties
 Name | Type | Description | Notes

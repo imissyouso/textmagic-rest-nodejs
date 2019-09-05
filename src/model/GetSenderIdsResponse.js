@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./SenderId'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetSenderIdsResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.SenderId);
+    root.TextmagicRest.GetSenderIdsResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.SenderId);
   }
 }(this, function(ApiClient, SenderId) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetSenderIdsResponse model module.
    * @module model/GetSenderIdsResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

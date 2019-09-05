@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateListObject
+# TextmagicRest.UpdateListObject
 
 ## Properties
 Name | Type | Description | Notes

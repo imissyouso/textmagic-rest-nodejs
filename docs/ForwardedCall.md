@@ -1,4 +1,4 @@
-# TextmagicClient.ForwardedCall
+# TextmagicRest.ForwardedCall
 
 ## Properties
 Name | Type | Description | Notes

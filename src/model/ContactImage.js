@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.ContactImage = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicRest.ContactImage = factory(root.TextmagicRest.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The ContactImage model module.
    * @module model/ContactImage
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

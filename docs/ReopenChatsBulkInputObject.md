@@ -1,4 +1,4 @@
-# TextmagicClient.ReopenChatsBulkInputObject
+# TextmagicRest.ReopenChatsBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

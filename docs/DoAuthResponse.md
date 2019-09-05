@@ -1,4 +1,4 @@
-# TextmagicClient.DoAuthResponse
+# TextmagicRest.DoAuthResponse
 
 ## Properties
 Name | Type | Description | Notes

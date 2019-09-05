@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateCallbackSettingsInputObject
+# TextmagicRest.UpdateCallbackSettingsInputObject
 
 ## Properties
 Name | Type | Description | Notes

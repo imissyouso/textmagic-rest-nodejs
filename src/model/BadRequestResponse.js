@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./BadRequestResponseErrors'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.BadRequestResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.BadRequestResponseErrors);
+    root.TextmagicRest.BadRequestResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.BadRequestResponseErrors);
   }
 }(this, function(ApiClient, BadRequestResponseErrors) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The BadRequestResponse model module.
    * @module model/BadRequestResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

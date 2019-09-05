@@ -1,4 +1,4 @@
-# TextmagicClient.BlockContactInputObject
+# TextmagicRest.BlockContactInputObject
 
 ## Properties
 Name | Type | Description | Notes

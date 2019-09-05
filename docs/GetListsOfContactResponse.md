@@ -1,4 +1,4 @@
-# TextmagicClient.GetListsOfContactResponse
+# TextmagicRest.GetListsOfContactResponse
 
 ## Properties
 Name | Type | Description | Notes

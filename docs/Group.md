@@ -1,4 +1,4 @@
-# TextmagicClient.Group
+# TextmagicRest.Group
 
 ## Properties
 Name | Type | Description | Notes

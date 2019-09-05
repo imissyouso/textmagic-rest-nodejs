@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageSession'), require('./MessagesIcsParameters'), require('./MessagesIcsTextParameters'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.MessagesIcs = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessageSession, root.TextmagicClient.MessagesIcsParameters, root.TextmagicClient.MessagesIcsTextParameters);
+    root.TextmagicRest.MessagesIcs = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.MessageSession, root.TextmagicRest.MessagesIcsParameters, root.TextmagicRest.MessagesIcsTextParameters);
   }
 }(this, function(ApiClient, MessageSession, MessagesIcsParameters, MessagesIcsTextParameters) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The MessagesIcs model module.
    * @module model/MessagesIcs
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageSession'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.BulkSession = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessageSession);
+    root.TextmagicRest.BulkSession = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.MessageSession);
   }
 }(this, function(ApiClient, MessageSession) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The BulkSession model module.
    * @module model/BulkSession
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

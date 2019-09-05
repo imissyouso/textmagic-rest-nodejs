@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteContacsFromListObject
+# TextmagicRest.DeleteContacsFromListObject
 
 ## Properties
 Name | Type | Description | Notes

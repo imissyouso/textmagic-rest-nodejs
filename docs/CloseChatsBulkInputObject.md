@@ -1,4 +1,4 @@
-# TextmagicClient.CloseChatsBulkInputObject
+# TextmagicRest.CloseChatsBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

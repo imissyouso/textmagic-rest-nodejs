@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageSession'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetAllMessageSessionsResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessageSession);
+    root.TextmagicRest.GetAllMessageSessionsResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.MessageSession);
   }
 }(this, function(ApiClient, MessageSession) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetAllMessageSessionsResponse model module.
    * @module model/GetAllMessageSessionsResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

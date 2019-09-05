@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessagingStatItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetMessagingStatResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessagingStatItem);
+    root.TextmagicRest.GetMessagingStatResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.MessagingStatItem);
   }
 }(this, function(ApiClient, MessagingStatItem) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetMessagingStatResponse model module.
    * @module model/GetMessagingStatResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

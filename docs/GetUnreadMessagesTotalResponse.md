@@ -1,4 +1,4 @@
-# TextmagicClient.GetUnreadMessagesTotalResponse
+# TextmagicRest.GetUnreadMessagesTotalResponse
 
 ## Properties
 Name | Type | Description | Notes

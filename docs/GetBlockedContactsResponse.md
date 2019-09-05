@@ -1,4 +1,4 @@
-# TextmagicClient.GetBlockedContactsResponse
+# TextmagicRest.GetBlockedContactsResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.UserStatement = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicRest.UserStatement = factory(root.TextmagicRest.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The UserStatement model module.
    * @module model/UserStatement
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

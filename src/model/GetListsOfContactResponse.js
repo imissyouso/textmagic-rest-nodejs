@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Group'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetListsOfContactResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Group);
+    root.TextmagicRest.GetListsOfContactResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Group);
   }
 }(this, function(ApiClient, Group) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetListsOfContactResponse model module.
    * @module model/GetListsOfContactResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

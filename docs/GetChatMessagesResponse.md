@@ -1,4 +1,4 @@
-# TextmagicClient.GetChatMessagesResponse
+# TextmagicRest.GetChatMessagesResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject
+# TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject
 
 ## Properties
 Name | Type | Description | Notes

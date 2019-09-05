@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./UserStatement'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetSpendingStatResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.UserStatement);
+    root.TextmagicRest.GetSpendingStatResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.UserStatement);
   }
 }(this, function(ApiClient, UserStatement) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetSpendingStatResponse model module.
    * @module model/GetSpendingStatResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

@@ -1,4 +1,4 @@
-# TextmagicClient.SearchListsResponse
+# TextmagicRest.SearchListsResponse
 
 ## Properties
 Name | Type | Description | Notes

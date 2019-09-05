@@ -1,4 +1,4 @@
-# TextmagicClient.Currency
+# TextmagicRest.Currency
 
 ## Properties
 Name | Type | Description | Notes

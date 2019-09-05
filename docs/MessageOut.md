@@ -1,4 +1,4 @@
-# TextmagicClient.MessageOut
+# TextmagicRest.MessageOut
 
 ## Properties
 Name | Type | Description | Notes

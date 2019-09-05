@@ -1,4 +1,4 @@
-# TextmagicClient.DoAuthInputObject
+# TextmagicRest.DoAuthInputObject
 
 ## Properties
 Name | Type | Description | Notes

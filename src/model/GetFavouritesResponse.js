@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./FavoriteContact'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetFavouritesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.FavoriteContact);
+    root.TextmagicRest.GetFavouritesResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.FavoriteContact);
   }
 }(this, function(ApiClient, FavoriteContact) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetFavouritesResponse model module.
    * @module model/GetFavouritesResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

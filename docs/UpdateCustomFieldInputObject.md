@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateCustomFieldInputObject
+# TextmagicRest.UpdateCustomFieldInputObject
 
 ## Properties
 Name | Type | Description | Notes

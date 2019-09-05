@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./ContactCustomField'), require('./ContactImage'), require('./ContactNote'), require('./Country'), require('./Group'), require('./User'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.Contact = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.ContactCustomField, root.TextmagicClient.ContactImage, root.TextmagicClient.ContactNote, root.TextmagicClient.Country, root.TextmagicClient.Group, root.TextmagicClient.User);
+    root.TextmagicRest.Contact = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.ContactCustomField, root.TextmagicRest.ContactImage, root.TextmagicRest.ContactNote, root.TextmagicRest.Country, root.TextmagicRest.Group, root.TextmagicRest.User);
   }
 }(this, function(ApiClient, ContactCustomField, ContactImage, ContactNote, Country, Group, User) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The Contact model module.
    * @module model/Contact
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

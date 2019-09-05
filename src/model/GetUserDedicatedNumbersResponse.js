@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./UsersInbound'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetUserDedicatedNumbersResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.UsersInbound);
+    root.TextmagicRest.GetUserDedicatedNumbersResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.UsersInbound);
   }
 }(this, function(ApiClient, UsersInbound) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetUserDedicatedNumbersResponse model module.
    * @module model/GetUserDedicatedNumbersResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

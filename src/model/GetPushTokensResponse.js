@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./PushToken'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetPushTokensResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.PushToken);
+    root.TextmagicRest.GetPushTokensResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.PushToken);
   }
 }(this, function(ApiClient, PushToken) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetPushTokensResponse model module.
    * @module model/GetPushTokensResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

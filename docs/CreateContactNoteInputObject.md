@@ -1,4 +1,4 @@
-# TextmagicClient.CreateContactNoteInputObject
+# TextmagicRest.CreateContactNoteInputObject
 
 ## Properties
 Name | Type | Description | Notes

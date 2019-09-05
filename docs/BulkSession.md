@@ -1,4 +1,4 @@
-# TextmagicClient.BulkSession
+# TextmagicRest.BulkSession
 
 ## Properties
 Name | Type | Description | Notes

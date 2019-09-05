@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateContactNoteInputObject
+# TextmagicRest.UpdateContactNoteInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteContactsByIdsInputObject
+# TextmagicRest.DeleteContactsByIdsInputObject
 
 ## Properties
 Name | Type | Description | Notes

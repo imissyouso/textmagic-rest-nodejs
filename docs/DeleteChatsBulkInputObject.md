@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteChatsBulkInputObject
+# TextmagicRest.DeleteChatsBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

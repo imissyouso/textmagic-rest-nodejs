@@ -1,4 +1,4 @@
-# TextmagicClient.ResourceLinkResponse
+# TextmagicRest.ResourceLinkResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.GetMessagingCountersResponse
+# TextmagicRest.GetMessagingCountersResponse
 
 ## Properties
 Name | Type | Description | Notes

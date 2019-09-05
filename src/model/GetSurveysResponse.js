@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Survey'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetSurveysResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Survey);
+    root.TextmagicRest.GetSurveysResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Survey);
   }
 }(this, function(ApiClient, Survey) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetSurveysResponse model module.
    * @module model/GetSurveysResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

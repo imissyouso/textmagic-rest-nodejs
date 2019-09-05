@@ -1,4 +1,4 @@
-# TextmagicClient.GroupImage
+# TextmagicRest.GroupImage
 
 ## Properties
 Name | Type | Description | Notes

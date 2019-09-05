@@ -1,4 +1,4 @@
-# TextmagicClient.SearchInboundMessagesResponse
+# TextmagicRest.SearchInboundMessagesResponse
 
 ## Properties
 Name | Type | Description | Notes

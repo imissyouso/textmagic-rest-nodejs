@@ -1,4 +1,4 @@
-# TextmagicClient.GetMessageSessionStatResponse
+# TextmagicRest.GetMessageSessionStatResponse
 
 ## Properties
 Name | Type | Description | Notes

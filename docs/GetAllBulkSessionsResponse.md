@@ -1,4 +1,4 @@
-# TextmagicClient.GetAllBulkSessionsResponse
+# TextmagicRest.GetAllBulkSessionsResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.GetVersionsResponse
+# TextmagicRest.GetVersionsResponse
 
 ## Properties
 Name | Type | Description | Notes

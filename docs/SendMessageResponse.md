@@ -1,4 +1,4 @@
-# TextmagicClient.SendMessageResponse
+# TextmagicRest.SendMessageResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateSenderSettingInputObject
+# TextmagicRest.UpdateSenderSettingInputObject
 
 ## Properties
 Name | Type | Description | Notes

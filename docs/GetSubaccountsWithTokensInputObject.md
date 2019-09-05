@@ -1,4 +1,4 @@
-# TextmagicClient.GetSubaccountsWithTokensInputObject
+# TextmagicRest.GetSubaccountsWithTokensInputObject
 
 ## Properties
 Name | Type | Description | Notes

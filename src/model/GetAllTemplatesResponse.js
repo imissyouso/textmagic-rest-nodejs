@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageTemplate'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetAllTemplatesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessageTemplate);
+    root.TextmagicRest.GetAllTemplatesResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.MessageTemplate);
   }
 }(this, function(ApiClient, MessageTemplate) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetAllTemplatesResponse model module.
    * @module model/GetAllTemplatesResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

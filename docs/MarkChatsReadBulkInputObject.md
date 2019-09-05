@@ -1,4 +1,4 @@
-# TextmagicClient.MarkChatsReadBulkInputObject
+# TextmagicRest.MarkChatsReadBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Chat'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.SearchChatsByReceipentResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Chat);
+    root.TextmagicRest.SearchChatsByReceipentResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Chat);
   }
 }(this, function(ApiClient, Chat) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The SearchChatsByReceipentResponse model module.
    * @module model/SearchChatsByReceipentResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

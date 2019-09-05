@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./ContactNote'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetContactNotesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.ContactNote);
+    root.TextmagicRest.GetContactNotesResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.ContactNote);
   }
 }(this, function(ApiClient, ContactNote) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetContactNotesResponse model module.
    * @module model/GetContactNotesResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

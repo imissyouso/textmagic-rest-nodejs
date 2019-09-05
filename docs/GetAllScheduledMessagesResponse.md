@@ -1,4 +1,4 @@
-# TextmagicClient.GetAllScheduledMessagesResponse
+# TextmagicRest.GetAllScheduledMessagesResponse
 
 ## Properties
 Name | Type | Description | Notes

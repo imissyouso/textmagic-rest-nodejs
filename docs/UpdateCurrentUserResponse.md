@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateCurrentUserResponse
+# TextmagicRest.UpdateCurrentUserResponse
 
 ## Properties
 Name | Type | Description | Notes

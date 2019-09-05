@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteMessageSessionsBulkInputObject
+# TextmagicRest.DeleteMessageSessionsBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

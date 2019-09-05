@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./DoAuthResponseMinVersions'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.DoAuthResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.DoAuthResponseMinVersions);
+    root.TextmagicRest.DoAuthResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.DoAuthResponseMinVersions);
   }
 }(this, function(ApiClient, DoAuthResponseMinVersions) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The DoAuthResponse model module.
    * @module model/DoAuthResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

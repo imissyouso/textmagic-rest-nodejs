@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessageOut'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.SearchOutboundMessagesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessageOut);
+    root.TextmagicRest.SearchOutboundMessagesResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.MessageOut);
   }
 }(this, function(ApiClient, MessageOut) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The SearchOutboundMessagesResponse model module.
    * @module model/SearchOutboundMessagesResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

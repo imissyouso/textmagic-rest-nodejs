@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Contact'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetBlockedContactsResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Contact);
+    root.TextmagicRest.GetBlockedContactsResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Contact);
   }
 }(this, function(ApiClient, Contact) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetBlockedContactsResponse model module.
    * @module model/GetBlockedContactsResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

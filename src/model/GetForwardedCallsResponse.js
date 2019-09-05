@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./ForwardedCall'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetForwardedCallsResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.ForwardedCall);
+    root.TextmagicRest.GetForwardedCallsResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.ForwardedCall);
   }
 }(this, function(ApiClient, ForwardedCall) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetForwardedCallsResponse model module.
    * @module model/GetForwardedCallsResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

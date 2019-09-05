@@ -1,4 +1,4 @@
-# TextmagicClient.GetUnsubscribersResponse
+# TextmagicRest.GetUnsubscribersResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.UserImage
+# TextmagicRest.UserImage
 
 ## Properties
 Name | Type | Description | Notes

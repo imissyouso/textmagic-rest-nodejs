@@ -1,4 +1,4 @@
-# TextmagicClient.GetInvoicesResponse
+# TextmagicRest.GetInvoicesResponse
 
 ## Properties
 Name | Type | Description | Notes

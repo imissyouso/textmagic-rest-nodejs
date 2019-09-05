@@ -23,17 +23,17 @@
     module.exports = factory(require('superagent'), require('querystring'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.ApiClient = factory(root.superagent, root.querystring);
+    root.TextmagicRest.ApiClient = factory(root.superagent, root.querystring);
   }
 }(this, function(superagent, querystring) {
   'use strict';
 
   /**
    * @module ApiClient
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

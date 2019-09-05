@@ -1,4 +1,4 @@
-# TextmagicClient.GetBalanceNotificationSettingsResponse
+# TextmagicRest.GetBalanceNotificationSettingsResponse
 
 ## Properties
 Name | Type | Description | Notes
