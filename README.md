@@ -28,20 +28,20 @@ module: {
 }
 ```
 
-## Getting Started
+## Usage Example
 
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
 const textmagicClient = require('textmagic-client');
 
-let client = textmagicClient.ApiClient.instance;
-let auth = client.authentications['BasicAuth'];
+const client = textmagicClient.ApiClient.instance;
+const auth = client.authentications['BasicAuth'];
 
 auth.username = 'YOUR_USERNAME';
 auth.password = 'YOUR_PASSWORD';
 
-let api = new textmagicClient.TextMagicApi();
+const api = new textmagicClient.TextMagicApi();
 
 api.sendMessage({
     'text': 'I love TextMagic!',
