@@ -44,7 +44,7 @@ fi
 
 fi
 
-git pull origin master -X theirs --no-edit
+git pull origin master -X ours --no-edit
 
 # Pushes (Forces) the changes in the local repository up to the remote repository
 echo "Git pushing to https://github.com/${git_user_id}/${git_repo_id}.git"
