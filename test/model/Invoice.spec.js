@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Invoice();
+    instance = new TextmagicRest.Invoice();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,37 +53,37 @@
   describe('Invoice', function() {
     it('should create an instance of Invoice', function() {
       // uncomment below and update the code to test Invoice
-      //var instance = new TextmagicClient.Invoice();
-      //expect(instance).to.be.a(TextmagicClient.Invoice);
+      //var instance = new TextmagicRest.Invoice();
+      //expect(instance).to.be.a(TextmagicRest.Invoice);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Invoice();
+      //var instance = new TextmagicRest.Invoice();
       //expect(instance).to.be();
     });
 
     it('should have the property bundle (base name: "bundle")', function() {
       // uncomment below and update the code to test the property bundle
-      //var instance = new TextmagicClient.Invoice();
+      //var instance = new TextmagicRest.Invoice();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new TextmagicClient.Invoice();
+      //var instance = new TextmagicRest.Invoice();
       //expect(instance).to.be();
     });
 
     it('should have the property vat (base name: "vat")', function() {
       // uncomment below and update the code to test the property vat
-      //var instance = new TextmagicClient.Invoice();
+      //var instance = new TextmagicRest.Invoice();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentMethod (base name: "paymentMethod")', function() {
       // uncomment below and update the code to test the property paymentMethod
-      //var instance = new TextmagicClient.Invoice();
+      //var instance = new TextmagicRest.Invoice();
       //expect(instance).to.be();
     });
 

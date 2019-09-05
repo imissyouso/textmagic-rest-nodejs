@@ -1,4 +1,4 @@
-# TextmagicClient.GetAvailableSenderSettingOptionsResponse
+# TextmagicRest.GetAvailableSenderSettingOptionsResponse
 
 ## Properties
 Name | Type | Description | Notes

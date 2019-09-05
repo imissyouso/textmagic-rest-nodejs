@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DeleteOutboundMessagesBulkInputObject();
+    instance = new TextmagicRest.DeleteOutboundMessagesBulkInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('DeleteOutboundMessagesBulkInputObject', function() {
     it('should create an instance of DeleteOutboundMessagesBulkInputObject', function() {
       // uncomment below and update the code to test DeleteOutboundMessagesBulkInputObject
-      //var instance = new TextmagicClient.DeleteOutboundMessagesBulkInputObject();
-      //expect(instance).to.be.a(TextmagicClient.DeleteOutboundMessagesBulkInputObject);
+      //var instance = new TextmagicRest.DeleteOutboundMessagesBulkInputObject();
+      //expect(instance).to.be.a(TextmagicRest.DeleteOutboundMessagesBulkInputObject);
     });
 
     it('should have the property ids (base name: "ids")', function() {
       // uncomment below and update the code to test the property ids
-      //var instance = new TextmagicClient.DeleteOutboundMessagesBulkInputObject();
+      //var instance = new TextmagicRest.DeleteOutboundMessagesBulkInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property all (base name: "all")', function() {
       // uncomment below and update the code to test the property all
-      //var instance = new TextmagicClient.DeleteOutboundMessagesBulkInputObject();
+      //var instance = new TextmagicRest.DeleteOutboundMessagesBulkInputObject();
       //expect(instance).to.be();
     });
 

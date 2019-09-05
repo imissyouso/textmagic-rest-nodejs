@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+    instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,49 +53,49 @@
   describe('GetInboundMessagesNotificationSettingsResponse', function() {
     it('should create an instance of GetInboundMessagesNotificationSettingsResponse', function() {
       // uncomment below and update the code to test GetInboundMessagesNotificationSettingsResponse
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetInboundMessagesNotificationSettingsResponse);
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetInboundMessagesNotificationSettingsResponse);
     });
 
     it('should have the property inboundMessageNotification (base name: "inboundMessageNotification")', function() {
       // uncomment below and update the code to test the property inboundMessageNotification
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property forwardedCallNotification (base name: "forwardedCallNotification")', function() {
       // uncomment below and update the code to test the property forwardedCallNotification
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property includeSmsHistory (base name: "includeSmsHistory")', function() {
       // uncomment below and update the code to test the property includeSmsHistory
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property sendInHtmlFormat (base name: "sendInHtmlFormat")', function() {
       // uncomment below and update the code to test the property sendInHtmlFormat
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail1 (base name: "alertEmail1")', function() {
       // uncomment below and update the code to test the property alertEmail1
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail2 (base name: "alertEmail2")', function() {
       // uncomment below and update the code to test the property alertEmail2
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail3 (base name: "alertEmail3")', function() {
       // uncomment below and update the code to test the property alertEmail3
-      //var instance = new TextmagicClient.GetInboundMessagesNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetInboundMessagesNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 

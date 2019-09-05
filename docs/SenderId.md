@@ -1,4 +1,4 @@
-# TextmagicClient.SenderId
+# TextmagicRest.SenderId
 
 ## Properties
 Name | Type | Description | Notes

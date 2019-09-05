@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetMessagingStatResponse();
+    instance = new TextmagicRest.GetMessagingStatResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,8 +53,8 @@
   describe('GetMessagingStatResponse', function() {
     it('should create an instance of GetMessagingStatResponse', function() {
       // uncomment below and update the code to test GetMessagingStatResponse
-      //var instance = new TextmagicClient.GetMessagingStatResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetMessagingStatResponse);
+      //var instance = new TextmagicRest.GetMessagingStatResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetMessagingStatResponse);
     });
 
   });

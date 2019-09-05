@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MessagingStatItem();
+    instance = new TextmagicRest.MessagingStatItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,73 +53,73 @@
   describe('MessagingStatItem', function() {
     it('should create an instance of MessagingStatItem', function() {
       // uncomment below and update the code to test MessagingStatItem
-      //var instance = new TextmagicClient.MessagingStatItem();
-      //expect(instance).to.be.a(TextmagicClient.MessagingStatItem);
+      //var instance = new TextmagicRest.MessagingStatItem();
+      //expect(instance).to.be.a(TextmagicRest.MessagingStatItem);
     });
 
     it('should have the property replyRate (base name: "replyRate")', function() {
       // uncomment below and update the code to test the property replyRate
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property _date (base name: "date")', function() {
       // uncomment below and update the code to test the property _date
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveryRate (base name: "deliveryRate")', function() {
       // uncomment below and update the code to test the property deliveryRate
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property costs (base name: "costs")', function() {
       // uncomment below and update the code to test the property costs
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property messagesReceived (base name: "messagesReceived")', function() {
       // uncomment below and update the code to test the property messagesReceived
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property messagesSentDelivered (base name: "messagesSentDelivered")', function() {
       // uncomment below and update the code to test the property messagesSentDelivered
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property messagesSentAccepted (base name: "messagesSentAccepted")', function() {
       // uncomment below and update the code to test the property messagesSentAccepted
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property messagesSentBuffered (base name: "messagesSentBuffered")', function() {
       // uncomment below and update the code to test the property messagesSentBuffered
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property messagesSentFailed (base name: "messagesSentFailed")', function() {
       // uncomment below and update the code to test the property messagesSentFailed
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property messagesSentRejected (base name: "messagesSentRejected")', function() {
       // uncomment below and update the code to test the property messagesSentRejected
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 
     it('should have the property messagesSentParts (base name: "messagesSentParts")', function() {
       // uncomment below and update the code to test the property messagesSentParts
-      //var instance = new TextmagicClient.MessagingStatItem();
+      //var instance = new TextmagicRest.MessagingStatItem();
       //expect(instance).to.be();
     });
 

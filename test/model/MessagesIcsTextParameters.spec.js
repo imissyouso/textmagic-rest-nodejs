@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MessagesIcsTextParameters();
+    instance = new TextmagicRest.MessagesIcsTextParameters();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,43 +53,43 @@
   describe('MessagesIcsTextParameters', function() {
     it('should create an instance of MessagesIcsTextParameters', function() {
       // uncomment below and update the code to test MessagesIcsTextParameters
-      //var instance = new TextmagicClient.MessagesIcsTextParameters();
-      //expect(instance).to.be.a(TextmagicClient.MessagesIcsTextParameters);
+      //var instance = new TextmagicRest.MessagesIcsTextParameters();
+      //expect(instance).to.be.a(TextmagicRest.MessagesIcsTextParameters);
     });
 
     it('should have the property cost (base name: "cost")', function() {
       // uncomment below and update the code to test the property cost
-      //var instance = new TextmagicClient.MessagesIcsTextParameters();
+      //var instance = new TextmagicRest.MessagesIcsTextParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property parts (base name: "parts")', function() {
       // uncomment below and update the code to test the property parts
-      //var instance = new TextmagicClient.MessagesIcsTextParameters();
+      //var instance = new TextmagicRest.MessagesIcsTextParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property chars (base name: "chars")', function() {
       // uncomment below and update the code to test the property chars
-      //var instance = new TextmagicClient.MessagesIcsTextParameters();
+      //var instance = new TextmagicRest.MessagesIcsTextParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property encoding (base name: "encoding")', function() {
       // uncomment below and update the code to test the property encoding
-      //var instance = new TextmagicClient.MessagesIcsTextParameters();
+      //var instance = new TextmagicRest.MessagesIcsTextParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property countries (base name: "countries")', function() {
       // uncomment below and update the code to test the property countries
-      //var instance = new TextmagicClient.MessagesIcsTextParameters();
+      //var instance = new TextmagicRest.MessagesIcsTextParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property charsetLabel (base name: "charsetLabel")', function() {
       // uncomment below and update the code to test the property charsetLabel
-      //var instance = new TextmagicClient.MessagesIcsTextParameters();
+      //var instance = new TextmagicRest.MessagesIcsTextParameters();
       //expect(instance).to.be();
     });
 

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdateCallbackSettingsInputObject();
+    instance = new TextmagicRest.UpdateCallbackSettingsInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('UpdateCallbackSettingsInputObject', function() {
     it('should create an instance of UpdateCallbackSettingsInputObject', function() {
       // uncomment below and update the code to test UpdateCallbackSettingsInputObject
-      //var instance = new TextmagicClient.UpdateCallbackSettingsInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdateCallbackSettingsInputObject);
+      //var instance = new TextmagicRest.UpdateCallbackSettingsInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdateCallbackSettingsInputObject);
     });
 
     it('should have the property outUrl (base name: "outUrl")', function() {
       // uncomment below and update the code to test the property outUrl
-      //var instance = new TextmagicClient.UpdateCallbackSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateCallbackSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property inUrl (base name: "inUrl")', function() {
       // uncomment below and update the code to test the property inUrl
-      //var instance = new TextmagicClient.UpdateCallbackSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateCallbackSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property format (base name: "format")', function() {
       // uncomment below and update the code to test the property format
-      //var instance = new TextmagicClient.UpdateCallbackSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateCallbackSettingsInputObject();
       //expect(instance).to.be();
     });
 

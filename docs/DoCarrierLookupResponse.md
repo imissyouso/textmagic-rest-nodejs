@@ -1,4 +1,4 @@
-# TextmagicClient.DoCarrierLookupResponse
+# TextmagicRest.DoCarrierLookupResponse
 
 ## Properties
 Name | Type | Description | Notes

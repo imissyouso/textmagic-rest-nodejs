@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
+    instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,43 +53,43 @@
   describe('UpdateInboundMessagesNotificationSettingsInputObject', function() {
     it('should create an instance of UpdateInboundMessagesNotificationSettingsInputObject', function() {
       // uncomment below and update the code to test UpdateInboundMessagesNotificationSettingsInputObject
-      //var instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject);
+      //var instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject);
     });
 
     it('should have the property inboundMessageNotification (base name: "inboundMessageNotification")', function() {
       // uncomment below and update the code to test the property inboundMessageNotification
-      //var instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property includeSmsHistory (base name: "includeSmsHistory")', function() {
       // uncomment below and update the code to test the property includeSmsHistory
-      //var instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property sendInHtmlFormat (base name: "sendInHtmlFormat")', function() {
       // uncomment below and update the code to test the property sendInHtmlFormat
-      //var instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail1 (base name: "alertEmail1")', function() {
       // uncomment below and update the code to test the property alertEmail1
-      //var instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail2 (base name: "alertEmail2")', function() {
       // uncomment below and update the code to test the property alertEmail2
-      //var instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail3 (base name: "alertEmail3")', function() {
       // uncomment below and update the code to test the property alertEmail3
-      //var instance = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 

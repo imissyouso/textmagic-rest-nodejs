@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DoCarrierLookupResponse();
+    instance = new TextmagicRest.DoCarrierLookupResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,49 +53,49 @@
   describe('DoCarrierLookupResponse', function() {
     it('should create an instance of DoCarrierLookupResponse', function() {
       // uncomment below and update the code to test DoCarrierLookupResponse
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
-      //expect(instance).to.be.a(TextmagicClient.DoCarrierLookupResponse);
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
+      //expect(instance).to.be.a(TextmagicRest.DoCarrierLookupResponse);
     });
 
     it('should have the property cost (base name: "cost")', function() {
       // uncomment below and update the code to test the property cost
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property local (base name: "local")', function() {
       // uncomment below and update the code to test the property local
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property carrier (base name: "carrier")', function() {
       // uncomment below and update the code to test the property carrier
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property number164 (base name: "number164")', function() {
       // uncomment below and update the code to test the property number164
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property valid (base name: "valid")', function() {
       // uncomment below and update the code to test the property valid
-      //var instance = new TextmagicClient.DoCarrierLookupResponse();
+      //var instance = new TextmagicRest.DoCarrierLookupResponse();
       //expect(instance).to.be();
     });
 

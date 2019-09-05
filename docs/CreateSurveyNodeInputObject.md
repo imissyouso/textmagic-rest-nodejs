@@ -1,4 +1,4 @@
-# TextmagicClient.CreateSurveyNodeInputObject
+# TextmagicRest.CreateSurveyNodeInputObject
 
 ## Properties
 Name | Type | Description | Notes

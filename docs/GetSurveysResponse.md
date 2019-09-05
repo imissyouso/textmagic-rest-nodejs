@@ -1,4 +1,4 @@
-# TextmagicClient.GetSurveysResponse
+# TextmagicRest.GetSurveysResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetCallbackSettingsResponse();
+    instance = new TextmagicRest.GetCallbackSettingsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('GetCallbackSettingsResponse', function() {
     it('should create an instance of GetCallbackSettingsResponse', function() {
       // uncomment below and update the code to test GetCallbackSettingsResponse
-      //var instance = new TextmagicClient.GetCallbackSettingsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetCallbackSettingsResponse);
+      //var instance = new TextmagicRest.GetCallbackSettingsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetCallbackSettingsResponse);
     });
 
     it('should have the property outUrl (base name: "outUrl")', function() {
       // uncomment below and update the code to test the property outUrl
-      //var instance = new TextmagicClient.GetCallbackSettingsResponse();
+      //var instance = new TextmagicRest.GetCallbackSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property inUrl (base name: "inUrl")', function() {
       // uncomment below and update the code to test the property inUrl
-      //var instance = new TextmagicClient.GetCallbackSettingsResponse();
+      //var instance = new TextmagicRest.GetCallbackSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property format (base name: "format")', function() {
       // uncomment below and update the code to test the property format
-      //var instance = new TextmagicClient.GetCallbackSettingsResponse();
+      //var instance = new TextmagicRest.GetCallbackSettingsResponse();
       //expect(instance).to.be();
     });
 

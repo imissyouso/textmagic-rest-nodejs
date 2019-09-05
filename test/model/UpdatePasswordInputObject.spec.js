@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdatePasswordInputObject();
+    instance = new TextmagicRest.UpdatePasswordInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('UpdatePasswordInputObject', function() {
     it('should create an instance of UpdatePasswordInputObject', function() {
       // uncomment below and update the code to test UpdatePasswordInputObject
-      //var instance = new TextmagicClient.UpdatePasswordInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdatePasswordInputObject);
+      //var instance = new TextmagicRest.UpdatePasswordInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdatePasswordInputObject);
     });
 
     it('should have the property oldPassword (base name: "oldPassword")', function() {
       // uncomment below and update the code to test the property oldPassword
-      //var instance = new TextmagicClient.UpdatePasswordInputObject();
+      //var instance = new TextmagicRest.UpdatePasswordInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property newPassword (base name: "newPassword")', function() {
       // uncomment below and update the code to test the property newPassword
-      //var instance = new TextmagicClient.UpdatePasswordInputObject();
+      //var instance = new TextmagicRest.UpdatePasswordInputObject();
       //expect(instance).to.be();
     });
 

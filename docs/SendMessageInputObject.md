@@ -1,4 +1,4 @@
-# TextmagicClient.SendMessageInputObject
+# TextmagicRest.SendMessageInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.AssignContactsToListInputObject();
+    instance = new TextmagicRest.AssignContactsToListInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('AssignContactsToListInputObject', function() {
     it('should create an instance of AssignContactsToListInputObject', function() {
       // uncomment below and update the code to test AssignContactsToListInputObject
-      //var instance = new TextmagicClient.AssignContactsToListInputObject();
-      //expect(instance).to.be.a(TextmagicClient.AssignContactsToListInputObject);
+      //var instance = new TextmagicRest.AssignContactsToListInputObject();
+      //expect(instance).to.be.a(TextmagicRest.AssignContactsToListInputObject);
     });
 
     it('should have the property contacts (base name: "contacts")', function() {
       // uncomment below and update the code to test the property contacts
-      //var instance = new TextmagicClient.AssignContactsToListInputObject();
+      //var instance = new TextmagicRest.AssignContactsToListInputObject();
       //expect(instance).to.be();
     });
 

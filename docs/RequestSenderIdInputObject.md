@@ -1,4 +1,4 @@
-# TextmagicClient.RequestSenderIdInputObject
+# TextmagicRest.RequestSenderIdInputObject
 
 ## Properties
 Name | Type | Description | Notes

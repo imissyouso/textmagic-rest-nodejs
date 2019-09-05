@@ -1,4 +1,4 @@
-# TextmagicClient.SurveyRecipient
+# TextmagicRest.SurveyRecipient
 
 ## Properties
 Name | Type | Description | Notes

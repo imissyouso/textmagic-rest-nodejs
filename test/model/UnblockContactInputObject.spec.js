@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UnblockContactInputObject();
+    instance = new TextmagicRest.UnblockContactInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('UnblockContactInputObject', function() {
     it('should create an instance of UnblockContactInputObject', function() {
       // uncomment below and update the code to test UnblockContactInputObject
-      //var instance = new TextmagicClient.UnblockContactInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UnblockContactInputObject);
+      //var instance = new TextmagicRest.UnblockContactInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UnblockContactInputObject);
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.UnblockContactInputObject();
+      //var instance = new TextmagicRest.UnblockContactInputObject();
       //expect(instance).to.be();
     });
 

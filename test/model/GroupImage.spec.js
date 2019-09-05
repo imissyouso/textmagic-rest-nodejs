@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GroupImage();
+    instance = new TextmagicRest.GroupImage();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('GroupImage', function() {
     it('should create an instance of GroupImage', function() {
       // uncomment below and update the code to test GroupImage
-      //var instance = new TextmagicClient.GroupImage();
-      //expect(instance).to.be.a(TextmagicClient.GroupImage);
+      //var instance = new TextmagicRest.GroupImage();
+      //expect(instance).to.be.a(TextmagicRest.GroupImage);
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instance = new TextmagicClient.GroupImage();
+      //var instance = new TextmagicRest.GroupImage();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# TextmagicClient.GetStateResponse
+# TextmagicRest.GetStateResponse
 
 ## Properties
 Name | Type | Description | Notes

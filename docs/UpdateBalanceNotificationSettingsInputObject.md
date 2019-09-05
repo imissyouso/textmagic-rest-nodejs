@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateBalanceNotificationSettingsInputObject
+# TextmagicRest.UpdateBalanceNotificationSettingsInputObject
 
 ## Properties
 Name | Type | Description | Notes

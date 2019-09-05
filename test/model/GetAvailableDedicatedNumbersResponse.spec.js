@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetAvailableDedicatedNumbersResponse();
+    instance = new TextmagicRest.GetAvailableDedicatedNumbersResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('GetAvailableDedicatedNumbersResponse', function() {
     it('should create an instance of GetAvailableDedicatedNumbersResponse', function() {
       // uncomment below and update the code to test GetAvailableDedicatedNumbersResponse
-      //var instance = new TextmagicClient.GetAvailableDedicatedNumbersResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetAvailableDedicatedNumbersResponse);
+      //var instance = new TextmagicRest.GetAvailableDedicatedNumbersResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetAvailableDedicatedNumbersResponse);
     });
 
     it('should have the property numbers (base name: "numbers")', function() {
       // uncomment below and update the code to test the property numbers
-      //var instance = new TextmagicClient.GetAvailableDedicatedNumbersResponse();
+      //var instance = new TextmagicRest.GetAvailableDedicatedNumbersResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
-      //var instance = new TextmagicClient.GetAvailableDedicatedNumbersResponse();
+      //var instance = new TextmagicRest.GetAvailableDedicatedNumbersResponse();
       //expect(instance).to.be();
     });
 

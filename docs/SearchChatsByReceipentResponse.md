@@ -1,4 +1,4 @@
-# TextmagicClient.SearchChatsByReceipentResponse
+# TextmagicRest.SearchChatsByReceipentResponse
 
 ## Properties
 Name | Type | Description | Notes

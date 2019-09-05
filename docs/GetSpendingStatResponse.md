@@ -1,4 +1,4 @@
-# TextmagicClient.GetSpendingStatResponse
+# TextmagicRest.GetSpendingStatResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetMessagePreviewResponse();
+    instance = new TextmagicRest.GetMessagePreviewResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('GetMessagePreviewResponse', function() {
     it('should create an instance of GetMessagePreviewResponse', function() {
       // uncomment below and update the code to test GetMessagePreviewResponse
-      //var instance = new TextmagicClient.GetMessagePreviewResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetMessagePreviewResponse);
+      //var instance = new TextmagicRest.GetMessagePreviewResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetMessagePreviewResponse);
     });
 
     it('should have the property messages (base name: "messages")', function() {
       // uncomment below and update the code to test the property messages
-      //var instance = new TextmagicClient.GetMessagePreviewResponse();
+      //var instance = new TextmagicRest.GetMessagePreviewResponse();
       //expect(instance).to.be();
     });
 

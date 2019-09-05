@@ -1,4 +1,4 @@
-# TextmagicClient.MessageSession
+# TextmagicRest.MessageSession
 
 ## Properties
 Name | Type | Description | Notes

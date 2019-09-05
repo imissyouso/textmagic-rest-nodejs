@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.ContactImage();
+    instance = new TextmagicRest.ContactImage();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('ContactImage', function() {
     it('should create an instance of ContactImage', function() {
       // uncomment below and update the code to test ContactImage
-      //var instance = new TextmagicClient.ContactImage();
-      //expect(instance).to.be.a(TextmagicClient.ContactImage);
+      //var instance = new TextmagicRest.ContactImage();
+      //expect(instance).to.be.a(TextmagicRest.ContactImage);
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instance = new TextmagicClient.ContactImage();
+      //var instance = new TextmagicRest.ContactImage();
       //expect(instance).to.be();
     });
 

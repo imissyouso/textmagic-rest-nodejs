@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DoAuthResponse();
+    instance = new TextmagicRest.DoAuthResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,37 +53,37 @@
   describe('DoAuthResponse', function() {
     it('should create an instance of DoAuthResponse', function() {
       // uncomment below and update the code to test DoAuthResponse
-      //var instance = new TextmagicClient.DoAuthResponse();
-      //expect(instance).to.be.a(TextmagicClient.DoAuthResponse);
+      //var instance = new TextmagicRest.DoAuthResponse();
+      //expect(instance).to.be.a(TextmagicRest.DoAuthResponse);
     });
 
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
-      //var instance = new TextmagicClient.DoAuthResponse();
+      //var instance = new TextmagicRest.DoAuthResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new TextmagicClient.DoAuthResponse();
+      //var instance = new TextmagicRest.DoAuthResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property expires (base name: "expires")', function() {
       // uncomment below and update the code to test the property expires
-      //var instance = new TextmagicClient.DoAuthResponse();
+      //var instance = new TextmagicRest.DoAuthResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property minVersions (base name: "minVersions")', function() {
       // uncomment below and update the code to test the property minVersions
-      //var instance = new TextmagicClient.DoAuthResponse();
+      //var instance = new TextmagicRest.DoAuthResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property disallowedRules (base name: "disallowedRules")', function() {
       // uncomment below and update the code to test the property disallowedRules
-      //var instance = new TextmagicClient.DoAuthResponse();
+      //var instance = new TextmagicRest.DoAuthResponse();
       //expect(instance).to.be();
     });
 

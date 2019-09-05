@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteScheduledMessagesBulkInputObject
+# TextmagicRest.DeleteScheduledMessagesBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

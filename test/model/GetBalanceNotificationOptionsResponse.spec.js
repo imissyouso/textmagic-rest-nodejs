@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+    instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,73 +53,73 @@
   describe('GetBalanceNotificationOptionsResponse', function() {
     it('should create an instance of GetBalanceNotificationOptionsResponse', function() {
       // uncomment below and update the code to test GetBalanceNotificationOptionsResponse
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetBalanceNotificationOptionsResponse);
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetBalanceNotificationOptionsResponse);
     });
 
     it('should have the property _1 (base name: "1")', function() {
       // uncomment below and update the code to test the property _1
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _2 (base name: "2")', function() {
       // uncomment below and update the code to test the property _2
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _3 (base name: "3")', function() {
       // uncomment below and update the code to test the property _3
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _5 (base name: "5")', function() {
       // uncomment below and update the code to test the property _5
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _10 (base name: "10")', function() {
       // uncomment below and update the code to test the property _10
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _20 (base name: "20")', function() {
       // uncomment below and update the code to test the property _20
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _30 (base name: "30")', function() {
       // uncomment below and update the code to test the property _30
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _50 (base name: "50")', function() {
       // uncomment below and update the code to test the property _50
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _100 (base name: "100")', function() {
       // uncomment below and update the code to test the property _100
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _500 (base name: "500")', function() {
       // uncomment below and update the code to test the property _500
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property _1000 (base name: "1000")', function() {
       // uncomment below and update the code to test the property _1000
-      //var instance = new TextmagicClient.GetBalanceNotificationOptionsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationOptionsResponse();
       //expect(instance).to.be();
     });
 

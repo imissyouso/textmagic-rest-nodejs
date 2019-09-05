@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetOutboundMessagesHistoryResponse();
+    instance = new TextmagicRest.GetOutboundMessagesHistoryResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('GetOutboundMessagesHistoryResponse', function() {
     it('should create an instance of GetOutboundMessagesHistoryResponse', function() {
       // uncomment below and update the code to test GetOutboundMessagesHistoryResponse
-      //var instance = new TextmagicClient.GetOutboundMessagesHistoryResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetOutboundMessagesHistoryResponse);
+      //var instance = new TextmagicRest.GetOutboundMessagesHistoryResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetOutboundMessagesHistoryResponse);
     });
 
     it('should have the property lastId (base name: "lastId")', function() {
       // uncomment below and update the code to test the property lastId
-      //var instance = new TextmagicClient.GetOutboundMessagesHistoryResponse();
+      //var instance = new TextmagicRest.GetOutboundMessagesHistoryResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property nextLastId (base name: "nextLastId")', function() {
       // uncomment below and update the code to test the property nextLastId
-      //var instance = new TextmagicClient.GetOutboundMessagesHistoryResponse();
+      //var instance = new TextmagicRest.GetOutboundMessagesHistoryResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new TextmagicClient.GetOutboundMessagesHistoryResponse();
+      //var instance = new TextmagicRest.GetOutboundMessagesHistoryResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property resources (base name: "resources")', function() {
       // uncomment below and update the code to test the property resources
-      //var instance = new TextmagicClient.GetOutboundMessagesHistoryResponse();
+      //var instance = new TextmagicRest.GetOutboundMessagesHistoryResponse();
       //expect(instance).to.be();
     });
 

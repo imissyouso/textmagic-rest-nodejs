@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./UnsubscribedContact'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetUnsubscribersResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.UnsubscribedContact);
+    root.TextmagicRest.GetUnsubscribersResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.UnsubscribedContact);
   }
 }(this, function(ApiClient, UnsubscribedContact) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetUnsubscribersResponse model module.
    * @module model/GetUnsubscribersResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

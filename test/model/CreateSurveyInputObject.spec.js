@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CreateSurveyInputObject();
+    instance = new TextmagicRest.CreateSurveyInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('CreateSurveyInputObject', function() {
     it('should create an instance of CreateSurveyInputObject', function() {
       // uncomment below and update the code to test CreateSurveyInputObject
-      //var instance = new TextmagicClient.CreateSurveyInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CreateSurveyInputObject);
+      //var instance = new TextmagicRest.CreateSurveyInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CreateSurveyInputObject);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.CreateSurveyInputObject();
+      //var instance = new TextmagicRest.CreateSurveyInputObject();
       //expect(instance).to.be();
     });
 

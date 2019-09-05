@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteListsBulkInputObject
+# TextmagicRest.DeleteListsBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

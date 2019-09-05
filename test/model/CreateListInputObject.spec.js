@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CreateListInputObject();
+    instance = new TextmagicRest.CreateListInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('CreateListInputObject', function() {
     it('should create an instance of CreateListInputObject', function() {
       // uncomment below and update the code to test CreateListInputObject
-      //var instance = new TextmagicClient.CreateListInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CreateListInputObject);
+      //var instance = new TextmagicRest.CreateListInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CreateListInputObject);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.CreateListInputObject();
+      //var instance = new TextmagicRest.CreateListInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property shared (base name: "shared")', function() {
       // uncomment below and update the code to test the property shared
-      //var instance = new TextmagicClient.CreateListInputObject();
+      //var instance = new TextmagicRest.CreateListInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property favorited (base name: "favorited")', function() {
       // uncomment below and update the code to test the property favorited
-      //var instance = new TextmagicClient.CreateListInputObject();
+      //var instance = new TextmagicRest.CreateListInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property isDefault (base name: "isDefault")', function() {
       // uncomment below and update the code to test the property isDefault
-      //var instance = new TextmagicClient.CreateListInputObject();
+      //var instance = new TextmagicRest.CreateListInputObject();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# TextmagicClient.UploadMessageAttachmentResponse
+# TextmagicRest.UploadMessageAttachmentResponse
 
 ## Properties
 Name | Type | Description | Notes

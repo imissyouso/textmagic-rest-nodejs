@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UnsubscribeContactInputObject();
+    instance = new TextmagicRest.UnsubscribeContactInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('UnsubscribeContactInputObject', function() {
     it('should create an instance of UnsubscribeContactInputObject', function() {
       // uncomment below and update the code to test UnsubscribeContactInputObject
-      //var instance = new TextmagicClient.UnsubscribeContactInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UnsubscribeContactInputObject);
+      //var instance = new TextmagicRest.UnsubscribeContactInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UnsubscribeContactInputObject);
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.UnsubscribeContactInputObject();
+      //var instance = new TextmagicRest.UnsubscribeContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property blockIncoming (base name: "blockIncoming")', function() {
       // uncomment below and update the code to test the property blockIncoming
-      //var instance = new TextmagicClient.UnsubscribeContactInputObject();
+      //var instance = new TextmagicRest.UnsubscribeContactInputObject();
       //expect(instance).to.be();
     });
 

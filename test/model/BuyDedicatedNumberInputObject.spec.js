@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.BuyDedicatedNumberInputObject();
+    instance = new TextmagicRest.BuyDedicatedNumberInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('BuyDedicatedNumberInputObject', function() {
     it('should create an instance of BuyDedicatedNumberInputObject', function() {
       // uncomment below and update the code to test BuyDedicatedNumberInputObject
-      //var instance = new TextmagicClient.BuyDedicatedNumberInputObject();
-      //expect(instance).to.be.a(TextmagicClient.BuyDedicatedNumberInputObject);
+      //var instance = new TextmagicRest.BuyDedicatedNumberInputObject();
+      //expect(instance).to.be.a(TextmagicRest.BuyDedicatedNumberInputObject);
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.BuyDedicatedNumberInputObject();
+      //var instance = new TextmagicRest.BuyDedicatedNumberInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.BuyDedicatedNumberInputObject();
+      //var instance = new TextmagicRest.BuyDedicatedNumberInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new TextmagicClient.BuyDedicatedNumberInputObject();
+      //var instance = new TextmagicRest.BuyDedicatedNumberInputObject();
       //expect(instance).to.be();
     });
 

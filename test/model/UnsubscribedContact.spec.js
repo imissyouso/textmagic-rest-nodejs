@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UnsubscribedContact();
+    instance = new TextmagicRest.UnsubscribedContact();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,37 +53,37 @@
   describe('UnsubscribedContact', function() {
     it('should create an instance of UnsubscribedContact', function() {
       // uncomment below and update the code to test UnsubscribedContact
-      //var instance = new TextmagicClient.UnsubscribedContact();
-      //expect(instance).to.be.a(TextmagicClient.UnsubscribedContact);
+      //var instance = new TextmagicRest.UnsubscribedContact();
+      //expect(instance).to.be.a(TextmagicRest.UnsubscribedContact);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.UnsubscribedContact();
+      //var instance = new TextmagicRest.UnsubscribedContact();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.UnsubscribedContact();
+      //var instance = new TextmagicRest.UnsubscribedContact();
       //expect(instance).to.be();
     });
 
     it('should have the property unsubscribeTime (base name: "unsubscribeTime")', function() {
       // uncomment below and update the code to test the property unsubscribeTime
-      //var instance = new TextmagicClient.UnsubscribedContact();
+      //var instance = new TextmagicRest.UnsubscribedContact();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new TextmagicClient.UnsubscribedContact();
+      //var instance = new TextmagicRest.UnsubscribedContact();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new TextmagicClient.UnsubscribedContact();
+      //var instance = new TextmagicRest.UnsubscribedContact();
       //expect(instance).to.be();
     });
 

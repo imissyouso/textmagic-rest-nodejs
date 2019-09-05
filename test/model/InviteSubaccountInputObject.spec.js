@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.InviteSubaccountInputObject();
+    instance = new TextmagicRest.InviteSubaccountInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('InviteSubaccountInputObject', function() {
     it('should create an instance of InviteSubaccountInputObject', function() {
       // uncomment below and update the code to test InviteSubaccountInputObject
-      //var instance = new TextmagicClient.InviteSubaccountInputObject();
-      //expect(instance).to.be.a(TextmagicClient.InviteSubaccountInputObject);
+      //var instance = new TextmagicRest.InviteSubaccountInputObject();
+      //expect(instance).to.be.a(TextmagicRest.InviteSubaccountInputObject);
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new TextmagicClient.InviteSubaccountInputObject();
+      //var instance = new TextmagicRest.InviteSubaccountInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property role (base name: "role")', function() {
       // uncomment below and update the code to test the property role
-      //var instance = new TextmagicClient.InviteSubaccountInputObject();
+      //var instance = new TextmagicRest.InviteSubaccountInputObject();
       //expect(instance).to.be();
     });
 

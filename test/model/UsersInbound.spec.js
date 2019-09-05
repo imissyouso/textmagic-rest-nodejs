@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UsersInbound();
+    instance = new TextmagicRest.UsersInbound();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,49 +53,49 @@
   describe('UsersInbound', function() {
     it('should create an instance of UsersInbound', function() {
       // uncomment below and update the code to test UsersInbound
-      //var instance = new TextmagicClient.UsersInbound();
-      //expect(instance).to.be.a(TextmagicClient.UsersInbound);
+      //var instance = new TextmagicRest.UsersInbound();
+      //expect(instance).to.be.a(TextmagicRest.UsersInbound);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.UsersInbound();
+      //var instance = new TextmagicRest.UsersInbound();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new TextmagicClient.UsersInbound();
+      //var instance = new TextmagicRest.UsersInbound();
       //expect(instance).to.be();
     });
 
     it('should have the property purchasedAt (base name: "purchasedAt")', function() {
       // uncomment below and update the code to test the property purchasedAt
-      //var instance = new TextmagicClient.UsersInbound();
+      //var instance = new TextmagicRest.UsersInbound();
       //expect(instance).to.be();
     });
 
     it('should have the property expireAt (base name: "expireAt")', function() {
       // uncomment below and update the code to test the property expireAt
-      //var instance = new TextmagicClient.UsersInbound();
+      //var instance = new TextmagicRest.UsersInbound();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.UsersInbound();
+      //var instance = new TextmagicRest.UsersInbound();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.UsersInbound();
+      //var instance = new TextmagicRest.UsersInbound();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.UsersInbound();
+      //var instance = new TextmagicRest.UsersInbound();
       //expect(instance).to.be();
     });
 

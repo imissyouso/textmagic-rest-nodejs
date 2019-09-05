@@ -1,4 +1,4 @@
-# TextmagicClient.ContactImage
+# TextmagicRest.ContactImage
 
 ## Properties
 Name | Type | Description | Notes

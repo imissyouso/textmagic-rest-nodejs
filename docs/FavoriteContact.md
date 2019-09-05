@@ -1,4 +1,4 @@
-# TextmagicClient.FavoriteContact
+# TextmagicRest.FavoriteContact
 
 ## Properties
 Name | Type | Description | Notes

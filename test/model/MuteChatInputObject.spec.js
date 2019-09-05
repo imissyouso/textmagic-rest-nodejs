@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MuteChatInputObject();
+    instance = new TextmagicRest.MuteChatInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('MuteChatInputObject', function() {
     it('should create an instance of MuteChatInputObject', function() {
       // uncomment below and update the code to test MuteChatInputObject
-      //var instance = new TextmagicClient.MuteChatInputObject();
-      //expect(instance).to.be.a(TextmagicClient.MuteChatInputObject);
+      //var instance = new TextmagicRest.MuteChatInputObject();
+      //expect(instance).to.be.a(TextmagicRest.MuteChatInputObject);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.MuteChatInputObject();
+      //var instance = new TextmagicRest.MuteChatInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property mute (base name: "mute")', function() {
       // uncomment below and update the code to test the property mute
-      //var instance = new TextmagicClient.MuteChatInputObject();
+      //var instance = new TextmagicRest.MuteChatInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property _for (base name: "for")', function() {
       // uncomment below and update the code to test the property _for
-      //var instance = new TextmagicClient.MuteChatInputObject();
+      //var instance = new TextmagicRest.MuteChatInputObject();
       //expect(instance).to.be();
     });
 

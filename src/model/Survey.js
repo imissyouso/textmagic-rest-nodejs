@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./SurveyRecipient'), require('./SurveySenderCountries'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.Survey = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.SurveyRecipient, root.TextmagicClient.SurveySenderCountries);
+    root.TextmagicRest.Survey = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.SurveyRecipient, root.TextmagicRest.SurveySenderCountries);
   }
 }(this, function(ApiClient, SurveyRecipient, SurveySenderCountries) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The Survey model module.
    * @module model/Survey
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

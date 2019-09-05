@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DeleteContacsFromListObject();
+    instance = new TextmagicRest.DeleteContacsFromListObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('DeleteContacsFromListObject', function() {
     it('should create an instance of DeleteContacsFromListObject', function() {
       // uncomment below and update the code to test DeleteContacsFromListObject
-      //var instance = new TextmagicClient.DeleteContacsFromListObject();
-      //expect(instance).to.be.a(TextmagicClient.DeleteContacsFromListObject);
+      //var instance = new TextmagicRest.DeleteContacsFromListObject();
+      //expect(instance).to.be.a(TextmagicRest.DeleteContacsFromListObject);
     });
 
     it('should have the property contacts (base name: "contacts")', function() {
       // uncomment below and update the code to test the property contacts
-      //var instance = new TextmagicClient.DeleteContacsFromListObject();
+      //var instance = new TextmagicRest.DeleteContacsFromListObject();
       //expect(instance).to.be();
     });
 

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Currency();
+    instance = new TextmagicRest.Currency();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('Currency', function() {
     it('should create an instance of Currency', function() {
       // uncomment below and update the code to test Currency
-      //var instance = new TextmagicClient.Currency();
-      //expect(instance).to.be.a(TextmagicClient.Currency);
+      //var instance = new TextmagicRest.Currency();
+      //expect(instance).to.be.a(TextmagicRest.Currency);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Currency();
+      //var instance = new TextmagicRest.Currency();
       //expect(instance).to.be();
     });
 
     it('should have the property unicodeSymbol (base name: "unicodeSymbol")', function() {
       // uncomment below and update the code to test the property unicodeSymbol
-      //var instance = new TextmagicClient.Currency();
+      //var instance = new TextmagicRest.Currency();
       //expect(instance).to.be();
     });
 
     it('should have the property htmlSymbol (base name: "htmlSymbol")', function() {
       // uncomment below and update the code to test the property htmlSymbol
-      //var instance = new TextmagicClient.Currency();
+      //var instance = new TextmagicRest.Currency();
       //expect(instance).to.be();
     });
 

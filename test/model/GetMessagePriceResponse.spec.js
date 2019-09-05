@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetMessagePriceResponse();
+    instance = new TextmagicRest.GetMessagePriceResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('GetMessagePriceResponse', function() {
     it('should create an instance of GetMessagePriceResponse', function() {
       // uncomment below and update the code to test GetMessagePriceResponse
-      //var instance = new TextmagicClient.GetMessagePriceResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetMessagePriceResponse);
+      //var instance = new TextmagicRest.GetMessagePriceResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetMessagePriceResponse);
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instance = new TextmagicClient.GetMessagePriceResponse();
+      //var instance = new TextmagicRest.GetMessagePriceResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property parts (base name: "parts")', function() {
       // uncomment below and update the code to test the property parts
-      //var instance = new TextmagicClient.GetMessagePriceResponse();
+      //var instance = new TextmagicRest.GetMessagePriceResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property countries (base name: "countries")', function() {
       // uncomment below and update the code to test the property countries
-      //var instance = new TextmagicClient.GetMessagePriceResponse();
+      //var instance = new TextmagicRest.GetMessagePriceResponse();
       //expect(instance).to.be();
     });
 

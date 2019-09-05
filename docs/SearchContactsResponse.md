@@ -1,4 +1,4 @@
-# TextmagicClient.SearchContactsResponse
+# TextmagicRest.SearchContactsResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.GetFavouritesResponse
+# TextmagicRest.GetFavouritesResponse
 
 ## Properties
 Name | Type | Description | Notes

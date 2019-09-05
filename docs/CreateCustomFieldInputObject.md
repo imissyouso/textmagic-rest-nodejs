@@ -1,4 +1,4 @@
-# TextmagicClient.CreateCustomFieldInputObject
+# TextmagicRest.CreateCustomFieldInputObject
 
 ## Properties
 Name | Type | Description | Notes

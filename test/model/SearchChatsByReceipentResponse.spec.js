@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.SearchChatsByReceipentResponse();
+    instance = new TextmagicRest.SearchChatsByReceipentResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('SearchChatsByReceipentResponse', function() {
     it('should create an instance of SearchChatsByReceipentResponse', function() {
       // uncomment below and update the code to test SearchChatsByReceipentResponse
-      //var instance = new TextmagicClient.SearchChatsByReceipentResponse();
-      //expect(instance).to.be.a(TextmagicClient.SearchChatsByReceipentResponse);
+      //var instance = new TextmagicRest.SearchChatsByReceipentResponse();
+      //expect(instance).to.be.a(TextmagicRest.SearchChatsByReceipentResponse);
     });
 
     it('should have the property page (base name: "page")', function() {
       // uncomment below and update the code to test the property page
-      //var instance = new TextmagicClient.SearchChatsByReceipentResponse();
+      //var instance = new TextmagicRest.SearchChatsByReceipentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageCount (base name: "pageCount")', function() {
       // uncomment below and update the code to test the property pageCount
-      //var instance = new TextmagicClient.SearchChatsByReceipentResponse();
+      //var instance = new TextmagicRest.SearchChatsByReceipentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new TextmagicClient.SearchChatsByReceipentResponse();
+      //var instance = new TextmagicRest.SearchChatsByReceipentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property resources (base name: "resources")', function() {
       // uncomment below and update the code to test the property resources
-      //var instance = new TextmagicClient.SearchChatsByReceipentResponse();
+      //var instance = new TextmagicRest.SearchChatsByReceipentResponse();
       //expect(instance).to.be();
     });
 

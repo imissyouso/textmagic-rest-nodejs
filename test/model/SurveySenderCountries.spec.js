@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.SurveySenderCountries();
+    instance = new TextmagicRest.SurveySenderCountries();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('SurveySenderCountries', function() {
     it('should create an instance of SurveySenderCountries', function() {
       // uncomment below and update the code to test SurveySenderCountries
-      //var instance = new TextmagicClient.SurveySenderCountries();
-      //expect(instance).to.be.a(TextmagicClient.SurveySenderCountries);
+      //var instance = new TextmagicRest.SurveySenderCountries();
+      //expect(instance).to.be.a(TextmagicRest.SurveySenderCountries);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.SurveySenderCountries();
+      //var instance = new TextmagicRest.SurveySenderCountries();
       //expect(instance).to.be();
     });
 
     it('should have the property countryName (base name: "countryName")', function() {
       // uncomment below and update the code to test the property countryName
-      //var instance = new TextmagicClient.SurveySenderCountries();
+      //var instance = new TextmagicRest.SurveySenderCountries();
       //expect(instance).to.be();
     });
 
     it('should have the property fromNumber (base name: "fromNumber")', function() {
       // uncomment below and update the code to test the property fromNumber
-      //var instance = new TextmagicClient.SurveySenderCountries();
+      //var instance = new TextmagicRest.SurveySenderCountries();
       //expect(instance).to.be();
     });
 
     it('should have the property allowDedicated (base name: "allowDedicated")', function() {
       // uncomment below and update the code to test the property allowDedicated
-      //var instance = new TextmagicClient.SurveySenderCountries();
+      //var instance = new TextmagicRest.SurveySenderCountries();
       //expect(instance).to.be();
     });
 

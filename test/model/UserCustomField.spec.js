@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UserCustomField();
+    instance = new TextmagicRest.UserCustomField();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('UserCustomField', function() {
     it('should create an instance of UserCustomField', function() {
       // uncomment below and update the code to test UserCustomField
-      //var instance = new TextmagicClient.UserCustomField();
-      //expect(instance).to.be.a(TextmagicClient.UserCustomField);
+      //var instance = new TextmagicRest.UserCustomField();
+      //expect(instance).to.be.a(TextmagicRest.UserCustomField);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.UserCustomField();
+      //var instance = new TextmagicRest.UserCustomField();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.UserCustomField();
+      //var instance = new TextmagicRest.UserCustomField();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instance = new TextmagicClient.UserCustomField();
+      //var instance = new TextmagicRest.UserCustomField();
       //expect(instance).to.be();
     });
 

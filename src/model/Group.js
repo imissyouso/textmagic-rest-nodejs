@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./GroupImage'), require('./User'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.Group = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.GroupImage, root.TextmagicClient.User);
+    root.TextmagicRest.Group = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.GroupImage, root.TextmagicRest.User);
   }
 }(this, function(ApiClient, GroupImage, User) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The Group model module.
    * @module model/Group
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DoEmailLookupResponse();
+    instance = new TextmagicRest.DoEmailLookupResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,115 +53,115 @@
   describe('DoEmailLookupResponse', function() {
     it('should create an instance of DoEmailLookupResponse', function() {
       // uncomment below and update the code to test DoEmailLookupResponse
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
-      //expect(instance).to.be.a(TextmagicClient.DoEmailLookupResponse);
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
+      //expect(instance).to.be.a(TextmagicRest.DoEmailLookupResponse);
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property addressType (base name: "addressType")', function() {
       // uncomment below and update the code to test the property addressType
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property emailRole (base name: "emailRole")', function() {
       // uncomment below and update the code to test the property emailRole
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property reason (base name: "reason")', function() {
       // uncomment below and update the code to test the property reason
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property deliverability (base name: "deliverability")', function() {
       // uncomment below and update the code to test the property deliverability
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property isDisposableAddress (base name: "isDisposableAddress")', function() {
       // uncomment below and update the code to test the property isDisposableAddress
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property localPart (base name: "localPart")', function() {
       // uncomment below and update the code to test the property localPart
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property domainPart (base name: "domainPart")', function() {
       // uncomment below and update the code to test the property domainPart
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property exchange (base name: "exchange")', function() {
       // uncomment below and update the code to test the property exchange
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property isInWhiteList (base name: "isInWhiteList")', function() {
       // uncomment below and update the code to test the property isInWhiteList
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property isInBlackList (base name: "isInBlackList")', function() {
       // uncomment below and update the code to test the property isInBlackList
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property hasMx (base name: "hasMx")', function() {
       // uncomment below and update the code to test the property hasMx
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property hasAa (base name: "hasAa")', function() {
       // uncomment below and update the code to test the property hasAa
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property hasAaaa (base name: "hasAaaa")', function() {
       // uncomment below and update the code to test the property hasAaaa
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property risk (base name: "risk")', function() {
       // uncomment below and update the code to test the property risk
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property preference (base name: "preference")', function() {
       // uncomment below and update the code to test the property preference
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property suggestion (base name: "suggestion")', function() {
       // uncomment below and update the code to test the property suggestion
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //var instance = new TextmagicRest.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
 

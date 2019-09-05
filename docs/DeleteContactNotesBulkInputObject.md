@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteContactNotesBulkInputObject
+# TextmagicRest.DeleteContactNotesBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Invoice'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetInvoicesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Invoice);
+    root.TextmagicRest.GetInvoicesResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Invoice);
   }
 }(this, function(ApiClient, Invoice) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetInvoicesResponse model module.
    * @module model/GetInvoicesResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

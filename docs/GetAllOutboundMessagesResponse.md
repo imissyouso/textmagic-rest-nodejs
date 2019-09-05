@@ -1,4 +1,4 @@
-# TextmagicClient.GetAllOutboundMessagesResponse
+# TextmagicRest.GetAllOutboundMessagesResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.CreatePushTokenInputObject
+# TextmagicRest.CreatePushTokenInputObject
 
 ## Properties
 Name | Type | Description | Notes

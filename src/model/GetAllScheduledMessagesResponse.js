@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./MessagesIcs'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetAllScheduledMessagesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessagesIcs);
+    root.TextmagicRest.GetAllScheduledMessagesResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.MessagesIcs);
   }
 }(this, function(ApiClient, MessagesIcs) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetAllScheduledMessagesResponse model module.
    * @module model/GetAllScheduledMessagesResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetAvailableDedicatedNumbersResponse = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicRest.GetAvailableDedicatedNumbersResponse = factory(root.TextmagicRest.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetAvailableDedicatedNumbersResponse model module.
    * @module model/GetAvailableDedicatedNumbersResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

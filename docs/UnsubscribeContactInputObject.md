@@ -1,4 +1,4 @@
-# TextmagicClient.UnsubscribeContactInputObject
+# TextmagicRest.UnsubscribeContactInputObject
 
 ## Properties
 Name | Type | Description | Notes

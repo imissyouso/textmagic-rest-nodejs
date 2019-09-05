@@ -1,4 +1,4 @@
-# TextmagicClient.UnblockContactsBulkInputObject
+# TextmagicRest.UnblockContactsBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

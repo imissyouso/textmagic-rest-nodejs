@@ -1,4 +1,4 @@
-# TextmagicClient.DoEmailLookupResponse
+# TextmagicRest.DoEmailLookupResponse
 
 ## Properties
 Name | Type | Description | Notes

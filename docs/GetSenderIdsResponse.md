@@ -1,4 +1,4 @@
-# TextmagicClient.GetSenderIdsResponse
+# TextmagicRest.GetSenderIdsResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.RequestSenderIdInputObject();
+    instance = new TextmagicRest.RequestSenderIdInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('RequestSenderIdInputObject', function() {
     it('should create an instance of RequestSenderIdInputObject', function() {
       // uncomment below and update the code to test RequestSenderIdInputObject
-      //var instance = new TextmagicClient.RequestSenderIdInputObject();
-      //expect(instance).to.be.a(TextmagicClient.RequestSenderIdInputObject);
+      //var instance = new TextmagicRest.RequestSenderIdInputObject();
+      //expect(instance).to.be.a(TextmagicRest.RequestSenderIdInputObject);
     });
 
     it('should have the property senderId (base name: "senderId")', function() {
       // uncomment below and update the code to test the property senderId
-      //var instance = new TextmagicClient.RequestSenderIdInputObject();
+      //var instance = new TextmagicRest.RequestSenderIdInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property explanation (base name: "explanation")', function() {
       // uncomment below and update the code to test the property explanation
-      //var instance = new TextmagicClient.RequestSenderIdInputObject();
+      //var instance = new TextmagicRest.RequestSenderIdInputObject();
       //expect(instance).to.be();
     });
 

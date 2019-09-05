@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MessageSession();
+    instance = new TextmagicRest.MessageSession();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,55 +53,55 @@
   describe('MessageSession', function() {
     it('should create an instance of MessageSession', function() {
       // uncomment below and update the code to test MessageSession
-      //var instance = new TextmagicClient.MessageSession();
-      //expect(instance).to.be.a(TextmagicClient.MessageSession);
+      //var instance = new TextmagicRest.MessageSession();
+      //expect(instance).to.be.a(TextmagicRest.MessageSession);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 
     it('should have the property startTime (base name: "startTime")', function() {
       // uncomment below and update the code to test the property startTime
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 
     it('should have the property source (base name: "source")', function() {
       // uncomment below and update the code to test the property source
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceId (base name: "referenceId")', function() {
       // uncomment below and update the code to test the property referenceId
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 
     it('should have the property numbersCount (base name: "numbersCount")', function() {
       // uncomment below and update the code to test the property numbersCount
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 
     it('should have the property destination (base name: "destination")', function() {
       // uncomment below and update the code to test the property destination
-      //var instance = new TextmagicClient.MessageSession();
+      //var instance = new TextmagicRest.MessageSession();
       //expect(instance).to.be();
     });
 

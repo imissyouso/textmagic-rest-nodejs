@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CreateTemplateInputObject();
+    instance = new TextmagicRest.CreateTemplateInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('CreateTemplateInputObject', function() {
     it('should create an instance of CreateTemplateInputObject', function() {
       // uncomment below and update the code to test CreateTemplateInputObject
-      //var instance = new TextmagicClient.CreateTemplateInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CreateTemplateInputObject);
+      //var instance = new TextmagicRest.CreateTemplateInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CreateTemplateInputObject);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.CreateTemplateInputObject();
+      //var instance = new TextmagicRest.CreateTemplateInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instance = new TextmagicClient.CreateTemplateInputObject();
+      //var instance = new TextmagicRest.CreateTemplateInputObject();
       //expect(instance).to.be();
     });
 

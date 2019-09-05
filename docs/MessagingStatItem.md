@@ -1,4 +1,4 @@
-# TextmagicClient.MessagingStatItem
+# TextmagicRest.MessagingStatItem
 
 ## Properties
 Name | Type | Description | Notes

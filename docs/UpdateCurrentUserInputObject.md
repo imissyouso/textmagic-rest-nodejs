@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateCurrentUserInputObject
+# TextmagicRest.UpdateCurrentUserInputObject
 
 ## Properties
 Name | Type | Description | Notes

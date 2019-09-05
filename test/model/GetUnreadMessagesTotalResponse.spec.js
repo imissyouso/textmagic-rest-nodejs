@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetUnreadMessagesTotalResponse();
+    instance = new TextmagicRest.GetUnreadMessagesTotalResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('GetUnreadMessagesTotalResponse', function() {
     it('should create an instance of GetUnreadMessagesTotalResponse', function() {
       // uncomment below and update the code to test GetUnreadMessagesTotalResponse
-      //var instance = new TextmagicClient.GetUnreadMessagesTotalResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetUnreadMessagesTotalResponse);
+      //var instance = new TextmagicRest.GetUnreadMessagesTotalResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetUnreadMessagesTotalResponse);
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instance = new TextmagicClient.GetUnreadMessagesTotalResponse();
+      //var instance = new TextmagicRest.GetUnreadMessagesTotalResponse();
       //expect(instance).to.be();
     });
 

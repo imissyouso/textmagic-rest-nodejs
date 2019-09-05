@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.RequestNewSubaccountTokenInputObject = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicRest.RequestNewSubaccountTokenInputObject = factory(root.TextmagicRest.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The RequestNewSubaccountTokenInputObject model module.
    * @module model/RequestNewSubaccountTokenInputObject
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

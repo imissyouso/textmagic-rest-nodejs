@@ -1,4 +1,4 @@
-# TextmagicClient.BadRequestResponseErrors
+# TextmagicRest.BadRequestResponseErrors
 
 ## Properties
 Name | Type | Description | Notes

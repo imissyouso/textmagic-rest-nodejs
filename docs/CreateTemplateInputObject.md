@@ -1,4 +1,4 @@
-# TextmagicClient.CreateTemplateInputObject
+# TextmagicRest.CreateTemplateInputObject
 
 ## Properties
 Name | Type | Description | Notes

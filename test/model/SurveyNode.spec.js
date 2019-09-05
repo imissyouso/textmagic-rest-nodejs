@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.SurveyNode();
+    instance = new TextmagicRest.SurveyNode();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,55 +53,55 @@
   describe('SurveyNode', function() {
     it('should create an instance of SurveyNode', function() {
       // uncomment below and update the code to test SurveyNode
-      //var instance = new TextmagicClient.SurveyNode();
-      //expect(instance).to.be.a(TextmagicClient.SurveyNode);
+      //var instance = new TextmagicRest.SurveyNode();
+      //expect(instance).to.be.a(TextmagicRest.SurveyNode);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 
     it('should have the property body (base name: "body")', function() {
       // uncomment below and update the code to test the property body
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 
     it('should have the property nodeType (base name: "nodeType")', function() {
       // uncomment below and update the code to test the property nodeType
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 
     it('should have the property isEndNode (base name: "isEndNode")', function() {
       // uncomment below and update the code to test the property isEndNode
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 
     it('should have the property sendDelay (base name: "sendDelay")', function() {
       // uncomment below and update the code to test the property sendDelay
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 
     it('should have the property startNodes (base name: "startNodes")', function() {
       // uncomment below and update the code to test the property startNodes
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 
     it('should have the property endNodes (base name: "endNodes")', function() {
       // uncomment below and update the code to test the property endNodes
-      //var instance = new TextmagicClient.SurveyNode();
+      //var instance = new TextmagicRest.SurveyNode();
       //expect(instance).to.be();
     });
 

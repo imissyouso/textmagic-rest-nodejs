@@ -1,4 +1,4 @@
-# TextmagicClient.GetMessagePriceResponse
+# TextmagicRest.GetMessagePriceResponse
 
 ## Properties
 Name | Type | Description | Notes

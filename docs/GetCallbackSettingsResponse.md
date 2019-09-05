@@ -1,4 +1,4 @@
-# TextmagicClient.GetCallbackSettingsResponse
+# TextmagicRest.GetCallbackSettingsResponse
 
 ## Properties
 Name | Type | Description | Notes

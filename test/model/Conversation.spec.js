@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Conversation();
+    instance = new TextmagicRest.Conversation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,67 +53,67 @@
   describe('Conversation', function() {
     it('should create an instance of Conversation', function() {
       // uncomment below and update the code to test Conversation
-      //var instance = new TextmagicClient.Conversation();
-      //expect(instance).to.be.a(TextmagicClient.Conversation);
+      //var instance = new TextmagicRest.Conversation();
+      //expect(instance).to.be.a(TextmagicRest.Conversation);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property direction (base name: "direction")', function() {
       // uncomment below and update the code to test the property direction
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property sender (base name: "sender")', function() {
       // uncomment below and update the code to test the property sender
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property messageTime (base name: "messageTime")', function() {
       // uncomment below and update the code to test the property messageTime
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property receiver (base name: "receiver")', function() {
       // uncomment below and update the code to test the property receiver
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 
     it('should have the property sessionId (base name: "sessionId")', function() {
       // uncomment below and update the code to test the property sessionId
-      //var instance = new TextmagicClient.Conversation();
+      //var instance = new TextmagicRest.Conversation();
       //expect(instance).to.be();
     });
 

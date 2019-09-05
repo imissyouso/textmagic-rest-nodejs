@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.ContactNote();
+    instance = new TextmagicRest.ContactNote();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('ContactNote', function() {
     it('should create an instance of ContactNote', function() {
       // uncomment below and update the code to test ContactNote
-      //var instance = new TextmagicClient.ContactNote();
-      //expect(instance).to.be.a(TextmagicClient.ContactNote);
+      //var instance = new TextmagicRest.ContactNote();
+      //expect(instance).to.be.a(TextmagicRest.ContactNote);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.ContactNote();
+      //var instance = new TextmagicRest.ContactNote();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instance = new TextmagicClient.ContactNote();
+      //var instance = new TextmagicRest.ContactNote();
       //expect(instance).to.be();
     });
 
     it('should have the property note (base name: "note")', function() {
       // uncomment below and update the code to test the property note
-      //var instance = new TextmagicClient.ContactNote();
+      //var instance = new TextmagicRest.ContactNote();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new TextmagicClient.ContactNote();
+      //var instance = new TextmagicRest.ContactNote();
       //expect(instance).to.be();
     });
 

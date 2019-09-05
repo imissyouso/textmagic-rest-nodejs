@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetListContactsIdsResponse();
+    instance = new TextmagicRest.GetListContactsIdsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,8 +53,8 @@
   describe('GetListContactsIdsResponse', function() {
     it('should create an instance of GetListContactsIdsResponse', function() {
       // uncomment below and update the code to test GetListContactsIdsResponse
-      //var instance = new TextmagicClient.GetListContactsIdsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetListContactsIdsResponse);
+      //var instance = new TextmagicRest.GetListContactsIdsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetListContactsIdsResponse);
     });
 
   });

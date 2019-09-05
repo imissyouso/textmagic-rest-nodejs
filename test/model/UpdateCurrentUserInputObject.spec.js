@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdateCurrentUserInputObject();
+    instance = new TextmagicRest.UpdateCurrentUserInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,49 +53,49 @@
   describe('UpdateCurrentUserInputObject', function() {
     it('should create an instance of UpdateCurrentUserInputObject', function() {
       // uncomment below and update the code to test UpdateCurrentUserInputObject
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdateCurrentUserInputObject);
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdateCurrentUserInputObject);
     });
 
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property company (base name: "company")', function() {
       // uncomment below and update the code to test the property company
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property timezone (base name: "timezone")', function() {
       // uncomment below and update the code to test the property timezone
-      //var instance = new TextmagicClient.UpdateCurrentUserInputObject();
+      //var instance = new TextmagicRest.UpdateCurrentUserInputObject();
       //expect(instance).to.be();
     });
 

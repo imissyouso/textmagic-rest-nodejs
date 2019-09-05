@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateSurveyNodeInputObject
+# TextmagicRest.UpdateSurveyNodeInputObject
 
 ## Properties
 Name | Type | Description | Notes

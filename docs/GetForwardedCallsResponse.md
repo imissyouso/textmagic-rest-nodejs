@@ -1,4 +1,4 @@
-# TextmagicClient.GetForwardedCallsResponse
+# TextmagicRest.GetForwardedCallsResponse
 
 ## Properties
 Name | Type | Description | Notes

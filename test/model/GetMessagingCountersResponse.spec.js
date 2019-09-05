@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetMessagingCountersResponse();
+    instance = new TextmagicRest.GetMessagingCountersResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('GetMessagingCountersResponse', function() {
     it('should create an instance of GetMessagingCountersResponse', function() {
       // uncomment below and update the code to test GetMessagingCountersResponse
-      //var instance = new TextmagicClient.GetMessagingCountersResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetMessagingCountersResponse);
+      //var instance = new TextmagicRest.GetMessagingCountersResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetMessagingCountersResponse);
     });
 
     it('should have the property contacts (base name: "contacts")', function() {
       // uncomment below and update the code to test the property contacts
-      //var instance = new TextmagicClient.GetMessagingCountersResponse();
+      //var instance = new TextmagicRest.GetMessagingCountersResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property sent (base name: "sent")', function() {
       // uncomment below and update the code to test the property sent
-      //var instance = new TextmagicClient.GetMessagingCountersResponse();
+      //var instance = new TextmagicRest.GetMessagingCountersResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property received (base name: "received")', function() {
       // uncomment below and update the code to test the property received
-      //var instance = new TextmagicClient.GetMessagingCountersResponse();
+      //var instance = new TextmagicRest.GetMessagingCountersResponse();
       //expect(instance).to.be();
     });
 

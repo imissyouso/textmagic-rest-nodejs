@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.SenderId();
+    instance = new TextmagicRest.SenderId();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('SenderId', function() {
     it('should create an instance of SenderId', function() {
       // uncomment below and update the code to test SenderId
-      //var instance = new TextmagicClient.SenderId();
-      //expect(instance).to.be.a(TextmagicClient.SenderId);
+      //var instance = new TextmagicRest.SenderId();
+      //expect(instance).to.be.a(TextmagicRest.SenderId);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.SenderId();
+      //var instance = new TextmagicRest.SenderId();
       //expect(instance).to.be();
     });
 
     it('should have the property senderId (base name: "senderId")', function() {
       // uncomment below and update the code to test the property senderId
-      //var instance = new TextmagicClient.SenderId();
+      //var instance = new TextmagicRest.SenderId();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new TextmagicClient.SenderId();
+      //var instance = new TextmagicRest.SenderId();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.SenderId();
+      //var instance = new TextmagicRest.SenderId();
       //expect(instance).to.be();
     });
 

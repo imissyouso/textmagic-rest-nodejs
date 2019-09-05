@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.FavoriteContact();
+    instance = new TextmagicRest.FavoriteContact();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,43 +53,43 @@
   describe('FavoriteContact', function() {
     it('should create an instance of FavoriteContact', function() {
       // uncomment below and update the code to test FavoriteContact
-      //var instance = new TextmagicClient.FavoriteContact();
-      //expect(instance).to.be.a(TextmagicClient.FavoriteContact);
+      //var instance = new TextmagicRest.FavoriteContact();
+      //expect(instance).to.be.a(TextmagicRest.FavoriteContact);
     });
 
     it('should have the property entityId (base name: "entityId")', function() {
       // uncomment below and update the code to test the property entityId
-      //var instance = new TextmagicClient.FavoriteContact();
+      //var instance = new TextmagicRest.FavoriteContact();
       //expect(instance).to.be();
     });
 
     it('should have the property entityType (base name: "entityType")', function() {
       // uncomment below and update the code to test the property entityType
-      //var instance = new TextmagicClient.FavoriteContact();
+      //var instance = new TextmagicRest.FavoriteContact();
       //expect(instance).to.be();
     });
 
     it('should have the property primaryLabel (base name: "primaryLabel")', function() {
       // uncomment below and update the code to test the property primaryLabel
-      //var instance = new TextmagicClient.FavoriteContact();
+      //var instance = new TextmagicRest.FavoriteContact();
       //expect(instance).to.be();
     });
 
     it('should have the property secondaryLabel (base name: "secondaryLabel")', function() {
       // uncomment below and update the code to test the property secondaryLabel
-      //var instance = new TextmagicClient.FavoriteContact();
+      //var instance = new TextmagicRest.FavoriteContact();
       //expect(instance).to.be();
     });
 
     it('should have the property tertiaryLabel (base name: "tertiaryLabel")', function() {
       // uncomment below and update the code to test the property tertiaryLabel
-      //var instance = new TextmagicClient.FavoriteContact();
+      //var instance = new TextmagicRest.FavoriteContact();
       //expect(instance).to.be();
     });
 
     it('should have the property avatar (base name: "avatar")', function() {
       // uncomment below and update the code to test the property avatar
-      //var instance = new TextmagicClient.FavoriteContact();
+      //var instance = new TextmagicRest.FavoriteContact();
       //expect(instance).to.be();
     });
 

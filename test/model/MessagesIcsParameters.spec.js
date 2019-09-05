@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MessagesIcsParameters();
+    instance = new TextmagicRest.MessagesIcsParameters();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('MessagesIcsParameters', function() {
     it('should create an instance of MessagesIcsParameters', function() {
       // uncomment below and update the code to test MessagesIcsParameters
-      //var instance = new TextmagicClient.MessagesIcsParameters();
-      //expect(instance).to.be.a(TextmagicClient.MessagesIcsParameters);
+      //var instance = new TextmagicRest.MessagesIcsParameters();
+      //expect(instance).to.be.a(TextmagicRest.MessagesIcsParameters);
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new TextmagicClient.MessagesIcsParameters();
+      //var instance = new TextmagicRest.MessagesIcsParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property recipients (base name: "recipients")', function() {
       // uncomment below and update the code to test the property recipients
-      //var instance = new TextmagicClient.MessagesIcsParameters();
+      //var instance = new TextmagicRest.MessagesIcsParameters();
       //expect(instance).to.be();
     });
 

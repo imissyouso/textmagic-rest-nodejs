@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Contact'), require('./Country'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.Chat = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Contact, root.TextmagicClient.Country);
+    root.TextmagicRest.Chat = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Contact, root.TextmagicRest.Country);
   }
 }(this, function(ApiClient, Contact, Country) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The Chat model module.
    * @module model/Chat
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

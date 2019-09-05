@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.PingResponse();
+    instance = new TextmagicRest.PingResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('PingResponse', function() {
     it('should create an instance of PingResponse', function() {
       // uncomment below and update the code to test PingResponse
-      //var instance = new TextmagicClient.PingResponse();
-      //expect(instance).to.be.a(TextmagicClient.PingResponse);
+      //var instance = new TextmagicRest.PingResponse();
+      //expect(instance).to.be.a(TextmagicRest.PingResponse);
     });
 
     it('should have the property ping (base name: "ping")', function() {
       // uncomment below and update the code to test the property ping
-      //var instance = new TextmagicClient.PingResponse();
+      //var instance = new TextmagicRest.PingResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property utcDateTime (base name: "utcDateTime")', function() {
       // uncomment below and update the code to test the property utcDateTime
-      //var instance = new TextmagicClient.PingResponse();
+      //var instance = new TextmagicRest.PingResponse();
       //expect(instance).to.be();
     });
 

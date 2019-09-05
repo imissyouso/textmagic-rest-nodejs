@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdateCustomFieldValueInputObject();
+    instance = new TextmagicRest.UpdateCustomFieldValueInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('UpdateCustomFieldValueInputObject', function() {
     it('should create an instance of UpdateCustomFieldValueInputObject', function() {
       // uncomment below and update the code to test UpdateCustomFieldValueInputObject
-      //var instance = new TextmagicClient.UpdateCustomFieldValueInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdateCustomFieldValueInputObject);
+      //var instance = new TextmagicRest.UpdateCustomFieldValueInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdateCustomFieldValueInputObject);
     });
 
     it('should have the property contactId (base name: "contactId")', function() {
       // uncomment below and update the code to test the property contactId
-      //var instance = new TextmagicClient.UpdateCustomFieldValueInputObject();
+      //var instance = new TextmagicRest.UpdateCustomFieldValueInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new TextmagicClient.UpdateCustomFieldValueInputObject();
+      //var instance = new TextmagicRest.UpdateCustomFieldValueInputObject();
       //expect(instance).to.be();
     });
 

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetContactImportSessionProgressResponse();
+    instance = new TextmagicRest.GetContactImportSessionProgressResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('GetContactImportSessionProgressResponse', function() {
     it('should create an instance of GetContactImportSessionProgressResponse', function() {
       // uncomment below and update the code to test GetContactImportSessionProgressResponse
-      //var instance = new TextmagicClient.GetContactImportSessionProgressResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetContactImportSessionProgressResponse);
+      //var instance = new TextmagicRest.GetContactImportSessionProgressResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetContactImportSessionProgressResponse);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.GetContactImportSessionProgressResponse();
+      //var instance = new TextmagicRest.GetContactImportSessionProgressResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property processed (base name: "processed")', function() {
       // uncomment below and update the code to test the property processed
-      //var instance = new TextmagicClient.GetContactImportSessionProgressResponse();
+      //var instance = new TextmagicRest.GetContactImportSessionProgressResponse();
       //expect(instance).to.be();
     });
 

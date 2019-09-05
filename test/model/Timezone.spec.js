@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Timezone();
+    instance = new TextmagicRest.Timezone();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,37 +53,37 @@
   describe('Timezone', function() {
     it('should create an instance of Timezone', function() {
       // uncomment below and update the code to test Timezone
-      //var instance = new TextmagicClient.Timezone();
-      //expect(instance).to.be.a(TextmagicClient.Timezone);
+      //var instance = new TextmagicRest.Timezone();
+      //expect(instance).to.be.a(TextmagicRest.Timezone);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Timezone();
+      //var instance = new TextmagicRest.Timezone();
       //expect(instance).to.be();
     });
 
     it('should have the property area (base name: "area")', function() {
       // uncomment below and update the code to test the property area
-      //var instance = new TextmagicClient.Timezone();
+      //var instance = new TextmagicRest.Timezone();
       //expect(instance).to.be();
     });
 
     it('should have the property dst (base name: "dst")', function() {
       // uncomment below and update the code to test the property dst
-      //var instance = new TextmagicClient.Timezone();
+      //var instance = new TextmagicRest.Timezone();
       //expect(instance).to.be();
     });
 
     it('should have the property offset (base name: "offset")', function() {
       // uncomment below and update the code to test the property offset
-      //var instance = new TextmagicClient.Timezone();
+      //var instance = new TextmagicRest.Timezone();
       //expect(instance).to.be();
     });
 
     it('should have the property timezone (base name: "timezone")', function() {
       // uncomment below and update the code to test the property timezone
-      //var instance = new TextmagicClient.Timezone();
+      //var instance = new TextmagicRest.Timezone();
       //expect(instance).to.be();
     });
 

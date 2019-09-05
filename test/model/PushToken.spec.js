@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.PushToken();
+    instance = new TextmagicRest.PushToken();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('PushToken', function() {
     it('should create an instance of PushToken', function() {
       // uncomment below and update the code to test PushToken
-      //var instance = new TextmagicClient.PushToken();
-      //expect(instance).to.be.a(TextmagicClient.PushToken);
+      //var instance = new TextmagicRest.PushToken();
+      //expect(instance).to.be.a(TextmagicRest.PushToken);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new TextmagicClient.PushToken();
+      //var instance = new TextmagicRest.PushToken();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new TextmagicClient.PushToken();
+      //var instance = new TextmagicRest.PushToken();
       //expect(instance).to.be();
     });
 

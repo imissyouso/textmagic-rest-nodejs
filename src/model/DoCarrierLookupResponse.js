@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Country'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.DoCarrierLookupResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Country);
+    root.TextmagicRest.DoCarrierLookupResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Country);
   }
 }(this, function(ApiClient, Country) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The DoCarrierLookupResponse model module.
    * @module model/DoCarrierLookupResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

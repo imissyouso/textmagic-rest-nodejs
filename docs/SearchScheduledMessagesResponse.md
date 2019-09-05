@@ -1,4 +1,4 @@
-# TextmagicClient.SearchScheduledMessagesResponse
+# TextmagicRest.SearchScheduledMessagesResponse
 
 ## Properties
 Name | Type | Description | Notes

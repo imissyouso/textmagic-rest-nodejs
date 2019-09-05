@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetMessageSessionStatResponse();
+    instance = new TextmagicRest.GetMessageSessionStatResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,49 +53,49 @@
   describe('GetMessageSessionStatResponse', function() {
     it('should create an instance of GetMessageSessionStatResponse', function() {
       // uncomment below and update the code to test GetMessageSessionStatResponse
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetMessageSessionStatResponse);
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetMessageSessionStatResponse);
     });
 
     it('should have the property failed (base name: "failed")', function() {
       // uncomment below and update the code to test the property failed
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property delivered (base name: "delivered")', function() {
       // uncomment below and update the code to test the property delivered
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property accepted (base name: "accepted")', function() {
       // uncomment below and update the code to test the property accepted
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property rejected (base name: "rejected")', function() {
       // uncomment below and update the code to test the property rejected
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property scheduled (base name: "scheduled")', function() {
       // uncomment below and update the code to test the property scheduled
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property all (base name: "all")', function() {
       // uncomment below and update the code to test the property all
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property sent (base name: "sent")', function() {
       // uncomment below and update the code to test the property sent
-      //var instance = new TextmagicClient.GetMessageSessionStatResponse();
+      //var instance = new TextmagicRest.GetMessageSessionStatResponse();
       //expect(instance).to.be();
     });
 

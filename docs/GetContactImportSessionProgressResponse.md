@@ -1,4 +1,4 @@
-# TextmagicClient.GetContactImportSessionProgressResponse
+# TextmagicRest.GetContactImportSessionProgressResponse
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.UnauthorizedResponse
+# TextmagicRest.UnauthorizedResponse
 
 ## Properties
 Name | Type | Description | Notes

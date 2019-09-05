@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Survey();
+    instance = new TextmagicRest.Survey();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,49 +53,49 @@
   describe('Survey', function() {
     it('should create an instance of Survey', function() {
       // uncomment below and update the code to test Survey
-      //var instance = new TextmagicClient.Survey();
-      //expect(instance).to.be.a(TextmagicClient.Survey);
+      //var instance = new TextmagicRest.Survey();
+      //expect(instance).to.be.a(TextmagicRest.Survey);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Survey();
+      //var instance = new TextmagicRest.Survey();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.Survey();
+      //var instance = new TextmagicRest.Survey();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.Survey();
+      //var instance = new TextmagicRest.Survey();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instance = new TextmagicClient.Survey();
+      //var instance = new TextmagicRest.Survey();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedAt (base name: "updatedAt")', function() {
       // uncomment below and update the code to test the property updatedAt
-      //var instance = new TextmagicClient.Survey();
+      //var instance = new TextmagicRest.Survey();
       //expect(instance).to.be();
     });
 
     it('should have the property receipents (base name: "receipents")', function() {
       // uncomment below and update the code to test the property receipents
-      //var instance = new TextmagicClient.Survey();
+      //var instance = new TextmagicRest.Survey();
       //expect(instance).to.be();
     });
 
     it('should have the property countries (base name: "countries")', function() {
       // uncomment below and update the code to test the property countries
-      //var instance = new TextmagicClient.Survey();
+      //var instance = new TextmagicRest.Survey();
       //expect(instance).to.be();
     });
 

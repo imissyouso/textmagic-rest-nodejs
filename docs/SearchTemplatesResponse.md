@@ -1,4 +1,4 @@
-# TextmagicClient.SearchTemplatesResponse
+# TextmagicRest.SearchTemplatesResponse
 
 ## Properties
 Name | Type | Description | Notes

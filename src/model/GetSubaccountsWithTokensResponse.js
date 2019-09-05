@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./SubaccountWithToken'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetSubaccountsWithTokensResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.SubaccountWithToken);
+    root.TextmagicRest.GetSubaccountsWithTokensResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.SubaccountWithToken);
   }
 }(this, function(ApiClient, SubaccountWithToken) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetSubaccountsWithTokensResponse model module.
    * @module model/GetSubaccountsWithTokensResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

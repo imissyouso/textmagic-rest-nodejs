@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.User();
+    instance = new TextmagicRest.User();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,103 +53,103 @@
   describe('User', function() {
     it('should create an instance of User', function() {
       // uncomment below and update the code to test User
-      //var instance = new TextmagicClient.User();
-      //expect(instance).to.be.a(TextmagicClient.User);
+      //var instance = new TextmagicRest.User();
+      //expect(instance).to.be.a(TextmagicRest.User);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property balance (base name: "balance")', function() {
       // uncomment below and update the code to test the property balance
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property company (base name: "company")', function() {
       // uncomment below and update the code to test the property company
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property currency (base name: "currency")', function() {
       // uncomment below and update the code to test the property currency
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property timezone (base name: "timezone")', function() {
       // uncomment below and update the code to test the property timezone
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property subaccountType (base name: "subaccountType")', function() {
       // uncomment below and update the code to test the property subaccountType
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property emailAccepted (base name: "emailAccepted")', function() {
       // uncomment below and update the code to test the property emailAccepted
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property phoneAccepted (base name: "phoneAccepted")', function() {
       // uncomment below and update the code to test the property phoneAccepted
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 
     it('should have the property avatar (base name: "avatar")', function() {
       // uncomment below and update the code to test the property avatar
-      //var instance = new TextmagicClient.User();
+      //var instance = new TextmagicRest.User();
       //expect(instance).to.be();
     });
 

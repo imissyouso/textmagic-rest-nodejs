@@ -1,4 +1,4 @@
-# TextmagicClient.ContactCustomField
+# TextmagicRest.ContactCustomField
 
 ## Properties
 Name | Type | Description | Notes

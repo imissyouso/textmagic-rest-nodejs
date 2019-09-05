@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Country'), require('./Currency'), require('./Timezone'), require('./UserImage'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.SubaccountWithToken = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Country, root.TextmagicClient.Currency, root.TextmagicClient.Timezone, root.TextmagicClient.UserImage);
+    root.TextmagicRest.SubaccountWithToken = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Country, root.TextmagicRest.Currency, root.TextmagicRest.Timezone, root.TextmagicRest.UserImage);
   }
 }(this, function(ApiClient, Country, Currency, Timezone, UserImage) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The SubaccountWithToken model module.
    * @module model/SubaccountWithToken
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

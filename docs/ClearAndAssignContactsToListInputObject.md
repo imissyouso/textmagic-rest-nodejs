@@ -1,4 +1,4 @@
-# TextmagicClient.ClearAndAssignContactsToListInputObject
+# TextmagicRest.ClearAndAssignContactsToListInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MessagesIcsParametersRecipients();
+    instance = new TextmagicRest.MessagesIcsParametersRecipients();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('MessagesIcsParametersRecipients', function() {
     it('should create an instance of MessagesIcsParametersRecipients', function() {
       // uncomment below and update the code to test MessagesIcsParametersRecipients
-      //var instance = new TextmagicClient.MessagesIcsParametersRecipients();
-      //expect(instance).to.be.a(TextmagicClient.MessagesIcsParametersRecipients);
+      //var instance = new TextmagicRest.MessagesIcsParametersRecipients();
+      //expect(instance).to.be.a(TextmagicRest.MessagesIcsParametersRecipients);
     });
 
     it('should have the property contacts (base name: "contacts")', function() {
       // uncomment below and update the code to test the property contacts
-      //var instance = new TextmagicClient.MessagesIcsParametersRecipients();
+      //var instance = new TextmagicRest.MessagesIcsParametersRecipients();
       //expect(instance).to.be();
     });
 
     it('should have the property groups (base name: "groups")', function() {
       // uncomment below and update the code to test the property groups
-      //var instance = new TextmagicClient.MessagesIcsParametersRecipients();
+      //var instance = new TextmagicRest.MessagesIcsParametersRecipients();
       //expect(instance).to.be();
     });
 
     it('should have the property numbers (base name: "numbers")', function() {
       // uncomment below and update the code to test the property numbers
-      //var instance = new TextmagicClient.MessagesIcsParametersRecipients();
+      //var instance = new TextmagicRest.MessagesIcsParametersRecipients();
       //expect(instance).to.be();
     });
 

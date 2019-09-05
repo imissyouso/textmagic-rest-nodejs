@@ -1,4 +1,4 @@
-# TextmagicClient.Invoice
+# TextmagicRest.Invoice
 
 ## Properties
 Name | Type | Description | Notes

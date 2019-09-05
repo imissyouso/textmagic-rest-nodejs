@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject
+# TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject
 
 ## Properties
 Name | Type | Description | Notes

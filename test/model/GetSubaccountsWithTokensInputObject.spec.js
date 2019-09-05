@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetSubaccountsWithTokensInputObject();
+    instance = new TextmagicRest.GetSubaccountsWithTokensInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('GetSubaccountsWithTokensInputObject', function() {
     it('should create an instance of GetSubaccountsWithTokensInputObject', function() {
       // uncomment below and update the code to test GetSubaccountsWithTokensInputObject
-      //var instance = new TextmagicClient.GetSubaccountsWithTokensInputObject();
-      //expect(instance).to.be.a(TextmagicClient.GetSubaccountsWithTokensInputObject);
+      //var instance = new TextmagicRest.GetSubaccountsWithTokensInputObject();
+      //expect(instance).to.be.a(TextmagicRest.GetSubaccountsWithTokensInputObject);
     });
 
     it('should have the property appName (base name: "appName")', function() {
       // uncomment below and update the code to test the property appName
-      //var instance = new TextmagicClient.GetSubaccountsWithTokensInputObject();
+      //var instance = new TextmagicRest.GetSubaccountsWithTokensInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property password (base name: "password")', function() {
       // uncomment below and update the code to test the property password
-      //var instance = new TextmagicClient.GetSubaccountsWithTokensInputObject();
+      //var instance = new TextmagicRest.GetSubaccountsWithTokensInputObject();
       //expect(instance).to.be();
     });
 

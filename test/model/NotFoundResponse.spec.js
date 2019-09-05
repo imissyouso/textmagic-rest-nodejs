@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.NotFoundResponse();
+    instance = new TextmagicRest.NotFoundResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('NotFoundResponse', function() {
     it('should create an instance of NotFoundResponse', function() {
       // uncomment below and update the code to test NotFoundResponse
-      //var instance = new TextmagicClient.NotFoundResponse();
-      //expect(instance).to.be.a(TextmagicClient.NotFoundResponse);
+      //var instance = new TextmagicRest.NotFoundResponse();
+      //expect(instance).to.be.a(TextmagicRest.NotFoundResponse);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new TextmagicClient.NotFoundResponse();
+      //var instance = new TextmagicRest.NotFoundResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new TextmagicClient.NotFoundResponse();
+      //var instance = new TextmagicRest.NotFoundResponse();
       //expect(instance).to.be();
     });
 

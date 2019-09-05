@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CreateCustomFieldInputObject();
+    instance = new TextmagicRest.CreateCustomFieldInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('CreateCustomFieldInputObject', function() {
     it('should create an instance of CreateCustomFieldInputObject', function() {
       // uncomment below and update the code to test CreateCustomFieldInputObject
-      //var instance = new TextmagicClient.CreateCustomFieldInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CreateCustomFieldInputObject);
+      //var instance = new TextmagicRest.CreateCustomFieldInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CreateCustomFieldInputObject);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.CreateCustomFieldInputObject();
+      //var instance = new TextmagicRest.CreateCustomFieldInputObject();
       //expect(instance).to.be();
     });
 

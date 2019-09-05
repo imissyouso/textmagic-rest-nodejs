@@ -1,4 +1,4 @@
-# TextmagicClient.UsersInbound
+# TextmagicRest.UsersInbound
 
 ## Properties
 Name | Type | Description | Notes

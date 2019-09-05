@@ -1,4 +1,4 @@
-# TextmagicClient.CreateListInputObject
+# TextmagicRest.CreateListInputObject
 
 ## Properties
 Name | Type | Description | Notes

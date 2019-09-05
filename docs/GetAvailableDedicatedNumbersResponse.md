@@ -1,4 +1,4 @@
-# TextmagicClient.GetAvailableDedicatedNumbersResponse
+# TextmagicRest.GetAvailableDedicatedNumbersResponse
 
 ## Properties
 Name | Type | Description | Notes

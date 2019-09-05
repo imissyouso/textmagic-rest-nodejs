@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DeleteChatsBulkInputObject();
+    instance = new TextmagicRest.DeleteChatsBulkInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('DeleteChatsBulkInputObject', function() {
     it('should create an instance of DeleteChatsBulkInputObject', function() {
       // uncomment below and update the code to test DeleteChatsBulkInputObject
-      //var instance = new TextmagicClient.DeleteChatsBulkInputObject();
-      //expect(instance).to.be.a(TextmagicClient.DeleteChatsBulkInputObject);
+      //var instance = new TextmagicRest.DeleteChatsBulkInputObject();
+      //expect(instance).to.be.a(TextmagicRest.DeleteChatsBulkInputObject);
     });
 
     it('should have the property ids (base name: "ids")', function() {
       // uncomment below and update the code to test the property ids
-      //var instance = new TextmagicClient.DeleteChatsBulkInputObject();
+      //var instance = new TextmagicRest.DeleteChatsBulkInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property all (base name: "all")', function() {
       // uncomment below and update the code to test the property all
-      //var instance = new TextmagicClient.DeleteChatsBulkInputObject();
+      //var instance = new TextmagicRest.DeleteChatsBulkInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.DeleteChatsBulkInputObject();
+      //var instance = new TextmagicRest.DeleteChatsBulkInputObject();
       //expect(instance).to.be();
     });
 

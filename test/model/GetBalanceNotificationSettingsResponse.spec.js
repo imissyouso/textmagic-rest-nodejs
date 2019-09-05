@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
+    instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,43 +53,43 @@
   describe('GetBalanceNotificationSettingsResponse', function() {
     it('should create an instance of GetBalanceNotificationSettingsResponse', function() {
       // uncomment below and update the code to test GetBalanceNotificationSettingsResponse
-      //var instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetBalanceNotificationSettingsResponse);
+      //var instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetBalanceNotificationSettingsResponse);
     });
 
     it('should have the property lowBalanceNotification (base name: "lowBalanceNotification")', function() {
       // uncomment below and update the code to test the property lowBalanceNotification
-      //var instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertBalance (base name: "alertBalance")', function() {
       // uncomment below and update the code to test the property alertBalance
-      //var instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertPhone (base name: "alertPhone")', function() {
       // uncomment below and update the code to test the property alertPhone
-      //var instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail1 (base name: "alertEmail1")', function() {
       // uncomment below and update the code to test the property alertEmail1
-      //var instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail2 (base name: "alertEmail2")', function() {
       // uncomment below and update the code to test the property alertEmail2
-      //var instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail3 (base name: "alertEmail3")', function() {
       // uncomment below and update the code to test the property alertEmail3
-      //var instance = new TextmagicClient.GetBalanceNotificationSettingsResponse();
+      //var instance = new TextmagicRest.GetBalanceNotificationSettingsResponse();
       //expect(instance).to.be();
     });
 

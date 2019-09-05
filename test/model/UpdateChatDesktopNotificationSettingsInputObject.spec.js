@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject();
+    instance = new TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('UpdateChatDesktopNotificationSettingsInputObject', function() {
     it('should create an instance of UpdateChatDesktopNotificationSettingsInputObject', function() {
       // uncomment below and update the code to test UpdateChatDesktopNotificationSettingsInputObject
-      //var instance = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject);
+      //var instance = new TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject);
     });
 
     it('should have the property playSound (base name: "playSound")', function() {
       // uncomment below and update the code to test the property playSound
-      //var instance = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property showNotifications (base name: "showNotifications")', function() {
       // uncomment below and update the code to test the property showNotifications
-      //var instance = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property showText (base name: "showText")', function() {
       // uncomment below and update the code to test the property showText
-      //var instance = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property soundId (base name: "soundId")', function() {
       // uncomment below and update the code to test the property soundId
-      //var instance = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 

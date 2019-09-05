@@ -1,4 +1,4 @@
-# TextmagicClient.GetCustomFieldsResponse
+# TextmagicRest.GetCustomFieldsResponse
 
 ## Properties
 Name | Type | Description | Notes

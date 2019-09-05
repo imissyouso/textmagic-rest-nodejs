@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.BlockContactInputObject();
+    instance = new TextmagicRest.BlockContactInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('BlockContactInputObject', function() {
     it('should create an instance of BlockContactInputObject', function() {
       // uncomment below and update the code to test BlockContactInputObject
-      //var instance = new TextmagicClient.BlockContactInputObject();
-      //expect(instance).to.be.a(TextmagicClient.BlockContactInputObject);
+      //var instance = new TextmagicRest.BlockContactInputObject();
+      //expect(instance).to.be.a(TextmagicRest.BlockContactInputObject);
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.BlockContactInputObject();
+      //var instance = new TextmagicRest.BlockContactInputObject();
       //expect(instance).to.be();
     });
 

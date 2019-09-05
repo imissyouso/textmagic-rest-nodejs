@@ -1,4 +1,4 @@
-# TextmagicClient.SurveySenderCountries
+# TextmagicRest.SurveySenderCountries
 
 ## Properties
 Name | Type | Description | Notes

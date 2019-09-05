@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdateSurveyNodeInputObject();
+    instance = new TextmagicRest.UpdateSurveyNodeInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('UpdateSurveyNodeInputObject', function() {
     it('should create an instance of UpdateSurveyNodeInputObject', function() {
       // uncomment below and update the code to test UpdateSurveyNodeInputObject
-      //var instance = new TextmagicClient.UpdateSurveyNodeInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdateSurveyNodeInputObject);
+      //var instance = new TextmagicRest.UpdateSurveyNodeInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdateSurveyNodeInputObject);
     });
 
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
-      //var instance = new TextmagicClient.UpdateSurveyNodeInputObject();
+      //var instance = new TextmagicRest.UpdateSurveyNodeInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property isEndNode (base name: "isEndNode")', function() {
       // uncomment below and update the code to test the property isEndNode
-      //var instance = new TextmagicClient.UpdateSurveyNodeInputObject();
+      //var instance = new TextmagicRest.UpdateSurveyNodeInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property body (base name: "body")', function() {
       // uncomment below and update the code to test the property body
-      //var instance = new TextmagicClient.UpdateSurveyNodeInputObject();
+      //var instance = new TextmagicRest.UpdateSurveyNodeInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property sendDelay (base name: "sendDelay")', function() {
       // uncomment below and update the code to test the property sendDelay
-      //var instance = new TextmagicClient.UpdateSurveyNodeInputObject();
+      //var instance = new TextmagicRest.UpdateSurveyNodeInputObject();
       //expect(instance).to.be();
     });
 

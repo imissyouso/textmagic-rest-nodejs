@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CreateContactNoteInputObject();
+    instance = new TextmagicRest.CreateContactNoteInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('CreateContactNoteInputObject', function() {
     it('should create an instance of CreateContactNoteInputObject', function() {
       // uncomment below and update the code to test CreateContactNoteInputObject
-      //var instance = new TextmagicClient.CreateContactNoteInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CreateContactNoteInputObject);
+      //var instance = new TextmagicRest.CreateContactNoteInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CreateContactNoteInputObject);
     });
 
     it('should have the property note (base name: "note")', function() {
       // uncomment below and update the code to test the property note
-      //var instance = new TextmagicClient.CreateContactNoteInputObject();
+      //var instance = new TextmagicRest.CreateContactNoteInputObject();
       //expect(instance).to.be();
     });
 

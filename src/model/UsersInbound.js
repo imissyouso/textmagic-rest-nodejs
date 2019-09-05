@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./Country'), require('./User'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.UsersInbound = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Country, root.TextmagicClient.User);
+    root.TextmagicRest.UsersInbound = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.Country, root.TextmagicRest.User);
   }
 }(this, function(ApiClient, Country, User) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The UsersInbound model module.
    * @module model/UsersInbound
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

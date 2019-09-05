@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.BadRequestResponse();
+    instance = new TextmagicRest.BadRequestResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('BadRequestResponse', function() {
     it('should create an instance of BadRequestResponse', function() {
       // uncomment below and update the code to test BadRequestResponse
-      //var instance = new TextmagicClient.BadRequestResponse();
-      //expect(instance).to.be.a(TextmagicClient.BadRequestResponse);
+      //var instance = new TextmagicRest.BadRequestResponse();
+      //expect(instance).to.be.a(TextmagicRest.BadRequestResponse);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new TextmagicClient.BadRequestResponse();
+      //var instance = new TextmagicRest.BadRequestResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new TextmagicClient.BadRequestResponse();
+      //var instance = new TextmagicRest.BadRequestResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property errors (base name: "errors")', function() {
       // uncomment below and update the code to test the property errors
-      //var instance = new TextmagicClient.BadRequestResponse();
+      //var instance = new TextmagicRest.BadRequestResponse();
       //expect(instance).to.be();
     });
 

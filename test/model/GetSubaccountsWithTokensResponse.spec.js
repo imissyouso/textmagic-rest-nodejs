@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetSubaccountsWithTokensResponse();
+    instance = new TextmagicRest.GetSubaccountsWithTokensResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,8 +53,8 @@
   describe('GetSubaccountsWithTokensResponse', function() {
     it('should create an instance of GetSubaccountsWithTokensResponse', function() {
       // uncomment below and update the code to test GetSubaccountsWithTokensResponse
-      //var instance = new TextmagicClient.GetSubaccountsWithTokensResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetSubaccountsWithTokensResponse);
+      //var instance = new TextmagicRest.GetSubaccountsWithTokensResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetSubaccountsWithTokensResponse);
     });
 
   });

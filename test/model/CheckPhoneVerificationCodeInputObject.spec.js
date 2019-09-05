@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CheckPhoneVerificationCodeInputObject();
+    instance = new TextmagicRest.CheckPhoneVerificationCodeInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,13 +53,13 @@
   describe('CheckPhoneVerificationCodeInputObject', function() {
     it('should create an instance of CheckPhoneVerificationCodeInputObject', function() {
       // uncomment below and update the code to test CheckPhoneVerificationCodeInputObject
-      //var instance = new TextmagicClient.CheckPhoneVerificationCodeInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CheckPhoneVerificationCodeInputObject);
+      //var instance = new TextmagicRest.CheckPhoneVerificationCodeInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CheckPhoneVerificationCodeInputObject);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new TextmagicClient.CheckPhoneVerificationCodeInputObject();
+      //var instance = new TextmagicRest.CheckPhoneVerificationCodeInputObject();
       //expect(instance).to.be();
     });
 

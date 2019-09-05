@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetSenderSettingsResponse();
+    instance = new TextmagicRest.GetSenderSettingsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('GetSenderSettingsResponse', function() {
     it('should create an instance of GetSenderSettingsResponse', function() {
       // uncomment below and update the code to test GetSenderSettingsResponse
-      //var instance = new TextmagicClient.GetSenderSettingsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetSenderSettingsResponse);
+      //var instance = new TextmagicRest.GetSenderSettingsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetSenderSettingsResponse);
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new TextmagicClient.GetSenderSettingsResponse();
+      //var instance = new TextmagicRest.GetSenderSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property special (base name: "special")', function() {
       // uncomment below and update the code to test the property special
-      //var instance = new TextmagicClient.GetSenderSettingsResponse();
+      //var instance = new TextmagicRest.GetSenderSettingsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property other (base name: "other")', function() {
       // uncomment below and update the code to test the property other
-      //var instance = new TextmagicClient.GetSenderSettingsResponse();
+      //var instance = new TextmagicRest.GetSenderSettingsResponse();
       //expect(instance).to.be();
     });
 

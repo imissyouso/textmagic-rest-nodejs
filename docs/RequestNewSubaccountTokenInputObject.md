@@ -1,4 +1,4 @@
-# TextmagicClient.RequestNewSubaccountTokenInputObject
+# TextmagicRest.RequestNewSubaccountTokenInputObject
 
 ## Properties
 Name | Type | Description | Notes

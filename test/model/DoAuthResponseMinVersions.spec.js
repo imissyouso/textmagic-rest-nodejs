@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DoAuthResponseMinVersions();
+    instance = new TextmagicRest.DoAuthResponseMinVersions();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,25 +53,25 @@
   describe('DoAuthResponseMinVersions', function() {
     it('should create an instance of DoAuthResponseMinVersions', function() {
       // uncomment below and update the code to test DoAuthResponseMinVersions
-      //var instance = new TextmagicClient.DoAuthResponseMinVersions();
-      //expect(instance).to.be.a(TextmagicClient.DoAuthResponseMinVersions);
+      //var instance = new TextmagicRest.DoAuthResponseMinVersions();
+      //expect(instance).to.be.a(TextmagicRest.DoAuthResponseMinVersions);
     });
 
     it('should have the property ios (base name: "ios")', function() {
       // uncomment below and update the code to test the property ios
-      //var instance = new TextmagicClient.DoAuthResponseMinVersions();
+      //var instance = new TextmagicRest.DoAuthResponseMinVersions();
       //expect(instance).to.be();
     });
 
     it('should have the property android (base name: "android")', function() {
       // uncomment below and update the code to test the property android
-      //var instance = new TextmagicClient.DoAuthResponseMinVersions();
+      //var instance = new TextmagicRest.DoAuthResponseMinVersions();
       //expect(instance).to.be();
     });
 
     it('should have the property desktop (base name: "desktop")', function() {
       // uncomment below and update the code to test the property desktop
-      //var instance = new TextmagicClient.DoAuthResponseMinVersions();
+      //var instance = new TextmagicRest.DoAuthResponseMinVersions();
       //expect(instance).to.be();
     });
 

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CreatePushTokenInputObject();
+    instance = new TextmagicRest.CreatePushTokenInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('CreatePushTokenInputObject', function() {
     it('should create an instance of CreatePushTokenInputObject', function() {
       // uncomment below and update the code to test CreatePushTokenInputObject
-      //var instance = new TextmagicClient.CreatePushTokenInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CreatePushTokenInputObject);
+      //var instance = new TextmagicRest.CreatePushTokenInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CreatePushTokenInputObject);
     });
 
     it('should have the property deviceId (base name: "deviceId")', function() {
       // uncomment below and update the code to test the property deviceId
-      //var instance = new TextmagicClient.CreatePushTokenInputObject();
+      //var instance = new TextmagicRest.CreatePushTokenInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property pushServiceType (base name: "pushServiceType")', function() {
       // uncomment below and update the code to test the property pushServiceType
-      //var instance = new TextmagicClient.CreatePushTokenInputObject();
+      //var instance = new TextmagicRest.CreatePushTokenInputObject();
       //expect(instance).to.be();
     });
 

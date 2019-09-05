@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Chat();
+    instance = new TextmagicRest.Chat();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,97 +53,97 @@
   describe('Chat', function() {
     it('should create an instance of Chat', function() {
       // uncomment below and update the code to test Chat
-      //var instance = new TextmagicClient.Chat();
-      //expect(instance).to.be.a(TextmagicClient.Chat);
+      //var instance = new TextmagicRest.Chat();
+      //expect(instance).to.be.a(TextmagicRest.Chat);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property originalId (base name: "originalId")', function() {
       // uncomment below and update the code to test the property originalId
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property contact (base name: "contact")', function() {
       // uncomment below and update the code to test the property contact
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property unsubscribedContactId (base name: "unsubscribedContactId")', function() {
       // uncomment below and update the code to test the property unsubscribedContactId
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property unread (base name: "unread")', function() {
       // uncomment below and update the code to test the property unread
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property updatedAt (base name: "updatedAt")', function() {
       // uncomment below and update the code to test the property updatedAt
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property mute (base name: "mute")', function() {
       // uncomment below and update the code to test the property mute
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property lastMessage (base name: "lastMessage")', function() {
       // uncomment below and update the code to test the property lastMessage
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property direction (base name: "direction")', function() {
       // uncomment below and update the code to test the property direction
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property from (base name: "from")', function() {
       // uncomment below and update the code to test the property from
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property mutedUntil (base name: "mutedUntil")', function() {
       // uncomment below and update the code to test the property mutedUntil
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property timeLeftMute (base name: "timeLeftMute")', function() {
       // uncomment below and update the code to test the property timeLeftMute
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.Chat();
+      //var instance = new TextmagicRest.Chat();
       //expect(instance).to.be();
     });
 

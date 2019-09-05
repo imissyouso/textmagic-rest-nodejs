@@ -1,4 +1,4 @@
-# TextmagicClient.DoAuthResponseMinVersions
+# TextmagicRest.DoAuthResponseMinVersions
 
 ## Properties
 Name | Type | Description | Notes

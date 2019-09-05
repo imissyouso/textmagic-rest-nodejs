@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.BulkSession();
+    instance = new TextmagicRest.BulkSession();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,49 +53,49 @@
   describe('BulkSession', function() {
     it('should create an instance of BulkSession', function() {
       // uncomment below and update the code to test BulkSession
-      //var instance = new TextmagicClient.BulkSession();
-      //expect(instance).to.be.a(TextmagicClient.BulkSession);
+      //var instance = new TextmagicRest.BulkSession();
+      //expect(instance).to.be.a(TextmagicRest.BulkSession);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.BulkSession();
+      //var instance = new TextmagicRest.BulkSession();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.BulkSession();
+      //var instance = new TextmagicRest.BulkSession();
       //expect(instance).to.be();
     });
 
     it('should have the property itemsProcessed (base name: "itemsProcessed")', function() {
       // uncomment below and update the code to test the property itemsProcessed
-      //var instance = new TextmagicClient.BulkSession();
+      //var instance = new TextmagicRest.BulkSession();
       //expect(instance).to.be();
     });
 
     it('should have the property itemsTotal (base name: "itemsTotal")', function() {
       // uncomment below and update the code to test the property itemsTotal
-      //var instance = new TextmagicClient.BulkSession();
+      //var instance = new TextmagicRest.BulkSession();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instance = new TextmagicClient.BulkSession();
+      //var instance = new TextmagicRest.BulkSession();
       //expect(instance).to.be();
     });
 
     it('should have the property session (base name: "session")', function() {
       // uncomment below and update the code to test the property session
-      //var instance = new TextmagicClient.BulkSession();
+      //var instance = new TextmagicRest.BulkSession();
       //expect(instance).to.be();
     });
 
     it('should have the property text (base name: "text")', function() {
       // uncomment below and update the code to test the property text
-      //var instance = new TextmagicClient.BulkSession();
+      //var instance = new TextmagicRest.BulkSession();
       //expect(instance).to.be();
     });
 

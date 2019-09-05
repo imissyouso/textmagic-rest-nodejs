@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MessagesIcs();
+    instance = new TextmagicRest.MessagesIcs();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,109 +53,109 @@
   describe('MessagesIcs', function() {
     it('should create an instance of MessagesIcs', function() {
       // uncomment below and update the code to test MessagesIcs
-      //var instance = new TextmagicClient.MessagesIcs();
-      //expect(instance).to.be.a(TextmagicClient.MessagesIcs);
+      //var instance = new TextmagicRest.MessagesIcs();
+      //expect(instance).to.be.a(TextmagicRest.MessagesIcs);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property nextSend (base name: "nextSend")', function() {
       // uncomment below and update the code to test the property nextSend
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property rrule (base name: "rrule")', function() {
       // uncomment below and update the code to test the property rrule
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property session (base name: "session")', function() {
       // uncomment below and update the code to test the property session
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property lastSent (base name: "lastSent")', function() {
       // uncomment below and update the code to test the property lastSent
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property contactName (base name: "contactName")', function() {
       // uncomment below and update the code to test the property contactName
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property parameters (base name: "parameters")', function() {
       // uncomment below and update the code to test the property parameters
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property summary (base name: "summary")', function() {
       // uncomment below and update the code to test the property summary
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property textParameters (base name: "textParameters")', function() {
       // uncomment below and update the code to test the property textParameters
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property firstOccurrence (base name: "firstOccurrence")', function() {
       // uncomment below and update the code to test the property firstOccurrence
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property lastOccurrence (base name: "lastOccurrence")', function() {
       // uncomment below and update the code to test the property lastOccurrence
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property recipientsCount (base name: "recipientsCount")', function() {
       // uncomment below and update the code to test the property recipientsCount
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property timezone (base name: "timezone")', function() {
       // uncomment below and update the code to test the property timezone
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property completed (base name: "completed")', function() {
       // uncomment below and update the code to test the property completed
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property avatar (base name: "avatar")', function() {
       // uncomment below and update the code to test the property avatar
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 
     it('should have the property createdAt (base name: "createdAt")', function() {
       // uncomment below and update the code to test the property createdAt
-      //var instance = new TextmagicClient.MessagesIcs();
+      //var instance = new TextmagicRest.MessagesIcs();
       //expect(instance).to.be();
     });
 

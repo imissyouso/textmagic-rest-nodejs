@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UploadMessageAttachmentResponse();
+    instance = new TextmagicRest.UploadMessageAttachmentResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('UploadMessageAttachmentResponse', function() {
     it('should create an instance of UploadMessageAttachmentResponse', function() {
       // uncomment below and update the code to test UploadMessageAttachmentResponse
-      //var instance = new TextmagicClient.UploadMessageAttachmentResponse();
-      //expect(instance).to.be.a(TextmagicClient.UploadMessageAttachmentResponse);
+      //var instance = new TextmagicRest.UploadMessageAttachmentResponse();
+      //expect(instance).to.be.a(TextmagicRest.UploadMessageAttachmentResponse);
     });
 
     it('should have the property chars (base name: "chars")', function() {
       // uncomment below and update the code to test the property chars
-      //var instance = new TextmagicClient.UploadMessageAttachmentResponse();
+      //var instance = new TextmagicRest.UploadMessageAttachmentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instance = new TextmagicClient.UploadMessageAttachmentResponse();
+      //var instance = new TextmagicRest.UploadMessageAttachmentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.UploadMessageAttachmentResponse();
+      //var instance = new TextmagicRest.UploadMessageAttachmentResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
-      //var instance = new TextmagicClient.UploadMessageAttachmentResponse();
+      //var instance = new TextmagicRest.UploadMessageAttachmentResponse();
       //expect(instance).to.be();
     });
 

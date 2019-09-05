@@ -1,4 +1,4 @@
-# TextmagicClient.GetUserListsResponse
+# TextmagicRest.GetUserListsResponse
 
 ## Properties
 Name | Type | Description | Notes

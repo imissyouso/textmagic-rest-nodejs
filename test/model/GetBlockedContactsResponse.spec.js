@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetBlockedContactsResponse();
+    instance = new TextmagicRest.GetBlockedContactsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('GetBlockedContactsResponse', function() {
     it('should create an instance of GetBlockedContactsResponse', function() {
       // uncomment below and update the code to test GetBlockedContactsResponse
-      //var instance = new TextmagicClient.GetBlockedContactsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetBlockedContactsResponse);
+      //var instance = new TextmagicRest.GetBlockedContactsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetBlockedContactsResponse);
     });
 
     it('should have the property page (base name: "page")', function() {
       // uncomment below and update the code to test the property page
-      //var instance = new TextmagicClient.GetBlockedContactsResponse();
+      //var instance = new TextmagicRest.GetBlockedContactsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageCount (base name: "pageCount")', function() {
       // uncomment below and update the code to test the property pageCount
-      //var instance = new TextmagicClient.GetBlockedContactsResponse();
+      //var instance = new TextmagicRest.GetBlockedContactsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new TextmagicClient.GetBlockedContactsResponse();
+      //var instance = new TextmagicRest.GetBlockedContactsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property resources (base name: "resources")', function() {
       // uncomment below and update the code to test the property resources
-      //var instance = new TextmagicClient.GetBlockedContactsResponse();
+      //var instance = new TextmagicRest.GetBlockedContactsResponse();
       //expect(instance).to.be();
     });
 

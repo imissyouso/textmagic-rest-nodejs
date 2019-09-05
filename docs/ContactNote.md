@@ -1,4 +1,4 @@
-# TextmagicClient.ContactNote
+# TextmagicRest.ContactNote
 
 ## Properties
 Name | Type | Description | Notes

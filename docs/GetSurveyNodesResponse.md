@@ -1,4 +1,4 @@
-# TextmagicClient.GetSurveyNodesResponse
+# TextmagicRest.GetSurveyNodesResponse
 
 ## Properties
 Name | Type | Description | Notes

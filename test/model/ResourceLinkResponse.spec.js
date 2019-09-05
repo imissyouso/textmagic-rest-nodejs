@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.ResourceLinkResponse();
+    instance = new TextmagicRest.ResourceLinkResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('ResourceLinkResponse', function() {
     it('should create an instance of ResourceLinkResponse', function() {
       // uncomment below and update the code to test ResourceLinkResponse
-      //var instance = new TextmagicClient.ResourceLinkResponse();
-      //expect(instance).to.be.a(TextmagicClient.ResourceLinkResponse);
+      //var instance = new TextmagicRest.ResourceLinkResponse();
+      //expect(instance).to.be.a(TextmagicRest.ResourceLinkResponse);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.ResourceLinkResponse();
+      //var instance = new TextmagicRest.ResourceLinkResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instance = new TextmagicClient.ResourceLinkResponse();
+      //var instance = new TextmagicRest.ResourceLinkResponse();
       //expect(instance).to.be();
     });
 

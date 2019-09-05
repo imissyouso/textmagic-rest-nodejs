@@ -1,4 +1,4 @@
-# TextmagicClient.UnmuteChatsBulkInputObject
+# TextmagicRest.UnmuteChatsBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

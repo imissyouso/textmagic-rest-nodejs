@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.ContactCustomField();
+    instance = new TextmagicRest.ContactCustomField();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('ContactCustomField', function() {
     it('should create an instance of ContactCustomField', function() {
       // uncomment below and update the code to test ContactCustomField
-      //var instance = new TextmagicClient.ContactCustomField();
-      //expect(instance).to.be.a(TextmagicClient.ContactCustomField);
+      //var instance = new TextmagicRest.ContactCustomField();
+      //expect(instance).to.be.a(TextmagicRest.ContactCustomField);
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new TextmagicClient.ContactCustomField();
+      //var instance = new TextmagicRest.ContactCustomField();
       //expect(instance).to.be();
     });
 
     it('should have the property userCustomField (base name: "userCustomField")', function() {
       // uncomment below and update the code to test the property userCustomField
-      //var instance = new TextmagicClient.ContactCustomField();
+      //var instance = new TextmagicRest.ContactCustomField();
       //expect(instance).to.be();
     });
 

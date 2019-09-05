@@ -1,4 +1,4 @@
-# TextmagicClient.MarkChatsUnreadBulkInputObject
+# TextmagicRest.MarkChatsUnreadBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

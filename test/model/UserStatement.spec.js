@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UserStatement();
+    instance = new TextmagicRest.UserStatement();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,55 +53,55 @@
   describe('UserStatement', function() {
     it('should create an instance of UserStatement', function() {
       // uncomment below and update the code to test UserStatement
-      //var instance = new TextmagicClient.UserStatement();
-      //expect(instance).to.be.a(TextmagicClient.UserStatement);
+      //var instance = new TextmagicRest.UserStatement();
+      //expect(instance).to.be.a(TextmagicRest.UserStatement);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "userId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 
     it('should have the property _date (base name: "date")', function() {
       // uncomment below and update the code to test the property _date
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 
     it('should have the property balance (base name: "balance")', function() {
       // uncomment below and update the code to test the property balance
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 
     it('should have the property delta (base name: "delta")', function() {
       // uncomment below and update the code to test the property delta
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 
     it('should have the property comment (base name: "comment")', function() {
       // uncomment below and update the code to test the property comment
-      //var instance = new TextmagicClient.UserStatement();
+      //var instance = new TextmagicRest.UserStatement();
       //expect(instance).to.be();
     });
 

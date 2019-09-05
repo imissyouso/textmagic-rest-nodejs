@@ -1,4 +1,4 @@
-# TextmagicClient.MuteChatInputObject
+# TextmagicRest.MuteChatInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TextmagicClient.UpdatePasswordInputObject
+# TextmagicRest.UpdatePasswordInputObject
 
 ## Properties
 Name | Type | Description | Notes

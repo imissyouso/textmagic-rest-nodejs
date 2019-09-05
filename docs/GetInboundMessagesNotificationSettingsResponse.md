@@ -1,4 +1,4 @@
-# TextmagicClient.GetInboundMessagesNotificationSettingsResponse
+# TextmagicRest.GetInboundMessagesNotificationSettingsResponse
 
 ## Properties
 Name | Type | Description | Notes

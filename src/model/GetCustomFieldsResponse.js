@@ -23,10 +23,10 @@
     module.exports = factory(require('../ApiClient'), require('./UserCustomField'));
   } else {
     // Browser globals (root is window)
-    if (!root.TextmagicClient) {
-      root.TextmagicClient = {};
+    if (!root.TextmagicRest) {
+      root.TextmagicRest = {};
     }
-    root.TextmagicClient.GetCustomFieldsResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.UserCustomField);
+    root.TextmagicRest.GetCustomFieldsResponse = factory(root.TextmagicRest.ApiClient, root.TextmagicRest.UserCustomField);
   }
 }(this, function(ApiClient, UserCustomField) {
   'use strict';
@@ -37,7 +37,7 @@
   /**
    * The GetCustomFieldsResponse model module.
    * @module model/GetCustomFieldsResponse
-   * @version 1.0.0
+   * @version 2.0.0
    */
 
   /**

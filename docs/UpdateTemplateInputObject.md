@@ -1,4 +1,4 @@
-# TextmagicClient.UpdateTemplateInputObject
+# TextmagicRest.UpdateTemplateInputObject
 
 ## Properties
 Name | Type | Description | Notes

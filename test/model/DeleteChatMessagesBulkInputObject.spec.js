@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.DeleteChatMessagesBulkInputObject();
+    instance = new TextmagicRest.DeleteChatMessagesBulkInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('DeleteChatMessagesBulkInputObject', function() {
     it('should create an instance of DeleteChatMessagesBulkInputObject', function() {
       // uncomment below and update the code to test DeleteChatMessagesBulkInputObject
-      //var instance = new TextmagicClient.DeleteChatMessagesBulkInputObject();
-      //expect(instance).to.be.a(TextmagicClient.DeleteChatMessagesBulkInputObject);
+      //var instance = new TextmagicRest.DeleteChatMessagesBulkInputObject();
+      //expect(instance).to.be.a(TextmagicRest.DeleteChatMessagesBulkInputObject);
     });
 
     it('should have the property inboundIds (base name: "inbound_ids")', function() {
       // uncomment below and update the code to test the property inboundIds
-      //var instance = new TextmagicClient.DeleteChatMessagesBulkInputObject();
+      //var instance = new TextmagicRest.DeleteChatMessagesBulkInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property sentIds (base name: "sent_ids")', function() {
       // uncomment below and update the code to test the property sentIds
-      //var instance = new TextmagicClient.DeleteChatMessagesBulkInputObject();
+      //var instance = new TextmagicRest.DeleteChatMessagesBulkInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property callsIds (base name: "calls_ids")', function() {
       // uncomment below and update the code to test the property callsIds
-      //var instance = new TextmagicClient.DeleteChatMessagesBulkInputObject();
+      //var instance = new TextmagicRest.DeleteChatMessagesBulkInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property all (base name: "all")', function() {
       // uncomment below and update the code to test the property all
-      //var instance = new TextmagicClient.DeleteChatMessagesBulkInputObject();
+      //var instance = new TextmagicRest.DeleteChatMessagesBulkInputObject();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# TextmagicClient.Conversation
+# TextmagicRest.Conversation
 
 ## Properties
 Name | Type | Description | Notes

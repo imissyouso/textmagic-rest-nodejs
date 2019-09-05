@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
+    instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,43 +53,43 @@
   describe('UpdateBalanceNotificationSettingsInputObject', function() {
     it('should create an instance of UpdateBalanceNotificationSettingsInputObject', function() {
       // uncomment below and update the code to test UpdateBalanceNotificationSettingsInputObject
-      //var instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
-      //expect(instance).to.be.a(TextmagicClient.UpdateBalanceNotificationSettingsInputObject);
+      //var instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
+      //expect(instance).to.be.a(TextmagicRest.UpdateBalanceNotificationSettingsInputObject);
     });
 
     it('should have the property lowBalanceNotification (base name: "lowBalanceNotification")', function() {
       // uncomment below and update the code to test the property lowBalanceNotification
-      //var instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertBalance (base name: "alertBalance")', function() {
       // uncomment below and update the code to test the property alertBalance
-      //var instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertPhone (base name: "alertPhone")', function() {
       // uncomment below and update the code to test the property alertPhone
-      //var instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail1 (base name: "alertEmail1")', function() {
       // uncomment below and update the code to test the property alertEmail1
-      //var instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail2 (base name: "alertEmail2")', function() {
       // uncomment below and update the code to test the property alertEmail2
-      //var instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property alertEmail3 (base name: "alertEmail3")', function() {
       // uncomment below and update the code to test the property alertEmail3
-      //var instance = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject();
+      //var instance = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject();
       //expect(instance).to.be();
     });
 

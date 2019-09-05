@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetSurveyNodesResponse();
+    instance = new TextmagicRest.GetSurveyNodesResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('GetSurveyNodesResponse', function() {
     it('should create an instance of GetSurveyNodesResponse', function() {
       // uncomment below and update the code to test GetSurveyNodesResponse
-      //var instance = new TextmagicClient.GetSurveyNodesResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetSurveyNodesResponse);
+      //var instance = new TextmagicRest.GetSurveyNodesResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetSurveyNodesResponse);
     });
 
     it('should have the property nodes (base name: "nodes")', function() {
       // uncomment below and update the code to test the property nodes
-      //var instance = new TextmagicClient.GetSurveyNodesResponse();
+      //var instance = new TextmagicRest.GetSurveyNodesResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property rows (base name: "rows")', function() {
       // uncomment below and update the code to test the property rows
-      //var instance = new TextmagicClient.GetSurveyNodesResponse();
+      //var instance = new TextmagicRest.GetSurveyNodesResponse();
       //expect(instance).to.be();
     });
 

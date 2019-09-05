@@ -1,4 +1,4 @@
-# TextmagicClient.SubaccountWithToken
+# TextmagicRest.SubaccountWithToken
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.ForwardedCall();
+    instance = new TextmagicRest.ForwardedCall();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,37 +53,37 @@
   describe('ForwardedCall', function() {
     it('should create an instance of ForwardedCall', function() {
       // uncomment below and update the code to test ForwardedCall
-      //var instance = new TextmagicClient.ForwardedCall();
-      //expect(instance).to.be.a(TextmagicClient.ForwardedCall);
+      //var instance = new TextmagicRest.ForwardedCall();
+      //expect(instance).to.be.a(TextmagicRest.ForwardedCall);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.ForwardedCall();
+      //var instance = new TextmagicRest.ForwardedCall();
       //expect(instance).to.be();
     });
 
     it('should have the property callTime (base name: "callTime")', function() {
       // uncomment below and update the code to test the property callTime
-      //var instance = new TextmagicClient.ForwardedCall();
+      //var instance = new TextmagicRest.ForwardedCall();
       //expect(instance).to.be();
     });
 
     it('should have the property caller (base name: "caller")', function() {
       // uncomment below and update the code to test the property caller
-      //var instance = new TextmagicClient.ForwardedCall();
+      //var instance = new TextmagicRest.ForwardedCall();
       //expect(instance).to.be();
     });
 
     it('should have the property via (base name: "via")', function() {
       // uncomment below and update the code to test the property via
-      //var instance = new TextmagicClient.ForwardedCall();
+      //var instance = new TextmagicRest.ForwardedCall();
       //expect(instance).to.be();
     });
 
     it('should have the property receiver (base name: "receiver")', function() {
       // uncomment below and update the code to test the property receiver
-      //var instance = new TextmagicClient.ForwardedCall();
+      //var instance = new TextmagicRest.ForwardedCall();
       //expect(instance).to.be();
     });
 

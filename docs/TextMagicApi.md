@@ -1,4 +1,4 @@
-# TextmagicClient.TextMagicApi
+# TextmagicRest.TextMagicApi
 
 All URIs are relative to *http://my.textmagic.com*
 
@@ -187,17 +187,17 @@ Assign contacts to the specified list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var assignContactsToListInputObject = new TextmagicClient.AssignContactsToListInputObject(); // AssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
+var assignContactsToListInputObject = new TextmagicRest.AssignContactsToListInputObject(); // AssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
 
 var id = 1; // Number | 
 
@@ -237,17 +237,17 @@ Block contact from inbound and outbound communication by phone number.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var blockContactInputObject = new TextmagicClient.BlockContactInputObject(); // BlockContactInputObject | 
+var blockContactInputObject = new TextmagicRest.BlockContactInputObject(); // BlockContactInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -288,17 +288,17 @@ Buy a dedicated number and assign it to the specified account.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var buyDedicatedNumberInputObject = new TextmagicClient.BuyDedicatedNumberInputObject(); // BuyDedicatedNumberInputObject | 
+var buyDedicatedNumberInputObject = new TextmagicRest.BuyDedicatedNumberInputObject(); // BuyDedicatedNumberInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -339,15 +339,15 @@ Cancel a survey.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -386,17 +386,17 @@ Check user phone verification code
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var checkPhoneVerificationCodeInputObject = new TextmagicClient.CheckPhoneVerificationCodeInputObject(); // CheckPhoneVerificationCodeInputObject | 
+var checkPhoneVerificationCodeInputObject = new TextmagicRest.CheckPhoneVerificationCodeInputObject(); // CheckPhoneVerificationCodeInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -437,17 +437,17 @@ Reset list members to the specified contacts.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var clearAndAssignContactsToListInputObject = new TextmagicClient.ClearAndAssignContactsToListInputObject(); // ClearAndAssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
+var clearAndAssignContactsToListInputObject = new TextmagicRest.ClearAndAssignContactsToListInputObject(); // ClearAndAssignContactsToListInputObject | Contact ID(s), separated by comma or 'all' to add all contacts belonging to the current user
 
 var id = 1; // Number | 
 
@@ -487,17 +487,17 @@ Close chats by chat ids or close all chats
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var closeChatsBulkInputObject = new TextmagicClient.CloseChatsBulkInputObject(); // CloseChatsBulkInputObject | 
+var closeChatsBulkInputObject = new TextmagicRest.CloseChatsBulkInputObject(); // CloseChatsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -538,15 +538,15 @@ Close all chats that have no unread messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.closeReadChats().then(function() {
   console.log('API called successfully.');
 }, function(error) {
@@ -579,15 +579,15 @@ Close subaccount.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -626,17 +626,17 @@ Create a new contact from the submitted data.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createContactInputObject = new TextmagicClient.CreateContactInputObject(); // CreateContactInputObject | 
+var createContactInputObject = new TextmagicRest.CreateContactInputObject(); // CreateContactInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -677,17 +677,17 @@ Create a new contact note.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createContactNoteInputObject = new TextmagicClient.CreateContactNoteInputObject(); // CreateContactNoteInputObject | 
+var createContactNoteInputObject = new TextmagicRest.CreateContactNoteInputObject(); // CreateContactNoteInputObject | 
 
 var id = 56; // Number | 
 
@@ -731,17 +731,17 @@ Create a new custom field from the submitted data.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createCustomFieldInputObject = new TextmagicClient.CreateCustomFieldInputObject(); // CreateCustomFieldInputObject | 
+var createCustomFieldInputObject = new TextmagicRest.CreateCustomFieldInputObject(); // CreateCustomFieldInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -782,17 +782,17 @@ Create a new list from the submitted data.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createListInputObject = new TextmagicClient.CreateListInputObject(); // CreateListInputObject | 
+var createListInputObject = new TextmagicRest.CreateListInputObject(); // CreateListInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -833,17 +833,17 @@ Add or update a device token.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createPushTokenInputObject = new TextmagicClient.CreatePushTokenInputObject(); // CreatePushTokenInputObject | 
+var createPushTokenInputObject = new TextmagicRest.CreatePushTokenInputObject(); // CreatePushTokenInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -884,17 +884,17 @@ Create a new survey from the submitted data.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createSurveyInputObject = new TextmagicClient.CreateSurveyInputObject(); // CreateSurveyInputObject | 
+var createSurveyInputObject = new TextmagicRest.CreateSurveyInputObject(); // CreateSurveyInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -935,17 +935,17 @@ Create a new node from the submitted data.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createSurveyNodeInputObject = new TextmagicClient.CreateSurveyNodeInputObject(); // CreateSurveyNodeInputObject | 
+var createSurveyNodeInputObject = new TextmagicRest.CreateSurveyNodeInputObject(); // CreateSurveyNodeInputObject | 
 
 var id = 1; // Number | 
 
@@ -989,17 +989,17 @@ Create a new template from the submitted data.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var createTemplateInputObject = new TextmagicClient.CreateTemplateInputObject(); // CreateTemplateInputObject | 
+var createTemplateInputObject = new TextmagicRest.CreateTemplateInputObject(); // CreateTemplateInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -1040,15 +1040,15 @@ Delete all contacts.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.deleteAllContacts().then(function() {
   console.log('API called successfully.');
 }, function(error) {
@@ -1083,15 +1083,15 @@ Delete all messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.deleteAllOutboundMessages().then(function() {
   console.log('API called successfully.');
 }, function(error) {
@@ -1124,15 +1124,15 @@ Delete an avatar for the current user.\\
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.deleteAvatar().then(function() {
   console.log('API called successfully.');
 }, function(error) {
@@ -1165,17 +1165,17 @@ Delete messages from chat by given messages ID(s).
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteChatMessagesBulkInputObject = new TextmagicClient.DeleteChatMessagesBulkInputObject(); // DeleteChatMessagesBulkInputObject | 
+var deleteChatMessagesBulkInputObject = new TextmagicRest.DeleteChatMessagesBulkInputObject(); // DeleteChatMessagesBulkInputObject | 
 
 var id = 1; // Number | 
 
@@ -1219,17 +1219,17 @@ Delete chats by given ID(s) or delete all chats.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteChatsBulkInputObject = new TextmagicClient.DeleteChatsBulkInputObject(); // DeleteChatsBulkInputObject | 
+var deleteChatsBulkInputObject = new TextmagicRest.DeleteChatsBulkInputObject(); // DeleteChatsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -1270,15 +1270,15 @@ Delete a single contact.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -1317,15 +1317,15 @@ Delete an avatar for the contact.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 56; // Number | 
 
@@ -1364,15 +1364,15 @@ Delete a single contact note.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -1411,19 +1411,19 @@ Delete contact note by given ID(s) or delete all contact notes.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
-var deleteContactNotesBulkInputObject = new TextmagicClient.DeleteContactNotesBulkInputObject(); // DeleteContactNotesBulkInputObject | 
+var deleteContactNotesBulkInputObject = new TextmagicRest.DeleteContactNotesBulkInputObject(); // DeleteContactNotesBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -1465,17 +1465,17 @@ Delete contact by given ID(s) or delete all contacts.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteContactsByIdsInputObject = new TextmagicClient.DeleteContactsByIdsInputObject(); // DeleteContactsByIdsInputObject | 
+var deleteContactsByIdsInputObject = new TextmagicRest.DeleteContactsByIdsInputObject(); // DeleteContactsByIdsInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -1516,17 +1516,17 @@ Unassign contacts from the specified list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteContacsFromListObject = new TextmagicClient.DeleteContacsFromListObject(); // DeleteContacsFromListObject | Contact ID(s), separated by comma
+var deleteContacsFromListObject = new TextmagicRest.DeleteContacsFromListObject(); // DeleteContacsFromListObject | Contact ID(s), separated by comma
 
 var id = 1; // Number | 
 
@@ -1566,15 +1566,15 @@ Delete a single custom field.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -1613,15 +1613,15 @@ Cancel dedicated number subscription.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -1660,15 +1660,15 @@ Delete the incoming message.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -1707,17 +1707,17 @@ Delete inbound messages by given ID(s) or delete all inbound messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteInboundMessagesBulkInputObject = new TextmagicClient.DeleteInboundMessagesBulkInputObject(); // DeleteInboundMessagesBulkInputObject | 
+var deleteInboundMessagesBulkInputObject = new TextmagicRest.DeleteInboundMessagesBulkInputObject(); // DeleteInboundMessagesBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -1758,15 +1758,15 @@ Delete a single list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -1805,15 +1805,15 @@ Delete an avatar for the list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -1852,17 +1852,17 @@ Delete contact from list by given ID(s) or all contacts from list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteListContactsBulkInputObject = new TextmagicClient.DeleteListContactsBulkInputObject(); // DeleteListContactsBulkInputObject | 
+var deleteListContactsBulkInputObject = new TextmagicRest.DeleteListContactsBulkInputObject(); // DeleteListContactsBulkInputObject | 
 
 var id = 1; // Number | 
 
@@ -1906,17 +1906,17 @@ Delete list by given ID(s) or delete all lists.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteListsBulkInputObject = new TextmagicClient.DeleteListsBulkInputObject(); // DeleteListsBulkInputObject | 
+var deleteListsBulkInputObject = new TextmagicRest.DeleteListsBulkInputObject(); // DeleteListsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -1957,15 +1957,15 @@ Delete a message session, together with all nested messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2004,17 +2004,17 @@ Delete messages sessions, together with all nested messages, by given ID(s) or d
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteMessageSessionsBulkInputObject = new TextmagicClient.DeleteMessageSessionsBulkInputObject(); // DeleteMessageSessionsBulkInputObject | 
+var deleteMessageSessionsBulkInputObject = new TextmagicRest.DeleteMessageSessionsBulkInputObject(); // DeleteMessageSessionsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -2057,15 +2057,15 @@ Delete a single message.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2106,17 +2106,17 @@ Delete outbound messages by given ID(s) or delete all outbound messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteOutboundMessagesBulkInputObject = new TextmagicClient.DeleteOutboundMessagesBulkInputObject(); // DeleteOutboundMessagesBulkInputObject | 
+var deleteOutboundMessagesBulkInputObject = new TextmagicRest.DeleteOutboundMessagesBulkInputObject(); // DeleteOutboundMessagesBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -2157,15 +2157,15 @@ Delete a push notification device token.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var type = "type_example"; // String | 
 
@@ -2207,15 +2207,15 @@ Delete a message session, together with all nested messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2254,17 +2254,17 @@ Delete scheduled messages by given ID(s) or delete all scheduled messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteScheduledMessagesBulkInputObject = new TextmagicClient.DeleteScheduledMessagesBulkInputObject(); // DeleteScheduledMessagesBulkInputObject | 
+var deleteScheduledMessagesBulkInputObject = new TextmagicRest.DeleteScheduledMessagesBulkInputObject(); // DeleteScheduledMessagesBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -2305,15 +2305,15 @@ Delete a Sender ID.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2352,15 +2352,15 @@ Delete a survey.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2399,15 +2399,15 @@ Delete a node.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2446,15 +2446,15 @@ Delete a single template.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2493,17 +2493,17 @@ Delete template by given ID(s) or delete all templates.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var deleteTemplatesBulkInputObject = new TextmagicClient.DeleteTemplatesBulkInputObject(); // DeleteTemplatesBulkInputObject | 
+var deleteTemplatesBulkInputObject = new TextmagicRest.DeleteTemplatesBulkInputObject(); // DeleteTemplatesBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -2546,11 +2546,11 @@ Returning a username and token that you should pass to the all requests (in X-TM
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
+var TextmagicRest = require('textmagic-rest');
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var doAuthInputObject = new TextmagicClient.DoAuthInputObject(); // DoAuthInputObject | 
+var doAuthInputObject = new TextmagicRest.DoAuthInputObject(); // DoAuthInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -2591,15 +2591,15 @@ Carrier Lookup
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var phone = "\"1-541-754-3010\""; // String | 
 
@@ -2642,15 +2642,15 @@ Validate Email address using Email Lookup tool
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var email = "\"andrey.v@textmagic.biz\""; // String | 
 
@@ -2689,15 +2689,15 @@ Duplicate a survey.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -2736,15 +2736,15 @@ Get all bulk sending sessions.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -2786,15 +2786,15 @@ Get all user chats.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'status': "status_example", // String | Fetch only (a)ctive, (c)losed or (d)eleted chats
@@ -2844,15 +2844,15 @@ Get all inbox messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -2898,15 +2898,15 @@ Get all message sending sessions.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -2950,15 +2950,15 @@ Get all user oubound messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -3002,15 +3002,15 @@ Get all scheduled messages.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -3058,15 +3058,15 @@ Get all user templates.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -3108,15 +3108,15 @@ Find available dedicated numbers to buy.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var country = "\"GB\""; // String | Dedicated number country. Two letters in upper case
 
@@ -3161,15 +3161,15 @@ Get all available sender setting options which could be used in \&quot;from\&quo
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'country': "country_example" // String | Return sender setting options available in specific country only. Two upper case characters
@@ -3209,15 +3209,15 @@ Returns the list of available balance options which can be used as a bound to de
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getBalanceNotificationOptions().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -3250,15 +3250,15 @@ Get balance notification settings
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getBalanceNotificationSettings().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -3291,15 +3291,15 @@ Get blocked contacts.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -3347,15 +3347,15 @@ Get bulk message session status.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -3394,15 +3394,15 @@ Fetch callback URL settings
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getCallbackSettings().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -3435,15 +3435,15 @@ Check pricing for a inbound/outbound call.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getCallsPrices().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -3476,15 +3476,15 @@ Get a single chat.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -3523,15 +3523,15 @@ Find chats by phone.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var phone = "phone_example"; // String | 
 
@@ -3576,15 +3576,15 @@ Fetch messages from chat with specified chat id.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -3639,15 +3639,15 @@ Get a single contact.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | The contact id
 
@@ -3686,15 +3686,15 @@ Get a single contact by phone number.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var phone = "phone_example"; // String | 
 
@@ -3733,15 +3733,15 @@ Check is that phone number blocked
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var phone = "9997339956475"; // String | Phone number to check
 
@@ -3780,15 +3780,15 @@ Get contact import session progress.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 56; // Number | 
 
@@ -3827,15 +3827,15 @@ Get a single contact note.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 56; // Number | 
 
@@ -3874,15 +3874,15 @@ Fetch notes assigned to the given contact.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -3927,15 +3927,15 @@ Get all user contacts.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -3983,15 +3983,15 @@ Get contacts autocomplete suggestions by given search term.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var query = "\"A\""; // String | Find recipients by specified search query
 
@@ -4038,15 +4038,15 @@ A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | Given group Id.
 
@@ -4095,15 +4095,15 @@ Return list of countries.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getCountries().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -4136,15 +4136,15 @@ Get current user info.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getCurrentUser().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -4177,15 +4177,15 @@ Get a single custom field.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -4224,15 +4224,15 @@ Get all contact custom fields.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -4274,15 +4274,15 @@ Get a single dedicated number.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -4321,15 +4321,15 @@ Get an array of all rules that are disallowed to the current account.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getDisallowedRules().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -4362,15 +4362,15 @@ Get favorite contacts and lists.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -4414,15 +4414,15 @@ Get all forwarded calls.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -4464,15 +4464,15 @@ Get a single inbox message.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -4511,15 +4511,15 @@ Get inbound messages notification settings
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getInboundMessagesNotificationSettings().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -4552,15 +4552,15 @@ Return account invoices.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -4602,15 +4602,15 @@ Get a single list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -4649,15 +4649,15 @@ Fetch all contacts IDs belonging to the list with ID.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -4696,15 +4696,15 @@ Return lists which contact belongs to.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -4751,15 +4751,15 @@ Get messages preview (with tags merged) up to 100 messages per session.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'text': "\"Test message test\"", // String | Message text. Required if template_id is not set
@@ -4833,15 +4833,15 @@ Check pricing for a new outbound message.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'includeBlocked': 0, // Number | Should we show pricing for the blocked contacts.
@@ -4917,15 +4917,15 @@ Get message prices for all countries.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getMessagePrices().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -4958,15 +4958,15 @@ Get a message session.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5005,15 +5005,15 @@ Get sending session statistics.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5058,15 +5058,15 @@ A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5115,15 +5115,15 @@ Return counters for messaging data views.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getMessagingCounters().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -5156,15 +5156,15 @@ Return messaging statistics.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'by': "off", // String | Group results by specified period: off, day, month or year. Default is off
@@ -5210,15 +5210,15 @@ Get a single outgoing message.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5259,15 +5259,15 @@ Get outbound messages history.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'limit': 10, // Number | How many results to return
@@ -5315,15 +5315,15 @@ Get all device tokens assigned to the current account
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getPushTokens().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -5356,15 +5356,15 @@ Get message schedule.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5403,15 +5403,15 @@ Get a single Sender ID.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5450,15 +5450,15 @@ Get all sender IDs of current user.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -5500,15 +5500,15 @@ Get current user sender settings.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'country': "country_example" // String | Return sender settings enabled for sending to specified country. Two upper case characters
@@ -5548,15 +5548,15 @@ Return account spending statistics.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -5602,15 +5602,15 @@ Get current entities state
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getState().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -5643,15 +5643,15 @@ Get a single subaccount.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5690,15 +5690,15 @@ Get all subaccounts of current user.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -5742,17 +5742,17 @@ When more than one token related to app name, last key will be returned.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var getSubaccountsWithTokensInputObject = new TextmagicClient.GetSubaccountsWithTokensInputObject(); // GetSubaccountsWithTokensInputObject | 
+var getSubaccountsWithTokensInputObject = new TextmagicRest.GetSubaccountsWithTokensInputObject(); // GetSubaccountsWithTokensInputObject | 
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -5797,15 +5797,15 @@ Get a survey by id.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5844,15 +5844,15 @@ Get a node by id.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5891,15 +5891,15 @@ Fetch nodes by given survey id.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -5938,15 +5938,15 @@ Get all user surveys.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -5988,15 +5988,15 @@ Get a single template.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -6035,15 +6035,15 @@ Return all available timezone IDs.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'full': 0 // Number | Return full info about timezones in array (0 or 1). Default is 0
@@ -6083,15 +6083,15 @@ Get total amount of unread messages in the current user chats.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getUnreadMessagesTotal().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -6124,15 +6124,15 @@ Get a single unsubscribed contact.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -6171,15 +6171,15 @@ Get all contact have unsubscribed from your communication.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -6221,15 +6221,15 @@ Get user&#39;s dedicated numbers.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -6273,15 +6273,15 @@ Get all user lists.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -6331,15 +6331,15 @@ Get minimal valid apps versions
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.getVersions().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -6372,17 +6372,17 @@ Invite new subaccount.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var inviteSubaccountInputObject = new TextmagicClient.InviteSubaccountInputObject(); // InviteSubaccountInputObject | 
+var inviteSubaccountInputObject = new TextmagicRest.InviteSubaccountInputObject(); // InviteSubaccountInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6423,17 +6423,17 @@ Mark several chats as read by chat ids or mark all chats as read
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var markChatsReadBulkInputObject = new TextmagicClient.MarkChatsReadBulkInputObject(); // MarkChatsReadBulkInputObject | 
+var markChatsReadBulkInputObject = new TextmagicRest.MarkChatsReadBulkInputObject(); // MarkChatsReadBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6474,17 +6474,17 @@ Mark several chats as UNread by chat ids or mark all chats as UNread
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var markChatsUnreadBulkInputObject = new TextmagicClient.MarkChatsUnreadBulkInputObject(); // MarkChatsUnreadBulkInputObject | 
+var markChatsUnreadBulkInputObject = new TextmagicRest.MarkChatsUnreadBulkInputObject(); // MarkChatsUnreadBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6525,17 +6525,17 @@ Merge two question nodes.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var mergeSurveyNodesInputObject = new TextmagicClient.MergeSurveyNodesInputObject(); // MergeSurveyNodesInputObject | 
+var mergeSurveyNodesInputObject = new TextmagicRest.MergeSurveyNodesInputObject(); // MergeSurveyNodesInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6576,17 +6576,17 @@ Set mute mode.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var muteChatInputObject = new TextmagicClient.MuteChatInputObject(); // MuteChatInputObject | 
+var muteChatInputObject = new TextmagicRest.MuteChatInputObject(); // MuteChatInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6627,17 +6627,17 @@ Mute several chats by chat ids or mute all chats
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var muteChatsBulkInputObject = new TextmagicClient.MuteChatsBulkInputObject(); // MuteChatsBulkInputObject | 
+var muteChatsBulkInputObject = new TextmagicRest.MuteChatsBulkInputObject(); // MuteChatsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6678,15 +6678,15 @@ Just does a pong.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.ping().then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
@@ -6719,17 +6719,17 @@ Reopen chats by chat ids or reopen all chats
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var reopenChatsBulkInputObject = new TextmagicClient.ReopenChatsBulkInputObject(); // ReopenChatsBulkInputObject | 
+var reopenChatsBulkInputObject = new TextmagicRest.ReopenChatsBulkInputObject(); // ReopenChatsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6772,17 +6772,17 @@ Returning user object, key and app name.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var requestNewSubaccountTokenInputObject = new TextmagicClient.RequestNewSubaccountTokenInputObject(); // RequestNewSubaccountTokenInputObject | 
+var requestNewSubaccountTokenInputObject = new TextmagicRest.RequestNewSubaccountTokenInputObject(); // RequestNewSubaccountTokenInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6823,17 +6823,17 @@ Request for a new Sender ID.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var requestSenderIdInputObject = new TextmagicClient.RequestSenderIdInputObject(); // RequestSenderIdInputObject | 
+var requestSenderIdInputObject = new TextmagicRest.RequestSenderIdInputObject(); // RequestSenderIdInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -6874,15 +6874,15 @@ Reset a survey flow.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -6921,15 +6921,15 @@ Find chats by inbound or outbound messages text.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -6973,15 +6973,15 @@ Find chats by IDs.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7025,15 +7025,15 @@ Find chats by recipient (contact, list name or phone number).
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7079,15 +7079,15 @@ Find user contacts by given parameters.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7147,15 +7147,15 @@ Find inbound messages by given parameters.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7207,15 +7207,15 @@ Find contact lists by given parameters.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7271,15 +7271,15 @@ Find outbound messages by given parameters.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7333,15 +7333,15 @@ Find scheduled messages by given parameters.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7393,15 +7393,15 @@ Find user templates by given parameters.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
@@ -7449,15 +7449,15 @@ Send user email verification
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.sendEmailVerificationCode().then(function() {
   console.log('API called successfully.');
 }, function(error) {
@@ -7492,17 +7492,17 @@ The main entrypoint to send messages. See examples above for the reference.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var sendMessageInputObject = new TextmagicClient.SendMessageInputObject(); // SendMessageInputObject | 
+var sendMessageInputObject = new TextmagicRest.SendMessageInputObject(); // SendMessageInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7543,15 +7543,15 @@ Send user phone verification
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 apiInstance.sendPhoneVerificationCode().then(function() {
   console.log('API called successfully.');
 }, function(error) {
@@ -7584,17 +7584,17 @@ Set status of the chat given by ID.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var setChatStatusInputObject = new TextmagicClient.SetChatStatusInputObject(); // SetChatStatusInputObject | 
+var setChatStatusInputObject = new TextmagicRest.SetChatStatusInputObject(); // SetChatStatusInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7635,15 +7635,15 @@ Start a survey.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
@@ -7682,17 +7682,17 @@ Unblock contact by phone number.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var unblockContactInputObject = new TextmagicClient.UnblockContactInputObject(); // UnblockContactInputObject | 
+var unblockContactInputObject = new TextmagicRest.UnblockContactInputObject(); // UnblockContactInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7733,17 +7733,17 @@ Unblock several contacts by blocked contact ids or unblock all contacts
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var unblockContactsBulkInputObject = new TextmagicClient.UnblockContactsBulkInputObject(); // UnblockContactsBulkInputObject | 
+var unblockContactsBulkInputObject = new TextmagicRest.UnblockContactsBulkInputObject(); // UnblockContactsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7784,17 +7784,17 @@ Unmute several chats by chat ids or unmute all chats
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var unmuteChatsBulkInputObject = new TextmagicClient.UnmuteChatsBulkInputObject(); // UnmuteChatsBulkInputObject | 
+var unmuteChatsBulkInputObject = new TextmagicRest.UnmuteChatsBulkInputObject(); // UnmuteChatsBulkInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7835,17 +7835,17 @@ Unsubscribe contact from your communication by phone number.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var unsubscribeContactInputObject = new TextmagicClient.UnsubscribeContactInputObject(); // UnsubscribeContactInputObject | 
+var unsubscribeContactInputObject = new TextmagicRest.UnsubscribeContactInputObject(); // UnsubscribeContactInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7886,17 +7886,17 @@ Update balance notification settings
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateBalanceNotificationSettingsInputObject = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject(); // UpdateBalanceNotificationSettingsInputObject | 
+var updateBalanceNotificationSettingsInputObject = new TextmagicRest.UpdateBalanceNotificationSettingsInputObject(); // UpdateBalanceNotificationSettingsInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7937,17 +7937,17 @@ Update callback URL settings
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateCallbackSettingsInputObject = new TextmagicClient.UpdateCallbackSettingsInputObject(); // UpdateCallbackSettingsInputObject | 
+var updateCallbackSettingsInputObject = new TextmagicRest.UpdateCallbackSettingsInputObject(); // UpdateCallbackSettingsInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -7988,17 +7988,17 @@ Update chat desktop notification settings
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateChatDesktopNotificationSettingsInputObject = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject(); // UpdateChatDesktopNotificationSettingsInputObject | 
+var updateChatDesktopNotificationSettingsInputObject = new TextmagicRest.UpdateChatDesktopNotificationSettingsInputObject(); // UpdateChatDesktopNotificationSettingsInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -8039,17 +8039,17 @@ Update existing contact.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateContactInputObject = new TextmagicClient.UpdateContactInputObject(); // UpdateContactInputObject | 
+var updateContactInputObject = new TextmagicRest.UpdateContactInputObject(); // UpdateContactInputObject | 
 
 var id = 1; // Number | 
 
@@ -8093,17 +8093,17 @@ Update existing contact note.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateContactNoteInputObject = new TextmagicClient.UpdateContactNoteInputObject(); // UpdateContactNoteInputObject | 
+var updateContactNoteInputObject = new TextmagicRest.UpdateContactNoteInputObject(); // UpdateContactNoteInputObject | 
 
 var id = 1; // Number | 
 
@@ -8147,17 +8147,17 @@ Update current user info.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateCurrentUserInputObject = new TextmagicClient.UpdateCurrentUserInputObject(); // UpdateCurrentUserInputObject | 
+var updateCurrentUserInputObject = new TextmagicRest.UpdateCurrentUserInputObject(); // UpdateCurrentUserInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -8198,17 +8198,17 @@ Update existing custom field.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateCustomFieldInputObject = new TextmagicClient.UpdateCustomFieldInputObject(); // UpdateCustomFieldInputObject | 
+var updateCustomFieldInputObject = new TextmagicRest.UpdateCustomFieldInputObject(); // UpdateCustomFieldInputObject | 
 
 var id = 1; // Number | 
 
@@ -8252,17 +8252,17 @@ Update contact&#39;s custom field value.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateCustomFieldValueInputObject = new TextmagicClient.UpdateCustomFieldValueInputObject(); // UpdateCustomFieldValueInputObject | 
+var updateCustomFieldValueInputObject = new TextmagicRest.UpdateCustomFieldValueInputObject(); // UpdateCustomFieldValueInputObject | 
 
 var id = "id_example"; // String | 
 
@@ -8306,17 +8306,17 @@ Update inbound messages notification settings
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateInboundMessagesNotificationSettingsInputObject = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject(); // UpdateInboundMessagesNotificationSettingsInputObject | 
+var updateInboundMessagesNotificationSettingsInputObject = new TextmagicRest.UpdateInboundMessagesNotificationSettingsInputObject(); // UpdateInboundMessagesNotificationSettingsInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -8357,20 +8357,20 @@ Update existing list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var id = 1; // Number | 
 
 var opts = { 
-  'updateListObject': new TextmagicClient.UpdateListObject() // UpdateListObject | 
+  'updateListObject': new TextmagicRest.UpdateListObject() // UpdateListObject | 
 };
 apiInstance.updateList(id, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -8408,17 +8408,17 @@ Change user password.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updatePasswordInputObject = new TextmagicClient.UpdatePasswordInputObject(); // UpdatePasswordInputObject | 
+var updatePasswordInputObject = new TextmagicRest.UpdatePasswordInputObject(); // UpdatePasswordInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -8459,17 +8459,17 @@ Change sender settings for specified country.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateSenderSettingInputObject = new TextmagicClient.UpdateSenderSettingInputObject(); // UpdateSenderSettingInputObject | 
+var updateSenderSettingInputObject = new TextmagicRest.UpdateSenderSettingInputObject(); // UpdateSenderSettingInputObject | 
 
 var opts = { 
   'xIgnoreNullValues': true // Boolean | 
@@ -8510,17 +8510,17 @@ Update existing survey.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateSurveyInputObject = new TextmagicClient.UpdateSurveyInputObject(); // UpdateSurveyInputObject | 
+var updateSurveyInputObject = new TextmagicRest.UpdateSurveyInputObject(); // UpdateSurveyInputObject | 
 
 var id = 1; // Number | 
 
@@ -8564,17 +8564,17 @@ Update existing node.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateSurveyNodeInputObject = new TextmagicClient.UpdateSurveyNodeInputObject(); // UpdateSurveyNodeInputObject | 
+var updateSurveyNodeInputObject = new TextmagicRest.UpdateSurveyNodeInputObject(); // UpdateSurveyNodeInputObject | 
 
 var id = 1; // Number | 
 
@@ -8618,17 +8618,17 @@ Update existing template.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
-var updateTemplateInputObject = new TextmagicClient.UpdateTemplateInputObject(); // UpdateTemplateInputObject | 
+var updateTemplateInputObject = new TextmagicRest.UpdateTemplateInputObject(); // UpdateTemplateInputObject | 
 
 var id = 1; // Number | 
 
@@ -8672,15 +8672,15 @@ Add an avatar for the current user.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var image = "/path/to/file.txt"; // File | User avatar. Should be PNG or JPG file not more than 10 MB
 
@@ -8719,15 +8719,15 @@ Add an avatar for the contact.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var image = "/path/to/file.txt"; // File | Contact avatar. Should be PNG or JPG file not more than 10 MB
 
@@ -8769,15 +8769,15 @@ Add an avatar for the list.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var image = "/path/to/file.txt"; // File | List avatar. Should be PNG or JPG file not more than 10 MB
 
@@ -8821,15 +8821,15 @@ Upload a new file to insert it as a link.
 
 ### Example
 ```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
+var TextmagicRest = require('textmagic-rest');
+var defaultClient = TextmagicRest.ApiClient.instance;
 
 // Configure HTTP basic authorization: BasicAuth
 var BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
 BasicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new TextmagicClient.TextMagicApi();
+var apiInstance = new TextmagicRest.TextMagicApi();
 
 var file = "/path/to/file.txt"; // File | Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx & .vcf file formats
 

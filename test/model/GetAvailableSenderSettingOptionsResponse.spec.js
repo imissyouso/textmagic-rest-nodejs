@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetAvailableSenderSettingOptionsResponse();
+    instance = new TextmagicRest.GetAvailableSenderSettingOptionsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('GetAvailableSenderSettingOptionsResponse', function() {
     it('should create an instance of GetAvailableSenderSettingOptionsResponse', function() {
       // uncomment below and update the code to test GetAvailableSenderSettingOptionsResponse
-      //var instance = new TextmagicClient.GetAvailableSenderSettingOptionsResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetAvailableSenderSettingOptionsResponse);
+      //var instance = new TextmagicRest.GetAvailableSenderSettingOptionsResponse();
+      //expect(instance).to.be.a(TextmagicRest.GetAvailableSenderSettingOptionsResponse);
     });
 
     it('should have the property dedicated (base name: "dedicated")', function() {
       // uncomment below and update the code to test the property dedicated
-      //var instance = new TextmagicClient.GetAvailableSenderSettingOptionsResponse();
+      //var instance = new TextmagicRest.GetAvailableSenderSettingOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new TextmagicClient.GetAvailableSenderSettingOptionsResponse();
+      //var instance = new TextmagicRest.GetAvailableSenderSettingOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property shared (base name: "shared")', function() {
       // uncomment below and update the code to test the property shared
-      //var instance = new TextmagicClient.GetAvailableSenderSettingOptionsResponse();
+      //var instance = new TextmagicRest.GetAvailableSenderSettingOptionsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property senderIds (base name: "senderIds")', function() {
       // uncomment below and update the code to test the property senderIds
-      //var instance = new TextmagicClient.GetAvailableSenderSettingOptionsResponse();
+      //var instance = new TextmagicRest.GetAvailableSenderSettingOptionsResponse();
       //expect(instance).to.be();
     });
 

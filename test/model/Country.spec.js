@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Country();
+    instance = new TextmagicRest.Country();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('Country', function() {
     it('should create an instance of Country', function() {
       // uncomment below and update the code to test Country
-      //var instance = new TextmagicClient.Country();
-      //expect(instance).to.be.a(TextmagicClient.Country);
+      //var instance = new TextmagicRest.Country();
+      //expect(instance).to.be.a(TextmagicRest.Country);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Country();
+      //var instance = new TextmagicRest.Country();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.Country();
+      //var instance = new TextmagicRest.Country();
       //expect(instance).to.be();
     });
 

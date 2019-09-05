@@ -1,4 +1,4 @@
-# TextmagicClient.DeleteOutboundMessagesBulkInputObject
+# TextmagicRest.DeleteOutboundMessagesBulkInputObject
 
 ## Properties
 Name | Type | Description | Notes

@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.UnauthorizedResponse();
+    instance = new TextmagicRest.UnauthorizedResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('UnauthorizedResponse', function() {
     it('should create an instance of UnauthorizedResponse', function() {
       // uncomment below and update the code to test UnauthorizedResponse
-      //var instance = new TextmagicClient.UnauthorizedResponse();
-      //expect(instance).to.be.a(TextmagicClient.UnauthorizedResponse);
+      //var instance = new TextmagicRest.UnauthorizedResponse();
+      //expect(instance).to.be.a(TextmagicRest.UnauthorizedResponse);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new TextmagicClient.UnauthorizedResponse();
+      //var instance = new TextmagicRest.UnauthorizedResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new TextmagicClient.UnauthorizedResponse();
+      //var instance = new TextmagicRest.UnauthorizedResponse();
       //expect(instance).to.be();
     });
 

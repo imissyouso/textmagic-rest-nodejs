@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.CreateContactInputObject();
+    instance = new TextmagicRest.CreateContactInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,79 +53,79 @@
   describe('CreateContactInputObject', function() {
     it('should create an instance of CreateContactInputObject', function() {
       // uncomment below and update the code to test CreateContactInputObject
-      //var instance = new TextmagicClient.CreateContactInputObject();
-      //expect(instance).to.be.a(TextmagicClient.CreateContactInputObject);
+      //var instance = new TextmagicRest.CreateContactInputObject();
+      //expect(instance).to.be.a(TextmagicRest.CreateContactInputObject);
     });
 
     it('should have the property firstName (base name: "firstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "lastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property companyName (base name: "companyName")', function() {
       // uncomment below and update the code to test the property companyName
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property lists (base name: "lists")', function() {
       // uncomment below and update the code to test the property lists
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property favorited (base name: "favorited")', function() {
       // uncomment below and update the code to test the property favorited
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property blocked (base name: "blocked")', function() {
       // uncomment below and update the code to test the property blocked
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property customFieldValues (base name: "customFieldValues")', function() {
       // uncomment below and update the code to test the property customFieldValues
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property local (base name: "local")', function() {
       // uncomment below and update the code to test the property local
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.CreateContactInputObject();
+      //var instance = new TextmagicRest.CreateContactInputObject();
       //expect(instance).to.be();
     });
 

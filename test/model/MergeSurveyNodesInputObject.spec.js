@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MergeSurveyNodesInputObject();
+    instance = new TextmagicRest.MergeSurveyNodesInputObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,19 +53,19 @@
   describe('MergeSurveyNodesInputObject', function() {
     it('should create an instance of MergeSurveyNodesInputObject', function() {
       // uncomment below and update the code to test MergeSurveyNodesInputObject
-      //var instance = new TextmagicClient.MergeSurveyNodesInputObject();
-      //expect(instance).to.be.a(TextmagicClient.MergeSurveyNodesInputObject);
+      //var instance = new TextmagicRest.MergeSurveyNodesInputObject();
+      //expect(instance).to.be.a(TextmagicRest.MergeSurveyNodesInputObject);
     });
 
     it('should have the property firstNode (base name: "firstNode")', function() {
       // uncomment below and update the code to test the property firstNode
-      //var instance = new TextmagicClient.MergeSurveyNodesInputObject();
+      //var instance = new TextmagicRest.MergeSurveyNodesInputObject();
       //expect(instance).to.be();
     });
 
     it('should have the property secondNode (base name: "secondNode")', function() {
       // uncomment below and update the code to test the property secondNode
-      //var instance = new TextmagicClient.MergeSurveyNodesInputObject();
+      //var instance = new TextmagicRest.MergeSurveyNodesInputObject();
       //expect(instance).to.be();
     });
 

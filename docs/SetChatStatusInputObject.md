@@ -1,4 +1,4 @@
-# TextmagicClient.SetChatStatusInputObject
+# TextmagicRest.SetChatStatusInputObject
 
 ## Properties
 Name | Type | Description | Notes

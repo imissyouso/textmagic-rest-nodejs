@@ -1,4 +1,4 @@
-# TextmagicClient.User
+# TextmagicRest.User
 
 ## Properties
 Name | Type | Description | Notes

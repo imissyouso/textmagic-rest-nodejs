@@ -1,4 +1,4 @@
-# TextmagicClient.Timezone
+# TextmagicRest.Timezone
 
 ## Properties
 Name | Type | Description | Notes

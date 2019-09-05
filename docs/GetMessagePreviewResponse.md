@@ -1,4 +1,4 @@
-# TextmagicClient.GetMessagePreviewResponse
+# TextmagicRest.GetMessagePreviewResponse
 
 ## Properties
 Name | Type | Description | Notes

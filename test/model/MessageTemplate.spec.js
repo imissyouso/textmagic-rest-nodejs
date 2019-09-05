@@ -23,15 +23,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TextmagicClient);
+    factory(root.expect, root.TextmagicRest);
   }
-}(this, function(expect, TextmagicClient) {
+}(this, function(expect, TextmagicRest) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.MessageTemplate();
+    instance = new TextmagicRest.MessageTemplate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -53,31 +53,31 @@
   describe('MessageTemplate', function() {
     it('should create an instance of MessageTemplate', function() {
       // uncomment below and update the code to test MessageTemplate
-      //var instance = new TextmagicClient.MessageTemplate();
-      //expect(instance).to.be.a(TextmagicClient.MessageTemplate);
+      //var instance = new TextmagicRest.MessageTemplate();
+      //expect(instance).to.be.a(TextmagicRest.MessageTemplate);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.MessageTemplate();
+      //var instance = new TextmagicRest.MessageTemplate();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.MessageTemplate();
+      //var instance = new TextmagicRest.MessageTemplate();
       //expect(instance).to.be();
     });
 
     it('should have the property content (base name: "content")', function() {
       // uncomment below and update the code to test the property content
-      //var instance = new TextmagicClient.MessageTemplate();
+      //var instance = new TextmagicRest.MessageTemplate();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModified (base name: "lastModified")', function() {
       // uncomment below and update the code to test the property lastModified
-      //var instance = new TextmagicClient.MessageTemplate();
+      //var instance = new TextmagicRest.MessageTemplate();
       //expect(instance).to.be();
     });
 
