@@ -7,7 +7,7 @@ For more information, please visit [https://www.textmagic.com/docs/api/](https:/
 ## Installation
 
 ```shell
-npm install imissyouso/textmagic-rest-nodejs --save
+npm install textmagic-client --save
 ```
 
 ### Webpack Configuration
