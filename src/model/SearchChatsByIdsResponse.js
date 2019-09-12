@@ -37,7 +37,7 @@
   /**
    * The SearchChatsByIdsResponse model module.
    * @module model/SearchChatsByIdsResponse
-   * @version 1.0.0
+   * @version 2.0.246
    */
 
   /**

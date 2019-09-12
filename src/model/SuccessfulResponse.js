@@ -37,7 +37,7 @@
   /**
    * The SuccessfulResponse model module.
    * @module model/SuccessfulResponse
-   * @version 1.0.0
+   * @version 2.0.246
    */
 
   /**

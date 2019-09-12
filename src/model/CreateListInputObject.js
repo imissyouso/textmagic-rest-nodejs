@@ -37,7 +37,7 @@
   /**
    * The CreateListInputObject model module.
    * @module model/CreateListInputObject
-   * @version 1.0.0
+   * @version 2.0.246
    */
 
   /**

@@ -37,7 +37,7 @@
   /**
    * The SearchInboundMessagesResponse model module.
    * @module model/SearchInboundMessagesResponse
-   * @version 1.0.0
+   * @version 2.0.246
    */
 
   /**

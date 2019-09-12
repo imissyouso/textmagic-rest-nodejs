@@ -37,7 +37,7 @@
   /**
    * The SearchScheduledMessagesResponse model module.
    * @module model/SearchScheduledMessagesResponse
-   * @version 1.0.0
+   * @version 2.0.246
    */
 
   /**
