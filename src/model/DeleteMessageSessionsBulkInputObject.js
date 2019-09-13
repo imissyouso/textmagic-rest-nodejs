@@ -37,7 +37,7 @@
   /**
    * The DeleteMessageSessionsBulkInputObject model module.
    * @module model/DeleteMessageSessionsBulkInputObject
-   * @version 2.0.246
+   * @version 2.0.247
    */
 
   /**
