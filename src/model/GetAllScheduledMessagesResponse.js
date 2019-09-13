@@ -37,7 +37,7 @@
   /**
    * The GetAllScheduledMessagesResponse model module.
    * @module model/GetAllScheduledMessagesResponse
-   * @version 2.0.253
+   * @version 2.0.254
    */
 
   /**

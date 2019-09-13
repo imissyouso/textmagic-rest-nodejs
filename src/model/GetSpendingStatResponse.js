@@ -37,7 +37,7 @@
   /**
    * The GetSpendingStatResponse model module.
    * @module model/GetSpendingStatResponse
-   * @version 2.0.253
+   * @version 2.0.254
    */
 
   /**

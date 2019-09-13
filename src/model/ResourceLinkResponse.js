@@ -37,7 +37,7 @@
   /**
    * The ResourceLinkResponse model module.
    * @module model/ResourceLinkResponse
-   * @version 2.0.253
+   * @version 2.0.254
    */
 
   /**

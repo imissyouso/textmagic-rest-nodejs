@@ -37,7 +37,7 @@
   /**
    * The SetChatStatusInputObject model module.
    * @module model/SetChatStatusInputObject
-   * @version 2.0.253
+   * @version 2.0.254
    */
 
   /**
