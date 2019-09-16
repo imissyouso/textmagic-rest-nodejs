@@ -37,21 +37,17 @@
   /**
    * The GetListContactsIdsResponse model module.
    * @module model/GetListContactsIdsResponse
-   * @version 2.0.255
+   * @version 2.0.256
    */
 
   /**
    * Constructs a new <code>GetListContactsIdsResponse</code>.
    * @alias module:model/GetListContactsIdsResponse
    * @class
-   * @extends Array
    */
   var exports = function() {
     var _this = this;
-    _this = new Array();
-    Object.setPrototypeOf(_this, exports);
 
-    return _this;
   };
 
   /**
@@ -64,7 +60,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      ApiClient.constructFromObject(data, obj, 'Number');
 
     }
     return obj;
