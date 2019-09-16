@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/MessagingStatItem'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./MessagingStatItem'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.GetMessagingStatResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.MessagingStatItem);
+    root.TextmagicClient.GetMessagingStatResponse = factory(root.TextmagicClient.ApiClient);
   }
-}(this, function(ApiClient, MessagingStatItem) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -37,21 +37,17 @@
   /**
    * The GetMessagingStatResponse model module.
    * @module model/GetMessagingStatResponse
-   * @version 2.0.254
+   * @version 2.0.255
    */
 
   /**
    * Constructs a new <code>GetMessagingStatResponse</code>.
    * @alias module:model/GetMessagingStatResponse
    * @class
-   * @extends Array
    */
   var exports = function() {
     var _this = this;
-    _this = new Array();
-    Object.setPrototypeOf(_this, exports);
 
-    return _this;
   };
 
   /**
@@ -64,7 +60,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      ApiClient.constructFromObject(data, obj, 'MessagingStatItem');
 
     }
     return obj;

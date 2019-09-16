@@ -37,7 +37,7 @@
   /**
    * The MarkChatsReadBulkInputObject model module.
    * @module model/MarkChatsReadBulkInputObject
-   * @version 2.0.254
+   * @version 2.0.255
    */
 
   /**
