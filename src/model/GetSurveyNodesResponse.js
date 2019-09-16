@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/SurveyNode'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./SurveyNode'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.GetSurveyNodesResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.SurveyNode);
+    root.TextmagicClient.GetSurveyNodesResponse = factory(root.TextmagicClient.ApiClient);
   }
-}(this, function(ApiClient, SurveyNode) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -37,15 +37,15 @@
   /**
    * The GetSurveyNodesResponse model module.
    * @module model/GetSurveyNodesResponse
-   * @version 2.0.256
+   * @version 2.0.257
    */
 
   /**
    * Constructs a new <code>GetSurveyNodesResponse</code>.
    * @alias module:model/GetSurveyNodesResponse
    * @class
-   * @param nodes {Array.<module:model/SurveyNode>} 
-   * @param rows {Array.<Array.<Number>>} 
+   * @param nodes {Object} 
+   * @param rows {Object} 
    */
   var exports = function(nodes, rows) {
     var _this = this;
@@ -66,21 +66,21 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('nodes')) {
-        obj['nodes'] = ApiClient.convertToType(data['nodes'], [SurveyNode]);
+        obj['nodes'] = ApiClient.convertToType(data['nodes'], Object);
       }
       if (data.hasOwnProperty('rows')) {
-        obj['rows'] = ApiClient.convertToType(data['rows'], [['Number']]);
+        obj['rows'] = ApiClient.convertToType(data['rows'], Object);
       }
     }
     return obj;
   }
 
   /**
-   * @member {Array.<module:model/SurveyNode>} nodes
+   * @member {Object} nodes
    */
   exports.prototype['nodes'] = undefined;
   /**
-   * @member {Array.<Array.<Number>>} rows
+   * @member {Object} rows
    */
   exports.prototype['rows'] = undefined;
 

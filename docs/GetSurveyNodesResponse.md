@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**nodes** | [**[SurveyNode]**](SurveyNode.md) |  | 
-**rows** | **[[Number]]** |  | 
+**nodes** | **Object** |  | 
+**rows** | **Object** |  | 
 
 
