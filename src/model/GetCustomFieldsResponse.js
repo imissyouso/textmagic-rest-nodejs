@@ -37,7 +37,7 @@
   /**
    * The GetCustomFieldsResponse model module.
    * @module model/GetCustomFieldsResponse
-   * @version 2.0.257
+   * @version 2.0.258
    */
 
   /**

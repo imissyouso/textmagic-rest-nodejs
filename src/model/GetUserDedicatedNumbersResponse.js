@@ -37,7 +37,7 @@
   /**
    * The GetUserDedicatedNumbersResponse model module.
    * @module model/GetUserDedicatedNumbersResponse
-   * @version 2.0.257
+   * @version 2.0.258
    */
 
   /**
