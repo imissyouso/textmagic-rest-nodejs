@@ -37,7 +37,7 @@
   /**
    * The UploadMessageAttachmentResponse model module.
    * @module model/UploadMessageAttachmentResponse
-   * @version 2.0.259
+   * @version 2.0.260
    */
 
   /**
