@@ -37,7 +37,7 @@
   /**
    * The UnblockContactInputObject model module.
    * @module model/UnblockContactInputObject
-   * @version 2.0.289
+   * @version 2.0.290
    */
 
   /**

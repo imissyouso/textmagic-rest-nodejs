@@ -37,7 +37,7 @@
   /**
    * The SearchTemplatesResponse model module.
    * @module model/SearchTemplatesResponse
-   * @version 2.0.289
+   * @version 2.0.290
    */
 
   /**
