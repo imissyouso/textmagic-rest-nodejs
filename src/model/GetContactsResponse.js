@@ -37,7 +37,7 @@
   /**
    * The GetContactsResponse model module.
    * @module model/GetContactsResponse
-   * @version 2.0.284
+   * @version 2.0.285
    */
 
   /**

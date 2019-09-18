@@ -37,7 +37,7 @@
   /**
    * The GetOutboundMessagesHistoryResponse model module.
    * @module model/GetOutboundMessagesHistoryResponse
-   * @version 2.0.284
+   * @version 2.0.285
    */
 
   /**
