@@ -37,7 +37,7 @@
   /**
    * The MergeSurveyNodesInputObject model module.
    * @module model/MergeSurveyNodesInputObject
-   * @version 2.0.270
+   * @version 2.0.271
    */
 
   /**
