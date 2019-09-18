@@ -37,7 +37,7 @@
   /**
    * The GetAllBulkSessionsResponse model module.
    * @module model/GetAllBulkSessionsResponse
-   * @version 2.0.300
+   * @version 2.0.301
    */
 
   /**

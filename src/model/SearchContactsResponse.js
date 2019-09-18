@@ -37,7 +37,7 @@
   /**
    * The SearchContactsResponse model module.
    * @module model/SearchContactsResponse
-   * @version 2.0.300
+   * @version 2.0.301
    */
 
   /**

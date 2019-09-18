@@ -37,7 +37,7 @@
   /**
    * The GetStateResponse model module.
    * @module model/GetStateResponse
-   * @version 2.0.300
+   * @version 2.0.301
    */
 
   /**

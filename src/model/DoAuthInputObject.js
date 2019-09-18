@@ -37,7 +37,7 @@
   /**
    * The DoAuthInputObject model module.
    * @module model/DoAuthInputObject
-   * @version 2.0.300
+   * @version 2.0.301
    */
 
   /**
