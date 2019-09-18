@@ -37,7 +37,7 @@
   /**
    * The GetFavouritesResponse model module.
    * @module model/GetFavouritesResponse
-   * @version 2.0.281
+   * @version 2.0.282
    */
 
   /**

@@ -37,7 +37,7 @@
   /**
    * The MuteChatInputObject model module.
    * @module model/MuteChatInputObject
-   * @version 2.0.281
+   * @version 2.0.282
    */
 
   /**
