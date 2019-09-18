@@ -37,7 +37,7 @@
   /**
    * The GetPushTokensResponse model module.
    * @module model/GetPushTokensResponse
-   * @version 2.0.298
+   * @version 2.0.299
    */
 
   /**
