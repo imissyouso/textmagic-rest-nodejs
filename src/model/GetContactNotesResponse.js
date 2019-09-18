@@ -37,7 +37,7 @@
   /**
    * The GetContactNotesResponse model module.
    * @module model/GetContactNotesResponse
-   * @version 2.0.279
+   * @version 2.0.280
    */
 
   /**
