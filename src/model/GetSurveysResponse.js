@@ -37,7 +37,7 @@
   /**
    * The GetSurveysResponse model module.
    * @module model/GetSurveysResponse
-   * @version 2.0.286
+   * @version 2.0.287
    */
 
   /**

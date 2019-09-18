@@ -37,7 +37,7 @@
   /**
    * The DeleteTemplatesBulkInputObject model module.
    * @module model/DeleteTemplatesBulkInputObject
-   * @version 2.0.286
+   * @version 2.0.287
    */
 
   /**
