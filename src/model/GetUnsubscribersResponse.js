@@ -37,7 +37,7 @@
   /**
    * The GetUnsubscribersResponse model module.
    * @module model/GetUnsubscribersResponse
-   * @version 2.0.294
+   * @version 2.0.295
    */
 
   /**
