@@ -37,7 +37,7 @@
   /**
    * The GetMessagingStatResponse model module.
    * @module model/GetMessagingStatResponse
-   * @version 2.0.306
+   * @version 2.0.307
    */
 
   /**

@@ -37,7 +37,7 @@
   /**
    * The GetListsOfContactResponse model module.
    * @module model/GetListsOfContactResponse
-   * @version 2.0.306
+   * @version 2.0.307
    */
 
   /**

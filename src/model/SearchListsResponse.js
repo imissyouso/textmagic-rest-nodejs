@@ -37,7 +37,7 @@
   /**
    * The SearchListsResponse model module.
    * @module model/SearchListsResponse
-   * @version 2.0.306
+   * @version 2.0.307
    */
 
   /**
