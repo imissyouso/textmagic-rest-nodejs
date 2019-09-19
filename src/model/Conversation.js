@@ -37,7 +37,7 @@
   /**
    * The Conversation model module.
    * @module model/Conversation
-   * @version 2.0.307
+   * @version 2.0.308
    */
 
   /**
