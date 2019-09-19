@@ -37,7 +37,7 @@
   /**
    * The Chat model module.
    * @module model/Chat
-   * @version 2.0.305
+   * @version 2.0.306
    */
 
   /**

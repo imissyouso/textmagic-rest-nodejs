@@ -37,7 +37,7 @@
   /**
    * The DoCarrierLookupResponse model module.
    * @module model/DoCarrierLookupResponse
-   * @version 2.0.305
+   * @version 2.0.306
    */
 
   /**
