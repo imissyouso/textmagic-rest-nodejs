@@ -1,6 +1,6 @@
 {
   "name": "textmagic-client",
-  "version": "1.0.62",
+  "version": "1.0.63",
   "description": "",
   "license": "Apache 2.0",
   "main": "src/index.js",
