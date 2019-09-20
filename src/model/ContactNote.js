@@ -37,7 +37,7 @@
   /**
    * The ContactNote model module.
    * @module model/ContactNote
-   * @version 2.0.309
+   * @version 2.0.310
    */
 
   /**
