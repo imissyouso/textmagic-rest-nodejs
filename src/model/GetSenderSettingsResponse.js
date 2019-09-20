@@ -37,7 +37,7 @@
   /**
    * The GetSenderSettingsResponse model module.
    * @module model/GetSenderSettingsResponse
-   * @version 2.0.320
+   * @version 2.0.322
    */
 
   /**

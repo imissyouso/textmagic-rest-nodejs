@@ -37,7 +37,7 @@
   /**
    * The GetAllTemplatesResponse model module.
    * @module model/GetAllTemplatesResponse
-   * @version 2.0.320
+   * @version 2.0.322
    */
 
   /**

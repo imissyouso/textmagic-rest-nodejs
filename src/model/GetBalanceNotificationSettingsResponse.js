@@ -37,7 +37,7 @@
   /**
    * The GetBalanceNotificationSettingsResponse model module.
    * @module model/GetBalanceNotificationSettingsResponse
-   * @version 2.0.320
+   * @version 2.0.322
    */
 
   /**
