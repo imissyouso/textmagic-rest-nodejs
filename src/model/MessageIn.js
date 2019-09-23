@@ -37,7 +37,7 @@
   /**
    * The MessageIn model module.
    * @module model/MessageIn
-   * @version 2.0.329
+   * @version 2.0.330
    */
 
   /**
