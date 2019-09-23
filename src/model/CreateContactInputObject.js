@@ -37,7 +37,7 @@
   /**
    * The CreateContactInputObject model module.
    * @module model/CreateContactInputObject
-   * @version 2.0.324
+   * @version 2.0.325
    */
 
   /**
