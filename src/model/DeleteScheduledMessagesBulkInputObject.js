@@ -37,7 +37,7 @@
   /**
    * The DeleteScheduledMessagesBulkInputObject model module.
    * @module model/DeleteScheduledMessagesBulkInputObject
-   * @version 2.0.334
+   * @version 2.0.335
    */
 
   /**

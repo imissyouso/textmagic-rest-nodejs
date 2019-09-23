@@ -37,7 +37,7 @@
   /**
    * The GetBlockedContactsResponse model module.
    * @module model/GetBlockedContactsResponse
-   * @version 2.0.334
+   * @version 2.0.335
    */
 
   /**
