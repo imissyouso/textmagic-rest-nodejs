@@ -37,7 +37,7 @@
   /**
    * The UpdatePasswordInputObject model module.
    * @module model/UpdatePasswordInputObject
-   * @version 2.0.332
+   * @version 2.0.333
    */
 
   /**

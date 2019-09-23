@@ -37,7 +37,7 @@
   /**
    * The GetContactImportSessionProgressResponse model module.
    * @module model/GetContactImportSessionProgressResponse
-   * @version 2.0.332
+   * @version 2.0.333
    */
 
   /**
