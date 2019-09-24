@@ -37,7 +37,7 @@
   /**
    * The UnblockContactsBulkInputObject model module.
    * @module model/UnblockContactsBulkInputObject
-   * @version 2.0.341
+   * @version 2.0.343
    */
 
   /**

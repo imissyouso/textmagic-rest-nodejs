@@ -37,7 +37,7 @@
   /**
    * The GetForwardedCallsResponse model module.
    * @module model/GetForwardedCallsResponse
-   * @version 2.0.341
+   * @version 2.0.343
    */
 
   /**
