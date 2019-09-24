@@ -37,7 +37,7 @@
   /**
    * The GetSubaccountsWithTokensInputObject model module.
    * @module model/GetSubaccountsWithTokensInputObject
-   * @version 2.0.350
+   * @version 2.0.351
    */
 
   /**

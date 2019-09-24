@@ -37,7 +37,7 @@
   /**
    * The GetAllChatsResponse model module.
    * @module model/GetAllChatsResponse
-   * @version 2.0.350
+   * @version 2.0.351
    */
 
   /**
