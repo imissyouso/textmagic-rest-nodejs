@@ -37,7 +37,7 @@
   /**
    * The GetChatMessagesResponse model module.
    * @module model/GetChatMessagesResponse
-   * @version 2.0.353
+   * @version 2.0.356
    */
 
   /**
