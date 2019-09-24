@@ -37,7 +37,7 @@
   /**
    * The UpdateSurveyNodeInputObject model module.
    * @module model/UpdateSurveyNodeInputObject
-   * @version 2.0.347
+   * @version 2.0.348
    */
 
   /**

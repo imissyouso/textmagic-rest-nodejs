@@ -37,7 +37,7 @@
   /**
    * The CreateSurveyInputObject model module.
    * @module model/CreateSurveyInputObject
-   * @version 2.0.347
+   * @version 2.0.348
    */
 
   /**
