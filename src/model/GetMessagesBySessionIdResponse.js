@@ -37,7 +37,7 @@
   /**
    * The GetMessagesBySessionIdResponse model module.
    * @module model/GetMessagesBySessionIdResponse
-   * @version 2.0.339
+   * @version 2.0.340
    */
 
   /**
