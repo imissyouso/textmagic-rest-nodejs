@@ -37,7 +37,7 @@
   /**
    * The GetAllOutboundMessagesResponse model module.
    * @module model/GetAllOutboundMessagesResponse
-   * @version 2.0.357
+   * @version 2.0.358
    */
 
   /**
