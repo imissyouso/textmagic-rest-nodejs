@@ -37,7 +37,7 @@
   /**
    * The GetAllMessageSessionsResponse model module.
    * @module model/GetAllMessageSessionsResponse
-   * @version 2.0.336
+   * @version 2.0.337
    */
 
   /**

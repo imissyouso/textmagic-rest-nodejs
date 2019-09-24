@@ -37,7 +37,7 @@
   /**
    * The GroupImage model module.
    * @module model/GroupImage
-   * @version 2.0.336
+   * @version 2.0.337
    */
 
   /**

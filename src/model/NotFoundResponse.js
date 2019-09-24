@@ -37,7 +37,7 @@
   /**
    * The NotFoundResponse model module.
    * @module model/NotFoundResponse
-   * @version 2.0.336
+   * @version 2.0.337
    */
 
   /**

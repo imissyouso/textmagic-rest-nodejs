@@ -37,7 +37,7 @@
   /**
    * The MessageTemplate model module.
    * @module model/MessageTemplate
-   * @version 2.0.336
+   * @version 2.0.337
    */
 
   /**
