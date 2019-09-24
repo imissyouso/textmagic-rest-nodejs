@@ -37,7 +37,7 @@
   /**
    * The UpdateInboundMessagesNotificationSettingsInputObject model module.
    * @module model/UpdateInboundMessagesNotificationSettingsInputObject
-   * @version 2.0.344
+   * @version 2.0.345
    */
 
   /**
