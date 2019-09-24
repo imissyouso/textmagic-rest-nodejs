@@ -37,7 +37,7 @@
   /**
    * The GetVersionsResponse model module.
    * @module model/GetVersionsResponse
-   * @version 2.0.340
+   * @version 2.0.341
    */
 
   /**

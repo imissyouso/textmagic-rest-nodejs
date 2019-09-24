@@ -37,7 +37,7 @@
   /**
    * The GetMessagePriceResponse model module.
    * @module model/GetMessagePriceResponse
-   * @version 2.0.340
+   * @version 2.0.341
    */
 
   /**

@@ -37,7 +37,7 @@
   /**
    * The GetContactsByListIdResponse model module.
    * @module model/GetContactsByListIdResponse
-   * @version 2.0.340
+   * @version 2.0.341
    */
 
   /**
