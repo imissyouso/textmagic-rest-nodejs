@@ -37,7 +37,7 @@
   /**
    * The CreatePushTokenInputObject model module.
    * @module model/CreatePushTokenInputObject
-   * @version 2.0.345
+   * @version 2.0.346
    */
 
   /**

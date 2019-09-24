@@ -1,6 +1,8 @@
 # TextMagic JavaScript SDK
+This library provides you with an easy solution to send SMS and receive replies by integrating TextMagic SMS Gateway to your JavaScript application.
 
-JavaScript client for TextMagic API
+## What is TextMagic?
+TextMagic's application programming interface (API) provides the communication link between your application and TextMagic’s SMS Gateway, allowing you to send and receive text messages and to check the delivery status of text messages you’ve already sent.
 
 For detailed documentation, please visit [http://docs.textmagictesting.com/](http://docs.textmagictesting.com/)
 
@@ -52,3 +54,6 @@ api.sendMessage({
     console.error(err);
 });
 ```
+
+## License
+The library is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
