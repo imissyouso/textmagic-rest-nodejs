@@ -37,7 +37,7 @@
   /**
    * The GetUserListsResponse model module.
    * @module model/GetUserListsResponse
-   * @version 2.0.346
+   * @version 2.0.347
    */
 
   /**

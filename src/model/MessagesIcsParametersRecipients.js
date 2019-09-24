@@ -37,7 +37,7 @@
   /**
    * The MessagesIcsParametersRecipients model module.
    * @module model/MessagesIcsParametersRecipients
-   * @version 2.0.346
+   * @version 2.0.347
    */
 
   /**

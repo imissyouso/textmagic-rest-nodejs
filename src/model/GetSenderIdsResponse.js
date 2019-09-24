@@ -37,7 +37,7 @@
   /**
    * The GetSenderIdsResponse model module.
    * @module model/GetSenderIdsResponse
-   * @version 2.0.346
+   * @version 2.0.347
    */
 
   /**
