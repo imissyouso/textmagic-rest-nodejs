@@ -9,25 +9,7 @@ For detailed documentation and more examples, please visit [http://docs.textmagi
 ## Installation
 
 ```shell
-npm install textmagic-client@2.0.396 --save
-```
-
-### Webpack Configuration
-
-Using Webpack you may encounter the following error: "Module not found: Error:
-Cannot resolve module", most certainly you should disable AMD loader. Add/merge
-the following section to your webpack config:
-
-```javascript
-module: {
-    rules: [
-        {
-            parser: {
-                amd: false
-            }
-        }
-    ]
-}
+npm install textmagic-client@2.0.397 --save
 ```
 
 ## Usage Example
