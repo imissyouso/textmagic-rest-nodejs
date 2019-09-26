@@ -37,7 +37,7 @@
   /**
    * The BulkSession model module.
    * @module model/BulkSession
-   * @version 2.0.401
+   * @version 2.0.406
    */
 
   /**

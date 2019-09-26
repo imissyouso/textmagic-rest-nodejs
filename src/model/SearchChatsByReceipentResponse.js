@@ -37,7 +37,7 @@
   /**
    * The SearchChatsByReceipentResponse model module.
    * @module model/SearchChatsByReceipentResponse
-   * @version 2.0.401
+   * @version 2.0.406
    */
 
   /**

@@ -37,7 +37,7 @@
   /**
    * The GetInvoicesResponse model module.
    * @module model/GetInvoicesResponse
-   * @version 2.0.401
+   * @version 2.0.406
    */
 
   /**
