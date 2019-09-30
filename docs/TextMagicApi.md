@@ -2634,7 +2634,7 @@ Name | Type | Description  | Notes
 
 <a name="getAllBulkSessions"></a>
 # **getAllBulkSessions**
-> GetAllBulkSessionsResponse getAllBulkSessions(opts)
+> GetAllBulkSessionsPaginatedResponse getAllBulkSessions(opts)
 
 Get all bulk sending sessions.
 
@@ -2671,7 +2671,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllBulkSessionsResponse**](GetAllBulkSessionsResponse.md)
+[**GetAllBulkSessionsPaginatedResponse**](GetAllBulkSessionsPaginatedResponse.md)
 
 ### Authorization
 
@@ -2684,7 +2684,7 @@ Name | Type | Description  | Notes
 
 <a name="getAllChats"></a>
 # **getAllChats**
-> GetAllChatsResponse getAllChats(opts)
+> GetAllChatsPaginatedResponse getAllChats(opts)
 
 Get all user chats.
 
@@ -2729,7 +2729,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllChatsResponse**](GetAllChatsResponse.md)
+[**GetAllChatsPaginatedResponse**](GetAllChatsPaginatedResponse.md)
 
 ### Authorization
 
@@ -2742,7 +2742,7 @@ Name | Type | Description  | Notes
 
 <a name="getAllInboundMessages"></a>
 # **getAllInboundMessages**
-> GetAllInboundMessagesResponse getAllInboundMessages(opts)
+> GetAllInboundMessagesPaginatedResponse getAllInboundMessages(opts)
 
 Get all inbox messages.
 
@@ -2783,7 +2783,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllInboundMessagesResponse**](GetAllInboundMessagesResponse.md)
+[**GetAllInboundMessagesPaginatedResponse**](GetAllInboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -2796,7 +2796,7 @@ Name | Type | Description  | Notes
 
 <a name="getAllMessageSessions"></a>
 # **getAllMessageSessions**
-> GetAllMessageSessionsResponse getAllMessageSessions(opts)
+> GetAllMessageSessionsPaginatedResponse getAllMessageSessions(opts)
 
 Get all message sending sessions.
 
@@ -2833,7 +2833,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllMessageSessionsResponse**](GetAllMessageSessionsResponse.md)
+[**GetAllMessageSessionsPaginatedResponse**](GetAllMessageSessionsPaginatedResponse.md)
 
 ### Authorization
 
@@ -2846,7 +2846,7 @@ Name | Type | Description  | Notes
 
 <a name="getAllOutboundMessages"></a>
 # **getAllOutboundMessages**
-> GetAllOutboundMessagesResponse getAllOutboundMessages(opts)
+> GetAllOutboundMessagesPaginatedResponse getAllOutboundMessages(opts)
 
 Get all messages
 
@@ -2887,7 +2887,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllOutboundMessagesResponse**](GetAllOutboundMessagesResponse.md)
+[**GetAllOutboundMessagesPaginatedResponse**](GetAllOutboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -2900,7 +2900,7 @@ Name | Type | Description  | Notes
 
 <a name="getAllScheduledMessages"></a>
 # **getAllScheduledMessages**
-> GetAllScheduledMessagesResponse getAllScheduledMessages(opts)
+> GetAllScheduledMessagesPaginatedResponse getAllScheduledMessages(opts)
 
 Get all scheduled messages.
 
@@ -2943,7 +2943,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllScheduledMessagesResponse**](GetAllScheduledMessagesResponse.md)
+[**GetAllScheduledMessagesPaginatedResponse**](GetAllScheduledMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -2956,7 +2956,7 @@ Name | Type | Description  | Notes
 
 <a name="getAllTemplates"></a>
 # **getAllTemplates**
-> GetAllTemplatesResponse getAllTemplates(opts)
+> GetAllTemplatesPaginatedResponse getAllTemplates(opts)
 
 Get all user templates.
 
@@ -2993,7 +2993,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAllTemplatesResponse**](GetAllTemplatesResponse.md)
+[**GetAllTemplatesPaginatedResponse**](GetAllTemplatesPaginatedResponse.md)
 
 ### Authorization
 
@@ -3189,7 +3189,7 @@ This endpoint does not need any parameter.
 
 <a name="getBlockedContacts"></a>
 # **getBlockedContacts**
-> GetBlockedContactsResponse getBlockedContacts(opts)
+> GetBlockedContactsPaginatedResponse getBlockedContacts(opts)
 
 Get blocked contacts.
 
@@ -3232,7 +3232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetBlockedContactsResponse**](GetBlockedContactsResponse.md)
+[**GetBlockedContactsPaginatedResponse**](GetBlockedContactsPaginatedResponse.md)
 
 ### Authorization
 
@@ -3333,7 +3333,7 @@ This endpoint does not need any parameter.
 
 <a name="getCallsPrices"></a>
 # **getCallsPrices**
-> {&#39;String&#39;: Object} getCallsPrices()
+> GetCallsPricesResponse getCallsPrices()
 
 Check pricing for a inbound/outbound call.
 
@@ -3361,7 +3361,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**{&#39;String&#39;: Object}**
+[**GetCallsPricesResponse**](GetCallsPricesResponse.md)
 
 ### Authorization
 
@@ -3474,7 +3474,7 @@ Name | Type | Description  | Notes
 
 <a name="getChatMessages"></a>
 # **getChatMessages**
-> GetChatMessagesResponse getChatMessages(id, opts)
+> GetChatMessagesPaginatedResponse getChatMessages(id, opts)
 
 Fetch messages from chat with specified chat id.
 
@@ -3524,7 +3524,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetChatMessagesResponse**](GetChatMessagesResponse.md)
+[**GetChatMessagesPaginatedResponse**](GetChatMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -3772,7 +3772,7 @@ Name | Type | Description  | Notes
 
 <a name="getContactNotes"></a>
 # **getContactNotes**
-> GetContactNotesResponse getContactNotes(id, opts)
+> GetContactNotesPaginatedResponse getContactNotes(id, opts)
 
 Fetch notes assigned to the given contact.
 
@@ -3812,7 +3812,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetContactNotesResponse**](GetContactNotesResponse.md)
+[**GetContactNotesPaginatedResponse**](GetContactNotesPaginatedResponse.md)
 
 ### Authorization
 
@@ -3825,7 +3825,7 @@ Name | Type | Description  | Notes
 
 <a name="getContacts"></a>
 # **getContacts**
-> GetContactsResponse getContacts(opts)
+> GetContactsPaginatedResponse getContacts(opts)
 
 Get all user contacts.
 
@@ -3868,7 +3868,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetContactsResponse**](GetContactsResponse.md)
+[**GetContactsPaginatedResponse**](GetContactsPaginatedResponse.md)
 
 ### Authorization
 
@@ -3881,7 +3881,7 @@ Name | Type | Description  | Notes
 
 <a name="getContactsAutocomplete"></a>
 # **getContactsAutocomplete**
-> [GetContactsAutocompleteResponse] getContactsAutocomplete(query, opts)
+> GetContactsAutocompleteResponse getContactsAutocomplete(query, opts)
 
 Get contacts autocomplete suggestions by given search term.
 
@@ -3921,7 +3921,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[GetContactsAutocompleteResponse]**](GetContactsAutocompleteResponse.md)
+[**GetContactsAutocompleteResponse**](GetContactsAutocompleteResponse.md)
 
 ### Authorization
 
@@ -3934,7 +3934,7 @@ Name | Type | Description  | Notes
 
 <a name="getContactsByListId"></a>
 # **getContactsByListId**
-> GetContactsByListIdResponse getContactsByListId(id, opts)
+> GetContactsByListIdPaginatedResponse getContactsByListId(id, opts)
 
 Fetch user contacts by given group id.
 
@@ -3980,7 +3980,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetContactsByListIdResponse**](GetContactsByListIdResponse.md)
+[**GetContactsByListIdPaginatedResponse**](GetContactsByListIdPaginatedResponse.md)
 
 ### Authorization
 
@@ -3993,7 +3993,7 @@ Name | Type | Description  | Notes
 
 <a name="getCountries"></a>
 # **getCountries**
-> [Country] getCountries()
+> GetCountriesResponse getCountries()
 
 Return list of countries.
 
@@ -4021,7 +4021,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**[Country]**](Country.md)
+[**GetCountriesResponse**](GetCountriesResponse.md)
 
 ### Authorization
 
@@ -4122,7 +4122,7 @@ Name | Type | Description  | Notes
 
 <a name="getCustomFields"></a>
 # **getCustomFields**
-> GetCustomFieldsResponse getCustomFields(opts)
+> GetCustomFieldsPaginatedResponse getCustomFields(opts)
 
 Get all contact custom fields.
 
@@ -4159,7 +4159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetCustomFieldsResponse**](GetCustomFieldsResponse.md)
+[**GetCustomFieldsPaginatedResponse**](GetCustomFieldsPaginatedResponse.md)
 
 ### Authorization
 
@@ -4219,7 +4219,7 @@ Name | Type | Description  | Notes
 
 <a name="getDisallowedRules"></a>
 # **getDisallowedRules**
-> [&#39;String&#39;] getDisallowedRules()
+> GetDisallowedRulesResponse getDisallowedRules()
 
 Get an array of all rules that are disallowed to the current account.
 
@@ -4247,7 +4247,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**[&#39;String&#39;]**
+[**GetDisallowedRulesResponse**](GetDisallowedRulesResponse.md)
 
 ### Authorization
 
@@ -4260,7 +4260,7 @@ This endpoint does not need any parameter.
 
 <a name="getFavourites"></a>
 # **getFavourites**
-> GetFavouritesResponse getFavourites(opts)
+> GetFavouritesPaginatedResponse getFavourites(opts)
 
 Get favorite contacts and lists.
 
@@ -4299,7 +4299,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetFavouritesResponse**](GetFavouritesResponse.md)
+[**GetFavouritesPaginatedResponse**](GetFavouritesPaginatedResponse.md)
 
 ### Authorization
 
@@ -4312,7 +4312,7 @@ Name | Type | Description  | Notes
 
 <a name="getForwardedCalls"></a>
 # **getForwardedCalls**
-> GetForwardedCallsResponse getForwardedCalls(opts)
+> GetForwardedCallsPaginatedResponse getForwardedCalls(opts)
 
 Get all forwarded calls.
 
@@ -4349,7 +4349,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetForwardedCallsResponse**](GetForwardedCallsResponse.md)
+[**GetForwardedCallsPaginatedResponse**](GetForwardedCallsPaginatedResponse.md)
 
 ### Authorization
 
@@ -4450,7 +4450,7 @@ This endpoint does not need any parameter.
 
 <a name="getInvoices"></a>
 # **getInvoices**
-> GetInvoicesResponse getInvoices(opts)
+> GetInvoicesPaginatedResponse getInvoices(opts)
 
 Return account invoices.
 
@@ -4487,7 +4487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetInvoicesResponse**](GetInvoicesResponse.md)
+[**GetInvoicesPaginatedResponse**](GetInvoicesPaginatedResponse.md)
 
 ### Authorization
 
@@ -4594,7 +4594,7 @@ Name | Type | Description  | Notes
 
 <a name="getListsOfContact"></a>
 # **getListsOfContact**
-> GetListsOfContactResponse getListsOfContact(id, opts)
+> GetListsOfContactPaginatedResponse getListsOfContact(id, opts)
 
 Return lists which contact belongs to.
 
@@ -4634,7 +4634,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetListsOfContactResponse**](GetListsOfContactResponse.md)
+[**GetListsOfContactPaginatedResponse**](GetListsOfContactPaginatedResponse.md)
 
 ### Authorization
 
@@ -4954,7 +4954,7 @@ Name | Type | Description  | Notes
 
 <a name="getMessagesBySessionId"></a>
 # **getMessagesBySessionId**
-> GetMessagesBySessionIdResponse getMessagesBySessionId(id, opts)
+> GetMessagesBySessionIdPaginatedResponse getMessagesBySessionId(id, opts)
 
 Fetch messages by given session id.
 
@@ -5000,7 +5000,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetMessagesBySessionIdResponse**](GetMessagesBySessionIdResponse.md)
+[**GetMessagesBySessionIdPaginatedResponse**](GetMessagesBySessionIdPaginatedResponse.md)
 
 ### Authorization
 
@@ -5155,7 +5155,7 @@ Name | Type | Description  | Notes
 
 <a name="getOutboundMessagesHistory"></a>
 # **getOutboundMessagesHistory**
-> GetOutboundMessagesHistoryResponse getOutboundMessagesHistory(opts)
+> GetOutboundMessagesHistoryPaginatedResponse getOutboundMessagesHistory(opts)
 
 Get history
 
@@ -5200,7 +5200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetOutboundMessagesHistoryResponse**](GetOutboundMessagesHistoryResponse.md)
+[**GetOutboundMessagesHistoryPaginatedResponse**](GetOutboundMessagesHistoryPaginatedResponse.md)
 
 ### Authorization
 
@@ -5348,7 +5348,7 @@ Name | Type | Description  | Notes
 
 <a name="getSenderIds"></a>
 # **getSenderIds**
-> GetSenderIdsResponse getSenderIds(opts)
+> GetSenderIdsPaginatedResponse getSenderIds(opts)
 
 Get all sender IDs of current user.
 
@@ -5385,7 +5385,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetSenderIdsResponse**](GetSenderIdsResponse.md)
+[**GetSenderIdsPaginatedResponse**](GetSenderIdsPaginatedResponse.md)
 
 ### Authorization
 
@@ -5446,7 +5446,7 @@ Name | Type | Description  | Notes
 
 <a name="getSpendingStat"></a>
 # **getSpendingStat**
-> GetSpendingStatResponse getSpendingStat(opts)
+> GetSpendingStatPaginatedResponse getSpendingStat(opts)
 
 Return account spending statistics.
 
@@ -5487,7 +5487,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetSpendingStatResponse**](GetSpendingStatResponse.md)
+[**GetSpendingStatPaginatedResponse**](GetSpendingStatPaginatedResponse.md)
 
 ### Authorization
 
@@ -5834,7 +5834,7 @@ Name | Type | Description  | Notes
 
 <a name="getSurveys"></a>
 # **getSurveys**
-> GetSurveysResponse getSurveys(opts)
+> GetSurveysPaginatedResponse getSurveys(opts)
 
 Get all user surveys.
 
@@ -5871,7 +5871,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetSurveysResponse**](GetSurveysResponse.md)
+[**GetSurveysPaginatedResponse**](GetSurveysPaginatedResponse.md)
 
 ### Authorization
 
@@ -5931,7 +5931,7 @@ Name | Type | Description  | Notes
 
 <a name="getTimezones"></a>
 # **getTimezones**
-> Object getTimezones(opts)
+> GetTimezonesResponse getTimezones(opts)
 
 Return all available timezone IDs.
 
@@ -5966,7 +5966,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**GetTimezonesResponse**](GetTimezonesResponse.md)
 
 ### Authorization
 
@@ -6067,7 +6067,7 @@ Name | Type | Description  | Notes
 
 <a name="getUnsubscribers"></a>
 # **getUnsubscribers**
-> GetUnsubscribersResponse getUnsubscribers(opts)
+> GetUnsubscribersPaginatedResponse getUnsubscribers(opts)
 
 Get all contact have unsubscribed from your communication.
 
@@ -6104,7 +6104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUnsubscribersResponse**](GetUnsubscribersResponse.md)
+[**GetUnsubscribersPaginatedResponse**](GetUnsubscribersPaginatedResponse.md)
 
 ### Authorization
 
@@ -6117,7 +6117,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserDedicatedNumbers"></a>
 # **getUserDedicatedNumbers**
-> GetUserDedicatedNumbersResponse getUserDedicatedNumbers(opts)
+> GetUserDedicatedNumbersPaginatedResponse getUserDedicatedNumbers(opts)
 
 Get user&#39;s dedicated numbers.
 
@@ -6156,7 +6156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUserDedicatedNumbersResponse**](GetUserDedicatedNumbersResponse.md)
+[**GetUserDedicatedNumbersPaginatedResponse**](GetUserDedicatedNumbersPaginatedResponse.md)
 
 ### Authorization
 
@@ -6169,7 +6169,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserLists"></a>
 # **getUserLists**
-> GetUserListsResponse getUserLists(opts)
+> GetUserListsPaginatedResponse getUserLists(opts)
 
 Get all user lists.
 
@@ -6214,7 +6214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetUserListsResponse**](GetUserListsResponse.md)
+[**GetUserListsPaginatedResponse**](GetUserListsPaginatedResponse.md)
 
 ### Authorization
 
@@ -6781,7 +6781,7 @@ Name | Type | Description  | Notes
 
 <a name="searchChats"></a>
 # **searchChats**
-> SearchChatsResponse searchChats(opts)
+> SearchChatsPaginatedResponse searchChats(opts)
 
 Find chats by inbound or outbound messages text.
 
@@ -6820,7 +6820,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchChatsResponse**](SearchChatsResponse.md)
+[**SearchChatsPaginatedResponse**](SearchChatsPaginatedResponse.md)
 
 ### Authorization
 
@@ -6833,7 +6833,7 @@ Name | Type | Description  | Notes
 
 <a name="searchChatsByIds"></a>
 # **searchChatsByIds**
-> SearchChatsByIdsResponse searchChatsByIds(opts)
+> SearchChatsByIdsPaginatedResponse searchChatsByIds(opts)
 
 Find chats by IDs.
 
@@ -6872,7 +6872,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchChatsByIdsResponse**](SearchChatsByIdsResponse.md)
+[**SearchChatsByIdsPaginatedResponse**](SearchChatsByIdsPaginatedResponse.md)
 
 ### Authorization
 
@@ -6885,7 +6885,7 @@ Name | Type | Description  | Notes
 
 <a name="searchChatsByReceipent"></a>
 # **searchChatsByReceipent**
-> SearchChatsByReceipentResponse searchChatsByReceipent(opts)
+> SearchChatsByReceipentPaginatedResponse searchChatsByReceipent(opts)
 
 Find chats by recipient (contact, list name or phone number).
 
@@ -6926,7 +6926,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchChatsByReceipentResponse**](SearchChatsByReceipentResponse.md)
+[**SearchChatsByReceipentPaginatedResponse**](SearchChatsByReceipentPaginatedResponse.md)
 
 ### Authorization
 
@@ -6939,7 +6939,7 @@ Name | Type | Description  | Notes
 
 <a name="searchContacts"></a>
 # **searchContacts**
-> SearchContactsResponse searchContacts(opts)
+> SearchContactsPaginatedResponse searchContacts(opts)
 
 Find user contacts by given parameters.
 
@@ -6994,7 +6994,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchContactsResponse**](SearchContactsResponse.md)
+[**SearchContactsPaginatedResponse**](SearchContactsPaginatedResponse.md)
 
 ### Authorization
 
@@ -7007,7 +7007,7 @@ Name | Type | Description  | Notes
 
 <a name="searchInboundMessages"></a>
 # **searchInboundMessages**
-> SearchInboundMessagesResponse searchInboundMessages(opts)
+> SearchInboundMessagesPaginatedResponse searchInboundMessages(opts)
 
 Find inbound messages by given parameters.
 
@@ -7054,7 +7054,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchInboundMessagesResponse**](SearchInboundMessagesResponse.md)
+[**SearchInboundMessagesPaginatedResponse**](SearchInboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -7067,7 +7067,7 @@ Name | Type | Description  | Notes
 
 <a name="searchLists"></a>
 # **searchLists**
-> SearchListsResponse searchLists(opts)
+> SearchListsPaginatedResponse searchLists(opts)
 
 Find contact lists by given parameters.
 
@@ -7116,7 +7116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchListsResponse**](SearchListsResponse.md)
+[**SearchListsPaginatedResponse**](SearchListsPaginatedResponse.md)
 
 ### Authorization
 
@@ -7129,7 +7129,7 @@ Name | Type | Description  | Notes
 
 <a name="searchOutboundMessages"></a>
 # **searchOutboundMessages**
-> SearchOutboundMessagesResponse searchOutboundMessages(opts)
+> SearchOutboundMessagesPaginatedResponse searchOutboundMessages(opts)
 
 Find messages
 
@@ -7180,7 +7180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchOutboundMessagesResponse**](SearchOutboundMessagesResponse.md)
+[**SearchOutboundMessagesPaginatedResponse**](SearchOutboundMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -7193,7 +7193,7 @@ Name | Type | Description  | Notes
 
 <a name="searchScheduledMessages"></a>
 # **searchScheduledMessages**
-> SearchScheduledMessagesResponse searchScheduledMessages(opts)
+> SearchScheduledMessagesPaginatedResponse searchScheduledMessages(opts)
 
 Find scheduled messages by given parameters.
 
@@ -7240,7 +7240,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchScheduledMessagesResponse**](SearchScheduledMessagesResponse.md)
+[**SearchScheduledMessagesPaginatedResponse**](SearchScheduledMessagesPaginatedResponse.md)
 
 ### Authorization
 
@@ -7253,7 +7253,7 @@ Name | Type | Description  | Notes
 
 <a name="searchTemplates"></a>
 # **searchTemplates**
-> SearchTemplatesResponse searchTemplates(opts)
+> SearchTemplatesPaginatedResponse searchTemplates(opts)
 
 Find user templates by given parameters.
 
@@ -7296,7 +7296,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SearchTemplatesResponse**](SearchTemplatesResponse.md)
+[**SearchTemplatesPaginatedResponse**](SearchTemplatesPaginatedResponse.md)
 
 ### Authorization
 

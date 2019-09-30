@@ -17,24 +17,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AssignContactsToListInputObject', 'model/BadRequestResponse', 'model/BlockContactInputObject', 'model/BulkSession', 'model/BuyDedicatedNumberInputObject', 'model/Chat', 'model/CheckPhoneVerificationCodeInputObject', 'model/ClearAndAssignContactsToListInputObject', 'model/CloseChatsBulkInputObject', 'model/Contact', 'model/ContactNote', 'model/Country', 'model/CreateContactInputObject', 'model/CreateContactNoteInputObject', 'model/CreateCustomFieldInputObject', 'model/CreateListInputObject', 'model/CreatePushTokenInputObject', 'model/CreateSurveyInputObject', 'model/CreateSurveyNodeInputObject', 'model/CreateTemplateInputObject', 'model/DeleteChatMessagesBulkInputObject', 'model/DeleteChatsBulkInputObject', 'model/DeleteContacsFromListObject', 'model/DeleteContactNotesBulkInputObject', 'model/DeleteContactsByIdsInputObject', 'model/DeleteInboundMessagesBulkInputObject', 'model/DeleteListContactsBulkInputObject', 'model/DeleteListsBulkInputObject', 'model/DeleteMessageSessionsBulkInputObject', 'model/DeleteOutboundMessagesBulkInputObject', 'model/DeleteScheduledMessagesBulkInputObject', 'model/DeleteTemplatesBulkInputObject', 'model/DoAuthInputObject', 'model/DoAuthResponse', 'model/DoCarrierLookupResponse', 'model/DoEmailLookupResponse', 'model/GetAllBulkSessionsResponse', 'model/GetAllChatsResponse', 'model/GetAllInboundMessagesResponse', 'model/GetAllMessageSessionsResponse', 'model/GetAllOutboundMessagesResponse', 'model/GetAllScheduledMessagesResponse', 'model/GetAllTemplatesResponse', 'model/GetAvailableDedicatedNumbersResponse', 'model/GetAvailableSenderSettingOptionsResponse', 'model/GetBalanceNotificationOptionsResponse', 'model/GetBalanceNotificationSettingsResponse', 'model/GetBlockedContactsResponse', 'model/GetCallbackSettingsResponse', 'model/GetChatMessagesResponse', 'model/GetContactImportSessionProgressResponse', 'model/GetContactNotesResponse', 'model/GetContactsAutocompleteResponse', 'model/GetContactsByListIdResponse', 'model/GetContactsResponse', 'model/GetCustomFieldsResponse', 'model/GetFavouritesResponse', 'model/GetForwardedCallsResponse', 'model/GetInboundMessagesNotificationSettingsResponse', 'model/GetInvoicesResponse', 'model/GetListContactsIdsResponse', 'model/GetListsOfContactResponse', 'model/GetMessagePreviewResponse', 'model/GetMessagePriceResponse', 'model/GetMessagePricesResponse', 'model/GetMessageSessionStatResponse', 'model/GetMessagesBySessionIdResponse', 'model/GetMessagingCountersResponse', 'model/GetMessagingStatResponse', 'model/GetOutboundMessagesHistoryResponse', 'model/GetPushTokensResponse', 'model/GetSenderIdsResponse', 'model/GetSenderSettingsResponse', 'model/GetSpendingStatResponse', 'model/GetStateResponse', 'model/GetSubaccountsWithTokensInputObject', 'model/GetSubaccountsWithTokensResponse', 'model/GetSurveyNodesResponse', 'model/GetSurveysResponse', 'model/GetUnreadMessagesTotalResponse', 'model/GetUnsubscribersResponse', 'model/GetUserDedicatedNumbersResponse', 'model/GetUserListsResponse', 'model/GetVersionsResponse', 'model/Group', 'model/InviteSubaccountInputObject', 'model/MarkChatsReadBulkInputObject', 'model/MarkChatsUnreadBulkInputObject', 'model/MergeSurveyNodesInputObject', 'model/MessageIn', 'model/MessageOut', 'model/MessageSession', 'model/MessageTemplate', 'model/MessagesIcs', 'model/MuteChatInputObject', 'model/MuteChatsBulkInputObject', 'model/NotFoundResponse', 'model/PingResponse', 'model/ReopenChatsBulkInputObject', 'model/RequestNewSubaccountTokenInputObject', 'model/RequestSenderIdInputObject', 'model/ResourceLinkResponse', 'model/SearchChatsByIdsResponse', 'model/SearchChatsByReceipentResponse', 'model/SearchChatsResponse', 'model/SearchContactsResponse', 'model/SearchInboundMessagesResponse', 'model/SearchListsResponse', 'model/SearchOutboundMessagesResponse', 'model/SearchScheduledMessagesResponse', 'model/SearchTemplatesResponse', 'model/SendMessageInputObject', 'model/SendMessageResponse', 'model/SenderId', 'model/SetChatStatusInputObject', 'model/Survey', 'model/SurveyNode', 'model/UnauthorizedResponse', 'model/UnblockContactInputObject', 'model/UnblockContactsBulkInputObject', 'model/UnmuteChatsBulkInputObject', 'model/UnsubscribeContactInputObject', 'model/UnsubscribedContact', 'model/UpdateBalanceNotificationSettingsInputObject', 'model/UpdateCallbackSettingsInputObject', 'model/UpdateChatDesktopNotificationSettingsInputObject', 'model/UpdateContactInputObject', 'model/UpdateContactNoteInputObject', 'model/UpdateCurrentUserInputObject', 'model/UpdateCurrentUserResponse', 'model/UpdateCustomFieldInputObject', 'model/UpdateCustomFieldValueInputObject', 'model/UpdateInboundMessagesNotificationSettingsInputObject', 'model/UpdateListObject', 'model/UpdatePasswordInputObject', 'model/UpdateSenderSettingInputObject', 'model/UpdateSurveyInputObject', 'model/UpdateSurveyNodeInputObject', 'model/UpdateTemplateInputObject', 'model/UploadMessageAttachmentResponse', 'model/User', 'model/UserCustomField', 'model/UsersInbound'], factory);
+    define(['ApiClient', 'model/AssignContactsToListInputObject', 'model/BadRequestResponse', 'model/BlockContactInputObject', 'model/BulkSession', 'model/BuyDedicatedNumberInputObject', 'model/Chat', 'model/CheckPhoneVerificationCodeInputObject', 'model/ClearAndAssignContactsToListInputObject', 'model/CloseChatsBulkInputObject', 'model/Contact', 'model/ContactNote', 'model/CreateContactInputObject', 'model/CreateContactNoteInputObject', 'model/CreateCustomFieldInputObject', 'model/CreateListInputObject', 'model/CreatePushTokenInputObject', 'model/CreateSurveyInputObject', 'model/CreateSurveyNodeInputObject', 'model/CreateTemplateInputObject', 'model/DeleteChatMessagesBulkInputObject', 'model/DeleteChatsBulkInputObject', 'model/DeleteContacsFromListObject', 'model/DeleteContactNotesBulkInputObject', 'model/DeleteContactsByIdsInputObject', 'model/DeleteInboundMessagesBulkInputObject', 'model/DeleteListContactsBulkInputObject', 'model/DeleteListsBulkInputObject', 'model/DeleteMessageSessionsBulkInputObject', 'model/DeleteOutboundMessagesBulkInputObject', 'model/DeleteScheduledMessagesBulkInputObject', 'model/DeleteTemplatesBulkInputObject', 'model/DoAuthInputObject', 'model/DoAuthResponse', 'model/DoCarrierLookupResponse', 'model/DoEmailLookupResponse', 'model/GetAllBulkSessionsPaginatedResponse', 'model/GetAllChatsPaginatedResponse', 'model/GetAllInboundMessagesPaginatedResponse', 'model/GetAllMessageSessionsPaginatedResponse', 'model/GetAllOutboundMessagesPaginatedResponse', 'model/GetAllScheduledMessagesPaginatedResponse', 'model/GetAllTemplatesPaginatedResponse', 'model/GetAvailableDedicatedNumbersResponse', 'model/GetAvailableSenderSettingOptionsResponse', 'model/GetBalanceNotificationOptionsResponse', 'model/GetBalanceNotificationSettingsResponse', 'model/GetBlockedContactsPaginatedResponse', 'model/GetCallbackSettingsResponse', 'model/GetCallsPricesResponse', 'model/GetChatMessagesPaginatedResponse', 'model/GetContactImportSessionProgressResponse', 'model/GetContactNotesPaginatedResponse', 'model/GetContactsAutocompleteResponse', 'model/GetContactsByListIdPaginatedResponse', 'model/GetContactsPaginatedResponse', 'model/GetCountriesResponse', 'model/GetCustomFieldsPaginatedResponse', 'model/GetDisallowedRulesResponse', 'model/GetFavouritesPaginatedResponse', 'model/GetForwardedCallsPaginatedResponse', 'model/GetInboundMessagesNotificationSettingsResponse', 'model/GetInvoicesPaginatedResponse', 'model/GetListContactsIdsResponse', 'model/GetListsOfContactPaginatedResponse', 'model/GetMessagePreviewResponse', 'model/GetMessagePriceResponse', 'model/GetMessagePricesResponse', 'model/GetMessageSessionStatResponse', 'model/GetMessagesBySessionIdPaginatedResponse', 'model/GetMessagingCountersResponse', 'model/GetMessagingStatResponse', 'model/GetOutboundMessagesHistoryPaginatedResponse', 'model/GetPushTokensResponse', 'model/GetSenderIdsPaginatedResponse', 'model/GetSenderSettingsResponse', 'model/GetSpendingStatPaginatedResponse', 'model/GetStateResponse', 'model/GetSubaccountsWithTokensInputObject', 'model/GetSubaccountsWithTokensResponse', 'model/GetSurveyNodesResponse', 'model/GetSurveysPaginatedResponse', 'model/GetTimezonesResponse', 'model/GetUnreadMessagesTotalResponse', 'model/GetUnsubscribersPaginatedResponse', 'model/GetUserDedicatedNumbersPaginatedResponse', 'model/GetUserListsPaginatedResponse', 'model/GetVersionsResponse', 'model/Group', 'model/InviteSubaccountInputObject', 'model/MarkChatsReadBulkInputObject', 'model/MarkChatsUnreadBulkInputObject', 'model/MergeSurveyNodesInputObject', 'model/MessageIn', 'model/MessageOut', 'model/MessageSession', 'model/MessageTemplate', 'model/MessagesIcs', 'model/MuteChatInputObject', 'model/MuteChatsBulkInputObject', 'model/NotFoundResponse', 'model/PingResponse', 'model/ReopenChatsBulkInputObject', 'model/RequestNewSubaccountTokenInputObject', 'model/RequestSenderIdInputObject', 'model/ResourceLinkResponse', 'model/SearchChatsByIdsPaginatedResponse', 'model/SearchChatsByReceipentPaginatedResponse', 'model/SearchChatsPaginatedResponse', 'model/SearchContactsPaginatedResponse', 'model/SearchInboundMessagesPaginatedResponse', 'model/SearchListsPaginatedResponse', 'model/SearchOutboundMessagesPaginatedResponse', 'model/SearchScheduledMessagesPaginatedResponse', 'model/SearchTemplatesPaginatedResponse', 'model/SendMessageInputObject', 'model/SendMessageResponse', 'model/SenderId', 'model/SetChatStatusInputObject', 'model/Survey', 'model/SurveyNode', 'model/UnauthorizedResponse', 'model/UnblockContactInputObject', 'model/UnblockContactsBulkInputObject', 'model/UnmuteChatsBulkInputObject', 'model/UnsubscribeContactInputObject', 'model/UnsubscribedContact', 'model/UpdateBalanceNotificationSettingsInputObject', 'model/UpdateCallbackSettingsInputObject', 'model/UpdateChatDesktopNotificationSettingsInputObject', 'model/UpdateContactInputObject', 'model/UpdateContactNoteInputObject', 'model/UpdateCurrentUserInputObject', 'model/UpdateCurrentUserResponse', 'model/UpdateCustomFieldInputObject', 'model/UpdateCustomFieldValueInputObject', 'model/UpdateInboundMessagesNotificationSettingsInputObject', 'model/UpdateListObject', 'model/UpdatePasswordInputObject', 'model/UpdateSenderSettingInputObject', 'model/UpdateSurveyInputObject', 'model/UpdateSurveyNodeInputObject', 'model/UpdateTemplateInputObject', 'model/UploadMessageAttachmentResponse', 'model/User', 'model/UserCustomField', 'model/UsersInbound'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/AssignContactsToListInputObject'), require('../model/BadRequestResponse'), require('../model/BlockContactInputObject'), require('../model/BulkSession'), require('../model/BuyDedicatedNumberInputObject'), require('../model/Chat'), require('../model/CheckPhoneVerificationCodeInputObject'), require('../model/ClearAndAssignContactsToListInputObject'), require('../model/CloseChatsBulkInputObject'), require('../model/Contact'), require('../model/ContactNote'), require('../model/Country'), require('../model/CreateContactInputObject'), require('../model/CreateContactNoteInputObject'), require('../model/CreateCustomFieldInputObject'), require('../model/CreateListInputObject'), require('../model/CreatePushTokenInputObject'), require('../model/CreateSurveyInputObject'), require('../model/CreateSurveyNodeInputObject'), require('../model/CreateTemplateInputObject'), require('../model/DeleteChatMessagesBulkInputObject'), require('../model/DeleteChatsBulkInputObject'), require('../model/DeleteContacsFromListObject'), require('../model/DeleteContactNotesBulkInputObject'), require('../model/DeleteContactsByIdsInputObject'), require('../model/DeleteInboundMessagesBulkInputObject'), require('../model/DeleteListContactsBulkInputObject'), require('../model/DeleteListsBulkInputObject'), require('../model/DeleteMessageSessionsBulkInputObject'), require('../model/DeleteOutboundMessagesBulkInputObject'), require('../model/DeleteScheduledMessagesBulkInputObject'), require('../model/DeleteTemplatesBulkInputObject'), require('../model/DoAuthInputObject'), require('../model/DoAuthResponse'), require('../model/DoCarrierLookupResponse'), require('../model/DoEmailLookupResponse'), require('../model/GetAllBulkSessionsResponse'), require('../model/GetAllChatsResponse'), require('../model/GetAllInboundMessagesResponse'), require('../model/GetAllMessageSessionsResponse'), require('../model/GetAllOutboundMessagesResponse'), require('../model/GetAllScheduledMessagesResponse'), require('../model/GetAllTemplatesResponse'), require('../model/GetAvailableDedicatedNumbersResponse'), require('../model/GetAvailableSenderSettingOptionsResponse'), require('../model/GetBalanceNotificationOptionsResponse'), require('../model/GetBalanceNotificationSettingsResponse'), require('../model/GetBlockedContactsResponse'), require('../model/GetCallbackSettingsResponse'), require('../model/GetChatMessagesResponse'), require('../model/GetContactImportSessionProgressResponse'), require('../model/GetContactNotesResponse'), require('../model/GetContactsAutocompleteResponse'), require('../model/GetContactsByListIdResponse'), require('../model/GetContactsResponse'), require('../model/GetCustomFieldsResponse'), require('../model/GetFavouritesResponse'), require('../model/GetForwardedCallsResponse'), require('../model/GetInboundMessagesNotificationSettingsResponse'), require('../model/GetInvoicesResponse'), require('../model/GetListContactsIdsResponse'), require('../model/GetListsOfContactResponse'), require('../model/GetMessagePreviewResponse'), require('../model/GetMessagePriceResponse'), require('../model/GetMessagePricesResponse'), require('../model/GetMessageSessionStatResponse'), require('../model/GetMessagesBySessionIdResponse'), require('../model/GetMessagingCountersResponse'), require('../model/GetMessagingStatResponse'), require('../model/GetOutboundMessagesHistoryResponse'), require('../model/GetPushTokensResponse'), require('../model/GetSenderIdsResponse'), require('../model/GetSenderSettingsResponse'), require('../model/GetSpendingStatResponse'), require('../model/GetStateResponse'), require('../model/GetSubaccountsWithTokensInputObject'), require('../model/GetSubaccountsWithTokensResponse'), require('../model/GetSurveyNodesResponse'), require('../model/GetSurveysResponse'), require('../model/GetUnreadMessagesTotalResponse'), require('../model/GetUnsubscribersResponse'), require('../model/GetUserDedicatedNumbersResponse'), require('../model/GetUserListsResponse'), require('../model/GetVersionsResponse'), require('../model/Group'), require('../model/InviteSubaccountInputObject'), require('../model/MarkChatsReadBulkInputObject'), require('../model/MarkChatsUnreadBulkInputObject'), require('../model/MergeSurveyNodesInputObject'), require('../model/MessageIn'), require('../model/MessageOut'), require('../model/MessageSession'), require('../model/MessageTemplate'), require('../model/MessagesIcs'), require('../model/MuteChatInputObject'), require('../model/MuteChatsBulkInputObject'), require('../model/NotFoundResponse'), require('../model/PingResponse'), require('../model/ReopenChatsBulkInputObject'), require('../model/RequestNewSubaccountTokenInputObject'), require('../model/RequestSenderIdInputObject'), require('../model/ResourceLinkResponse'), require('../model/SearchChatsByIdsResponse'), require('../model/SearchChatsByReceipentResponse'), require('../model/SearchChatsResponse'), require('../model/SearchContactsResponse'), require('../model/SearchInboundMessagesResponse'), require('../model/SearchListsResponse'), require('../model/SearchOutboundMessagesResponse'), require('../model/SearchScheduledMessagesResponse'), require('../model/SearchTemplatesResponse'), require('../model/SendMessageInputObject'), require('../model/SendMessageResponse'), require('../model/SenderId'), require('../model/SetChatStatusInputObject'), require('../model/Survey'), require('../model/SurveyNode'), require('../model/UnauthorizedResponse'), require('../model/UnblockContactInputObject'), require('../model/UnblockContactsBulkInputObject'), require('../model/UnmuteChatsBulkInputObject'), require('../model/UnsubscribeContactInputObject'), require('../model/UnsubscribedContact'), require('../model/UpdateBalanceNotificationSettingsInputObject'), require('../model/UpdateCallbackSettingsInputObject'), require('../model/UpdateChatDesktopNotificationSettingsInputObject'), require('../model/UpdateContactInputObject'), require('../model/UpdateContactNoteInputObject'), require('../model/UpdateCurrentUserInputObject'), require('../model/UpdateCurrentUserResponse'), require('../model/UpdateCustomFieldInputObject'), require('../model/UpdateCustomFieldValueInputObject'), require('../model/UpdateInboundMessagesNotificationSettingsInputObject'), require('../model/UpdateListObject'), require('../model/UpdatePasswordInputObject'), require('../model/UpdateSenderSettingInputObject'), require('../model/UpdateSurveyInputObject'), require('../model/UpdateSurveyNodeInputObject'), require('../model/UpdateTemplateInputObject'), require('../model/UploadMessageAttachmentResponse'), require('../model/User'), require('../model/UserCustomField'), require('../model/UsersInbound'));
+    module.exports = factory(require('../ApiClient'), require('../model/AssignContactsToListInputObject'), require('../model/BadRequestResponse'), require('../model/BlockContactInputObject'), require('../model/BulkSession'), require('../model/BuyDedicatedNumberInputObject'), require('../model/Chat'), require('../model/CheckPhoneVerificationCodeInputObject'), require('../model/ClearAndAssignContactsToListInputObject'), require('../model/CloseChatsBulkInputObject'), require('../model/Contact'), require('../model/ContactNote'), require('../model/CreateContactInputObject'), require('../model/CreateContactNoteInputObject'), require('../model/CreateCustomFieldInputObject'), require('../model/CreateListInputObject'), require('../model/CreatePushTokenInputObject'), require('../model/CreateSurveyInputObject'), require('../model/CreateSurveyNodeInputObject'), require('../model/CreateTemplateInputObject'), require('../model/DeleteChatMessagesBulkInputObject'), require('../model/DeleteChatsBulkInputObject'), require('../model/DeleteContacsFromListObject'), require('../model/DeleteContactNotesBulkInputObject'), require('../model/DeleteContactsByIdsInputObject'), require('../model/DeleteInboundMessagesBulkInputObject'), require('../model/DeleteListContactsBulkInputObject'), require('../model/DeleteListsBulkInputObject'), require('../model/DeleteMessageSessionsBulkInputObject'), require('../model/DeleteOutboundMessagesBulkInputObject'), require('../model/DeleteScheduledMessagesBulkInputObject'), require('../model/DeleteTemplatesBulkInputObject'), require('../model/DoAuthInputObject'), require('../model/DoAuthResponse'), require('../model/DoCarrierLookupResponse'), require('../model/DoEmailLookupResponse'), require('../model/GetAllBulkSessionsPaginatedResponse'), require('../model/GetAllChatsPaginatedResponse'), require('../model/GetAllInboundMessagesPaginatedResponse'), require('../model/GetAllMessageSessionsPaginatedResponse'), require('../model/GetAllOutboundMessagesPaginatedResponse'), require('../model/GetAllScheduledMessagesPaginatedResponse'), require('../model/GetAllTemplatesPaginatedResponse'), require('../model/GetAvailableDedicatedNumbersResponse'), require('../model/GetAvailableSenderSettingOptionsResponse'), require('../model/GetBalanceNotificationOptionsResponse'), require('../model/GetBalanceNotificationSettingsResponse'), require('../model/GetBlockedContactsPaginatedResponse'), require('../model/GetCallbackSettingsResponse'), require('../model/GetCallsPricesResponse'), require('../model/GetChatMessagesPaginatedResponse'), require('../model/GetContactImportSessionProgressResponse'), require('../model/GetContactNotesPaginatedResponse'), require('../model/GetContactsAutocompleteResponse'), require('../model/GetContactsByListIdPaginatedResponse'), require('../model/GetContactsPaginatedResponse'), require('../model/GetCountriesResponse'), require('../model/GetCustomFieldsPaginatedResponse'), require('../model/GetDisallowedRulesResponse'), require('../model/GetFavouritesPaginatedResponse'), require('../model/GetForwardedCallsPaginatedResponse'), require('../model/GetInboundMessagesNotificationSettingsResponse'), require('../model/GetInvoicesPaginatedResponse'), require('../model/GetListContactsIdsResponse'), require('../model/GetListsOfContactPaginatedResponse'), require('../model/GetMessagePreviewResponse'), require('../model/GetMessagePriceResponse'), require('../model/GetMessagePricesResponse'), require('../model/GetMessageSessionStatResponse'), require('../model/GetMessagesBySessionIdPaginatedResponse'), require('../model/GetMessagingCountersResponse'), require('../model/GetMessagingStatResponse'), require('../model/GetOutboundMessagesHistoryPaginatedResponse'), require('../model/GetPushTokensResponse'), require('../model/GetSenderIdsPaginatedResponse'), require('../model/GetSenderSettingsResponse'), require('../model/GetSpendingStatPaginatedResponse'), require('../model/GetStateResponse'), require('../model/GetSubaccountsWithTokensInputObject'), require('../model/GetSubaccountsWithTokensResponse'), require('../model/GetSurveyNodesResponse'), require('../model/GetSurveysPaginatedResponse'), require('../model/GetTimezonesResponse'), require('../model/GetUnreadMessagesTotalResponse'), require('../model/GetUnsubscribersPaginatedResponse'), require('../model/GetUserDedicatedNumbersPaginatedResponse'), require('../model/GetUserListsPaginatedResponse'), require('../model/GetVersionsResponse'), require('../model/Group'), require('../model/InviteSubaccountInputObject'), require('../model/MarkChatsReadBulkInputObject'), require('../model/MarkChatsUnreadBulkInputObject'), require('../model/MergeSurveyNodesInputObject'), require('../model/MessageIn'), require('../model/MessageOut'), require('../model/MessageSession'), require('../model/MessageTemplate'), require('../model/MessagesIcs'), require('../model/MuteChatInputObject'), require('../model/MuteChatsBulkInputObject'), require('../model/NotFoundResponse'), require('../model/PingResponse'), require('../model/ReopenChatsBulkInputObject'), require('../model/RequestNewSubaccountTokenInputObject'), require('../model/RequestSenderIdInputObject'), require('../model/ResourceLinkResponse'), require('../model/SearchChatsByIdsPaginatedResponse'), require('../model/SearchChatsByReceipentPaginatedResponse'), require('../model/SearchChatsPaginatedResponse'), require('../model/SearchContactsPaginatedResponse'), require('../model/SearchInboundMessagesPaginatedResponse'), require('../model/SearchListsPaginatedResponse'), require('../model/SearchOutboundMessagesPaginatedResponse'), require('../model/SearchScheduledMessagesPaginatedResponse'), require('../model/SearchTemplatesPaginatedResponse'), require('../model/SendMessageInputObject'), require('../model/SendMessageResponse'), require('../model/SenderId'), require('../model/SetChatStatusInputObject'), require('../model/Survey'), require('../model/SurveyNode'), require('../model/UnauthorizedResponse'), require('../model/UnblockContactInputObject'), require('../model/UnblockContactsBulkInputObject'), require('../model/UnmuteChatsBulkInputObject'), require('../model/UnsubscribeContactInputObject'), require('../model/UnsubscribedContact'), require('../model/UpdateBalanceNotificationSettingsInputObject'), require('../model/UpdateCallbackSettingsInputObject'), require('../model/UpdateChatDesktopNotificationSettingsInputObject'), require('../model/UpdateContactInputObject'), require('../model/UpdateContactNoteInputObject'), require('../model/UpdateCurrentUserInputObject'), require('../model/UpdateCurrentUserResponse'), require('../model/UpdateCustomFieldInputObject'), require('../model/UpdateCustomFieldValueInputObject'), require('../model/UpdateInboundMessagesNotificationSettingsInputObject'), require('../model/UpdateListObject'), require('../model/UpdatePasswordInputObject'), require('../model/UpdateSenderSettingInputObject'), require('../model/UpdateSurveyInputObject'), require('../model/UpdateSurveyNodeInputObject'), require('../model/UpdateTemplateInputObject'), require('../model/UploadMessageAttachmentResponse'), require('../model/User'), require('../model/UserCustomField'), require('../model/UsersInbound'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.TextMagicApi = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.AssignContactsToListInputObject, root.TextmagicClient.BadRequestResponse, root.TextmagicClient.BlockContactInputObject, root.TextmagicClient.BulkSession, root.TextmagicClient.BuyDedicatedNumberInputObject, root.TextmagicClient.Chat, root.TextmagicClient.CheckPhoneVerificationCodeInputObject, root.TextmagicClient.ClearAndAssignContactsToListInputObject, root.TextmagicClient.CloseChatsBulkInputObject, root.TextmagicClient.Contact, root.TextmagicClient.ContactNote, root.TextmagicClient.Country, root.TextmagicClient.CreateContactInputObject, root.TextmagicClient.CreateContactNoteInputObject, root.TextmagicClient.CreateCustomFieldInputObject, root.TextmagicClient.CreateListInputObject, root.TextmagicClient.CreatePushTokenInputObject, root.TextmagicClient.CreateSurveyInputObject, root.TextmagicClient.CreateSurveyNodeInputObject, root.TextmagicClient.CreateTemplateInputObject, root.TextmagicClient.DeleteChatMessagesBulkInputObject, root.TextmagicClient.DeleteChatsBulkInputObject, root.TextmagicClient.DeleteContacsFromListObject, root.TextmagicClient.DeleteContactNotesBulkInputObject, root.TextmagicClient.DeleteContactsByIdsInputObject, root.TextmagicClient.DeleteInboundMessagesBulkInputObject, root.TextmagicClient.DeleteListContactsBulkInputObject, root.TextmagicClient.DeleteListsBulkInputObject, root.TextmagicClient.DeleteMessageSessionsBulkInputObject, root.TextmagicClient.DeleteOutboundMessagesBulkInputObject, root.TextmagicClient.DeleteScheduledMessagesBulkInputObject, root.TextmagicClient.DeleteTemplatesBulkInputObject, root.TextmagicClient.DoAuthInputObject, root.TextmagicClient.DoAuthResponse, root.TextmagicClient.DoCarrierLookupResponse, root.TextmagicClient.DoEmailLookupResponse, root.TextmagicClient.GetAllBulkSessionsResponse, root.TextmagicClient.GetAllChatsResponse, root.TextmagicClient.GetAllInboundMessagesResponse, root.TextmagicClient.GetAllMessageSessionsResponse, root.TextmagicClient.GetAllOutboundMessagesResponse, root.TextmagicClient.GetAllScheduledMessagesResponse, root.TextmagicClient.GetAllTemplatesResponse, root.TextmagicClient.GetAvailableDedicatedNumbersResponse, root.TextmagicClient.GetAvailableSenderSettingOptionsResponse, root.TextmagicClient.GetBalanceNotificationOptionsResponse, root.TextmagicClient.GetBalanceNotificationSettingsResponse, root.TextmagicClient.GetBlockedContactsResponse, root.TextmagicClient.GetCallbackSettingsResponse, root.TextmagicClient.GetChatMessagesResponse, root.TextmagicClient.GetContactImportSessionProgressResponse, root.TextmagicClient.GetContactNotesResponse, root.TextmagicClient.GetContactsAutocompleteResponse, root.TextmagicClient.GetContactsByListIdResponse, root.TextmagicClient.GetContactsResponse, root.TextmagicClient.GetCustomFieldsResponse, root.TextmagicClient.GetFavouritesResponse, root.TextmagicClient.GetForwardedCallsResponse, root.TextmagicClient.GetInboundMessagesNotificationSettingsResponse, root.TextmagicClient.GetInvoicesResponse, root.TextmagicClient.GetListContactsIdsResponse, root.TextmagicClient.GetListsOfContactResponse, root.TextmagicClient.GetMessagePreviewResponse, root.TextmagicClient.GetMessagePriceResponse, root.TextmagicClient.GetMessagePricesResponse, root.TextmagicClient.GetMessageSessionStatResponse, root.TextmagicClient.GetMessagesBySessionIdResponse, root.TextmagicClient.GetMessagingCountersResponse, root.TextmagicClient.GetMessagingStatResponse, root.TextmagicClient.GetOutboundMessagesHistoryResponse, root.TextmagicClient.GetPushTokensResponse, root.TextmagicClient.GetSenderIdsResponse, root.TextmagicClient.GetSenderSettingsResponse, root.TextmagicClient.GetSpendingStatResponse, root.TextmagicClient.GetStateResponse, root.TextmagicClient.GetSubaccountsWithTokensInputObject, root.TextmagicClient.GetSubaccountsWithTokensResponse, root.TextmagicClient.GetSurveyNodesResponse, root.TextmagicClient.GetSurveysResponse, root.TextmagicClient.GetUnreadMessagesTotalResponse, root.TextmagicClient.GetUnsubscribersResponse, root.TextmagicClient.GetUserDedicatedNumbersResponse, root.TextmagicClient.GetUserListsResponse, root.TextmagicClient.GetVersionsResponse, root.TextmagicClient.Group, root.TextmagicClient.InviteSubaccountInputObject, root.TextmagicClient.MarkChatsReadBulkInputObject, root.TextmagicClient.MarkChatsUnreadBulkInputObject, root.TextmagicClient.MergeSurveyNodesInputObject, root.TextmagicClient.MessageIn, root.TextmagicClient.MessageOut, root.TextmagicClient.MessageSession, root.TextmagicClient.MessageTemplate, root.TextmagicClient.MessagesIcs, root.TextmagicClient.MuteChatInputObject, root.TextmagicClient.MuteChatsBulkInputObject, root.TextmagicClient.NotFoundResponse, root.TextmagicClient.PingResponse, root.TextmagicClient.ReopenChatsBulkInputObject, root.TextmagicClient.RequestNewSubaccountTokenInputObject, root.TextmagicClient.RequestSenderIdInputObject, root.TextmagicClient.ResourceLinkResponse, root.TextmagicClient.SearchChatsByIdsResponse, root.TextmagicClient.SearchChatsByReceipentResponse, root.TextmagicClient.SearchChatsResponse, root.TextmagicClient.SearchContactsResponse, root.TextmagicClient.SearchInboundMessagesResponse, root.TextmagicClient.SearchListsResponse, root.TextmagicClient.SearchOutboundMessagesResponse, root.TextmagicClient.SearchScheduledMessagesResponse, root.TextmagicClient.SearchTemplatesResponse, root.TextmagicClient.SendMessageInputObject, root.TextmagicClient.SendMessageResponse, root.TextmagicClient.SenderId, root.TextmagicClient.SetChatStatusInputObject, root.TextmagicClient.Survey, root.TextmagicClient.SurveyNode, root.TextmagicClient.UnauthorizedResponse, root.TextmagicClient.UnblockContactInputObject, root.TextmagicClient.UnblockContactsBulkInputObject, root.TextmagicClient.UnmuteChatsBulkInputObject, root.TextmagicClient.UnsubscribeContactInputObject, root.TextmagicClient.UnsubscribedContact, root.TextmagicClient.UpdateBalanceNotificationSettingsInputObject, root.TextmagicClient.UpdateCallbackSettingsInputObject, root.TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject, root.TextmagicClient.UpdateContactInputObject, root.TextmagicClient.UpdateContactNoteInputObject, root.TextmagicClient.UpdateCurrentUserInputObject, root.TextmagicClient.UpdateCurrentUserResponse, root.TextmagicClient.UpdateCustomFieldInputObject, root.TextmagicClient.UpdateCustomFieldValueInputObject, root.TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject, root.TextmagicClient.UpdateListObject, root.TextmagicClient.UpdatePasswordInputObject, root.TextmagicClient.UpdateSenderSettingInputObject, root.TextmagicClient.UpdateSurveyInputObject, root.TextmagicClient.UpdateSurveyNodeInputObject, root.TextmagicClient.UpdateTemplateInputObject, root.TextmagicClient.UploadMessageAttachmentResponse, root.TextmagicClient.User, root.TextmagicClient.UserCustomField, root.TextmagicClient.UsersInbound);
+    root.TextmagicClient.TextMagicApi = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.AssignContactsToListInputObject, root.TextmagicClient.BadRequestResponse, root.TextmagicClient.BlockContactInputObject, root.TextmagicClient.BulkSession, root.TextmagicClient.BuyDedicatedNumberInputObject, root.TextmagicClient.Chat, root.TextmagicClient.CheckPhoneVerificationCodeInputObject, root.TextmagicClient.ClearAndAssignContactsToListInputObject, root.TextmagicClient.CloseChatsBulkInputObject, root.TextmagicClient.Contact, root.TextmagicClient.ContactNote, root.TextmagicClient.CreateContactInputObject, root.TextmagicClient.CreateContactNoteInputObject, root.TextmagicClient.CreateCustomFieldInputObject, root.TextmagicClient.CreateListInputObject, root.TextmagicClient.CreatePushTokenInputObject, root.TextmagicClient.CreateSurveyInputObject, root.TextmagicClient.CreateSurveyNodeInputObject, root.TextmagicClient.CreateTemplateInputObject, root.TextmagicClient.DeleteChatMessagesBulkInputObject, root.TextmagicClient.DeleteChatsBulkInputObject, root.TextmagicClient.DeleteContacsFromListObject, root.TextmagicClient.DeleteContactNotesBulkInputObject, root.TextmagicClient.DeleteContactsByIdsInputObject, root.TextmagicClient.DeleteInboundMessagesBulkInputObject, root.TextmagicClient.DeleteListContactsBulkInputObject, root.TextmagicClient.DeleteListsBulkInputObject, root.TextmagicClient.DeleteMessageSessionsBulkInputObject, root.TextmagicClient.DeleteOutboundMessagesBulkInputObject, root.TextmagicClient.DeleteScheduledMessagesBulkInputObject, root.TextmagicClient.DeleteTemplatesBulkInputObject, root.TextmagicClient.DoAuthInputObject, root.TextmagicClient.DoAuthResponse, root.TextmagicClient.DoCarrierLookupResponse, root.TextmagicClient.DoEmailLookupResponse, root.TextmagicClient.GetAllBulkSessionsPaginatedResponse, root.TextmagicClient.GetAllChatsPaginatedResponse, root.TextmagicClient.GetAllInboundMessagesPaginatedResponse, root.TextmagicClient.GetAllMessageSessionsPaginatedResponse, root.TextmagicClient.GetAllOutboundMessagesPaginatedResponse, root.TextmagicClient.GetAllScheduledMessagesPaginatedResponse, root.TextmagicClient.GetAllTemplatesPaginatedResponse, root.TextmagicClient.GetAvailableDedicatedNumbersResponse, root.TextmagicClient.GetAvailableSenderSettingOptionsResponse, root.TextmagicClient.GetBalanceNotificationOptionsResponse, root.TextmagicClient.GetBalanceNotificationSettingsResponse, root.TextmagicClient.GetBlockedContactsPaginatedResponse, root.TextmagicClient.GetCallbackSettingsResponse, root.TextmagicClient.GetCallsPricesResponse, root.TextmagicClient.GetChatMessagesPaginatedResponse, root.TextmagicClient.GetContactImportSessionProgressResponse, root.TextmagicClient.GetContactNotesPaginatedResponse, root.TextmagicClient.GetContactsAutocompleteResponse, root.TextmagicClient.GetContactsByListIdPaginatedResponse, root.TextmagicClient.GetContactsPaginatedResponse, root.TextmagicClient.GetCountriesResponse, root.TextmagicClient.GetCustomFieldsPaginatedResponse, root.TextmagicClient.GetDisallowedRulesResponse, root.TextmagicClient.GetFavouritesPaginatedResponse, root.TextmagicClient.GetForwardedCallsPaginatedResponse, root.TextmagicClient.GetInboundMessagesNotificationSettingsResponse, root.TextmagicClient.GetInvoicesPaginatedResponse, root.TextmagicClient.GetListContactsIdsResponse, root.TextmagicClient.GetListsOfContactPaginatedResponse, root.TextmagicClient.GetMessagePreviewResponse, root.TextmagicClient.GetMessagePriceResponse, root.TextmagicClient.GetMessagePricesResponse, root.TextmagicClient.GetMessageSessionStatResponse, root.TextmagicClient.GetMessagesBySessionIdPaginatedResponse, root.TextmagicClient.GetMessagingCountersResponse, root.TextmagicClient.GetMessagingStatResponse, root.TextmagicClient.GetOutboundMessagesHistoryPaginatedResponse, root.TextmagicClient.GetPushTokensResponse, root.TextmagicClient.GetSenderIdsPaginatedResponse, root.TextmagicClient.GetSenderSettingsResponse, root.TextmagicClient.GetSpendingStatPaginatedResponse, root.TextmagicClient.GetStateResponse, root.TextmagicClient.GetSubaccountsWithTokensInputObject, root.TextmagicClient.GetSubaccountsWithTokensResponse, root.TextmagicClient.GetSurveyNodesResponse, root.TextmagicClient.GetSurveysPaginatedResponse, root.TextmagicClient.GetTimezonesResponse, root.TextmagicClient.GetUnreadMessagesTotalResponse, root.TextmagicClient.GetUnsubscribersPaginatedResponse, root.TextmagicClient.GetUserDedicatedNumbersPaginatedResponse, root.TextmagicClient.GetUserListsPaginatedResponse, root.TextmagicClient.GetVersionsResponse, root.TextmagicClient.Group, root.TextmagicClient.InviteSubaccountInputObject, root.TextmagicClient.MarkChatsReadBulkInputObject, root.TextmagicClient.MarkChatsUnreadBulkInputObject, root.TextmagicClient.MergeSurveyNodesInputObject, root.TextmagicClient.MessageIn, root.TextmagicClient.MessageOut, root.TextmagicClient.MessageSession, root.TextmagicClient.MessageTemplate, root.TextmagicClient.MessagesIcs, root.TextmagicClient.MuteChatInputObject, root.TextmagicClient.MuteChatsBulkInputObject, root.TextmagicClient.NotFoundResponse, root.TextmagicClient.PingResponse, root.TextmagicClient.ReopenChatsBulkInputObject, root.TextmagicClient.RequestNewSubaccountTokenInputObject, root.TextmagicClient.RequestSenderIdInputObject, root.TextmagicClient.ResourceLinkResponse, root.TextmagicClient.SearchChatsByIdsPaginatedResponse, root.TextmagicClient.SearchChatsByReceipentPaginatedResponse, root.TextmagicClient.SearchChatsPaginatedResponse, root.TextmagicClient.SearchContactsPaginatedResponse, root.TextmagicClient.SearchInboundMessagesPaginatedResponse, root.TextmagicClient.SearchListsPaginatedResponse, root.TextmagicClient.SearchOutboundMessagesPaginatedResponse, root.TextmagicClient.SearchScheduledMessagesPaginatedResponse, root.TextmagicClient.SearchTemplatesPaginatedResponse, root.TextmagicClient.SendMessageInputObject, root.TextmagicClient.SendMessageResponse, root.TextmagicClient.SenderId, root.TextmagicClient.SetChatStatusInputObject, root.TextmagicClient.Survey, root.TextmagicClient.SurveyNode, root.TextmagicClient.UnauthorizedResponse, root.TextmagicClient.UnblockContactInputObject, root.TextmagicClient.UnblockContactsBulkInputObject, root.TextmagicClient.UnmuteChatsBulkInputObject, root.TextmagicClient.UnsubscribeContactInputObject, root.TextmagicClient.UnsubscribedContact, root.TextmagicClient.UpdateBalanceNotificationSettingsInputObject, root.TextmagicClient.UpdateCallbackSettingsInputObject, root.TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject, root.TextmagicClient.UpdateContactInputObject, root.TextmagicClient.UpdateContactNoteInputObject, root.TextmagicClient.UpdateCurrentUserInputObject, root.TextmagicClient.UpdateCurrentUserResponse, root.TextmagicClient.UpdateCustomFieldInputObject, root.TextmagicClient.UpdateCustomFieldValueInputObject, root.TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject, root.TextmagicClient.UpdateListObject, root.TextmagicClient.UpdatePasswordInputObject, root.TextmagicClient.UpdateSenderSettingInputObject, root.TextmagicClient.UpdateSurveyInputObject, root.TextmagicClient.UpdateSurveyNodeInputObject, root.TextmagicClient.UpdateTemplateInputObject, root.TextmagicClient.UploadMessageAttachmentResponse, root.TextmagicClient.User, root.TextmagicClient.UserCustomField, root.TextmagicClient.UsersInbound);
   }
-}(this, function(ApiClient, AssignContactsToListInputObject, BadRequestResponse, BlockContactInputObject, BulkSession, BuyDedicatedNumberInputObject, Chat, CheckPhoneVerificationCodeInputObject, ClearAndAssignContactsToListInputObject, CloseChatsBulkInputObject, Contact, ContactNote, Country, CreateContactInputObject, CreateContactNoteInputObject, CreateCustomFieldInputObject, CreateListInputObject, CreatePushTokenInputObject, CreateSurveyInputObject, CreateSurveyNodeInputObject, CreateTemplateInputObject, DeleteChatMessagesBulkInputObject, DeleteChatsBulkInputObject, DeleteContacsFromListObject, DeleteContactNotesBulkInputObject, DeleteContactsByIdsInputObject, DeleteInboundMessagesBulkInputObject, DeleteListContactsBulkInputObject, DeleteListsBulkInputObject, DeleteMessageSessionsBulkInputObject, DeleteOutboundMessagesBulkInputObject, DeleteScheduledMessagesBulkInputObject, DeleteTemplatesBulkInputObject, DoAuthInputObject, DoAuthResponse, DoCarrierLookupResponse, DoEmailLookupResponse, GetAllBulkSessionsResponse, GetAllChatsResponse, GetAllInboundMessagesResponse, GetAllMessageSessionsResponse, GetAllOutboundMessagesResponse, GetAllScheduledMessagesResponse, GetAllTemplatesResponse, GetAvailableDedicatedNumbersResponse, GetAvailableSenderSettingOptionsResponse, GetBalanceNotificationOptionsResponse, GetBalanceNotificationSettingsResponse, GetBlockedContactsResponse, GetCallbackSettingsResponse, GetChatMessagesResponse, GetContactImportSessionProgressResponse, GetContactNotesResponse, GetContactsAutocompleteResponse, GetContactsByListIdResponse, GetContactsResponse, GetCustomFieldsResponse, GetFavouritesResponse, GetForwardedCallsResponse, GetInboundMessagesNotificationSettingsResponse, GetInvoicesResponse, GetListContactsIdsResponse, GetListsOfContactResponse, GetMessagePreviewResponse, GetMessagePriceResponse, GetMessagePricesResponse, GetMessageSessionStatResponse, GetMessagesBySessionIdResponse, GetMessagingCountersResponse, GetMessagingStatResponse, GetOutboundMessagesHistoryResponse, GetPushTokensResponse, GetSenderIdsResponse, GetSenderSettingsResponse, GetSpendingStatResponse, GetStateResponse, GetSubaccountsWithTokensInputObject, GetSubaccountsWithTokensResponse, GetSurveyNodesResponse, GetSurveysResponse, GetUnreadMessagesTotalResponse, GetUnsubscribersResponse, GetUserDedicatedNumbersResponse, GetUserListsResponse, GetVersionsResponse, Group, InviteSubaccountInputObject, MarkChatsReadBulkInputObject, MarkChatsUnreadBulkInputObject, MergeSurveyNodesInputObject, MessageIn, MessageOut, MessageSession, MessageTemplate, MessagesIcs, MuteChatInputObject, MuteChatsBulkInputObject, NotFoundResponse, PingResponse, ReopenChatsBulkInputObject, RequestNewSubaccountTokenInputObject, RequestSenderIdInputObject, ResourceLinkResponse, SearchChatsByIdsResponse, SearchChatsByReceipentResponse, SearchChatsResponse, SearchContactsResponse, SearchInboundMessagesResponse, SearchListsResponse, SearchOutboundMessagesResponse, SearchScheduledMessagesResponse, SearchTemplatesResponse, SendMessageInputObject, SendMessageResponse, SenderId, SetChatStatusInputObject, Survey, SurveyNode, UnauthorizedResponse, UnblockContactInputObject, UnblockContactsBulkInputObject, UnmuteChatsBulkInputObject, UnsubscribeContactInputObject, UnsubscribedContact, UpdateBalanceNotificationSettingsInputObject, UpdateCallbackSettingsInputObject, UpdateChatDesktopNotificationSettingsInputObject, UpdateContactInputObject, UpdateContactNoteInputObject, UpdateCurrentUserInputObject, UpdateCurrentUserResponse, UpdateCustomFieldInputObject, UpdateCustomFieldValueInputObject, UpdateInboundMessagesNotificationSettingsInputObject, UpdateListObject, UpdatePasswordInputObject, UpdateSenderSettingInputObject, UpdateSurveyInputObject, UpdateSurveyNodeInputObject, UpdateTemplateInputObject, UploadMessageAttachmentResponse, User, UserCustomField, UsersInbound) {
+}(this, function(ApiClient, AssignContactsToListInputObject, BadRequestResponse, BlockContactInputObject, BulkSession, BuyDedicatedNumberInputObject, Chat, CheckPhoneVerificationCodeInputObject, ClearAndAssignContactsToListInputObject, CloseChatsBulkInputObject, Contact, ContactNote, CreateContactInputObject, CreateContactNoteInputObject, CreateCustomFieldInputObject, CreateListInputObject, CreatePushTokenInputObject, CreateSurveyInputObject, CreateSurveyNodeInputObject, CreateTemplateInputObject, DeleteChatMessagesBulkInputObject, DeleteChatsBulkInputObject, DeleteContacsFromListObject, DeleteContactNotesBulkInputObject, DeleteContactsByIdsInputObject, DeleteInboundMessagesBulkInputObject, DeleteListContactsBulkInputObject, DeleteListsBulkInputObject, DeleteMessageSessionsBulkInputObject, DeleteOutboundMessagesBulkInputObject, DeleteScheduledMessagesBulkInputObject, DeleteTemplatesBulkInputObject, DoAuthInputObject, DoAuthResponse, DoCarrierLookupResponse, DoEmailLookupResponse, GetAllBulkSessionsPaginatedResponse, GetAllChatsPaginatedResponse, GetAllInboundMessagesPaginatedResponse, GetAllMessageSessionsPaginatedResponse, GetAllOutboundMessagesPaginatedResponse, GetAllScheduledMessagesPaginatedResponse, GetAllTemplatesPaginatedResponse, GetAvailableDedicatedNumbersResponse, GetAvailableSenderSettingOptionsResponse, GetBalanceNotificationOptionsResponse, GetBalanceNotificationSettingsResponse, GetBlockedContactsPaginatedResponse, GetCallbackSettingsResponse, GetCallsPricesResponse, GetChatMessagesPaginatedResponse, GetContactImportSessionProgressResponse, GetContactNotesPaginatedResponse, GetContactsAutocompleteResponse, GetContactsByListIdPaginatedResponse, GetContactsPaginatedResponse, GetCountriesResponse, GetCustomFieldsPaginatedResponse, GetDisallowedRulesResponse, GetFavouritesPaginatedResponse, GetForwardedCallsPaginatedResponse, GetInboundMessagesNotificationSettingsResponse, GetInvoicesPaginatedResponse, GetListContactsIdsResponse, GetListsOfContactPaginatedResponse, GetMessagePreviewResponse, GetMessagePriceResponse, GetMessagePricesResponse, GetMessageSessionStatResponse, GetMessagesBySessionIdPaginatedResponse, GetMessagingCountersResponse, GetMessagingStatResponse, GetOutboundMessagesHistoryPaginatedResponse, GetPushTokensResponse, GetSenderIdsPaginatedResponse, GetSenderSettingsResponse, GetSpendingStatPaginatedResponse, GetStateResponse, GetSubaccountsWithTokensInputObject, GetSubaccountsWithTokensResponse, GetSurveyNodesResponse, GetSurveysPaginatedResponse, GetTimezonesResponse, GetUnreadMessagesTotalResponse, GetUnsubscribersPaginatedResponse, GetUserDedicatedNumbersPaginatedResponse, GetUserListsPaginatedResponse, GetVersionsResponse, Group, InviteSubaccountInputObject, MarkChatsReadBulkInputObject, MarkChatsUnreadBulkInputObject, MergeSurveyNodesInputObject, MessageIn, MessageOut, MessageSession, MessageTemplate, MessagesIcs, MuteChatInputObject, MuteChatsBulkInputObject, NotFoundResponse, PingResponse, ReopenChatsBulkInputObject, RequestNewSubaccountTokenInputObject, RequestSenderIdInputObject, ResourceLinkResponse, SearchChatsByIdsPaginatedResponse, SearchChatsByReceipentPaginatedResponse, SearchChatsPaginatedResponse, SearchContactsPaginatedResponse, SearchInboundMessagesPaginatedResponse, SearchListsPaginatedResponse, SearchOutboundMessagesPaginatedResponse, SearchScheduledMessagesPaginatedResponse, SearchTemplatesPaginatedResponse, SendMessageInputObject, SendMessageResponse, SenderId, SetChatStatusInputObject, Survey, SurveyNode, UnauthorizedResponse, UnblockContactInputObject, UnblockContactsBulkInputObject, UnmuteChatsBulkInputObject, UnsubscribeContactInputObject, UnsubscribedContact, UpdateBalanceNotificationSettingsInputObject, UpdateCallbackSettingsInputObject, UpdateChatDesktopNotificationSettingsInputObject, UpdateContactInputObject, UpdateContactNoteInputObject, UpdateCurrentUserInputObject, UpdateCurrentUserResponse, UpdateCustomFieldInputObject, UpdateCustomFieldValueInputObject, UpdateInboundMessagesNotificationSettingsInputObject, UpdateListObject, UpdatePasswordInputObject, UpdateSenderSettingInputObject, UpdateSurveyInputObject, UpdateSurveyNodeInputObject, UpdateTemplateInputObject, UploadMessageAttachmentResponse, User, UserCustomField, UsersInbound) {
   'use strict';
 
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.420
+   * @version 2.0.428
    */
 
   /**
@@ -2733,7 +2733,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllBulkSessionsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllBulkSessionsPaginatedResponse} and HTTP response
      */
     this.getAllBulkSessionsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -2756,7 +2756,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetAllBulkSessionsResponse;
+      var returnType = GetAllBulkSessionsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/bulks', 'GET',
@@ -2770,7 +2770,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllBulkSessionsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllBulkSessionsPaginatedResponse}
      */
     this.getAllBulkSessions = function(opts) {
       return this.getAllBulkSessionsWithHttpInfo(opts)
@@ -2789,7 +2789,7 @@
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {Number} opts.voice Fetch results with voice calls (default to 0)
      * @param {Number} opts.flat Should additional contact info be included (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllChatsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllChatsPaginatedResponse} and HTTP response
      */
     this.getAllChatsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -2816,7 +2816,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetAllChatsResponse;
+      var returnType = GetAllChatsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/chats', 'GET',
@@ -2834,7 +2834,7 @@
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {Number} opts.voice Fetch results with voice calls (default to 0)
      * @param {Number} opts.flat Should additional contact info be included (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllChatsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllChatsPaginatedResponse}
      */
     this.getAllChats = function(opts) {
       return this.getAllChatsWithHttpInfo(opts)
@@ -2851,7 +2851,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllInboundMessagesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllInboundMessagesPaginatedResponse} and HTTP response
      */
     this.getAllInboundMessagesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -2876,7 +2876,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetAllInboundMessagesResponse;
+      var returnType = GetAllInboundMessagesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/replies', 'GET',
@@ -2892,7 +2892,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllInboundMessagesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllInboundMessagesPaginatedResponse}
      */
     this.getAllInboundMessages = function(opts) {
       return this.getAllInboundMessagesWithHttpInfo(opts)
@@ -2907,7 +2907,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllMessageSessionsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllMessageSessionsPaginatedResponse} and HTTP response
      */
     this.getAllMessageSessionsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -2930,7 +2930,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetAllMessageSessionsResponse;
+      var returnType = GetAllMessageSessionsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/sessions', 'GET',
@@ -2944,7 +2944,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllMessageSessionsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllMessageSessionsPaginatedResponse}
      */
     this.getAllMessageSessions = function(opts) {
       return this.getAllMessageSessionsWithHttpInfo(opts)
@@ -2961,7 +2961,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.lastId Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllOutboundMessagesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllOutboundMessagesPaginatedResponse} and HTTP response
      */
     this.getAllOutboundMessagesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -2985,7 +2985,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetAllOutboundMessagesResponse;
+      var returnType = GetAllOutboundMessagesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/messages', 'GET',
@@ -3001,7 +3001,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.lastId Filter results by ID, selecting all values lesser than the specified ID. Note that \\&#39;page\\&#39; parameter is ignored when \\&#39;lastId\\&#39; is specified
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllOutboundMessagesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllOutboundMessagesPaginatedResponse}
      */
     this.getAllOutboundMessages = function(opts) {
       return this.getAllOutboundMessagesWithHttpInfo(opts)
@@ -3019,7 +3019,7 @@
      * @param {module:model/String} opts.status Fetch schedules with the specific status: a - actual, c - completed, x - all (default to x)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllScheduledMessagesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllScheduledMessagesPaginatedResponse} and HTTP response
      */
     this.getAllScheduledMessagesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -3045,7 +3045,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetAllScheduledMessagesResponse;
+      var returnType = GetAllScheduledMessagesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/schedules', 'GET',
@@ -3062,7 +3062,7 @@
      * @param {module:model/String} opts.status Fetch schedules with the specific status: a - actual, c - completed, x - all (default to x)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllScheduledMessagesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllScheduledMessagesPaginatedResponse}
      */
     this.getAllScheduledMessages = function(opts) {
       return this.getAllScheduledMessagesWithHttpInfo(opts)
@@ -3077,7 +3077,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page
      * @param {Number} opts.limit How many results to return
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllTemplatesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAllTemplatesPaginatedResponse} and HTTP response
      */
     this.getAllTemplatesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -3100,7 +3100,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetAllTemplatesResponse;
+      var returnType = GetAllTemplatesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/templates', 'GET',
@@ -3114,7 +3114,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page
      * @param {Number} opts.limit How many results to return
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllTemplatesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAllTemplatesPaginatedResponse}
      */
     this.getAllTemplates = function(opts) {
       return this.getAllTemplatesWithHttpInfo(opts)
@@ -3327,7 +3327,7 @@
      * @param {String} opts.query Find blocked contacts by specified search query
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBlockedContactsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBlockedContactsPaginatedResponse} and HTTP response
      */
     this.getBlockedContactsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -3353,7 +3353,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetBlockedContactsResponse;
+      var returnType = GetBlockedContactsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/contacts/block/list', 'GET',
@@ -3370,7 +3370,7 @@
      * @param {String} opts.query Find blocked contacts by specified search query
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBlockedContactsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBlockedContactsPaginatedResponse}
      */
     this.getBlockedContacts = function(opts) {
       return this.getBlockedContactsWithHttpInfo(opts)
@@ -3476,7 +3476,7 @@
 
     /**
      * Check pricing for a inbound/outbound call.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Object.<String, {'String': Object}>} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCallsPricesResponse} and HTTP response
      */
     this.getCallsPricesWithHttpInfo = function() {
       var postBody = null;
@@ -3496,7 +3496,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = {'String': Object};
+      var returnType = GetCallsPricesResponse;
 
       return this.apiClient.callApi(
         '/api/v2/calls/price', 'GET',
@@ -3507,7 +3507,7 @@
 
     /**
      * Check pricing for a inbound/outbound call.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Object.<String, {'String': Object}>}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCallsPricesResponse}
      */
     this.getCallsPrices = function() {
       return this.getCallsPricesWithHttpInfo()
@@ -3639,7 +3639,7 @@
      * @param {Number} opts.end Return messages up to specified timestamp only
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
      * @param {Number} opts.voice Fetch results with voice calls (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetChatMessagesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetChatMessagesPaginatedResponse} and HTTP response
      */
     this.getChatMessagesWithHttpInfo = function(id, opts) {
       opts = opts || {};
@@ -3673,7 +3673,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetChatMessagesResponse;
+      var returnType = GetChatMessagesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/chats/{id}/message', 'GET',
@@ -3693,7 +3693,7 @@
      * @param {Number} opts.end Return messages up to specified timestamp only
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
      * @param {Number} opts.voice Fetch results with voice calls (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetChatMessagesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetChatMessagesPaginatedResponse}
      */
     this.getChatMessages = function(id, opts) {
       return this.getChatMessagesWithHttpInfo(id, opts)
@@ -3964,7 +3964,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactNotesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactNotesPaginatedResponse} and HTTP response
      */
     this.getContactNotesWithHttpInfo = function(id, opts) {
       opts = opts || {};
@@ -3993,7 +3993,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetContactNotesResponse;
+      var returnType = GetContactNotesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/contacts/{id}/notes', 'GET',
@@ -4008,7 +4008,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactNotesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactNotesPaginatedResponse}
      */
     this.getContactNotes = function(id, opts) {
       return this.getContactNotesWithHttpInfo(id, opts)
@@ -4026,7 +4026,7 @@
      * @param {Number} opts.shared Should shared contacts to be included (default to 0)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactsPaginatedResponse} and HTTP response
      */
     this.getContactsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -4052,7 +4052,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetContactsResponse;
+      var returnType = GetContactsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/contacts', 'GET',
@@ -4069,7 +4069,7 @@
      * @param {Number} opts.shared Should shared contacts to be included (default to 0)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactsPaginatedResponse}
      */
     this.getContacts = function(opts) {
       return this.getContactsWithHttpInfo(opts)
@@ -4085,7 +4085,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.lists Should lists be returned or not (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/GetContactsAutocompleteResponse>} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactsAutocompleteResponse} and HTTP response
      */
     this.getContactsAutocompleteWithHttpInfo = function(query, opts) {
       opts = opts || {};
@@ -4114,7 +4114,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = [GetContactsAutocompleteResponse];
+      var returnType = GetContactsAutocompleteResponse;
 
       return this.apiClient.callApi(
         '/api/v2/contacts/autocomplete', 'GET',
@@ -4129,7 +4129,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.lists Should lists be returned or not (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/GetContactsAutocompleteResponse>}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactsAutocompleteResponse}
      */
     this.getContactsAutocomplete = function(query, opts) {
       return this.getContactsAutocompleteWithHttpInfo(query, opts)
@@ -4148,7 +4148,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactsByListIdResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactsByListIdPaginatedResponse} and HTTP response
      */
     this.getContactsByListIdWithHttpInfo = function(id, opts) {
       opts = opts || {};
@@ -4179,7 +4179,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetContactsByListIdResponse;
+      var returnType = GetContactsByListIdPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/lists/{id}/contacts', 'GET',
@@ -4197,7 +4197,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactsByListIdResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactsByListIdPaginatedResponse}
      */
     this.getContactsByListId = function(id, opts) {
       return this.getContactsByListIdWithHttpInfo(id, opts)
@@ -4209,7 +4209,7 @@
 
     /**
      * Return list of countries.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<module:model/Country>} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCountriesResponse} and HTTP response
      */
     this.getCountriesWithHttpInfo = function() {
       var postBody = null;
@@ -4229,7 +4229,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = [Country];
+      var returnType = GetCountriesResponse;
 
       return this.apiClient.callApi(
         '/api/v2/countries', 'GET',
@@ -4240,7 +4240,7 @@
 
     /**
      * Return list of countries.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<module:model/Country>}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCountriesResponse}
      */
     this.getCountries = function() {
       return this.getCountriesWithHttpInfo()
@@ -4349,7 +4349,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCustomFieldsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCustomFieldsPaginatedResponse} and HTTP response
      */
     this.getCustomFieldsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -4372,7 +4372,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetCustomFieldsResponse;
+      var returnType = GetCustomFieldsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/customfields', 'GET',
@@ -4386,7 +4386,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCustomFieldsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCustomFieldsPaginatedResponse}
      */
     this.getCustomFields = function(opts) {
       return this.getCustomFieldsWithHttpInfo(opts)
@@ -4449,7 +4449,7 @@
 
     /**
      * Get an array of all rules that are disallowed to the current account.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Array.<'String'>} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetDisallowedRulesResponse} and HTTP response
      */
     this.getDisallowedRulesWithHttpInfo = function() {
       var postBody = null;
@@ -4469,7 +4469,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = ['String'];
+      var returnType = GetDisallowedRulesResponse;
 
       return this.apiClient.callApi(
         '/api/v2/user/disallowed-rules', 'GET',
@@ -4480,7 +4480,7 @@
 
     /**
      * Get an array of all rules that are disallowed to the current account.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Array.<'String'>}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetDisallowedRulesResponse}
      */
     this.getDisallowedRules = function() {
       return this.getDisallowedRulesWithHttpInfo()
@@ -4496,7 +4496,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.query Find contacts or lists by specified search query (default to A)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetFavouritesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetFavouritesPaginatedResponse} and HTTP response
      */
     this.getFavouritesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -4520,7 +4520,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetFavouritesResponse;
+      var returnType = GetFavouritesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/contacts/favorite', 'GET',
@@ -4535,7 +4535,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.query Find contacts or lists by specified search query (default to A)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetFavouritesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetFavouritesPaginatedResponse}
      */
     this.getFavourites = function(opts) {
       return this.getFavouritesWithHttpInfo(opts)
@@ -4550,7 +4550,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetForwardedCallsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetForwardedCallsPaginatedResponse} and HTTP response
      */
     this.getForwardedCallsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -4573,7 +4573,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetForwardedCallsResponse;
+      var returnType = GetForwardedCallsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/calls', 'GET',
@@ -4587,7 +4587,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetForwardedCallsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetForwardedCallsPaginatedResponse}
      */
     this.getForwardedCalls = function(opts) {
       return this.getForwardedCallsWithHttpInfo(opts)
@@ -4696,7 +4696,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetInvoicesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetInvoicesPaginatedResponse} and HTTP response
      */
     this.getInvoicesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -4719,7 +4719,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetInvoicesResponse;
+      var returnType = GetInvoicesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/invoices', 'GET',
@@ -4733,7 +4733,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetInvoicesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetInvoicesPaginatedResponse}
      */
     this.getInvoices = function(opts) {
       return this.getInvoicesWithHttpInfo(opts)
@@ -4851,7 +4851,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetListsOfContactResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetListsOfContactPaginatedResponse} and HTTP response
      */
     this.getListsOfContactWithHttpInfo = function(id, opts) {
       opts = opts || {};
@@ -4880,7 +4880,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetListsOfContactResponse;
+      var returnType = GetListsOfContactPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/contacts/{id}/lists', 'GET',
@@ -4895,7 +4895,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetListsOfContactResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetListsOfContactPaginatedResponse}
      */
     this.getListsOfContact = function(id, opts) {
       return this.getListsOfContactWithHttpInfo(id, opts)
@@ -5268,7 +5268,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {module:model/String} opts.statuses Find messages by status
      * @param {Number} opts.includeDeleted Search also in deleted messages (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetMessagesBySessionIdResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetMessagesBySessionIdPaginatedResponse} and HTTP response
      */
     this.getMessagesBySessionIdWithHttpInfo = function(id, opts) {
       opts = opts || {};
@@ -5299,7 +5299,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetMessagesBySessionIdResponse;
+      var returnType = GetMessagesBySessionIdPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/sessions/{id}/messages', 'GET',
@@ -5317,7 +5317,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {module:model/String} opts.statuses Find messages by status
      * @param {Number} opts.includeDeleted Search also in deleted messages (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetMessagesBySessionIdResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetMessagesBySessionIdPaginatedResponse}
      */
     this.getMessagesBySessionId = function(id, opts) {
       return this.getMessagesBySessionIdWithHttpInfo(id, opts)
@@ -5487,7 +5487,7 @@
      * @param {String} opts.query Find message by specified search query
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetOutboundMessagesHistoryResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetOutboundMessagesHistoryPaginatedResponse} and HTTP response
      */
     this.getOutboundMessagesHistoryWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -5513,7 +5513,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetOutboundMessagesHistoryResponse;
+      var returnType = GetOutboundMessagesHistoryPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/history', 'GET',
@@ -5531,7 +5531,7 @@
      * @param {String} opts.query Find message by specified search query
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetOutboundMessagesHistoryResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetOutboundMessagesHistoryPaginatedResponse}
      */
     this.getOutboundMessagesHistory = function(opts) {
       return this.getOutboundMessagesHistoryWithHttpInfo(opts)
@@ -5691,7 +5691,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSenderIdsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSenderIdsPaginatedResponse} and HTTP response
      */
     this.getSenderIdsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -5714,7 +5714,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetSenderIdsResponse;
+      var returnType = GetSenderIdsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/senderids', 'GET',
@@ -5728,7 +5728,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSenderIdsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSenderIdsPaginatedResponse}
      */
     this.getSenderIds = function(opts) {
       return this.getSenderIdsWithHttpInfo(opts)
@@ -5794,7 +5794,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.start Optional. Start date in unix timestamp format. Default is 7 days ago
      * @param {Number} opts.end Optional. End date in unix timestamp format. Default is now
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSpendingStatResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSpendingStatPaginatedResponse} and HTTP response
      */
     this.getSpendingStatWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -5819,7 +5819,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetSpendingStatResponse;
+      var returnType = GetSpendingStatPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/stats/spending', 'GET',
@@ -5835,7 +5835,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.start Optional. Start date in unix timestamp format. Default is 7 days ago
      * @param {Number} opts.end Optional. End date in unix timestamp format. Default is now
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSpendingStatResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSpendingStatPaginatedResponse}
      */
     this.getSpendingStat = function(opts) {
       return this.getSpendingStatWithHttpInfo(opts)
@@ -6210,7 +6210,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSurveysResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSurveysPaginatedResponse} and HTTP response
      */
     this.getSurveysWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -6233,7 +6233,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetSurveysResponse;
+      var returnType = GetSurveysPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/surveys', 'GET',
@@ -6247,7 +6247,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSurveysResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSurveysPaginatedResponse}
      */
     this.getSurveys = function(opts) {
       return this.getSurveysWithHttpInfo(opts)
@@ -6312,7 +6312,7 @@
      * Return all available timezone IDs.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.full Return full info about timezones in array (0 or 1). Default is 0 (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link Object} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetTimezonesResponse} and HTTP response
      */
     this.getTimezonesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -6334,7 +6334,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = Object;
+      var returnType = GetTimezonesResponse;
 
       return this.apiClient.callApi(
         '/api/v2/timezones', 'GET',
@@ -6347,7 +6347,7 @@
      * Return all available timezone IDs.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.full Return full info about timezones in array (0 or 1). Default is 0 (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link Object}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetTimezonesResponse}
      */
     this.getTimezones = function(opts) {
       return this.getTimezonesWithHttpInfo(opts)
@@ -6456,7 +6456,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUnsubscribersResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUnsubscribersPaginatedResponse} and HTTP response
      */
     this.getUnsubscribersWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -6479,7 +6479,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetUnsubscribersResponse;
+      var returnType = GetUnsubscribersPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/unsubscribers', 'GET',
@@ -6493,7 +6493,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUnsubscribersResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUnsubscribersPaginatedResponse}
      */
     this.getUnsubscribers = function(opts) {
       return this.getUnsubscribersWithHttpInfo(opts)
@@ -6509,7 +6509,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.surveyId Fetch only that numbers which are ready for the survey
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUserDedicatedNumbersResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUserDedicatedNumbersPaginatedResponse} and HTTP response
      */
     this.getUserDedicatedNumbersWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -6533,7 +6533,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetUserDedicatedNumbersResponse;
+      var returnType = GetUserDedicatedNumbersPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/numbers', 'GET',
@@ -6548,7 +6548,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.surveyId Fetch only that numbers which are ready for the survey
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUserDedicatedNumbersResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUserDedicatedNumbersPaginatedResponse}
      */
     this.getUserDedicatedNumbers = function(opts) {
       return this.getUserDedicatedNumbersWithHttpInfo(opts)
@@ -6567,7 +6567,7 @@
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
      * @param {Number} opts.favoriteOnly Return only favorite lists (default to 0)
      * @param {Number} opts.onlyMine Return only current user lists (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUserListsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUserListsPaginatedResponse} and HTTP response
      */
     this.getUserListsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -6594,7 +6594,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = GetUserListsResponse;
+      var returnType = GetUserListsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/lists', 'GET',
@@ -6612,7 +6612,7 @@
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
      * @param {Number} opts.favoriteOnly Return only favorite lists (default to 0)
      * @param {Number} opts.onlyMine Return only current user lists (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUserListsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUserListsPaginatedResponse}
      */
     this.getUserLists = function(opts) {
       return this.getUserListsWithHttpInfo(opts)
@@ -7217,7 +7217,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.query Find chats by specified search query
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchChatsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchChatsPaginatedResponse} and HTTP response
      */
     this.searchChatsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7241,7 +7241,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchChatsResponse;
+      var returnType = SearchChatsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/chats/search', 'GET',
@@ -7256,7 +7256,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.query Find chats by specified search query
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchChatsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchChatsPaginatedResponse}
      */
     this.searchChats = function(opts) {
       return this.searchChatsWithHttpInfo(opts)
@@ -7272,7 +7272,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.ids Find chats by ID(s)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchChatsByIdsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchChatsByIdsPaginatedResponse} and HTTP response
      */
     this.searchChatsByIdsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7296,7 +7296,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchChatsByIdsResponse;
+      var returnType = SearchChatsByIdsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/chats/search/ids', 'GET',
@@ -7311,7 +7311,7 @@
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.ids Find chats by ID(s)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchChatsByIdsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchChatsByIdsPaginatedResponse}
      */
     this.searchChatsByIds = function(opts) {
       return this.searchChatsByIdsWithHttpInfo(opts)
@@ -7328,7 +7328,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.query Find chats by specified search query
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchChatsByReceipentResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchChatsByReceipentPaginatedResponse} and HTTP response
      */
     this.searchChatsByReceipentWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7353,7 +7353,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchChatsByReceipentResponse;
+      var returnType = SearchChatsByReceipentPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/chats/search/recipients', 'GET',
@@ -7369,7 +7369,7 @@
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {String} opts.query Find chats by specified search query
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchChatsByReceipentResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchChatsByReceipentPaginatedResponse}
      */
     this.searchChatsByReceipent = function(opts) {
       return this.searchChatsByReceipentWithHttpInfo(opts)
@@ -7393,7 +7393,7 @@
      * @param {String} opts.country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchContactsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchContactsPaginatedResponse} and HTTP response
      */
     this.searchContactsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7425,7 +7425,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchContactsResponse;
+      var returnType = SearchContactsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/contacts/search', 'GET',
@@ -7448,7 +7448,7 @@
      * @param {String} opts.country 2-letter ISO country code for local phone numbers, used when &#39;local&#39; is set to true. Default is account country
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchContactsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchContactsPaginatedResponse}
      */
     this.searchContacts = function(opts) {
       return this.searchContactsWithHttpInfo(opts)
@@ -7468,7 +7468,7 @@
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
      * @param {Number} opts.expand Expand by adding firstName, lastName and contactId (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchInboundMessagesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchInboundMessagesPaginatedResponse} and HTTP response
      */
     this.searchInboundMessagesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7496,7 +7496,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchInboundMessagesResponse;
+      var returnType = SearchInboundMessagesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/replies/search', 'GET',
@@ -7515,7 +7515,7 @@
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
      * @param {Number} opts.expand Expand by adding firstName, lastName and contactId (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchInboundMessagesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchInboundMessagesPaginatedResponse}
      */
     this.searchInboundMessages = function(opts) {
       return this.searchInboundMessagesWithHttpInfo(opts)
@@ -7536,7 +7536,7 @@
      * @param {Number} opts.onlyDefault Return only default lists (default to 0)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchListsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchListsPaginatedResponse} and HTTP response
      */
     this.searchListsWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7565,7 +7565,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchListsResponse;
+      var returnType = SearchListsPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/lists/search', 'GET',
@@ -7585,7 +7585,7 @@
      * @param {Number} opts.onlyDefault Return only default lists (default to 0)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchListsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchListsPaginatedResponse}
      */
     this.searchLists = function(opts) {
       return this.searchListsWithHttpInfo(opts)
@@ -7607,7 +7607,7 @@
      * @param {module:model/String} opts.statuses Find messages by status
      * @param {Number} opts.includeDeleted Search also in deleted messages (default to 0)
      * @param {String} opts.query Find messages by specified search query
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchOutboundMessagesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchOutboundMessagesPaginatedResponse} and HTTP response
      */
     this.searchOutboundMessagesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7636,7 +7636,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchOutboundMessagesResponse;
+      var returnType = SearchOutboundMessagesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/messages/search', 'GET',
@@ -7657,7 +7657,7 @@
      * @param {module:model/String} opts.statuses Find messages by status
      * @param {Number} opts.includeDeleted Search also in deleted messages (default to 0)
      * @param {String} opts.query Find messages by specified search query
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchOutboundMessagesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchOutboundMessagesPaginatedResponse}
      */
     this.searchOutboundMessages = function(opts) {
       return this.searchOutboundMessagesWithHttpInfo(opts)
@@ -7677,7 +7677,7 @@
      * @param {module:model/String} opts.status Fetch schedules with the specific status: a - actual, c - completed, x - all (default to x)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchScheduledMessagesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchScheduledMessagesPaginatedResponse} and HTTP response
      */
     this.searchScheduledMessagesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7705,7 +7705,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchScheduledMessagesResponse;
+      var returnType = SearchScheduledMessagesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/schedules/search', 'GET',
@@ -7724,7 +7724,7 @@
      * @param {module:model/String} opts.status Fetch schedules with the specific status: a - actual, c - completed, x - all (default to x)
      * @param {module:model/String} opts.orderBy Order results by some field. Default is id (default to id)
      * @param {module:model/String} opts.direction Order direction. Default is desc (default to desc)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchScheduledMessagesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchScheduledMessagesPaginatedResponse}
      */
     this.searchScheduledMessages = function(opts) {
       return this.searchScheduledMessagesWithHttpInfo(opts)
@@ -7742,7 +7742,7 @@
      * @param {String} opts.ids Find template by ID(s)
      * @param {String} opts.name Find template by name
      * @param {String} opts.content Find template by content
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchTemplatesResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SearchTemplatesPaginatedResponse} and HTTP response
      */
     this.searchTemplatesWithHttpInfo = function(opts) {
       opts = opts || {};
@@ -7768,7 +7768,7 @@
       var authNames = ['BasicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = SearchTemplatesResponse;
+      var returnType = SearchTemplatesPaginatedResponse;
 
       return this.apiClient.callApi(
         '/api/v2/templates/search', 'GET',
@@ -7785,7 +7785,7 @@
      * @param {String} opts.ids Find template by ID(s)
      * @param {String} opts.name Find template by name
      * @param {String} opts.content Find template by content
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchTemplatesResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SearchTemplatesPaginatedResponse}
      */
     this.searchTemplates = function(opts) {
       return this.searchTemplatesWithHttpInfo(opts)

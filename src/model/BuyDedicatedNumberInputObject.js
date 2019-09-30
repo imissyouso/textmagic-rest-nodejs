@@ -37,7 +37,7 @@
   /**
    * The BuyDedicatedNumberInputObject model module.
    * @module model/BuyDedicatedNumberInputObject
-   * @version 2.0.420
+   * @version 2.0.428
    */
 
   /**

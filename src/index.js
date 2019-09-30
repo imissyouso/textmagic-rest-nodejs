@@ -17,12 +17,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AssignContactsToListInputObject', 'model/BadRequestResponse', 'model/BadRequestResponseErrors', 'model/BlockContactInputObject', 'model/BulkSession', 'model/BuyDedicatedNumberInputObject', 'model/Chat', 'model/CheckPhoneVerificationCodeInputObject', 'model/ClearAndAssignContactsToListInputObject', 'model/CloseChatsBulkInputObject', 'model/Contact', 'model/ContactCustomField', 'model/ContactImage', 'model/ContactNote', 'model/Conversation', 'model/Country', 'model/CreateContactInputObject', 'model/CreateContactNoteInputObject', 'model/CreateCustomFieldInputObject', 'model/CreateListInputObject', 'model/CreatePushTokenInputObject', 'model/CreateSurveyInputObject', 'model/CreateSurveyNodeInputObject', 'model/CreateTemplateInputObject', 'model/Currency', 'model/DeleteChatMessagesBulkInputObject', 'model/DeleteChatsBulkInputObject', 'model/DeleteContacsFromListObject', 'model/DeleteContactNotesBulkInputObject', 'model/DeleteContactsByIdsInputObject', 'model/DeleteInboundMessagesBulkInputObject', 'model/DeleteListContactsBulkInputObject', 'model/DeleteListsBulkInputObject', 'model/DeleteMessageSessionsBulkInputObject', 'model/DeleteOutboundMessagesBulkInputObject', 'model/DeleteScheduledMessagesBulkInputObject', 'model/DeleteTemplatesBulkInputObject', 'model/DoAuthInputObject', 'model/DoAuthResponse', 'model/DoAuthResponseMinVersions', 'model/DoCarrierLookupResponse', 'model/DoEmailLookupResponse', 'model/FavoriteContact', 'model/ForwardedCall', 'model/GetAllBulkSessionsResponse', 'model/GetAllChatsResponse', 'model/GetAllInboundMessagesResponse', 'model/GetAllMessageSessionsResponse', 'model/GetAllOutboundMessagesResponse', 'model/GetAllScheduledMessagesResponse', 'model/GetAllTemplatesResponse', 'model/GetAvailableDedicatedNumbersResponse', 'model/GetAvailableSenderSettingOptionsResponse', 'model/GetBalanceNotificationOptionsResponse', 'model/GetBalanceNotificationSettingsResponse', 'model/GetBlockedContactsResponse', 'model/GetCallbackSettingsResponse', 'model/GetChatMessagesResponse', 'model/GetContactImportSessionProgressResponse', 'model/GetContactNotesResponse', 'model/GetContactsAutocompleteResponse', 'model/GetContactsByListIdResponse', 'model/GetContactsResponse', 'model/GetCustomFieldsResponse', 'model/GetFavouritesResponse', 'model/GetForwardedCallsResponse', 'model/GetInboundMessagesNotificationSettingsResponse', 'model/GetInvoicesResponse', 'model/GetListContactsIdsResponse', 'model/GetListsOfContactResponse', 'model/GetMessagePreviewResponse', 'model/GetMessagePriceResponse', 'model/GetMessagePricesResponse', 'model/GetMessageSessionStatResponse', 'model/GetMessagesBySessionIdResponse', 'model/GetMessagingCountersResponse', 'model/GetMessagingStatResponse', 'model/GetOutboundMessagesHistoryResponse', 'model/GetPushTokensResponse', 'model/GetSenderIdsResponse', 'model/GetSenderSettingsResponse', 'model/GetSpendingStatResponse', 'model/GetStateResponse', 'model/GetSubaccountsWithTokensInputObject', 'model/GetSubaccountsWithTokensResponse', 'model/GetSurveyNodesResponse', 'model/GetSurveysResponse', 'model/GetUnreadMessagesTotalResponse', 'model/GetUnsubscribersResponse', 'model/GetUserDedicatedNumbersResponse', 'model/GetUserListsResponse', 'model/GetVersionsResponse', 'model/Group', 'model/GroupImage', 'model/InviteSubaccountInputObject', 'model/Invoice', 'model/MarkChatsReadBulkInputObject', 'model/MarkChatsUnreadBulkInputObject', 'model/MergeSurveyNodesInputObject', 'model/MessageIn', 'model/MessageOut', 'model/MessageSession', 'model/MessageTemplate', 'model/MessagesIcs', 'model/MessagesIcsParameters', 'model/MessagesIcsParametersRecipients', 'model/MessagesIcsTextParameters', 'model/MessagingStatItem', 'model/MuteChatInputObject', 'model/MuteChatsBulkInputObject', 'model/NotFoundResponse', 'model/PingResponse', 'model/PushToken', 'model/ReopenChatsBulkInputObject', 'model/RequestNewSubaccountTokenInputObject', 'model/RequestSenderIdInputObject', 'model/ResourceLinkResponse', 'model/SearchChatsByIdsResponse', 'model/SearchChatsByReceipentResponse', 'model/SearchChatsResponse', 'model/SearchContactsResponse', 'model/SearchInboundMessagesResponse', 'model/SearchListsResponse', 'model/SearchOutboundMessagesResponse', 'model/SearchScheduledMessagesResponse', 'model/SearchTemplatesResponse', 'model/SendMessageInputObject', 'model/SendMessageResponse', 'model/SenderId', 'model/SetChatStatusInputObject', 'model/SubaccountWithToken', 'model/SuccessfulResponse', 'model/Survey', 'model/SurveyNode', 'model/SurveyRecipient', 'model/SurveySenderCountries', 'model/Timezone', 'model/UnauthorizedResponse', 'model/UnblockContactInputObject', 'model/UnblockContactsBulkInputObject', 'model/UnmuteChatsBulkInputObject', 'model/UnsubscribeContactInputObject', 'model/UnsubscribedContact', 'model/UpdateBalanceNotificationSettingsInputObject', 'model/UpdateCallbackSettingsInputObject', 'model/UpdateChatDesktopNotificationSettingsInputObject', 'model/UpdateContactInputObject', 'model/UpdateContactNoteInputObject', 'model/UpdateCurrentUserInputObject', 'model/UpdateCurrentUserResponse', 'model/UpdateCustomFieldInputObject', 'model/UpdateCustomFieldValueInputObject', 'model/UpdateInboundMessagesNotificationSettingsInputObject', 'model/UpdateListObject', 'model/UpdatePasswordInputObject', 'model/UpdateSenderSettingInputObject', 'model/UpdateSurveyInputObject', 'model/UpdateSurveyNodeInputObject', 'model/UpdateTemplateInputObject', 'model/UploadMessageAttachmentResponse', 'model/User', 'model/UserCustomField', 'model/UserImage', 'model/UserStatement', 'model/UsersInbound', 'api/TextMagicApi'], factory);
+    define(['ApiClient', 'model/AssignContactsToListInputObject', 'model/BadRequestResponse', 'model/BadRequestResponseErrors', 'model/BlockContactInputObject', 'model/BulkSession', 'model/BuyDedicatedNumberInputObject', 'model/Chat', 'model/CheckPhoneVerificationCodeInputObject', 'model/ClearAndAssignContactsToListInputObject', 'model/CloseChatsBulkInputObject', 'model/Contact', 'model/ContactCustomField', 'model/ContactImage', 'model/ContactNote', 'model/Conversation', 'model/Country', 'model/CreateContactInputObject', 'model/CreateContactNoteInputObject', 'model/CreateCustomFieldInputObject', 'model/CreateListInputObject', 'model/CreatePushTokenInputObject', 'model/CreateSurveyInputObject', 'model/CreateSurveyNodeInputObject', 'model/CreateTemplateInputObject', 'model/Currency', 'model/DeleteChatMessagesBulkInputObject', 'model/DeleteChatsBulkInputObject', 'model/DeleteContacsFromListObject', 'model/DeleteContactNotesBulkInputObject', 'model/DeleteContactsByIdsInputObject', 'model/DeleteInboundMessagesBulkInputObject', 'model/DeleteListContactsBulkInputObject', 'model/DeleteListsBulkInputObject', 'model/DeleteMessageSessionsBulkInputObject', 'model/DeleteOutboundMessagesBulkInputObject', 'model/DeleteScheduledMessagesBulkInputObject', 'model/DeleteTemplatesBulkInputObject', 'model/DoAuthInputObject', 'model/DoAuthResponse', 'model/DoAuthResponseMinVersions', 'model/DoCarrierLookupResponse', 'model/DoEmailLookupResponse', 'model/FavoriteContact', 'model/ForwardedCall', 'model/GetAllBulkSessionsPaginatedResponse', 'model/GetAllChatsPaginatedResponse', 'model/GetAllInboundMessagesPaginatedResponse', 'model/GetAllMessageSessionsPaginatedResponse', 'model/GetAllOutboundMessagesPaginatedResponse', 'model/GetAllScheduledMessagesPaginatedResponse', 'model/GetAllTemplatesPaginatedResponse', 'model/GetAvailableDedicatedNumbersResponse', 'model/GetAvailableSenderSettingOptionsResponse', 'model/GetBalanceNotificationOptionsResponse', 'model/GetBalanceNotificationSettingsResponse', 'model/GetBlockedContactsPaginatedResponse', 'model/GetCallbackSettingsResponse', 'model/GetCallsPricesResponse', 'model/GetChatMessagesPaginatedResponse', 'model/GetContactImportSessionProgressResponse', 'model/GetContactNotesPaginatedResponse', 'model/GetContactsAutocompleteResponse', 'model/GetContactsByListIdPaginatedResponse', 'model/GetContactsPaginatedResponse', 'model/GetCountriesResponse', 'model/GetCustomFieldsPaginatedResponse', 'model/GetDisallowedRulesResponse', 'model/GetFavouritesPaginatedResponse', 'model/GetForwardedCallsPaginatedResponse', 'model/GetInboundMessagesNotificationSettingsResponse', 'model/GetInvoicesPaginatedResponse', 'model/GetListContactsIdsResponse', 'model/GetListsOfContactPaginatedResponse', 'model/GetMessagePreviewResponse', 'model/GetMessagePriceResponse', 'model/GetMessagePricesResponse', 'model/GetMessageSessionStatResponse', 'model/GetMessagesBySessionIdPaginatedResponse', 'model/GetMessagingCountersResponse', 'model/GetMessagingStatResponse', 'model/GetOutboundMessagesHistoryPaginatedResponse', 'model/GetPushTokensResponse', 'model/GetSenderIdsPaginatedResponse', 'model/GetSenderSettingsResponse', 'model/GetSpendingStatPaginatedResponse', 'model/GetStateResponse', 'model/GetSubaccountsWithTokensInputObject', 'model/GetSubaccountsWithTokensResponse', 'model/GetSurveyNodesResponse', 'model/GetSurveysPaginatedResponse', 'model/GetTimezonesResponse', 'model/GetUnreadMessagesTotalResponse', 'model/GetUnsubscribersPaginatedResponse', 'model/GetUserDedicatedNumbersPaginatedResponse', 'model/GetUserListsPaginatedResponse', 'model/GetVersionsResponse', 'model/Group', 'model/GroupImage', 'model/InviteSubaccountInputObject', 'model/Invoice', 'model/MarkChatsReadBulkInputObject', 'model/MarkChatsUnreadBulkInputObject', 'model/MergeSurveyNodesInputObject', 'model/MessageIn', 'model/MessageOut', 'model/MessageSession', 'model/MessageTemplate', 'model/MessagesIcs', 'model/MessagesIcsParameters', 'model/MessagesIcsParametersRecipients', 'model/MessagesIcsTextParameters', 'model/MessagingStatItem', 'model/MuteChatInputObject', 'model/MuteChatsBulkInputObject', 'model/NotFoundResponse', 'model/PingResponse', 'model/PushToken', 'model/ReopenChatsBulkInputObject', 'model/RequestNewSubaccountTokenInputObject', 'model/RequestSenderIdInputObject', 'model/ResourceLinkResponse', 'model/SearchChatsByIdsPaginatedResponse', 'model/SearchChatsByReceipentPaginatedResponse', 'model/SearchChatsPaginatedResponse', 'model/SearchContactsPaginatedResponse', 'model/SearchInboundMessagesPaginatedResponse', 'model/SearchListsPaginatedResponse', 'model/SearchOutboundMessagesPaginatedResponse', 'model/SearchScheduledMessagesPaginatedResponse', 'model/SearchTemplatesPaginatedResponse', 'model/SendMessageInputObject', 'model/SendMessageResponse', 'model/SenderId', 'model/SetChatStatusInputObject', 'model/SubaccountWithToken', 'model/SuccessfulResponse', 'model/Survey', 'model/SurveyNode', 'model/SurveyRecipient', 'model/SurveySenderCountries', 'model/Timezone', 'model/UnauthorizedResponse', 'model/UnblockContactInputObject', 'model/UnblockContactsBulkInputObject', 'model/UnmuteChatsBulkInputObject', 'model/UnsubscribeContactInputObject', 'model/UnsubscribedContact', 'model/UpdateBalanceNotificationSettingsInputObject', 'model/UpdateCallbackSettingsInputObject', 'model/UpdateChatDesktopNotificationSettingsInputObject', 'model/UpdateContactInputObject', 'model/UpdateContactNoteInputObject', 'model/UpdateCurrentUserInputObject', 'model/UpdateCurrentUserResponse', 'model/UpdateCustomFieldInputObject', 'model/UpdateCustomFieldValueInputObject', 'model/UpdateInboundMessagesNotificationSettingsInputObject', 'model/UpdateListObject', 'model/UpdatePasswordInputObject', 'model/UpdateSenderSettingInputObject', 'model/UpdateSurveyInputObject', 'model/UpdateSurveyNodeInputObject', 'model/UpdateTemplateInputObject', 'model/UploadMessageAttachmentResponse', 'model/User', 'model/UserCustomField', 'model/UserImage', 'model/UserStatement', 'model/UsersInbound', 'api/TextMagicApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/AssignContactsToListInputObject'), require('./model/BadRequestResponse'), require('./model/BadRequestResponseErrors'), require('./model/BlockContactInputObject'), require('./model/BulkSession'), require('./model/BuyDedicatedNumberInputObject'), require('./model/Chat'), require('./model/CheckPhoneVerificationCodeInputObject'), require('./model/ClearAndAssignContactsToListInputObject'), require('./model/CloseChatsBulkInputObject'), require('./model/Contact'), require('./model/ContactCustomField'), require('./model/ContactImage'), require('./model/ContactNote'), require('./model/Conversation'), require('./model/Country'), require('./model/CreateContactInputObject'), require('./model/CreateContactNoteInputObject'), require('./model/CreateCustomFieldInputObject'), require('./model/CreateListInputObject'), require('./model/CreatePushTokenInputObject'), require('./model/CreateSurveyInputObject'), require('./model/CreateSurveyNodeInputObject'), require('./model/CreateTemplateInputObject'), require('./model/Currency'), require('./model/DeleteChatMessagesBulkInputObject'), require('./model/DeleteChatsBulkInputObject'), require('./model/DeleteContacsFromListObject'), require('./model/DeleteContactNotesBulkInputObject'), require('./model/DeleteContactsByIdsInputObject'), require('./model/DeleteInboundMessagesBulkInputObject'), require('./model/DeleteListContactsBulkInputObject'), require('./model/DeleteListsBulkInputObject'), require('./model/DeleteMessageSessionsBulkInputObject'), require('./model/DeleteOutboundMessagesBulkInputObject'), require('./model/DeleteScheduledMessagesBulkInputObject'), require('./model/DeleteTemplatesBulkInputObject'), require('./model/DoAuthInputObject'), require('./model/DoAuthResponse'), require('./model/DoAuthResponseMinVersions'), require('./model/DoCarrierLookupResponse'), require('./model/DoEmailLookupResponse'), require('./model/FavoriteContact'), require('./model/ForwardedCall'), require('./model/GetAllBulkSessionsResponse'), require('./model/GetAllChatsResponse'), require('./model/GetAllInboundMessagesResponse'), require('./model/GetAllMessageSessionsResponse'), require('./model/GetAllOutboundMessagesResponse'), require('./model/GetAllScheduledMessagesResponse'), require('./model/GetAllTemplatesResponse'), require('./model/GetAvailableDedicatedNumbersResponse'), require('./model/GetAvailableSenderSettingOptionsResponse'), require('./model/GetBalanceNotificationOptionsResponse'), require('./model/GetBalanceNotificationSettingsResponse'), require('./model/GetBlockedContactsResponse'), require('./model/GetCallbackSettingsResponse'), require('./model/GetChatMessagesResponse'), require('./model/GetContactImportSessionProgressResponse'), require('./model/GetContactNotesResponse'), require('./model/GetContactsAutocompleteResponse'), require('./model/GetContactsByListIdResponse'), require('./model/GetContactsResponse'), require('./model/GetCustomFieldsResponse'), require('./model/GetFavouritesResponse'), require('./model/GetForwardedCallsResponse'), require('./model/GetInboundMessagesNotificationSettingsResponse'), require('./model/GetInvoicesResponse'), require('./model/GetListContactsIdsResponse'), require('./model/GetListsOfContactResponse'), require('./model/GetMessagePreviewResponse'), require('./model/GetMessagePriceResponse'), require('./model/GetMessagePricesResponse'), require('./model/GetMessageSessionStatResponse'), require('./model/GetMessagesBySessionIdResponse'), require('./model/GetMessagingCountersResponse'), require('./model/GetMessagingStatResponse'), require('./model/GetOutboundMessagesHistoryResponse'), require('./model/GetPushTokensResponse'), require('./model/GetSenderIdsResponse'), require('./model/GetSenderSettingsResponse'), require('./model/GetSpendingStatResponse'), require('./model/GetStateResponse'), require('./model/GetSubaccountsWithTokensInputObject'), require('./model/GetSubaccountsWithTokensResponse'), require('./model/GetSurveyNodesResponse'), require('./model/GetSurveysResponse'), require('./model/GetUnreadMessagesTotalResponse'), require('./model/GetUnsubscribersResponse'), require('./model/GetUserDedicatedNumbersResponse'), require('./model/GetUserListsResponse'), require('./model/GetVersionsResponse'), require('./model/Group'), require('./model/GroupImage'), require('./model/InviteSubaccountInputObject'), require('./model/Invoice'), require('./model/MarkChatsReadBulkInputObject'), require('./model/MarkChatsUnreadBulkInputObject'), require('./model/MergeSurveyNodesInputObject'), require('./model/MessageIn'), require('./model/MessageOut'), require('./model/MessageSession'), require('./model/MessageTemplate'), require('./model/MessagesIcs'), require('./model/MessagesIcsParameters'), require('./model/MessagesIcsParametersRecipients'), require('./model/MessagesIcsTextParameters'), require('./model/MessagingStatItem'), require('./model/MuteChatInputObject'), require('./model/MuteChatsBulkInputObject'), require('./model/NotFoundResponse'), require('./model/PingResponse'), require('./model/PushToken'), require('./model/ReopenChatsBulkInputObject'), require('./model/RequestNewSubaccountTokenInputObject'), require('./model/RequestSenderIdInputObject'), require('./model/ResourceLinkResponse'), require('./model/SearchChatsByIdsResponse'), require('./model/SearchChatsByReceipentResponse'), require('./model/SearchChatsResponse'), require('./model/SearchContactsResponse'), require('./model/SearchInboundMessagesResponse'), require('./model/SearchListsResponse'), require('./model/SearchOutboundMessagesResponse'), require('./model/SearchScheduledMessagesResponse'), require('./model/SearchTemplatesResponse'), require('./model/SendMessageInputObject'), require('./model/SendMessageResponse'), require('./model/SenderId'), require('./model/SetChatStatusInputObject'), require('./model/SubaccountWithToken'), require('./model/SuccessfulResponse'), require('./model/Survey'), require('./model/SurveyNode'), require('./model/SurveyRecipient'), require('./model/SurveySenderCountries'), require('./model/Timezone'), require('./model/UnauthorizedResponse'), require('./model/UnblockContactInputObject'), require('./model/UnblockContactsBulkInputObject'), require('./model/UnmuteChatsBulkInputObject'), require('./model/UnsubscribeContactInputObject'), require('./model/UnsubscribedContact'), require('./model/UpdateBalanceNotificationSettingsInputObject'), require('./model/UpdateCallbackSettingsInputObject'), require('./model/UpdateChatDesktopNotificationSettingsInputObject'), require('./model/UpdateContactInputObject'), require('./model/UpdateContactNoteInputObject'), require('./model/UpdateCurrentUserInputObject'), require('./model/UpdateCurrentUserResponse'), require('./model/UpdateCustomFieldInputObject'), require('./model/UpdateCustomFieldValueInputObject'), require('./model/UpdateInboundMessagesNotificationSettingsInputObject'), require('./model/UpdateListObject'), require('./model/UpdatePasswordInputObject'), require('./model/UpdateSenderSettingInputObject'), require('./model/UpdateSurveyInputObject'), require('./model/UpdateSurveyNodeInputObject'), require('./model/UpdateTemplateInputObject'), require('./model/UploadMessageAttachmentResponse'), require('./model/User'), require('./model/UserCustomField'), require('./model/UserImage'), require('./model/UserStatement'), require('./model/UsersInbound'), require('./api/TextMagicApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/AssignContactsToListInputObject'), require('./model/BadRequestResponse'), require('./model/BadRequestResponseErrors'), require('./model/BlockContactInputObject'), require('./model/BulkSession'), require('./model/BuyDedicatedNumberInputObject'), require('./model/Chat'), require('./model/CheckPhoneVerificationCodeInputObject'), require('./model/ClearAndAssignContactsToListInputObject'), require('./model/CloseChatsBulkInputObject'), require('./model/Contact'), require('./model/ContactCustomField'), require('./model/ContactImage'), require('./model/ContactNote'), require('./model/Conversation'), require('./model/Country'), require('./model/CreateContactInputObject'), require('./model/CreateContactNoteInputObject'), require('./model/CreateCustomFieldInputObject'), require('./model/CreateListInputObject'), require('./model/CreatePushTokenInputObject'), require('./model/CreateSurveyInputObject'), require('./model/CreateSurveyNodeInputObject'), require('./model/CreateTemplateInputObject'), require('./model/Currency'), require('./model/DeleteChatMessagesBulkInputObject'), require('./model/DeleteChatsBulkInputObject'), require('./model/DeleteContacsFromListObject'), require('./model/DeleteContactNotesBulkInputObject'), require('./model/DeleteContactsByIdsInputObject'), require('./model/DeleteInboundMessagesBulkInputObject'), require('./model/DeleteListContactsBulkInputObject'), require('./model/DeleteListsBulkInputObject'), require('./model/DeleteMessageSessionsBulkInputObject'), require('./model/DeleteOutboundMessagesBulkInputObject'), require('./model/DeleteScheduledMessagesBulkInputObject'), require('./model/DeleteTemplatesBulkInputObject'), require('./model/DoAuthInputObject'), require('./model/DoAuthResponse'), require('./model/DoAuthResponseMinVersions'), require('./model/DoCarrierLookupResponse'), require('./model/DoEmailLookupResponse'), require('./model/FavoriteContact'), require('./model/ForwardedCall'), require('./model/GetAllBulkSessionsPaginatedResponse'), require('./model/GetAllChatsPaginatedResponse'), require('./model/GetAllInboundMessagesPaginatedResponse'), require('./model/GetAllMessageSessionsPaginatedResponse'), require('./model/GetAllOutboundMessagesPaginatedResponse'), require('./model/GetAllScheduledMessagesPaginatedResponse'), require('./model/GetAllTemplatesPaginatedResponse'), require('./model/GetAvailableDedicatedNumbersResponse'), require('./model/GetAvailableSenderSettingOptionsResponse'), require('./model/GetBalanceNotificationOptionsResponse'), require('./model/GetBalanceNotificationSettingsResponse'), require('./model/GetBlockedContactsPaginatedResponse'), require('./model/GetCallbackSettingsResponse'), require('./model/GetCallsPricesResponse'), require('./model/GetChatMessagesPaginatedResponse'), require('./model/GetContactImportSessionProgressResponse'), require('./model/GetContactNotesPaginatedResponse'), require('./model/GetContactsAutocompleteResponse'), require('./model/GetContactsByListIdPaginatedResponse'), require('./model/GetContactsPaginatedResponse'), require('./model/GetCountriesResponse'), require('./model/GetCustomFieldsPaginatedResponse'), require('./model/GetDisallowedRulesResponse'), require('./model/GetFavouritesPaginatedResponse'), require('./model/GetForwardedCallsPaginatedResponse'), require('./model/GetInboundMessagesNotificationSettingsResponse'), require('./model/GetInvoicesPaginatedResponse'), require('./model/GetListContactsIdsResponse'), require('./model/GetListsOfContactPaginatedResponse'), require('./model/GetMessagePreviewResponse'), require('./model/GetMessagePriceResponse'), require('./model/GetMessagePricesResponse'), require('./model/GetMessageSessionStatResponse'), require('./model/GetMessagesBySessionIdPaginatedResponse'), require('./model/GetMessagingCountersResponse'), require('./model/GetMessagingStatResponse'), require('./model/GetOutboundMessagesHistoryPaginatedResponse'), require('./model/GetPushTokensResponse'), require('./model/GetSenderIdsPaginatedResponse'), require('./model/GetSenderSettingsResponse'), require('./model/GetSpendingStatPaginatedResponse'), require('./model/GetStateResponse'), require('./model/GetSubaccountsWithTokensInputObject'), require('./model/GetSubaccountsWithTokensResponse'), require('./model/GetSurveyNodesResponse'), require('./model/GetSurveysPaginatedResponse'), require('./model/GetTimezonesResponse'), require('./model/GetUnreadMessagesTotalResponse'), require('./model/GetUnsubscribersPaginatedResponse'), require('./model/GetUserDedicatedNumbersPaginatedResponse'), require('./model/GetUserListsPaginatedResponse'), require('./model/GetVersionsResponse'), require('./model/Group'), require('./model/GroupImage'), require('./model/InviteSubaccountInputObject'), require('./model/Invoice'), require('./model/MarkChatsReadBulkInputObject'), require('./model/MarkChatsUnreadBulkInputObject'), require('./model/MergeSurveyNodesInputObject'), require('./model/MessageIn'), require('./model/MessageOut'), require('./model/MessageSession'), require('./model/MessageTemplate'), require('./model/MessagesIcs'), require('./model/MessagesIcsParameters'), require('./model/MessagesIcsParametersRecipients'), require('./model/MessagesIcsTextParameters'), require('./model/MessagingStatItem'), require('./model/MuteChatInputObject'), require('./model/MuteChatsBulkInputObject'), require('./model/NotFoundResponse'), require('./model/PingResponse'), require('./model/PushToken'), require('./model/ReopenChatsBulkInputObject'), require('./model/RequestNewSubaccountTokenInputObject'), require('./model/RequestSenderIdInputObject'), require('./model/ResourceLinkResponse'), require('./model/SearchChatsByIdsPaginatedResponse'), require('./model/SearchChatsByReceipentPaginatedResponse'), require('./model/SearchChatsPaginatedResponse'), require('./model/SearchContactsPaginatedResponse'), require('./model/SearchInboundMessagesPaginatedResponse'), require('./model/SearchListsPaginatedResponse'), require('./model/SearchOutboundMessagesPaginatedResponse'), require('./model/SearchScheduledMessagesPaginatedResponse'), require('./model/SearchTemplatesPaginatedResponse'), require('./model/SendMessageInputObject'), require('./model/SendMessageResponse'), require('./model/SenderId'), require('./model/SetChatStatusInputObject'), require('./model/SubaccountWithToken'), require('./model/SuccessfulResponse'), require('./model/Survey'), require('./model/SurveyNode'), require('./model/SurveyRecipient'), require('./model/SurveySenderCountries'), require('./model/Timezone'), require('./model/UnauthorizedResponse'), require('./model/UnblockContactInputObject'), require('./model/UnblockContactsBulkInputObject'), require('./model/UnmuteChatsBulkInputObject'), require('./model/UnsubscribeContactInputObject'), require('./model/UnsubscribedContact'), require('./model/UpdateBalanceNotificationSettingsInputObject'), require('./model/UpdateCallbackSettingsInputObject'), require('./model/UpdateChatDesktopNotificationSettingsInputObject'), require('./model/UpdateContactInputObject'), require('./model/UpdateContactNoteInputObject'), require('./model/UpdateCurrentUserInputObject'), require('./model/UpdateCurrentUserResponse'), require('./model/UpdateCustomFieldInputObject'), require('./model/UpdateCustomFieldValueInputObject'), require('./model/UpdateInboundMessagesNotificationSettingsInputObject'), require('./model/UpdateListObject'), require('./model/UpdatePasswordInputObject'), require('./model/UpdateSenderSettingInputObject'), require('./model/UpdateSurveyInputObject'), require('./model/UpdateSurveyNodeInputObject'), require('./model/UpdateTemplateInputObject'), require('./model/UploadMessageAttachmentResponse'), require('./model/User'), require('./model/UserCustomField'), require('./model/UserImage'), require('./model/UserStatement'), require('./model/UsersInbound'), require('./api/TextMagicApi'));
   }
-}(function(ApiClient, AssignContactsToListInputObject, BadRequestResponse, BadRequestResponseErrors, BlockContactInputObject, BulkSession, BuyDedicatedNumberInputObject, Chat, CheckPhoneVerificationCodeInputObject, ClearAndAssignContactsToListInputObject, CloseChatsBulkInputObject, Contact, ContactCustomField, ContactImage, ContactNote, Conversation, Country, CreateContactInputObject, CreateContactNoteInputObject, CreateCustomFieldInputObject, CreateListInputObject, CreatePushTokenInputObject, CreateSurveyInputObject, CreateSurveyNodeInputObject, CreateTemplateInputObject, Currency, DeleteChatMessagesBulkInputObject, DeleteChatsBulkInputObject, DeleteContacsFromListObject, DeleteContactNotesBulkInputObject, DeleteContactsByIdsInputObject, DeleteInboundMessagesBulkInputObject, DeleteListContactsBulkInputObject, DeleteListsBulkInputObject, DeleteMessageSessionsBulkInputObject, DeleteOutboundMessagesBulkInputObject, DeleteScheduledMessagesBulkInputObject, DeleteTemplatesBulkInputObject, DoAuthInputObject, DoAuthResponse, DoAuthResponseMinVersions, DoCarrierLookupResponse, DoEmailLookupResponse, FavoriteContact, ForwardedCall, GetAllBulkSessionsResponse, GetAllChatsResponse, GetAllInboundMessagesResponse, GetAllMessageSessionsResponse, GetAllOutboundMessagesResponse, GetAllScheduledMessagesResponse, GetAllTemplatesResponse, GetAvailableDedicatedNumbersResponse, GetAvailableSenderSettingOptionsResponse, GetBalanceNotificationOptionsResponse, GetBalanceNotificationSettingsResponse, GetBlockedContactsResponse, GetCallbackSettingsResponse, GetChatMessagesResponse, GetContactImportSessionProgressResponse, GetContactNotesResponse, GetContactsAutocompleteResponse, GetContactsByListIdResponse, GetContactsResponse, GetCustomFieldsResponse, GetFavouritesResponse, GetForwardedCallsResponse, GetInboundMessagesNotificationSettingsResponse, GetInvoicesResponse, GetListContactsIdsResponse, GetListsOfContactResponse, GetMessagePreviewResponse, GetMessagePriceResponse, GetMessagePricesResponse, GetMessageSessionStatResponse, GetMessagesBySessionIdResponse, GetMessagingCountersResponse, GetMessagingStatResponse, GetOutboundMessagesHistoryResponse, GetPushTokensResponse, GetSenderIdsResponse, GetSenderSettingsResponse, GetSpendingStatResponse, GetStateResponse, GetSubaccountsWithTokensInputObject, GetSubaccountsWithTokensResponse, GetSurveyNodesResponse, GetSurveysResponse, GetUnreadMessagesTotalResponse, GetUnsubscribersResponse, GetUserDedicatedNumbersResponse, GetUserListsResponse, GetVersionsResponse, Group, GroupImage, InviteSubaccountInputObject, Invoice, MarkChatsReadBulkInputObject, MarkChatsUnreadBulkInputObject, MergeSurveyNodesInputObject, MessageIn, MessageOut, MessageSession, MessageTemplate, MessagesIcs, MessagesIcsParameters, MessagesIcsParametersRecipients, MessagesIcsTextParameters, MessagingStatItem, MuteChatInputObject, MuteChatsBulkInputObject, NotFoundResponse, PingResponse, PushToken, ReopenChatsBulkInputObject, RequestNewSubaccountTokenInputObject, RequestSenderIdInputObject, ResourceLinkResponse, SearchChatsByIdsResponse, SearchChatsByReceipentResponse, SearchChatsResponse, SearchContactsResponse, SearchInboundMessagesResponse, SearchListsResponse, SearchOutboundMessagesResponse, SearchScheduledMessagesResponse, SearchTemplatesResponse, SendMessageInputObject, SendMessageResponse, SenderId, SetChatStatusInputObject, SubaccountWithToken, SuccessfulResponse, Survey, SurveyNode, SurveyRecipient, SurveySenderCountries, Timezone, UnauthorizedResponse, UnblockContactInputObject, UnblockContactsBulkInputObject, UnmuteChatsBulkInputObject, UnsubscribeContactInputObject, UnsubscribedContact, UpdateBalanceNotificationSettingsInputObject, UpdateCallbackSettingsInputObject, UpdateChatDesktopNotificationSettingsInputObject, UpdateContactInputObject, UpdateContactNoteInputObject, UpdateCurrentUserInputObject, UpdateCurrentUserResponse, UpdateCustomFieldInputObject, UpdateCustomFieldValueInputObject, UpdateInboundMessagesNotificationSettingsInputObject, UpdateListObject, UpdatePasswordInputObject, UpdateSenderSettingInputObject, UpdateSurveyInputObject, UpdateSurveyNodeInputObject, UpdateTemplateInputObject, UploadMessageAttachmentResponse, User, UserCustomField, UserImage, UserStatement, UsersInbound, TextMagicApi) {
+}(function(ApiClient, AssignContactsToListInputObject, BadRequestResponse, BadRequestResponseErrors, BlockContactInputObject, BulkSession, BuyDedicatedNumberInputObject, Chat, CheckPhoneVerificationCodeInputObject, ClearAndAssignContactsToListInputObject, CloseChatsBulkInputObject, Contact, ContactCustomField, ContactImage, ContactNote, Conversation, Country, CreateContactInputObject, CreateContactNoteInputObject, CreateCustomFieldInputObject, CreateListInputObject, CreatePushTokenInputObject, CreateSurveyInputObject, CreateSurveyNodeInputObject, CreateTemplateInputObject, Currency, DeleteChatMessagesBulkInputObject, DeleteChatsBulkInputObject, DeleteContacsFromListObject, DeleteContactNotesBulkInputObject, DeleteContactsByIdsInputObject, DeleteInboundMessagesBulkInputObject, DeleteListContactsBulkInputObject, DeleteListsBulkInputObject, DeleteMessageSessionsBulkInputObject, DeleteOutboundMessagesBulkInputObject, DeleteScheduledMessagesBulkInputObject, DeleteTemplatesBulkInputObject, DoAuthInputObject, DoAuthResponse, DoAuthResponseMinVersions, DoCarrierLookupResponse, DoEmailLookupResponse, FavoriteContact, ForwardedCall, GetAllBulkSessionsPaginatedResponse, GetAllChatsPaginatedResponse, GetAllInboundMessagesPaginatedResponse, GetAllMessageSessionsPaginatedResponse, GetAllOutboundMessagesPaginatedResponse, GetAllScheduledMessagesPaginatedResponse, GetAllTemplatesPaginatedResponse, GetAvailableDedicatedNumbersResponse, GetAvailableSenderSettingOptionsResponse, GetBalanceNotificationOptionsResponse, GetBalanceNotificationSettingsResponse, GetBlockedContactsPaginatedResponse, GetCallbackSettingsResponse, GetCallsPricesResponse, GetChatMessagesPaginatedResponse, GetContactImportSessionProgressResponse, GetContactNotesPaginatedResponse, GetContactsAutocompleteResponse, GetContactsByListIdPaginatedResponse, GetContactsPaginatedResponse, GetCountriesResponse, GetCustomFieldsPaginatedResponse, GetDisallowedRulesResponse, GetFavouritesPaginatedResponse, GetForwardedCallsPaginatedResponse, GetInboundMessagesNotificationSettingsResponse, GetInvoicesPaginatedResponse, GetListContactsIdsResponse, GetListsOfContactPaginatedResponse, GetMessagePreviewResponse, GetMessagePriceResponse, GetMessagePricesResponse, GetMessageSessionStatResponse, GetMessagesBySessionIdPaginatedResponse, GetMessagingCountersResponse, GetMessagingStatResponse, GetOutboundMessagesHistoryPaginatedResponse, GetPushTokensResponse, GetSenderIdsPaginatedResponse, GetSenderSettingsResponse, GetSpendingStatPaginatedResponse, GetStateResponse, GetSubaccountsWithTokensInputObject, GetSubaccountsWithTokensResponse, GetSurveyNodesResponse, GetSurveysPaginatedResponse, GetTimezonesResponse, GetUnreadMessagesTotalResponse, GetUnsubscribersPaginatedResponse, GetUserDedicatedNumbersPaginatedResponse, GetUserListsPaginatedResponse, GetVersionsResponse, Group, GroupImage, InviteSubaccountInputObject, Invoice, MarkChatsReadBulkInputObject, MarkChatsUnreadBulkInputObject, MergeSurveyNodesInputObject, MessageIn, MessageOut, MessageSession, MessageTemplate, MessagesIcs, MessagesIcsParameters, MessagesIcsParametersRecipients, MessagesIcsTextParameters, MessagingStatItem, MuteChatInputObject, MuteChatsBulkInputObject, NotFoundResponse, PingResponse, PushToken, ReopenChatsBulkInputObject, RequestNewSubaccountTokenInputObject, RequestSenderIdInputObject, ResourceLinkResponse, SearchChatsByIdsPaginatedResponse, SearchChatsByReceipentPaginatedResponse, SearchChatsPaginatedResponse, SearchContactsPaginatedResponse, SearchInboundMessagesPaginatedResponse, SearchListsPaginatedResponse, SearchOutboundMessagesPaginatedResponse, SearchScheduledMessagesPaginatedResponse, SearchTemplatesPaginatedResponse, SendMessageInputObject, SendMessageResponse, SenderId, SetChatStatusInputObject, SubaccountWithToken, SuccessfulResponse, Survey, SurveyNode, SurveyRecipient, SurveySenderCountries, Timezone, UnauthorizedResponse, UnblockContactInputObject, UnblockContactsBulkInputObject, UnmuteChatsBulkInputObject, UnsubscribeContactInputObject, UnsubscribedContact, UpdateBalanceNotificationSettingsInputObject, UpdateCallbackSettingsInputObject, UpdateChatDesktopNotificationSettingsInputObject, UpdateContactInputObject, UpdateContactNoteInputObject, UpdateCurrentUserInputObject, UpdateCurrentUserResponse, UpdateCustomFieldInputObject, UpdateCustomFieldValueInputObject, UpdateInboundMessagesNotificationSettingsInputObject, UpdateListObject, UpdatePasswordInputObject, UpdateSenderSettingInputObject, UpdateSurveyInputObject, UpdateSurveyNodeInputObject, UpdateTemplateInputObject, UploadMessageAttachmentResponse, User, UserCustomField, UserImage, UserStatement, UsersInbound, TextMagicApi) {
   'use strict';
 
   /**
@@ -54,7 +54,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 2.0.420
+   * @version 2.0.428
    */
   var exports = {
     /**
@@ -283,40 +283,40 @@
      */
     ForwardedCall: ForwardedCall,
     /**
-     * The GetAllBulkSessionsResponse model constructor.
-     * @property {module:model/GetAllBulkSessionsResponse}
+     * The GetAllBulkSessionsPaginatedResponse model constructor.
+     * @property {module:model/GetAllBulkSessionsPaginatedResponse}
      */
-    GetAllBulkSessionsResponse: GetAllBulkSessionsResponse,
+    GetAllBulkSessionsPaginatedResponse: GetAllBulkSessionsPaginatedResponse,
     /**
-     * The GetAllChatsResponse model constructor.
-     * @property {module:model/GetAllChatsResponse}
+     * The GetAllChatsPaginatedResponse model constructor.
+     * @property {module:model/GetAllChatsPaginatedResponse}
      */
-    GetAllChatsResponse: GetAllChatsResponse,
+    GetAllChatsPaginatedResponse: GetAllChatsPaginatedResponse,
     /**
-     * The GetAllInboundMessagesResponse model constructor.
-     * @property {module:model/GetAllInboundMessagesResponse}
+     * The GetAllInboundMessagesPaginatedResponse model constructor.
+     * @property {module:model/GetAllInboundMessagesPaginatedResponse}
      */
-    GetAllInboundMessagesResponse: GetAllInboundMessagesResponse,
+    GetAllInboundMessagesPaginatedResponse: GetAllInboundMessagesPaginatedResponse,
     /**
-     * The GetAllMessageSessionsResponse model constructor.
-     * @property {module:model/GetAllMessageSessionsResponse}
+     * The GetAllMessageSessionsPaginatedResponse model constructor.
+     * @property {module:model/GetAllMessageSessionsPaginatedResponse}
      */
-    GetAllMessageSessionsResponse: GetAllMessageSessionsResponse,
+    GetAllMessageSessionsPaginatedResponse: GetAllMessageSessionsPaginatedResponse,
     /**
-     * The GetAllOutboundMessagesResponse model constructor.
-     * @property {module:model/GetAllOutboundMessagesResponse}
+     * The GetAllOutboundMessagesPaginatedResponse model constructor.
+     * @property {module:model/GetAllOutboundMessagesPaginatedResponse}
      */
-    GetAllOutboundMessagesResponse: GetAllOutboundMessagesResponse,
+    GetAllOutboundMessagesPaginatedResponse: GetAllOutboundMessagesPaginatedResponse,
     /**
-     * The GetAllScheduledMessagesResponse model constructor.
-     * @property {module:model/GetAllScheduledMessagesResponse}
+     * The GetAllScheduledMessagesPaginatedResponse model constructor.
+     * @property {module:model/GetAllScheduledMessagesPaginatedResponse}
      */
-    GetAllScheduledMessagesResponse: GetAllScheduledMessagesResponse,
+    GetAllScheduledMessagesPaginatedResponse: GetAllScheduledMessagesPaginatedResponse,
     /**
-     * The GetAllTemplatesResponse model constructor.
-     * @property {module:model/GetAllTemplatesResponse}
+     * The GetAllTemplatesPaginatedResponse model constructor.
+     * @property {module:model/GetAllTemplatesPaginatedResponse}
      */
-    GetAllTemplatesResponse: GetAllTemplatesResponse,
+    GetAllTemplatesPaginatedResponse: GetAllTemplatesPaginatedResponse,
     /**
      * The GetAvailableDedicatedNumbersResponse model constructor.
      * @property {module:model/GetAvailableDedicatedNumbersResponse}
@@ -338,80 +338,95 @@
      */
     GetBalanceNotificationSettingsResponse: GetBalanceNotificationSettingsResponse,
     /**
-     * The GetBlockedContactsResponse model constructor.
-     * @property {module:model/GetBlockedContactsResponse}
+     * The GetBlockedContactsPaginatedResponse model constructor.
+     * @property {module:model/GetBlockedContactsPaginatedResponse}
      */
-    GetBlockedContactsResponse: GetBlockedContactsResponse,
+    GetBlockedContactsPaginatedResponse: GetBlockedContactsPaginatedResponse,
     /**
      * The GetCallbackSettingsResponse model constructor.
      * @property {module:model/GetCallbackSettingsResponse}
      */
     GetCallbackSettingsResponse: GetCallbackSettingsResponse,
     /**
-     * The GetChatMessagesResponse model constructor.
-     * @property {module:model/GetChatMessagesResponse}
+     * The GetCallsPricesResponse model constructor.
+     * @property {module:model/GetCallsPricesResponse}
      */
-    GetChatMessagesResponse: GetChatMessagesResponse,
+    GetCallsPricesResponse: GetCallsPricesResponse,
+    /**
+     * The GetChatMessagesPaginatedResponse model constructor.
+     * @property {module:model/GetChatMessagesPaginatedResponse}
+     */
+    GetChatMessagesPaginatedResponse: GetChatMessagesPaginatedResponse,
     /**
      * The GetContactImportSessionProgressResponse model constructor.
      * @property {module:model/GetContactImportSessionProgressResponse}
      */
     GetContactImportSessionProgressResponse: GetContactImportSessionProgressResponse,
     /**
-     * The GetContactNotesResponse model constructor.
-     * @property {module:model/GetContactNotesResponse}
+     * The GetContactNotesPaginatedResponse model constructor.
+     * @property {module:model/GetContactNotesPaginatedResponse}
      */
-    GetContactNotesResponse: GetContactNotesResponse,
+    GetContactNotesPaginatedResponse: GetContactNotesPaginatedResponse,
     /**
      * The GetContactsAutocompleteResponse model constructor.
      * @property {module:model/GetContactsAutocompleteResponse}
      */
     GetContactsAutocompleteResponse: GetContactsAutocompleteResponse,
     /**
-     * The GetContactsByListIdResponse model constructor.
-     * @property {module:model/GetContactsByListIdResponse}
+     * The GetContactsByListIdPaginatedResponse model constructor.
+     * @property {module:model/GetContactsByListIdPaginatedResponse}
      */
-    GetContactsByListIdResponse: GetContactsByListIdResponse,
+    GetContactsByListIdPaginatedResponse: GetContactsByListIdPaginatedResponse,
     /**
-     * The GetContactsResponse model constructor.
-     * @property {module:model/GetContactsResponse}
+     * The GetContactsPaginatedResponse model constructor.
+     * @property {module:model/GetContactsPaginatedResponse}
      */
-    GetContactsResponse: GetContactsResponse,
+    GetContactsPaginatedResponse: GetContactsPaginatedResponse,
     /**
-     * The GetCustomFieldsResponse model constructor.
-     * @property {module:model/GetCustomFieldsResponse}
+     * The GetCountriesResponse model constructor.
+     * @property {module:model/GetCountriesResponse}
      */
-    GetCustomFieldsResponse: GetCustomFieldsResponse,
+    GetCountriesResponse: GetCountriesResponse,
     /**
-     * The GetFavouritesResponse model constructor.
-     * @property {module:model/GetFavouritesResponse}
+     * The GetCustomFieldsPaginatedResponse model constructor.
+     * @property {module:model/GetCustomFieldsPaginatedResponse}
      */
-    GetFavouritesResponse: GetFavouritesResponse,
+    GetCustomFieldsPaginatedResponse: GetCustomFieldsPaginatedResponse,
     /**
-     * The GetForwardedCallsResponse model constructor.
-     * @property {module:model/GetForwardedCallsResponse}
+     * The GetDisallowedRulesResponse model constructor.
+     * @property {module:model/GetDisallowedRulesResponse}
      */
-    GetForwardedCallsResponse: GetForwardedCallsResponse,
+    GetDisallowedRulesResponse: GetDisallowedRulesResponse,
+    /**
+     * The GetFavouritesPaginatedResponse model constructor.
+     * @property {module:model/GetFavouritesPaginatedResponse}
+     */
+    GetFavouritesPaginatedResponse: GetFavouritesPaginatedResponse,
+    /**
+     * The GetForwardedCallsPaginatedResponse model constructor.
+     * @property {module:model/GetForwardedCallsPaginatedResponse}
+     */
+    GetForwardedCallsPaginatedResponse: GetForwardedCallsPaginatedResponse,
     /**
      * The GetInboundMessagesNotificationSettingsResponse model constructor.
      * @property {module:model/GetInboundMessagesNotificationSettingsResponse}
      */
     GetInboundMessagesNotificationSettingsResponse: GetInboundMessagesNotificationSettingsResponse,
     /**
-     * The GetInvoicesResponse model constructor.
-     * @property {module:model/GetInvoicesResponse}
+     * The GetInvoicesPaginatedResponse model constructor.
+     * @property {module:model/GetInvoicesPaginatedResponse}
      */
-    GetInvoicesResponse: GetInvoicesResponse,
+    GetInvoicesPaginatedResponse: GetInvoicesPaginatedResponse,
     /**
      * The GetListContactsIdsResponse model constructor.
      * @property {module:model/GetListContactsIdsResponse}
      */
     GetListContactsIdsResponse: GetListContactsIdsResponse,
     /**
-     * The GetListsOfContactResponse model constructor.
-     * @property {module:model/GetListsOfContactResponse}
+     * The GetListsOfContactPaginatedResponse model constructor.
+     * @property {module:model/GetListsOfContactPaginatedResponse}
      */
-    GetListsOfContactResponse: GetListsOfContactResponse,
+    GetListsOfContactPaginatedResponse: GetListsOfContactPaginatedResponse,
     /**
      * The GetMessagePreviewResponse model constructor.
      * @property {module:model/GetMessagePreviewResponse}
@@ -433,10 +448,10 @@
      */
     GetMessageSessionStatResponse: GetMessageSessionStatResponse,
     /**
-     * The GetMessagesBySessionIdResponse model constructor.
-     * @property {module:model/GetMessagesBySessionIdResponse}
+     * The GetMessagesBySessionIdPaginatedResponse model constructor.
+     * @property {module:model/GetMessagesBySessionIdPaginatedResponse}
      */
-    GetMessagesBySessionIdResponse: GetMessagesBySessionIdResponse,
+    GetMessagesBySessionIdPaginatedResponse: GetMessagesBySessionIdPaginatedResponse,
     /**
      * The GetMessagingCountersResponse model constructor.
      * @property {module:model/GetMessagingCountersResponse}
@@ -448,30 +463,30 @@
      */
     GetMessagingStatResponse: GetMessagingStatResponse,
     /**
-     * The GetOutboundMessagesHistoryResponse model constructor.
-     * @property {module:model/GetOutboundMessagesHistoryResponse}
+     * The GetOutboundMessagesHistoryPaginatedResponse model constructor.
+     * @property {module:model/GetOutboundMessagesHistoryPaginatedResponse}
      */
-    GetOutboundMessagesHistoryResponse: GetOutboundMessagesHistoryResponse,
+    GetOutboundMessagesHistoryPaginatedResponse: GetOutboundMessagesHistoryPaginatedResponse,
     /**
      * The GetPushTokensResponse model constructor.
      * @property {module:model/GetPushTokensResponse}
      */
     GetPushTokensResponse: GetPushTokensResponse,
     /**
-     * The GetSenderIdsResponse model constructor.
-     * @property {module:model/GetSenderIdsResponse}
+     * The GetSenderIdsPaginatedResponse model constructor.
+     * @property {module:model/GetSenderIdsPaginatedResponse}
      */
-    GetSenderIdsResponse: GetSenderIdsResponse,
+    GetSenderIdsPaginatedResponse: GetSenderIdsPaginatedResponse,
     /**
      * The GetSenderSettingsResponse model constructor.
      * @property {module:model/GetSenderSettingsResponse}
      */
     GetSenderSettingsResponse: GetSenderSettingsResponse,
     /**
-     * The GetSpendingStatResponse model constructor.
-     * @property {module:model/GetSpendingStatResponse}
+     * The GetSpendingStatPaginatedResponse model constructor.
+     * @property {module:model/GetSpendingStatPaginatedResponse}
      */
-    GetSpendingStatResponse: GetSpendingStatResponse,
+    GetSpendingStatPaginatedResponse: GetSpendingStatPaginatedResponse,
     /**
      * The GetStateResponse model constructor.
      * @property {module:model/GetStateResponse}
@@ -493,30 +508,35 @@
      */
     GetSurveyNodesResponse: GetSurveyNodesResponse,
     /**
-     * The GetSurveysResponse model constructor.
-     * @property {module:model/GetSurveysResponse}
+     * The GetSurveysPaginatedResponse model constructor.
+     * @property {module:model/GetSurveysPaginatedResponse}
      */
-    GetSurveysResponse: GetSurveysResponse,
+    GetSurveysPaginatedResponse: GetSurveysPaginatedResponse,
+    /**
+     * The GetTimezonesResponse model constructor.
+     * @property {module:model/GetTimezonesResponse}
+     */
+    GetTimezonesResponse: GetTimezonesResponse,
     /**
      * The GetUnreadMessagesTotalResponse model constructor.
      * @property {module:model/GetUnreadMessagesTotalResponse}
      */
     GetUnreadMessagesTotalResponse: GetUnreadMessagesTotalResponse,
     /**
-     * The GetUnsubscribersResponse model constructor.
-     * @property {module:model/GetUnsubscribersResponse}
+     * The GetUnsubscribersPaginatedResponse model constructor.
+     * @property {module:model/GetUnsubscribersPaginatedResponse}
      */
-    GetUnsubscribersResponse: GetUnsubscribersResponse,
+    GetUnsubscribersPaginatedResponse: GetUnsubscribersPaginatedResponse,
     /**
-     * The GetUserDedicatedNumbersResponse model constructor.
-     * @property {module:model/GetUserDedicatedNumbersResponse}
+     * The GetUserDedicatedNumbersPaginatedResponse model constructor.
+     * @property {module:model/GetUserDedicatedNumbersPaginatedResponse}
      */
-    GetUserDedicatedNumbersResponse: GetUserDedicatedNumbersResponse,
+    GetUserDedicatedNumbersPaginatedResponse: GetUserDedicatedNumbersPaginatedResponse,
     /**
-     * The GetUserListsResponse model constructor.
-     * @property {module:model/GetUserListsResponse}
+     * The GetUserListsPaginatedResponse model constructor.
+     * @property {module:model/GetUserListsPaginatedResponse}
      */
-    GetUserListsResponse: GetUserListsResponse,
+    GetUserListsPaginatedResponse: GetUserListsPaginatedResponse,
     /**
      * The GetVersionsResponse model constructor.
      * @property {module:model/GetVersionsResponse}
@@ -648,50 +668,50 @@
      */
     ResourceLinkResponse: ResourceLinkResponse,
     /**
-     * The SearchChatsByIdsResponse model constructor.
-     * @property {module:model/SearchChatsByIdsResponse}
+     * The SearchChatsByIdsPaginatedResponse model constructor.
+     * @property {module:model/SearchChatsByIdsPaginatedResponse}
      */
-    SearchChatsByIdsResponse: SearchChatsByIdsResponse,
+    SearchChatsByIdsPaginatedResponse: SearchChatsByIdsPaginatedResponse,
     /**
-     * The SearchChatsByReceipentResponse model constructor.
-     * @property {module:model/SearchChatsByReceipentResponse}
+     * The SearchChatsByReceipentPaginatedResponse model constructor.
+     * @property {module:model/SearchChatsByReceipentPaginatedResponse}
      */
-    SearchChatsByReceipentResponse: SearchChatsByReceipentResponse,
+    SearchChatsByReceipentPaginatedResponse: SearchChatsByReceipentPaginatedResponse,
     /**
-     * The SearchChatsResponse model constructor.
-     * @property {module:model/SearchChatsResponse}
+     * The SearchChatsPaginatedResponse model constructor.
+     * @property {module:model/SearchChatsPaginatedResponse}
      */
-    SearchChatsResponse: SearchChatsResponse,
+    SearchChatsPaginatedResponse: SearchChatsPaginatedResponse,
     /**
-     * The SearchContactsResponse model constructor.
-     * @property {module:model/SearchContactsResponse}
+     * The SearchContactsPaginatedResponse model constructor.
+     * @property {module:model/SearchContactsPaginatedResponse}
      */
-    SearchContactsResponse: SearchContactsResponse,
+    SearchContactsPaginatedResponse: SearchContactsPaginatedResponse,
     /**
-     * The SearchInboundMessagesResponse model constructor.
-     * @property {module:model/SearchInboundMessagesResponse}
+     * The SearchInboundMessagesPaginatedResponse model constructor.
+     * @property {module:model/SearchInboundMessagesPaginatedResponse}
      */
-    SearchInboundMessagesResponse: SearchInboundMessagesResponse,
+    SearchInboundMessagesPaginatedResponse: SearchInboundMessagesPaginatedResponse,
     /**
-     * The SearchListsResponse model constructor.
-     * @property {module:model/SearchListsResponse}
+     * The SearchListsPaginatedResponse model constructor.
+     * @property {module:model/SearchListsPaginatedResponse}
      */
-    SearchListsResponse: SearchListsResponse,
+    SearchListsPaginatedResponse: SearchListsPaginatedResponse,
     /**
-     * The SearchOutboundMessagesResponse model constructor.
-     * @property {module:model/SearchOutboundMessagesResponse}
+     * The SearchOutboundMessagesPaginatedResponse model constructor.
+     * @property {module:model/SearchOutboundMessagesPaginatedResponse}
      */
-    SearchOutboundMessagesResponse: SearchOutboundMessagesResponse,
+    SearchOutboundMessagesPaginatedResponse: SearchOutboundMessagesPaginatedResponse,
     /**
-     * The SearchScheduledMessagesResponse model constructor.
-     * @property {module:model/SearchScheduledMessagesResponse}
+     * The SearchScheduledMessagesPaginatedResponse model constructor.
+     * @property {module:model/SearchScheduledMessagesPaginatedResponse}
      */
-    SearchScheduledMessagesResponse: SearchScheduledMessagesResponse,
+    SearchScheduledMessagesPaginatedResponse: SearchScheduledMessagesPaginatedResponse,
     /**
-     * The SearchTemplatesResponse model constructor.
-     * @property {module:model/SearchTemplatesResponse}
+     * The SearchTemplatesPaginatedResponse model constructor.
+     * @property {module:model/SearchTemplatesPaginatedResponse}
      */
-    SearchTemplatesResponse: SearchTemplatesResponse,
+    SearchTemplatesPaginatedResponse: SearchTemplatesPaginatedResponse,
     /**
      * The SendMessageInputObject model constructor.
      * @property {module:model/SendMessageInputObject}
