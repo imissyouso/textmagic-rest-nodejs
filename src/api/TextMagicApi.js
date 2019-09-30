@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.406
+   * @version 2.0.420
    */
 
   /**
@@ -110,12 +110,9 @@
     /**
      * Block contact from inbound and outbound communication by phone number.
      * @param {module:model/BlockContactInputObject} blockContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.blockContactWithHttpInfo = function(blockContactInputObject, opts) {
-      opts = opts || {};
+    this.blockContactWithHttpInfo = function(blockContactInputObject) {
       var postBody = blockContactInputObject;
 
       // verify the required parameter 'blockContactInputObject' is set
@@ -131,7 +128,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -151,12 +147,10 @@
     /**
      * Block contact from inbound and outbound communication by phone number.
      * @param {module:model/BlockContactInputObject} blockContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.blockContact = function(blockContactInputObject, opts) {
-      return this.blockContactWithHttpInfo(blockContactInputObject, opts)
+    this.blockContact = function(blockContactInputObject) {
+      return this.blockContactWithHttpInfo(blockContactInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -166,12 +160,9 @@
     /**
      * Buy a dedicated number and assign it to the specified account.
      * @param {module:model/BuyDedicatedNumberInputObject} buyDedicatedNumberInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.buyDedicatedNumberWithHttpInfo = function(buyDedicatedNumberInputObject, opts) {
-      opts = opts || {};
+    this.buyDedicatedNumberWithHttpInfo = function(buyDedicatedNumberInputObject) {
       var postBody = buyDedicatedNumberInputObject;
 
       // verify the required parameter 'buyDedicatedNumberInputObject' is set
@@ -187,7 +178,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -207,12 +197,10 @@
     /**
      * Buy a dedicated number and assign it to the specified account.
      * @param {module:model/BuyDedicatedNumberInputObject} buyDedicatedNumberInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.buyDedicatedNumber = function(buyDedicatedNumberInputObject, opts) {
-      return this.buyDedicatedNumberWithHttpInfo(buyDedicatedNumberInputObject, opts)
+    this.buyDedicatedNumber = function(buyDedicatedNumberInputObject) {
+      return this.buyDedicatedNumberWithHttpInfo(buyDedicatedNumberInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -273,12 +261,9 @@
     /**
      * Check user phone verification code
      * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.checkPhoneVerificationCodeWithHttpInfo = function(checkPhoneVerificationCodeInputObject, opts) {
-      opts = opts || {};
+    this.checkPhoneVerificationCodeWithHttpInfo = function(checkPhoneVerificationCodeInputObject) {
       var postBody = checkPhoneVerificationCodeInputObject;
 
       // verify the required parameter 'checkPhoneVerificationCodeInputObject' is set
@@ -294,7 +279,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -314,12 +298,10 @@
     /**
      * Check user phone verification code
      * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.checkPhoneVerificationCode = function(checkPhoneVerificationCodeInputObject, opts) {
-      return this.checkPhoneVerificationCodeWithHttpInfo(checkPhoneVerificationCodeInputObject, opts)
+    this.checkPhoneVerificationCode = function(checkPhoneVerificationCodeInputObject) {
+      return this.checkPhoneVerificationCodeWithHttpInfo(checkPhoneVerificationCodeInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -387,12 +369,9 @@
     /**
      * Close chats by chat ids or close all chats
      * @param {module:model/CloseChatsBulkInputObject} closeChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.closeChatsBulkWithHttpInfo = function(closeChatsBulkInputObject, opts) {
-      opts = opts || {};
+    this.closeChatsBulkWithHttpInfo = function(closeChatsBulkInputObject) {
       var postBody = closeChatsBulkInputObject;
 
       // verify the required parameter 'closeChatsBulkInputObject' is set
@@ -408,7 +387,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -428,12 +406,10 @@
     /**
      * Close chats by chat ids or close all chats
      * @param {module:model/CloseChatsBulkInputObject} closeChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.closeChatsBulk = function(closeChatsBulkInputObject, opts) {
-      return this.closeChatsBulkWithHttpInfo(closeChatsBulkInputObject, opts)
+    this.closeChatsBulk = function(closeChatsBulkInputObject) {
+      return this.closeChatsBulkWithHttpInfo(closeChatsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -537,12 +513,9 @@
     /**
      * Create a new contact from the submitted data.
      * @param {module:model/CreateContactInputObject} createContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.createContactWithHttpInfo = function(createContactInputObject, opts) {
-      opts = opts || {};
+    this.createContactWithHttpInfo = function(createContactInputObject) {
       var postBody = createContactInputObject;
 
       // verify the required parameter 'createContactInputObject' is set
@@ -558,7 +531,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -578,12 +550,10 @@
     /**
      * Create a new contact from the submitted data.
      * @param {module:model/CreateContactInputObject} createContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.createContact = function(createContactInputObject, opts) {
-      return this.createContactWithHttpInfo(createContactInputObject, opts)
+    this.createContact = function(createContactInputObject) {
+      return this.createContactWithHttpInfo(createContactInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -594,12 +564,9 @@
      * Create a new contact note.
      * @param {module:model/CreateContactNoteInputObject} createContactNoteInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.createContactNoteWithHttpInfo = function(createContactNoteInputObject, id, opts) {
-      opts = opts || {};
+    this.createContactNoteWithHttpInfo = function(createContactNoteInputObject, id) {
       var postBody = createContactNoteInputObject;
 
       // verify the required parameter 'createContactNoteInputObject' is set
@@ -621,7 +588,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -642,12 +608,10 @@
      * Create a new contact note.
      * @param {module:model/CreateContactNoteInputObject} createContactNoteInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.createContactNote = function(createContactNoteInputObject, id, opts) {
-      return this.createContactNoteWithHttpInfo(createContactNoteInputObject, id, opts)
+    this.createContactNote = function(createContactNoteInputObject, id) {
+      return this.createContactNoteWithHttpInfo(createContactNoteInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -657,12 +621,9 @@
     /**
      * Create a new custom field from the submitted data.
      * @param {module:model/CreateCustomFieldInputObject} createCustomFieldInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.createCustomFieldWithHttpInfo = function(createCustomFieldInputObject, opts) {
-      opts = opts || {};
+    this.createCustomFieldWithHttpInfo = function(createCustomFieldInputObject) {
       var postBody = createCustomFieldInputObject;
 
       // verify the required parameter 'createCustomFieldInputObject' is set
@@ -678,7 +639,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -698,12 +658,10 @@
     /**
      * Create a new custom field from the submitted data.
      * @param {module:model/CreateCustomFieldInputObject} createCustomFieldInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.createCustomField = function(createCustomFieldInputObject, opts) {
-      return this.createCustomFieldWithHttpInfo(createCustomFieldInputObject, opts)
+    this.createCustomField = function(createCustomFieldInputObject) {
+      return this.createCustomFieldWithHttpInfo(createCustomFieldInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -713,12 +671,9 @@
     /**
      * Create a new list from the submitted data.
      * @param {module:model/CreateListInputObject} createListInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.createListWithHttpInfo = function(createListInputObject, opts) {
-      opts = opts || {};
+    this.createListWithHttpInfo = function(createListInputObject) {
       var postBody = createListInputObject;
 
       // verify the required parameter 'createListInputObject' is set
@@ -734,7 +689,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -754,12 +708,10 @@
     /**
      * Create a new list from the submitted data.
      * @param {module:model/CreateListInputObject} createListInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.createList = function(createListInputObject, opts) {
-      return this.createListWithHttpInfo(createListInputObject, opts)
+    this.createList = function(createListInputObject) {
+      return this.createListWithHttpInfo(createListInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -769,12 +721,9 @@
     /**
      * Add or update a device token.
      * @param {module:model/CreatePushTokenInputObject} createPushTokenInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.createPushTokenWithHttpInfo = function(createPushTokenInputObject, opts) {
-      opts = opts || {};
+    this.createPushTokenWithHttpInfo = function(createPushTokenInputObject) {
       var postBody = createPushTokenInputObject;
 
       // verify the required parameter 'createPushTokenInputObject' is set
@@ -790,7 +739,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -810,12 +758,10 @@
     /**
      * Add or update a device token.
      * @param {module:model/CreatePushTokenInputObject} createPushTokenInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.createPushToken = function(createPushTokenInputObject, opts) {
-      return this.createPushTokenWithHttpInfo(createPushTokenInputObject, opts)
+    this.createPushToken = function(createPushTokenInputObject) {
+      return this.createPushTokenWithHttpInfo(createPushTokenInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -825,12 +771,9 @@
     /**
      * Create a new survey from the submitted data.
      * @param {module:model/CreateSurveyInputObject} createSurveyInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.createSurveyWithHttpInfo = function(createSurveyInputObject, opts) {
-      opts = opts || {};
+    this.createSurveyWithHttpInfo = function(createSurveyInputObject) {
       var postBody = createSurveyInputObject;
 
       // verify the required parameter 'createSurveyInputObject' is set
@@ -846,7 +789,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -866,12 +808,10 @@
     /**
      * Create a new survey from the submitted data.
      * @param {module:model/CreateSurveyInputObject} createSurveyInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.createSurvey = function(createSurveyInputObject, opts) {
-      return this.createSurveyWithHttpInfo(createSurveyInputObject, opts)
+    this.createSurvey = function(createSurveyInputObject) {
+      return this.createSurveyWithHttpInfo(createSurveyInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -882,12 +822,9 @@
      * Create a new node from the submitted data.
      * @param {module:model/CreateSurveyNodeInputObject} createSurveyNodeInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.createSurveyNodeWithHttpInfo = function(createSurveyNodeInputObject, id, opts) {
-      opts = opts || {};
+    this.createSurveyNodeWithHttpInfo = function(createSurveyNodeInputObject, id) {
       var postBody = createSurveyNodeInputObject;
 
       // verify the required parameter 'createSurveyNodeInputObject' is set
@@ -909,7 +846,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -930,12 +866,10 @@
      * Create a new node from the submitted data.
      * @param {module:model/CreateSurveyNodeInputObject} createSurveyNodeInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.createSurveyNode = function(createSurveyNodeInputObject, id, opts) {
-      return this.createSurveyNodeWithHttpInfo(createSurveyNodeInputObject, id, opts)
+    this.createSurveyNode = function(createSurveyNodeInputObject, id) {
+      return this.createSurveyNodeWithHttpInfo(createSurveyNodeInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -945,12 +879,9 @@
     /**
      * Create a new template from the submitted data.
      * @param {module:model/CreateTemplateInputObject} createTemplateInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.createTemplateWithHttpInfo = function(createTemplateInputObject, opts) {
-      opts = opts || {};
+    this.createTemplateWithHttpInfo = function(createTemplateInputObject) {
       var postBody = createTemplateInputObject;
 
       // verify the required parameter 'createTemplateInputObject' is set
@@ -966,7 +897,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -986,12 +916,10 @@
     /**
      * Create a new template from the submitted data.
      * @param {module:model/CreateTemplateInputObject} createTemplateInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.createTemplate = function(createTemplateInputObject, opts) {
-      return this.createTemplateWithHttpInfo(createTemplateInputObject, opts)
+    this.createTemplate = function(createTemplateInputObject) {
+      return this.createTemplateWithHttpInfo(createTemplateInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -1133,12 +1061,9 @@
      * Delete messages from chat by given messages ID(s).
      * @param {module:model/DeleteChatMessagesBulkInputObject} deleteChatMessagesBulkInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteChatMessagesWithHttpInfo = function(deleteChatMessagesBulkInputObject, id, opts) {
-      opts = opts || {};
+    this.deleteChatMessagesWithHttpInfo = function(deleteChatMessagesBulkInputObject, id) {
       var postBody = deleteChatMessagesBulkInputObject;
 
       // verify the required parameter 'deleteChatMessagesBulkInputObject' is set
@@ -1160,7 +1085,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -1181,12 +1105,10 @@
      * Delete messages from chat by given messages ID(s).
      * @param {module:model/DeleteChatMessagesBulkInputObject} deleteChatMessagesBulkInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteChatMessages = function(deleteChatMessagesBulkInputObject, id, opts) {
-      return this.deleteChatMessagesWithHttpInfo(deleteChatMessagesBulkInputObject, id, opts)
+    this.deleteChatMessages = function(deleteChatMessagesBulkInputObject, id) {
+      return this.deleteChatMessagesWithHttpInfo(deleteChatMessagesBulkInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -1196,12 +1118,9 @@
     /**
      * Delete chats by given ID(s) or delete all chats.
      * @param {module:model/DeleteChatsBulkInputObject} deleteChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteChatsBulkWithHttpInfo = function(deleteChatsBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteChatsBulkWithHttpInfo = function(deleteChatsBulkInputObject) {
       var postBody = deleteChatsBulkInputObject;
 
       // verify the required parameter 'deleteChatsBulkInputObject' is set
@@ -1217,7 +1136,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -1237,12 +1155,10 @@
     /**
      * Delete chats by given ID(s) or delete all chats.
      * @param {module:model/DeleteChatsBulkInputObject} deleteChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteChatsBulk = function(deleteChatsBulkInputObject, opts) {
-      return this.deleteChatsBulkWithHttpInfo(deleteChatsBulkInputObject, opts)
+    this.deleteChatsBulk = function(deleteChatsBulkInputObject) {
+      return this.deleteChatsBulkWithHttpInfo(deleteChatsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -1406,12 +1322,9 @@
      * Delete contact note by given ID(s) or delete all contact notes.
      * @param {Number} id 
      * @param {module:model/DeleteContactNotesBulkInputObject} deleteContactNotesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteContactNotesBulkWithHttpInfo = function(id, deleteContactNotesBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteContactNotesBulkWithHttpInfo = function(id, deleteContactNotesBulkInputObject) {
       var postBody = deleteContactNotesBulkInputObject;
 
       // verify the required parameter 'id' is set
@@ -1433,7 +1346,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -1454,12 +1366,10 @@
      * Delete contact note by given ID(s) or delete all contact notes.
      * @param {Number} id 
      * @param {module:model/DeleteContactNotesBulkInputObject} deleteContactNotesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteContactNotesBulk = function(id, deleteContactNotesBulkInputObject, opts) {
-      return this.deleteContactNotesBulkWithHttpInfo(id, deleteContactNotesBulkInputObject, opts)
+    this.deleteContactNotesBulk = function(id, deleteContactNotesBulkInputObject) {
+      return this.deleteContactNotesBulkWithHttpInfo(id, deleteContactNotesBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -1469,12 +1379,9 @@
     /**
      * Delete contact by given ID(s) or delete all contacts.
      * @param {module:model/DeleteContactsByIdsInputObject} deleteContactsByIdsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteContactsByIdsWithHttpInfo = function(deleteContactsByIdsInputObject, opts) {
-      opts = opts || {};
+    this.deleteContactsByIdsWithHttpInfo = function(deleteContactsByIdsInputObject) {
       var postBody = deleteContactsByIdsInputObject;
 
       // verify the required parameter 'deleteContactsByIdsInputObject' is set
@@ -1490,7 +1397,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -1510,12 +1416,10 @@
     /**
      * Delete contact by given ID(s) or delete all contacts.
      * @param {module:model/DeleteContactsByIdsInputObject} deleteContactsByIdsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteContactsByIds = function(deleteContactsByIdsInputObject, opts) {
-      return this.deleteContactsByIdsWithHttpInfo(deleteContactsByIdsInputObject, opts)
+    this.deleteContactsByIds = function(deleteContactsByIdsInputObject) {
+      return this.deleteContactsByIdsWithHttpInfo(deleteContactsByIdsInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -1736,12 +1640,9 @@
     /**
      * Delete inbound messages by given ID(s) or delete all inbound messages.
      * @param {module:model/DeleteInboundMessagesBulkInputObject} deleteInboundMessagesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteInboundMessagesBulkWithHttpInfo = function(deleteInboundMessagesBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteInboundMessagesBulkWithHttpInfo = function(deleteInboundMessagesBulkInputObject) {
       var postBody = deleteInboundMessagesBulkInputObject;
 
       // verify the required parameter 'deleteInboundMessagesBulkInputObject' is set
@@ -1757,7 +1658,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -1777,12 +1677,10 @@
     /**
      * Delete inbound messages by given ID(s) or delete all inbound messages.
      * @param {module:model/DeleteInboundMessagesBulkInputObject} deleteInboundMessagesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteInboundMessagesBulk = function(deleteInboundMessagesBulkInputObject, opts) {
-      return this.deleteInboundMessagesBulkWithHttpInfo(deleteInboundMessagesBulkInputObject, opts)
+    this.deleteInboundMessagesBulk = function(deleteInboundMessagesBulkInputObject) {
+      return this.deleteInboundMessagesBulkWithHttpInfo(deleteInboundMessagesBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -1895,12 +1793,9 @@
      * Delete contact from list by given ID(s) or all contacts from list.
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteListContactsBulkWithHttpInfo = function(deleteListContactsBulkInputObject, id, opts) {
-      opts = opts || {};
+    this.deleteListContactsBulkWithHttpInfo = function(deleteListContactsBulkInputObject, id) {
       var postBody = deleteListContactsBulkInputObject;
 
       // verify the required parameter 'deleteListContactsBulkInputObject' is set
@@ -1922,7 +1817,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -1943,12 +1837,10 @@
      * Delete contact from list by given ID(s) or all contacts from list.
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteListContactsBulk = function(deleteListContactsBulkInputObject, id, opts) {
-      return this.deleteListContactsBulkWithHttpInfo(deleteListContactsBulkInputObject, id, opts)
+    this.deleteListContactsBulk = function(deleteListContactsBulkInputObject, id) {
+      return this.deleteListContactsBulkWithHttpInfo(deleteListContactsBulkInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -1958,12 +1850,9 @@
     /**
      * Delete list by given ID(s) or delete all lists.
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteListsBulkWithHttpInfo = function(deleteListsBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteListsBulkWithHttpInfo = function(deleteListsBulkInputObject) {
       var postBody = deleteListsBulkInputObject;
 
       // verify the required parameter 'deleteListsBulkInputObject' is set
@@ -1979,7 +1868,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -1999,12 +1887,10 @@
     /**
      * Delete list by given ID(s) or delete all lists.
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteListsBulk = function(deleteListsBulkInputObject, opts) {
-      return this.deleteListsBulkWithHttpInfo(deleteListsBulkInputObject, opts)
+    this.deleteListsBulk = function(deleteListsBulkInputObject) {
+      return this.deleteListsBulkWithHttpInfo(deleteListsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -2065,12 +1951,9 @@
     /**
      * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
      * @param {module:model/DeleteMessageSessionsBulkInputObject} deleteMessageSessionsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteMessageSessionsBulkWithHttpInfo = function(deleteMessageSessionsBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteMessageSessionsBulkWithHttpInfo = function(deleteMessageSessionsBulkInputObject) {
       var postBody = deleteMessageSessionsBulkInputObject;
 
       // verify the required parameter 'deleteMessageSessionsBulkInputObject' is set
@@ -2086,7 +1969,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -2106,12 +1988,10 @@
     /**
      * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
      * @param {module:model/DeleteMessageSessionsBulkInputObject} deleteMessageSessionsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteMessageSessionsBulk = function(deleteMessageSessionsBulkInputObject, opts) {
-      return this.deleteMessageSessionsBulkWithHttpInfo(deleteMessageSessionsBulkInputObject, opts)
+    this.deleteMessageSessionsBulk = function(deleteMessageSessionsBulkInputObject) {
+      return this.deleteMessageSessionsBulkWithHttpInfo(deleteMessageSessionsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -2175,12 +2055,9 @@
      * Delete messages by IDs
      * Delete outbound messages by given ID(s) or delete all outbound messages.
      * @param {module:model/DeleteOutboundMessagesBulkInputObject} deleteOutboundMessagesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteOutboundMessagesBulkWithHttpInfo = function(deleteOutboundMessagesBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteOutboundMessagesBulkWithHttpInfo = function(deleteOutboundMessagesBulkInputObject) {
       var postBody = deleteOutboundMessagesBulkInputObject;
 
       // verify the required parameter 'deleteOutboundMessagesBulkInputObject' is set
@@ -2196,7 +2073,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -2217,12 +2093,10 @@
      * Delete messages by IDs
      * Delete outbound messages by given ID(s) or delete all outbound messages.
      * @param {module:model/DeleteOutboundMessagesBulkInputObject} deleteOutboundMessagesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteOutboundMessagesBulk = function(deleteOutboundMessagesBulkInputObject, opts) {
-      return this.deleteOutboundMessagesBulkWithHttpInfo(deleteOutboundMessagesBulkInputObject, opts)
+    this.deleteOutboundMessagesBulk = function(deleteOutboundMessagesBulkInputObject) {
+      return this.deleteOutboundMessagesBulkWithHttpInfo(deleteOutboundMessagesBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -2342,12 +2216,9 @@
     /**
      * Delete scheduled messages by given ID(s) or delete all scheduled messages.
      * @param {module:model/DeleteScheduledMessagesBulkInputObject} deleteScheduledMessagesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteScheduledMessagesBulkWithHttpInfo = function(deleteScheduledMessagesBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteScheduledMessagesBulkWithHttpInfo = function(deleteScheduledMessagesBulkInputObject) {
       var postBody = deleteScheduledMessagesBulkInputObject;
 
       // verify the required parameter 'deleteScheduledMessagesBulkInputObject' is set
@@ -2363,7 +2234,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -2383,12 +2253,10 @@
     /**
      * Delete scheduled messages by given ID(s) or delete all scheduled messages.
      * @param {module:model/DeleteScheduledMessagesBulkInputObject} deleteScheduledMessagesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteScheduledMessagesBulk = function(deleteScheduledMessagesBulkInputObject, opts) {
-      return this.deleteScheduledMessagesBulkWithHttpInfo(deleteScheduledMessagesBulkInputObject, opts)
+    this.deleteScheduledMessagesBulk = function(deleteScheduledMessagesBulkInputObject) {
+      return this.deleteScheduledMessagesBulkWithHttpInfo(deleteScheduledMessagesBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -2602,12 +2470,9 @@
     /**
      * Delete template by given ID(s) or delete all templates.
      * @param {module:model/DeleteTemplatesBulkInputObject} deleteTemplatesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.deleteTemplatesBulkWithHttpInfo = function(deleteTemplatesBulkInputObject, opts) {
-      opts = opts || {};
+    this.deleteTemplatesBulkWithHttpInfo = function(deleteTemplatesBulkInputObject) {
       var postBody = deleteTemplatesBulkInputObject;
 
       // verify the required parameter 'deleteTemplatesBulkInputObject' is set
@@ -2623,7 +2488,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -2643,12 +2507,10 @@
     /**
      * Delete template by given ID(s) or delete all templates.
      * @param {module:model/DeleteTemplatesBulkInputObject} deleteTemplatesBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.deleteTemplatesBulk = function(deleteTemplatesBulkInputObject, opts) {
-      return this.deleteTemplatesBulkWithHttpInfo(deleteTemplatesBulkInputObject, opts)
+    this.deleteTemplatesBulk = function(deleteTemplatesBulkInputObject) {
+      return this.deleteTemplatesBulkWithHttpInfo(deleteTemplatesBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -2659,12 +2521,9 @@
      * Authenticate user by given username and password.
      * Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)
      * @param {module:model/DoAuthInputObject} doAuthInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DoAuthResponse} and HTTP response
      */
-    this.doAuthWithHttpInfo = function(doAuthInputObject, opts) {
-      opts = opts || {};
+    this.doAuthWithHttpInfo = function(doAuthInputObject) {
       var postBody = doAuthInputObject;
 
       // verify the required parameter 'doAuthInputObject' is set
@@ -2680,7 +2539,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -2701,12 +2559,10 @@
      * Authenticate user by given username and password.
      * Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)
      * @param {module:model/DoAuthInputObject} doAuthInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DoAuthResponse}
      */
-    this.doAuth = function(doAuthInputObject, opts) {
-      return this.doAuthWithHttpInfo(doAuthInputObject, opts)
+    this.doAuth = function(doAuthInputObject) {
+      return this.doAuthWithHttpInfo(doAuthInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -6142,7 +5998,6 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSubaccountsWithTokensResponse} and HTTP response
      */
     this.getSubaccountsWithTokensWithHttpInfo = function(getSubaccountsWithTokensInputObject, opts) {
@@ -6164,7 +6019,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -6188,7 +6042,6 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSubaccountsWithTokensResponse}
      */
     this.getSubaccountsWithTokens = function(getSubaccountsWithTokensInputObject, opts) {
@@ -6815,12 +6668,9 @@
     /**
      * Invite new subaccount.
      * @param {module:model/InviteSubaccountInputObject} inviteSubaccountInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.inviteSubaccountWithHttpInfo = function(inviteSubaccountInputObject, opts) {
-      opts = opts || {};
+    this.inviteSubaccountWithHttpInfo = function(inviteSubaccountInputObject) {
       var postBody = inviteSubaccountInputObject;
 
       // verify the required parameter 'inviteSubaccountInputObject' is set
@@ -6836,7 +6686,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -6856,12 +6705,10 @@
     /**
      * Invite new subaccount.
      * @param {module:model/InviteSubaccountInputObject} inviteSubaccountInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.inviteSubaccount = function(inviteSubaccountInputObject, opts) {
-      return this.inviteSubaccountWithHttpInfo(inviteSubaccountInputObject, opts)
+    this.inviteSubaccount = function(inviteSubaccountInputObject) {
+      return this.inviteSubaccountWithHttpInfo(inviteSubaccountInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -6871,12 +6718,9 @@
     /**
      * Mark several chats as read by chat ids or mark all chats as read
      * @param {module:model/MarkChatsReadBulkInputObject} markChatsReadBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.markChatsReadBulkWithHttpInfo = function(markChatsReadBulkInputObject, opts) {
-      opts = opts || {};
+    this.markChatsReadBulkWithHttpInfo = function(markChatsReadBulkInputObject) {
       var postBody = markChatsReadBulkInputObject;
 
       // verify the required parameter 'markChatsReadBulkInputObject' is set
@@ -6892,7 +6736,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -6912,12 +6755,10 @@
     /**
      * Mark several chats as read by chat ids or mark all chats as read
      * @param {module:model/MarkChatsReadBulkInputObject} markChatsReadBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.markChatsReadBulk = function(markChatsReadBulkInputObject, opts) {
-      return this.markChatsReadBulkWithHttpInfo(markChatsReadBulkInputObject, opts)
+    this.markChatsReadBulk = function(markChatsReadBulkInputObject) {
+      return this.markChatsReadBulkWithHttpInfo(markChatsReadBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -6927,12 +6768,9 @@
     /**
      * Mark several chats as UNread by chat ids or mark all chats as UNread
      * @param {module:model/MarkChatsUnreadBulkInputObject} markChatsUnreadBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.markChatsUnreadBulkWithHttpInfo = function(markChatsUnreadBulkInputObject, opts) {
-      opts = opts || {};
+    this.markChatsUnreadBulkWithHttpInfo = function(markChatsUnreadBulkInputObject) {
       var postBody = markChatsUnreadBulkInputObject;
 
       // verify the required parameter 'markChatsUnreadBulkInputObject' is set
@@ -6948,7 +6786,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -6968,12 +6805,10 @@
     /**
      * Mark several chats as UNread by chat ids or mark all chats as UNread
      * @param {module:model/MarkChatsUnreadBulkInputObject} markChatsUnreadBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.markChatsUnreadBulk = function(markChatsUnreadBulkInputObject, opts) {
-      return this.markChatsUnreadBulkWithHttpInfo(markChatsUnreadBulkInputObject, opts)
+    this.markChatsUnreadBulk = function(markChatsUnreadBulkInputObject) {
+      return this.markChatsUnreadBulkWithHttpInfo(markChatsUnreadBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -6983,12 +6818,9 @@
     /**
      * Merge two question nodes.
      * @param {module:model/MergeSurveyNodesInputObject} mergeSurveyNodesInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.mergeSurveyNodesWithHttpInfo = function(mergeSurveyNodesInputObject, opts) {
-      opts = opts || {};
+    this.mergeSurveyNodesWithHttpInfo = function(mergeSurveyNodesInputObject) {
       var postBody = mergeSurveyNodesInputObject;
 
       // verify the required parameter 'mergeSurveyNodesInputObject' is set
@@ -7004,7 +6836,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -7024,12 +6855,10 @@
     /**
      * Merge two question nodes.
      * @param {module:model/MergeSurveyNodesInputObject} mergeSurveyNodesInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.mergeSurveyNodes = function(mergeSurveyNodesInputObject, opts) {
-      return this.mergeSurveyNodesWithHttpInfo(mergeSurveyNodesInputObject, opts)
+    this.mergeSurveyNodes = function(mergeSurveyNodesInputObject) {
+      return this.mergeSurveyNodesWithHttpInfo(mergeSurveyNodesInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -7039,12 +6868,9 @@
     /**
      * Set mute mode.
      * @param {module:model/MuteChatInputObject} muteChatInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.muteChatWithHttpInfo = function(muteChatInputObject, opts) {
-      opts = opts || {};
+    this.muteChatWithHttpInfo = function(muteChatInputObject) {
       var postBody = muteChatInputObject;
 
       // verify the required parameter 'muteChatInputObject' is set
@@ -7060,7 +6886,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -7080,12 +6905,10 @@
     /**
      * Set mute mode.
      * @param {module:model/MuteChatInputObject} muteChatInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.muteChat = function(muteChatInputObject, opts) {
-      return this.muteChatWithHttpInfo(muteChatInputObject, opts)
+    this.muteChat = function(muteChatInputObject) {
+      return this.muteChatWithHttpInfo(muteChatInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -7095,12 +6918,9 @@
     /**
      * Mute several chats by chat ids or mute all chats
      * @param {module:model/MuteChatsBulkInputObject} muteChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.muteChatsBulkWithHttpInfo = function(muteChatsBulkInputObject, opts) {
-      opts = opts || {};
+    this.muteChatsBulkWithHttpInfo = function(muteChatsBulkInputObject) {
       var postBody = muteChatsBulkInputObject;
 
       // verify the required parameter 'muteChatsBulkInputObject' is set
@@ -7116,7 +6936,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -7136,12 +6955,10 @@
     /**
      * Mute several chats by chat ids or mute all chats
      * @param {module:model/MuteChatsBulkInputObject} muteChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.muteChatsBulk = function(muteChatsBulkInputObject, opts) {
-      return this.muteChatsBulkWithHttpInfo(muteChatsBulkInputObject, opts)
+    this.muteChatsBulk = function(muteChatsBulkInputObject) {
+      return this.muteChatsBulkWithHttpInfo(muteChatsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -7194,12 +7011,9 @@
     /**
      * Reopen chats by chat ids or reopen all chats
      * @param {module:model/ReopenChatsBulkInputObject} reopenChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.reopenChatsBulkWithHttpInfo = function(reopenChatsBulkInputObject, opts) {
-      opts = opts || {};
+    this.reopenChatsBulkWithHttpInfo = function(reopenChatsBulkInputObject) {
       var postBody = reopenChatsBulkInputObject;
 
       // verify the required parameter 'reopenChatsBulkInputObject' is set
@@ -7215,7 +7029,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -7235,12 +7048,10 @@
     /**
      * Reopen chats by chat ids or reopen all chats
      * @param {module:model/ReopenChatsBulkInputObject} reopenChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.reopenChatsBulk = function(reopenChatsBulkInputObject, opts) {
-      return this.reopenChatsBulkWithHttpInfo(reopenChatsBulkInputObject, opts)
+    this.reopenChatsBulk = function(reopenChatsBulkInputObject) {
+      return this.reopenChatsBulkWithHttpInfo(reopenChatsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -7251,12 +7062,9 @@
      * Request a new REST API token for subaccount.
      * Returning user object, key and app name.
      * @param {module:model/RequestNewSubaccountTokenInputObject} requestNewSubaccountTokenInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
-    this.requestNewSubaccountTokenWithHttpInfo = function(requestNewSubaccountTokenInputObject, opts) {
-      opts = opts || {};
+    this.requestNewSubaccountTokenWithHttpInfo = function(requestNewSubaccountTokenInputObject) {
       var postBody = requestNewSubaccountTokenInputObject;
 
       // verify the required parameter 'requestNewSubaccountTokenInputObject' is set
@@ -7272,7 +7080,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -7293,12 +7100,10 @@
      * Request a new REST API token for subaccount.
      * Returning user object, key and app name.
      * @param {module:model/RequestNewSubaccountTokenInputObject} requestNewSubaccountTokenInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
-    this.requestNewSubaccountToken = function(requestNewSubaccountTokenInputObject, opts) {
-      return this.requestNewSubaccountTokenWithHttpInfo(requestNewSubaccountTokenInputObject, opts)
+    this.requestNewSubaccountToken = function(requestNewSubaccountTokenInputObject) {
+      return this.requestNewSubaccountTokenWithHttpInfo(requestNewSubaccountTokenInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -7308,12 +7113,9 @@
     /**
      * Request for a new Sender ID.
      * @param {module:model/RequestSenderIdInputObject} requestSenderIdInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.requestSenderIdWithHttpInfo = function(requestSenderIdInputObject, opts) {
-      opts = opts || {};
+    this.requestSenderIdWithHttpInfo = function(requestSenderIdInputObject) {
       var postBody = requestSenderIdInputObject;
 
       // verify the required parameter 'requestSenderIdInputObject' is set
@@ -7329,7 +7131,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -7349,12 +7150,10 @@
     /**
      * Request for a new Sender ID.
      * @param {module:model/RequestSenderIdInputObject} requestSenderIdInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.requestSenderId = function(requestSenderIdInputObject, opts) {
-      return this.requestSenderIdWithHttpInfo(requestSenderIdInputObject, opts)
+    this.requestSenderId = function(requestSenderIdInputObject) {
+      return this.requestSenderIdWithHttpInfo(requestSenderIdInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8043,12 +7842,9 @@
      * Send message
      * The main entrypoint to send messages. See examples above for the reference.
      * @param {module:model/SendMessageInputObject} sendMessageInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SendMessageResponse} and HTTP response
      */
-    this.sendMessageWithHttpInfo = function(sendMessageInputObject, opts) {
-      opts = opts || {};
+    this.sendMessageWithHttpInfo = function(sendMessageInputObject) {
       var postBody = sendMessageInputObject;
 
       // verify the required parameter 'sendMessageInputObject' is set
@@ -8064,7 +7860,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8085,12 +7880,10 @@
      * Send message
      * The main entrypoint to send messages. See examples above for the reference.
      * @param {module:model/SendMessageInputObject} sendMessageInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SendMessageResponse}
      */
-    this.sendMessage = function(sendMessageInputObject, opts) {
-      return this.sendMessageWithHttpInfo(sendMessageInputObject, opts)
+    this.sendMessage = function(sendMessageInputObject) {
+      return this.sendMessageWithHttpInfo(sendMessageInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8143,12 +7936,9 @@
     /**
      * Set status of the chat given by ID.
      * @param {module:model/SetChatStatusInputObject} setChatStatusInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.setChatStatusWithHttpInfo = function(setChatStatusInputObject, opts) {
-      opts = opts || {};
+    this.setChatStatusWithHttpInfo = function(setChatStatusInputObject) {
       var postBody = setChatStatusInputObject;
 
       // verify the required parameter 'setChatStatusInputObject' is set
@@ -8164,7 +7954,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8184,12 +7973,10 @@
     /**
      * Set status of the chat given by ID.
      * @param {module:model/SetChatStatusInputObject} setChatStatusInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.setChatStatus = function(setChatStatusInputObject, opts) {
-      return this.setChatStatusWithHttpInfo(setChatStatusInputObject, opts)
+    this.setChatStatus = function(setChatStatusInputObject) {
+      return this.setChatStatusWithHttpInfo(setChatStatusInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8250,12 +8037,9 @@
     /**
      * Unblock contact by phone number.
      * @param {module:model/UnblockContactInputObject} unblockContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.unblockContactWithHttpInfo = function(unblockContactInputObject, opts) {
-      opts = opts || {};
+    this.unblockContactWithHttpInfo = function(unblockContactInputObject) {
       var postBody = unblockContactInputObject;
 
       // verify the required parameter 'unblockContactInputObject' is set
@@ -8271,7 +8055,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8291,12 +8074,10 @@
     /**
      * Unblock contact by phone number.
      * @param {module:model/UnblockContactInputObject} unblockContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.unblockContact = function(unblockContactInputObject, opts) {
-      return this.unblockContactWithHttpInfo(unblockContactInputObject, opts)
+    this.unblockContact = function(unblockContactInputObject) {
+      return this.unblockContactWithHttpInfo(unblockContactInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8306,12 +8087,9 @@
     /**
      * Unblock several contacts by blocked contact ids or unblock all contacts
      * @param {module:model/UnblockContactsBulkInputObject} unblockContactsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.unblockContactsBulkWithHttpInfo = function(unblockContactsBulkInputObject, opts) {
-      opts = opts || {};
+    this.unblockContactsBulkWithHttpInfo = function(unblockContactsBulkInputObject) {
       var postBody = unblockContactsBulkInputObject;
 
       // verify the required parameter 'unblockContactsBulkInputObject' is set
@@ -8327,7 +8105,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8347,12 +8124,10 @@
     /**
      * Unblock several contacts by blocked contact ids or unblock all contacts
      * @param {module:model/UnblockContactsBulkInputObject} unblockContactsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.unblockContactsBulk = function(unblockContactsBulkInputObject, opts) {
-      return this.unblockContactsBulkWithHttpInfo(unblockContactsBulkInputObject, opts)
+    this.unblockContactsBulk = function(unblockContactsBulkInputObject) {
+      return this.unblockContactsBulkWithHttpInfo(unblockContactsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8362,12 +8137,9 @@
     /**
      * Unmute several chats by chat ids or unmute all chats
      * @param {module:model/UnmuteChatsBulkInputObject} unmuteChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.unmuteChatsBulkWithHttpInfo = function(unmuteChatsBulkInputObject, opts) {
-      opts = opts || {};
+    this.unmuteChatsBulkWithHttpInfo = function(unmuteChatsBulkInputObject) {
       var postBody = unmuteChatsBulkInputObject;
 
       // verify the required parameter 'unmuteChatsBulkInputObject' is set
@@ -8383,7 +8155,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8403,12 +8174,10 @@
     /**
      * Unmute several chats by chat ids or unmute all chats
      * @param {module:model/UnmuteChatsBulkInputObject} unmuteChatsBulkInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.unmuteChatsBulk = function(unmuteChatsBulkInputObject, opts) {
-      return this.unmuteChatsBulkWithHttpInfo(unmuteChatsBulkInputObject, opts)
+    this.unmuteChatsBulk = function(unmuteChatsBulkInputObject) {
+      return this.unmuteChatsBulkWithHttpInfo(unmuteChatsBulkInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8418,12 +8187,9 @@
     /**
      * Unsubscribe contact from your communication by phone number.
      * @param {module:model/UnsubscribeContactInputObject} unsubscribeContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.unsubscribeContactWithHttpInfo = function(unsubscribeContactInputObject, opts) {
-      opts = opts || {};
+    this.unsubscribeContactWithHttpInfo = function(unsubscribeContactInputObject) {
       var postBody = unsubscribeContactInputObject;
 
       // verify the required parameter 'unsubscribeContactInputObject' is set
@@ -8439,7 +8205,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8459,12 +8224,10 @@
     /**
      * Unsubscribe contact from your communication by phone number.
      * @param {module:model/UnsubscribeContactInputObject} unsubscribeContactInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.unsubscribeContact = function(unsubscribeContactInputObject, opts) {
-      return this.unsubscribeContactWithHttpInfo(unsubscribeContactInputObject, opts)
+    this.unsubscribeContact = function(unsubscribeContactInputObject) {
+      return this.unsubscribeContactWithHttpInfo(unsubscribeContactInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8474,12 +8237,9 @@
     /**
      * Update balance notification settings
      * @param {module:model/UpdateBalanceNotificationSettingsInputObject} updateBalanceNotificationSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.updateBalanceNotificationSettingsWithHttpInfo = function(updateBalanceNotificationSettingsInputObject, opts) {
-      opts = opts || {};
+    this.updateBalanceNotificationSettingsWithHttpInfo = function(updateBalanceNotificationSettingsInputObject) {
       var postBody = updateBalanceNotificationSettingsInputObject;
 
       // verify the required parameter 'updateBalanceNotificationSettingsInputObject' is set
@@ -8495,7 +8255,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8515,12 +8274,10 @@
     /**
      * Update balance notification settings
      * @param {module:model/UpdateBalanceNotificationSettingsInputObject} updateBalanceNotificationSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.updateBalanceNotificationSettings = function(updateBalanceNotificationSettingsInputObject, opts) {
-      return this.updateBalanceNotificationSettingsWithHttpInfo(updateBalanceNotificationSettingsInputObject, opts)
+    this.updateBalanceNotificationSettings = function(updateBalanceNotificationSettingsInputObject) {
+      return this.updateBalanceNotificationSettingsWithHttpInfo(updateBalanceNotificationSettingsInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8530,12 +8287,9 @@
     /**
      * Update callback URL settings
      * @param {module:model/UpdateCallbackSettingsInputObject} updateCallbackSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.updateCallbackSettingsWithHttpInfo = function(updateCallbackSettingsInputObject, opts) {
-      opts = opts || {};
+    this.updateCallbackSettingsWithHttpInfo = function(updateCallbackSettingsInputObject) {
       var postBody = updateCallbackSettingsInputObject;
 
       // verify the required parameter 'updateCallbackSettingsInputObject' is set
@@ -8551,7 +8305,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8571,12 +8324,10 @@
     /**
      * Update callback URL settings
      * @param {module:model/UpdateCallbackSettingsInputObject} updateCallbackSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.updateCallbackSettings = function(updateCallbackSettingsInputObject, opts) {
-      return this.updateCallbackSettingsWithHttpInfo(updateCallbackSettingsInputObject, opts)
+    this.updateCallbackSettings = function(updateCallbackSettingsInputObject) {
+      return this.updateCallbackSettingsWithHttpInfo(updateCallbackSettingsInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8586,12 +8337,9 @@
     /**
      * Update chat desktop notification settings
      * @param {module:model/UpdateChatDesktopNotificationSettingsInputObject} updateChatDesktopNotificationSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.updateChatDesktopNotificationSettingsWithHttpInfo = function(updateChatDesktopNotificationSettingsInputObject, opts) {
-      opts = opts || {};
+    this.updateChatDesktopNotificationSettingsWithHttpInfo = function(updateChatDesktopNotificationSettingsInputObject) {
       var postBody = updateChatDesktopNotificationSettingsInputObject;
 
       // verify the required parameter 'updateChatDesktopNotificationSettingsInputObject' is set
@@ -8607,7 +8355,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8627,12 +8374,10 @@
     /**
      * Update chat desktop notification settings
      * @param {module:model/UpdateChatDesktopNotificationSettingsInputObject} updateChatDesktopNotificationSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.updateChatDesktopNotificationSettings = function(updateChatDesktopNotificationSettingsInputObject, opts) {
-      return this.updateChatDesktopNotificationSettingsWithHttpInfo(updateChatDesktopNotificationSettingsInputObject, opts)
+    this.updateChatDesktopNotificationSettings = function(updateChatDesktopNotificationSettingsInputObject) {
+      return this.updateChatDesktopNotificationSettingsWithHttpInfo(updateChatDesktopNotificationSettingsInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8643,12 +8388,9 @@
      * Update existing contact.
      * @param {module:model/UpdateContactInputObject} updateContactInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.updateContactWithHttpInfo = function(updateContactInputObject, id, opts) {
-      opts = opts || {};
+    this.updateContactWithHttpInfo = function(updateContactInputObject, id) {
       var postBody = updateContactInputObject;
 
       // verify the required parameter 'updateContactInputObject' is set
@@ -8670,7 +8412,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8691,12 +8432,10 @@
      * Update existing contact.
      * @param {module:model/UpdateContactInputObject} updateContactInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.updateContact = function(updateContactInputObject, id, opts) {
-      return this.updateContactWithHttpInfo(updateContactInputObject, id, opts)
+    this.updateContact = function(updateContactInputObject, id) {
+      return this.updateContactWithHttpInfo(updateContactInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8707,12 +8446,9 @@
      * Update existing contact note.
      * @param {module:model/UpdateContactNoteInputObject} updateContactNoteInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.updateContactNoteWithHttpInfo = function(updateContactNoteInputObject, id, opts) {
-      opts = opts || {};
+    this.updateContactNoteWithHttpInfo = function(updateContactNoteInputObject, id) {
       var postBody = updateContactNoteInputObject;
 
       // verify the required parameter 'updateContactNoteInputObject' is set
@@ -8734,7 +8470,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8755,12 +8490,10 @@
      * Update existing contact note.
      * @param {module:model/UpdateContactNoteInputObject} updateContactNoteInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.updateContactNote = function(updateContactNoteInputObject, id, opts) {
-      return this.updateContactNoteWithHttpInfo(updateContactNoteInputObject, id, opts)
+    this.updateContactNote = function(updateContactNoteInputObject, id) {
+      return this.updateContactNoteWithHttpInfo(updateContactNoteInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8770,12 +8503,9 @@
     /**
      * Update current user info.
      * @param {module:model/UpdateCurrentUserInputObject} updateCurrentUserInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateCurrentUserResponse} and HTTP response
      */
-    this.updateCurrentUserWithHttpInfo = function(updateCurrentUserInputObject, opts) {
-      opts = opts || {};
+    this.updateCurrentUserWithHttpInfo = function(updateCurrentUserInputObject) {
       var postBody = updateCurrentUserInputObject;
 
       // verify the required parameter 'updateCurrentUserInputObject' is set
@@ -8791,7 +8521,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8811,12 +8540,10 @@
     /**
      * Update current user info.
      * @param {module:model/UpdateCurrentUserInputObject} updateCurrentUserInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateCurrentUserResponse}
      */
-    this.updateCurrentUser = function(updateCurrentUserInputObject, opts) {
-      return this.updateCurrentUserWithHttpInfo(updateCurrentUserInputObject, opts)
+    this.updateCurrentUser = function(updateCurrentUserInputObject) {
+      return this.updateCurrentUserWithHttpInfo(updateCurrentUserInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8827,12 +8554,9 @@
      * Update existing custom field.
      * @param {module:model/UpdateCustomFieldInputObject} updateCustomFieldInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.updateCustomFieldWithHttpInfo = function(updateCustomFieldInputObject, id, opts) {
-      opts = opts || {};
+    this.updateCustomFieldWithHttpInfo = function(updateCustomFieldInputObject, id) {
       var postBody = updateCustomFieldInputObject;
 
       // verify the required parameter 'updateCustomFieldInputObject' is set
@@ -8854,7 +8578,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8875,12 +8598,10 @@
      * Update existing custom field.
      * @param {module:model/UpdateCustomFieldInputObject} updateCustomFieldInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.updateCustomField = function(updateCustomFieldInputObject, id, opts) {
-      return this.updateCustomFieldWithHttpInfo(updateCustomFieldInputObject, id, opts)
+    this.updateCustomField = function(updateCustomFieldInputObject, id) {
+      return this.updateCustomFieldWithHttpInfo(updateCustomFieldInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8891,12 +8612,9 @@
      * Update contact&#39;s custom field value.
      * @param {module:model/UpdateCustomFieldValueInputObject} updateCustomFieldValueInputObject 
      * @param {String} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.updateCustomFieldValueWithHttpInfo = function(updateCustomFieldValueInputObject, id, opts) {
-      opts = opts || {};
+    this.updateCustomFieldValueWithHttpInfo = function(updateCustomFieldValueInputObject, id) {
       var postBody = updateCustomFieldValueInputObject;
 
       // verify the required parameter 'updateCustomFieldValueInputObject' is set
@@ -8918,7 +8636,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8939,12 +8656,10 @@
      * Update contact&#39;s custom field value.
      * @param {module:model/UpdateCustomFieldValueInputObject} updateCustomFieldValueInputObject 
      * @param {String} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.updateCustomFieldValue = function(updateCustomFieldValueInputObject, id, opts) {
-      return this.updateCustomFieldValueWithHttpInfo(updateCustomFieldValueInputObject, id, opts)
+    this.updateCustomFieldValue = function(updateCustomFieldValueInputObject, id) {
+      return this.updateCustomFieldValueWithHttpInfo(updateCustomFieldValueInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8954,12 +8669,9 @@
     /**
      * Update inbound messages notification settings
      * @param {module:model/UpdateInboundMessagesNotificationSettingsInputObject} updateInboundMessagesNotificationSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.updateInboundMessagesNotificationSettingsWithHttpInfo = function(updateInboundMessagesNotificationSettingsInputObject, opts) {
-      opts = opts || {};
+    this.updateInboundMessagesNotificationSettingsWithHttpInfo = function(updateInboundMessagesNotificationSettingsInputObject) {
       var postBody = updateInboundMessagesNotificationSettingsInputObject;
 
       // verify the required parameter 'updateInboundMessagesNotificationSettingsInputObject' is set
@@ -8975,7 +8687,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -8995,12 +8706,10 @@
     /**
      * Update inbound messages notification settings
      * @param {module:model/UpdateInboundMessagesNotificationSettingsInputObject} updateInboundMessagesNotificationSettingsInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.updateInboundMessagesNotificationSettings = function(updateInboundMessagesNotificationSettingsInputObject, opts) {
-      return this.updateInboundMessagesNotificationSettingsWithHttpInfo(updateInboundMessagesNotificationSettingsInputObject, opts)
+    this.updateInboundMessagesNotificationSettings = function(updateInboundMessagesNotificationSettingsInputObject) {
+      return this.updateInboundMessagesNotificationSettingsWithHttpInfo(updateInboundMessagesNotificationSettingsInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -9066,12 +8775,9 @@
     /**
      * Change user password.
      * @param {module:model/UpdatePasswordInputObject} updatePasswordInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.updatePasswordWithHttpInfo = function(updatePasswordInputObject, opts) {
-      opts = opts || {};
+    this.updatePasswordWithHttpInfo = function(updatePasswordInputObject) {
       var postBody = updatePasswordInputObject;
 
       // verify the required parameter 'updatePasswordInputObject' is set
@@ -9087,7 +8793,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -9107,12 +8812,10 @@
     /**
      * Change user password.
      * @param {module:model/UpdatePasswordInputObject} updatePasswordInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.updatePassword = function(updatePasswordInputObject, opts) {
-      return this.updatePasswordWithHttpInfo(updatePasswordInputObject, opts)
+    this.updatePassword = function(updatePasswordInputObject) {
+      return this.updatePasswordWithHttpInfo(updatePasswordInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -9122,12 +8825,9 @@
     /**
      * Change sender settings for specified country.
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.updateSenderSettingWithHttpInfo = function(updateSenderSettingInputObject, opts) {
-      opts = opts || {};
+    this.updateSenderSettingWithHttpInfo = function(updateSenderSettingInputObject) {
       var postBody = updateSenderSettingInputObject;
 
       // verify the required parameter 'updateSenderSettingInputObject' is set
@@ -9143,7 +8843,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -9163,12 +8862,10 @@
     /**
      * Change sender settings for specified country.
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.updateSenderSetting = function(updateSenderSettingInputObject, opts) {
-      return this.updateSenderSettingWithHttpInfo(updateSenderSettingInputObject, opts)
+    this.updateSenderSetting = function(updateSenderSettingInputObject) {
+      return this.updateSenderSettingWithHttpInfo(updateSenderSettingInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -9179,12 +8876,9 @@
      * Update existing survey.
      * @param {module:model/UpdateSurveyInputObject} updateSurveyInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.updateSurveyWithHttpInfo = function(updateSurveyInputObject, id, opts) {
-      opts = opts || {};
+    this.updateSurveyWithHttpInfo = function(updateSurveyInputObject, id) {
       var postBody = updateSurveyInputObject;
 
       // verify the required parameter 'updateSurveyInputObject' is set
@@ -9206,7 +8900,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -9227,12 +8920,10 @@
      * Update existing survey.
      * @param {module:model/UpdateSurveyInputObject} updateSurveyInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.updateSurvey = function(updateSurveyInputObject, id, opts) {
-      return this.updateSurveyWithHttpInfo(updateSurveyInputObject, id, opts)
+    this.updateSurvey = function(updateSurveyInputObject, id) {
+      return this.updateSurveyWithHttpInfo(updateSurveyInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -9243,12 +8934,9 @@
      * Update existing node.
      * @param {module:model/UpdateSurveyNodeInputObject} updateSurveyNodeInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.updateSurveyNodeWithHttpInfo = function(updateSurveyNodeInputObject, id, opts) {
-      opts = opts || {};
+    this.updateSurveyNodeWithHttpInfo = function(updateSurveyNodeInputObject, id) {
       var postBody = updateSurveyNodeInputObject;
 
       // verify the required parameter 'updateSurveyNodeInputObject' is set
@@ -9270,7 +8958,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -9291,12 +8978,10 @@
      * Update existing node.
      * @param {module:model/UpdateSurveyNodeInputObject} updateSurveyNodeInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.updateSurveyNode = function(updateSurveyNodeInputObject, id, opts) {
-      return this.updateSurveyNodeWithHttpInfo(updateSurveyNodeInputObject, id, opts)
+    this.updateSurveyNode = function(updateSurveyNodeInputObject, id) {
+      return this.updateSurveyNodeWithHttpInfo(updateSurveyNodeInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -9307,12 +8992,9 @@
      * Update existing template.
      * @param {module:model/UpdateTemplateInputObject} updateTemplateInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.updateTemplateWithHttpInfo = function(updateTemplateInputObject, id, opts) {
-      opts = opts || {};
+    this.updateTemplateWithHttpInfo = function(updateTemplateInputObject, id) {
       var postBody = updateTemplateInputObject;
 
       // verify the required parameter 'updateTemplateInputObject' is set
@@ -9334,7 +9016,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'X-Ignore-Null-Values': opts['xIgnoreNullValues']
       };
       var formParams = {
       };
@@ -9355,12 +9036,10 @@
      * Update existing template.
      * @param {module:model/UpdateTemplateInputObject} updateTemplateInputObject 
      * @param {Number} id 
-     * @param {Object} opts Optional parameters
-     * @param {Boolean} opts.xIgnoreNullValues  (default to true)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.updateTemplate = function(updateTemplateInputObject, id, opts) {
-      return this.updateTemplateWithHttpInfo(updateTemplateInputObject, id, opts)
+    this.updateTemplate = function(updateTemplateInputObject, id) {
+      return this.updateTemplateWithHttpInfo(updateTemplateInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

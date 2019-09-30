@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 <a name="blockContact"></a>
 # **blockContact**
-> ResourceLinkResponse blockContact(blockContactInputObject, opts)
+> ResourceLinkResponse blockContact(blockContactInputObject)
 
 Block contact from inbound and outbound communication by phone number.
 
@@ -249,10 +249,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var blockContactInputObject = new TextmagicClient.BlockContactInputObject(); // BlockContactInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.blockContact(blockContactInputObject, opts).then(function(data) {
+apiInstance.blockContact(blockContactInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -265,7 +262,6 @@ apiInstance.blockContact(blockContactInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **blockContactInputObject** | [**BlockContactInputObject**](BlockContactInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -282,7 +278,7 @@ Name | Type | Description  | Notes
 
 <a name="buyDedicatedNumber"></a>
 # **buyDedicatedNumber**
-> buyDedicatedNumber(buyDedicatedNumberInputObject, opts)
+> buyDedicatedNumber(buyDedicatedNumberInputObject)
 
 Buy a dedicated number and assign it to the specified account.
 
@@ -300,10 +296,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var buyDedicatedNumberInputObject = new TextmagicClient.BuyDedicatedNumberInputObject(); // BuyDedicatedNumberInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.buyDedicatedNumber(buyDedicatedNumberInputObject, opts).then(function() {
+apiInstance.buyDedicatedNumber(buyDedicatedNumberInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -316,7 +309,6 @@ apiInstance.buyDedicatedNumber(buyDedicatedNumberInputObject, opts).then(functio
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **buyDedicatedNumberInputObject** | [**BuyDedicatedNumberInputObject**](BuyDedicatedNumberInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -380,7 +372,7 @@ Name | Type | Description  | Notes
 
 <a name="checkPhoneVerificationCode"></a>
 # **checkPhoneVerificationCode**
-> checkPhoneVerificationCode(checkPhoneVerificationCodeInputObject, opts)
+> checkPhoneVerificationCode(checkPhoneVerificationCodeInputObject)
 
 Check user phone verification code
 
@@ -398,10 +390,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var checkPhoneVerificationCodeInputObject = new TextmagicClient.CheckPhoneVerificationCodeInputObject(); // CheckPhoneVerificationCodeInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.checkPhoneVerificationCode(checkPhoneVerificationCodeInputObject, opts).then(function() {
+apiInstance.checkPhoneVerificationCode(checkPhoneVerificationCodeInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -414,7 +403,6 @@ apiInstance.checkPhoneVerificationCode(checkPhoneVerificationCodeInputObject, op
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **checkPhoneVerificationCodeInputObject** | [**CheckPhoneVerificationCodeInputObject**](CheckPhoneVerificationCodeInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -481,7 +469,7 @@ Name | Type | Description  | Notes
 
 <a name="closeChatsBulk"></a>
 # **closeChatsBulk**
-> closeChatsBulk(closeChatsBulkInputObject, opts)
+> closeChatsBulk(closeChatsBulkInputObject)
 
 Close chats by chat ids or close all chats
 
@@ -499,10 +487,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var closeChatsBulkInputObject = new TextmagicClient.CloseChatsBulkInputObject(); // CloseChatsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.closeChatsBulk(closeChatsBulkInputObject, opts).then(function() {
+apiInstance.closeChatsBulk(closeChatsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -515,7 +500,6 @@ apiInstance.closeChatsBulk(closeChatsBulkInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **closeChatsBulkInputObject** | [**CloseChatsBulkInputObject**](CloseChatsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -620,7 +604,7 @@ null (empty response body)
 
 <a name="createContact"></a>
 # **createContact**
-> ResourceLinkResponse createContact(createContactInputObject, opts)
+> ResourceLinkResponse createContact(createContactInputObject)
 
 Create a new contact from the submitted data.
 
@@ -638,10 +622,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var createContactInputObject = new TextmagicClient.CreateContactInputObject(); // CreateContactInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createContact(createContactInputObject, opts).then(function(data) {
+apiInstance.createContact(createContactInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -654,7 +635,6 @@ apiInstance.createContact(createContactInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createContactInputObject** | [**CreateContactInputObject**](CreateContactInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -671,7 +651,7 @@ Name | Type | Description  | Notes
 
 <a name="createContactNote"></a>
 # **createContactNote**
-> ResourceLinkResponse createContactNote(createContactNoteInputObject, id, opts)
+> ResourceLinkResponse createContactNote(createContactNoteInputObject, id)
 
 Create a new contact note.
 
@@ -691,10 +671,7 @@ var createContactNoteInputObject = new TextmagicClient.CreateContactNoteInputObj
 
 var id = 56; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createContactNote(createContactNoteInputObject, id, opts).then(function(data) {
+apiInstance.createContactNote(createContactNoteInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -708,7 +685,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createContactNoteInputObject** | [**CreateContactNoteInputObject**](CreateContactNoteInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -725,7 +701,7 @@ Name | Type | Description  | Notes
 
 <a name="createCustomField"></a>
 # **createCustomField**
-> ResourceLinkResponse createCustomField(createCustomFieldInputObject, opts)
+> ResourceLinkResponse createCustomField(createCustomFieldInputObject)
 
 Create a new custom field from the submitted data.
 
@@ -743,10 +719,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var createCustomFieldInputObject = new TextmagicClient.CreateCustomFieldInputObject(); // CreateCustomFieldInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createCustomField(createCustomFieldInputObject, opts).then(function(data) {
+apiInstance.createCustomField(createCustomFieldInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -759,7 +732,6 @@ apiInstance.createCustomField(createCustomFieldInputObject, opts).then(function(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createCustomFieldInputObject** | [**CreateCustomFieldInputObject**](CreateCustomFieldInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -776,7 +748,7 @@ Name | Type | Description  | Notes
 
 <a name="createList"></a>
 # **createList**
-> ResourceLinkResponse createList(createListInputObject, opts)
+> ResourceLinkResponse createList(createListInputObject)
 
 Create a new list from the submitted data.
 
@@ -794,10 +766,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var createListInputObject = new TextmagicClient.CreateListInputObject(); // CreateListInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createList(createListInputObject, opts).then(function(data) {
+apiInstance.createList(createListInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -810,7 +779,6 @@ apiInstance.createList(createListInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createListInputObject** | [**CreateListInputObject**](CreateListInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -827,7 +795,7 @@ Name | Type | Description  | Notes
 
 <a name="createPushToken"></a>
 # **createPushToken**
-> createPushToken(createPushTokenInputObject, opts)
+> createPushToken(createPushTokenInputObject)
 
 Add or update a device token.
 
@@ -845,10 +813,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var createPushTokenInputObject = new TextmagicClient.CreatePushTokenInputObject(); // CreatePushTokenInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createPushToken(createPushTokenInputObject, opts).then(function() {
+apiInstance.createPushToken(createPushTokenInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -861,7 +826,6 @@ apiInstance.createPushToken(createPushTokenInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createPushTokenInputObject** | [**CreatePushTokenInputObject**](CreatePushTokenInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -878,7 +842,7 @@ null (empty response body)
 
 <a name="createSurvey"></a>
 # **createSurvey**
-> ResourceLinkResponse createSurvey(createSurveyInputObject, opts)
+> ResourceLinkResponse createSurvey(createSurveyInputObject)
 
 Create a new survey from the submitted data.
 
@@ -896,10 +860,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var createSurveyInputObject = new TextmagicClient.CreateSurveyInputObject(); // CreateSurveyInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createSurvey(createSurveyInputObject, opts).then(function(data) {
+apiInstance.createSurvey(createSurveyInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -912,7 +873,6 @@ apiInstance.createSurvey(createSurveyInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createSurveyInputObject** | [**CreateSurveyInputObject**](CreateSurveyInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -929,7 +889,7 @@ Name | Type | Description  | Notes
 
 <a name="createSurveyNode"></a>
 # **createSurveyNode**
-> ResourceLinkResponse createSurveyNode(createSurveyNodeInputObject, id, opts)
+> ResourceLinkResponse createSurveyNode(createSurveyNodeInputObject, id)
 
 Create a new node from the submitted data.
 
@@ -949,10 +909,7 @@ var createSurveyNodeInputObject = new TextmagicClient.CreateSurveyNodeInputObjec
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createSurveyNode(createSurveyNodeInputObject, id, opts).then(function(data) {
+apiInstance.createSurveyNode(createSurveyNodeInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -966,7 +923,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createSurveyNodeInputObject** | [**CreateSurveyNodeInputObject**](CreateSurveyNodeInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -983,7 +939,7 @@ Name | Type | Description  | Notes
 
 <a name="createTemplate"></a>
 # **createTemplate**
-> ResourceLinkResponse createTemplate(createTemplateInputObject, opts)
+> ResourceLinkResponse createTemplate(createTemplateInputObject)
 
 Create a new template from the submitted data.
 
@@ -1001,10 +957,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var createTemplateInputObject = new TextmagicClient.CreateTemplateInputObject(); // CreateTemplateInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.createTemplate(createTemplateInputObject, opts).then(function(data) {
+apiInstance.createTemplate(createTemplateInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -1017,7 +970,6 @@ apiInstance.createTemplate(createTemplateInputObject, opts).then(function(data) 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **createTemplateInputObject** | [**CreateTemplateInputObject**](CreateTemplateInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1159,7 +1111,7 @@ null (empty response body)
 
 <a name="deleteChatMessages"></a>
 # **deleteChatMessages**
-> deleteChatMessages(deleteChatMessagesBulkInputObject, id, opts)
+> deleteChatMessages(deleteChatMessagesBulkInputObject, id)
 
 Delete messages from chat by given messages ID(s).
 
@@ -1179,10 +1131,7 @@ var deleteChatMessagesBulkInputObject = new TextmagicClient.DeleteChatMessagesBu
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteChatMessages(deleteChatMessagesBulkInputObject, id, opts).then(function() {
+apiInstance.deleteChatMessages(deleteChatMessagesBulkInputObject, id).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -1196,7 +1145,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteChatMessagesBulkInputObject** | [**DeleteChatMessagesBulkInputObject**](DeleteChatMessagesBulkInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1213,7 +1161,7 @@ null (empty response body)
 
 <a name="deleteChatsBulk"></a>
 # **deleteChatsBulk**
-> deleteChatsBulk(deleteChatsBulkInputObject, opts)
+> deleteChatsBulk(deleteChatsBulkInputObject)
 
 Delete chats by given ID(s) or delete all chats.
 
@@ -1231,10 +1179,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteChatsBulkInputObject = new TextmagicClient.DeleteChatsBulkInputObject(); // DeleteChatsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteChatsBulk(deleteChatsBulkInputObject, opts).then(function() {
+apiInstance.deleteChatsBulk(deleteChatsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -1247,7 +1192,6 @@ apiInstance.deleteChatsBulk(deleteChatsBulkInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteChatsBulkInputObject** | [**DeleteChatsBulkInputObject**](DeleteChatsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1405,7 +1349,7 @@ null (empty response body)
 
 <a name="deleteContactNotesBulk"></a>
 # **deleteContactNotesBulk**
-> deleteContactNotesBulk(id, deleteContactNotesBulkInputObject, opts)
+> deleteContactNotesBulk(id, deleteContactNotesBulkInputObject)
 
 Delete contact note by given ID(s) or delete all contact notes.
 
@@ -1425,10 +1369,7 @@ var id = 1; // Number |
 
 var deleteContactNotesBulkInputObject = new TextmagicClient.DeleteContactNotesBulkInputObject(); // DeleteContactNotesBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteContactNotesBulk(id, deleteContactNotesBulkInputObject, opts).then(function() {
+apiInstance.deleteContactNotesBulk(id, deleteContactNotesBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -1442,7 +1383,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**|  | 
  **deleteContactNotesBulkInputObject** | [**DeleteContactNotesBulkInputObject**](DeleteContactNotesBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1459,7 +1399,7 @@ null (empty response body)
 
 <a name="deleteContactsByIds"></a>
 # **deleteContactsByIds**
-> deleteContactsByIds(deleteContactsByIdsInputObject, opts)
+> deleteContactsByIds(deleteContactsByIdsInputObject)
 
 Delete contact by given ID(s) or delete all contacts.
 
@@ -1477,10 +1417,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteContactsByIdsInputObject = new TextmagicClient.DeleteContactsByIdsInputObject(); // DeleteContactsByIdsInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteContactsByIds(deleteContactsByIdsInputObject, opts).then(function() {
+apiInstance.deleteContactsByIds(deleteContactsByIdsInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -1493,7 +1430,6 @@ apiInstance.deleteContactsByIds(deleteContactsByIdsInputObject, opts).then(funct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteContactsByIdsInputObject** | [**DeleteContactsByIdsInputObject**](DeleteContactsByIdsInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1701,7 +1637,7 @@ null (empty response body)
 
 <a name="deleteInboundMessagesBulk"></a>
 # **deleteInboundMessagesBulk**
-> deleteInboundMessagesBulk(deleteInboundMessagesBulkInputObject, opts)
+> deleteInboundMessagesBulk(deleteInboundMessagesBulkInputObject)
 
 Delete inbound messages by given ID(s) or delete all inbound messages.
 
@@ -1719,10 +1655,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteInboundMessagesBulkInputObject = new TextmagicClient.DeleteInboundMessagesBulkInputObject(); // DeleteInboundMessagesBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteInboundMessagesBulk(deleteInboundMessagesBulkInputObject, opts).then(function() {
+apiInstance.deleteInboundMessagesBulk(deleteInboundMessagesBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -1735,7 +1668,6 @@ apiInstance.deleteInboundMessagesBulk(deleteInboundMessagesBulkInputObject, opts
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteInboundMessagesBulkInputObject** | [**DeleteInboundMessagesBulkInputObject**](DeleteInboundMessagesBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1846,7 +1778,7 @@ null (empty response body)
 
 <a name="deleteListContactsBulk"></a>
 # **deleteListContactsBulk**
-> deleteListContactsBulk(deleteListContactsBulkInputObject, id, opts)
+> deleteListContactsBulk(deleteListContactsBulkInputObject, id)
 
 Delete contact from list by given ID(s) or all contacts from list.
 
@@ -1866,10 +1798,7 @@ var deleteListContactsBulkInputObject = new TextmagicClient.DeleteListContactsBu
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteListContactsBulk(deleteListContactsBulkInputObject, id, opts).then(function() {
+apiInstance.deleteListContactsBulk(deleteListContactsBulkInputObject, id).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -1883,7 +1812,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteListContactsBulkInputObject** | [**DeleteListContactsBulkInputObject**](DeleteListContactsBulkInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1900,7 +1828,7 @@ null (empty response body)
 
 <a name="deleteListsBulk"></a>
 # **deleteListsBulk**
-> deleteListsBulk(deleteListsBulkInputObject, opts)
+> deleteListsBulk(deleteListsBulkInputObject)
 
 Delete list by given ID(s) or delete all lists.
 
@@ -1918,10 +1846,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteListsBulkInputObject = new TextmagicClient.DeleteListsBulkInputObject(); // DeleteListsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteListsBulk(deleteListsBulkInputObject, opts).then(function() {
+apiInstance.deleteListsBulk(deleteListsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -1934,7 +1859,6 @@ apiInstance.deleteListsBulk(deleteListsBulkInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteListsBulkInputObject** | [**DeleteListsBulkInputObject**](DeleteListsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -1998,7 +1922,7 @@ null (empty response body)
 
 <a name="deleteMessageSessionsBulk"></a>
 # **deleteMessageSessionsBulk**
-> deleteMessageSessionsBulk(deleteMessageSessionsBulkInputObject, opts)
+> deleteMessageSessionsBulk(deleteMessageSessionsBulkInputObject)
 
 Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
 
@@ -2016,10 +1940,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteMessageSessionsBulkInputObject = new TextmagicClient.DeleteMessageSessionsBulkInputObject(); // DeleteMessageSessionsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteMessageSessionsBulk(deleteMessageSessionsBulkInputObject, opts).then(function() {
+apiInstance.deleteMessageSessionsBulk(deleteMessageSessionsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -2032,7 +1953,6 @@ apiInstance.deleteMessageSessionsBulk(deleteMessageSessionsBulkInputObject, opts
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteMessageSessionsBulkInputObject** | [**DeleteMessageSessionsBulkInputObject**](DeleteMessageSessionsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2098,7 +2018,7 @@ null (empty response body)
 
 <a name="deleteOutboundMessagesBulk"></a>
 # **deleteOutboundMessagesBulk**
-> deleteOutboundMessagesBulk(deleteOutboundMessagesBulkInputObject, opts)
+> deleteOutboundMessagesBulk(deleteOutboundMessagesBulkInputObject)
 
 Delete messages by IDs
 
@@ -2118,10 +2038,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteOutboundMessagesBulkInputObject = new TextmagicClient.DeleteOutboundMessagesBulkInputObject(); // DeleteOutboundMessagesBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteOutboundMessagesBulk(deleteOutboundMessagesBulkInputObject, opts).then(function() {
+apiInstance.deleteOutboundMessagesBulk(deleteOutboundMessagesBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -2134,7 +2051,6 @@ apiInstance.deleteOutboundMessagesBulk(deleteOutboundMessagesBulkInputObject, op
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteOutboundMessagesBulkInputObject** | [**DeleteOutboundMessagesBulkInputObject**](DeleteOutboundMessagesBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2248,7 +2164,7 @@ null (empty response body)
 
 <a name="deleteScheduledMessagesBulk"></a>
 # **deleteScheduledMessagesBulk**
-> deleteScheduledMessagesBulk(deleteScheduledMessagesBulkInputObject, opts)
+> deleteScheduledMessagesBulk(deleteScheduledMessagesBulkInputObject)
 
 Delete scheduled messages by given ID(s) or delete all scheduled messages.
 
@@ -2266,10 +2182,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteScheduledMessagesBulkInputObject = new TextmagicClient.DeleteScheduledMessagesBulkInputObject(); // DeleteScheduledMessagesBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteScheduledMessagesBulk(deleteScheduledMessagesBulkInputObject, opts).then(function() {
+apiInstance.deleteScheduledMessagesBulk(deleteScheduledMessagesBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -2282,7 +2195,6 @@ apiInstance.deleteScheduledMessagesBulk(deleteScheduledMessagesBulkInputObject, 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteScheduledMessagesBulkInputObject** | [**DeleteScheduledMessagesBulkInputObject**](DeleteScheduledMessagesBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2487,7 +2399,7 @@ null (empty response body)
 
 <a name="deleteTemplatesBulk"></a>
 # **deleteTemplatesBulk**
-> deleteTemplatesBulk(deleteTemplatesBulkInputObject, opts)
+> deleteTemplatesBulk(deleteTemplatesBulkInputObject)
 
 Delete template by given ID(s) or delete all templates.
 
@@ -2505,10 +2417,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var deleteTemplatesBulkInputObject = new TextmagicClient.DeleteTemplatesBulkInputObject(); // DeleteTemplatesBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.deleteTemplatesBulk(deleteTemplatesBulkInputObject, opts).then(function() {
+apiInstance.deleteTemplatesBulk(deleteTemplatesBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -2521,7 +2430,6 @@ apiInstance.deleteTemplatesBulk(deleteTemplatesBulkInputObject, opts).then(funct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **deleteTemplatesBulkInputObject** | [**DeleteTemplatesBulkInputObject**](DeleteTemplatesBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -2538,7 +2446,7 @@ null (empty response body)
 
 <a name="doAuth"></a>
 # **doAuth**
-> DoAuthResponse doAuth(doAuthInputObject, opts)
+> DoAuthResponse doAuth(doAuthInputObject)
 
 Authenticate user by given username and password.
 
@@ -2552,10 +2460,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var doAuthInputObject = new TextmagicClient.DoAuthInputObject(); // DoAuthInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.doAuth(doAuthInputObject, opts).then(function(data) {
+apiInstance.doAuth(doAuthInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -2568,7 +2473,6 @@ apiInstance.doAuth(doAuthInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **doAuthInputObject** | [**DoAuthInputObject**](DoAuthInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -5756,8 +5660,7 @@ var getSubaccountsWithTokensInputObject = new TextmagicClient.GetSubaccountsWith
 
 var opts = { 
   'page': 1, // Number | Fetch specified results page
-  'limit': 10, // Number | How many results to return
-  'xIgnoreNullValues': true // Boolean | 
+  'limit': 10 // Number | How many results to return
 };
 apiInstance.getSubaccountsWithTokens(getSubaccountsWithTokensInputObject, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -5774,7 +5677,6 @@ Name | Type | Description  | Notes
  **getSubaccountsWithTokensInputObject** | [**GetSubaccountsWithTokensInputObject**](GetSubaccountsWithTokensInputObject.md)|  | 
  **page** | **Number**| Fetch specified results page | [optional] [default to 1]
  **limit** | **Number**| How many results to return | [optional] [default to 10]
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6366,7 +6268,7 @@ This endpoint does not need any parameter.
 
 <a name="inviteSubaccount"></a>
 # **inviteSubaccount**
-> inviteSubaccount(inviteSubaccountInputObject, opts)
+> inviteSubaccount(inviteSubaccountInputObject)
 
 Invite new subaccount.
 
@@ -6384,10 +6286,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var inviteSubaccountInputObject = new TextmagicClient.InviteSubaccountInputObject(); // InviteSubaccountInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.inviteSubaccount(inviteSubaccountInputObject, opts).then(function() {
+apiInstance.inviteSubaccount(inviteSubaccountInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -6400,7 +6299,6 @@ apiInstance.inviteSubaccount(inviteSubaccountInputObject, opts).then(function() 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **inviteSubaccountInputObject** | [**InviteSubaccountInputObject**](InviteSubaccountInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6417,7 +6315,7 @@ null (empty response body)
 
 <a name="markChatsReadBulk"></a>
 # **markChatsReadBulk**
-> markChatsReadBulk(markChatsReadBulkInputObject, opts)
+> markChatsReadBulk(markChatsReadBulkInputObject)
 
 Mark several chats as read by chat ids or mark all chats as read
 
@@ -6435,10 +6333,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var markChatsReadBulkInputObject = new TextmagicClient.MarkChatsReadBulkInputObject(); // MarkChatsReadBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.markChatsReadBulk(markChatsReadBulkInputObject, opts).then(function() {
+apiInstance.markChatsReadBulk(markChatsReadBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -6451,7 +6346,6 @@ apiInstance.markChatsReadBulk(markChatsReadBulkInputObject, opts).then(function(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **markChatsReadBulkInputObject** | [**MarkChatsReadBulkInputObject**](MarkChatsReadBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6468,7 +6362,7 @@ null (empty response body)
 
 <a name="markChatsUnreadBulk"></a>
 # **markChatsUnreadBulk**
-> markChatsUnreadBulk(markChatsUnreadBulkInputObject, opts)
+> markChatsUnreadBulk(markChatsUnreadBulkInputObject)
 
 Mark several chats as UNread by chat ids or mark all chats as UNread
 
@@ -6486,10 +6380,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var markChatsUnreadBulkInputObject = new TextmagicClient.MarkChatsUnreadBulkInputObject(); // MarkChatsUnreadBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.markChatsUnreadBulk(markChatsUnreadBulkInputObject, opts).then(function() {
+apiInstance.markChatsUnreadBulk(markChatsUnreadBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -6502,7 +6393,6 @@ apiInstance.markChatsUnreadBulk(markChatsUnreadBulkInputObject, opts).then(funct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **markChatsUnreadBulkInputObject** | [**MarkChatsUnreadBulkInputObject**](MarkChatsUnreadBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6519,7 +6409,7 @@ null (empty response body)
 
 <a name="mergeSurveyNodes"></a>
 # **mergeSurveyNodes**
-> mergeSurveyNodes(mergeSurveyNodesInputObject, opts)
+> mergeSurveyNodes(mergeSurveyNodesInputObject)
 
 Merge two question nodes.
 
@@ -6537,10 +6427,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var mergeSurveyNodesInputObject = new TextmagicClient.MergeSurveyNodesInputObject(); // MergeSurveyNodesInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.mergeSurveyNodes(mergeSurveyNodesInputObject, opts).then(function() {
+apiInstance.mergeSurveyNodes(mergeSurveyNodesInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -6553,7 +6440,6 @@ apiInstance.mergeSurveyNodes(mergeSurveyNodesInputObject, opts).then(function() 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mergeSurveyNodesInputObject** | [**MergeSurveyNodesInputObject**](MergeSurveyNodesInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6570,7 +6456,7 @@ null (empty response body)
 
 <a name="muteChat"></a>
 # **muteChat**
-> ResourceLinkResponse muteChat(muteChatInputObject, opts)
+> ResourceLinkResponse muteChat(muteChatInputObject)
 
 Set mute mode.
 
@@ -6588,10 +6474,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var muteChatInputObject = new TextmagicClient.MuteChatInputObject(); // MuteChatInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.muteChat(muteChatInputObject, opts).then(function(data) {
+apiInstance.muteChat(muteChatInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -6604,7 +6487,6 @@ apiInstance.muteChat(muteChatInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **muteChatInputObject** | [**MuteChatInputObject**](MuteChatInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6621,7 +6503,7 @@ Name | Type | Description  | Notes
 
 <a name="muteChatsBulk"></a>
 # **muteChatsBulk**
-> muteChatsBulk(muteChatsBulkInputObject, opts)
+> muteChatsBulk(muteChatsBulkInputObject)
 
 Mute several chats by chat ids or mute all chats
 
@@ -6639,10 +6521,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var muteChatsBulkInputObject = new TextmagicClient.MuteChatsBulkInputObject(); // MuteChatsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.muteChatsBulk(muteChatsBulkInputObject, opts).then(function() {
+apiInstance.muteChatsBulk(muteChatsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -6655,7 +6534,6 @@ apiInstance.muteChatsBulk(muteChatsBulkInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **muteChatsBulkInputObject** | [**MuteChatsBulkInputObject**](MuteChatsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6713,7 +6591,7 @@ This endpoint does not need any parameter.
 
 <a name="reopenChatsBulk"></a>
 # **reopenChatsBulk**
-> reopenChatsBulk(reopenChatsBulkInputObject, opts)
+> reopenChatsBulk(reopenChatsBulkInputObject)
 
 Reopen chats by chat ids or reopen all chats
 
@@ -6731,10 +6609,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var reopenChatsBulkInputObject = new TextmagicClient.ReopenChatsBulkInputObject(); // ReopenChatsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.reopenChatsBulk(reopenChatsBulkInputObject, opts).then(function() {
+apiInstance.reopenChatsBulk(reopenChatsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -6747,7 +6622,6 @@ apiInstance.reopenChatsBulk(reopenChatsBulkInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **reopenChatsBulkInputObject** | [**ReopenChatsBulkInputObject**](ReopenChatsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6764,7 +6638,7 @@ null (empty response body)
 
 <a name="requestNewSubaccountToken"></a>
 # **requestNewSubaccountToken**
-> User requestNewSubaccountToken(requestNewSubaccountTokenInputObject, opts)
+> User requestNewSubaccountToken(requestNewSubaccountTokenInputObject)
 
 Request a new REST API token for subaccount.
 
@@ -6784,10 +6658,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var requestNewSubaccountTokenInputObject = new TextmagicClient.RequestNewSubaccountTokenInputObject(); // RequestNewSubaccountTokenInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.requestNewSubaccountToken(requestNewSubaccountTokenInputObject, opts).then(function(data) {
+apiInstance.requestNewSubaccountToken(requestNewSubaccountTokenInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -6800,7 +6671,6 @@ apiInstance.requestNewSubaccountToken(requestNewSubaccountTokenInputObject, opts
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **requestNewSubaccountTokenInputObject** | [**RequestNewSubaccountTokenInputObject**](RequestNewSubaccountTokenInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -6817,7 +6687,7 @@ Name | Type | Description  | Notes
 
 <a name="requestSenderId"></a>
 # **requestSenderId**
-> ResourceLinkResponse requestSenderId(requestSenderIdInputObject, opts)
+> ResourceLinkResponse requestSenderId(requestSenderIdInputObject)
 
 Request for a new Sender ID.
 
@@ -6835,10 +6705,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var requestSenderIdInputObject = new TextmagicClient.RequestSenderIdInputObject(); // RequestSenderIdInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.requestSenderId(requestSenderIdInputObject, opts).then(function(data) {
+apiInstance.requestSenderId(requestSenderIdInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -6851,7 +6718,6 @@ apiInstance.requestSenderId(requestSenderIdInputObject, opts).then(function(data
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **requestSenderIdInputObject** | [**RequestSenderIdInputObject**](RequestSenderIdInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7484,7 +7350,7 @@ null (empty response body)
 
 <a name="sendMessage"></a>
 # **sendMessage**
-> SendMessageResponse sendMessage(sendMessageInputObject, opts)
+> SendMessageResponse sendMessage(sendMessageInputObject)
 
 Send message
 
@@ -7504,10 +7370,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var sendMessageInputObject = new TextmagicClient.SendMessageInputObject(); // SendMessageInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.sendMessage(sendMessageInputObject, opts).then(function(data) {
+apiInstance.sendMessage(sendMessageInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -7520,7 +7383,6 @@ apiInstance.sendMessage(sendMessageInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sendMessageInputObject** | [**SendMessageInputObject**](SendMessageInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7578,7 +7440,7 @@ null (empty response body)
 
 <a name="setChatStatus"></a>
 # **setChatStatus**
-> ResourceLinkResponse setChatStatus(setChatStatusInputObject, opts)
+> ResourceLinkResponse setChatStatus(setChatStatusInputObject)
 
 Set status of the chat given by ID.
 
@@ -7596,10 +7458,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var setChatStatusInputObject = new TextmagicClient.SetChatStatusInputObject(); // SetChatStatusInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.setChatStatus(setChatStatusInputObject, opts).then(function(data) {
+apiInstance.setChatStatus(setChatStatusInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -7612,7 +7471,6 @@ apiInstance.setChatStatus(setChatStatusInputObject, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **setChatStatusInputObject** | [**SetChatStatusInputObject**](SetChatStatusInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7676,7 +7534,7 @@ Name | Type | Description  | Notes
 
 <a name="unblockContact"></a>
 # **unblockContact**
-> unblockContact(unblockContactInputObject, opts)
+> unblockContact(unblockContactInputObject)
 
 Unblock contact by phone number.
 
@@ -7694,10 +7552,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var unblockContactInputObject = new TextmagicClient.UnblockContactInputObject(); // UnblockContactInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.unblockContact(unblockContactInputObject, opts).then(function() {
+apiInstance.unblockContact(unblockContactInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -7710,7 +7565,6 @@ apiInstance.unblockContact(unblockContactInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unblockContactInputObject** | [**UnblockContactInputObject**](UnblockContactInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7727,7 +7581,7 @@ null (empty response body)
 
 <a name="unblockContactsBulk"></a>
 # **unblockContactsBulk**
-> unblockContactsBulk(unblockContactsBulkInputObject, opts)
+> unblockContactsBulk(unblockContactsBulkInputObject)
 
 Unblock several contacts by blocked contact ids or unblock all contacts
 
@@ -7745,10 +7599,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var unblockContactsBulkInputObject = new TextmagicClient.UnblockContactsBulkInputObject(); // UnblockContactsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.unblockContactsBulk(unblockContactsBulkInputObject, opts).then(function() {
+apiInstance.unblockContactsBulk(unblockContactsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -7761,7 +7612,6 @@ apiInstance.unblockContactsBulk(unblockContactsBulkInputObject, opts).then(funct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unblockContactsBulkInputObject** | [**UnblockContactsBulkInputObject**](UnblockContactsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7778,7 +7628,7 @@ null (empty response body)
 
 <a name="unmuteChatsBulk"></a>
 # **unmuteChatsBulk**
-> unmuteChatsBulk(unmuteChatsBulkInputObject, opts)
+> unmuteChatsBulk(unmuteChatsBulkInputObject)
 
 Unmute several chats by chat ids or unmute all chats
 
@@ -7796,10 +7646,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var unmuteChatsBulkInputObject = new TextmagicClient.UnmuteChatsBulkInputObject(); // UnmuteChatsBulkInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.unmuteChatsBulk(unmuteChatsBulkInputObject, opts).then(function() {
+apiInstance.unmuteChatsBulk(unmuteChatsBulkInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -7812,7 +7659,6 @@ apiInstance.unmuteChatsBulk(unmuteChatsBulkInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unmuteChatsBulkInputObject** | [**UnmuteChatsBulkInputObject**](UnmuteChatsBulkInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7829,7 +7675,7 @@ null (empty response body)
 
 <a name="unsubscribeContact"></a>
 # **unsubscribeContact**
-> ResourceLinkResponse unsubscribeContact(unsubscribeContactInputObject, opts)
+> ResourceLinkResponse unsubscribeContact(unsubscribeContactInputObject)
 
 Unsubscribe contact from your communication by phone number.
 
@@ -7847,10 +7693,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var unsubscribeContactInputObject = new TextmagicClient.UnsubscribeContactInputObject(); // UnsubscribeContactInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.unsubscribeContact(unsubscribeContactInputObject, opts).then(function(data) {
+apiInstance.unsubscribeContact(unsubscribeContactInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -7863,7 +7706,6 @@ apiInstance.unsubscribeContact(unsubscribeContactInputObject, opts).then(functio
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unsubscribeContactInputObject** | [**UnsubscribeContactInputObject**](UnsubscribeContactInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7880,7 +7722,7 @@ Name | Type | Description  | Notes
 
 <a name="updateBalanceNotificationSettings"></a>
 # **updateBalanceNotificationSettings**
-> updateBalanceNotificationSettings(updateBalanceNotificationSettingsInputObject, opts)
+> updateBalanceNotificationSettings(updateBalanceNotificationSettingsInputObject)
 
 Update balance notification settings
 
@@ -7898,10 +7740,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updateBalanceNotificationSettingsInputObject = new TextmagicClient.UpdateBalanceNotificationSettingsInputObject(); // UpdateBalanceNotificationSettingsInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateBalanceNotificationSettings(updateBalanceNotificationSettingsInputObject, opts).then(function() {
+apiInstance.updateBalanceNotificationSettings(updateBalanceNotificationSettingsInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -7914,7 +7753,6 @@ apiInstance.updateBalanceNotificationSettings(updateBalanceNotificationSettingsI
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateBalanceNotificationSettingsInputObject** | [**UpdateBalanceNotificationSettingsInputObject**](UpdateBalanceNotificationSettingsInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7931,7 +7769,7 @@ null (empty response body)
 
 <a name="updateCallbackSettings"></a>
 # **updateCallbackSettings**
-> updateCallbackSettings(updateCallbackSettingsInputObject, opts)
+> updateCallbackSettings(updateCallbackSettingsInputObject)
 
 Update callback URL settings
 
@@ -7949,10 +7787,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updateCallbackSettingsInputObject = new TextmagicClient.UpdateCallbackSettingsInputObject(); // UpdateCallbackSettingsInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateCallbackSettings(updateCallbackSettingsInputObject, opts).then(function() {
+apiInstance.updateCallbackSettings(updateCallbackSettingsInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -7965,7 +7800,6 @@ apiInstance.updateCallbackSettings(updateCallbackSettingsInputObject, opts).then
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateCallbackSettingsInputObject** | [**UpdateCallbackSettingsInputObject**](UpdateCallbackSettingsInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -7982,7 +7816,7 @@ null (empty response body)
 
 <a name="updateChatDesktopNotificationSettings"></a>
 # **updateChatDesktopNotificationSettings**
-> updateChatDesktopNotificationSettings(updateChatDesktopNotificationSettingsInputObject, opts)
+> updateChatDesktopNotificationSettings(updateChatDesktopNotificationSettingsInputObject)
 
 Update chat desktop notification settings
 
@@ -8000,10 +7834,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updateChatDesktopNotificationSettingsInputObject = new TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject(); // UpdateChatDesktopNotificationSettingsInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateChatDesktopNotificationSettings(updateChatDesktopNotificationSettingsInputObject, opts).then(function() {
+apiInstance.updateChatDesktopNotificationSettings(updateChatDesktopNotificationSettingsInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -8016,7 +7847,6 @@ apiInstance.updateChatDesktopNotificationSettings(updateChatDesktopNotificationS
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateChatDesktopNotificationSettingsInputObject** | [**UpdateChatDesktopNotificationSettingsInputObject**](UpdateChatDesktopNotificationSettingsInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8033,7 +7863,7 @@ null (empty response body)
 
 <a name="updateContact"></a>
 # **updateContact**
-> ResourceLinkResponse updateContact(updateContactInputObject, id, opts)
+> ResourceLinkResponse updateContact(updateContactInputObject, id)
 
 Update existing contact.
 
@@ -8053,10 +7883,7 @@ var updateContactInputObject = new TextmagicClient.UpdateContactInputObject(); /
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateContact(updateContactInputObject, id, opts).then(function(data) {
+apiInstance.updateContact(updateContactInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8070,7 +7897,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateContactInputObject** | [**UpdateContactInputObject**](UpdateContactInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8087,7 +7913,7 @@ Name | Type | Description  | Notes
 
 <a name="updateContactNote"></a>
 # **updateContactNote**
-> ResourceLinkResponse updateContactNote(updateContactNoteInputObject, id, opts)
+> ResourceLinkResponse updateContactNote(updateContactNoteInputObject, id)
 
 Update existing contact note.
 
@@ -8107,10 +7933,7 @@ var updateContactNoteInputObject = new TextmagicClient.UpdateContactNoteInputObj
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateContactNote(updateContactNoteInputObject, id, opts).then(function(data) {
+apiInstance.updateContactNote(updateContactNoteInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8124,7 +7947,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateContactNoteInputObject** | [**UpdateContactNoteInputObject**](UpdateContactNoteInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8141,7 +7963,7 @@ Name | Type | Description  | Notes
 
 <a name="updateCurrentUser"></a>
 # **updateCurrentUser**
-> UpdateCurrentUserResponse updateCurrentUser(updateCurrentUserInputObject, opts)
+> UpdateCurrentUserResponse updateCurrentUser(updateCurrentUserInputObject)
 
 Update current user info.
 
@@ -8159,10 +7981,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updateCurrentUserInputObject = new TextmagicClient.UpdateCurrentUserInputObject(); // UpdateCurrentUserInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateCurrentUser(updateCurrentUserInputObject, opts).then(function(data) {
+apiInstance.updateCurrentUser(updateCurrentUserInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8175,7 +7994,6 @@ apiInstance.updateCurrentUser(updateCurrentUserInputObject, opts).then(function(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateCurrentUserInputObject** | [**UpdateCurrentUserInputObject**](UpdateCurrentUserInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8192,7 +8010,7 @@ Name | Type | Description  | Notes
 
 <a name="updateCustomField"></a>
 # **updateCustomField**
-> ResourceLinkResponse updateCustomField(updateCustomFieldInputObject, id, opts)
+> ResourceLinkResponse updateCustomField(updateCustomFieldInputObject, id)
 
 Update existing custom field.
 
@@ -8212,10 +8030,7 @@ var updateCustomFieldInputObject = new TextmagicClient.UpdateCustomFieldInputObj
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateCustomField(updateCustomFieldInputObject, id, opts).then(function(data) {
+apiInstance.updateCustomField(updateCustomFieldInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8229,7 +8044,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateCustomFieldInputObject** | [**UpdateCustomFieldInputObject**](UpdateCustomFieldInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8246,7 +8060,7 @@ Name | Type | Description  | Notes
 
 <a name="updateCustomFieldValue"></a>
 # **updateCustomFieldValue**
-> ResourceLinkResponse updateCustomFieldValue(updateCustomFieldValueInputObject, id, opts)
+> ResourceLinkResponse updateCustomFieldValue(updateCustomFieldValueInputObject, id)
 
 Update contact&#39;s custom field value.
 
@@ -8266,10 +8080,7 @@ var updateCustomFieldValueInputObject = new TextmagicClient.UpdateCustomFieldVal
 
 var id = "id_example"; // String | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateCustomFieldValue(updateCustomFieldValueInputObject, id, opts).then(function(data) {
+apiInstance.updateCustomFieldValue(updateCustomFieldValueInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8283,7 +8094,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateCustomFieldValueInputObject** | [**UpdateCustomFieldValueInputObject**](UpdateCustomFieldValueInputObject.md)|  | 
  **id** | **String**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8300,7 +8110,7 @@ Name | Type | Description  | Notes
 
 <a name="updateInboundMessagesNotificationSettings"></a>
 # **updateInboundMessagesNotificationSettings**
-> updateInboundMessagesNotificationSettings(updateInboundMessagesNotificationSettingsInputObject, opts)
+> updateInboundMessagesNotificationSettings(updateInboundMessagesNotificationSettingsInputObject)
 
 Update inbound messages notification settings
 
@@ -8318,10 +8128,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updateInboundMessagesNotificationSettingsInputObject = new TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject(); // UpdateInboundMessagesNotificationSettingsInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateInboundMessagesNotificationSettings(updateInboundMessagesNotificationSettingsInputObject, opts).then(function() {
+apiInstance.updateInboundMessagesNotificationSettings(updateInboundMessagesNotificationSettingsInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -8334,7 +8141,6 @@ apiInstance.updateInboundMessagesNotificationSettings(updateInboundMessagesNotif
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateInboundMessagesNotificationSettingsInputObject** | [**UpdateInboundMessagesNotificationSettingsInputObject**](UpdateInboundMessagesNotificationSettingsInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8402,7 +8208,7 @@ Name | Type | Description  | Notes
 
 <a name="updatePassword"></a>
 # **updatePassword**
-> updatePassword(updatePasswordInputObject, opts)
+> updatePassword(updatePasswordInputObject)
 
 Change user password.
 
@@ -8420,10 +8226,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updatePasswordInputObject = new TextmagicClient.UpdatePasswordInputObject(); // UpdatePasswordInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updatePassword(updatePasswordInputObject, opts).then(function() {
+apiInstance.updatePassword(updatePasswordInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -8436,7 +8239,6 @@ apiInstance.updatePassword(updatePasswordInputObject, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updatePasswordInputObject** | [**UpdatePasswordInputObject**](UpdatePasswordInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8453,7 +8255,7 @@ null (empty response body)
 
 <a name="updateSenderSetting"></a>
 # **updateSenderSetting**
-> updateSenderSetting(updateSenderSettingInputObject, opts)
+> updateSenderSetting(updateSenderSettingInputObject)
 
 Change sender settings for specified country.
 
@@ -8471,10 +8273,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updateSenderSettingInputObject = new TextmagicClient.UpdateSenderSettingInputObject(); // UpdateSenderSettingInputObject | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateSenderSetting(updateSenderSettingInputObject, opts).then(function() {
+apiInstance.updateSenderSetting(updateSenderSettingInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -8487,7 +8286,6 @@ apiInstance.updateSenderSetting(updateSenderSettingInputObject, opts).then(funct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateSenderSettingInputObject** | [**UpdateSenderSettingInputObject**](UpdateSenderSettingInputObject.md)|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8504,7 +8302,7 @@ null (empty response body)
 
 <a name="updateSurvey"></a>
 # **updateSurvey**
-> ResourceLinkResponse updateSurvey(updateSurveyInputObject, id, opts)
+> ResourceLinkResponse updateSurvey(updateSurveyInputObject, id)
 
 Update existing survey.
 
@@ -8524,10 +8322,7 @@ var updateSurveyInputObject = new TextmagicClient.UpdateSurveyInputObject(); // 
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateSurvey(updateSurveyInputObject, id, opts).then(function(data) {
+apiInstance.updateSurvey(updateSurveyInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8541,7 +8336,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateSurveyInputObject** | [**UpdateSurveyInputObject**](UpdateSurveyInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8558,7 +8352,7 @@ Name | Type | Description  | Notes
 
 <a name="updateSurveyNode"></a>
 # **updateSurveyNode**
-> ResourceLinkResponse updateSurveyNode(updateSurveyNodeInputObject, id, opts)
+> ResourceLinkResponse updateSurveyNode(updateSurveyNodeInputObject, id)
 
 Update existing node.
 
@@ -8578,10 +8372,7 @@ var updateSurveyNodeInputObject = new TextmagicClient.UpdateSurveyNodeInputObjec
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateSurveyNode(updateSurveyNodeInputObject, id, opts).then(function(data) {
+apiInstance.updateSurveyNode(updateSurveyNodeInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8595,7 +8386,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateSurveyNodeInputObject** | [**UpdateSurveyNodeInputObject**](UpdateSurveyNodeInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
@@ -8612,7 +8402,7 @@ Name | Type | Description  | Notes
 
 <a name="updateTemplate"></a>
 # **updateTemplate**
-> ResourceLinkResponse updateTemplate(updateTemplateInputObject, id, opts)
+> ResourceLinkResponse updateTemplate(updateTemplateInputObject, id)
 
 Update existing template.
 
@@ -8632,10 +8422,7 @@ var updateTemplateInputObject = new TextmagicClient.UpdateTemplateInputObject();
 
 var id = 1; // Number | 
 
-var opts = { 
-  'xIgnoreNullValues': true // Boolean | 
-};
-apiInstance.updateTemplate(updateTemplateInputObject, id, opts).then(function(data) {
+apiInstance.updateTemplate(updateTemplateInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -8649,7 +8436,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateTemplateInputObject** | [**UpdateTemplateInputObject**](UpdateTemplateInputObject.md)|  | 
  **id** | **Number**|  | 
- **xIgnoreNullValues** | **Boolean**|  | [optional] [default to true]
 
 ### Return type
 
