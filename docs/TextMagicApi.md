@@ -185,6 +185,8 @@ Method | HTTP request | Description
 
 Assign contacts to the specified list.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -235,6 +237,8 @@ Name | Type | Description  | Notes
 
 Block contact from inbound and outbound communication by phone number.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -281,6 +285,8 @@ Name | Type | Description  | Notes
 > buyDedicatedNumber(buyDedicatedNumberInputObject)
 
 Buy a dedicated number and assign it to the specified account.
+
+
 
 ### Example
 ```javascript
@@ -329,6 +335,8 @@ null (empty response body)
 
 Cancel a survey.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -376,6 +384,8 @@ Name | Type | Description  | Notes
 
 Check user phone verification code
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -422,6 +432,8 @@ null (empty response body)
 > ResourceLinkResponse clearAndAssignContactsToList(clearAndAssignContactsToListInputObject, id)
 
 Reset list members to the specified contacts.
+
+
 
 ### Example
 ```javascript
@@ -473,6 +485,8 @@ Name | Type | Description  | Notes
 
 Close chats by chat ids or close all chats
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -520,6 +534,8 @@ null (empty response body)
 
 Close all chats that have no unread messages.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -560,6 +576,8 @@ null (empty response body)
 > closeSubaccount(id)
 
 Close subaccount.
+
+
 
 ### Example
 ```javascript
@@ -608,6 +626,8 @@ null (empty response body)
 
 Create a new contact from the submitted data.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -654,6 +674,8 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse createContactNote(createContactNoteInputObject, id)
 
 Create a new contact note.
+
+
 
 ### Example
 ```javascript
@@ -705,6 +727,8 @@ Name | Type | Description  | Notes
 
 Create a new custom field from the submitted data.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -751,6 +775,8 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse createList(createListInputObject)
 
 Create a new list from the submitted data.
+
+
 
 ### Example
 ```javascript
@@ -799,6 +825,8 @@ Name | Type | Description  | Notes
 
 Add or update a device token.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -846,6 +874,8 @@ null (empty response body)
 
 Create a new survey from the submitted data.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -892,6 +922,8 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse createSurveyNode(createSurveyNodeInputObject, id)
 
 Create a new node from the submitted data.
+
+
 
 ### Example
 ```javascript
@@ -943,6 +975,8 @@ Name | Type | Description  | Notes
 
 Create a new template from the submitted data.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -990,6 +1024,8 @@ Name | Type | Description  | Notes
 
 Delete all contacts.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1031,7 +1067,7 @@ null (empty response body)
 
 Delete all messages
 
-Delete all messages.
+
 
 ### Example
 ```javascript
@@ -1074,6 +1110,8 @@ null (empty response body)
 
 Delete an avatar for the current user.\\
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1114,6 +1152,8 @@ null (empty response body)
 > deleteChatMessages(deleteChatMessagesBulkInputObject, id)
 
 Delete messages from chat by given messages ID(s).
+
+
 
 ### Example
 ```javascript
@@ -1165,6 +1205,8 @@ null (empty response body)
 
 Delete chats by given ID(s) or delete all chats.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1211,6 +1253,8 @@ null (empty response body)
 > deleteContact(id)
 
 Delete a single contact.
+
+
 
 ### Example
 ```javascript
@@ -1259,6 +1303,8 @@ null (empty response body)
 
 Delete an avatar for the contact.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1306,6 +1352,8 @@ null (empty response body)
 
 Delete a single contact note.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1352,6 +1400,8 @@ null (empty response body)
 > deleteContactNotesBulk(id, deleteContactNotesBulkInputObject)
 
 Delete contact note by given ID(s) or delete all contact notes.
+
+
 
 ### Example
 ```javascript
@@ -1403,6 +1453,8 @@ null (empty response body)
 
 Delete contact by given ID(s) or delete all contacts.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1449,6 +1501,8 @@ null (empty response body)
 > deleteContactsFromList(deleteContacsFromListObject, id)
 
 Unassign contacts from the specified list.
+
+
 
 ### Example
 ```javascript
@@ -1500,6 +1554,8 @@ null (empty response body)
 
 Delete a single custom field.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1546,6 +1602,8 @@ null (empty response body)
 > deleteDedicatedNumber(id)
 
 Cancel dedicated number subscription.
+
+
 
 ### Example
 ```javascript
@@ -1594,6 +1652,8 @@ null (empty response body)
 
 Delete the incoming message.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1640,6 +1700,8 @@ null (empty response body)
 > deleteInboundMessagesBulk(deleteInboundMessagesBulkInputObject)
 
 Delete inbound messages by given ID(s) or delete all inbound messages.
+
+
 
 ### Example
 ```javascript
@@ -1688,6 +1750,8 @@ null (empty response body)
 
 Delete a single list.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1735,6 +1799,8 @@ null (empty response body)
 
 Delete an avatar for the list.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1781,6 +1847,8 @@ null (empty response body)
 > deleteListContactsBulk(deleteListContactsBulkInputObject, id)
 
 Delete contact from list by given ID(s) or all contacts from list.
+
+
 
 ### Example
 ```javascript
@@ -1832,6 +1900,8 @@ null (empty response body)
 
 Delete list by given ID(s) or delete all lists.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1878,6 +1948,8 @@ null (empty response body)
 > deleteMessageSession(id)
 
 Delete a message session, together with all nested messages.
+
+
 
 ### Example
 ```javascript
@@ -1926,6 +1998,8 @@ null (empty response body)
 
 Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -1973,7 +2047,7 @@ null (empty response body)
 
 Delete message
 
-Delete a single message.
+
 
 ### Example
 ```javascript
@@ -2022,7 +2096,7 @@ null (empty response body)
 
 Delete messages by IDs
 
-Delete outbound messages by given ID(s) or delete all outbound messages.
+
 
 ### Example
 ```javascript
@@ -2070,6 +2144,8 @@ null (empty response body)
 > deletePushToken(type, deviceId)
 
 Delete a push notification device token.
+
+
 
 ### Example
 ```javascript
@@ -2121,6 +2197,8 @@ null (empty response body)
 
 Delete a message session, together with all nested messages.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2167,6 +2245,8 @@ null (empty response body)
 > deleteScheduledMessagesBulk(deleteScheduledMessagesBulkInputObject)
 
 Delete scheduled messages by given ID(s) or delete all scheduled messages.
+
+
 
 ### Example
 ```javascript
@@ -2215,6 +2295,8 @@ null (empty response body)
 
 Delete a Sender ID.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2261,6 +2343,8 @@ null (empty response body)
 > deleteSurvey(id)
 
 Delete a survey.
+
+
 
 ### Example
 ```javascript
@@ -2309,6 +2393,8 @@ null (empty response body)
 
 Delete a node.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2355,6 +2441,8 @@ null (empty response body)
 > deleteTemplate(id)
 
 Delete a single template.
+
+
 
 ### Example
 ```javascript
@@ -2403,6 +2491,8 @@ null (empty response body)
 
 Delete template by given ID(s) or delete all templates.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2450,7 +2540,7 @@ null (empty response body)
 
 Authenticate user by given username and password.
 
-Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)
+
 
 ### Example
 ```javascript
@@ -2492,6 +2582,8 @@ No authorization required
 > DoCarrierLookupResponse doCarrierLookup(phone, opts)
 
 Carrier Lookup
+
+
 
 ### Example
 ```javascript
@@ -2544,6 +2636,8 @@ Name | Type | Description  | Notes
 
 Validate Email address using Email Lookup tool
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2591,6 +2685,8 @@ Name | Type | Description  | Notes
 
 Duplicate a survey.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2637,6 +2733,8 @@ Name | Type | Description  | Notes
 > GetAllBulkSessionsPaginatedResponse getAllBulkSessions(opts)
 
 Get all bulk sending sessions.
+
+
 
 ### Example
 ```javascript
@@ -2687,6 +2785,8 @@ Name | Type | Description  | Notes
 > GetAllChatsPaginatedResponse getAllChats(opts)
 
 Get all user chats.
+
+
 
 ### Example
 ```javascript
@@ -2746,6 +2846,8 @@ Name | Type | Description  | Notes
 
 Get all inbox messages.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2800,6 +2902,8 @@ Name | Type | Description  | Notes
 
 Get all message sending sessions.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -2850,7 +2954,7 @@ Name | Type | Description  | Notes
 
 Get all messages
 
-Get all user oubound messages.
+
 
 ### Example
 ```javascript
@@ -2903,6 +3007,8 @@ Name | Type | Description  | Notes
 > GetAllScheduledMessagesPaginatedResponse getAllScheduledMessages(opts)
 
 Get all scheduled messages.
+
+
 
 ### Example
 ```javascript
@@ -2960,6 +3066,8 @@ Name | Type | Description  | Notes
 
 Get all user templates.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3009,6 +3117,8 @@ Name | Type | Description  | Notes
 > GetAvailableDedicatedNumbersResponse getAvailableDedicatedNumbers(country, opts)
 
 Find available dedicated numbers to buy.
+
+
 
 ### Example
 ```javascript
@@ -3063,6 +3173,8 @@ Name | Type | Description  | Notes
 
 Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3111,6 +3223,8 @@ Name | Type | Description  | Notes
 
 Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3152,6 +3266,8 @@ This endpoint does not need any parameter.
 
 Get balance notification settings
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3192,6 +3308,8 @@ This endpoint does not need any parameter.
 > GetBlockedContactsPaginatedResponse getBlockedContacts(opts)
 
 Get blocked contacts.
+
+
 
 ### Example
 ```javascript
@@ -3249,6 +3367,8 @@ Name | Type | Description  | Notes
 
 Get bulk message session status.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3296,6 +3416,8 @@ Name | Type | Description  | Notes
 
 Fetch callback URL settings
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3337,6 +3459,8 @@ This endpoint does not need any parameter.
 
 Check pricing for a inbound/outbound call.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3377,6 +3501,8 @@ This endpoint does not need any parameter.
 > Chat getChat(id)
 
 Get a single chat.
+
+
 
 ### Example
 ```javascript
@@ -3424,6 +3550,8 @@ Name | Type | Description  | Notes
 > Chat getChatByPhone(phone, opts)
 
 Find chats by phone.
+
+
 
 ### Example
 ```javascript
@@ -3477,6 +3605,8 @@ Name | Type | Description  | Notes
 > GetChatMessagesPaginatedResponse getChatMessages(id, opts)
 
 Fetch messages from chat with specified chat id.
+
+
 
 ### Example
 ```javascript
@@ -3541,6 +3671,8 @@ Name | Type | Description  | Notes
 
 Get a single contact.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3587,6 +3719,8 @@ Name | Type | Description  | Notes
 > Contact getContactByPhone(phone)
 
 Get a single contact by phone number.
+
+
 
 ### Example
 ```javascript
@@ -3635,6 +3769,8 @@ Name | Type | Description  | Notes
 
 Check is that phone number blocked
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3681,6 +3817,8 @@ Name | Type | Description  | Notes
 > GetContactImportSessionProgressResponse getContactImportSessionProgress(id)
 
 Get contact import session progress.
+
+
 
 ### Example
 ```javascript
@@ -3729,6 +3867,8 @@ Name | Type | Description  | Notes
 
 Get a single contact note.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3775,6 +3915,8 @@ Name | Type | Description  | Notes
 > GetContactNotesPaginatedResponse getContactNotes(id, opts)
 
 Fetch notes assigned to the given contact.
+
+
 
 ### Example
 ```javascript
@@ -3828,6 +3970,8 @@ Name | Type | Description  | Notes
 > GetContactsPaginatedResponse getContacts(opts)
 
 Get all user contacts.
+
+
 
 ### Example
 ```javascript
@@ -3885,6 +4029,8 @@ Name | Type | Description  | Notes
 
 Get contacts autocomplete suggestions by given search term.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -3938,7 +4084,7 @@ Name | Type | Description  | Notes
 
 Fetch user contacts by given group id.
 
-A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+
 
 ### Example
 ```javascript
@@ -3997,6 +4143,8 @@ Name | Type | Description  | Notes
 
 Return list of countries.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4038,6 +4186,8 @@ This endpoint does not need any parameter.
 
 Get current user info.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4078,6 +4228,8 @@ This endpoint does not need any parameter.
 > UserCustomField getCustomField(id)
 
 Get a single custom field.
+
+
 
 ### Example
 ```javascript
@@ -4125,6 +4277,8 @@ Name | Type | Description  | Notes
 > GetCustomFieldsPaginatedResponse getCustomFields(opts)
 
 Get all contact custom fields.
+
+
 
 ### Example
 ```javascript
@@ -4176,6 +4330,8 @@ Name | Type | Description  | Notes
 
 Get a single dedicated number.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4223,6 +4379,8 @@ Name | Type | Description  | Notes
 
 Get an array of all rules that are disallowed to the current account.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4263,6 +4421,8 @@ This endpoint does not need any parameter.
 > GetFavouritesPaginatedResponse getFavourites(opts)
 
 Get favorite contacts and lists.
+
+
 
 ### Example
 ```javascript
@@ -4316,6 +4476,8 @@ Name | Type | Description  | Notes
 
 Get all forwarded calls.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4366,6 +4528,8 @@ Name | Type | Description  | Notes
 
 Get a single inbox message.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4413,6 +4577,8 @@ Name | Type | Description  | Notes
 
 Get inbound messages notification settings
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4453,6 +4619,8 @@ This endpoint does not need any parameter.
 > GetInvoicesPaginatedResponse getInvoices(opts)
 
 Return account invoices.
+
+
 
 ### Example
 ```javascript
@@ -4504,6 +4672,8 @@ Name | Type | Description  | Notes
 
 Get a single list.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4551,6 +4721,8 @@ Name | Type | Description  | Notes
 
 Fetch all contacts IDs belonging to the list with ID.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -4597,6 +4769,8 @@ Name | Type | Description  | Notes
 > GetListsOfContactPaginatedResponse getListsOfContact(id, opts)
 
 Return lists which contact belongs to.
+
+
 
 ### Example
 ```javascript
@@ -4651,7 +4825,7 @@ Name | Type | Description  | Notes
 
 Preview message
 
-Get messages preview (with tags merged) up to 100 messages per session.
+
 
 ### Example
 ```javascript
@@ -4733,7 +4907,7 @@ Name | Type | Description  | Notes
 
 Check price
 
-Check pricing for a new outbound message.
+
 
 ### Example
 ```javascript
@@ -4817,7 +4991,7 @@ Name | Type | Description  | Notes
 
 Get pricing
 
-Get message prices for all countries.
+
 
 ### Example
 ```javascript
@@ -4859,6 +5033,8 @@ This endpoint does not need any parameter.
 > MessageSession getMessageSession(id)
 
 Get a message session.
+
+
 
 ### Example
 ```javascript
@@ -4906,6 +5082,8 @@ Name | Type | Description  | Notes
 > GetMessageSessionStatResponse getMessageSessionStat(id, opts)
 
 Get sending session statistics.
+
+
 
 ### Example
 ```javascript
@@ -4958,7 +5136,7 @@ Name | Type | Description  | Notes
 
 Fetch messages by given session id.
 
-A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+
 
 ### Example
 ```javascript
@@ -5017,6 +5195,8 @@ Name | Type | Description  | Notes
 
 Return counters for messaging data views.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5057,6 +5237,8 @@ This endpoint does not need any parameter.
 > GetMessagingStatResponse getMessagingStat(opts)
 
 Return messaging statistics.
+
+
 
 ### Example
 ```javascript
@@ -5110,7 +5292,7 @@ Name | Type | Description  | Notes
 
 Get a single message
 
-Get a single outgoing message.
+
 
 ### Example
 ```javascript
@@ -5159,7 +5341,7 @@ Name | Type | Description  | Notes
 
 Get history
 
-Get outbound messages history.
+
 
 ### Example
 ```javascript
@@ -5217,6 +5399,8 @@ Name | Type | Description  | Notes
 
 Get all device tokens assigned to the current account
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5257,6 +5441,8 @@ This endpoint does not need any parameter.
 > MessagesIcs getScheduledMessage(id)
 
 Get message schedule.
+
+
 
 ### Example
 ```javascript
@@ -5305,6 +5491,8 @@ Name | Type | Description  | Notes
 
 Get a single Sender ID.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5351,6 +5539,8 @@ Name | Type | Description  | Notes
 > GetSenderIdsPaginatedResponse getSenderIds(opts)
 
 Get all sender IDs of current user.
+
+
 
 ### Example
 ```javascript
@@ -5402,6 +5592,8 @@ Name | Type | Description  | Notes
 
 Get current user sender settings.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5449,6 +5641,8 @@ Name | Type | Description  | Notes
 > GetSpendingStatPaginatedResponse getSpendingStat(opts)
 
 Return account spending statistics.
+
+
 
 ### Example
 ```javascript
@@ -5504,6 +5698,8 @@ Name | Type | Description  | Notes
 
 Get current entities state
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5544,6 +5740,8 @@ This endpoint does not need any parameter.
 > User getSubaccount(id)
 
 Get a single subaccount.
+
+
 
 ### Example
 ```javascript
@@ -5591,6 +5789,8 @@ Name | Type | Description  | Notes
 > User getSubaccounts(opts)
 
 Get all subaccounts of current user.
+
+
 
 ### Example
 ```javascript
@@ -5642,7 +5842,7 @@ Name | Type | Description  | Notes
 
 Get all subaccounts with their REST API tokens associated with specified app name.
 
-When more than one token related to app name, last key will be returned.
+
 
 ### Example
 ```javascript
@@ -5697,6 +5897,8 @@ Name | Type | Description  | Notes
 
 Get a survey by id.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5743,6 +5945,8 @@ Name | Type | Description  | Notes
 > SurveyNode getSurveyNode(id)
 
 Get a node by id.
+
+
 
 ### Example
 ```javascript
@@ -5791,6 +5995,8 @@ Name | Type | Description  | Notes
 
 Fetch nodes by given survey id.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5837,6 +6043,8 @@ Name | Type | Description  | Notes
 > GetSurveysPaginatedResponse getSurveys(opts)
 
 Get all user surveys.
+
+
 
 ### Example
 ```javascript
@@ -5888,6 +6096,8 @@ Name | Type | Description  | Notes
 
 Get a single template.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -5934,6 +6144,8 @@ Name | Type | Description  | Notes
 > GetTimezonesResponse getTimezones(opts)
 
 Return all available timezone IDs.
+
+
 
 ### Example
 ```javascript
@@ -5983,6 +6195,8 @@ Name | Type | Description  | Notes
 
 Get total amount of unread messages in the current user chats.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6023,6 +6237,8 @@ This endpoint does not need any parameter.
 > UnsubscribedContact getUnsubscribedContact(id)
 
 Get a single unsubscribed contact.
+
+
 
 ### Example
 ```javascript
@@ -6070,6 +6286,8 @@ Name | Type | Description  | Notes
 > GetUnsubscribersPaginatedResponse getUnsubscribers(opts)
 
 Get all contact have unsubscribed from your communication.
+
+
 
 ### Example
 ```javascript
@@ -6120,6 +6338,8 @@ Name | Type | Description  | Notes
 > GetUserDedicatedNumbersPaginatedResponse getUserDedicatedNumbers(opts)
 
 Get user&#39;s dedicated numbers.
+
+
 
 ### Example
 ```javascript
@@ -6172,6 +6392,8 @@ Name | Type | Description  | Notes
 > GetUserListsPaginatedResponse getUserLists(opts)
 
 Get all user lists.
+
+
 
 ### Example
 ```javascript
@@ -6231,6 +6453,8 @@ Name | Type | Description  | Notes
 
 Get minimal valid apps versions
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6271,6 +6495,8 @@ This endpoint does not need any parameter.
 > inviteSubaccount(inviteSubaccountInputObject)
 
 Invite new subaccount.
+
+
 
 ### Example
 ```javascript
@@ -6319,6 +6545,8 @@ null (empty response body)
 
 Mark several chats as read by chat ids or mark all chats as read
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6365,6 +6593,8 @@ null (empty response body)
 > markChatsUnreadBulk(markChatsUnreadBulkInputObject)
 
 Mark several chats as UNread by chat ids or mark all chats as UNread
+
+
 
 ### Example
 ```javascript
@@ -6413,6 +6643,8 @@ null (empty response body)
 
 Merge two question nodes.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6459,6 +6691,8 @@ null (empty response body)
 > ResourceLinkResponse muteChat(muteChatInputObject)
 
 Set mute mode.
+
+
 
 ### Example
 ```javascript
@@ -6507,6 +6741,8 @@ Name | Type | Description  | Notes
 
 Mute several chats by chat ids or mute all chats
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6554,6 +6790,8 @@ null (empty response body)
 
 Just does a pong.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6594,6 +6832,8 @@ This endpoint does not need any parameter.
 > reopenChatsBulk(reopenChatsBulkInputObject)
 
 Reopen chats by chat ids or reopen all chats
+
+
 
 ### Example
 ```javascript
@@ -6642,7 +6882,7 @@ null (empty response body)
 
 Request a new REST API token for subaccount.
 
-Returning user object, key and app name.
+
 
 ### Example
 ```javascript
@@ -6691,6 +6931,8 @@ Name | Type | Description  | Notes
 
 Request for a new Sender ID.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6738,6 +6980,8 @@ Name | Type | Description  | Notes
 
 Reset a survey flow.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6784,6 +7028,8 @@ Name | Type | Description  | Notes
 > SearchChatsPaginatedResponse searchChats(opts)
 
 Find chats by inbound or outbound messages text.
+
+
 
 ### Example
 ```javascript
@@ -6837,6 +7083,8 @@ Name | Type | Description  | Notes
 
 Find chats by IDs.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -6888,6 +7136,8 @@ Name | Type | Description  | Notes
 > SearchChatsByReceipentPaginatedResponse searchChatsByReceipent(opts)
 
 Find chats by recipient (contact, list name or phone number).
+
+
 
 ### Example
 ```javascript
@@ -6942,6 +7192,8 @@ Name | Type | Description  | Notes
 > SearchContactsPaginatedResponse searchContacts(opts)
 
 Find user contacts by given parameters.
+
+
 
 ### Example
 ```javascript
@@ -7011,6 +7263,8 @@ Name | Type | Description  | Notes
 
 Find inbound messages by given parameters.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7070,6 +7324,8 @@ Name | Type | Description  | Notes
 > SearchListsPaginatedResponse searchLists(opts)
 
 Find contact lists by given parameters.
+
+
 
 ### Example
 ```javascript
@@ -7133,7 +7389,7 @@ Name | Type | Description  | Notes
 
 Find messages
 
-Find outbound messages by given parameters.
+
 
 ### Example
 ```javascript
@@ -7197,6 +7453,8 @@ Name | Type | Description  | Notes
 
 Find scheduled messages by given parameters.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7257,6 +7515,8 @@ Name | Type | Description  | Notes
 
 Find user templates by given parameters.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7313,6 +7573,8 @@ Name | Type | Description  | Notes
 
 Send user email verification
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7354,7 +7616,7 @@ null (empty response body)
 
 Send message
 
-The main entrypoint to send messages. See examples above for the reference.
+
 
 ### Example
 ```javascript
@@ -7403,6 +7665,8 @@ Name | Type | Description  | Notes
 
 Send user phone verification
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7443,6 +7707,8 @@ null (empty response body)
 > ResourceLinkResponse setChatStatus(setChatStatusInputObject)
 
 Set status of the chat given by ID.
+
+
 
 ### Example
 ```javascript
@@ -7491,6 +7757,8 @@ Name | Type | Description  | Notes
 
 Start a survey.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7537,6 +7805,8 @@ Name | Type | Description  | Notes
 > unblockContact(unblockContactInputObject)
 
 Unblock contact by phone number.
+
+
 
 ### Example
 ```javascript
@@ -7585,6 +7855,8 @@ null (empty response body)
 
 Unblock several contacts by blocked contact ids or unblock all contacts
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7631,6 +7903,8 @@ null (empty response body)
 > unmuteChatsBulk(unmuteChatsBulkInputObject)
 
 Unmute several chats by chat ids or unmute all chats
+
+
 
 ### Example
 ```javascript
@@ -7679,6 +7953,8 @@ null (empty response body)
 
 Unsubscribe contact from your communication by phone number.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7725,6 +8001,8 @@ Name | Type | Description  | Notes
 > updateBalanceNotificationSettings(updateBalanceNotificationSettingsInputObject)
 
 Update balance notification settings
+
+
 
 ### Example
 ```javascript
@@ -7773,6 +8051,8 @@ null (empty response body)
 
 Update callback URL settings
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7820,6 +8100,8 @@ null (empty response body)
 
 Update chat desktop notification settings
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7866,6 +8148,8 @@ null (empty response body)
 > ResourceLinkResponse updateContact(updateContactInputObject, id)
 
 Update existing contact.
+
+
 
 ### Example
 ```javascript
@@ -7917,6 +8201,8 @@ Name | Type | Description  | Notes
 
 Update existing contact note.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -7967,6 +8253,8 @@ Name | Type | Description  | Notes
 
 Update current user info.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8013,6 +8301,8 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse updateCustomField(updateCustomFieldInputObject, id)
 
 Update existing custom field.
+
+
 
 ### Example
 ```javascript
@@ -8064,6 +8354,8 @@ Name | Type | Description  | Notes
 
 Update contact&#39;s custom field value.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8114,6 +8406,8 @@ Name | Type | Description  | Notes
 
 Update inbound messages notification settings
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8160,6 +8454,8 @@ null (empty response body)
 > ResourceLinkResponse updateList(id, opts)
 
 Update existing list.
+
+
 
 ### Example
 ```javascript
@@ -8212,6 +8508,8 @@ Name | Type | Description  | Notes
 
 Change user password.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8259,6 +8557,8 @@ null (empty response body)
 
 Change sender settings for specified country.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8305,6 +8605,8 @@ null (empty response body)
 > ResourceLinkResponse updateSurvey(updateSurveyInputObject, id)
 
 Update existing survey.
+
+
 
 ### Example
 ```javascript
@@ -8356,6 +8658,8 @@ Name | Type | Description  | Notes
 
 Update existing node.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8405,6 +8709,8 @@ Name | Type | Description  | Notes
 > ResourceLinkResponse updateTemplate(updateTemplateInputObject, id)
 
 Update existing template.
+
+
 
 ### Example
 ```javascript
@@ -8456,6 +8762,8 @@ Name | Type | Description  | Notes
 
 Add an avatar for the current user.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8502,6 +8810,8 @@ null (empty response body)
 > ResourceLinkResponse uploadContactAvatar(image, id)
 
 Add an avatar for the contact.
+
+
 
 ### Example
 ```javascript
@@ -8553,6 +8863,8 @@ Name | Type | Description  | Notes
 
 Add an avatar for the list.
 
+
+
 ### Example
 ```javascript
 var TextmagicClient = require('textmagic-client');
@@ -8603,7 +8915,7 @@ Name | Type | Description  | Notes
 
 Upload message attachment
 
-Upload a new file to insert it as a link.
+
 
 ### Example
 ```javascript

@@ -37,7 +37,7 @@
   /**
    * The GetAllScheduledMessagesPaginatedResponse model module.
    * @module model/GetAllScheduledMessagesPaginatedResponse
-   * @version 2.0.428
+   * @version 2.0.430
    */
 
   /**

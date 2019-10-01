@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.428
+   * @version 2.0.430
    */
 
   /**
@@ -51,6 +51,7 @@
 
     /**
      * Assign contacts to the specified list.
+     * 
      * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -95,6 +96,7 @@
 
     /**
      * Assign contacts to the specified list.
+     * 
      * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -109,6 +111,7 @@
 
     /**
      * Block contact from inbound and outbound communication by phone number.
+     * 
      * @param {module:model/BlockContactInputObject} blockContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -146,6 +149,7 @@
 
     /**
      * Block contact from inbound and outbound communication by phone number.
+     * 
      * @param {module:model/BlockContactInputObject} blockContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -159,6 +163,7 @@
 
     /**
      * Buy a dedicated number and assign it to the specified account.
+     * 
      * @param {module:model/BuyDedicatedNumberInputObject} buyDedicatedNumberInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -196,6 +201,7 @@
 
     /**
      * Buy a dedicated number and assign it to the specified account.
+     * 
      * @param {module:model/BuyDedicatedNumberInputObject} buyDedicatedNumberInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -209,6 +215,7 @@
 
     /**
      * Cancel a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -247,6 +254,7 @@
 
     /**
      * Cancel a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -260,6 +268,7 @@
 
     /**
      * Check user phone verification code
+     * 
      * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -297,6 +306,7 @@
 
     /**
      * Check user phone verification code
+     * 
      * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -310,6 +320,7 @@
 
     /**
      * Reset list members to the specified contacts.
+     * 
      * @param {module:model/ClearAndAssignContactsToListInputObject} clearAndAssignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -354,6 +365,7 @@
 
     /**
      * Reset list members to the specified contacts.
+     * 
      * @param {module:model/ClearAndAssignContactsToListInputObject} clearAndAssignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -368,6 +380,7 @@
 
     /**
      * Close chats by chat ids or close all chats
+     * 
      * @param {module:model/CloseChatsBulkInputObject} closeChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -405,6 +418,7 @@
 
     /**
      * Close chats by chat ids or close all chats
+     * 
      * @param {module:model/CloseChatsBulkInputObject} closeChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -418,6 +432,7 @@
 
     /**
      * Close all chats that have no unread messages.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     this.closeReadChatsWithHttpInfo = function() {
@@ -449,6 +464,7 @@
 
     /**
      * Close all chats that have no unread messages.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.closeReadChats = function() {
@@ -461,6 +477,7 @@
 
     /**
      * Close subaccount.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -499,6 +516,7 @@
 
     /**
      * Close subaccount.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -512,6 +530,7 @@
 
     /**
      * Create a new contact from the submitted data.
+     * 
      * @param {module:model/CreateContactInputObject} createContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -549,6 +568,7 @@
 
     /**
      * Create a new contact from the submitted data.
+     * 
      * @param {module:model/CreateContactInputObject} createContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -562,6 +582,7 @@
 
     /**
      * Create a new contact note.
+     * 
      * @param {module:model/CreateContactNoteInputObject} createContactNoteInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -606,6 +627,7 @@
 
     /**
      * Create a new contact note.
+     * 
      * @param {module:model/CreateContactNoteInputObject} createContactNoteInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -620,6 +642,7 @@
 
     /**
      * Create a new custom field from the submitted data.
+     * 
      * @param {module:model/CreateCustomFieldInputObject} createCustomFieldInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -657,6 +680,7 @@
 
     /**
      * Create a new custom field from the submitted data.
+     * 
      * @param {module:model/CreateCustomFieldInputObject} createCustomFieldInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -670,6 +694,7 @@
 
     /**
      * Create a new list from the submitted data.
+     * 
      * @param {module:model/CreateListInputObject} createListInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -707,6 +732,7 @@
 
     /**
      * Create a new list from the submitted data.
+     * 
      * @param {module:model/CreateListInputObject} createListInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -720,6 +746,7 @@
 
     /**
      * Add or update a device token.
+     * 
      * @param {module:model/CreatePushTokenInputObject} createPushTokenInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -757,6 +784,7 @@
 
     /**
      * Add or update a device token.
+     * 
      * @param {module:model/CreatePushTokenInputObject} createPushTokenInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -770,6 +798,7 @@
 
     /**
      * Create a new survey from the submitted data.
+     * 
      * @param {module:model/CreateSurveyInputObject} createSurveyInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -807,6 +836,7 @@
 
     /**
      * Create a new survey from the submitted data.
+     * 
      * @param {module:model/CreateSurveyInputObject} createSurveyInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -820,6 +850,7 @@
 
     /**
      * Create a new node from the submitted data.
+     * 
      * @param {module:model/CreateSurveyNodeInputObject} createSurveyNodeInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -864,6 +895,7 @@
 
     /**
      * Create a new node from the submitted data.
+     * 
      * @param {module:model/CreateSurveyNodeInputObject} createSurveyNodeInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -878,6 +910,7 @@
 
     /**
      * Create a new template from the submitted data.
+     * 
      * @param {module:model/CreateTemplateInputObject} createTemplateInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -915,6 +948,7 @@
 
     /**
      * Create a new template from the submitted data.
+     * 
      * @param {module:model/CreateTemplateInputObject} createTemplateInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -928,6 +962,7 @@
 
     /**
      * Delete all contacts.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     this.deleteAllContactsWithHttpInfo = function() {
@@ -959,6 +994,7 @@
 
     /**
      * Delete all contacts.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.deleteAllContacts = function() {
@@ -971,7 +1007,7 @@
 
     /**
      * Delete all messages
-     * Delete all messages.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     this.deleteAllOutboundMessagesWithHttpInfo = function() {
@@ -1003,7 +1039,7 @@
 
     /**
      * Delete all messages
-     * Delete all messages.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.deleteAllOutboundMessages = function() {
@@ -1016,6 +1052,7 @@
 
     /**
      * Delete an avatar for the current user.\\
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     this.deleteAvatarWithHttpInfo = function() {
@@ -1047,6 +1084,7 @@
 
     /**
      * Delete an avatar for the current user.\\
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.deleteAvatar = function() {
@@ -1059,6 +1097,7 @@
 
     /**
      * Delete messages from chat by given messages ID(s).
+     * 
      * @param {module:model/DeleteChatMessagesBulkInputObject} deleteChatMessagesBulkInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1103,6 +1142,7 @@
 
     /**
      * Delete messages from chat by given messages ID(s).
+     * 
      * @param {module:model/DeleteChatMessagesBulkInputObject} deleteChatMessagesBulkInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1117,6 +1157,7 @@
 
     /**
      * Delete chats by given ID(s) or delete all chats.
+     * 
      * @param {module:model/DeleteChatsBulkInputObject} deleteChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1154,6 +1195,7 @@
 
     /**
      * Delete chats by given ID(s) or delete all chats.
+     * 
      * @param {module:model/DeleteChatsBulkInputObject} deleteChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1167,6 +1209,7 @@
 
     /**
      * Delete a single contact.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1205,6 +1248,7 @@
 
     /**
      * Delete a single contact.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1218,6 +1262,7 @@
 
     /**
      * Delete an avatar for the contact.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1256,6 +1301,7 @@
 
     /**
      * Delete an avatar for the contact.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1269,6 +1315,7 @@
 
     /**
      * Delete a single contact note.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1307,6 +1354,7 @@
 
     /**
      * Delete a single contact note.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1320,6 +1368,7 @@
 
     /**
      * Delete contact note by given ID(s) or delete all contact notes.
+     * 
      * @param {Number} id 
      * @param {module:model/DeleteContactNotesBulkInputObject} deleteContactNotesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1364,6 +1413,7 @@
 
     /**
      * Delete contact note by given ID(s) or delete all contact notes.
+     * 
      * @param {Number} id 
      * @param {module:model/DeleteContactNotesBulkInputObject} deleteContactNotesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1378,6 +1428,7 @@
 
     /**
      * Delete contact by given ID(s) or delete all contacts.
+     * 
      * @param {module:model/DeleteContactsByIdsInputObject} deleteContactsByIdsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1415,6 +1466,7 @@
 
     /**
      * Delete contact by given ID(s) or delete all contacts.
+     * 
      * @param {module:model/DeleteContactsByIdsInputObject} deleteContactsByIdsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1428,6 +1480,7 @@
 
     /**
      * Unassign contacts from the specified list.
+     * 
      * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject Contact ID(s), separated by comma
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1472,6 +1525,7 @@
 
     /**
      * Unassign contacts from the specified list.
+     * 
      * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject Contact ID(s), separated by comma
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1486,6 +1540,7 @@
 
     /**
      * Delete a single custom field.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1524,6 +1579,7 @@
 
     /**
      * Delete a single custom field.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1537,6 +1593,7 @@
 
     /**
      * Cancel dedicated number subscription.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1575,6 +1632,7 @@
 
     /**
      * Cancel dedicated number subscription.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1588,6 +1646,7 @@
 
     /**
      * Delete the incoming message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1626,6 +1685,7 @@
 
     /**
      * Delete the incoming message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1639,6 +1699,7 @@
 
     /**
      * Delete inbound messages by given ID(s) or delete all inbound messages.
+     * 
      * @param {module:model/DeleteInboundMessagesBulkInputObject} deleteInboundMessagesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1676,6 +1737,7 @@
 
     /**
      * Delete inbound messages by given ID(s) or delete all inbound messages.
+     * 
      * @param {module:model/DeleteInboundMessagesBulkInputObject} deleteInboundMessagesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1689,6 +1751,7 @@
 
     /**
      * Delete a single list.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1727,6 +1790,7 @@
 
     /**
      * Delete a single list.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1740,6 +1804,7 @@
 
     /**
      * Delete an avatar for the list.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1778,6 +1843,7 @@
 
     /**
      * Delete an avatar for the list.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1791,6 +1857,7 @@
 
     /**
      * Delete contact from list by given ID(s) or all contacts from list.
+     * 
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1835,6 +1902,7 @@
 
     /**
      * Delete contact from list by given ID(s) or all contacts from list.
+     * 
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1849,6 +1917,7 @@
 
     /**
      * Delete list by given ID(s) or delete all lists.
+     * 
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1886,6 +1955,7 @@
 
     /**
      * Delete list by given ID(s) or delete all lists.
+     * 
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1899,6 +1969,7 @@
 
     /**
      * Delete a message session, together with all nested messages.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1937,6 +2008,7 @@
 
     /**
      * Delete a message session, together with all nested messages.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1950,6 +2022,7 @@
 
     /**
      * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+     * 
      * @param {module:model/DeleteMessageSessionsBulkInputObject} deleteMessageSessionsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1987,6 +2060,7 @@
 
     /**
      * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
+     * 
      * @param {module:model/DeleteMessageSessionsBulkInputObject} deleteMessageSessionsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2000,7 +2074,7 @@
 
     /**
      * Delete message
-     * Delete a single message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2039,7 +2113,7 @@
 
     /**
      * Delete message
-     * Delete a single message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2053,7 +2127,7 @@
 
     /**
      * Delete messages by IDs
-     * Delete outbound messages by given ID(s) or delete all outbound messages.
+     * 
      * @param {module:model/DeleteOutboundMessagesBulkInputObject} deleteOutboundMessagesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2091,7 +2165,7 @@
 
     /**
      * Delete messages by IDs
-     * Delete outbound messages by given ID(s) or delete all outbound messages.
+     * 
      * @param {module:model/DeleteOutboundMessagesBulkInputObject} deleteOutboundMessagesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2105,6 +2179,7 @@
 
     /**
      * Delete a push notification device token.
+     * 
      * @param {String} type 
      * @param {Number} deviceId 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -2150,6 +2225,7 @@
 
     /**
      * Delete a push notification device token.
+     * 
      * @param {String} type 
      * @param {Number} deviceId 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -2164,6 +2240,7 @@
 
     /**
      * Delete a message session, together with all nested messages.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2202,6 +2279,7 @@
 
     /**
      * Delete a message session, together with all nested messages.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2215,6 +2293,7 @@
 
     /**
      * Delete scheduled messages by given ID(s) or delete all scheduled messages.
+     * 
      * @param {module:model/DeleteScheduledMessagesBulkInputObject} deleteScheduledMessagesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2252,6 +2331,7 @@
 
     /**
      * Delete scheduled messages by given ID(s) or delete all scheduled messages.
+     * 
      * @param {module:model/DeleteScheduledMessagesBulkInputObject} deleteScheduledMessagesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2265,6 +2345,7 @@
 
     /**
      * Delete a Sender ID.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2303,6 +2384,7 @@
 
     /**
      * Delete a Sender ID.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2316,6 +2398,7 @@
 
     /**
      * Delete a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2354,6 +2437,7 @@
 
     /**
      * Delete a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2367,6 +2451,7 @@
 
     /**
      * Delete a node.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2405,6 +2490,7 @@
 
     /**
      * Delete a node.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2418,6 +2504,7 @@
 
     /**
      * Delete a single template.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2456,6 +2543,7 @@
 
     /**
      * Delete a single template.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2469,6 +2557,7 @@
 
     /**
      * Delete template by given ID(s) or delete all templates.
+     * 
      * @param {module:model/DeleteTemplatesBulkInputObject} deleteTemplatesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2506,6 +2595,7 @@
 
     /**
      * Delete template by given ID(s) or delete all templates.
+     * 
      * @param {module:model/DeleteTemplatesBulkInputObject} deleteTemplatesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2519,7 +2609,7 @@
 
     /**
      * Authenticate user by given username and password.
-     * Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)
+     * 
      * @param {module:model/DoAuthInputObject} doAuthInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DoAuthResponse} and HTTP response
      */
@@ -2557,7 +2647,7 @@
 
     /**
      * Authenticate user by given username and password.
-     * Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)
+     * 
      * @param {module:model/DoAuthInputObject} doAuthInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DoAuthResponse}
      */
@@ -2571,6 +2661,7 @@
 
     /**
      * Carrier Lookup
+     * 
      * @param {String} phone 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Country code for local formatted numbers (default to US)
@@ -2613,6 +2704,7 @@
 
     /**
      * Carrier Lookup
+     * 
      * @param {String} phone 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Country code for local formatted numbers (default to US)
@@ -2628,6 +2720,7 @@
 
     /**
      * Validate Email address using Email Lookup tool
+     * 
      * @param {String} email 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DoEmailLookupResponse} and HTTP response
      */
@@ -2666,6 +2759,7 @@
 
     /**
      * Validate Email address using Email Lookup tool
+     * 
      * @param {String} email 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DoEmailLookupResponse}
      */
@@ -2679,6 +2773,7 @@
 
     /**
      * Duplicate a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -2717,6 +2812,7 @@
 
     /**
      * Duplicate a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -2730,6 +2826,7 @@
 
     /**
      * Get all bulk sending sessions.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -2767,6 +2864,7 @@
 
     /**
      * Get all bulk sending sessions.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -2782,6 +2880,7 @@
 
     /**
      * Get all user chats.
+     * 
      * @param {Object} opts Optional parameters
      * @param {module:model/String} opts.status Fetch only (a)ctive, (c)losed or (d)eleted chats
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -2827,6 +2926,7 @@
 
     /**
      * Get all user chats.
+     * 
      * @param {Object} opts Optional parameters
      * @param {module:model/String} opts.status Fetch only (a)ctive, (c)losed or (d)eleted chats
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -2846,6 +2946,7 @@
 
     /**
      * Get all inbox messages.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -2887,6 +2988,7 @@
 
     /**
      * Get all inbox messages.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -2904,6 +3006,7 @@
 
     /**
      * Get all message sending sessions.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -2941,6 +3044,7 @@
 
     /**
      * Get all message sending sessions.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -2956,7 +3060,7 @@
 
     /**
      * Get all messages
-     * Get all user oubound messages.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -2996,7 +3100,7 @@
 
     /**
      * Get all messages
-     * Get all user oubound messages.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -3013,6 +3117,7 @@
 
     /**
      * Get all scheduled messages.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -3056,6 +3161,7 @@
 
     /**
      * Get all scheduled messages.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -3074,6 +3180,7 @@
 
     /**
      * Get all user templates.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page
      * @param {Number} opts.limit How many results to return
@@ -3111,6 +3218,7 @@
 
     /**
      * Get all user templates.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page
      * @param {Number} opts.limit How many results to return
@@ -3126,6 +3234,7 @@
 
     /**
      * Find available dedicated numbers to buy.
+     * 
      * @param {String} country Dedicated number country. Two letters in upper case
      * @param {Object} opts Optional parameters
      * @param {Number} opts.prefix Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree &#x3D; 1 parameter and there are available tollfree numbers, this parameter will be ignore. (default to 1)
@@ -3170,6 +3279,7 @@
 
     /**
      * Find available dedicated numbers to buy.
+     * 
      * @param {String} country Dedicated number country. Two letters in upper case
      * @param {Object} opts Optional parameters
      * @param {Number} opts.prefix Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree &#x3D; 1 parameter and there are available tollfree numbers, this parameter will be ignore. (default to 1)
@@ -3186,6 +3296,7 @@
 
     /**
      * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender setting options available in specific country only. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAvailableSenderSettingOptionsResponse} and HTTP response
@@ -3221,6 +3332,7 @@
 
     /**
      * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender setting options available in specific country only. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAvailableSenderSettingOptionsResponse}
@@ -3235,6 +3347,7 @@
 
     /**
      * Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBalanceNotificationOptionsResponse} and HTTP response
      */
     this.getBalanceNotificationOptionsWithHttpInfo = function() {
@@ -3266,6 +3379,7 @@
 
     /**
      * Returns the list of available balance options which can be used as a bound to determine when to send email to user with low balance notification. See https://my.textmagic.com/online/account/notifications/balance
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBalanceNotificationOptionsResponse}
      */
     this.getBalanceNotificationOptions = function() {
@@ -3278,6 +3392,7 @@
 
     /**
      * Get balance notification settings
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBalanceNotificationSettingsResponse} and HTTP response
      */
     this.getBalanceNotificationSettingsWithHttpInfo = function() {
@@ -3309,6 +3424,7 @@
 
     /**
      * Get balance notification settings
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBalanceNotificationSettingsResponse}
      */
     this.getBalanceNotificationSettings = function() {
@@ -3321,6 +3437,7 @@
 
     /**
      * Get blocked contacts.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -3364,6 +3481,7 @@
 
     /**
      * Get blocked contacts.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -3382,6 +3500,7 @@
 
     /**
      * Get bulk message session status.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/BulkSession} and HTTP response
      */
@@ -3420,6 +3539,7 @@
 
     /**
      * Get bulk message session status.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/BulkSession}
      */
@@ -3433,6 +3553,7 @@
 
     /**
      * Fetch callback URL settings
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCallbackSettingsResponse} and HTTP response
      */
     this.getCallbackSettingsWithHttpInfo = function() {
@@ -3464,6 +3585,7 @@
 
     /**
      * Fetch callback URL settings
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCallbackSettingsResponse}
      */
     this.getCallbackSettings = function() {
@@ -3476,6 +3598,7 @@
 
     /**
      * Check pricing for a inbound/outbound call.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCallsPricesResponse} and HTTP response
      */
     this.getCallsPricesWithHttpInfo = function() {
@@ -3507,6 +3630,7 @@
 
     /**
      * Check pricing for a inbound/outbound call.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCallsPricesResponse}
      */
     this.getCallsPrices = function() {
@@ -3519,6 +3643,7 @@
 
     /**
      * Get a single chat.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Chat} and HTTP response
      */
@@ -3557,6 +3682,7 @@
 
     /**
      * Get a single chat.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Chat}
      */
@@ -3570,6 +3696,7 @@
 
     /**
      * Find chats by phone.
+     * 
      * @param {String} phone 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.upsert Create a new chat if not found (default to 0)
@@ -3614,6 +3741,7 @@
 
     /**
      * Find chats by phone.
+     * 
      * @param {String} phone 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.upsert Create a new chat if not found (default to 0)
@@ -3630,6 +3758,7 @@
 
     /**
      * Fetch messages from chat with specified chat id.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -3684,6 +3813,7 @@
 
     /**
      * Fetch messages from chat with specified chat id.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -3705,6 +3835,7 @@
 
     /**
      * Get a single contact.
+     * 
      * @param {Number} id The contact id
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Contact} and HTTP response
      */
@@ -3743,6 +3874,7 @@
 
     /**
      * Get a single contact.
+     * 
      * @param {Number} id The contact id
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Contact}
      */
@@ -3756,6 +3888,7 @@
 
     /**
      * Get a single contact by phone number.
+     * 
      * @param {String} phone 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Contact} and HTTP response
      */
@@ -3794,6 +3927,7 @@
 
     /**
      * Get a single contact by phone number.
+     * 
      * @param {String} phone 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Contact}
      */
@@ -3807,6 +3941,7 @@
 
     /**
      * Check is that phone number blocked
+     * 
      * @param {String} phone Phone number to check
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Contact} and HTTP response
      */
@@ -3845,6 +3980,7 @@
 
     /**
      * Check is that phone number blocked
+     * 
      * @param {String} phone Phone number to check
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Contact}
      */
@@ -3858,6 +3994,7 @@
 
     /**
      * Get contact import session progress.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContactImportSessionProgressResponse} and HTTP response
      */
@@ -3896,6 +4033,7 @@
 
     /**
      * Get contact import session progress.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContactImportSessionProgressResponse}
      */
@@ -3909,6 +4047,7 @@
 
     /**
      * Get a single contact note.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ContactNote} and HTTP response
      */
@@ -3947,6 +4086,7 @@
 
     /**
      * Get a single contact note.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ContactNote}
      */
@@ -3960,6 +4100,7 @@
 
     /**
      * Fetch notes assigned to the given contact.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -4004,6 +4145,7 @@
 
     /**
      * Fetch notes assigned to the given contact.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -4020,6 +4162,7 @@
 
     /**
      * Get all user contacts.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4063,6 +4206,7 @@
 
     /**
      * Get all user contacts.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4081,6 +4225,7 @@
 
     /**
      * Get contacts autocomplete suggestions by given search term.
+     * 
      * @param {String} query Find recipients by specified search query
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4125,6 +4270,7 @@
 
     /**
      * Get contacts autocomplete suggestions by given search term.
+     * 
      * @param {String} query Find recipients by specified search query
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4141,7 +4287,7 @@
 
     /**
      * Fetch user contacts by given group id.
-     * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+     * 
      * @param {Number} id Given group Id.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -4190,7 +4336,7 @@
 
     /**
      * Fetch user contacts by given group id.
-     * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
+     * 
      * @param {Number} id Given group Id.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -4209,6 +4355,7 @@
 
     /**
      * Return list of countries.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCountriesResponse} and HTTP response
      */
     this.getCountriesWithHttpInfo = function() {
@@ -4240,6 +4387,7 @@
 
     /**
      * Return list of countries.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCountriesResponse}
      */
     this.getCountries = function() {
@@ -4252,6 +4400,7 @@
 
     /**
      * Get current user info.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
     this.getCurrentUserWithHttpInfo = function() {
@@ -4283,6 +4432,7 @@
 
     /**
      * Get current user info.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
     this.getCurrentUser = function() {
@@ -4295,6 +4445,7 @@
 
     /**
      * Get a single custom field.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UserCustomField} and HTTP response
      */
@@ -4333,6 +4484,7 @@
 
     /**
      * Get a single custom field.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UserCustomField}
      */
@@ -4346,6 +4498,7 @@
 
     /**
      * Get all contact custom fields.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4383,6 +4536,7 @@
 
     /**
      * Get all contact custom fields.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4398,6 +4552,7 @@
 
     /**
      * Get a single dedicated number.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UsersInbound} and HTTP response
      */
@@ -4436,6 +4591,7 @@
 
     /**
      * Get a single dedicated number.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UsersInbound}
      */
@@ -4449,6 +4605,7 @@
 
     /**
      * Get an array of all rules that are disallowed to the current account.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetDisallowedRulesResponse} and HTTP response
      */
     this.getDisallowedRulesWithHttpInfo = function() {
@@ -4480,6 +4637,7 @@
 
     /**
      * Get an array of all rules that are disallowed to the current account.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetDisallowedRulesResponse}
      */
     this.getDisallowedRules = function() {
@@ -4492,6 +4650,7 @@
 
     /**
      * Get favorite contacts and lists.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4531,6 +4690,7 @@
 
     /**
      * Get favorite contacts and lists.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4547,6 +4707,7 @@
 
     /**
      * Get all forwarded calls.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4584,6 +4745,7 @@
 
     /**
      * Get all forwarded calls.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4599,6 +4761,7 @@
 
     /**
      * Get a single inbox message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MessageIn} and HTTP response
      */
@@ -4637,6 +4800,7 @@
 
     /**
      * Get a single inbox message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MessageIn}
      */
@@ -4650,6 +4814,7 @@
 
     /**
      * Get inbound messages notification settings
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetInboundMessagesNotificationSettingsResponse} and HTTP response
      */
     this.getInboundMessagesNotificationSettingsWithHttpInfo = function() {
@@ -4681,6 +4846,7 @@
 
     /**
      * Get inbound messages notification settings
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetInboundMessagesNotificationSettingsResponse}
      */
     this.getInboundMessagesNotificationSettings = function() {
@@ -4693,6 +4859,7 @@
 
     /**
      * Return account invoices.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4730,6 +4897,7 @@
 
     /**
      * Return account invoices.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -4745,6 +4913,7 @@
 
     /**
      * Get a single list.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Group} and HTTP response
      */
@@ -4783,6 +4952,7 @@
 
     /**
      * Get a single list.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Group}
      */
@@ -4796,6 +4966,7 @@
 
     /**
      * Fetch all contacts IDs belonging to the list with ID.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetListContactsIdsResponse} and HTTP response
      */
@@ -4834,6 +5005,7 @@
 
     /**
      * Fetch all contacts IDs belonging to the list with ID.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetListContactsIdsResponse}
      */
@@ -4847,6 +5019,7 @@
 
     /**
      * Return lists which contact belongs to.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -4891,6 +5064,7 @@
 
     /**
      * Return lists which contact belongs to.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -4907,7 +5081,7 @@
 
     /**
      * Preview message
-     * Get messages preview (with tags merged) up to 100 messages per session.
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.text Message text. Required if template_id is not set
      * @param {Number} opts.templateId Template used instead of message text. Required if text is not set
@@ -4975,7 +5149,7 @@
 
     /**
      * Preview message
-     * Get messages preview (with tags merged) up to 100 messages per session.
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.text Message text. Required if template_id is not set
      * @param {Number} opts.templateId Template used instead of message text. Required if text is not set
@@ -5006,7 +5180,7 @@
 
     /**
      * Check price
-     * Check pricing for a new outbound message.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.includeBlocked Should we show pricing for the blocked contacts. (default to 0)
      * @param {String} opts.text Message text. Required if template_id is not set
@@ -5076,7 +5250,7 @@
 
     /**
      * Check price
-     * Check pricing for a new outbound message.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.includeBlocked Should we show pricing for the blocked contacts. (default to 0)
      * @param {String} opts.text Message text. Required if template_id is not set
@@ -5108,7 +5282,7 @@
 
     /**
      * Get pricing
-     * Get message prices for all countries.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetMessagePricesResponse} and HTTP response
      */
     this.getMessagePricesWithHttpInfo = function() {
@@ -5140,7 +5314,7 @@
 
     /**
      * Get pricing
-     * Get message prices for all countries.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetMessagePricesResponse}
      */
     this.getMessagePrices = function() {
@@ -5153,6 +5327,7 @@
 
     /**
      * Get a message session.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MessageSession} and HTTP response
      */
@@ -5191,6 +5366,7 @@
 
     /**
      * Get a message session.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MessageSession}
      */
@@ -5204,6 +5380,7 @@
 
     /**
      * Get sending session statistics.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.includeDeleted Search also in deleted messages (default to 0)
@@ -5246,6 +5423,7 @@
 
     /**
      * Get sending session statistics.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.includeDeleted Search also in deleted messages (default to 0)
@@ -5261,7 +5439,7 @@
 
     /**
      * Fetch messages by given session id.
-     * A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -5310,7 +5488,7 @@
 
     /**
      * Fetch messages by given session id.
-     * A useful synonym for \&quot;messages/search\&quot; command with provided \&quot;sessionId\&quot; parameter.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -5329,6 +5507,7 @@
 
     /**
      * Return counters for messaging data views.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetMessagingCountersResponse} and HTTP response
      */
     this.getMessagingCountersWithHttpInfo = function() {
@@ -5360,6 +5539,7 @@
 
     /**
      * Return counters for messaging data views.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetMessagingCountersResponse}
      */
     this.getMessagingCounters = function() {
@@ -5372,6 +5552,7 @@
 
     /**
      * Return messaging statistics.
+     * 
      * @param {Object} opts Optional parameters
      * @param {module:model/String} opts.by Group results by specified period: off, day, month or year. Default is off (default to off)
      * @param {Number} opts.start Start date in unix timestamp format. Default is 7 days ago
@@ -5411,6 +5592,7 @@
 
     /**
      * Return messaging statistics.
+     * 
      * @param {Object} opts Optional parameters
      * @param {module:model/String} opts.by Group results by specified period: off, day, month or year. Default is off (default to off)
      * @param {Number} opts.start Start date in unix timestamp format. Default is 7 days ago
@@ -5427,7 +5609,7 @@
 
     /**
      * Get a single message
-     * Get a single outgoing message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MessageOut} and HTTP response
      */
@@ -5466,7 +5648,7 @@
 
     /**
      * Get a single message
-     * Get a single outgoing message.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MessageOut}
      */
@@ -5480,7 +5662,7 @@
 
     /**
      * Get history
-     * Get outbound messages history.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.lastId Filter results by ID, selecting all values lesser than the specified ID.
@@ -5524,7 +5706,7 @@
 
     /**
      * Get history
-     * Get outbound messages history.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit How many results to return (default to 10)
      * @param {Number} opts.lastId Filter results by ID, selecting all values lesser than the specified ID.
@@ -5543,6 +5725,7 @@
 
     /**
      * Get all device tokens assigned to the current account
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetPushTokensResponse} and HTTP response
      */
     this.getPushTokensWithHttpInfo = function() {
@@ -5574,6 +5757,7 @@
 
     /**
      * Get all device tokens assigned to the current account
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetPushTokensResponse}
      */
     this.getPushTokens = function() {
@@ -5586,6 +5770,7 @@
 
     /**
      * Get message schedule.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MessagesIcs} and HTTP response
      */
@@ -5624,6 +5809,7 @@
 
     /**
      * Get message schedule.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MessagesIcs}
      */
@@ -5637,6 +5823,7 @@
 
     /**
      * Get a single Sender ID.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SenderId} and HTTP response
      */
@@ -5675,6 +5862,7 @@
 
     /**
      * Get a single Sender ID.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SenderId}
      */
@@ -5688,6 +5876,7 @@
 
     /**
      * Get all sender IDs of current user.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -5725,6 +5914,7 @@
 
     /**
      * Get all sender IDs of current user.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -5740,6 +5930,7 @@
 
     /**
      * Get current user sender settings.
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender settings enabled for sending to specified country. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSenderSettingsResponse} and HTTP response
@@ -5775,6 +5966,7 @@
 
     /**
      * Get current user sender settings.
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender settings enabled for sending to specified country. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSenderSettingsResponse}
@@ -5789,6 +5981,7 @@
 
     /**
      * Return account spending statistics.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -5830,6 +6023,7 @@
 
     /**
      * Return account spending statistics.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -5847,6 +6041,7 @@
 
     /**
      * Get current entities state
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetStateResponse} and HTTP response
      */
     this.getStateWithHttpInfo = function() {
@@ -5878,6 +6073,7 @@
 
     /**
      * Get current entities state
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetStateResponse}
      */
     this.getState = function() {
@@ -5890,6 +6086,7 @@
 
     /**
      * Get a single subaccount.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
@@ -5928,6 +6125,7 @@
 
     /**
      * Get a single subaccount.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
@@ -5941,6 +6139,7 @@
 
     /**
      * Get all subaccounts of current user.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -5978,6 +6177,7 @@
 
     /**
      * Get all subaccounts of current user.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -5993,7 +6193,7 @@
 
     /**
      * Get all subaccounts with their REST API tokens associated with specified app name.
-     * When more than one token related to app name, last key will be returned.
+     * 
      * @param {module:model/GetSubaccountsWithTokensInputObject} getSubaccountsWithTokensInputObject 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -6037,7 +6237,7 @@
 
     /**
      * Get all subaccounts with their REST API tokens associated with specified app name.
-     * When more than one token related to app name, last key will be returned.
+     * 
      * @param {module:model/GetSubaccountsWithTokensInputObject} getSubaccountsWithTokensInputObject 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
@@ -6054,6 +6254,7 @@
 
     /**
      * Get a survey by id.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Survey} and HTTP response
      */
@@ -6092,6 +6293,7 @@
 
     /**
      * Get a survey by id.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Survey}
      */
@@ -6105,6 +6307,7 @@
 
     /**
      * Get a node by id.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SurveyNode} and HTTP response
      */
@@ -6143,6 +6346,7 @@
 
     /**
      * Get a node by id.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SurveyNode}
      */
@@ -6156,6 +6360,7 @@
 
     /**
      * Fetch nodes by given survey id.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSurveyNodesResponse} and HTTP response
      */
@@ -6194,6 +6399,7 @@
 
     /**
      * Fetch nodes by given survey id.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSurveyNodesResponse}
      */
@@ -6207,6 +6413,7 @@
 
     /**
      * Get all user surveys.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6244,6 +6451,7 @@
 
     /**
      * Get all user surveys.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6259,6 +6467,7 @@
 
     /**
      * Get a single template.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MessageTemplate} and HTTP response
      */
@@ -6297,6 +6506,7 @@
 
     /**
      * Get a single template.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MessageTemplate}
      */
@@ -6310,6 +6520,7 @@
 
     /**
      * Return all available timezone IDs.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.full Return full info about timezones in array (0 or 1). Default is 0 (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetTimezonesResponse} and HTTP response
@@ -6345,6 +6556,7 @@
 
     /**
      * Return all available timezone IDs.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.full Return full info about timezones in array (0 or 1). Default is 0 (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetTimezonesResponse}
@@ -6359,6 +6571,7 @@
 
     /**
      * Get total amount of unread messages in the current user chats.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUnreadMessagesTotalResponse} and HTTP response
      */
     this.getUnreadMessagesTotalWithHttpInfo = function() {
@@ -6390,6 +6603,7 @@
 
     /**
      * Get total amount of unread messages in the current user chats.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUnreadMessagesTotalResponse}
      */
     this.getUnreadMessagesTotal = function() {
@@ -6402,6 +6616,7 @@
 
     /**
      * Get a single unsubscribed contact.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UnsubscribedContact} and HTTP response
      */
@@ -6440,6 +6655,7 @@
 
     /**
      * Get a single unsubscribed contact.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UnsubscribedContact}
      */
@@ -6453,6 +6669,7 @@
 
     /**
      * Get all contact have unsubscribed from your communication.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6490,6 +6707,7 @@
 
     /**
      * Get all contact have unsubscribed from your communication.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6505,6 +6723,7 @@
 
     /**
      * Get user&#39;s dedicated numbers.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6544,6 +6763,7 @@
 
     /**
      * Get user&#39;s dedicated numbers.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6560,6 +6780,7 @@
 
     /**
      * Get all user lists.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6605,6 +6826,7 @@
 
     /**
      * Get all user lists.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -6624,6 +6846,7 @@
 
     /**
      * Get minimal valid apps versions
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetVersionsResponse} and HTTP response
      */
     this.getVersionsWithHttpInfo = function() {
@@ -6655,6 +6878,7 @@
 
     /**
      * Get minimal valid apps versions
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetVersionsResponse}
      */
     this.getVersions = function() {
@@ -6667,6 +6891,7 @@
 
     /**
      * Invite new subaccount.
+     * 
      * @param {module:model/InviteSubaccountInputObject} inviteSubaccountInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -6704,6 +6929,7 @@
 
     /**
      * Invite new subaccount.
+     * 
      * @param {module:model/InviteSubaccountInputObject} inviteSubaccountInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -6717,6 +6943,7 @@
 
     /**
      * Mark several chats as read by chat ids or mark all chats as read
+     * 
      * @param {module:model/MarkChatsReadBulkInputObject} markChatsReadBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -6754,6 +6981,7 @@
 
     /**
      * Mark several chats as read by chat ids or mark all chats as read
+     * 
      * @param {module:model/MarkChatsReadBulkInputObject} markChatsReadBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -6767,6 +6995,7 @@
 
     /**
      * Mark several chats as UNread by chat ids or mark all chats as UNread
+     * 
      * @param {module:model/MarkChatsUnreadBulkInputObject} markChatsUnreadBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -6804,6 +7033,7 @@
 
     /**
      * Mark several chats as UNread by chat ids or mark all chats as UNread
+     * 
      * @param {module:model/MarkChatsUnreadBulkInputObject} markChatsUnreadBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -6817,6 +7047,7 @@
 
     /**
      * Merge two question nodes.
+     * 
      * @param {module:model/MergeSurveyNodesInputObject} mergeSurveyNodesInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -6854,6 +7085,7 @@
 
     /**
      * Merge two question nodes.
+     * 
      * @param {module:model/MergeSurveyNodesInputObject} mergeSurveyNodesInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -6867,6 +7099,7 @@
 
     /**
      * Set mute mode.
+     * 
      * @param {module:model/MuteChatInputObject} muteChatInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -6904,6 +7137,7 @@
 
     /**
      * Set mute mode.
+     * 
      * @param {module:model/MuteChatInputObject} muteChatInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -6917,6 +7151,7 @@
 
     /**
      * Mute several chats by chat ids or mute all chats
+     * 
      * @param {module:model/MuteChatsBulkInputObject} muteChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -6954,6 +7189,7 @@
 
     /**
      * Mute several chats by chat ids or mute all chats
+     * 
      * @param {module:model/MuteChatsBulkInputObject} muteChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -6967,6 +7203,7 @@
 
     /**
      * Just does a pong.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PingResponse} and HTTP response
      */
     this.pingWithHttpInfo = function() {
@@ -6998,6 +7235,7 @@
 
     /**
      * Just does a pong.
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PingResponse}
      */
     this.ping = function() {
@@ -7010,6 +7248,7 @@
 
     /**
      * Reopen chats by chat ids or reopen all chats
+     * 
      * @param {module:model/ReopenChatsBulkInputObject} reopenChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -7047,6 +7286,7 @@
 
     /**
      * Reopen chats by chat ids or reopen all chats
+     * 
      * @param {module:model/ReopenChatsBulkInputObject} reopenChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -7060,7 +7300,7 @@
 
     /**
      * Request a new REST API token for subaccount.
-     * Returning user object, key and app name.
+     * 
      * @param {module:model/RequestNewSubaccountTokenInputObject} requestNewSubaccountTokenInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
@@ -7098,7 +7338,7 @@
 
     /**
      * Request a new REST API token for subaccount.
-     * Returning user object, key and app name.
+     * 
      * @param {module:model/RequestNewSubaccountTokenInputObject} requestNewSubaccountTokenInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
@@ -7112,6 +7352,7 @@
 
     /**
      * Request for a new Sender ID.
+     * 
      * @param {module:model/RequestSenderIdInputObject} requestSenderIdInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -7149,6 +7390,7 @@
 
     /**
      * Request for a new Sender ID.
+     * 
      * @param {module:model/RequestSenderIdInputObject} requestSenderIdInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -7162,6 +7404,7 @@
 
     /**
      * Reset a survey flow.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -7200,6 +7443,7 @@
 
     /**
      * Reset a survey flow.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -7213,6 +7457,7 @@
 
     /**
      * Find chats by inbound or outbound messages text.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7252,6 +7497,7 @@
 
     /**
      * Find chats by inbound or outbound messages text.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7268,6 +7514,7 @@
 
     /**
      * Find chats by IDs.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7307,6 +7554,7 @@
 
     /**
      * Find chats by IDs.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7323,6 +7571,7 @@
 
     /**
      * Find chats by recipient (contact, list name or phone number).
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7364,6 +7613,7 @@
 
     /**
      * Find chats by recipient (contact, list name or phone number).
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7381,6 +7631,7 @@
 
     /**
      * Find user contacts by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7436,6 +7687,7 @@
 
     /**
      * Find user contacts by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7460,6 +7712,7 @@
 
     /**
      * Find inbound messages by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7507,6 +7760,7 @@
 
     /**
      * Find inbound messages by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7527,6 +7781,7 @@
 
     /**
      * Find contact lists by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7576,6 +7831,7 @@
 
     /**
      * Find contact lists by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7597,7 +7853,7 @@
 
     /**
      * Find messages
-     * Find outbound messages by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7647,7 +7903,7 @@
 
     /**
      * Find messages
-     * Find outbound messages by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7669,6 +7925,7 @@
 
     /**
      * Find scheduled messages by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7716,6 +7973,7 @@
 
     /**
      * Find scheduled messages by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7736,6 +7994,7 @@
 
     /**
      * Find user templates by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7779,6 +8038,7 @@
 
     /**
      * Find user templates by given parameters.
+     * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page (default to 1)
      * @param {Number} opts.limit How many results to return (default to 10)
@@ -7797,6 +8057,7 @@
 
     /**
      * Send user email verification
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     this.sendEmailVerificationCodeWithHttpInfo = function() {
@@ -7828,6 +8089,7 @@
 
     /**
      * Send user email verification
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.sendEmailVerificationCode = function() {
@@ -7840,7 +8102,7 @@
 
     /**
      * Send message
-     * The main entrypoint to send messages. See examples above for the reference.
+     * 
      * @param {module:model/SendMessageInputObject} sendMessageInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SendMessageResponse} and HTTP response
      */
@@ -7878,7 +8140,7 @@
 
     /**
      * Send message
-     * The main entrypoint to send messages. See examples above for the reference.
+     * 
      * @param {module:model/SendMessageInputObject} sendMessageInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SendMessageResponse}
      */
@@ -7892,6 +8154,7 @@
 
     /**
      * Send user phone verification
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     this.sendPhoneVerificationCodeWithHttpInfo = function() {
@@ -7923,6 +8186,7 @@
 
     /**
      * Send user phone verification
+     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.sendPhoneVerificationCode = function() {
@@ -7935,6 +8199,7 @@
 
     /**
      * Set status of the chat given by ID.
+     * 
      * @param {module:model/SetChatStatusInputObject} setChatStatusInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -7972,6 +8237,7 @@
 
     /**
      * Set status of the chat given by ID.
+     * 
      * @param {module:model/SetChatStatusInputObject} setChatStatusInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -7985,6 +8251,7 @@
 
     /**
      * Start a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -8023,6 +8290,7 @@
 
     /**
      * Start a survey.
+     * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -8036,6 +8304,7 @@
 
     /**
      * Unblock contact by phone number.
+     * 
      * @param {module:model/UnblockContactInputObject} unblockContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8073,6 +8342,7 @@
 
     /**
      * Unblock contact by phone number.
+     * 
      * @param {module:model/UnblockContactInputObject} unblockContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8086,6 +8356,7 @@
 
     /**
      * Unblock several contacts by blocked contact ids or unblock all contacts
+     * 
      * @param {module:model/UnblockContactsBulkInputObject} unblockContactsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8123,6 +8394,7 @@
 
     /**
      * Unblock several contacts by blocked contact ids or unblock all contacts
+     * 
      * @param {module:model/UnblockContactsBulkInputObject} unblockContactsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8136,6 +8408,7 @@
 
     /**
      * Unmute several chats by chat ids or unmute all chats
+     * 
      * @param {module:model/UnmuteChatsBulkInputObject} unmuteChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8173,6 +8446,7 @@
 
     /**
      * Unmute several chats by chat ids or unmute all chats
+     * 
      * @param {module:model/UnmuteChatsBulkInputObject} unmuteChatsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8186,6 +8460,7 @@
 
     /**
      * Unsubscribe contact from your communication by phone number.
+     * 
      * @param {module:model/UnsubscribeContactInputObject} unsubscribeContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -8223,6 +8498,7 @@
 
     /**
      * Unsubscribe contact from your communication by phone number.
+     * 
      * @param {module:model/UnsubscribeContactInputObject} unsubscribeContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -8236,6 +8512,7 @@
 
     /**
      * Update balance notification settings
+     * 
      * @param {module:model/UpdateBalanceNotificationSettingsInputObject} updateBalanceNotificationSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8273,6 +8550,7 @@
 
     /**
      * Update balance notification settings
+     * 
      * @param {module:model/UpdateBalanceNotificationSettingsInputObject} updateBalanceNotificationSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8286,6 +8564,7 @@
 
     /**
      * Update callback URL settings
+     * 
      * @param {module:model/UpdateCallbackSettingsInputObject} updateCallbackSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8323,6 +8602,7 @@
 
     /**
      * Update callback URL settings
+     * 
      * @param {module:model/UpdateCallbackSettingsInputObject} updateCallbackSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8336,6 +8616,7 @@
 
     /**
      * Update chat desktop notification settings
+     * 
      * @param {module:model/UpdateChatDesktopNotificationSettingsInputObject} updateChatDesktopNotificationSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8373,6 +8654,7 @@
 
     /**
      * Update chat desktop notification settings
+     * 
      * @param {module:model/UpdateChatDesktopNotificationSettingsInputObject} updateChatDesktopNotificationSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8386,6 +8668,7 @@
 
     /**
      * Update existing contact.
+     * 
      * @param {module:model/UpdateContactInputObject} updateContactInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -8430,6 +8713,7 @@
 
     /**
      * Update existing contact.
+     * 
      * @param {module:model/UpdateContactInputObject} updateContactInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -8444,6 +8728,7 @@
 
     /**
      * Update existing contact note.
+     * 
      * @param {module:model/UpdateContactNoteInputObject} updateContactNoteInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -8488,6 +8773,7 @@
 
     /**
      * Update existing contact note.
+     * 
      * @param {module:model/UpdateContactNoteInputObject} updateContactNoteInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -8502,6 +8788,7 @@
 
     /**
      * Update current user info.
+     * 
      * @param {module:model/UpdateCurrentUserInputObject} updateCurrentUserInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateCurrentUserResponse} and HTTP response
      */
@@ -8539,6 +8826,7 @@
 
     /**
      * Update current user info.
+     * 
      * @param {module:model/UpdateCurrentUserInputObject} updateCurrentUserInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateCurrentUserResponse}
      */
@@ -8552,6 +8840,7 @@
 
     /**
      * Update existing custom field.
+     * 
      * @param {module:model/UpdateCustomFieldInputObject} updateCustomFieldInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -8596,6 +8885,7 @@
 
     /**
      * Update existing custom field.
+     * 
      * @param {module:model/UpdateCustomFieldInputObject} updateCustomFieldInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -8610,6 +8900,7 @@
 
     /**
      * Update contact&#39;s custom field value.
+     * 
      * @param {module:model/UpdateCustomFieldValueInputObject} updateCustomFieldValueInputObject 
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -8654,6 +8945,7 @@
 
     /**
      * Update contact&#39;s custom field value.
+     * 
      * @param {module:model/UpdateCustomFieldValueInputObject} updateCustomFieldValueInputObject 
      * @param {String} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -8668,6 +8960,7 @@
 
     /**
      * Update inbound messages notification settings
+     * 
      * @param {module:model/UpdateInboundMessagesNotificationSettingsInputObject} updateInboundMessagesNotificationSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8705,6 +8998,7 @@
 
     /**
      * Update inbound messages notification settings
+     * 
      * @param {module:model/UpdateInboundMessagesNotificationSettingsInputObject} updateInboundMessagesNotificationSettingsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8718,6 +9012,7 @@
 
     /**
      * Update existing list.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {module:model/UpdateListObject} opts.updateListObject 
@@ -8759,6 +9054,7 @@
 
     /**
      * Update existing list.
+     * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {module:model/UpdateListObject} opts.updateListObject 
@@ -8774,6 +9070,7 @@
 
     /**
      * Change user password.
+     * 
      * @param {module:model/UpdatePasswordInputObject} updatePasswordInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8811,6 +9108,7 @@
 
     /**
      * Change user password.
+     * 
      * @param {module:model/UpdatePasswordInputObject} updatePasswordInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8824,6 +9122,7 @@
 
     /**
      * Change sender settings for specified country.
+     * 
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8861,6 +9160,7 @@
 
     /**
      * Change sender settings for specified country.
+     * 
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8874,6 +9174,7 @@
 
     /**
      * Update existing survey.
+     * 
      * @param {module:model/UpdateSurveyInputObject} updateSurveyInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -8918,6 +9219,7 @@
 
     /**
      * Update existing survey.
+     * 
      * @param {module:model/UpdateSurveyInputObject} updateSurveyInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -8932,6 +9234,7 @@
 
     /**
      * Update existing node.
+     * 
      * @param {module:model/UpdateSurveyNodeInputObject} updateSurveyNodeInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -8976,6 +9279,7 @@
 
     /**
      * Update existing node.
+     * 
      * @param {module:model/UpdateSurveyNodeInputObject} updateSurveyNodeInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -8990,6 +9294,7 @@
 
     /**
      * Update existing template.
+     * 
      * @param {module:model/UpdateTemplateInputObject} updateTemplateInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -9034,6 +9339,7 @@
 
     /**
      * Update existing template.
+     * 
      * @param {module:model/UpdateTemplateInputObject} updateTemplateInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -9048,6 +9354,7 @@
 
     /**
      * Add an avatar for the current user.
+     * 
      * @param {File} image User avatar. Should be PNG or JPG file not more than 10 MB
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -9086,6 +9393,7 @@
 
     /**
      * Add an avatar for the current user.
+     * 
      * @param {File} image User avatar. Should be PNG or JPG file not more than 10 MB
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -9099,6 +9407,7 @@
 
     /**
      * Add an avatar for the contact.
+     * 
      * @param {File} image Contact avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -9144,6 +9453,7 @@
 
     /**
      * Add an avatar for the contact.
+     * 
      * @param {File} image Contact avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -9158,6 +9468,7 @@
 
     /**
      * Add an avatar for the list.
+     * 
      * @param {File} image List avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -9203,6 +9514,7 @@
 
     /**
      * Add an avatar for the list.
+     * 
      * @param {File} image List avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -9217,7 +9529,7 @@
 
     /**
      * Upload message attachment
-     * Upload a new file to insert it as a link.
+     * 
      * @param {File} file Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UploadMessageAttachmentResponse} and HTTP response
      */
@@ -9256,7 +9568,7 @@
 
     /**
      * Upload message attachment
-     * Upload a new file to insert it as a link.
+     * 
      * @param {File} file Attachment. Supports .jpg, .gif, .png, .pdf, .txt, .csv, .doc, .docx, .xls, .xlsx, .ppt, .pptx &amp; .vcf file formats
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UploadMessageAttachmentResponse}
      */

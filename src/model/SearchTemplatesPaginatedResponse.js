@@ -37,7 +37,7 @@
   /**
    * The SearchTemplatesPaginatedResponse model module.
    * @module model/SearchTemplatesPaginatedResponse
-   * @version 2.0.428
+   * @version 2.0.430
    */
 
   /**
