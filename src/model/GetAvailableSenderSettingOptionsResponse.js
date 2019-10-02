@@ -37,17 +37,17 @@
   /**
    * The GetAvailableSenderSettingOptionsResponse model module.
    * @module model/GetAvailableSenderSettingOptionsResponse
-   * @version 2.0.441
+   * @version 2.0.443
    */
 
   /**
    * Constructs a new <code>GetAvailableSenderSettingOptionsResponse</code>.
    * @alias module:model/GetAvailableSenderSettingOptionsResponse
    * @class
-   * @param dedicated {Array.<String>} 
-   * @param user {Array.<String>} 
-   * @param shared {Array.<String>} 
-   * @param senderIds {Array.<String>} 
+   * @param dedicated {Array.<String>} Array of dedicated numbers strings.
+   * @param user {Array.<String>} Array of verified account phone numbers (currently only one).
+   * @param shared {Array.<String>} Array of shared numbers strings.
+   * @param senderIds {Array.<String>} Array of alphanumeric sender IDs.
    */
   var exports = function(dedicated, user, shared, senderIds) {
     var _this = this;
@@ -86,18 +86,22 @@
   }
 
   /**
+   * Array of dedicated numbers strings.
    * @member {Array.<String>} dedicated
    */
   exports.prototype['dedicated'] = undefined;
   /**
+   * Array of verified account phone numbers (currently only one).
    * @member {Array.<String>} user
    */
   exports.prototype['user'] = undefined;
   /**
+   * Array of shared numbers strings.
    * @member {Array.<String>} shared
    */
   exports.prototype['shared'] = undefined;
   /**
+   * Array of alphanumeric sender IDs.
    * @member {Array.<String>} senderIds
    */
   exports.prototype['senderIds'] = undefined;

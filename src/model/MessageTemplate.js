@@ -37,17 +37,17 @@
   /**
    * The MessageTemplate model module.
    * @module model/MessageTemplate
-   * @version 2.0.441
+   * @version 2.0.443
    */
 
   /**
    * Constructs a new <code>MessageTemplate</code>.
    * @alias module:model/MessageTemplate
    * @class
-   * @param id {Number} 
-   * @param name {String} 
-   * @param content {String} 
-   * @param lastModified {Date} 
+   * @param id {Number} Template ID.
+   * @param name {String} Template name.
+   * @param content {String} Template text. May contain the tags listed below @TODO.
+   * @param lastModified {Date} Time when template was last modified.
    */
   var exports = function(id, name, content, lastModified) {
     var _this = this;
@@ -86,18 +86,22 @@
   }
 
   /**
+   * Template ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Template name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
+   * Template text. May contain the tags listed below @TODO.
    * @member {String} content
    */
   exports.prototype['content'] = undefined;
   /**
+   * Time when template was last modified.
    * @member {Date} lastModified
    */
   exports.prototype['lastModified'] = undefined;

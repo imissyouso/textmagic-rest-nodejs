@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.441
+   * @version 2.0.443
    */
 
   /**
@@ -162,8 +162,8 @@
 
 
     /**
-     * Buy a dedicated number and assign it to the specified account.
-     * 
+     * Buy a dedicated number
+     * To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
      * @param {module:model/BuyDedicatedNumberInputObject} buyDedicatedNumberInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -200,8 +200,8 @@
     }
 
     /**
-     * Buy a dedicated number and assign it to the specified account.
-     * 
+     * Buy a dedicated number
+     * To buy a dedicated number, you first need to find an available number matching your criteria using the &#x60;/api/v2/numbers/available&#x60; command described above.
      * @param {module:model/BuyDedicatedNumberInputObject} buyDedicatedNumberInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1015,7 +1015,7 @@
 
     /**
      * Create a template
-     * 
+     * There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
      * @param {module:model/CreateTemplateInputObject} createTemplateInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -1053,7 +1053,7 @@
 
     /**
      * Create a template
-     * 
+     * There are times when creating a new template makes sense (such as when targeting specific clients or improving your business strategies).  You can create new SMS templates for marketing purposes or SMS templates for business campaigns. 
      * @param {module:model/CreateTemplateInputObject} createTemplateInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -1697,7 +1697,7 @@
 
 
     /**
-     * Cancel dedicated number subscription.
+     * Cancel dedicated number subscription
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1736,7 +1736,7 @@
     }
 
     /**
-     * Cancel dedicated number subscription.
+     * Cancel dedicated number subscription
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -2449,7 +2449,7 @@
 
 
     /**
-     * Delete a Sender ID.
+     * Delete a Sender ID
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -2488,7 +2488,7 @@
     }
 
     /**
-     * Delete a Sender ID.
+     * Delete a Sender ID
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -3338,12 +3338,12 @@
 
 
     /**
-     * Find available dedicated numbers to buy.
+     * Find dedicated numbers available for purchase
      * 
-     * @param {String} country Dedicated number country. Two letters in upper case
+     * @param {String} country Two-letter dedicated number country ISO code.
      * @param {Object} opts Optional parameters
-     * @param {Number} opts.prefix Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree &#x3D; 1 parameter and there are available tollfree numbers, this parameter will be ignore. (default to 1)
-     * @param {Number} opts.tollfree Should we show only tollfree numbers (tollfree available only for US). Default is false. (default to 0)
+     * @param {Number} opts.prefix Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (default to 1)
+     * @param {Number} opts.tollfree Should we show only tollfree numbers (tollfree available only for US). (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAvailableDedicatedNumbersResponse} and HTTP response
      */
     this.getAvailableDedicatedNumbersWithHttpInfo = function(country, opts) {
@@ -3383,12 +3383,12 @@
     }
 
     /**
-     * Find available dedicated numbers to buy.
+     * Find dedicated numbers available for purchase
      * 
-     * @param {String} country Dedicated number country. Two letters in upper case
+     * @param {String} country Two-letter dedicated number country ISO code.
      * @param {Object} opts Optional parameters
-     * @param {Number} opts.prefix Desired number prefix. Should include country code (i.e. 447 for GB). In case provide tollfree &#x3D; 1 parameter and there are available tollfree numbers, this parameter will be ignore. (default to 1)
-     * @param {Number} opts.tollfree Should we show only tollfree numbers (tollfree available only for US). Default is false. (default to 0)
+     * @param {Number} opts.prefix Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. (default to 1)
+     * @param {Number} opts.tollfree Should we show only tollfree numbers (tollfree available only for US). (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAvailableDedicatedNumbersResponse}
      */
     this.getAvailableDedicatedNumbers = function(country, opts) {
@@ -3400,10 +3400,10 @@
 
 
     /**
+     * Get available sender settings
      * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
-     * 
      * @param {Object} opts Optional parameters
-     * @param {String} opts.country Return sender setting options available in specific country only. Two upper case characters
+     * @param {String} opts.country Two-letter ISO country ID. If not specified, it returns all the available sender settings.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAvailableSenderSettingOptionsResponse} and HTTP response
      */
     this.getAvailableSenderSettingOptionsWithHttpInfo = function(opts) {
@@ -3436,10 +3436,10 @@
     }
 
     /**
+     * Get available sender settings
      * Get all available sender setting options which could be used in \&quot;from\&quot; parameter of POST messages method.
-     * 
      * @param {Object} opts Optional parameters
-     * @param {String} opts.country Return sender setting options available in specific country only. Two upper case characters
+     * @param {String} opts.country Two-letter ISO country ID. If not specified, it returns all the available sender settings.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAvailableSenderSettingOptionsResponse}
      */
     this.getAvailableSenderSettingOptions = function(opts) {
@@ -4656,7 +4656,7 @@
 
 
     /**
-     * Get a single dedicated number.
+     * Get the details of a specific dedicated number
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UsersInbound} and HTTP response
@@ -4695,7 +4695,7 @@
     }
 
     /**
-     * Get a single dedicated number.
+     * Get the details of a specific dedicated number
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UsersInbound}
@@ -5873,7 +5873,7 @@
 
 
     /**
-     * Get a single Sender ID.
+     * Get the details of a specific Sender ID
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SenderId} and HTTP response
@@ -5912,7 +5912,7 @@
     }
 
     /**
-     * Get a single Sender ID.
+     * Get the details of a specific Sender ID
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SenderId}
@@ -5926,7 +5926,7 @@
 
 
     /**
-     * Get all sender IDs of current user.
+     * Get all your approved Sender IDs
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -5964,7 +5964,7 @@
     }
 
     /**
-     * Get all sender IDs of current user.
+     * Get all your approved Sender IDs
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -5980,8 +5980,8 @@
 
 
     /**
-     * Get current user sender settings.
-     * 
+     * Get current sender settings
+     * @TODO
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender settings enabled for sending to specified country. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSenderSettingsResponse} and HTTP response
@@ -6016,8 +6016,8 @@
     }
 
     /**
-     * Get current user sender settings.
-     * 
+     * Get current sender settings
+     * @TODO
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender settings enabled for sending to specified country. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSenderSettingsResponse}
@@ -6773,7 +6773,7 @@
 
 
     /**
-     * Get user&#39;s dedicated numbers.
+     * Get all your dedicated numbers
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -6813,7 +6813,7 @@
     }
 
     /**
-     * Get user&#39;s dedicated numbers.
+     * Get all your dedicated numbers
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -7402,8 +7402,8 @@
 
 
     /**
-     * Request for a new Sender ID.
-     * 
+     * Apply for a new Sender ID
+     * &gt; Sender IDs are shared between all of your sub-accounts.
      * @param {module:model/RequestSenderIdInputObject} requestSenderIdInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -7440,8 +7440,8 @@
     }
 
     /**
-     * Request for a new Sender ID.
-     * 
+     * Apply for a new Sender ID
+     * &gt; Sender IDs are shared between all of your sub-accounts.
      * @param {module:model/RequestSenderIdInputObject} requestSenderIdInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -9224,8 +9224,8 @@
 
 
     /**
-     * Change sender settings for specified country.
-     * 
+     * Change sender settings
+     * @TODO
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -9262,8 +9262,8 @@
     }
 
     /**
-     * Change sender settings for specified country.
-     * 
+     * Change sender settings
+     * @TODO
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */

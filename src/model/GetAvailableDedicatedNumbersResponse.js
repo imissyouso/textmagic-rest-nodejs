@@ -37,15 +37,15 @@
   /**
    * The GetAvailableDedicatedNumbersResponse model module.
    * @module model/GetAvailableDedicatedNumbersResponse
-   * @version 2.0.441
+   * @version 2.0.443
    */
 
   /**
    * Constructs a new <code>GetAvailableDedicatedNumbersResponse</code>.
    * @alias module:model/GetAvailableDedicatedNumbersResponse
    * @class
-   * @param numbers {Array.<String>} 
-   * @param price {Number} 
+   * @param numbers {Array.<String>} Array of phone number strings.
+   * @param price {Number} Dedicated number monthly fee for this country. Returned in current [account](/docs/api/account/) currency.@TODO
    */
   var exports = function(numbers, price) {
     var _this = this;
@@ -76,10 +76,12 @@
   }
 
   /**
+   * Array of phone number strings.
    * @member {Array.<String>} numbers
    */
   exports.prototype['numbers'] = undefined;
   /**
+   * Dedicated number monthly fee for this country. Returned in current [account](/docs/api/account/) currency.@TODO
    * @member {Number} price
    */
   exports.prototype['price'] = undefined;

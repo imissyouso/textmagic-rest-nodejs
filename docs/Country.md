@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | 
-**name** | **String** |  | 
+**id** | **String** | Two-letter ISO country ID. | 
+**name** | **String** | Full country name. | 
 
 

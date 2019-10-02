@@ -37,15 +37,15 @@
   /**
    * The RequestSenderIdInputObject model module.
    * @module model/RequestSenderIdInputObject
-   * @version 2.0.441
+   * @version 2.0.443
    */
 
   /**
    * Constructs a new <code>RequestSenderIdInputObject</code>.
    * @alias module:model/RequestSenderIdInputObject
    * @class
-   * @param senderId {String} Alphanumeric Sender ID (maximum 11 characters)
-   * @param explanation {String} Explain why do you need this Sender ID
+   * @param senderId {String} Sender ID that you are applying for. *   11 characters maximum *   Only Latin based characters and digits are allowed *   Should contain at least one letter 
+   * @param explanation {String} Explanation why do you need this Sender ID.
    */
   var exports = function(senderId, explanation) {
     var _this = this;
@@ -76,12 +76,12 @@
   }
 
   /**
-   * Alphanumeric Sender ID (maximum 11 characters)
+   * Sender ID that you are applying for. *   11 characters maximum *   Only Latin based characters and digits are allowed *   Should contain at least one letter 
    * @member {String} senderId
    */
   exports.prototype['senderId'] = undefined;
   /**
-   * Explain why do you need this Sender ID
+   * Explanation why do you need this Sender ID.
    * @member {String} explanation
    */
   exports.prototype['explanation'] = undefined;

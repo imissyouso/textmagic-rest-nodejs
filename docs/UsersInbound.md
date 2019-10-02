@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | 
+**id** | **Number** | Dedicated number ID. | 
+**phone** | **String** | Dedicated phone number. | [optional] 
 **user** | [**User**](User.md) |  | 
-**purchasedAt** | **Date** |  | 
-**expireAt** | **Date** |  | 
-**status** | **String** | A - active, in use (at least one message was sent/received from/to this number), U - never used before | 
+**purchasedAt** | **Date** | Time when the dedicated number was purchased. | 
+**expireAt** | **Date** | Dedicated number subscription expiration time. | 
+**status** | **String** | Number status: *   **U** for Unused. No messages have been sent from (or received to) this number. *   **A** for Active.  | 
 **country** | [**Country**](Country.md) |  | 
-**phone** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>

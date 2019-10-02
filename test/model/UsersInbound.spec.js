@@ -63,6 +63,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property phone (base name: "phone")', function() {
+      // uncomment below and update the code to test the property phone
+      //var instance = new TextmagicClient.UsersInbound();
+      //expect(instance).to.be();
+    });
+
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
       //var instance = new TextmagicClient.UsersInbound();
@@ -89,12 +95,6 @@
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.UsersInbound();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property phone (base name: "phone")', function() {
-      // uncomment below and update the code to test the property phone
       //var instance = new TextmagicClient.UsersInbound();
       //expect(instance).to.be();
     });

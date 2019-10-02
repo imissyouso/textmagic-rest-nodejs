@@ -37,16 +37,16 @@
   /**
    * The BuyDedicatedNumberInputObject model module.
    * @module model/BuyDedicatedNumberInputObject
-   * @version 2.0.441
+   * @version 2.0.443
    */
 
   /**
    * Constructs a new <code>BuyDedicatedNumberInputObject</code>.
    * @alias module:model/BuyDedicatedNumberInputObject
    * @class
-   * @param phone {String} Desired dedicated phone number in international E.164 format
-   * @param country {String} Dedicated number country. Two charactes in upper case.
-   * @param userId {Number} User ID this number will be assigned to
+   * @param phone {String} Dedicated phone number.
+   * @param country {String} Country code phone number.
+   * @param userId {Number} Assigned dedicated number. This number will be available for this account only. You cannot transfer numbers between sub-accounts. 
    */
   var exports = function(phone, country, userId) {
     var _this = this;
@@ -81,17 +81,17 @@
   }
 
   /**
-   * Desired dedicated phone number in international E.164 format
+   * Dedicated phone number.
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
   /**
-   * Dedicated number country. Two charactes in upper case.
+   * Country code phone number.
    * @member {String} country
    */
   exports.prototype['country'] = undefined;
   /**
-   * User ID this number will be assigned to
+   * Assigned dedicated number. This number will be available for this account only. You cannot transfer numbers between sub-accounts. 
    * @member {Number} userId
    */
   exports.prototype['userId'] = undefined;
