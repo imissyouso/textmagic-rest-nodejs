@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**clearAndAssignContactsToList**](TextMagicApi.md#clearAndAssignContactsToList) | **POST** /api/v2/lists/{id}/contacts | Reset list members to the specified contacts.
 [**closeChatsBulk**](TextMagicApi.md#closeChatsBulk) | **POST** /api/v2/chats/close/bulk | Close chats (bulk)
 [**closeReadChats**](TextMagicApi.md#closeReadChats) | **POST** /api/v2/chats/close/read | Close read chats
-[**closeSubaccount**](TextMagicApi.md#closeSubaccount) | **DELETE** /api/v2/subaccounts/{id} | Close subaccount.
+[**closeSubaccount**](TextMagicApi.md#closeSubaccount) | **DELETE** /api/v2/subaccounts/{id} | Close sub-account
 [**createContact**](TextMagicApi.md#createContact) | **POST** /api/v2/contacts | Create a new contact from the submitted data.
 [**createContactNote**](TextMagicApi.md#createContactNote) | **POST** /api/v2/contacts/{id}/notes | Create a new contact note.
 [**createCustomField**](TextMagicApi.md#createCustomField) | **POST** /api/v2/customfields | Create a new custom field from the submitted data.
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 [**createTemplate**](TextMagicApi.md#createTemplate) | **POST** /api/v2/templates | Create a template
 [**deleteAllContacts**](TextMagicApi.md#deleteAllContacts) | **DELETE** /api/v2/contact/all | Delete all contacts.
 [**deleteAllOutboundMessages**](TextMagicApi.md#deleteAllOutboundMessages) | **DELETE** /api/v2/message/all | Delete all messages
-[**deleteAvatar**](TextMagicApi.md#deleteAvatar) | **DELETE** /api/v2/user/avatar | Delete an avatar for the current user.\\
+[**deleteAvatar**](TextMagicApi.md#deleteAvatar) | **DELETE** /api/v2/user/avatar | Delete an avatar
 [**deleteChatMessages**](TextMagicApi.md#deleteChatMessages) | **POST** /api/v2/chats/{id}/messages/delete | Delete chat messages by ID(s)
 [**deleteChatsBulk**](TextMagicApi.md#deleteChatsBulk) | **POST** /api/v2/chats/delete | Delete chats (bulk)
 [**deleteContact**](TextMagicApi.md#deleteContact) | **DELETE** /api/v2/contacts/{id} | Delete a single contact.
@@ -86,15 +86,15 @@ Method | HTTP request | Description
 [**getContactsAutocomplete**](TextMagicApi.md#getContactsAutocomplete) | **GET** /api/v2/contacts/autocomplete | Get contacts autocomplete suggestions by given search term.
 [**getContactsByListId**](TextMagicApi.md#getContactsByListId) | **GET** /api/v2/lists/{id}/contacts | Fetch user contacts by given group id.
 [**getCountries**](TextMagicApi.md#getCountries) | **GET** /api/v2/countries | Return list of countries.
-[**getCurrentUser**](TextMagicApi.md#getCurrentUser) | **GET** /api/v2/user | Get current user info.
+[**getCurrentUser**](TextMagicApi.md#getCurrentUser) | **GET** /api/v2/user | Get current account information
 [**getCustomField**](TextMagicApi.md#getCustomField) | **GET** /api/v2/customfields/{id} | Get a single custom field.
 [**getCustomFields**](TextMagicApi.md#getCustomFields) | **GET** /api/v2/customfields | Get all contact custom fields.
 [**getDedicatedNumber**](TextMagicApi.md#getDedicatedNumber) | **GET** /api/v2/numbers/{id} | Get the details of a specific dedicated number
-[**getDisallowedRules**](TextMagicApi.md#getDisallowedRules) | **GET** /api/v2/user/disallowed-rules | Get an array of all rules that are disallowed to the current account.
+[**getDisallowedRules**](TextMagicApi.md#getDisallowedRules) | **GET** /api/v2/user/disallowed-rules | Get disallowed permissions
 [**getFavourites**](TextMagicApi.md#getFavourites) | **GET** /api/v2/contacts/favorite | Get favorite contacts and lists.
 [**getInboundMessage**](TextMagicApi.md#getInboundMessage) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**getInboundMessagesNotificationSettings**](TextMagicApi.md#getInboundMessagesNotificationSettings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
-[**getInvoices**](TextMagicApi.md#getInvoices) | **GET** /api/v2/invoices | Return account invoices.
+[**getInvoices**](TextMagicApi.md#getInvoices) | **GET** /api/v2/invoices | Get all invoices
 [**getList**](TextMagicApi.md#getList) | **GET** /api/v2/lists/{id} | Get a single list.
 [**getListContactsIds**](TextMagicApi.md#getListContactsIds) | **GET** /api/v2/lists/{id}/contacts/ids | Fetch all contacts IDs belonging to the list with ID.
 [**getListsOfContact**](TextMagicApi.md#getListsOfContact) | **GET** /api/v2/contacts/{id}/lists | Return lists which contact belongs to.
@@ -104,8 +104,8 @@ Method | HTTP request | Description
 [**getMessageSession**](TextMagicApi.md#getMessageSession) | **GET** /api/v2/sessions/{id} | Get a session details
 [**getMessageSessionStat**](TextMagicApi.md#getMessageSessionStat) | **GET** /api/v2/sessions/{id}/stat | Get a session statistics
 [**getMessagesBySessionId**](TextMagicApi.md#getMessagesBySessionId) | **GET** /api/v2/sessions/{id}/messages | Get a session messages
-[**getMessagingCounters**](TextMagicApi.md#getMessagingCounters) | **GET** /api/v2/stats/messaging/data | Return counters for messaging data views.
-[**getMessagingStat**](TextMagicApi.md#getMessagingStat) | **GET** /api/v2/stats/messaging | Return messaging statistics.
+[**getMessagingCounters**](TextMagicApi.md#getMessagingCounters) | **GET** /api/v2/stats/messaging/data | Get sent/received messages counters values
+[**getMessagingStat**](TextMagicApi.md#getMessagingStat) | **GET** /api/v2/stats/messaging | Get messaging statistics
 [**getOutboundMessage**](TextMagicApi.md#getOutboundMessage) | **GET** /api/v2/messages/{id} | Get a single message
 [**getOutboundMessagesHistory**](TextMagicApi.md#getOutboundMessagesHistory) | **GET** /api/v2/history | Get history
 [**getPushTokens**](TextMagicApi.md#getPushTokens) | **GET** /api/v2/push/tokens | Get all device tokens assigned to the current account
@@ -113,11 +113,11 @@ Method | HTTP request | Description
 [**getSenderId**](TextMagicApi.md#getSenderId) | **GET** /api/v2/senderids/{id} | Get the details of a specific Sender ID
 [**getSenderIds**](TextMagicApi.md#getSenderIds) | **GET** /api/v2/senderids | Get all your approved Sender IDs
 [**getSenderSettings**](TextMagicApi.md#getSenderSettings) | **GET** /api/v2/sender/settings | Get current sender settings
-[**getSpendingStat**](TextMagicApi.md#getSpendingStat) | **GET** /api/v2/stats/spending | Return account spending statistics.
+[**getSpendingStat**](TextMagicApi.md#getSpendingStat) | **GET** /api/v2/stats/spending | Get spending statistics
 [**getState**](TextMagicApi.md#getState) | **GET** /api/v2/state | Get current entities state
-[**getSubaccount**](TextMagicApi.md#getSubaccount) | **GET** /api/v2/subaccounts/{id} | Get a single subaccount.
-[**getSubaccounts**](TextMagicApi.md#getSubaccounts) | **GET** /api/v2/subaccounts | Get all subaccounts of current user.
-[**getSubaccountsWithTokens**](TextMagicApi.md#getSubaccountsWithTokens) | **POST** /api/v2/subaccounts/tokens/list | Get all subaccounts with their REST API tokens associated with specified app name.
+[**getSubaccount**](TextMagicApi.md#getSubaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
+[**getSubaccounts**](TextMagicApi.md#getSubaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
+[**getSubaccountsWithTokens**](TextMagicApi.md#getSubaccountsWithTokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
 [**getSurvey**](TextMagicApi.md#getSurvey) | **GET** /api/v2/surveys/{id} | Get a survey by id.
 [**getSurveyNode**](TextMagicApi.md#getSurveyNode) | **GET** /api/v2/surveys/nodes/{id} | Get a node by id.
 [**getSurveyNodes**](TextMagicApi.md#getSurveyNodes) | **GET** /api/v2/surveys/{id}/nodes | Fetch nodes by given survey id.
@@ -130,7 +130,7 @@ Method | HTTP request | Description
 [**getUserDedicatedNumbers**](TextMagicApi.md#getUserDedicatedNumbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
 [**getUserLists**](TextMagicApi.md#getUserLists) | **GET** /api/v2/lists | Get all user lists.
 [**getVersions**](TextMagicApi.md#getVersions) | **GET** /api/v2/versions | Get minimal valid apps versions
-[**inviteSubaccount**](TextMagicApi.md#inviteSubaccount) | **POST** /api/v2/subaccounts | Invite new subaccount.
+[**inviteSubaccount**](TextMagicApi.md#inviteSubaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**markChatsReadBulk**](TextMagicApi.md#markChatsReadBulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
 [**markChatsUnreadBulk**](TextMagicApi.md#markChatsUnreadBulk) | **POST** /api/v2/chats/unread/bulk | Mark chats as unread (bulk)
 [**mergeSurveyNodes**](TextMagicApi.md#mergeSurveyNodes) | **POST** /api/v2/surveys/nodes/merge | Merge two question nodes.
@@ -138,7 +138,7 @@ Method | HTTP request | Description
 [**muteChatsBulk**](TextMagicApi.md#muteChatsBulk) | **POST** /api/v2/chats/mute/bulk | Mute chats (bulk)
 [**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Just does a pong.
 [**reopenChatsBulk**](TextMagicApi.md#reopenChatsBulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
-[**requestNewSubaccountToken**](TextMagicApi.md#requestNewSubaccountToken) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for subaccount.
+[**requestNewSubaccountToken**](TextMagicApi.md#requestNewSubaccountToken) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for sub-account
 [**requestSenderId**](TextMagicApi.md#requestSenderId) | **POST** /api/v2/senderids | Apply for a new Sender ID
 [**resetSurvey**](TextMagicApi.md#resetSurvey) | **PUT** /api/v2/surveys/{id}/reset | Reset a survey flow.
 [**searchChats**](TextMagicApi.md#searchChats) | **GET** /api/v2/chats/search | Find chats by message text
@@ -165,7 +165,7 @@ Method | HTTP request | Description
 [**updateChatDesktopNotificationSettings**](TextMagicApi.md#updateChatDesktopNotificationSettings) | **PUT** /api/v2/user/desktop/notification | Update chat desktop notification settings
 [**updateContact**](TextMagicApi.md#updateContact) | **PUT** /api/v2/contacts/{id} | Update existing contact.
 [**updateContactNote**](TextMagicApi.md#updateContactNote) | **PUT** /api/v2/notes/{id} | Update existing contact note.
-[**updateCurrentUser**](TextMagicApi.md#updateCurrentUser) | **PUT** /api/v2/user | Update current user info.
+[**updateCurrentUser**](TextMagicApi.md#updateCurrentUser) | **PUT** /api/v2/user | Edit current account info
 [**updateCustomField**](TextMagicApi.md#updateCustomField) | **PUT** /api/v2/customfields/{id} | Update existing custom field.
 [**updateCustomFieldValue**](TextMagicApi.md#updateCustomFieldValue) | **PUT** /api/v2/customfields/{id}/update | Update contact&#39;s custom field value.
 [**updateInboundMessagesNotificationSettings**](TextMagicApi.md#updateInboundMessagesNotificationSettings) | **PUT** /api/v2/user/notification/inbound | Update inbound messages notification settings
@@ -175,7 +175,7 @@ Method | HTTP request | Description
 [**updateSurvey**](TextMagicApi.md#updateSurvey) | **PUT** /api/v2/surveys/{id} | Update existing survey.
 [**updateSurveyNode**](TextMagicApi.md#updateSurveyNode) | **PUT** /api/v2/surveys/nodes/{id} | Update existing node.
 [**updateTemplate**](TextMagicApi.md#updateTemplate) | **PUT** /api/v2/templates/{id} | Update a template
-[**uploadAvatar**](TextMagicApi.md#uploadAvatar) | **POST** /api/v2/user/avatar | Add an avatar for the current user.
+[**uploadAvatar**](TextMagicApi.md#uploadAvatar) | **POST** /api/v2/user/avatar | Upload an avatar
 [**uploadContactAvatar**](TextMagicApi.md#uploadContactAvatar) | **POST** /api/v2/contacts/{id}/avatar | Add an avatar for the contact.
 [**uploadListAvatar**](TextMagicApi.md#uploadListAvatar) | **POST** /api/v2/lists/{id}/avatar | Add an avatar for the list.
 [**uploadMessageAttachment**](TextMagicApi.md#uploadMessageAttachment) | **POST** /api/v2/messages/attachment | Upload message attachment
@@ -675,7 +675,7 @@ null (empty response body)
 # **closeSubaccount**
 > closeSubaccount(id)
 
-Close subaccount.
+Close sub-account
 
 
 
@@ -1208,7 +1208,7 @@ null (empty response body)
 # **deleteAvatar**
 > deleteAvatar()
 
-Delete an avatar for the current user.\\
+Delete an avatar
 
 
 
@@ -4284,7 +4284,7 @@ This endpoint does not need any parameter.
 # **getCurrentUser**
 > User getCurrentUser()
 
-Get current user info.
+Get current account information
 
 
 
@@ -4477,9 +4477,9 @@ Name | Type | Description  | Notes
 # **getDisallowedRules**
 > GetDisallowedRulesResponse getDisallowedRules()
 
+Get disallowed permissions
+
 Get an array of all rules that are disallowed to the current account.
-
-
 
 ### Example
 ```javascript
@@ -4666,9 +4666,9 @@ This endpoint does not need any parameter.
 # **getInvoices**
 > GetInvoicesPaginatedResponse getInvoices(opts)
 
-Return account invoices.
+Get all invoices
 
-
+With the TextMagic API, you can check the invoices and transactions for your account.
 
 ### Example
 ```javascript
@@ -5241,9 +5241,9 @@ Name | Type | Description  | Notes
 # **getMessagingCounters**
 > GetMessagingCountersResponse getMessagingCounters()
 
-Return counters for messaging data views.
+Get sent/received messages counters values
 
-
+Get total contacts, sent messages and received messages counters values.
 
 ### Example
 ```javascript
@@ -5284,7 +5284,7 @@ This endpoint does not need any parameter.
 # **getMessagingStat**
 > GetMessagingStatResponse getMessagingStat(opts)
 
-Return messaging statistics.
+Get messaging statistics
 
 
 
@@ -5301,9 +5301,9 @@ BasicAuth.password = 'YOUR PASSWORD';
 var apiInstance = new TextmagicClient.TextMagicApi();
 
 var opts = { 
-  'by': "off", // String | Group results by specified period: off, day, month or year. Default is off
-  'start': 56, // Number | Start date in unix timestamp format. Default is 7 days ago
-  'end': "end_example" // String | End date in unix timestamp format. Default is now
+  'by': "off", // String | *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year 
+  'start': 1430438400, // Number | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+  'end': "1431648000" // String | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
 };
 apiInstance.getMessagingStat(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -5317,9 +5317,9 @@ apiInstance.getMessagingStat(opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **by** | **String**| Group results by specified period: off, day, month or year. Default is off | [optional] [default to off]
- **start** | **Number**| Start date in unix timestamp format. Default is 7 days ago | [optional] 
- **end** | **String**| End date in unix timestamp format. Default is now | [optional] 
+ **by** | **String**| *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  | [optional] [default to off]
+ **start** | **Number**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
+ **end** | **String**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
 
@@ -5688,7 +5688,7 @@ Name | Type | Description  | Notes
 # **getSpendingStat**
 > GetSpendingStatPaginatedResponse getSpendingStat(opts)
 
-Return account spending statistics.
+Get spending statistics
 
 
 
@@ -5707,8 +5707,8 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 var opts = { 
   'page': 1, // Number | Fetch specified results page.
   'limit': 10, // Number | The number of results per page.
-  'start': 56, // Number | Optional. Start date in unix timestamp format. Default is 7 days ago
-  'end': 56 // Number | Optional. End date in unix timestamp format. Default is now
+  'start': 1430438400, // Number | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+  'end': "1431648000" // String | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
 };
 apiInstance.getSpendingStat(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -5724,8 +5724,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Number**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Number**| The number of results per page. | [optional] [default to 10]
- **start** | **Number**| Optional. Start date in unix timestamp format. Default is 7 days ago | [optional] 
- **end** | **Number**| Optional. End date in unix timestamp format. Default is now | [optional] 
+ **start** | **Number**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
+ **end** | **String**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
 
@@ -5787,7 +5787,7 @@ This endpoint does not need any parameter.
 # **getSubaccount**
 > User getSubaccount(id)
 
-Get a single subaccount.
+Get sub-account information
 
 
 
@@ -5836,7 +5836,7 @@ Name | Type | Description  | Notes
 # **getSubaccounts**
 > User getSubaccounts(opts)
 
-Get all subaccounts of current user.
+Get sub-accounts list
 
 
 
@@ -5888,9 +5888,9 @@ Name | Type | Description  | Notes
 # **getSubaccountsWithTokens**
 > GetSubaccountsWithTokensResponse getSubaccountsWithTokens(getSubaccountsWithTokensInputObject, opts)
 
-Get all subaccounts with their REST API tokens associated with specified app name.
+Get all sub-accounts with their REST API tokens associated with app name
 
-When more than one token related to app name, last key will be returned.
+Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
 
 ### Example
 ```javascript
@@ -6542,7 +6542,7 @@ This endpoint does not need any parameter.
 # **inviteSubaccount**
 > inviteSubaccount(inviteSubaccountInputObject)
 
-Invite new subaccount.
+Invite a new sub-account
 
 
 
@@ -6928,7 +6928,7 @@ null (empty response body)
 # **requestNewSubaccountToken**
 > User requestNewSubaccountToken(requestNewSubaccountTokenInputObject)
 
-Request a new REST API token for subaccount.
+Request a new REST API token for sub-account
 
 Returning user object, key and app name.
 
@@ -8348,7 +8348,7 @@ Name | Type | Description  | Notes
 # **updateCurrentUser**
 > UpdateCurrentUserResponse updateCurrentUser(updateCurrentUserInputObject)
 
-Update current user info.
+Edit current account info
 
 
 
@@ -8857,7 +8857,7 @@ Name | Type | Description  | Notes
 # **uploadAvatar**
 > uploadAvatar(image)
 
-Add an avatar for the current user.
+Upload an avatar
 
 
 

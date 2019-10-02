@@ -37,7 +37,7 @@
   /**
    * The UserStatement model module.
    * @module model/UserStatement
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
@@ -45,13 +45,13 @@
    * @alias module:model/UserStatement
    * @class
    * @param id {Number} 
-   * @param userId {Number} 
-   * @param _date {Date} 
+   * @param userId {Number} User statement ID.
+   * @param _date {Date} User statement date.
    * @param balance {Number} 
-   * @param delta {Number} 
-   * @param type {String} 
-   * @param value {String} 
-   * @param comment {String} 
+   * @param delta {Number} Balance change amount.
+   * @param type {String} Type of statement (what you have been charged for): *   **sms** for sending SMS *   **number** for renewing a dedicated number *   **schedule** for scheduling text messages *   **topup** for adding credits to your account 
+   * @param value {String} Value differs by **type**: *   for **sms**, it is the sent messages amount *   for **number**, it is a dedicated phone number *   for **schedule**, it is a scheduled messages amount *   for **top-up**, it is an invoice ID 
+   * @param comment {String} Optional comment.
    */
   var exports = function(id, userId, _date, balance, delta, type, value, comment) {
     var _this = this;
@@ -110,10 +110,12 @@
    */
   exports.prototype['id'] = undefined;
   /**
+   * User statement ID.
    * @member {Number} userId
    */
   exports.prototype['userId'] = undefined;
   /**
+   * User statement date.
    * @member {Date} date
    */
   exports.prototype['date'] = undefined;
@@ -122,18 +124,22 @@
    */
   exports.prototype['balance'] = undefined;
   /**
+   * Balance change amount.
    * @member {Number} delta
    */
   exports.prototype['delta'] = undefined;
   /**
+   * Type of statement (what you have been charged for): *   **sms** for sending SMS *   **number** for renewing a dedicated number *   **schedule** for scheduling text messages *   **topup** for adding credits to your account 
    * @member {String} type
    */
   exports.prototype['type'] = undefined;
   /**
+   * Value differs by **type**: *   for **sms**, it is the sent messages amount *   for **number**, it is a dedicated phone number *   for **schedule**, it is a scheduled messages amount *   for **top-up**, it is an invoice ID 
    * @member {String} value
    */
   exports.prototype['value'] = undefined;
   /**
+   * Optional comment.
    * @member {String} comment
    */
   exports.prototype['comment'] = undefined;

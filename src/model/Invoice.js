@@ -37,18 +37,18 @@
   /**
    * The Invoice model module.
    * @module model/Invoice
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
    * Constructs a new <code>Invoice</code>.
    * @alias module:model/Invoice
    * @class
-   * @param id {Number} 
-   * @param bundle {Number} 
-   * @param currency {String} 
-   * @param vat {Number} 
-   * @param paymentMethod {String} 
+   * @param id {Number} The invoice ID.
+   * @param bundle {Number} Top up amount.
+   * @param currency {String} Top up currency.
+   * @param vat {Number} VAT charged (if any).
+   * @param paymentMethod {String} Payment method description.
    */
   var exports = function(id, bundle, currency, vat, paymentMethod) {
     var _this = this;
@@ -91,22 +91,27 @@
   }
 
   /**
+   * The invoice ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Top up amount.
    * @member {Number} bundle
    */
   exports.prototype['bundle'] = undefined;
   /**
+   * Top up currency.
    * @member {String} currency
    */
   exports.prototype['currency'] = undefined;
   /**
+   * VAT charged (if any).
    * @member {Number} vat
    */
   exports.prototype['vat'] = undefined;
   /**
+   * Payment method description.
    * @member {String} paymentMethod
    */
   exports.prototype['paymentMethod'] = undefined;

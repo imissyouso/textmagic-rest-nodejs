@@ -37,7 +37,7 @@
   /**
    * The UpdateCurrentUserInputObject model module.
    * @module model/UpdateCurrentUserInputObject
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
@@ -98,10 +98,12 @@
    */
   exports.prototype['username'] = undefined;
   /**
+   * Account first name.
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Account last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;
@@ -114,11 +116,12 @@
    */
   exports.prototype['phone'] = undefined;
   /**
+   * Account company name.
    * @member {String} company
    */
   exports.prototype['company'] = undefined;
   /**
-   * timezone id
+   * The timezome internal id
    * @member {Number} timezone
    */
   exports.prototype['timezone'] = undefined;

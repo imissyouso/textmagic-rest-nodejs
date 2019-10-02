@@ -37,26 +37,26 @@
   /**
    * The User model module.
    * @module model/User
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
    * Constructs a new <code>User</code>.
    * @alias module:model/User
    * @class
-   * @param id {Number} 
-   * @param username {String} 
-   * @param firstName {String} 
-   * @param lastName {String} 
-   * @param email {String} 
-   * @param status {String} 
-   * @param balance {Number} 
+   * @param id {Number} User ID.
+   * @param username {String} Username.
+   * @param firstName {String} Account first name.
+   * @param lastName {String} Account last name.
+   * @param email {String} User email address.
+   * @param status {module:model/User.StatusEnum} Current account status: * **A** for Active * **T** for Trial. 
+   * @param balance {Number} Account balance (in account currency).
    * @param phone {String} 
-   * @param company {String} 
+   * @param company {String} Account company name.
    * @param currency {module:model/Currency} 
    * @param country {module:model/Country} 
    * @param timezone {module:model/Timezone} 
-   * @param subaccountType {String} 
+   * @param subaccountType {module:model/User.SubaccountTypeEnum} Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User 
    * @param emailAccepted {Boolean} 
    * @param phoneAccepted {Boolean} 
    * @param avatar {module:model/UserImage} 
@@ -146,30 +146,37 @@
   }
 
   /**
+   * User ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Username.
    * @member {String} username
    */
   exports.prototype['username'] = undefined;
   /**
+   * Account first name.
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Account last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;
   /**
+   * User email address.
    * @member {String} email
    */
   exports.prototype['email'] = undefined;
   /**
-   * @member {String} status
+   * Current account status: * **A** for Active * **T** for Trial. 
+   * @member {module:model/User.StatusEnum} status
    */
   exports.prototype['status'] = undefined;
   /**
+   * Account balance (in account currency).
    * @member {Number} balance
    */
   exports.prototype['balance'] = undefined;
@@ -178,6 +185,7 @@
    */
   exports.prototype['phone'] = undefined;
   /**
+   * Account company name.
    * @member {String} company
    */
   exports.prototype['company'] = undefined;
@@ -194,7 +202,8 @@
    */
   exports.prototype['timezone'] = undefined;
   /**
-   * @member {String} subaccountType
+   * Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User 
+   * @member {module:model/User.SubaccountTypeEnum} subaccountType
    */
   exports.prototype['subaccountType'] = undefined;
   /**
@@ -210,6 +219,45 @@
    */
   exports.prototype['avatar'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>status</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.StatusEnum = {
+    /**
+     * value: "A"
+     * @const
+     */
+    "A": "A",
+    /**
+     * value: "T"
+     * @const
+     */
+    "T": "T"  };
+
+  /**
+   * Allowed values for the <code>subaccountType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.SubaccountTypeEnum = {
+    /**
+     * value: "P"
+     * @const
+     */
+    "P": "P",
+    /**
+     * value: "A"
+     * @const
+     */
+    "A": "A",
+    /**
+     * value: "U"
+     * @const
+     */
+    "U": "U"  };
 
 
   return exports;

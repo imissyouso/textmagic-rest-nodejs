@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
@@ -581,7 +581,7 @@
 
 
     /**
-     * Close subaccount.
+     * Close sub-account
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -620,7 +620,7 @@
     }
 
     /**
-     * Close subaccount.
+     * Close sub-account
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1156,7 +1156,7 @@
 
 
     /**
-     * Delete an avatar for the current user.\\
+     * Delete an avatar
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1188,7 +1188,7 @@
     }
 
     /**
-     * Delete an avatar for the current user.\\
+     * Delete an avatar
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -4504,7 +4504,7 @@
 
 
     /**
-     * Get current user info.
+     * Get current account information
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
      */
@@ -4536,7 +4536,7 @@
     }
 
     /**
-     * Get current user info.
+     * Get current account information
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
      */
@@ -4709,8 +4709,8 @@
 
 
     /**
+     * Get disallowed permissions
      * Get an array of all rules that are disallowed to the current account.
-     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetDisallowedRulesResponse} and HTTP response
      */
     this.getDisallowedRulesWithHttpInfo = function() {
@@ -4741,8 +4741,8 @@
     }
 
     /**
+     * Get disallowed permissions
      * Get an array of all rules that are disallowed to the current account.
-     * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetDisallowedRulesResponse}
      */
     this.getDisallowedRules = function() {
@@ -4909,8 +4909,8 @@
 
 
     /**
-     * Return account invoices.
-     * 
+     * Get all invoices
+     * With the TextMagic API, you can check the invoices and transactions for your account.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -4947,8 +4947,8 @@
     }
 
     /**
-     * Return account invoices.
-     * 
+     * Get all invoices
+     * With the TextMagic API, you can check the invoices and transactions for your account.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -5557,8 +5557,8 @@
 
 
     /**
-     * Return counters for messaging data views.
-     * 
+     * Get sent/received messages counters values
+     * Get total contacts, sent messages and received messages counters values.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetMessagingCountersResponse} and HTTP response
      */
     this.getMessagingCountersWithHttpInfo = function() {
@@ -5589,8 +5589,8 @@
     }
 
     /**
-     * Return counters for messaging data views.
-     * 
+     * Get sent/received messages counters values
+     * Get total contacts, sent messages and received messages counters values.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetMessagingCountersResponse}
      */
     this.getMessagingCounters = function() {
@@ -5602,12 +5602,12 @@
 
 
     /**
-     * Return messaging statistics.
+     * Get messaging statistics
      * 
      * @param {Object} opts Optional parameters
-     * @param {module:model/String} opts.by Group results by specified period: off, day, month or year. Default is off (default to off)
-     * @param {Number} opts.start Start date in unix timestamp format. Default is 7 days ago
-     * @param {String} opts.end End date in unix timestamp format. Default is now
+     * @param {module:model/String} opts.by *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (default to off)
+     * @param {Number} opts.start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+     * @param {String} opts.end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetMessagingStatResponse} and HTTP response
      */
     this.getMessagingStatWithHttpInfo = function(opts) {
@@ -5642,12 +5642,12 @@
     }
 
     /**
-     * Return messaging statistics.
+     * Get messaging statistics
      * 
      * @param {Object} opts Optional parameters
-     * @param {module:model/String} opts.by Group results by specified period: off, day, month or year. Default is off (default to off)
-     * @param {Number} opts.start Start date in unix timestamp format. Default is 7 days ago
-     * @param {String} opts.end End date in unix timestamp format. Default is now
+     * @param {module:model/String} opts.by *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  (default to off)
+     * @param {Number} opts.start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+     * @param {String} opts.end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetMessagingStatResponse}
      */
     this.getMessagingStat = function(opts) {
@@ -6031,13 +6031,13 @@
 
 
     /**
-     * Return account spending statistics.
+     * Get spending statistics
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
-     * @param {Number} opts.start Optional. Start date in unix timestamp format. Default is 7 days ago
-     * @param {Number} opts.end Optional. End date in unix timestamp format. Default is now
+     * @param {Number} opts.start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+     * @param {String} opts.end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSpendingStatPaginatedResponse} and HTTP response
      */
     this.getSpendingStatWithHttpInfo = function(opts) {
@@ -6073,13 +6073,13 @@
     }
 
     /**
-     * Return account spending statistics.
+     * Get spending statistics
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
-     * @param {Number} opts.start Optional. Start date in unix timestamp format. Default is 7 days ago
-     * @param {Number} opts.end Optional. End date in unix timestamp format. Default is now
+     * @param {Number} opts.start Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+     * @param {String} opts.end Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSpendingStatPaginatedResponse}
      */
     this.getSpendingStat = function(opts) {
@@ -6136,7 +6136,7 @@
 
 
     /**
-     * Get a single subaccount.
+     * Get sub-account information
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
@@ -6175,7 +6175,7 @@
     }
 
     /**
-     * Get a single subaccount.
+     * Get sub-account information
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
@@ -6189,7 +6189,7 @@
 
 
     /**
-     * Get all subaccounts of current user.
+     * Get sub-accounts list
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -6227,7 +6227,7 @@
     }
 
     /**
-     * Get all subaccounts of current user.
+     * Get sub-accounts list
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -6243,8 +6243,8 @@
 
 
     /**
-     * Get all subaccounts with their REST API tokens associated with specified app name.
-     * When more than one token related to app name, last key will be returned.
+     * Get all sub-accounts with their REST API tokens associated with app name
+     * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param {module:model/GetSubaccountsWithTokensInputObject} getSubaccountsWithTokensInputObject 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -6287,8 +6287,8 @@
     }
 
     /**
-     * Get all subaccounts with their REST API tokens associated with specified app name.
-     * When more than one token related to app name, last key will be returned.
+     * Get all sub-accounts with their REST API tokens associated with app name
+     * Get all sub-accounts with their REST API tokens associated with specified app name. When more than one token related to app name, last key will be returned.
      * @param {module:model/GetSubaccountsWithTokensInputObject} getSubaccountsWithTokensInputObject 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -6941,7 +6941,7 @@
 
 
     /**
-     * Invite new subaccount.
+     * Invite a new sub-account
      * 
      * @param {module:model/InviteSubaccountInputObject} inviteSubaccountInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -6979,7 +6979,7 @@
     }
 
     /**
-     * Invite new subaccount.
+     * Invite a new sub-account
      * 
      * @param {module:model/InviteSubaccountInputObject} inviteSubaccountInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -7350,7 +7350,7 @@
 
 
     /**
-     * Request a new REST API token for subaccount.
+     * Request a new REST API token for sub-account
      * Returning user object, key and app name.
      * @param {module:model/RequestNewSubaccountTokenInputObject} requestNewSubaccountTokenInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/User} and HTTP response
@@ -7388,7 +7388,7 @@
     }
 
     /**
-     * Request a new REST API token for subaccount.
+     * Request a new REST API token for sub-account
      * Returning user object, key and app name.
      * @param {module:model/RequestNewSubaccountTokenInputObject} requestNewSubaccountTokenInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/User}
@@ -8890,7 +8890,7 @@
 
 
     /**
-     * Update current user info.
+     * Edit current account info
      * 
      * @param {module:model/UpdateCurrentUserInputObject} updateCurrentUserInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UpdateCurrentUserResponse} and HTTP response
@@ -8928,7 +8928,7 @@
     }
 
     /**
-     * Update current user info.
+     * Edit current account info
      * 
      * @param {module:model/UpdateCurrentUserInputObject} updateCurrentUserInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UpdateCurrentUserResponse}
@@ -9456,7 +9456,7 @@
 
 
     /**
-     * Add an avatar for the current user.
+     * Upload an avatar
      * 
      * @param {File} image User avatar. Should be PNG or JPG file not more than 10 MB
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -9495,7 +9495,7 @@
     }
 
     /**
-     * Add an avatar for the current user.
+     * Upload an avatar
      * 
      * @param {File} image User avatar. Should be PNG or JPG file not more than 10 MB
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}

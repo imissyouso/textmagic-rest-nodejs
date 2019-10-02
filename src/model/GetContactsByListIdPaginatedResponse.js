@@ -37,7 +37,7 @@
   /**
    * The GetContactsByListIdPaginatedResponse model module.
    * @module model/GetContactsByListIdPaginatedResponse
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**

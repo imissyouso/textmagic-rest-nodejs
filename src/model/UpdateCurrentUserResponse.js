@@ -37,7 +37,7 @@
   /**
    * The UpdateCurrentUserResponse model module.
    * @module model/UpdateCurrentUserResponse
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
@@ -94,18 +94,22 @@
   }
 
   /**
+   * Username.
    * @member {String} username
    */
   exports.prototype['username'] = undefined;
   /**
+   * Account first name.
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Account last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;
   /**
+   * User email address.
    * @member {String} email
    */
   exports.prototype['email'] = undefined;
@@ -114,11 +118,12 @@
    */
   exports.prototype['phone'] = undefined;
   /**
+   * Account company name.
    * @member {String} company
    */
   exports.prototype['company'] = undefined;
   /**
-   * timezone id
+   * Internal timezone ID
    * @member {Number} timezone
    */
   exports.prototype['timezone'] = undefined;

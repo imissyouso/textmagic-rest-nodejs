@@ -4,11 +4,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **username** | **String** |  | [optional] 
-**firstName** | **String** |  | [optional] 
-**lastName** | **String** |  | [optional] 
+**firstName** | **String** | Account first name. | [optional] 
+**lastName** | **String** | Account last name. | [optional] 
 **email** | **String** |  | [optional] 
 **phone** | **String** |  | [optional] 
-**company** | **String** |  | [optional] 
-**timezone** | **Number** | timezone id | [optional] 
+**company** | **String** | Account company name. | [optional] 
+**timezone** | **Number** | The timezome internal id | [optional] 
 
 

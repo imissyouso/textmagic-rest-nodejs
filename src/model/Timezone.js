@@ -37,18 +37,18 @@
   /**
    * The Timezone model module.
    * @module model/Timezone
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
    * Constructs a new <code>Timezone</code>.
    * @alias module:model/Timezone
    * @class
-   * @param id {Number} 
-   * @param area {String} 
-   * @param dst {Number} 
+   * @param id {Number} Internal timezone ID.
+   * @param area {String} Timezone area.
+   * @param dst {Number} Is Daylight saving time used in this timezone?
    * @param offset {Number} 
-   * @param timezone {String} 
+   * @param timezone {String} User-friendly timezone name (with spaces replaced by underscores).
    */
   var exports = function(id, area, dst, offset, timezone) {
     var _this = this;
@@ -91,14 +91,17 @@
   }
 
   /**
+   * Internal timezone ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Timezone area.
    * @member {String} area
    */
   exports.prototype['area'] = undefined;
   /**
+   * Is Daylight saving time used in this timezone?
    * @member {Number} dst
    */
   exports.prototype['dst'] = undefined;
@@ -107,6 +110,7 @@
    */
   exports.prototype['offset'] = undefined;
   /**
+   * User-friendly timezone name (with spaces replaced by underscores).
    * @member {String} timezone
    */
   exports.prototype['timezone'] = undefined;

@@ -37,16 +37,16 @@
   /**
    * The GetMessagingCountersResponse model module.
    * @module model/GetMessagingCountersResponse
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
    * Constructs a new <code>GetMessagingCountersResponse</code>.
    * @alias module:model/GetMessagingCountersResponse
    * @class
-   * @param contacts {Number} 
-   * @param sent {Number} 
-   * @param received {Number} 
+   * @param contacts {Number} Total contacts amount.
+   * @param sent {Number} Total sent messages amount.
+   * @param received {Number} Total received messages amount.
    */
   var exports = function(contacts, sent, received) {
     var _this = this;
@@ -81,14 +81,17 @@
   }
 
   /**
+   * Total contacts amount.
    * @member {Number} contacts
    */
   exports.prototype['contacts'] = undefined;
   /**
+   * Total sent messages amount.
    * @member {Number} sent
    */
   exports.prototype['sent'] = undefined;
   /**
+   * Total received messages amount.
    * @member {Number} received
    */
   exports.prototype['received'] = undefined;

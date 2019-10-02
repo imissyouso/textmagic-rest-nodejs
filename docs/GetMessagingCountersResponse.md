@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contacts** | **Number** |  | 
-**sent** | **Number** |  | 
-**received** | **Number** |  | 
+**contacts** | **Number** | Total contacts amount. | 
+**sent** | **Number** | Total sent messages amount. | 
+**received** | **Number** | Total received messages amount. | 
 
 

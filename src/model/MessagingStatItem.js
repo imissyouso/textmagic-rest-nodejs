@@ -37,24 +37,24 @@
   /**
    * The MessagingStatItem model module.
    * @module model/MessagingStatItem
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
    * Constructs a new <code>MessagingStatItem</code>.
    * @alias module:model/MessagingStatItem
    * @class
-   * @param replyRate {Number} 
-   * @param _date {Date} 
-   * @param deliveryRate {Number} 
-   * @param costs {Number} 
-   * @param messagesReceived {Number} 
-   * @param messagesSentDelivered {Number} 
-   * @param messagesSentAccepted {Number} 
-   * @param messagesSentBuffered {Number} 
-   * @param messagesSentFailed {Number} 
-   * @param messagesSentRejected {Number} 
-   * @param messagesSentParts {Number} 
+   * @param replyRate {Number} the number of incoming messages divided by the number of total messages.
+   * @param _date {Date} Time interval start, empty if the **by** parameter was set to **off**. 
+   * @param deliveryRate {Number} Message delivery rate:the number of delivered messages divided by the number of total messages.
+   * @param costs {Number} Cost for sent messages during this period. The costs are in the [Account](/docs/api/account/) currency. TODO 
+   * @param messagesReceived {Number} Total received messages count.
+   * @param messagesSentDelivered {Number} Delivered messages count. As messages are retried for up to 48 hours, this value could change.
+   * @param messagesSentAccepted {Number} Messages accepted for delivery (in queue), but not yet delivered.
+   * @param messagesSentBuffered {Number} Messages buffered by endpoint cell phone operators.
+   * @param messagesSentFailed {Number} Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.
+   * @param messagesSentRejected {Number} Messages that were rejected: invalid Sender ID used (e.g. you cannot use the Sender ID or your own mobile number when sending to the United States and Canada.) 
+   * @param messagesSentParts {Number} Total sent messages **parts** count. Note that this is not equal to the sent messages count, because one message could consist of 1 to 6 parts and users are charged per part, not per message.
    */
   var exports = function(replyRate, _date, deliveryRate, costs, messagesReceived, messagesSentDelivered, messagesSentAccepted, messagesSentBuffered, messagesSentFailed, messagesSentRejected, messagesSentParts) {
     var _this = this;
@@ -121,46 +121,57 @@
   }
 
   /**
+   * the number of incoming messages divided by the number of total messages.
    * @member {Number} replyRate
    */
   exports.prototype['replyRate'] = undefined;
   /**
+   * Time interval start, empty if the **by** parameter was set to **off**. 
    * @member {Date} date
    */
   exports.prototype['date'] = undefined;
   /**
+   * Message delivery rate:the number of delivered messages divided by the number of total messages.
    * @member {Number} deliveryRate
    */
   exports.prototype['deliveryRate'] = undefined;
   /**
+   * Cost for sent messages during this period. The costs are in the [Account](/docs/api/account/) currency. TODO 
    * @member {Number} costs
    */
   exports.prototype['costs'] = undefined;
   /**
+   * Total received messages count.
    * @member {Number} messagesReceived
    */
   exports.prototype['messagesReceived'] = undefined;
   /**
+   * Delivered messages count. As messages are retried for up to 48 hours, this value could change.
    * @member {Number} messagesSentDelivered
    */
   exports.prototype['messagesSentDelivered'] = undefined;
   /**
+   * Messages accepted for delivery (in queue), but not yet delivered.
    * @member {Number} messagesSentAccepted
    */
   exports.prototype['messagesSentAccepted'] = undefined;
   /**
+   * Messages buffered by endpoint cell phone operators.
    * @member {Number} messagesSentBuffered
    */
   exports.prototype['messagesSentBuffered'] = undefined;
   /**
+   * Messages that have failed for whatever reason, e.g. the destination phone was switched off for 48 hours or the recipient phone account is out of service.
    * @member {Number} messagesSentFailed
    */
   exports.prototype['messagesSentFailed'] = undefined;
   /**
+   * Messages that were rejected: invalid Sender ID used (e.g. you cannot use the Sender ID or your own mobile number when sending to the United States and Canada.) 
    * @member {Number} messagesSentRejected
    */
   exports.prototype['messagesSentRejected'] = undefined;
   /**
+   * Total sent messages **parts** count. Note that this is not equal to the sent messages count, because one message could consist of 1 to 6 parts and users are charged per part, not per message.
    * @member {Number} messagesSentParts
    */
   exports.prototype['messagesSentParts'] = undefined;

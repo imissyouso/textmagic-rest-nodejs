@@ -37,16 +37,16 @@
   /**
    * The Currency model module.
    * @module model/Currency
-   * @version 2.0.444
+   * @version 2.0.450
    */
 
   /**
    * Constructs a new <code>Currency</code>.
    * @alias module:model/Currency
    * @class
-   * @param id {String} 
-   * @param unicodeSymbol {String} 
-   * @param htmlSymbol {String} 
+   * @param id {String} Three-letter ISO currency ID.
+   * @param unicodeSymbol {String} Unicode-compatible currency symbol.
+   * @param htmlSymbol {String} HTML-compatible currency symbol.
    */
   var exports = function(id, unicodeSymbol, htmlSymbol) {
     var _this = this;
@@ -81,14 +81,17 @@
   }
 
   /**
+   * Three-letter ISO currency ID.
    * @member {String} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Unicode-compatible currency symbol.
    * @member {String} unicodeSymbol
    */
   exports.prototype['unicodeSymbol'] = undefined;
   /**
+   * HTML-compatible currency symbol.
    * @member {String} htmlSymbol
    */
   exports.prototype['htmlSymbol'] = undefined;
