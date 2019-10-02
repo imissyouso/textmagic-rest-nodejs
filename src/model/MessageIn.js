@@ -37,18 +37,18 @@
   /**
    * The MessageIn model module.
    * @module model/MessageIn
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
    * Constructs a new <code>MessageIn</code>.
    * @alias module:model/MessageIn
    * @class
-   * @param id {Number} 
-   * @param sender {String} 
-   * @param receiver {String} 
-   * @param messageTime {Date} 
-   * @param text {String} 
+   * @param id {Number} The ID of the inbound message.
+   * @param sender {String} The sender’s phone number.
+   * @param receiver {String} The receiver’s phone number (i.e. your dedicated or shared reply number).
+   * @param messageTime {Date} The time when the message reached the TextMagic API endpoint.
+   * @param text {String} The text from the received message.
    * @param avatar {String} 
    */
   var exports = function(id, sender, receiver, messageTime, text, avatar) {
@@ -108,22 +108,27 @@
   }
 
   /**
+   * The ID of the inbound message.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * The sender’s phone number.
    * @member {String} sender
    */
   exports.prototype['sender'] = undefined;
   /**
+   * The receiver’s phone number (i.e. your dedicated or shared reply number).
    * @member {String} receiver
    */
   exports.prototype['receiver'] = undefined;
   /**
+   * The time when the message reached the TextMagic API endpoint.
    * @member {Date} messageTime
    */
   exports.prototype['messageTime'] = undefined;
   /**
+   * The text from the received message.
    * @member {String} text
    */
   exports.prototype['text'] = undefined;

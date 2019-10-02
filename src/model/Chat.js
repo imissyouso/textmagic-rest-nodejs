@@ -37,20 +37,20 @@
   /**
    * The Chat model module.
    * @module model/Chat
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
    * Constructs a new <code>Chat</code>.
    * @alias module:model/Chat
    * @class
-   * @param id {Number} 
+   * @param id {Number} Chat ID.
    * @param originalId {Number} 
-   * @param phone {String} 
+   * @param phone {String} Chat partner phone number.
    * @param contact {module:model/Contact} 
    * @param unsubscribedContactId {Number} 
-   * @param unread {Number} 
-   * @param updatedAt {Date} 
+   * @param unread {Number} Unread incoming messages count.
+   * @param updatedAt {Date} Time when last incoming message arrived at this chat.
    * @param status {String} 
    * @param mute {Number} 
    * @param lastMessage {String} 
@@ -141,6 +141,7 @@
   }
 
   /**
+   * Chat ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
@@ -149,6 +150,7 @@
    */
   exports.prototype['originalId'] = undefined;
   /**
+   * Chat partner phone number.
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
@@ -161,10 +163,12 @@
    */
   exports.prototype['unsubscribedContactId'] = undefined;
   /**
+   * Unread incoming messages count.
    * @member {Number} unread
    */
   exports.prototype['unread'] = undefined;
   /**
+   * Time when last incoming message arrived at this chat.
    * @member {Date} updatedAt
    */
   exports.prototype['updatedAt'] = undefined;

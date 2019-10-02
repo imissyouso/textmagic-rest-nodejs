@@ -37,45 +37,45 @@
   /**
    * The MessageOut model module.
    * @module model/MessageOut
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
    * Constructs a new <code>MessageOut</code>.
    * @alias module:model/MessageOut
    * @class
-   * @param id {Number} 
+   * @param id {Number} Message ID.
+   * @param text {String} 
+   * @param status {module:model/MessageOut.StatusEnum} Delivery status of the message. @TODO: Please see the table below to see different delivery statuses. 
    * @param contactId {Number} 
    * @param sessionId {Number} 
-   * @param messageTime {Date} 
-   * @param status {module:model/MessageOut.StatusEnum} q - queued s - scheduled queue e - sending error r - enroute a - acked d - delivered b - buffered f - failed u - unknown j - rejected i - bulk insert p - scheduled suspend h - queue suspend
+   * @param messageTime {Date} Sending time.
    * @param avatar {String} 
-   * @param text {String} 
-   * @param charset {String} 
+   * @param charset {String} Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
    * @param charsetLabel {String} 
-   * @param firstName {String} 
-   * @param lastName {String} 
-   * @param country {String} 
-   * @param partsCount {Number} 
+   * @param firstName {String} @TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID). 
+   * @param lastName {String} Contact last name.
+   * @param country {String} Two-letter ISO country code of the recipient phone number. 
+   * @param partsCount {Number} Message parts (multiples of 160 characters) count.
    */
-  var exports = function(id, contactId, sessionId, messageTime, status, avatar, text, charset, charsetLabel, firstName, lastName, country, partsCount) {
+  var exports = function(id, text, status, contactId, sessionId, messageTime, avatar, charset, charsetLabel, firstName, lastName, country, partsCount) {
     var _this = this;
 
     _this['id'] = id;
+
+
+    _this['text'] = text;
+    _this['status'] = status;
     _this['contactId'] = contactId;
     _this['sessionId'] = sessionId;
-
     _this['messageTime'] = messageTime;
-    _this['status'] = status;
     _this['avatar'] = avatar;
-    _this['text'] = text;
 
     _this['charset'] = charset;
     _this['charsetLabel'] = charsetLabel;
     _this['firstName'] = firstName;
     _this['lastName'] = lastName;
     _this['country'] = country;
-
 
 
     _this['partsCount'] = partsCount;
@@ -105,26 +105,29 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
+      if (data.hasOwnProperty('sender')) {
+        obj['sender'] = ApiClient.convertToType(data['sender'], 'String');
+      }
+      if (data.hasOwnProperty('receiver')) {
+        obj['receiver'] = ApiClient.convertToType(data['receiver'], 'String');
+      }
+      if (data.hasOwnProperty('text')) {
+        obj['text'] = ApiClient.convertToType(data['text'], 'String');
+      }
+      if (data.hasOwnProperty('status')) {
+        obj['status'] = ApiClient.convertToType(data['status'], 'String');
+      }
       if (data.hasOwnProperty('contactId')) {
         obj['contactId'] = ApiClient.convertToType(data['contactId'], 'Number');
       }
       if (data.hasOwnProperty('sessionId')) {
         obj['sessionId'] = ApiClient.convertToType(data['sessionId'], 'Number');
       }
-      if (data.hasOwnProperty('receiver')) {
-        obj['receiver'] = ApiClient.convertToType(data['receiver'], 'String');
-      }
       if (data.hasOwnProperty('messageTime')) {
         obj['messageTime'] = ApiClient.convertToType(data['messageTime'], 'Date');
       }
-      if (data.hasOwnProperty('status')) {
-        obj['status'] = ApiClient.convertToType(data['status'], 'String');
-      }
       if (data.hasOwnProperty('avatar')) {
         obj['avatar'] = ApiClient.convertToType(data['avatar'], 'String');
-      }
-      if (data.hasOwnProperty('text')) {
-        obj['text'] = ApiClient.convertToType(data['text'], 'String');
       }
       if (data.hasOwnProperty('deleted')) {
         obj['deleted'] = ApiClient.convertToType(data['deleted'], 'Boolean');
@@ -143,9 +146,6 @@
       }
       if (data.hasOwnProperty('country')) {
         obj['country'] = ApiClient.convertToType(data['country'], 'String');
-      }
-      if (data.hasOwnProperty('sender')) {
-        obj['sender'] = ApiClient.convertToType(data['sender'], 'String');
       }
       if (data.hasOwnProperty('phone')) {
         obj['phone'] = ApiClient.convertToType(data['phone'], 'String');
@@ -191,9 +191,29 @@
   }
 
   /**
+   * Message ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
+  /**
+   * Message sender (phone number or alphanumeric Sender ID).
+   * @member {String} sender
+   */
+  exports.prototype['sender'] = undefined;
+  /**
+   * Recipient phone number.
+   * @member {String} receiver
+   */
+  exports.prototype['receiver'] = undefined;
+  /**
+   * @member {String} text
+   */
+  exports.prototype['text'] = undefined;
+  /**
+   * Delivery status of the message. @TODO: Please see the table below to see different delivery statuses. 
+   * @member {module:model/MessageOut.StatusEnum} status
+   */
+  exports.prototype['status'] = undefined;
   /**
    * @member {Number} contactId
    */
@@ -203,31 +223,20 @@
    */
   exports.prototype['sessionId'] = undefined;
   /**
-   * @member {String} receiver
-   */
-  exports.prototype['receiver'] = undefined;
-  /**
+   * Sending time.
    * @member {Date} messageTime
    */
   exports.prototype['messageTime'] = undefined;
-  /**
-   * q - queued s - scheduled queue e - sending error r - enroute a - acked d - delivered b - buffered f - failed u - unknown j - rejected i - bulk insert p - scheduled suspend h - queue suspend
-   * @member {module:model/MessageOut.StatusEnum} status
-   */
-  exports.prototype['status'] = undefined;
   /**
    * @member {String} avatar
    */
   exports.prototype['avatar'] = undefined;
   /**
-   * @member {String} text
-   */
-  exports.prototype['text'] = undefined;
-  /**
    * @member {Boolean} deleted
    */
   exports.prototype['deleted'] = undefined;
   /**
+   * Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
    * @member {String} charset
    */
   exports.prototype['charset'] = undefined;
@@ -236,21 +245,20 @@
    */
   exports.prototype['charsetLabel'] = undefined;
   /**
+   * @TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID). 
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Contact last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;
   /**
+   * Two-letter ISO country code of the recipient phone number. 
    * @member {String} country
    */
   exports.prototype['country'] = undefined;
-  /**
-   * @member {String} sender
-   */
-  exports.prototype['sender'] = undefined;
   /**
    * @member {String} phone
    */
@@ -260,6 +268,7 @@
    */
   exports.prototype['price'] = undefined;
   /**
+   * Message parts (multiples of 160 characters) count.
    * @member {Number} partsCount
    */
   exports.prototype['partsCount'] = undefined;

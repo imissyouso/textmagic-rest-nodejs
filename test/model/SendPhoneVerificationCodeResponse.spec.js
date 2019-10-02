@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetForwardedCallsPaginatedResponse();
+    instance = new TextmagicClient.SendPhoneVerificationCodeResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,34 +50,22 @@
       object[property] = value;
   }
 
-  describe('GetForwardedCallsPaginatedResponse', function() {
-    it('should create an instance of GetForwardedCallsPaginatedResponse', function() {
-      // uncomment below and update the code to test GetForwardedCallsPaginatedResponse
-      //var instance = new TextmagicClient.GetForwardedCallsPaginatedResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetForwardedCallsPaginatedResponse);
+  describe('SendPhoneVerificationCodeResponse', function() {
+    it('should create an instance of SendPhoneVerificationCodeResponse', function() {
+      // uncomment below and update the code to test SendPhoneVerificationCodeResponse
+      //var instance = new TextmagicClient.SendPhoneVerificationCodeResponse();
+      //expect(instance).to.be.a(TextmagicClient.SendPhoneVerificationCodeResponse);
     });
 
-    it('should have the property page (base name: "page")', function() {
-      // uncomment below and update the code to test the property page
-      //var instance = new TextmagicClient.GetForwardedCallsPaginatedResponse();
+    it('should have the property verifyId (base name: "verifyId")', function() {
+      // uncomment below and update the code to test the property verifyId
+      //var instance = new TextmagicClient.SendPhoneVerificationCodeResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property pageCount (base name: "pageCount")', function() {
-      // uncomment below and update the code to test the property pageCount
-      //var instance = new TextmagicClient.GetForwardedCallsPaginatedResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property limit (base name: "limit")', function() {
-      // uncomment below and update the code to test the property limit
-      //var instance = new TextmagicClient.GetForwardedCallsPaginatedResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property resources (base name: "resources")', function() {
-      // uncomment below and update the code to test the property resources
-      //var instance = new TextmagicClient.GetForwardedCallsPaginatedResponse();
+    it('should have the property price (base name: "price")', function() {
+      // uncomment below and update the code to test the property price
+      //var instance = new TextmagicClient.SendPhoneVerificationCodeResponse();
       //expect(instance).to.be();
     });
 

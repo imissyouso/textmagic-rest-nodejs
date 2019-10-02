@@ -37,16 +37,16 @@
   /**
    * The MessagesIcs model module.
    * @module model/MessagesIcs
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
    * Constructs a new <code>MessagesIcs</code>.
    * @alias module:model/MessagesIcs
    * @class
-   * @param id {Number} 
-   * @param nextSend {Date} 
-   * @param rrule {String} 
+   * @param id {Number} Schedule ID.
+   * @param nextSend {Date} Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format. 
+   * @param rrule {String} [iCal RRULE](http://www.kanzaki.com/docs/ical/rrule.html) string. 
    * @param session {module:model/MessageSession} 
    * @param lastSent {Date} 
    * @param contactName {String} 
@@ -151,14 +151,17 @@
   }
 
   /**
+   * Schedule ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format. 
    * @member {Date} nextSend
    */
   exports.prototype['nextSend'] = undefined;
   /**
+   * [iCal RRULE](http://www.kanzaki.com/docs/ical/rrule.html) string. 
    * @member {String} rrule
    */
   exports.prototype['rrule'] = undefined;

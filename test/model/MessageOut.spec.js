@@ -63,6 +63,30 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property sender (base name: "sender")', function() {
+      // uncomment below and update the code to test the property sender
+      //var instance = new TextmagicClient.MessageOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property receiver (base name: "receiver")', function() {
+      // uncomment below and update the code to test the property receiver
+      //var instance = new TextmagicClient.MessageOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property text (base name: "text")', function() {
+      // uncomment below and update the code to test the property text
+      //var instance = new TextmagicClient.MessageOut();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property status (base name: "status")', function() {
+      // uncomment below and update the code to test the property status
+      //var instance = new TextmagicClient.MessageOut();
+      //expect(instance).to.be();
+    });
+
     it('should have the property contactId (base name: "contactId")', function() {
       // uncomment below and update the code to test the property contactId
       //var instance = new TextmagicClient.MessageOut();
@@ -75,32 +99,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property receiver (base name: "receiver")', function() {
-      // uncomment below and update the code to test the property receiver
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
     it('should have the property messageTime (base name: "messageTime")', function() {
       // uncomment below and update the code to test the property messageTime
       //var instance = new TextmagicClient.MessageOut();
       //expect(instance).to.be();
     });
 
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
     it('should have the property avatar (base name: "avatar")', function() {
       // uncomment below and update the code to test the property avatar
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property text (base name: "text")', function() {
-      // uncomment below and update the code to test the property text
       //var instance = new TextmagicClient.MessageOut();
       //expect(instance).to.be();
     });
@@ -137,12 +143,6 @@
 
     it('should have the property country (base name: "country")', function() {
       // uncomment below and update the code to test the property country
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property sender (base name: "sender")', function() {
-      // uncomment below and update the code to test the property sender
       //var instance = new TextmagicClient.MessageOut();
       //expect(instance).to.be();
     });

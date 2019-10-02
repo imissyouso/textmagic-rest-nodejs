@@ -37,7 +37,7 @@
   /**
    * The GetContactsByListIdPaginatedResponse model module.
    * @module model/GetContactsByListIdPaginatedResponse
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
@@ -45,8 +45,8 @@
    * @alias module:model/GetContactsByListIdPaginatedResponse
    * @class
    * @param page {Number} 
-   * @param pageCount {Number} 
-   * @param limit {Number} 
+   * @param pageCount {Number} The total number of pages.
+   * @param limit {Number} The number of results per page.
    * @param resources {Array.<module:model/Contact>} 
    */
   var exports = function(page, pageCount, limit, resources) {
@@ -90,10 +90,12 @@
    */
   exports.prototype['page'] = undefined;
   /**
+   * The total number of pages.
    * @member {Number} pageCount
    */
   exports.prototype['pageCount'] = undefined;
   /**
+   * The number of results per page.
    * @member {Number} limit
    */
   exports.prototype['limit'] = undefined;

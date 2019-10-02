@@ -37,7 +37,7 @@
   /**
    * The Conversation model module.
    * @module model/Conversation
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
@@ -45,14 +45,14 @@
    * @alias module:model/Conversation
    * @class
    * @param id {Number} 
-   * @param direction {String} 
-   * @param sender {String} 
-   * @param messageTime {Date} 
-   * @param text {String} 
-   * @param receiver {String} 
-   * @param status {String} 
-   * @param firstName {String} 
-   * @param lastName {String} 
+   * @param direction {module:model/Conversation.DirectionEnum} Message type: inbound or outbound. 
+   * @param sender {String} Sender phone number.
+   * @param messageTime {Date} Time when message arrived at TextMagic.
+   * @param text {String} Message text.
+   * @param receiver {String} Receiver phone number.
+   * @param status {String} Message status (for chats outbound only). See [message delivery statuses](/docs/api/sms-sessions/#message-delivery-statuses) for details.
+   * @param firstName {String} Contact first name.
+   * @param lastName {String} Contact last name.
    * @param sessionId {Number} 
    */
   var exports = function(id, direction, sender, messageTime, text, receiver, status, firstName, lastName, sessionId) {
@@ -120,34 +120,42 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} direction
+   * Message type: inbound or outbound. 
+   * @member {module:model/Conversation.DirectionEnum} direction
    */
   exports.prototype['direction'] = undefined;
   /**
+   * Sender phone number.
    * @member {String} sender
    */
   exports.prototype['sender'] = undefined;
   /**
+   * Time when message arrived at TextMagic.
    * @member {Date} messageTime
    */
   exports.prototype['messageTime'] = undefined;
   /**
+   * Message text.
    * @member {String} text
    */
   exports.prototype['text'] = undefined;
   /**
+   * Receiver phone number.
    * @member {String} receiver
    */
   exports.prototype['receiver'] = undefined;
   /**
+   * Message status (for chats outbound only). See [message delivery statuses](/docs/api/sms-sessions/#message-delivery-statuses) for details.
    * @member {String} status
    */
   exports.prototype['status'] = undefined;
   /**
+   * Contact first name.
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Contact last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;
@@ -156,6 +164,23 @@
    */
   exports.prototype['sessionId'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>direction</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.DirectionEnum = {
+    /**
+     * value: "in"
+     * @const
+     */
+    "in": "in",
+    /**
+     * value: "out"
+     * @const
+     */
+    "out": "out"  };
 
 
   return exports;

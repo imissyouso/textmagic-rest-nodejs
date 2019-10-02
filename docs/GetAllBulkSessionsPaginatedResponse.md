@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **page** | **Number** |  | 
-**pageCount** | **Number** |  | 
-**limit** | **Number** |  | 
+**pageCount** | **Number** | The total number of pages. | 
+**limit** | **Number** | The number of results per page. | 
 **resources** | [**[BulkSession]**](BulkSession.md) |  | 
 
 

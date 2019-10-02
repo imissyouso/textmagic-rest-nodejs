@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **lastId** | **Number** |  | 
 **nextLastId** | **Number** |  | 
-**limit** | **Number** |  | 
+**limit** | **Number** | The number of results per page. | 
 **resources** | [**[MessageOut]**](MessageOut.md) |  | 
 
 

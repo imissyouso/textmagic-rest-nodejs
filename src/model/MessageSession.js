@@ -37,20 +37,20 @@
   /**
    * The MessageSession model module.
    * @module model/MessageSession
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
    * Constructs a new <code>MessageSession</code>.
    * @alias module:model/MessageSession
    * @class
-   * @param id {Number} 
-   * @param startTime {String} 
-   * @param text {String} 
-   * @param source {String} 
-   * @param referenceId {String} 
-   * @param price {Number} 
-   * @param numbersCount {Number} 
+   * @param id {Number} Session ID.
+   * @param startTime {String} Session creation time.
+   * @param text {String} Session text. If a template was used for the session text (see [Messages: Send](#tag/Outbound-Messages) for details), it may contain template tags. 
+   * @param source {String} *   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](/docs/api/send-email-to-sms/) *   **X** for [Distribution lists](/docs/api/distribution-lists/) 
+   * @param referenceId {String} Custom reference ID (see [Messages: Send](/docs/api/send-sms/) for details). 
+   * @param price {Number} Session cost (in account currency).
+   * @param numbersCount {Number} Session recipient count.
    * @param destination {String} 
    */
   var exports = function(id, startTime, text, source, referenceId, price, numbersCount, destination) {
@@ -106,30 +106,37 @@
   }
 
   /**
+   * Session ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Session creation time.
    * @member {String} startTime
    */
   exports.prototype['startTime'] = undefined;
   /**
+   * Session text. If a template was used for the session text (see [Messages: Send](#tag/Outbound-Messages) for details), it may contain template tags. 
    * @member {String} text
    */
   exports.prototype['text'] = undefined;
   /**
+   * *   **O** for TextMagic Online *   **A** for API *   **M** for TextMagic Messenger *   **E** for [Email to SMS](/docs/api/send-email-to-sms/) *   **X** for [Distribution lists](/docs/api/distribution-lists/) 
    * @member {String} source
    */
   exports.prototype['source'] = undefined;
   /**
+   * Custom reference ID (see [Messages: Send](/docs/api/send-sms/) for details). 
    * @member {String} referenceId
    */
   exports.prototype['referenceId'] = undefined;
   /**
+   * Session cost (in account currency).
    * @member {Number} price
    */
   exports.prototype['price'] = undefined;
   /**
+   * Session recipient count.
    * @member {Number} numbersCount
    */
   exports.prototype['numbersCount'] = undefined;

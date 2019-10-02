@@ -37,7 +37,7 @@
   /**
    * The GetOutboundMessagesHistoryPaginatedResponse model module.
    * @module model/GetOutboundMessagesHistoryPaginatedResponse
-   * @version 2.0.431
+   * @version 2.0.441
    */
 
   /**
@@ -46,7 +46,7 @@
    * @class
    * @param lastId {Number} 
    * @param nextLastId {Number} 
-   * @param limit {Number} 
+   * @param limit {Number} The number of results per page.
    * @param resources {Array.<module:model/MessageOut>} 
    */
   var exports = function(lastId, nextLastId, limit, resources) {
@@ -94,6 +94,7 @@
    */
   exports.prototype['nextLastId'] = undefined;
   /**
+   * The number of results per page.
    * @member {Number} limit
    */
   exports.prototype['limit'] = undefined;

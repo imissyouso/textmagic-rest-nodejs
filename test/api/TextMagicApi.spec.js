@@ -91,10 +91,30 @@
         done();
       });
     });
+    describe('cancelVerification', function() {
+      it('should call cancelVerification successfully', function(done) {
+        //uncomment below and update the code to test cancelVerification
+        //instance.cancelVerification(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('checkPhoneVerificationCode', function() {
       it('should call checkPhoneVerificationCode successfully', function(done) {
         //uncomment below and update the code to test checkPhoneVerificationCode
         //instance.checkPhoneVerificationCode(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('checkPhoneVerificationCode_0', function() {
+      it('should call checkPhoneVerificationCode_0 successfully', function(done) {
+        //uncomment below and update the code to test checkPhoneVerificationCode_0
+        //instance.checkPhoneVerificationCode_0(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -911,16 +931,6 @@
         done();
       });
     });
-    describe('getForwardedCalls', function() {
-      it('should call getForwardedCalls successfully', function(done) {
-        //uncomment below and update the code to test getForwardedCalls
-        //instance.getForwardedCalls(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getInboundMessage', function() {
       it('should call getInboundMessage successfully', function(done) {
         //uncomment below and update the code to test getInboundMessage
@@ -1525,6 +1535,16 @@
       it('should call sendPhoneVerificationCode successfully', function(done) {
         //uncomment below and update the code to test sendPhoneVerificationCode
         //instance.sendPhoneVerificationCode(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('sendPhoneVerificationCode_0', function() {
+      it('should call sendPhoneVerificationCode_0 successfully', function(done) {
+        //uncomment below and update the code to test sendPhoneVerificationCode_0
+        //instance.sendPhoneVerificationCode_0(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
