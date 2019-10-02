@@ -37,7 +37,7 @@
   /**
    * The MessageOut model module.
    * @module model/MessageOut
-   * @version 2.0.443
+   * @version 2.0.444
    */
 
   /**
@@ -46,14 +46,14 @@
    * @class
    * @param id {Number} Message ID.
    * @param text {String} 
-   * @param status {module:model/MessageOut.StatusEnum} Delivery status of the message. @TODO: Please see the table below to see different delivery statuses. 
+   * @param status {module:model/MessageOut.StatusEnum} Delivery status of the message. TODO: Please see the table below to see different delivery statuses. 
    * @param contactId {Number} 
    * @param sessionId {Number} 
    * @param messageTime {Date} Sending time.
    * @param avatar {String} 
    * @param charset {String} Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
    * @param charsetLabel {String} 
-   * @param firstName {String} @TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID). 
+   * @param firstName {String} TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID). 
    * @param lastName {String} Contact last name.
    * @param country {String} Two-letter ISO country code of the recipient phone number. 
    * @param partsCount {Number} Message parts (multiples of 160 characters) count.
@@ -210,7 +210,7 @@
    */
   exports.prototype['text'] = undefined;
   /**
-   * Delivery status of the message. @TODO: Please see the table below to see different delivery statuses. 
+   * Delivery status of the message. TODO: Please see the table below to see different delivery statuses. 
    * @member {module:model/MessageOut.StatusEnum} status
    */
   exports.prototype['status'] = undefined;
@@ -245,7 +245,7 @@
    */
   exports.prototype['charsetLabel'] = undefined;
   /**
-   * @TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID). 
+   * TODO: Contact first name. Could be substituted from your [Contacts](/docs/api/contacts/) (even if you submitted phone number instead of contact ID). 
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;

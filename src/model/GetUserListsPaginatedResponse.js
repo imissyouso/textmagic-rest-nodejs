@@ -37,7 +37,7 @@
   /**
    * The GetUserListsPaginatedResponse model module.
    * @module model/GetUserListsPaginatedResponse
-   * @version 2.0.443
+   * @version 2.0.444
    */
 
   /**

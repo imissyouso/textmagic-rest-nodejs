@@ -37,7 +37,7 @@
   /**
    * The SendMessageResponse model module.
    * @module model/SendMessageResponse
-   * @version 2.0.443
+   * @version 2.0.444
    */
 
   /**
