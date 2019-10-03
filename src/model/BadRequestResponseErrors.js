@@ -37,11 +37,12 @@
   /**
    * The BadRequestResponseErrors model module.
    * @module model/BadRequestResponseErrors
-   * @version 2.0.450
+   * @version 2.0.454
    */
 
   /**
    * Constructs a new <code>BadRequestResponseErrors</code>.
+   * If it was a **POST** or **PUT** request (and the **message** returned is &#x60;Validation Failed&#x60;), this field may contain **errors **that describe the errors grouped by the input parameter name. 
    * @alias module:model/BadRequestResponseErrors
    * @class
    */
@@ -74,10 +75,12 @@
   }
 
   /**
+   * Array of messages with errors related to the entire request. For example, you did not specify either the **text** or **templateId** when [sending the message](/docs/api/send-sms/). 
    * @member {Array.<String>} common
    */
   exports.prototype['common'] = undefined;
   /**
+   * Associative array. The keys are the POST/PUT parameters names and the values are arrays with error messages for these parameters. 
    * @member {Object} fields
    */
   exports.prototype['fields'] = undefined;

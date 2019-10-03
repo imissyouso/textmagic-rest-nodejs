@@ -37,21 +37,20 @@
   /**
    * The CreateListInputObject model module.
    * @module model/CreateListInputObject
-   * @version 2.0.450
+   * @version 2.0.454
    */
 
   /**
    * Constructs a new <code>CreateListInputObject</code>.
    * @alias module:model/CreateListInputObject
    * @class
-   * @param name {String} List name
-   * @param shared {Boolean} Should this list be shared with sub-accounts
+   * @param name {String} List name.
    */
-  var exports = function(name, shared) {
+  var exports = function(name) {
     var _this = this;
 
     _this['name'] = name;
-    _this['shared'] = shared;
+
 
 
   };
@@ -84,23 +83,24 @@
   }
 
   /**
-   * List name
+   * List name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
-   * Should this list be shared with sub-accounts
+   * Should new list be shared among all the sub-accounts? The default is 0 (false).
    * @member {Boolean} shared
+   * @default false
    */
-  exports.prototype['shared'] = undefined;
+  exports.prototype['shared'] = false;
   /**
-   * Is list favorited. Default is false
+   * Is list favorited. Default is false.
    * @member {Boolean} favorited
    * @default false
    */
   exports.prototype['favorited'] = false;
   /**
-   * Is list default for new contacts (web only).
+   * Is list default for new contacts (web only). Default is false.
    * @member {Boolean} isDefault
    * @default false
    */

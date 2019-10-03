@@ -17,37 +17,37 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Group'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Group'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.GetUserListsPaginatedResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Group);
+    root.TextmagicClient.GetListsPaginatedResponse = factory(root.TextmagicClient.ApiClient);
   }
-}(this, function(ApiClient, Group) {
+}(this, function(ApiClient) {
   'use strict';
 
 
 
 
   /**
-   * The GetUserListsPaginatedResponse model module.
-   * @module model/GetUserListsPaginatedResponse
-   * @version 2.0.450
+   * The GetListsPaginatedResponse model module.
+   * @module model/GetListsPaginatedResponse
+   * @version 2.0.454
    */
 
   /**
-   * Constructs a new <code>GetUserListsPaginatedResponse</code>.
-   * @alias module:model/GetUserListsPaginatedResponse
+   * Constructs a new <code>GetListsPaginatedResponse</code>.
+   * @alias module:model/GetListsPaginatedResponse
    * @class
    * @param page {Number} 
    * @param pageCount {Number} The total number of pages.
    * @param limit {Number} The number of results per page.
-   * @param resources {Array.<module:model/Group>} 
+   * @param resources {Array.<Array>} 
    */
   var exports = function(page, pageCount, limit, resources) {
     var _this = this;
@@ -59,11 +59,11 @@
   };
 
   /**
-   * Constructs a <code>GetUserListsPaginatedResponse</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>GetListsPaginatedResponse</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/GetUserListsPaginatedResponse} obj Optional instance to populate.
-   * @return {module:model/GetUserListsPaginatedResponse} The populated <code>GetUserListsPaginatedResponse</code> instance.
+   * @param {module:model/GetListsPaginatedResponse} obj Optional instance to populate.
+   * @return {module:model/GetListsPaginatedResponse} The populated <code>GetListsPaginatedResponse</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -79,7 +79,7 @@
         obj['limit'] = ApiClient.convertToType(data['limit'], 'Number');
       }
       if (data.hasOwnProperty('resources')) {
-        obj['resources'] = ApiClient.convertToType(data['resources'], [Group]);
+        obj['resources'] = ApiClient.convertToType(data['resources'], [Array]);
       }
     }
     return obj;
@@ -100,7 +100,7 @@
    */
   exports.prototype['limit'] = undefined;
   /**
-   * @member {Array.<module:model/Group>} resources
+   * @member {Array.<Array>} resources
    */
   exports.prototype['resources'] = undefined;
 

@@ -111,10 +111,10 @@
         done();
       });
     });
-    describe('checkPhoneVerificationCode_0', function() {
-      it('should call checkPhoneVerificationCode_0 successfully', function(done) {
-        //uncomment below and update the code to test checkPhoneVerificationCode_0
-        //instance.checkPhoneVerificationCode_0(function(error) {
+    describe('checkPhoneVerificationCodeTFA', function() {
+      it('should call checkPhoneVerificationCodeTFA successfully', function(done) {
+        //uncomment below and update the code to test checkPhoneVerificationCodeTFA
+        //instance.checkPhoneVerificationCodeTFA(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -981,6 +981,16 @@
         done();
       });
     });
+    describe('getLists', function() {
+      it('should call getLists successfully', function(done) {
+        //uncomment below and update the code to test getLists
+        //instance.getLists(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getListsOfContact', function() {
       it('should call getListsOfContact successfully', function(done) {
         //uncomment below and update the code to test getListsOfContact
@@ -1291,16 +1301,6 @@
         done();
       });
     });
-    describe('getUserLists', function() {
-      it('should call getUserLists successfully', function(done) {
-        //uncomment below and update the code to test getUserLists
-        //instance.getUserLists(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getVersions', function() {
       it('should call getVersions successfully', function(done) {
         //uncomment below and update the code to test getVersions
@@ -1541,10 +1541,10 @@
         done();
       });
     });
-    describe('sendPhoneVerificationCode_0', function() {
-      it('should call sendPhoneVerificationCode_0 successfully', function(done) {
-        //uncomment below and update the code to test sendPhoneVerificationCode_0
-        //instance.sendPhoneVerificationCode_0(function(error) {
+    describe('sendPhoneVerificationCodeTFA', function() {
+      it('should call sendPhoneVerificationCodeTFA successfully', function(done) {
+        //uncomment below and update the code to test sendPhoneVerificationCodeTFA
+        //instance.sendPhoneVerificationCodeTFA(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

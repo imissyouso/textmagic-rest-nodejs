@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.Group();
+    instance = new TextmagicClient.List();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,70 +50,70 @@
       object[property] = value;
   }
 
-  describe('Group', function() {
-    it('should create an instance of Group', function() {
-      // uncomment below and update the code to test Group
-      //var instance = new TextmagicClient.Group();
-      //expect(instance).to.be.a(TextmagicClient.Group);
+  describe('List', function() {
+    it('should create an instance of List', function() {
+      // uncomment below and update the code to test List
+      //var instance = new TextmagicClient.List();
+      //expect(instance).to.be.a(TextmagicClient.List);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property favorited (base name: "favorited")', function() {
       // uncomment below and update the code to test the property favorited
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property membersCount (base name: "membersCount")', function() {
       // uncomment below and update the code to test the property membersCount
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property user (base name: "user")', function() {
       // uncomment below and update the code to test the property user
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property service (base name: "service")', function() {
       // uncomment below and update the code to test the property service
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property shared (base name: "shared")', function() {
       // uncomment below and update the code to test the property shared
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property avatar (base name: "avatar")', function() {
       // uncomment below and update the code to test the property avatar
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 
     it('should have the property isDefault (base name: "isDefault")', function() {
       // uncomment below and update the code to test the property isDefault
-      //var instance = new TextmagicClient.Group();
+      //var instance = new TextmagicClient.List();
       //expect(instance).to.be();
     });
 

@@ -37,7 +37,7 @@
   /**
    * The BadRequestResponse model module.
    * @module model/BadRequestResponse
-   * @version 2.0.450
+   * @version 2.0.454
    */
 
   /**
@@ -79,10 +79,12 @@
   }
 
   /**
+   * HTTP error code.
    * @member {Number} code
    */
   exports.prototype['code'] = undefined;
   /**
+   * Brief error message. You could display this message to your user or save it in a log.
    * @member {String} message
    */
   exports.prototype['message'] = undefined;

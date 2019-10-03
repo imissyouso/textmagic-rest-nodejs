@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GroupImage();
+    instance = new TextmagicClient.GetListsPaginatedResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,16 +50,34 @@
       object[property] = value;
   }
 
-  describe('GroupImage', function() {
-    it('should create an instance of GroupImage', function() {
-      // uncomment below and update the code to test GroupImage
-      //var instance = new TextmagicClient.GroupImage();
-      //expect(instance).to.be.a(TextmagicClient.GroupImage);
+  describe('GetListsPaginatedResponse', function() {
+    it('should create an instance of GetListsPaginatedResponse', function() {
+      // uncomment below and update the code to test GetListsPaginatedResponse
+      //var instance = new TextmagicClient.GetListsPaginatedResponse();
+      //expect(instance).to.be.a(TextmagicClient.GetListsPaginatedResponse);
     });
 
-    it('should have the property href (base name: "href")', function() {
-      // uncomment below and update the code to test the property href
-      //var instance = new TextmagicClient.GroupImage();
+    it('should have the property page (base name: "page")', function() {
+      // uncomment below and update the code to test the property page
+      //var instance = new TextmagicClient.GetListsPaginatedResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property pageCount (base name: "pageCount")', function() {
+      // uncomment below and update the code to test the property pageCount
+      //var instance = new TextmagicClient.GetListsPaginatedResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property limit (base name: "limit")', function() {
+      // uncomment below and update the code to test the property limit
+      //var instance = new TextmagicClient.GetListsPaginatedResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property resources (base name: "resources")', function() {
+      // uncomment below and update the code to test the property resources
+      //var instance = new TextmagicClient.GetListsPaginatedResponse();
       //expect(instance).to.be();
     });
 

@@ -26,7 +26,7 @@
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.SuccessfulResponse = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicClient.ListImage = factory(root.TextmagicClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -35,37 +35,45 @@
 
 
   /**
-   * The SuccessfulResponse model module.
-   * @module model/SuccessfulResponse
-   * @version 2.0.450
+   * The ListImage model module.
+   * @module model/ListImage
+   * @version 2.0.454
    */
 
   /**
-   * Constructs a new <code>SuccessfulResponse</code>.
-   * Request executed with success
-   * @alias module:model/SuccessfulResponse
+   * Constructs a new <code>ListImage</code>.
+   * @alias module:model/ListImage
    * @class
+   * @param href {String} 
    */
-  var exports = function() {
+  var exports = function(href) {
     var _this = this;
 
+    _this['href'] = href;
   };
 
   /**
-   * Constructs a <code>SuccessfulResponse</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>ListImage</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/SuccessfulResponse} obj Optional instance to populate.
-   * @return {module:model/SuccessfulResponse} The populated <code>SuccessfulResponse</code> instance.
+   * @param {module:model/ListImage} obj Optional instance to populate.
+   * @return {module:model/ListImage} The populated <code>ListImage</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
+      if (data.hasOwnProperty('href')) {
+        obj['href'] = ApiClient.convertToType(data['href'], 'String');
+      }
     }
     return obj;
   }
 
+  /**
+   * @member {String} href
+   */
+  exports.prototype['href'] = undefined;
 
 
 

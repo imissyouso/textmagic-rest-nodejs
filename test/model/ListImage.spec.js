@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new TextmagicClient.GetUserListsPaginatedResponse();
+    instance = new TextmagicClient.ListImage();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,34 +50,16 @@
       object[property] = value;
   }
 
-  describe('GetUserListsPaginatedResponse', function() {
-    it('should create an instance of GetUserListsPaginatedResponse', function() {
-      // uncomment below and update the code to test GetUserListsPaginatedResponse
-      //var instance = new TextmagicClient.GetUserListsPaginatedResponse();
-      //expect(instance).to.be.a(TextmagicClient.GetUserListsPaginatedResponse);
+  describe('ListImage', function() {
+    it('should create an instance of ListImage', function() {
+      // uncomment below and update the code to test ListImage
+      //var instance = new TextmagicClient.ListImage();
+      //expect(instance).to.be.a(TextmagicClient.ListImage);
     });
 
-    it('should have the property page (base name: "page")', function() {
-      // uncomment below and update the code to test the property page
-      //var instance = new TextmagicClient.GetUserListsPaginatedResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property pageCount (base name: "pageCount")', function() {
-      // uncomment below and update the code to test the property pageCount
-      //var instance = new TextmagicClient.GetUserListsPaginatedResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property limit (base name: "limit")', function() {
-      // uncomment below and update the code to test the property limit
-      //var instance = new TextmagicClient.GetUserListsPaginatedResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property resources (base name: "resources")', function() {
-      // uncomment below and update the code to test the property resources
-      //var instance = new TextmagicClient.GetUserListsPaginatedResponse();
+    it('should have the property href (base name: "href")', function() {
+      // uncomment below and update the code to test the property href
+      //var instance = new TextmagicClient.ListImage();
       //expect(instance).to.be();
     });
 

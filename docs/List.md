@@ -1,4 +1,4 @@
-# TextmagicClient.Group
+# TextmagicClient.List
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **user** | [**User**](User.md) |  | 
 **service** | **Boolean** |  | 
 **shared** | **Boolean** |  | 
-**avatar** | [**GroupImage**](GroupImage.md) |  | 
+**avatar** | [**ListImage**](ListImage.md) |  | 
 **isDefault** | **Boolean** |  | 
 
 

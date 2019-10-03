@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Group'], factory);
+    define(['ApiClient'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Group'));
+    module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.SearchListsPaginatedResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.Group);
+    root.TextmagicClient.SearchListsPaginatedResponse = factory(root.TextmagicClient.ApiClient);
   }
-}(this, function(ApiClient, Group) {
+}(this, function(ApiClient) {
   'use strict';
 
 
@@ -37,7 +37,7 @@
   /**
    * The SearchListsPaginatedResponse model module.
    * @module model/SearchListsPaginatedResponse
-   * @version 2.0.450
+   * @version 2.0.454
    */
 
   /**
@@ -47,7 +47,7 @@
    * @param page {Number} 
    * @param pageCount {Number} The total number of pages.
    * @param limit {Number} The number of results per page.
-   * @param resources {Array.<module:model/Group>} 
+   * @param resources {Array.<Array>} 
    */
   var exports = function(page, pageCount, limit, resources) {
     var _this = this;
@@ -79,7 +79,7 @@
         obj['limit'] = ApiClient.convertToType(data['limit'], 'Number');
       }
       if (data.hasOwnProperty('resources')) {
-        obj['resources'] = ApiClient.convertToType(data['resources'], [Group]);
+        obj['resources'] = ApiClient.convertToType(data['resources'], [Array]);
       }
     }
     return obj;
@@ -100,7 +100,7 @@
    */
   exports.prototype['limit'] = undefined;
   /**
-   * @member {Array.<module:model/Group>} resources
+   * @member {Array.<Array>} resources
    */
   exports.prototype['resources'] = undefined;
 

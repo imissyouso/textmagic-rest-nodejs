@@ -1,4 +1,4 @@
-# TextmagicClient.GetUserListsPaginatedResponse
+# TextmagicClient.GetListsPaginatedResponse
 
 ## Properties
 Name | Type | Description | Notes
@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **page** | **Number** |  | 
 **pageCount** | **Number** | The total number of pages. | 
 **limit** | **Number** | The number of results per page. | 
-**resources** | [**[Group]**](Group.md) |  | 
+**resources** | **[Array]** |  | 
 
 

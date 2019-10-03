@@ -1,6 +1,6 @@
 # TextmagicClient.TextMagicApi
 
-All URIs are relative to *http://my.textmagic.com*
+All URIs are relative to *http://rest.textmagic.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**cancelSurvey**](TextMagicApi.md#cancelSurvey) | **PUT** /api/v2/surveys/{id}/cancel | Cancel a survey.
 [**cancelVerification**](TextMagicApi.md#cancelVerification) | **DELETE** /api/v2/verify/{verifyId} | Cancel verification process
 [**checkPhoneVerificationCode**](TextMagicApi.md#checkPhoneVerificationCode) | **PUT** /api/v2/user/phone/verification | Check user phone verification code
-[**checkPhoneVerificationCode_0**](TextMagicApi.md#checkPhoneVerificationCode_0) | **PUT** /api/v2/verify | Step 2: Check the verification code 
+[**checkPhoneVerificationCodeTFA**](TextMagicApi.md#checkPhoneVerificationCodeTFA) | **PUT** /api/v2/verify | Step 2: Check the verification code 
 [**clearAndAssignContactsToList**](TextMagicApi.md#clearAndAssignContactsToList) | **POST** /api/v2/lists/{id}/contacts | Reset list members to the specified contacts.
 [**closeChatsBulk**](TextMagicApi.md#closeChatsBulk) | **POST** /api/v2/chats/close/bulk | Close chats (bulk)
 [**closeReadChats**](TextMagicApi.md#closeReadChats) | **POST** /api/v2/chats/close/read | Close read chats
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 [**createContact**](TextMagicApi.md#createContact) | **POST** /api/v2/contacts | Create a new contact from the submitted data.
 [**createContactNote**](TextMagicApi.md#createContactNote) | **POST** /api/v2/contacts/{id}/notes | Create a new contact note.
 [**createCustomField**](TextMagicApi.md#createCustomField) | **POST** /api/v2/customfields | Create a new custom field from the submitted data.
-[**createList**](TextMagicApi.md#createList) | **POST** /api/v2/lists | Create a new list from the submitted data.
+[**createList**](TextMagicApi.md#createList) | **POST** /api/v2/lists | Create a new list
 [**createPushToken**](TextMagicApi.md#createPushToken) | **POST** /api/v2/push/tokens | Add or update a device token.
 [**createSurvey**](TextMagicApi.md#createSurvey) | **POST** /api/v2/surveys | Create a new survey from the submitted data.
 [**createSurveyNode**](TextMagicApi.md#createSurveyNode) | **POST** /api/v2/surveys/{id}/nodes | Create a new node from the submitted data.
@@ -95,8 +95,9 @@ Method | HTTP request | Description
 [**getInboundMessage**](TextMagicApi.md#getInboundMessage) | **GET** /api/v2/replies/{id} | Get a single inbound message
 [**getInboundMessagesNotificationSettings**](TextMagicApi.md#getInboundMessagesNotificationSettings) | **GET** /api/v2/user/notification/inbound | Get inbound messages notification settings
 [**getInvoices**](TextMagicApi.md#getInvoices) | **GET** /api/v2/invoices | Get all invoices
-[**getList**](TextMagicApi.md#getList) | **GET** /api/v2/lists/{id} | Get a single list.
+[**getList**](TextMagicApi.md#getList) | **GET** /api/v2/lists/{id} | Get the details of a specific list
 [**getListContactsIds**](TextMagicApi.md#getListContactsIds) | **GET** /api/v2/lists/{id}/contacts/ids | Fetch all contacts IDs belonging to the list with ID.
+[**getLists**](TextMagicApi.md#getLists) | **GET** /api/v2/lists | Get all lists
 [**getListsOfContact**](TextMagicApi.md#getListsOfContact) | **GET** /api/v2/contacts/{id}/lists | Return lists which contact belongs to.
 [**getMessagePreview**](TextMagicApi.md#getMessagePreview) | **GET** /api/v2/messages/preview | Preview message
 [**getMessagePrice**](TextMagicApi.md#getMessagePrice) | **GET** /api/v2/messages/price | Check price
@@ -128,7 +129,6 @@ Method | HTTP request | Description
 [**getUnsubscribedContact**](TextMagicApi.md#getUnsubscribedContact) | **GET** /api/v2/unsubscribers/{id} | Get a single unsubscribed contact.
 [**getUnsubscribers**](TextMagicApi.md#getUnsubscribers) | **GET** /api/v2/unsubscribers | Get all contact have unsubscribed from your communication.
 [**getUserDedicatedNumbers**](TextMagicApi.md#getUserDedicatedNumbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
-[**getUserLists**](TextMagicApi.md#getUserLists) | **GET** /api/v2/lists | Get all user lists.
 [**getVersions**](TextMagicApi.md#getVersions) | **GET** /api/v2/versions | Get minimal valid apps versions
 [**inviteSubaccount**](TextMagicApi.md#inviteSubaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**markChatsReadBulk**](TextMagicApi.md#markChatsReadBulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
@@ -153,7 +153,7 @@ Method | HTTP request | Description
 [**sendEmailVerificationCode**](TextMagicApi.md#sendEmailVerificationCode) | **GET** /api/v2/user/email/verification | Send user email verification
 [**sendMessage**](TextMagicApi.md#sendMessage) | **POST** /api/v2/messages | Send message
 [**sendPhoneVerificationCode**](TextMagicApi.md#sendPhoneVerificationCode) | **GET** /api/v2/user/phone/verification | Send user phone verification
-[**sendPhoneVerificationCode_0**](TextMagicApi.md#sendPhoneVerificationCode_0) | **POST** /api/v2/verify | Step 1: Send a verification code 
+[**sendPhoneVerificationCodeTFA**](TextMagicApi.md#sendPhoneVerificationCodeTFA) | **POST** /api/v2/verify | Step 1: Send a verification code 
 [**setChatStatus**](TextMagicApi.md#setChatStatus) | **POST** /api/v2/chats/status | Change chat status
 [**startSurvey**](TextMagicApi.md#startSurvey) | **PUT** /api/v2/surveys/{id}/start | Start a survey.
 [**unblockContact**](TextMagicApi.md#unblockContact) | **POST** /api/v2/contacts/unblock | Unblock contact by phone number.
@@ -478,9 +478,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="checkPhoneVerificationCode_0"></a>
-# **checkPhoneVerificationCode_0**
-> checkPhoneVerificationCode_0(checkPhoneVerificationCodeInputObject)
+<a name="checkPhoneVerificationCodeTFA"></a>
+# **checkPhoneVerificationCodeTFA**
+> checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeInputObject)
 
 Step 2: Check the verification code 
 
@@ -500,7 +500,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var checkPhoneVerificationCodeInputObject = new TextmagicClient.CheckPhoneVerificationCodeInputObject1(); // CheckPhoneVerificationCodeInputObject1 | 
 
-apiInstance.checkPhoneVerificationCode_0(checkPhoneVerificationCodeInputObject).then(function() {
+apiInstance.checkPhoneVerificationCodeTFA(checkPhoneVerificationCodeInputObject).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -874,7 +874,7 @@ Name | Type | Description  | Notes
 # **createList**
 > ResourceLinkResponse createList(createListInputObject)
 
-Create a new list from the submitted data.
+Create a new list
 
 
 
@@ -4716,9 +4716,9 @@ Name | Type | Description  | Notes
 
 <a name="getList"></a>
 # **getList**
-> Group getList(id)
+> Array getList(id)
 
-Get a single list.
+Get the details of a specific list
 
 
 
@@ -4752,7 +4752,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Group**](Group.md)
+**Array**
 
 ### Authorization
 
@@ -4802,6 +4802,66 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetListContactsIdsResponse**](GetListContactsIdsResponse.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getLists"></a>
+# **getLists**
+> GetListsPaginatedResponse getLists(opts)
+
+Get all lists
+
+
+
+### Example
+```javascript
+var TextmagicClient = require('textmagic-client');
+var defaultClient = TextmagicClient.ApiClient.instance;
+
+// Configure HTTP basic authorization: BasicAuth
+var BasicAuth = defaultClient.authentications['BasicAuth'];
+BasicAuth.username = 'YOUR USERNAME';
+BasicAuth.password = 'YOUR PASSWORD';
+
+var apiInstance = new TextmagicClient.TextMagicApi();
+
+var opts = { 
+  'page': 1, // Number | The current fetched page.
+  'limit': 10, // Number | The number of results per page.
+  'orderBy': "id", // String | Order results by some field. Default is id
+  'direction': "desc", // String | Order direction. Default is desc
+  'favoriteOnly': 0, // Number | Return only favorite lists
+  'onlyMine': 0 // Number | Return only current user lists
+};
+apiInstance.getLists(opts).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| The current fetched page. | [optional] [default to 1]
+ **limit** | **Number**| The number of results per page. | [optional] [default to 10]
+ **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id]
+ **direction** | **String**| Order direction. Default is desc | [optional] [default to desc]
+ **favoriteOnly** | **Number**| Return only favorite lists | [optional] [default to 0]
+ **onlyMine** | **Number**| Return only current user lists | [optional] [default to 0]
+
+### Return type
+
+[**GetListsPaginatedResponse**](GetListsPaginatedResponse.md)
 
 ### Authorization
 
@@ -6435,66 +6495,6 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getUserLists"></a>
-# **getUserLists**
-> GetUserListsPaginatedResponse getUserLists(opts)
-
-Get all user lists.
-
-
-
-### Example
-```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
-
-// Configure HTTP basic authorization: BasicAuth
-var BasicAuth = defaultClient.authentications['BasicAuth'];
-BasicAuth.username = 'YOUR USERNAME';
-BasicAuth.password = 'YOUR PASSWORD';
-
-var apiInstance = new TextmagicClient.TextMagicApi();
-
-var opts = { 
-  'page': 1, // Number | Fetch specified results page.
-  'limit': 10, // Number | The number of results per page.
-  'orderBy': "id", // String | Order results by some field. Default is id
-  'direction': "desc", // String | Order direction. Default is desc
-  'favoriteOnly': 0, // Number | Return only favorite lists
-  'onlyMine': 0 // Number | Return only current user lists
-};
-apiInstance.getUserLists(opts).then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **Number**| Fetch specified results page. | [optional] [default to 1]
- **limit** | **Number**| The number of results per page. | [optional] [default to 10]
- **orderBy** | **String**| Order results by some field. Default is id | [optional] [default to id]
- **direction** | **String**| Order direction. Default is desc | [optional] [default to desc]
- **favoriteOnly** | **Number**| Return only favorite lists | [optional] [default to 0]
- **onlyMine** | **Number**| Return only current user lists | [optional] [default to 0]
-
-### Return type
-
-[**GetUserListsPaginatedResponse**](GetUserListsPaginatedResponse.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
 <a name="getVersions"></a>
 # **getVersions**
 > GetVersionsResponse getVersions()
@@ -7750,9 +7750,9 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="sendPhoneVerificationCode_0"></a>
-# **sendPhoneVerificationCode_0**
-> SendPhoneVerificationCodeResponse sendPhoneVerificationCode_0(sendPhoneVerificationCodeInputObject)
+<a name="sendPhoneVerificationCodeTFA"></a>
+# **sendPhoneVerificationCodeTFA**
+> SendPhoneVerificationCodeResponse sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeInputObject)
 
 Step 1: Send a verification code 
 
@@ -7772,7 +7772,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var sendPhoneVerificationCodeInputObject = new TextmagicClient.SendPhoneVerificationCodeInputObject(); // SendPhoneVerificationCodeInputObject | 
 
-apiInstance.sendPhoneVerificationCode_0(sendPhoneVerificationCodeInputObject).then(function(data) {
+apiInstance.sendPhoneVerificationCodeTFA(sendPhoneVerificationCodeInputObject).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);

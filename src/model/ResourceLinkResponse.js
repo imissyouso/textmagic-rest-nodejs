@@ -37,15 +37,15 @@
   /**
    * The ResourceLinkResponse model module.
    * @module model/ResourceLinkResponse
-   * @version 2.0.450
+   * @version 2.0.454
    */
 
   /**
    * Constructs a new <code>ResourceLinkResponse</code>.
    * @alias module:model/ResourceLinkResponse
    * @class
-   * @param id {Number} 
-   * @param href {String} 
+   * @param id {Number} Resource ID.
+   * @param href {String} A link to this resource. If you want to fetch it, just **GET** this address.
    */
   var exports = function(id, href) {
     var _this = this;
@@ -76,10 +76,12 @@
   }
 
   /**
+   * Resource ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * A link to this resource. If you want to fetch it, just **GET** this address.
    * @member {String} href
    */
   exports.prototype['href'] = undefined;

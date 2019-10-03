@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **country** | [**Country**](Country.md) |  | 
 **customFields** | [**[ContactCustomField]**](ContactCustomField.md) |  | 
 **user** | [**User**](User.md) |  | 
-**lists** | [**[Group]**](Group.md) |  | 
+**lists** | **[Array]** |  | 
 **phoneType** | **String** |  | 
 **avatar** | [**ContactImage**](ContactImage.md) |  | 
 **notes** | [**[ContactNote]**](ContactNote.md) |  | 

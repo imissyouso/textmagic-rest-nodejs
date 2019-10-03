@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **Number** |  | [optional] 
-**message** | **String** |  | [optional] 
+**code** | **Number** | HTTP error code. | [optional] 
+**message** | **String** | Brief error message. You could display this message to your user or save it in a log. | [optional] 
 **errors** | [**BadRequestResponseErrors**](BadRequestResponseErrors.md) |  | [optional] 
 
 

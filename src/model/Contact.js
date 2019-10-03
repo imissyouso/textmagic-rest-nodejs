@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ContactCustomField', 'model/ContactImage', 'model/ContactNote', 'model/Country', 'model/Group', 'model/User'], factory);
+    define(['ApiClient', 'model/ContactCustomField', 'model/ContactImage', 'model/ContactNote', 'model/Country', 'model/User'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./ContactCustomField'), require('./ContactImage'), require('./ContactNote'), require('./Country'), require('./Group'), require('./User'));
+    module.exports = factory(require('../ApiClient'), require('./ContactCustomField'), require('./ContactImage'), require('./ContactNote'), require('./Country'), require('./User'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.Contact = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.ContactCustomField, root.TextmagicClient.ContactImage, root.TextmagicClient.ContactNote, root.TextmagicClient.Country, root.TextmagicClient.Group, root.TextmagicClient.User);
+    root.TextmagicClient.Contact = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.ContactCustomField, root.TextmagicClient.ContactImage, root.TextmagicClient.ContactNote, root.TextmagicClient.Country, root.TextmagicClient.User);
   }
-}(this, function(ApiClient, ContactCustomField, ContactImage, ContactNote, Country, Group, User) {
+}(this, function(ApiClient, ContactCustomField, ContactImage, ContactNote, Country, User) {
   'use strict';
 
 
@@ -37,7 +37,7 @@
   /**
    * The Contact model module.
    * @module model/Contact
-   * @version 2.0.450
+   * @version 2.0.454
    */
 
   /**
@@ -55,7 +55,7 @@
    * @param country {module:model/Country} 
    * @param customFields {Array.<module:model/ContactCustomField>} 
    * @param user {module:model/User} 
-   * @param lists {Array.<module:model/Group>} 
+   * @param lists {Array.<Array>} 
    * @param phoneType {String} 
    * @param avatar {module:model/ContactImage} 
    * @param notes {Array.<module:model/ContactNote>} 
@@ -125,7 +125,7 @@
         obj['user'] = User.constructFromObject(data['user']);
       }
       if (data.hasOwnProperty('lists')) {
-        obj['lists'] = ApiClient.convertToType(data['lists'], [Group]);
+        obj['lists'] = ApiClient.convertToType(data['lists'], [Array]);
       }
       if (data.hasOwnProperty('phoneType')) {
         obj['phoneType'] = ApiClient.convertToType(data['phoneType'], 'String');
@@ -185,7 +185,7 @@
    */
   exports.prototype['user'] = undefined;
   /**
-   * @member {Array.<module:model/Group>} lists
+   * @member {Array.<Array>} lists
    */
   exports.prototype['lists'] = undefined;
   /**

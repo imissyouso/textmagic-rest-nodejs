@@ -37,7 +37,7 @@
   /**
    * The UpdateListObject model module.
    * @module model/UpdateListObject
-   * @version 2.0.450
+   * @version 2.0.454
    */
 
   /**
@@ -45,13 +45,12 @@
    * @alias module:model/UpdateListObject
    * @class
    * @param name {String} List name
-   * @param shared {Boolean} Should this list be shared with sub-accounts
    */
-  var exports = function(name, shared) {
+  var exports = function(name) {
     var _this = this;
 
     _this['name'] = name;
-    _this['shared'] = shared;
+
 
 
   };

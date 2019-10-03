@@ -17,32 +17,32 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/GroupImage', 'model/User'], factory);
+    define(['ApiClient', 'model/ListImage', 'model/User'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./GroupImage'), require('./User'));
+    module.exports = factory(require('../ApiClient'), require('./ListImage'), require('./User'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.Group = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.GroupImage, root.TextmagicClient.User);
+    root.TextmagicClient.List = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.ListImage, root.TextmagicClient.User);
   }
-}(this, function(ApiClient, GroupImage, User) {
+}(this, function(ApiClient, ListImage, User) {
   'use strict';
 
 
 
 
   /**
-   * The Group model module.
-   * @module model/Group
-   * @version 2.0.450
+   * The List model module.
+   * @module model/List
+   * @version 2.0.454
    */
 
   /**
-   * Constructs a new <code>Group</code>.
-   * @alias module:model/Group
+   * Constructs a new <code>List</code>.
+   * @alias module:model/List
    * @class
    * @param id {Number} 
    * @param name {String} 
@@ -52,7 +52,7 @@
    * @param user {module:model/User} 
    * @param service {Boolean} 
    * @param shared {Boolean} 
-   * @param avatar {module:model/GroupImage} 
+   * @param avatar {module:model/ListImage} 
    * @param isDefault {Boolean} 
    */
   var exports = function(id, name, description, favorited, membersCount, user, service, shared, avatar, isDefault) {
@@ -71,11 +71,11 @@
   };
 
   /**
-   * Constructs a <code>Group</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>List</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/Group} obj Optional instance to populate.
-   * @return {module:model/Group} The populated <code>Group</code> instance.
+   * @param {module:model/List} obj Optional instance to populate.
+   * @return {module:model/List} The populated <code>List</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -106,7 +106,7 @@
         obj['shared'] = ApiClient.convertToType(data['shared'], 'Boolean');
       }
       if (data.hasOwnProperty('avatar')) {
-        obj['avatar'] = GroupImage.constructFromObject(data['avatar']);
+        obj['avatar'] = ListImage.constructFromObject(data['avatar']);
       }
       if (data.hasOwnProperty('isDefault')) {
         obj['isDefault'] = ApiClient.convertToType(data['isDefault'], 'Boolean');
@@ -148,7 +148,7 @@
    */
   exports.prototype['shared'] = undefined;
   /**
-   * @member {module:model/GroupImage} avatar
+   * @member {module:model/ListImage} avatar
    */
   exports.prototype['avatar'] = undefined;
   /**
