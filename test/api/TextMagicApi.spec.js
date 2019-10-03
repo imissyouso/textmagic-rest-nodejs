@@ -1021,16 +1021,6 @@
         done();
       });
     });
-    describe('getMessagePrices', function() {
-      it('should call getMessagePrices successfully', function(done) {
-        //uncomment below and update the code to test getMessagePrices
-        //instance.getMessagePrices(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getMessageSession', function() {
       it('should call getMessageSession successfully', function(done) {
         //uncomment below and update the code to test getMessageSession

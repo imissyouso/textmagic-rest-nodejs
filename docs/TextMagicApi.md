@@ -101,7 +101,6 @@ Method | HTTP request | Description
 [**getListsOfContact**](TextMagicApi.md#getListsOfContact) | **GET** /api/v2/contacts/{id}/lists | Return lists which contact belongs to.
 [**getMessagePreview**](TextMagicApi.md#getMessagePreview) | **GET** /api/v2/messages/preview | Preview message
 [**getMessagePrice**](TextMagicApi.md#getMessagePrice) | **GET** /api/v2/messages/price | Check price
-[**getMessagePrices**](TextMagicApi.md#getMessagePrices) | **GET** /api/v2/messages/prices | Get pricing
 [**getMessageSession**](TextMagicApi.md#getMessageSession) | **GET** /api/v2/sessions/{id} | Get a session details
 [**getMessageSessionStat**](TextMagicApi.md#getMessageSessionStat) | **GET** /api/v2/sessions/{id}/stat | Get a session statistics
 [**getMessagesBySessionId**](TextMagicApi.md#getMessagesBySessionId) | **GET** /api/v2/sessions/{id}/messages | Get a session messages
@@ -5083,49 +5082,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetMessagePriceResponse**](GetMessagePriceResponse.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="getMessagePrices"></a>
-# **getMessagePrices**
-> GetMessagePricesResponse getMessagePrices()
-
-Get pricing
-
-Get message prices for all countries.
-
-### Example
-```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
-
-// Configure HTTP basic authorization: BasicAuth
-var BasicAuth = defaultClient.authentications['BasicAuth'];
-BasicAuth.username = 'YOUR USERNAME';
-BasicAuth.password = 'YOUR PASSWORD';
-
-var apiInstance = new TextmagicClient.TextMagicApi();
-apiInstance.getMessagePrices().then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
-
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**GetMessagePricesResponse**](GetMessagePricesResponse.md)
 
 ### Authorization
 

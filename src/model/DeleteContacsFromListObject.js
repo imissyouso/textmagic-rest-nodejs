@@ -37,7 +37,7 @@
   /**
    * The DeleteContacsFromListObject model module.
    * @module model/DeleteContacsFromListObject
-   * @version 2.0.454
+   * @version 2.0.467
    */
 
   /**

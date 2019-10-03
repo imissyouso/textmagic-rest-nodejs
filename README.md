@@ -9,7 +9,7 @@ For detailed documentation and more examples, please visit [http://docs.textmagi
 ## Installation
 
 ```shell
-npm install textmagic-client@2.0.454 --save
+npm install textmagic-client@2.0.467 --save
 ```
 
 ## Usage Example
