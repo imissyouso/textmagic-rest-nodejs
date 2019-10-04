@@ -37,7 +37,7 @@
   /**
    * The GetBlockedContactsPaginatedResponse model module.
    * @module model/GetBlockedContactsPaginatedResponse
-   * @version 2.0.475
+   * @version 2.0.476
    */
 
   /**

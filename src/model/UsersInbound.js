@@ -37,7 +37,7 @@
   /**
    * The UsersInbound model module.
    * @module model/UsersInbound
-   * @version 2.0.475
+   * @version 2.0.476
    */
 
   /**

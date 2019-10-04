@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.475
+   * @version 2.0.476
    */
 
   /**
@@ -50,7 +50,7 @@
 
 
     /**
-     * Assign contacts to the specified list.
+     * Assign contacts to a list
      * 
      * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
@@ -95,7 +95,7 @@
     }
 
     /**
-     * Assign contacts to the specified list.
+     * Assign contacts to a list
      * 
      * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
@@ -424,7 +424,7 @@
 
 
     /**
-     * Reset list members to the specified contacts.
+     * Reset list members to the specified contacts
      * 
      * @param {module:model/ClearAndAssignContactsToListInputObject} clearAndAssignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
@@ -469,7 +469,7 @@
     }
 
     /**
-     * Reset list members to the specified contacts.
+     * Reset list members to the specified contacts
      * 
      * @param {module:model/ClearAndAssignContactsToListInputObject} clearAndAssignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
      * @param {Number} id 
@@ -1584,7 +1584,7 @@
 
 
     /**
-     * Unassign contacts from the specified list.
+     * Unassign contacts from a list
      * 
      * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject Contact ID(s), separated by comma
      * @param {Number} id 
@@ -1629,7 +1629,7 @@
     }
 
     /**
-     * Unassign contacts from the specified list.
+     * Unassign contacts from a list
      * 
      * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject Contact ID(s), separated by comma
      * @param {Number} id 
@@ -1855,7 +1855,7 @@
 
 
     /**
-     * Delete a single list.
+     * Delete a single list
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1894,7 +1894,7 @@
     }
 
     /**
-     * Delete a single list.
+     * Delete a single list
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1908,7 +1908,7 @@
 
 
     /**
-     * Delete an avatar for the list.
+     * Delete an avatar for the list
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1947,7 +1947,7 @@
     }
 
     /**
-     * Delete an avatar for the list.
+     * Delete an avatar for the list
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1961,7 +1961,7 @@
 
 
     /**
-     * Delete contact from list by given ID(s) or all contacts from list.
+     * Delete contact from list by given ID(s) or all contacts from list
      * 
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
@@ -2006,7 +2006,7 @@
     }
 
     /**
-     * Delete contact from list by given ID(s) or all contacts from list.
+     * Delete contact from list by given ID(s) or all contacts from list
      * 
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
@@ -2021,7 +2021,7 @@
 
 
     /**
-     * Delete list by given ID(s) or delete all lists.
+     * Delete list by given ID(s) or delete all lists
      * 
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -2059,7 +2059,7 @@
     }
 
     /**
-     * Delete list by given ID(s) or delete all lists.
+     * Delete list by given ID(s) or delete all lists
      * 
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -4391,7 +4391,7 @@
 
 
     /**
-     * Fetch user contacts by given group id.
+     * Get all contacts in a list
      * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
      * @param {Number} id Given group Id.
      * @param {Object} opts Optional parameters
@@ -4440,7 +4440,7 @@
     }
 
     /**
-     * Fetch user contacts by given group id.
+     * Get all contacts in a list
      * A useful synonym for \&quot;contacts/search\&quot; command with provided \&quot;listId\&quot; parameter.
      * @param {Number} id Given group Id.
      * @param {Object} opts Optional parameters
@@ -5016,7 +5016,7 @@
 
 
     /**
-     * Fetch all contacts IDs belonging to the list with ID.
+     * Fetch all contacts IDs belonging to the list with ID
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetListContactsIdsResponse} and HTTP response
@@ -5055,7 +5055,7 @@
     }
 
     /**
-     * Fetch all contacts IDs belonging to the list with ID.
+     * Fetch all contacts IDs belonging to the list with ID
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetListContactsIdsResponse}
@@ -6002,7 +6002,7 @@
 
     /**
      * Get current sender settings
-     * @TODO
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender settings enabled for sending to specified country. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSenderSettingsResponse} and HTTP response
@@ -6038,7 +6038,7 @@
 
     /**
      * Get current sender settings
-     * @TODO
+     * 
      * @param {Object} opts Optional parameters
      * @param {String} opts.country Return sender settings enabled for sending to specified country. Two upper case characters
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSenderSettingsResponse}
@@ -7786,7 +7786,7 @@
 
 
     /**
-     * Find contact lists by given parameters.
+     * Find contact lists by given parameters
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -7836,7 +7836,7 @@
     }
 
     /**
-     * Find contact lists by given parameters.
+     * Find contact lists by given parameters
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -9069,7 +9069,7 @@
 
 
     /**
-     * Update existing list.
+     * Update existing list
      * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
@@ -9111,7 +9111,7 @@
     }
 
     /**
-     * Update existing list.
+     * Update existing list
      * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
@@ -9525,7 +9525,7 @@
 
 
     /**
-     * Add an avatar for the list.
+     * Add an avatar for the list
      * 
      * @param {File} image List avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 
@@ -9571,7 +9571,7 @@
     }
 
     /**
-     * Add an avatar for the list.
+     * Add an avatar for the list
      * 
      * @param {File} image List avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 
