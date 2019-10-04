@@ -1,3 +1,4 @@
+[comment]: <> (HEAD)
 # TextMagic JavaScript SDK
 This library provides you with an easy way of sending SMS and receiving replies by integrating TextMagic SMS Gateway into your JavaScript application.
 
@@ -6,10 +7,11 @@ TextMagic’s application programming interface (API) provides the communication
 
 For detailed documentation and more examples, please visit [http://docs.textmagictesting.com/](http://docs.textmagictesting.com/)
 
+[comment]: <> (/HEAD)
 ## Installation
 
 ```shell
-npm install textmagic-client@2.0.473 --save
+npm install textmagic-client@2.0.475 --save
 ```
 
 ## Usage Example
@@ -63,6 +65,8 @@ api.uploadListAvatar(stream, 3223).then(function (data) {
     console.error(err);
 });
 ```
-
+[comment]: <> (FOOTER)
 ## License
 The library is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+[comment]: <> (/FOOTER)

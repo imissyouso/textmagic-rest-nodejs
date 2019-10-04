@@ -37,7 +37,7 @@
   /**
    * The UpdateCurrentUserInputObject model module.
    * @module model/UpdateCurrentUserInputObject
-   * @version 2.0.473
+   * @version 2.0.475
    */
 
   /**

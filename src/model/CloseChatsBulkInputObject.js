@@ -37,7 +37,7 @@
   /**
    * The CloseChatsBulkInputObject model module.
    * @module model/CloseChatsBulkInputObject
-   * @version 2.0.473
+   * @version 2.0.475
    */
 
   /**

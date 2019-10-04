@@ -37,7 +37,7 @@
   /**
    * The SendMessageInputObject model module.
    * @module model/SendMessageInputObject
-   * @version 2.0.473
+   * @version 2.0.475
    */
 
   /**
