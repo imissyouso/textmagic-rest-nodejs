@@ -37,7 +37,7 @@
   /**
    * The FavoriteContact model module.
    * @module model/FavoriteContact
-   * @version 2.0.487
+   * @version 2.0.488
    */
 
   /**

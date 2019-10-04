@@ -37,7 +37,7 @@
   /**
    * The UserCustomField model module.
    * @module model/UserCustomField
-   * @version 2.0.487
+   * @version 2.0.488
    */
 
   /**

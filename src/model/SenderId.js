@@ -37,7 +37,7 @@
   /**
    * The SenderId model module.
    * @module model/SenderId
-   * @version 2.0.487
+   * @version 2.0.488
    */
 
   /**

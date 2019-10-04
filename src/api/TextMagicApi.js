@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.487
+   * @version 2.0.488
    */
 
   /**
@@ -5296,7 +5296,7 @@
 
 
     /**
-     * Check price
+     * Check message price
      * Check pricing for a new outbound message.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.includeBlocked Should we show pricing for the blocked contacts. (default to 0)
@@ -5366,7 +5366,7 @@
     }
 
     /**
-     * Check price
+     * Check message price
      * Check pricing for a new outbound message.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.includeBlocked Should we show pricing for the blocked contacts. (default to 0)

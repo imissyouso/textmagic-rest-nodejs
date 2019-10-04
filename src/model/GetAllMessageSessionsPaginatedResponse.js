@@ -37,7 +37,7 @@
   /**
    * The GetAllMessageSessionsPaginatedResponse model module.
    * @module model/GetAllMessageSessionsPaginatedResponse
-   * @version 2.0.487
+   * @version 2.0.488
    */
 
   /**
