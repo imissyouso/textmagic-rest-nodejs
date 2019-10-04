@@ -37,16 +37,16 @@
   /**
    * The UserCustomField model module.
    * @module model/UserCustomField
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>UserCustomField</code>.
    * @alias module:model/UserCustomField
    * @class
-   * @param id {Number} 
-   * @param name {String} 
-   * @param createdAt {Date} 
+   * @param id {Number} Custom field ID.
+   * @param name {String} Custom field name.
+   * @param createdAt {Date} Custom field creation time.
    */
   var exports = function(id, name, createdAt) {
     var _this = this;
@@ -81,14 +81,17 @@
   }
 
   /**
+   * Custom field ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Custom field name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
+   * Custom field creation time.
    * @member {Date} createdAt
    */
   exports.prototype['createdAt'] = undefined;

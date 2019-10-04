@@ -37,14 +37,14 @@
   /**
    * The AssignContactsToListInputObject model module.
    * @module model/AssignContactsToListInputObject
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>AssignContactsToListInputObject</code>.
    * @alias module:model/AssignContactsToListInputObject
    * @class
-   * @param contacts {String} 
+   * @param contacts {String} Comma-separated array of [Contacts](/docs/api/contacts/) IDs.
    */
   var exports = function(contacts) {
     var _this = this;
@@ -71,6 +71,7 @@
   }
 
   /**
+   * Comma-separated array of [Contacts](/docs/api/contacts/) IDs.
    * @member {String} contacts
    */
   exports.prototype['contacts'] = undefined;

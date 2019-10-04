@@ -37,14 +37,14 @@
   /**
    * The UpdateListObject model module.
    * @module model/UpdateListObject
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>UpdateListObject</code>.
    * @alias module:model/UpdateListObject
    * @class
-   * @param name {String} List name
+   * @param name {String} List name.
    */
   var exports = function(name) {
     var _this = this;
@@ -83,17 +83,18 @@
   }
 
   /**
-   * List name
+   * List name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
-   * Should this list be shared with sub-accounts
+   * Make this list shared or not?
    * @member {Boolean} shared
+   * @default false
    */
-  exports.prototype['shared'] = undefined;
+  exports.prototype['shared'] = false;
   /**
-   * Is list favorited. Default is false
+   * Is list favorited.
    * @member {Boolean} favorited
    * @default false
    */

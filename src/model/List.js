@@ -37,21 +37,21 @@
   /**
    * The List model module.
    * @module model/List
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>List</code>.
    * @alias module:model/List
    * @class
-   * @param id {Number} 
-   * @param name {String} 
-   * @param description {String} 
+   * @param id {Number} List ID.
+   * @param name {String} List name.
+   * @param description {String} List description.
    * @param favorited {Boolean} 
-   * @param membersCount {Number} 
+   * @param membersCount {Number} List members count.
    * @param user {module:model/User} 
    * @param service {Boolean} 
-   * @param shared {Boolean} 
+   * @param shared {Boolean} Is the list **shared** among all sub-accounts?
    * @param avatar {module:model/ListImage} 
    * @param isDefault {Boolean} 
    */
@@ -116,14 +116,17 @@
   }
 
   /**
+   * List ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * List name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
+   * List description.
    * @member {String} description
    */
   exports.prototype['description'] = undefined;
@@ -132,6 +135,7 @@
    */
   exports.prototype['favorited'] = undefined;
   /**
+   * List members count.
    * @member {Number} membersCount
    */
   exports.prototype['membersCount'] = undefined;
@@ -144,6 +148,7 @@
    */
   exports.prototype['service'] = undefined;
   /**
+   * Is the list **shared** among all sub-accounts?
    * @member {Boolean} shared
    */
   exports.prototype['shared'] = undefined;

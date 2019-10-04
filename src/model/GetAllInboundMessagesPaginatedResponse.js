@@ -37,7 +37,7 @@
   /**
    * The GetAllInboundMessagesPaginatedResponse model module.
    * @module model/GetAllInboundMessagesPaginatedResponse
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**

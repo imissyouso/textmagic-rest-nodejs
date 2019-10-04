@@ -37,7 +37,7 @@
   /**
    * The UpdateCustomFieldValueInputObject model module.
    * @module model/UpdateCustomFieldValueInputObject
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
@@ -74,10 +74,12 @@
   }
 
   /**
+   * [Contact](/docs/api/contacts/) 
    * @member {Number} contactId
    */
   exports.prototype['contactId'] = undefined;
   /**
+   * Custom field value. Note that this value is not parsed in any way. It is stored and used in tags exactly as you send it.
    * @member {String} value
    */
   exports.prototype['value'] = undefined;

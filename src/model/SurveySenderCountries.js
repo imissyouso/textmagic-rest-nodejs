@@ -37,7 +37,7 @@
   /**
    * The SurveySenderCountries model module.
    * @module model/SurveySenderCountries
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**

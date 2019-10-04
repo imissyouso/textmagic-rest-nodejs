@@ -37,14 +37,14 @@
   /**
    * The DeleteContacsFromListObject model module.
    * @module model/DeleteContacsFromListObject
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>DeleteContacsFromListObject</code>.
    * @alias module:model/DeleteContacsFromListObject
    * @class
-   * @param contacts {String} 
+   * @param contacts {String} Comma-separated array of [Contacts](/docs/api/contacts/) IDs. 
    */
   var exports = function(contacts) {
     var _this = this;
@@ -71,6 +71,7 @@
   }
 
   /**
+   * Comma-separated array of [Contacts](/docs/api/contacts/) IDs. 
    * @member {String} contacts
    */
   exports.prototype['contacts'] = undefined;

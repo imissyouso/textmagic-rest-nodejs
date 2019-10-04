@@ -37,23 +37,23 @@
   /**
    * The Contact model module.
    * @module model/Contact
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>Contact</code>.
    * @alias module:model/Contact
    * @class
-   * @param id {Number} 
+   * @param id {Number} Contact ID.
    * @param favorited {Boolean} 
    * @param blocked {Boolean} 
-   * @param firstName {String} 
-   * @param lastName {String} 
-   * @param companyName {String} 
-   * @param phone {String} 
-   * @param email {String} 
-   * @param country {module:model/Country} 
-   * @param customFields {Array.<module:model/ContactCustomField>} 
+   * @param firstName {String} Contact first name.
+   * @param lastName {String} Contact last name.
+   * @param companyName {String} Company name.
+   * @param phone {String} Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
+   * @param email {String} Contact email address.
+   * @param country {module:model/Country} Contact country.
+   * @param customFields {Array.<module:model/ContactCustomField>} See [Custom Fields](/docs/api/custom-fields/) section.
    * @param user {module:model/User} 
    * @param lists {Array.<Array>} 
    * @param phoneType {String} 
@@ -141,6 +141,7 @@
   }
 
   /**
+   * Contact ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
@@ -153,30 +154,37 @@
    */
   exports.prototype['blocked'] = undefined;
   /**
+   * Contact first name.
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Contact last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;
   /**
+   * Company name.
    * @member {String} companyName
    */
   exports.prototype['companyName'] = undefined;
   /**
+   * Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
   /**
+   * Contact email address.
    * @member {String} email
    */
   exports.prototype['email'] = undefined;
   /**
+   * Contact country.
    * @member {module:model/Country} country
    */
   exports.prototype['country'] = undefined;
   /**
+   * See [Custom Fields](/docs/api/custom-fields/) section.
    * @member {Array.<module:model/ContactCustomField>} customFields
    */
   exports.prototype['customFields'] = undefined;

@@ -37,15 +37,15 @@
   /**
    * The UpdateContactInputObject model module.
    * @module model/UpdateContactInputObject
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>UpdateContactInputObject</code>.
    * @alias module:model/UpdateContactInputObject
    * @class
-   * @param phone {String} Contact phone number in E.164 (international) format without leading + or zeroes
-   * @param lists {String} Array of list resources id contact will be assigned to
+   * @param phone {String} Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
+   * @param lists {String} Comma-separated [list](/docs/api/lists/) ID. Each contact must be assigned to at least one list.
    */
   var exports = function(phone, lists) {
     var _this = this;
@@ -126,12 +126,12 @@
    */
   exports.prototype['lastName'] = undefined;
   /**
-   * Contact phone number in E.164 (international) format without leading + or zeroes
+   * Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
   /**
-   * Contact email
+   * Contact email address.
    * @member {String} email
    */
   exports.prototype['email'] = undefined;
@@ -141,7 +141,7 @@
    */
   exports.prototype['companyName'] = undefined;
   /**
-   * Array of list resources id contact will be assigned to
+   * Comma-separated [list](/docs/api/lists/) ID. Each contact must be assigned to at least one list.
    * @member {String} lists
    */
   exports.prototype['lists'] = undefined;

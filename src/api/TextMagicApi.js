@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
@@ -51,8 +51,8 @@
 
     /**
      * Assign contacts to a list
-     * 
-     * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
+     * &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+     * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -96,8 +96,8 @@
 
     /**
      * Assign contacts to a list
-     * 
-     * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject Contact ID(s), separated by comma or &#39;all&#39; to add all contacts belonging to the current user
+     * &gt; Unlike all other PUT requests, this command does not need old contact IDs to be submitted. For example, if you have a list with contacts 150, 151 and 152 and you want to add contact ID 153, you only need to submit 153 as a parameter of PUT /api/v2/lists/{id}/contacts. 
+     * @param {module:model/AssignContactsToListInputObject} assignContactsToListInputObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -110,8 +110,8 @@
 
 
     /**
+     * Block contact by phone number
      * Block contact from inbound and outbound communication by phone number.
-     * 
      * @param {module:model/BlockContactInputObject} blockContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -148,8 +148,8 @@
     }
 
     /**
+     * Block contact by phone number
      * Block contact from inbound and outbound communication by phone number.
-     * 
      * @param {module:model/BlockContactInputObject} blockContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -634,7 +634,7 @@
 
 
     /**
-     * Create a new contact from the submitted data.
+     * Add a new contact
      * 
      * @param {module:model/CreateContactInputObject} createContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -672,7 +672,7 @@
     }
 
     /**
-     * Create a new contact from the submitted data.
+     * Add a new contact
      * 
      * @param {module:model/CreateContactInputObject} createContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -746,7 +746,7 @@
 
 
     /**
-     * Create a new custom field from the submitted data.
+     * Add a new custom field
      * 
      * @param {module:model/CreateCustomFieldInputObject} createCustomFieldInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
@@ -784,7 +784,7 @@
     }
 
     /**
-     * Create a new custom field from the submitted data.
+     * Add a new custom field
      * 
      * @param {module:model/CreateCustomFieldInputObject} createCustomFieldInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
@@ -1066,7 +1066,7 @@
 
 
     /**
-     * Delete all contacts.
+     * Delete contacts (bulk)
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1098,7 +1098,7 @@
     }
 
     /**
-     * Delete all contacts.
+     * Delete contacts (bulk)
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1313,8 +1313,8 @@
 
 
     /**
-     * Delete a single contact.
-     * 
+     * Delete a contact
+     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1352,8 +1352,8 @@
     }
 
     /**
-     * Delete a single contact.
-     * 
+     * Delete a contact
+     * &gt; This command removes your contact completely. If it was assigned or saved to a shared list, it will disappear from there too. If you only need to remove a contact from selected lists, instead use the Contact assignment command in the Lists section rather than deleting the contact. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1366,7 +1366,7 @@
 
 
     /**
-     * Delete an avatar for the contact.
+     * Delete an avatar
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1405,7 +1405,7 @@
     }
 
     /**
-     * Delete an avatar for the contact.
+     * Delete an avatar
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1532,7 +1532,7 @@
 
 
     /**
-     * Delete contact by given ID(s) or delete all contacts.
+     * Delete contacts by IDs (bulk)
      * 
      * @param {module:model/DeleteContactsByIdsInputObject} deleteContactsByIdsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -1570,7 +1570,7 @@
     }
 
     /**
-     * Delete contact by given ID(s) or delete all contacts.
+     * Delete contacts by IDs (bulk)
      * 
      * @param {module:model/DeleteContactsByIdsInputObject} deleteContactsByIdsInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -1585,8 +1585,8 @@
 
     /**
      * Unassign contacts from a list
-     * 
-     * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject Contact ID(s), separated by comma
+     * &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+     * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1630,8 +1630,8 @@
 
     /**
      * Unassign contacts from a list
-     * 
-     * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject Contact ID(s), separated by comma
+     * &gt; When you remove contacts from a specific list, they will be deleted permanently, unless they are first saved in another list. 
+     * @param {module:model/DeleteContacsFromListObject} deleteContacsFromListObject 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1644,8 +1644,8 @@
 
 
     /**
-     * Delete a single custom field.
-     * 
+     * Delete a custom field
+     * &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1683,8 +1683,8 @@
     }
 
     /**
-     * Delete a single custom field.
-     * 
+     * Delete a custom field
+     * &gt; When a custom field is deleted, all the information that was added to contacts under this custom field will also be lost. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1855,8 +1855,8 @@
 
 
     /**
-     * Delete a single list
-     * 
+     * Delete a list
+     * &gt; When you delete a list, the contacts in it are deleted as well unless they were saved in other list. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1894,8 +1894,8 @@
     }
 
     /**
-     * Delete a single list
-     * 
+     * Delete a list
+     * &gt; When you delete a list, the contacts in it are deleted as well unless they were saved in other list. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -1961,7 +1961,7 @@
 
 
     /**
-     * Delete contact from list by given ID(s) or all contacts from list
+     * Delete contacts from list (bulk)
      * 
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
@@ -2006,7 +2006,7 @@
     }
 
     /**
-     * Delete contact from list by given ID(s) or all contacts from list
+     * Delete contacts from list (bulk)
      * 
      * @param {module:model/DeleteListContactsBulkInputObject} deleteListContactsBulkInputObject 
      * @param {Number} id 
@@ -2021,7 +2021,7 @@
 
 
     /**
-     * Delete list by given ID(s) or delete all lists
+     * Delete lists (bulk)
      * 
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
@@ -2059,7 +2059,7 @@
     }
 
     /**
-     * Delete list by given ID(s) or delete all lists
+     * Delete lists (bulk)
      * 
      * @param {module:model/DeleteListsBulkInputObject} deleteListsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
@@ -2074,7 +2074,7 @@
 
     /**
      * Delete a session
-     * 
+     * Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2113,7 +2113,7 @@
 
     /**
      * Delete a session
-     * 
+     * Delete a message session, together with all nested messages. &gt; You will not be refunded for any deleted sent sessions. 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2127,7 +2127,7 @@
 
     /**
      * Delete sessions (bulk)
-     * 
+     * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
      * @param {module:model/DeleteMessageSessionsBulkInputObject} deleteMessageSessionsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2165,7 +2165,7 @@
 
     /**
      * Delete sessions (bulk)
-     * 
+     * Delete messages sessions, together with all nested messages, by given ID(s) or delete all messages sessions.
      * @param {module:model/DeleteMessageSessionsBulkInputObject} deleteMessageSessionsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -2662,7 +2662,7 @@
 
     /**
      * Delete templates (bulk)
-     * 
+     * Delete template by given ID(s) or delete all templates.
      * @param {module:model/DeleteTemplatesBulkInputObject} deleteTemplatesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -2700,7 +2700,7 @@
 
     /**
      * Delete templates (bulk)
-     * 
+     * Delete template by given ID(s) or delete all templates.
      * @param {module:model/DeleteTemplatesBulkInputObject} deleteTemplatesBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -3111,7 +3111,7 @@
 
     /**
      * Get all sessions
-     * 
+     * Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -3149,7 +3149,7 @@
 
     /**
      * Get all sessions
-     * 
+     * Get all message sending sessions. &gt; This list contains all of your sessions, including those which were sent but not via API 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -3541,7 +3541,7 @@
 
 
     /**
-     * Get blocked contacts.
+     * Get blocked contacts
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -3585,7 +3585,7 @@
     }
 
     /**
-     * Get blocked contacts.
+     * Get blocked contacts
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -3939,7 +3939,7 @@
 
 
     /**
-     * Get a single contact.
+     * Get the details of a specific contact
      * 
      * @param {Number} id The contact id
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Contact} and HTTP response
@@ -3978,7 +3978,7 @@
     }
 
     /**
-     * Get a single contact.
+     * Get the details of a specific contact
      * 
      * @param {Number} id The contact id
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Contact}
@@ -3992,7 +3992,7 @@
 
 
     /**
-     * Get a single contact by phone number.
+     * Get the details of a specific contact by phone number
      * 
      * @param {String} phone 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Contact} and HTTP response
@@ -4031,7 +4031,7 @@
     }
 
     /**
-     * Get a single contact by phone number.
+     * Get the details of a specific contact by phone number
      * 
      * @param {String} phone 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Contact}
@@ -4266,7 +4266,7 @@
 
 
     /**
-     * Get all user contacts.
+     * Get all contacts
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -4310,7 +4310,7 @@
     }
 
     /**
-     * Get all user contacts.
+     * Get all contacts
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -4329,8 +4329,8 @@
 
 
     /**
-     * Get contacts autocomplete suggestions by given search term.
-     * 
+     * Get contacts autocomplete suggestions
+     * Get contacts autocomplete suggestions by given search term
      * @param {String} query Find recipients by specified search query
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -4374,8 +4374,8 @@
     }
 
     /**
-     * Get contacts autocomplete suggestions by given search term.
-     * 
+     * Get contacts autocomplete suggestions
+     * Get contacts autocomplete suggestions by given search term
      * @param {String} query Find recipients by specified search query
      * @param {Object} opts Optional parameters
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -4549,7 +4549,7 @@
 
 
     /**
-     * Get a single custom field.
+     * Get the details of a specific custom field
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UserCustomField} and HTTP response
@@ -4588,7 +4588,7 @@
     }
 
     /**
-     * Get a single custom field.
+     * Get the details of a specific custom field
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UserCustomField}
@@ -4602,7 +4602,7 @@
 
 
     /**
-     * Get all contact custom fields.
+     * Get all custom fields
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -4640,7 +4640,7 @@
     }
 
     /**
-     * Get all contact custom fields.
+     * Get all custom fields
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -4754,7 +4754,7 @@
 
 
     /**
-     * Get favorite contacts and lists.
+     * Get favorite contacts and lists
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -4794,7 +4794,7 @@
     }
 
     /**
-     * Get favorite contacts and lists.
+     * Get favorite contacts and lists
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -5016,7 +5016,7 @@
 
 
     /**
-     * Fetch all contacts IDs belonging to the list with ID
+     * Get all contacts IDs in a list
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetListContactsIdsResponse} and HTTP response
@@ -5055,7 +5055,7 @@
     }
 
     /**
-     * Fetch all contacts IDs belonging to the list with ID
+     * Get all contacts IDs in a list
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetListContactsIdsResponse}
@@ -5135,8 +5135,8 @@
 
 
     /**
-     * Return lists which contact belongs to.
-     * 
+     * Get contact&#39;s lists
+     * Get all the lists in which the contact is included
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -5180,8 +5180,8 @@
     }
 
     /**
-     * Return lists which contact belongs to.
-     * 
+     * Get contact&#39;s lists
+     * Get all the lists in which the contact is included
      * @param {Number} id 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -5399,7 +5399,7 @@
 
     /**
      * Get a session details
-     * 
+     * Get a specific session’s details
      * @param {Number} id a session ID
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MessageSession} and HTTP response
      */
@@ -5438,7 +5438,7 @@
 
     /**
      * Get a session details
-     * 
+     * Get a specific session’s details
      * @param {Number} id a session ID
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MessageSession}
      */
@@ -6539,7 +6539,7 @@
 
     /**
      * Get a template details
-     * 
+     * Get a single template.
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MessageTemplate} and HTTP response
      */
@@ -6578,7 +6578,7 @@
 
     /**
      * Get a template details
-     * 
+     * Get a single template.
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MessageTemplate}
      */
@@ -6687,7 +6687,7 @@
 
 
     /**
-     * Get a single unsubscribed contact.
+     * Get the details of a specific unsubscribed contact
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UnsubscribedContact} and HTTP response
@@ -6726,7 +6726,7 @@
     }
 
     /**
-     * Get a single unsubscribed contact.
+     * Get the details of a specific unsubscribed contact
      * 
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UnsubscribedContact}
@@ -6740,8 +6740,8 @@
 
 
     /**
-     * Get all contact have unsubscribed from your communication.
-     * 
+     * Get all unsubscribed contacts
+     * When one of your message recipients sends a request with one of the [STOP-words](/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -6778,8 +6778,8 @@
     }
 
     /**
-     * Get all contact have unsubscribed from your communication.
-     * 
+     * Get all unsubscribed contacts
+     * When one of your message recipients sends a request with one of the [STOP-words](/sms-stop-command/), they will be immediately opted-out of your send lists and their contact status will change to an unsubscribed contact. To retrieve information on all contacts who have unsubscribed, use: 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -7636,7 +7636,7 @@
 
 
     /**
-     * Find user contacts by given parameters.
+     * Find contacts by given criteria
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -7692,7 +7692,7 @@
     }
 
     /**
-     * Find user contacts by given parameters.
+     * Find contacts by given criteria
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -7786,7 +7786,7 @@
 
 
     /**
-     * Find contact lists by given parameters
+     * Find lists by given criteria
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -7836,7 +7836,7 @@
     }
 
     /**
-     * Find contact lists by given parameters
+     * Find lists by given criteria
      * 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
@@ -8000,7 +8000,7 @@
 
     /**
      * Find templates by criteria
-     * 
+     * Find user templates by given parameters.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -8044,7 +8044,7 @@
 
     /**
      * Find templates by criteria
-     * 
+     * Find user templates by given parameters.
      * @param {Object} opts Optional parameters
      * @param {Number} opts.page Fetch specified results page. (default to 1)
      * @param {Number} opts.limit The number of results per page. (default to 10)
@@ -8413,8 +8413,8 @@
 
 
     /**
+     * Unblock contacts (bulk)
      * Unblock several contacts by blocked contact ids or unblock all contacts
-     * 
      * @param {module:model/UnblockContactsBulkInputObject} unblockContactsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -8451,8 +8451,8 @@
     }
 
     /**
+     * Unblock contacts (bulk)
      * Unblock several contacts by blocked contact ids or unblock all contacts
-     * 
      * @param {module:model/UnblockContactsBulkInputObject} unblockContactsBulkInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -8517,8 +8517,8 @@
 
 
     /**
-     * Unsubscribe contact from your communication by phone number.
-     * 
+     * Manually unsubscribe a contact
+     * &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
      * @param {module:model/UnsubscribeContactInputObject} unsubscribeContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
@@ -8555,8 +8555,8 @@
     }
 
     /**
-     * Unsubscribe contact from your communication by phone number.
-     * 
+     * Manually unsubscribe a contact
+     * &gt; Please note, if you unsubscribe a contact, this action cannot be reversed. 
      * @param {module:model/UnsubscribeContactInputObject} unsubscribeContactInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
@@ -8725,7 +8725,7 @@
 
 
     /**
-     * Update existing contact.
+     * Edit a contact
      * 
      * @param {module:model/UpdateContactInputObject} updateContactInputObject 
      * @param {Number} id 
@@ -8770,7 +8770,7 @@
     }
 
     /**
-     * Update existing contact.
+     * Edit a contact
      * 
      * @param {module:model/UpdateContactInputObject} updateContactInputObject 
      * @param {Number} id 
@@ -8897,7 +8897,7 @@
 
 
     /**
-     * Update existing custom field.
+     * Edit a custom field
      * 
      * @param {module:model/UpdateCustomFieldInputObject} updateCustomFieldInputObject 
      * @param {Number} id 
@@ -8942,7 +8942,7 @@
     }
 
     /**
-     * Update existing custom field.
+     * Edit a custom field
      * 
      * @param {module:model/UpdateCustomFieldInputObject} updateCustomFieldInputObject 
      * @param {Number} id 
@@ -8957,7 +8957,7 @@
 
 
     /**
-     * Update contact&#39;s custom field value.
+     * Edit the custom field value of a specified contact
      * 
      * @param {module:model/UpdateCustomFieldValueInputObject} updateCustomFieldValueInputObject 
      * @param {String} id 
@@ -9002,7 +9002,7 @@
     }
 
     /**
-     * Update contact&#39;s custom field value.
+     * Edit the custom field value of a specified contact
      * 
      * @param {module:model/UpdateCustomFieldValueInputObject} updateCustomFieldValueInputObject 
      * @param {String} id 
@@ -9069,7 +9069,7 @@
 
 
     /**
-     * Update existing list
+     * Edit a list
      * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
@@ -9111,7 +9111,7 @@
     }
 
     /**
-     * Update existing list
+     * Edit a list
      * 
      * @param {Number} id 
      * @param {Object} opts Optional parameters
@@ -9464,7 +9464,7 @@
 
 
     /**
-     * Add an avatar for the contact.
+     * Upload an avatar
      * 
      * @param {File} image Contact avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 
@@ -9510,7 +9510,7 @@
     }
 
     /**
-     * Add an avatar for the contact.
+     * Upload an avatar
      * 
      * @param {File} image Contact avatar. Should be PNG or JPG file not more than 10 MB
      * @param {Number} id 

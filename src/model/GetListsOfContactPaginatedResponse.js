@@ -37,7 +37,7 @@
   /**
    * The GetListsOfContactPaginatedResponse model module.
    * @module model/GetListsOfContactPaginatedResponse
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**

@@ -37,18 +37,18 @@
   /**
    * The UnsubscribedContact model module.
    * @module model/UnsubscribedContact
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
    * Constructs a new <code>UnsubscribedContact</code>.
    * @alias module:model/UnsubscribedContact
    * @class
-   * @param id {Number} 
-   * @param phone {String} 
-   * @param unsubscribeTime {Date} 
-   * @param firstName {String} 
-   * @param lastName {String} 
+   * @param id {Number} Unsubscribed contact ID.
+   * @param phone {String} Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
+   * @param unsubscribeTime {Date} Time when contact has been opted-out.
+   * @param firstName {String} Unsubscribed contact first name.
+   * @param lastName {String} Unsubscribed contact last name.
    */
   var exports = function(id, phone, unsubscribeTime, firstName, lastName) {
     var _this = this;
@@ -91,22 +91,27 @@
   }
 
   /**
+   * Unsubscribed contact ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
   /**
+   * Time when contact has been opted-out.
    * @member {Date} unsubscribeTime
    */
   exports.prototype['unsubscribeTime'] = undefined;
   /**
+   * Unsubscribed contact first name.
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Unsubscribed contact last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;

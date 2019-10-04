@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/GetContactsAutocompleteResponse'], factory);
+    define(['ApiClient', 'model/GetContactsAutocompleteResponseItem'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./GetContactsAutocompleteResponse'));
+    module.exports = factory(require('../ApiClient'), require('./GetContactsAutocompleteResponseItem'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.GetContactsAutocompleteResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.GetContactsAutocompleteResponse);
+    root.TextmagicClient.GetContactsAutocompleteResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.GetContactsAutocompleteResponseItem);
   }
-}(this, function(ApiClient, GetContactsAutocompleteResponse) {
+}(this, function(ApiClient, GetContactsAutocompleteResponseItem) {
   'use strict';
 
 
@@ -37,7 +37,7 @@
   /**
    * The GetContactsAutocompleteResponse model module.
    * @module model/GetContactsAutocompleteResponse
-   * @version 2.0.477
+   * @version 2.0.487
    */
 
   /**
@@ -64,7 +64,7 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      ApiClient.constructFromObject(data, obj, 'GetContactsAutocompleteResponse');
+      ApiClient.constructFromObject(data, obj, 'GetContactsAutocompleteResponseItem');
 
     }
     return obj;

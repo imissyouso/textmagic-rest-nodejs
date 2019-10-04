@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contacts** | **String** |  | 
+**contacts** | **String** | Comma-separated array of [Contacts](/docs/api/contacts/) IDs. | 
 
 
