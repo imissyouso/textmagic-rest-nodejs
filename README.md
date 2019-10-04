@@ -11,7 +11,7 @@ For detailed documentation and more examples, please visit [http://docs.textmagi
 ## Installation
 
 ```shell
-npm install textmagic-client@2.0.476 --save
+npm install textmagic-client@2.0.477 --save
 ```
 
 ## Usage Example

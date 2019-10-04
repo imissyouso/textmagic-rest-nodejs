@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.476
+   * @version 2.0.477
    */
 
   /**
@@ -9180,7 +9180,7 @@
 
     /**
      * Change sender settings
-     * @TODO
+     * 
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -9218,7 +9218,7 @@
 
     /**
      * Change sender settings
-     * @TODO
+     * 
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
