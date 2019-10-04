@@ -37,7 +37,7 @@
   /**
    * The SenderId model module.
    * @module model/SenderId
-   * @version 2.0.467
+   * @version 2.0.473
    */
 
   /**
@@ -53,6 +53,7 @@
     var _this = this;
 
     _this['id'] = id;
+
     _this['senderId'] = senderId;
     _this['user'] = user;
     _this['status'] = status;
@@ -72,6 +73,9 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
+      if (data.hasOwnProperty('displayTimeFormat')) {
+        obj['displayTimeFormat'] = ApiClient.convertToType(data['displayTimeFormat'], 'String');
+      }
       if (data.hasOwnProperty('senderId')) {
         obj['senderId'] = ApiClient.convertToType(data['senderId'], 'String');
       }
@@ -90,6 +94,11 @@
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
+  /**
+   * Format for representation of time
+   * @member {String} displayTimeFormat
+   */
+  exports.prototype['displayTimeFormat'] = undefined;
   /**
    * Alphanumeric ID.
    * @member {String} senderId

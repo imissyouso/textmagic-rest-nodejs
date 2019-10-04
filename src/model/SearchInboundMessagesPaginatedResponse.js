@@ -37,7 +37,7 @@
   /**
    * The SearchInboundMessagesPaginatedResponse model module.
    * @module model/SearchInboundMessagesPaginatedResponse
-   * @version 2.0.467
+   * @version 2.0.473
    */
 
   /**

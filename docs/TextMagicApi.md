@@ -5723,8 +5723,8 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 var opts = { 
   'page': 1, // Number | Fetch specified results page.
   'limit': 10, // Number | The number of results per page.
-  'start': 1430438400, // Number | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
-  'end': "1431648000" // String | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
+  'start': "2018-11-11 11:11", // Number | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+  'end': "\"2019-11-11 11:11\"" // String | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
 };
 apiInstance.getSpendingStat(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);

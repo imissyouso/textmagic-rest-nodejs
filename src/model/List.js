@@ -37,7 +37,7 @@
   /**
    * The List model module.
    * @module model/List
-   * @version 2.0.467
+   * @version 2.0.473
    */
 
   /**

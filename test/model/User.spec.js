@@ -63,6 +63,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property displayTimeFormat (base name: "displayTimeFormat")', function() {
+      // uncomment below and update the code to test the property displayTimeFormat
+      //var instance = new TextmagicClient.User();
+      //expect(instance).to.be();
+    });
+
     it('should have the property username (base name: "username")', function() {
       // uncomment below and update the code to test the property username
       //var instance = new TextmagicClient.User();

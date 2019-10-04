@@ -37,7 +37,7 @@
   /**
    * The Conversation model module.
    * @module model/Conversation
-   * @version 2.0.467
+   * @version 2.0.473
    */
 
   /**
@@ -180,7 +180,17 @@
      * value: "out"
      * @const
      */
-    "out": "out"  };
+    "out": "out",
+    /**
+     * value: "o"
+     * @const
+     */
+    "o": "o",
+    /**
+     * value: "i"
+     * @const
+     */
+    "i": "i"  };
 
 
   return exports;

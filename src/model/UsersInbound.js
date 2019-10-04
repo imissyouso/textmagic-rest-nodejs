@@ -37,7 +37,7 @@
   /**
    * The UsersInbound model module.
    * @module model/UsersInbound
-   * @version 2.0.467
+   * @version 2.0.473
    */
 
   /**
@@ -55,6 +55,7 @@
     var _this = this;
 
     _this['id'] = id;
+
 
     _this['user'] = user;
     _this['purchasedAt'] = purchasedAt;
@@ -76,6 +77,9 @@
 
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
+      }
+      if (data.hasOwnProperty('displayTimeFormat')) {
+        obj['displayTimeFormat'] = ApiClient.convertToType(data['displayTimeFormat'], 'String');
       }
       if (data.hasOwnProperty('phone')) {
         obj['phone'] = ApiClient.convertToType(data['phone'], 'String');
@@ -104,6 +108,11 @@
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
+  /**
+   * Format for representation of time
+   * @member {String} displayTimeFormat
+   */
+  exports.prototype['displayTimeFormat'] = undefined;
   /**
    * Dedicated phone number.
    * @member {String} phone

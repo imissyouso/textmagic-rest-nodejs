@@ -23,6 +23,10 @@ Name | Type | Description | Notes
 
 * `out` (value: `"out"`)
 
+* `o` (value: `"o"`)
+
+* `i` (value: `"i"`)
+
 
 
 
