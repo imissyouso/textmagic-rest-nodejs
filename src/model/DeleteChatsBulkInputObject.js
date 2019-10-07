@@ -36,7 +36,7 @@
   /**
    * The DeleteChatsBulkInputObject model module.
    * @module model/DeleteChatsBulkInputObject
-   * @version 2.0.500
+   * @version 2.0.501
    */
 
   /**
@@ -89,9 +89,8 @@
   /**
    * Default is empty string. If set then all entities with specified status will be affected.
    * @member {module:model/DeleteChatsBulkInputObject.StatusEnum} status
-   * @default ''
    */
-  exports.prototype['status'] = '';
+  exports.prototype['status'] = undefined;
 
 
   /**
