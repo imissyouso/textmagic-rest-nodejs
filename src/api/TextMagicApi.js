@@ -34,7 +34,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.488
+   * @version 2.0.496
    */
 
   /**
@@ -2766,10 +2766,10 @@
 
     /**
      * Carrier Lookup
-     * 
-     * @param {String} phone 
+     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+     * @param {String} phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). 
      * @param {Object} opts Optional parameters
-     * @param {String} opts.country Country code for local formatted numbers (default to US)
+     * @param {String} opts.country This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DoCarrierLookupResponse} and HTTP response
      */
     this.doCarrierLookupWithHttpInfo = function(phone, opts) {
@@ -2809,10 +2809,10 @@
 
     /**
      * Carrier Lookup
-     * 
-     * @param {String} phone 
+     * This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
+     * @param {String} phone Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). 
      * @param {Object} opts Optional parameters
-     * @param {String} opts.country Country code for local formatted numbers (default to US)
+     * @param {String} opts.country This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DoCarrierLookupResponse}
      */
     this.doCarrierLookup = function(phone, opts) {
@@ -2824,9 +2824,9 @@
 
 
     /**
-     * Validate Email address using Email Lookup tool
-     * 
-     * @param {String} email 
+     * Email Lookup
+     * To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * @param {String} email Email address.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DoEmailLookupResponse} and HTTP response
      */
     this.doEmailLookupWithHttpInfo = function(email) {
@@ -2863,9 +2863,9 @@
     }
 
     /**
-     * Validate Email address using Email Lookup tool
-     * 
-     * @param {String} email 
+     * Email Lookup
+     * To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
+     * @param {String} email Email address.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DoEmailLookupResponse}
      */
     this.doEmailLookup = function(email) {
@@ -4459,7 +4459,7 @@
 
 
     /**
-     * Return list of countries.
+     * Get countries
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetCountriesResponse} and HTTP response
      */
@@ -4491,7 +4491,7 @@
     }
 
     /**
-     * Return list of countries.
+     * Get countries
      * 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetCountriesResponse}
      */
@@ -6591,8 +6591,8 @@
 
 
     /**
-     * Return all available timezone IDs.
-     * 
+     * Get timezones
+     * Return all available timezone IDs
      * @param {Object} opts Optional parameters
      * @param {Number} opts.full Return full info about timezones in array (0 or 1). Default is 0 (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetTimezonesResponse} and HTTP response
@@ -6627,8 +6627,8 @@
     }
 
     /**
-     * Return all available timezone IDs.
-     * 
+     * Get timezones
+     * Return all available timezone IDs
      * @param {Object} opts Optional parameters
      * @param {Number} opts.full Return full info about timezones in array (0 or 1). Default is 0 (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetTimezonesResponse}
@@ -7208,8 +7208,8 @@
 
 
     /**
-     * Just does a pong.
-     * 
+     * Ping
+     * Make a simple ping request
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PingResponse} and HTTP response
      */
     this.pingWithHttpInfo = function() {
@@ -7240,8 +7240,8 @@
     }
 
     /**
-     * Just does a pong.
-     * 
+     * Ping
+     * Make a simple ping request
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PingResponse}
      */
     this.ping = function() {

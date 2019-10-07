@@ -56,7 +56,7 @@ Method | HTTP request | Description
 [**deleteTemplatesBulk**](TextMagicApi.md#deleteTemplatesBulk) | **POST** /api/v2/templates/delete | Delete templates (bulk)
 [**doAuth**](TextMagicApi.md#doAuth) | **POST** /api/v2/auth | Authenticate user by given username and password.
 [**doCarrierLookup**](TextMagicApi.md#doCarrierLookup) | **GET** /api/v2/lookups/{phone} | Carrier Lookup
-[**doEmailLookup**](TextMagicApi.md#doEmailLookup) | **GET** /api/v2/email-lookups/{email} | Validate Email address using Email Lookup tool
+[**doEmailLookup**](TextMagicApi.md#doEmailLookup) | **GET** /api/v2/email-lookups/{email} | Email Lookup
 [**duplicateSurvey**](TextMagicApi.md#duplicateSurvey) | **PUT** /api/v2/surveys/{id}/duplicate | Duplicate a survey.
 [**getAllBulkSessions**](TextMagicApi.md#getAllBulkSessions) | **GET** /api/v2/bulks | Get all bulk sending sessions.
 [**getAllChats**](TextMagicApi.md#getAllChats) | **GET** /api/v2/chats | Get all chats
@@ -85,7 +85,7 @@ Method | HTTP request | Description
 [**getContacts**](TextMagicApi.md#getContacts) | **GET** /api/v2/contacts | Get all contacts
 [**getContactsAutocomplete**](TextMagicApi.md#getContactsAutocomplete) | **GET** /api/v2/contacts/autocomplete | Get contacts autocomplete suggestions
 [**getContactsByListId**](TextMagicApi.md#getContactsByListId) | **GET** /api/v2/lists/{id}/contacts | Get all contacts in a list
-[**getCountries**](TextMagicApi.md#getCountries) | **GET** /api/v2/countries | Return list of countries.
+[**getCountries**](TextMagicApi.md#getCountries) | **GET** /api/v2/countries | Get countries
 [**getCurrentUser**](TextMagicApi.md#getCurrentUser) | **GET** /api/v2/user | Get current account information
 [**getCustomField**](TextMagicApi.md#getCustomField) | **GET** /api/v2/customfields/{id} | Get the details of a specific custom field
 [**getCustomFields**](TextMagicApi.md#getCustomFields) | **GET** /api/v2/customfields | Get all custom fields
@@ -123,7 +123,7 @@ Method | HTTP request | Description
 [**getSurveyNodes**](TextMagicApi.md#getSurveyNodes) | **GET** /api/v2/surveys/{id}/nodes | Fetch nodes by given survey id.
 [**getSurveys**](TextMagicApi.md#getSurveys) | **GET** /api/v2/surveys | Get all user surveys.
 [**getTemplate**](TextMagicApi.md#getTemplate) | **GET** /api/v2/templates/{id} | Get a template details
-[**getTimezones**](TextMagicApi.md#getTimezones) | **GET** /api/v2/timezones | Return all available timezone IDs.
+[**getTimezones**](TextMagicApi.md#getTimezones) | **GET** /api/v2/timezones | Get timezones
 [**getUnreadMessagesTotal**](TextMagicApi.md#getUnreadMessagesTotal) | **GET** /api/v2/chats/unread/count | Get unread messages number
 [**getUnsubscribedContact**](TextMagicApi.md#getUnsubscribedContact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
 [**getUnsubscribers**](TextMagicApi.md#getUnsubscribers) | **GET** /api/v2/unsubscribers | Get all unsubscribed contacts
@@ -135,7 +135,7 @@ Method | HTTP request | Description
 [**mergeSurveyNodes**](TextMagicApi.md#mergeSurveyNodes) | **POST** /api/v2/surveys/nodes/merge | Merge two question nodes.
 [**muteChat**](TextMagicApi.md#muteChat) | **POST** /api/v2/chats/mute | Mute chat sounds
 [**muteChatsBulk**](TextMagicApi.md#muteChatsBulk) | **POST** /api/v2/chats/mute/bulk | Mute chats (bulk)
-[**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Just does a pong.
+[**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Ping
 [**reopenChatsBulk**](TextMagicApi.md#reopenChatsBulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
 [**requestNewSubaccountToken**](TextMagicApi.md#requestNewSubaccountToken) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for sub-account
 [**requestSenderId**](TextMagicApi.md#requestSenderId) | **POST** /api/v2/senderids | Apply for a new Sender ID
@@ -2682,7 +2682,7 @@ No authorization required
 
 Carrier Lookup
 
-
+This API call allows you to retrieve additional information about a phone number: region-specific phone number formatting, carrier, phone type (landline/mobile) and country information.  &gt; Numbers can be checked one by one. You cannot check multiple numbers in one request.   
 
 ### Example
 ```javascript
@@ -2696,10 +2696,10 @@ BasicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new TextmagicClient.TextMagicApi();
 
-var phone = "\"1-541-754-3010\""; // String | 
+var phone = "\"447860021130\""; // String | Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers). 
 
 var opts = { 
-  'country': "US" // String | Country code for local formatted numbers
+  'country': "\"GB\"" // String | This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**. 
 };
 apiInstance.doCarrierLookup(phone, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -2713,8 +2713,8 @@ apiInstance.doCarrierLookup(phone, opts).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone** | **String**|  | 
- **country** | **String**| Country code for local formatted numbers | [optional] [default to US]
+ **phone** | **String**| Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) or in [National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers).  | 
+ **country** | **String**| This option must be specified only if the phone number in a **[National format](https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers)**.  | [optional] 
 
 ### Return type
 
@@ -2733,9 +2733,9 @@ Name | Type | Description  | Notes
 # **doEmailLookup**
 > DoEmailLookupResponse doEmailLookup(email)
 
-Validate Email address using Email Lookup tool
+Email Lookup
 
-
+To get more details about an email address or to check if it is a valid email, you can use the Email Lookup command. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).  This API call allows you to retrieve additional information about an email address, such as mailbox detection, syntax checks, DNS validation, deliverability status, and many more helpful values (see the table below).  &gt; Emails must be checked one by one. You cannot check multiple emails in one request. To upload and check emails in bulk, please use our [Web app](https://my.textmagic.com/online/email-lookup/).
 
 ### Example
 ```javascript
@@ -2749,7 +2749,7 @@ BasicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new TextmagicClient.TextMagicApi();
 
-var email = "\"andrey.v@textmagic.biz\""; // String | 
+var email = "\"john@sample.com\""; // String | Email address.
 
 apiInstance.doEmailLookup(email).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -2763,7 +2763,7 @@ apiInstance.doEmailLookup(email).then(function(data) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **email** | **String**|  | 
+ **email** | **String**| Email address. | 
 
 ### Return type
 
@@ -4240,7 +4240,7 @@ Name | Type | Description  | Notes
 # **getCountries**
 > GetCountriesResponse getCountries()
 
-Return list of countries.
+Get countries
 
 
 
@@ -6207,9 +6207,9 @@ Name | Type | Description  | Notes
 # **getTimezones**
 > GetTimezonesResponse getTimezones(opts)
 
-Return all available timezone IDs.
+Get timezones
 
-
+Return all available timezone IDs
 
 ### Example
 ```javascript
@@ -6792,9 +6792,9 @@ null (empty response body)
 # **ping**
 > PingResponse ping()
 
-Just does a pong.
+Ping
 
-
+Make a simple ping request
 
 ### Example
 ```javascript

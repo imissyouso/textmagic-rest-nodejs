@@ -63,24 +63,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property addressType (base name: "addressType")', function() {
-      // uncomment below and update the code to test the property addressType
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property emailRole (base name: "emailRole")', function() {
-      // uncomment below and update the code to test the property emailRole
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property reason (base name: "reason")', function() {
-      // uncomment below and update the code to test the property reason
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
       //var instance = new TextmagicClient.DoEmailLookupResponse();
@@ -93,8 +75,38 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property reason (base name: "reason")', function() {
+      // uncomment below and update the code to test the property reason
+      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property risk (base name: "risk")', function() {
+      // uncomment below and update the code to test the property risk
+      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property addressType (base name: "addressType")', function() {
+      // uncomment below and update the code to test the property addressType
+      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property isDisposableAddress (base name: "isDisposableAddress")', function() {
       // uncomment below and update the code to test the property isDisposableAddress
+      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property suggestion (base name: "suggestion")', function() {
+      // uncomment below and update the code to test the property suggestion
+      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property emailRole (base name: "emailRole")', function() {
+      // uncomment below and update the code to test the property emailRole
       //var instance = new TextmagicClient.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
@@ -113,6 +125,12 @@
 
     it('should have the property exchange (base name: "exchange")', function() {
       // uncomment below and update the code to test the property exchange
+      //var instance = new TextmagicClient.DoEmailLookupResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property preference (base name: "preference")', function() {
+      // uncomment below and update the code to test the property preference
       //var instance = new TextmagicClient.DoEmailLookupResponse();
       //expect(instance).to.be();
     });
@@ -143,24 +161,6 @@
 
     it('should have the property hasAaaa (base name: "hasAaaa")', function() {
       // uncomment below and update the code to test the property hasAaaa
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property risk (base name: "risk")', function() {
-      // uncomment below and update the code to test the property risk
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property preference (base name: "preference")', function() {
-      // uncomment below and update the code to test the property preference
-      //var instance = new TextmagicClient.DoEmailLookupResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property suggestion (base name: "suggestion")', function() {
-      // uncomment below and update the code to test the property suggestion
       //var instance = new TextmagicClient.DoEmailLookupResponse();
       //expect(instance).to.be();
     });

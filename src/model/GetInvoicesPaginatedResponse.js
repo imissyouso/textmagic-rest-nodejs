@@ -37,7 +37,7 @@
   /**
    * The GetInvoicesPaginatedResponse model module.
    * @module model/GetInvoicesPaginatedResponse
-   * @version 2.0.488
+   * @version 2.0.496
    */
 
   /**

@@ -37,53 +37,53 @@
   /**
    * The DoEmailLookupResponse model module.
    * @module model/DoEmailLookupResponse
-   * @version 2.0.488
+   * @version 2.0.496
    */
 
   /**
    * Constructs a new <code>DoEmailLookupResponse</code>.
    * @alias module:model/DoEmailLookupResponse
    * @class
-   * @param address {String} 
-   * @param addressType {String} 
-   * @param emailRole {String} 
-   * @param reason {String} 
-   * @param status {module:model/DoEmailLookupResponse.StatusEnum} 
-   * @param deliverability {String} 
-   * @param isDisposableAddress {Boolean} 
-   * @param localPart {String} 
-   * @param domainPart {String} 
-   * @param exchange {String} 
-   * @param isInWhiteList {Boolean} 
-   * @param isInBlackList {Boolean} 
-   * @param hasMx {Boolean} 
+   * @param address {String} The email address passed to the call.
+   * @param status {module:model/DoEmailLookupResponse.StatusEnum} The email is `valid` or `invalid`.
+   * @param deliverability {String} The delivery status of the email address is`deliverable`, `undeliverable`  or `unknown`.
+   * @param reason {String} The reason why the checked email is invalid/undeliverable.
+   * @param risk {module:model/DoEmailLookupResponse.RiskEnum} The risk score of the email is`high`, `medium`, `low` or `null`.
+   * @param addressType {module:model/DoEmailLookupResponse.AddressTypeEnum} The email address type (domain) is `free` or `corporate`.
+   * @param isDisposableAddress {Boolean} This is be `true` if the domain is in the list of disposable email addresses, otherwise returns as `false`.
+   * @param suggestion {String} Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.
+   * @param emailRole {String} Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
+   * @param localPart {String} The local part of the email address.
+   * @param domainPart {String} The domain part of the email address.
+   * @param exchange {String} Email exchange server domain name (MX record value).
+   * @param preference {Number} MX record preference.
+   * @param isInWhiteList {Boolean} `true` if the email address exists in TextMagic whitelist. 
+   * @param isInBlackList {Boolean} `true` if the email address exists in TextMagic blacklist. 
+   * @param hasMx {Boolean} `true` if the email address domain has an MX record. 
    * @param hasAa {Boolean} 
-   * @param hasAaaa {Boolean} 
-   * @param risk {String} 
-   * @param preference {Number} 
-   * @param suggestion {String} 
+   * @param hasAaaa {Boolean} `true` if the email address domain has an AAAA record (IPv6). 
    */
-  var exports = function(address, addressType, emailRole, reason, status, deliverability, isDisposableAddress, localPart, domainPart, exchange, isInWhiteList, isInBlackList, hasMx, hasAa, hasAaaa, risk, preference, suggestion) {
+  var exports = function(address, status, deliverability, reason, risk, addressType, isDisposableAddress, suggestion, emailRole, localPart, domainPart, exchange, preference, isInWhiteList, isInBlackList, hasMx, hasAa, hasAaaa) {
     var _this = this;
 
     _this['address'] = address;
-    _this['addressType'] = addressType;
-    _this['emailRole'] = emailRole;
-    _this['reason'] = reason;
     _this['status'] = status;
     _this['deliverability'] = deliverability;
+    _this['reason'] = reason;
+    _this['risk'] = risk;
+    _this['addressType'] = addressType;
     _this['isDisposableAddress'] = isDisposableAddress;
+    _this['suggestion'] = suggestion;
+    _this['emailRole'] = emailRole;
     _this['localPart'] = localPart;
     _this['domainPart'] = domainPart;
     _this['exchange'] = exchange;
+    _this['preference'] = preference;
     _this['isInWhiteList'] = isInWhiteList;
     _this['isInBlackList'] = isInBlackList;
     _this['hasMx'] = hasMx;
     _this['hasAa'] = hasAa;
     _this['hasAaaa'] = hasAaaa;
-    _this['risk'] = risk;
-    _this['preference'] = preference;
-    _this['suggestion'] = suggestion;
   };
 
   /**
@@ -100,23 +100,29 @@
       if (data.hasOwnProperty('address')) {
         obj['address'] = ApiClient.convertToType(data['address'], 'String');
       }
-      if (data.hasOwnProperty('addressType')) {
-        obj['addressType'] = ApiClient.convertToType(data['addressType'], 'String');
-      }
-      if (data.hasOwnProperty('emailRole')) {
-        obj['emailRole'] = ApiClient.convertToType(data['emailRole'], 'String');
-      }
-      if (data.hasOwnProperty('reason')) {
-        obj['reason'] = ApiClient.convertToType(data['reason'], 'String');
-      }
       if (data.hasOwnProperty('status')) {
         obj['status'] = ApiClient.convertToType(data['status'], 'String');
       }
       if (data.hasOwnProperty('deliverability')) {
         obj['deliverability'] = ApiClient.convertToType(data['deliverability'], 'String');
       }
+      if (data.hasOwnProperty('reason')) {
+        obj['reason'] = ApiClient.convertToType(data['reason'], 'String');
+      }
+      if (data.hasOwnProperty('risk')) {
+        obj['risk'] = ApiClient.convertToType(data['risk'], 'String');
+      }
+      if (data.hasOwnProperty('addressType')) {
+        obj['addressType'] = ApiClient.convertToType(data['addressType'], 'String');
+      }
       if (data.hasOwnProperty('isDisposableAddress')) {
         obj['isDisposableAddress'] = ApiClient.convertToType(data['isDisposableAddress'], 'Boolean');
+      }
+      if (data.hasOwnProperty('suggestion')) {
+        obj['suggestion'] = ApiClient.convertToType(data['suggestion'], 'String');
+      }
+      if (data.hasOwnProperty('emailRole')) {
+        obj['emailRole'] = ApiClient.convertToType(data['emailRole'], 'String');
       }
       if (data.hasOwnProperty('localPart')) {
         obj['localPart'] = ApiClient.convertToType(data['localPart'], 'String');
@@ -126,6 +132,9 @@
       }
       if (data.hasOwnProperty('exchange')) {
         obj['exchange'] = ApiClient.convertToType(data['exchange'], 'String');
+      }
+      if (data.hasOwnProperty('preference')) {
+        obj['preference'] = ApiClient.convertToType(data['preference'], 'Number');
       }
       if (data.hasOwnProperty('isInWhiteList')) {
         obj['isInWhiteList'] = ApiClient.convertToType(data['isInWhiteList'], 'Boolean');
@@ -142,68 +151,87 @@
       if (data.hasOwnProperty('hasAaaa')) {
         obj['hasAaaa'] = ApiClient.convertToType(data['hasAaaa'], 'Boolean');
       }
-      if (data.hasOwnProperty('risk')) {
-        obj['risk'] = ApiClient.convertToType(data['risk'], 'String');
-      }
-      if (data.hasOwnProperty('preference')) {
-        obj['preference'] = ApiClient.convertToType(data['preference'], 'Number');
-      }
-      if (data.hasOwnProperty('suggestion')) {
-        obj['suggestion'] = ApiClient.convertToType(data['suggestion'], 'String');
-      }
     }
     return obj;
   }
 
   /**
+   * The email address passed to the call.
    * @member {String} address
    */
   exports.prototype['address'] = undefined;
   /**
-   * @member {String} addressType
-   */
-  exports.prototype['addressType'] = undefined;
-  /**
-   * @member {String} emailRole
-   */
-  exports.prototype['emailRole'] = undefined;
-  /**
-   * @member {String} reason
-   */
-  exports.prototype['reason'] = undefined;
-  /**
+   * The email is `valid` or `invalid`.
    * @member {module:model/DoEmailLookupResponse.StatusEnum} status
    */
   exports.prototype['status'] = undefined;
   /**
+   * The delivery status of the email address is`deliverable`, `undeliverable`  or `unknown`.
    * @member {String} deliverability
    */
   exports.prototype['deliverability'] = undefined;
   /**
+   * The reason why the checked email is invalid/undeliverable.
+   * @member {String} reason
+   */
+  exports.prototype['reason'] = undefined;
+  /**
+   * The risk score of the email is`high`, `medium`, `low` or `null`.
+   * @member {module:model/DoEmailLookupResponse.RiskEnum} risk
+   */
+  exports.prototype['risk'] = undefined;
+  /**
+   * The email address type (domain) is `free` or `corporate`.
+   * @member {module:model/DoEmailLookupResponse.AddressTypeEnum} addressType
+   */
+  exports.prototype['addressType'] = undefined;
+  /**
+   * This is be `true` if the domain is in the list of disposable email addresses, otherwise returns as `false`.
    * @member {Boolean} isDisposableAddress
    */
   exports.prototype['isDisposableAddress'] = undefined;
   /**
+   * Null if nothing is suggested, however, if there is a potential typo in the email address, the closest suggestion is provided.
+   * @member {String} suggestion
+   */
+  exports.prototype['suggestion'] = undefined;
+  /**
+   * Checks the mailbox part of the email whether it matches a specific role type (‘admin’, ‘sales’, ‘webmaster’)
+   * @member {String} emailRole
+   */
+  exports.prototype['emailRole'] = undefined;
+  /**
+   * The local part of the email address.
    * @member {String} localPart
    */
   exports.prototype['localPart'] = undefined;
   /**
+   * The domain part of the email address.
    * @member {String} domainPart
    */
   exports.prototype['domainPart'] = undefined;
   /**
+   * Email exchange server domain name (MX record value).
    * @member {String} exchange
    */
   exports.prototype['exchange'] = undefined;
   /**
+   * MX record preference.
+   * @member {Number} preference
+   */
+  exports.prototype['preference'] = undefined;
+  /**
+   * `true` if the email address exists in TextMagic whitelist. 
    * @member {Boolean} isInWhiteList
    */
   exports.prototype['isInWhiteList'] = undefined;
   /**
+   * `true` if the email address exists in TextMagic blacklist. 
    * @member {Boolean} isInBlackList
    */
   exports.prototype['isInBlackList'] = undefined;
   /**
+   * `true` if the email address domain has an MX record. 
    * @member {Boolean} hasMx
    */
   exports.prototype['hasMx'] = undefined;
@@ -212,21 +240,10 @@
    */
   exports.prototype['hasAa'] = undefined;
   /**
+   * `true` if the email address domain has an AAAA record (IPv6). 
    * @member {Boolean} hasAaaa
    */
   exports.prototype['hasAaaa'] = undefined;
-  /**
-   * @member {String} risk
-   */
-  exports.prototype['risk'] = undefined;
-  /**
-   * @member {Number} preference
-   */
-  exports.prototype['preference'] = undefined;
-  /**
-   * @member {String} suggestion
-   */
-  exports.prototype['suggestion'] = undefined;
 
 
   /**
@@ -245,6 +262,45 @@
      * @const
      */
     "invalid": "invalid"  };
+
+  /**
+   * Allowed values for the <code>risk</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.RiskEnum = {
+    /**
+     * value: "high"
+     * @const
+     */
+    "high": "high",
+    /**
+     * value: "medium"
+     * @const
+     */
+    "medium": "medium",
+    /**
+     * value: "low"
+     * @const
+     */
+    "low": "low"  };
+
+  /**
+   * Allowed values for the <code>addressType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.AddressTypeEnum = {
+    /**
+     * value: "corporate"
+     * @const
+     */
+    "corporate": "corporate",
+    /**
+     * value: "free"
+     * @const
+     */
+    "free": "free"  };
 
 
   return exports;
