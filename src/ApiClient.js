@@ -32,7 +32,7 @@
 
   /**
    * @module ApiClient
-   * @version 2.0.501
+   * @version 2.0.509
    */
 
   /**
@@ -46,9 +46,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default https://rest.textmagic.com
+     * @default http://rest.textmagic.com
      */
-    this.basePath = 'https://rest.textmagic.com'.replace(/\/+$/, '');
+    this.basePath = 'http://rest.textmagic.com'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.

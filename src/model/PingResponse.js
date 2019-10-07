@@ -36,7 +36,7 @@
   /**
    * The PingResponse model module.
    * @module model/PingResponse
-   * @version 2.0.501
+   * @version 2.0.509
    */
 
   /**
