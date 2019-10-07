@@ -1,6 +1,6 @@
 # TextmagicClient.TextMagicApi
 
-All URIs are relative to *http://rest.textmagic.com*
+All URIs are relative to *https://rest.textmagic.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -2900,7 +2900,7 @@ BasicAuth.password = 'YOUR PASSWORD';
 var apiInstance = new TextmagicClient.TextMagicApi();
 
 var opts = { 
-  'status': "status_example", // String | Fetch only (a)ctive, (c)losed or (d)eleted chats
+  'status': "\"a\"", // String | Fetch only (a)ctive, (c)losed or (d)eleted chats
   'page': 1, // Number | Fetch specified results page.
   'limit': 10, // Number | The number of results per page.
   'orderBy': "id", // String | Order results by some field. Default is id

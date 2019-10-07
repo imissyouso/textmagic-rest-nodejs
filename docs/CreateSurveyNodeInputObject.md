@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **label** | **String** | Node label | [optional] 
 **body** | **String** | Node body | [optional] 
 **startNode** | **Number** | Start node id | [optional] 
-**sendDelay** | **Number** | Define delay for sending question to recipients after previous answer. Default is 0 | [optional] 
+**sendDelay** | **Number** | Define delay for sending question to recipients after previous answer. | [optional] 
 
 
 <a name="NodeTypeEnum"></a>
