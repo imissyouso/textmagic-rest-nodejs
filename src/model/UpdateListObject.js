@@ -36,7 +36,7 @@
   /**
    * The UpdateListObject model module.
    * @module model/UpdateListObject
-   * @version 2.0.544
+   * @version 2.0.545
    */
 
   /**

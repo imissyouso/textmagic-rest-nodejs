@@ -36,7 +36,7 @@
   /**
    * The UnmuteChatsBulkInputObject model module.
    * @module model/UnmuteChatsBulkInputObject
-   * @version 2.0.544
+   * @version 2.0.545
    */
 
   /**

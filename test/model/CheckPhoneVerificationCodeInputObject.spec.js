@@ -62,6 +62,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property verifyId (base name: "verifyId")', function() {
+      // uncomment below and update the code to test the property verifyId
+      //var instance = new TextmagicClient.CheckPhoneVerificationCodeInputObject();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

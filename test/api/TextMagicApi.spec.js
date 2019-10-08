@@ -80,30 +80,10 @@
         done();
       });
     });
-    describe('cancelSurvey', function() {
-      it('should call cancelSurvey successfully', function(done) {
-        //uncomment below and update the code to test cancelSurvey
-        //instance.cancelSurvey(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('cancelVerification', function() {
       it('should call cancelVerification successfully', function(done) {
         //uncomment below and update the code to test cancelVerification
         //instance.cancelVerification(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('checkPhoneVerificationCode', function() {
-      it('should call checkPhoneVerificationCode successfully', function(done) {
-        //uncomment below and update the code to test checkPhoneVerificationCode
-        //instance.checkPhoneVerificationCode(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -194,36 +174,6 @@
       it('should call createList successfully', function(done) {
         //uncomment below and update the code to test createList
         //instance.createList(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('createPushToken', function() {
-      it('should call createPushToken successfully', function(done) {
-        //uncomment below and update the code to test createPushToken
-        //instance.createPushToken(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('createSurvey', function() {
-      it('should call createSurvey successfully', function(done) {
-        //uncomment below and update the code to test createSurvey
-        //instance.createSurvey(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('createSurveyNode', function() {
-      it('should call createSurveyNode successfully', function(done) {
-        //uncomment below and update the code to test createSurveyNode
-        //instance.createSurveyNode(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -470,16 +420,6 @@
         done();
       });
     });
-    describe('deletePushToken', function() {
-      it('should call deletePushToken successfully', function(done) {
-        //uncomment below and update the code to test deletePushToken
-        //instance.deletePushToken(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('deleteScheduledMessage', function() {
       it('should call deleteScheduledMessage successfully', function(done) {
         //uncomment below and update the code to test deleteScheduledMessage
@@ -510,26 +450,6 @@
         done();
       });
     });
-    describe('deleteSurvey', function() {
-      it('should call deleteSurvey successfully', function(done) {
-        //uncomment below and update the code to test deleteSurvey
-        //instance.deleteSurvey(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('deleteSurveyNode', function() {
-      it('should call deleteSurveyNode successfully', function(done) {
-        //uncomment below and update the code to test deleteSurveyNode
-        //instance.deleteSurveyNode(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('deleteTemplate', function() {
       it('should call deleteTemplate successfully', function(done) {
         //uncomment below and update the code to test deleteTemplate
@@ -550,16 +470,6 @@
         done();
       });
     });
-    describe('doAuth', function() {
-      it('should call doAuth successfully', function(done) {
-        //uncomment below and update the code to test doAuth
-        //instance.doAuth(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('doCarrierLookup', function() {
       it('should call doCarrierLookup successfully', function(done) {
         //uncomment below and update the code to test doCarrierLookup
@@ -574,16 +484,6 @@
       it('should call doEmailLookup successfully', function(done) {
         //uncomment below and update the code to test doEmailLookup
         //instance.doEmailLookup(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('duplicateSurvey', function() {
-      it('should call duplicateSurvey successfully', function(done) {
-        //uncomment below and update the code to test duplicateSurvey
-        //instance.duplicateSurvey(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -1070,16 +970,6 @@
         done();
       });
     });
-    describe('getPushTokens', function() {
-      it('should call getPushTokens successfully', function(done) {
-        //uncomment below and update the code to test getPushTokens
-        //instance.getPushTokens(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getScheduledMessage', function() {
       it('should call getScheduledMessage successfully', function(done) {
         //uncomment below and update the code to test getScheduledMessage
@@ -1154,46 +1044,6 @@
       it('should call getSubaccountsWithTokens successfully', function(done) {
         //uncomment below and update the code to test getSubaccountsWithTokens
         //instance.getSubaccountsWithTokens(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getSurvey', function() {
-      it('should call getSurvey successfully', function(done) {
-        //uncomment below and update the code to test getSurvey
-        //instance.getSurvey(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getSurveyNode', function() {
-      it('should call getSurveyNode successfully', function(done) {
-        //uncomment below and update the code to test getSurveyNode
-        //instance.getSurveyNode(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getSurveyNodes', function() {
-      it('should call getSurveyNodes successfully', function(done) {
-        //uncomment below and update the code to test getSurveyNodes
-        //instance.getSurveyNodes(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getSurveys', function() {
-      it('should call getSurveys successfully', function(done) {
-        //uncomment below and update the code to test getSurveys
-        //instance.getSurveys(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -1290,16 +1140,6 @@
         done();
       });
     });
-    describe('mergeSurveyNodes', function() {
-      it('should call mergeSurveyNodes successfully', function(done) {
-        //uncomment below and update the code to test mergeSurveyNodes
-        //instance.mergeSurveyNodes(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('muteChat', function() {
       it('should call muteChat successfully', function(done) {
         //uncomment below and update the code to test muteChat
@@ -1344,16 +1184,6 @@
       it('should call requestSenderId successfully', function(done) {
         //uncomment below and update the code to test requestSenderId
         //instance.requestSenderId(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('resetSurvey', function() {
-      it('should call resetSurvey successfully', function(done) {
-        //uncomment below and update the code to test resetSurvey
-        //instance.resetSurvey(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -1450,30 +1280,10 @@
         done();
       });
     });
-    describe('sendEmailVerificationCode', function() {
-      it('should call sendEmailVerificationCode successfully', function(done) {
-        //uncomment below and update the code to test sendEmailVerificationCode
-        //instance.sendEmailVerificationCode(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('sendMessage', function() {
       it('should call sendMessage successfully', function(done) {
         //uncomment below and update the code to test sendMessage
         //instance.sendMessage(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('sendPhoneVerificationCode', function() {
-      it('should call sendPhoneVerificationCode successfully', function(done) {
-        //uncomment below and update the code to test sendPhoneVerificationCode
-        //instance.sendPhoneVerificationCode(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -1494,16 +1304,6 @@
       it('should call setChatStatus successfully', function(done) {
         //uncomment below and update the code to test setChatStatus
         //instance.setChatStatus(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('startSurvey', function() {
-      it('should call startSurvey successfully', function(done) {
-        //uncomment below and update the code to test startSurvey
-        //instance.startSurvey(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -1650,40 +1450,10 @@
         done();
       });
     });
-    describe('updatePassword', function() {
-      it('should call updatePassword successfully', function(done) {
-        //uncomment below and update the code to test updatePassword
-        //instance.updatePassword(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('updateSenderSetting', function() {
       it('should call updateSenderSetting successfully', function(done) {
         //uncomment below and update the code to test updateSenderSetting
         //instance.updateSenderSetting(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('updateSurvey', function() {
-      it('should call updateSurvey successfully', function(done) {
-        //uncomment below and update the code to test updateSurvey
-        //instance.updateSurvey(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('updateSurveyNode', function() {
-      it('should call updateSurveyNode successfully', function(done) {
-        //uncomment below and update the code to test updateSurveyNode
-        //instance.updateSurveyNode(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

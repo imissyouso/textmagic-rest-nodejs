@@ -36,7 +36,7 @@
   /**
    * The UpdateContactNoteInputObject model module.
    * @module model/UpdateContactNoteInputObject
-   * @version 2.0.544
+   * @version 2.0.545
    */
 
   /**

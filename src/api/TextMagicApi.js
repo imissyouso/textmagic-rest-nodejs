@@ -16,24 +16,24 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AssignContactsToListInputObject', 'model/BadRequestResponse', 'model/BlockContactInputObject', 'model/BulkSession', 'model/BuyDedicatedNumberInputObject', 'model/Chat', 'model/CheckPhoneVerificationCodeInputObject', 'model/CheckPhoneVerificationCodeInputObject1', 'model/ClearAndAssignContactsToListInputObject', 'model/CloseChatsBulkInputObject', 'model/Contact', 'model/ContactNote', 'model/CreateContactInputObject', 'model/CreateContactNoteInputObject', 'model/CreateCustomFieldInputObject', 'model/CreateListInputObject', 'model/CreatePushTokenInputObject', 'model/CreateSurveyInputObject', 'model/CreateSurveyNodeInputObject', 'model/CreateTemplateInputObject', 'model/DeleteChatMessagesBulkInputObject', 'model/DeleteChatsBulkInputObject', 'model/DeleteContacsFromListObject', 'model/DeleteContactNotesBulkInputObject', 'model/DeleteContactsByIdsInputObject', 'model/DeleteInboundMessagesBulkInputObject', 'model/DeleteListContactsBulkInputObject', 'model/DeleteListsBulkInputObject', 'model/DeleteMessageSessionsBulkInputObject', 'model/DeleteOutboundMessagesBulkInputObject', 'model/DeleteScheduledMessagesBulkInputObject', 'model/DeleteTemplatesBulkInputObject', 'model/DoAuthInputObject', 'model/DoAuthResponse', 'model/DoCarrierLookupResponse', 'model/DoEmailLookupResponse', 'model/GetAllBulkSessionsPaginatedResponse', 'model/GetAllChatsPaginatedResponse', 'model/GetAllInboundMessagesPaginatedResponse', 'model/GetAllMessageSessionsPaginatedResponse', 'model/GetAllOutboundMessagesPaginatedResponse', 'model/GetAllScheduledMessagesPaginatedResponse', 'model/GetAllTemplatesPaginatedResponse', 'model/GetAvailableDedicatedNumbersResponse', 'model/GetAvailableSenderSettingOptionsResponse', 'model/GetBalanceNotificationOptionsResponse', 'model/GetBalanceNotificationSettingsResponse', 'model/GetBlockedContactsPaginatedResponse', 'model/GetCallbackSettingsResponse', 'model/GetChatMessagesPaginatedResponse', 'model/GetContactNotesPaginatedResponse', 'model/GetContactsAutocompleteResponse', 'model/GetContactsByListIdPaginatedResponse', 'model/GetContactsPaginatedResponse', 'model/GetCountriesResponse', 'model/GetCustomFieldsPaginatedResponse', 'model/GetDisallowedRulesResponse', 'model/GetFavouritesPaginatedResponse', 'model/GetInboundMessagesNotificationSettingsResponse', 'model/GetInvoicesPaginatedResponse', 'model/GetListContactsIdsResponse', 'model/GetListsOfContactPaginatedResponse', 'model/GetListsPaginatedResponse', 'model/GetMessagePreviewResponse', 'model/GetMessagePriceResponse', 'model/GetMessageSessionStatResponse', 'model/GetMessagesBySessionIdPaginatedResponse', 'model/GetMessagingCountersResponse', 'model/GetMessagingStatResponse', 'model/GetOutboundMessagesHistoryPaginatedResponse', 'model/GetPushTokensResponse', 'model/GetSenderIdsPaginatedResponse', 'model/GetSenderSettingsResponse', 'model/GetSpendingStatPaginatedResponse', 'model/GetSubaccountsWithTokensInputObject', 'model/GetSubaccountsWithTokensResponse', 'model/GetSurveyNodesResponse', 'model/GetSurveysPaginatedResponse', 'model/GetTimezonesResponse', 'model/GetUnreadMessagesTotalResponse', 'model/GetUnsubscribersPaginatedResponse', 'model/GetUserDedicatedNumbersPaginatedResponse', 'model/InviteSubaccountInputObject', 'model/MarkChatsReadBulkInputObject', 'model/MarkChatsUnreadBulkInputObject', 'model/MergeSurveyNodesInputObject', 'model/MessageIn', 'model/MessageOut', 'model/MessageSession', 'model/MessageTemplate', 'model/MessagesIcs', 'model/MuteChatInputObject', 'model/MuteChatsBulkInputObject', 'model/NotFoundResponse', 'model/ReopenChatsBulkInputObject', 'model/RequestNewSubaccountTokenInputObject', 'model/RequestSenderIdInputObject', 'model/ResourceLinkResponse', 'model/SearchChatsByIdsPaginatedResponse', 'model/SearchChatsByReceipentPaginatedResponse', 'model/SearchChatsPaginatedResponse', 'model/SearchContactsPaginatedResponse', 'model/SearchInboundMessagesPaginatedResponse', 'model/SearchListsPaginatedResponse', 'model/SearchOutboundMessagesPaginatedResponse', 'model/SearchScheduledMessagesPaginatedResponse', 'model/SearchTemplatesPaginatedResponse', 'model/SendMessageInputObject', 'model/SendMessageResponse', 'model/SendPhoneVerificationCodeInputObject', 'model/SendPhoneVerificationCodeResponse', 'model/SenderId', 'model/SetChatStatusInputObject', 'model/Survey', 'model/SurveyNode', 'model/UnauthorizedResponse', 'model/UnblockContactInputObject', 'model/UnblockContactsBulkInputObject', 'model/UnmuteChatsBulkInputObject', 'model/UnsubscribeContactInputObject', 'model/UnsubscribedContact', 'model/UpdateBalanceNotificationSettingsInputObject', 'model/UpdateCallbackSettingsInputObject', 'model/UpdateChatDesktopNotificationSettingsInputObject', 'model/UpdateContactInputObject', 'model/UpdateContactNoteInputObject', 'model/UpdateCurrentUserInputObject', 'model/UpdateCurrentUserResponse', 'model/UpdateCustomFieldInputObject', 'model/UpdateCustomFieldValueInputObject', 'model/UpdateInboundMessagesNotificationSettingsInputObject', 'model/UpdateListObject', 'model/UpdatePasswordInputObject', 'model/UpdateSenderSettingInputObject', 'model/UpdateSurveyInputObject', 'model/UpdateSurveyNodeInputObject', 'model/UpdateTemplateInputObject', 'model/UploadMessageAttachmentResponse', 'model/User', 'model/UserCustomField', 'model/UsersInbound'], factory);
+    define(['ApiClient', 'model/AssignContactsToListInputObject', 'model/BadRequestResponse', 'model/BlockContactInputObject', 'model/BulkSession', 'model/BuyDedicatedNumberInputObject', 'model/Chat', 'model/CheckPhoneVerificationCodeInputObject', 'model/ClearAndAssignContactsToListInputObject', 'model/CloseChatsBulkInputObject', 'model/Contact', 'model/ContactNote', 'model/CreateContactInputObject', 'model/CreateContactNoteInputObject', 'model/CreateCustomFieldInputObject', 'model/CreateListInputObject', 'model/CreateTemplateInputObject', 'model/DeleteChatMessagesBulkInputObject', 'model/DeleteChatsBulkInputObject', 'model/DeleteContacsFromListObject', 'model/DeleteContactNotesBulkInputObject', 'model/DeleteContactsByIdsInputObject', 'model/DeleteInboundMessagesBulkInputObject', 'model/DeleteListContactsBulkInputObject', 'model/DeleteListsBulkInputObject', 'model/DeleteMessageSessionsBulkInputObject', 'model/DeleteOutboundMessagesBulkInputObject', 'model/DeleteScheduledMessagesBulkInputObject', 'model/DeleteTemplatesBulkInputObject', 'model/DoCarrierLookupResponse', 'model/DoEmailLookupResponse', 'model/GetAllBulkSessionsPaginatedResponse', 'model/GetAllChatsPaginatedResponse', 'model/GetAllInboundMessagesPaginatedResponse', 'model/GetAllMessageSessionsPaginatedResponse', 'model/GetAllOutboundMessagesPaginatedResponse', 'model/GetAllScheduledMessagesPaginatedResponse', 'model/GetAllTemplatesPaginatedResponse', 'model/GetAvailableDedicatedNumbersResponse', 'model/GetAvailableSenderSettingOptionsResponse', 'model/GetBalanceNotificationOptionsResponse', 'model/GetBalanceNotificationSettingsResponse', 'model/GetBlockedContactsPaginatedResponse', 'model/GetCallbackSettingsResponse', 'model/GetChatMessagesPaginatedResponse', 'model/GetContactNotesPaginatedResponse', 'model/GetContactsAutocompleteResponse', 'model/GetContactsByListIdPaginatedResponse', 'model/GetContactsPaginatedResponse', 'model/GetCountriesResponse', 'model/GetCustomFieldsPaginatedResponse', 'model/GetDisallowedRulesResponse', 'model/GetFavouritesPaginatedResponse', 'model/GetInboundMessagesNotificationSettingsResponse', 'model/GetInvoicesPaginatedResponse', 'model/GetListContactsIdsResponse', 'model/GetListsOfContactPaginatedResponse', 'model/GetListsPaginatedResponse', 'model/GetMessagePreviewResponse', 'model/GetMessagePriceResponse', 'model/GetMessageSessionStatResponse', 'model/GetMessagesBySessionIdPaginatedResponse', 'model/GetMessagingCountersResponse', 'model/GetMessagingStatResponse', 'model/GetOutboundMessagesHistoryPaginatedResponse', 'model/GetSenderIdsPaginatedResponse', 'model/GetSenderSettingsResponse', 'model/GetSpendingStatPaginatedResponse', 'model/GetSubaccountsWithTokensInputObject', 'model/GetSubaccountsWithTokensResponse', 'model/GetTimezonesResponse', 'model/GetUnreadMessagesTotalResponse', 'model/GetUnsubscribersPaginatedResponse', 'model/GetUserDedicatedNumbersPaginatedResponse', 'model/InviteSubaccountInputObject', 'model/MarkChatsReadBulkInputObject', 'model/MarkChatsUnreadBulkInputObject', 'model/MessageIn', 'model/MessageOut', 'model/MessageSession', 'model/MessageTemplate', 'model/MessagesIcs', 'model/MuteChatInputObject', 'model/MuteChatsBulkInputObject', 'model/NotFoundResponse', 'model/ReopenChatsBulkInputObject', 'model/RequestNewSubaccountTokenInputObject', 'model/RequestSenderIdInputObject', 'model/ResourceLinkResponse', 'model/SearchChatsByIdsPaginatedResponse', 'model/SearchChatsByReceipentPaginatedResponse', 'model/SearchChatsPaginatedResponse', 'model/SearchContactsPaginatedResponse', 'model/SearchInboundMessagesPaginatedResponse', 'model/SearchListsPaginatedResponse', 'model/SearchOutboundMessagesPaginatedResponse', 'model/SearchScheduledMessagesPaginatedResponse', 'model/SearchTemplatesPaginatedResponse', 'model/SendMessageInputObject', 'model/SendMessageResponse', 'model/SendPhoneVerificationCodeInputObject', 'model/SendPhoneVerificationCodeResponse', 'model/SenderId', 'model/SetChatStatusInputObject', 'model/UnauthorizedResponse', 'model/UnblockContactInputObject', 'model/UnblockContactsBulkInputObject', 'model/UnmuteChatsBulkInputObject', 'model/UnsubscribeContactInputObject', 'model/UnsubscribedContact', 'model/UpdateBalanceNotificationSettingsInputObject', 'model/UpdateCallbackSettingsInputObject', 'model/UpdateChatDesktopNotificationSettingsInputObject', 'model/UpdateContactInputObject', 'model/UpdateContactNoteInputObject', 'model/UpdateCurrentUserInputObject', 'model/UpdateCurrentUserResponse', 'model/UpdateCustomFieldInputObject', 'model/UpdateCustomFieldValueInputObject', 'model/UpdateInboundMessagesNotificationSettingsInputObject', 'model/UpdateListObject', 'model/UpdateSenderSettingInputObject', 'model/UpdateTemplateInputObject', 'model/UploadMessageAttachmentResponse', 'model/User', 'model/UserCustomField', 'model/UsersInbound'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/AssignContactsToListInputObject'), require('../model/BadRequestResponse'), require('../model/BlockContactInputObject'), require('../model/BulkSession'), require('../model/BuyDedicatedNumberInputObject'), require('../model/Chat'), require('../model/CheckPhoneVerificationCodeInputObject'), require('../model/CheckPhoneVerificationCodeInputObject1'), require('../model/ClearAndAssignContactsToListInputObject'), require('../model/CloseChatsBulkInputObject'), require('../model/Contact'), require('../model/ContactNote'), require('../model/CreateContactInputObject'), require('../model/CreateContactNoteInputObject'), require('../model/CreateCustomFieldInputObject'), require('../model/CreateListInputObject'), require('../model/CreatePushTokenInputObject'), require('../model/CreateSurveyInputObject'), require('../model/CreateSurveyNodeInputObject'), require('../model/CreateTemplateInputObject'), require('../model/DeleteChatMessagesBulkInputObject'), require('../model/DeleteChatsBulkInputObject'), require('../model/DeleteContacsFromListObject'), require('../model/DeleteContactNotesBulkInputObject'), require('../model/DeleteContactsByIdsInputObject'), require('../model/DeleteInboundMessagesBulkInputObject'), require('../model/DeleteListContactsBulkInputObject'), require('../model/DeleteListsBulkInputObject'), require('../model/DeleteMessageSessionsBulkInputObject'), require('../model/DeleteOutboundMessagesBulkInputObject'), require('../model/DeleteScheduledMessagesBulkInputObject'), require('../model/DeleteTemplatesBulkInputObject'), require('../model/DoAuthInputObject'), require('../model/DoAuthResponse'), require('../model/DoCarrierLookupResponse'), require('../model/DoEmailLookupResponse'), require('../model/GetAllBulkSessionsPaginatedResponse'), require('../model/GetAllChatsPaginatedResponse'), require('../model/GetAllInboundMessagesPaginatedResponse'), require('../model/GetAllMessageSessionsPaginatedResponse'), require('../model/GetAllOutboundMessagesPaginatedResponse'), require('../model/GetAllScheduledMessagesPaginatedResponse'), require('../model/GetAllTemplatesPaginatedResponse'), require('../model/GetAvailableDedicatedNumbersResponse'), require('../model/GetAvailableSenderSettingOptionsResponse'), require('../model/GetBalanceNotificationOptionsResponse'), require('../model/GetBalanceNotificationSettingsResponse'), require('../model/GetBlockedContactsPaginatedResponse'), require('../model/GetCallbackSettingsResponse'), require('../model/GetChatMessagesPaginatedResponse'), require('../model/GetContactNotesPaginatedResponse'), require('../model/GetContactsAutocompleteResponse'), require('../model/GetContactsByListIdPaginatedResponse'), require('../model/GetContactsPaginatedResponse'), require('../model/GetCountriesResponse'), require('../model/GetCustomFieldsPaginatedResponse'), require('../model/GetDisallowedRulesResponse'), require('../model/GetFavouritesPaginatedResponse'), require('../model/GetInboundMessagesNotificationSettingsResponse'), require('../model/GetInvoicesPaginatedResponse'), require('../model/GetListContactsIdsResponse'), require('../model/GetListsOfContactPaginatedResponse'), require('../model/GetListsPaginatedResponse'), require('../model/GetMessagePreviewResponse'), require('../model/GetMessagePriceResponse'), require('../model/GetMessageSessionStatResponse'), require('../model/GetMessagesBySessionIdPaginatedResponse'), require('../model/GetMessagingCountersResponse'), require('../model/GetMessagingStatResponse'), require('../model/GetOutboundMessagesHistoryPaginatedResponse'), require('../model/GetPushTokensResponse'), require('../model/GetSenderIdsPaginatedResponse'), require('../model/GetSenderSettingsResponse'), require('../model/GetSpendingStatPaginatedResponse'), require('../model/GetSubaccountsWithTokensInputObject'), require('../model/GetSubaccountsWithTokensResponse'), require('../model/GetSurveyNodesResponse'), require('../model/GetSurveysPaginatedResponse'), require('../model/GetTimezonesResponse'), require('../model/GetUnreadMessagesTotalResponse'), require('../model/GetUnsubscribersPaginatedResponse'), require('../model/GetUserDedicatedNumbersPaginatedResponse'), require('../model/InviteSubaccountInputObject'), require('../model/MarkChatsReadBulkInputObject'), require('../model/MarkChatsUnreadBulkInputObject'), require('../model/MergeSurveyNodesInputObject'), require('../model/MessageIn'), require('../model/MessageOut'), require('../model/MessageSession'), require('../model/MessageTemplate'), require('../model/MessagesIcs'), require('../model/MuteChatInputObject'), require('../model/MuteChatsBulkInputObject'), require('../model/NotFoundResponse'), require('../model/ReopenChatsBulkInputObject'), require('../model/RequestNewSubaccountTokenInputObject'), require('../model/RequestSenderIdInputObject'), require('../model/ResourceLinkResponse'), require('../model/SearchChatsByIdsPaginatedResponse'), require('../model/SearchChatsByReceipentPaginatedResponse'), require('../model/SearchChatsPaginatedResponse'), require('../model/SearchContactsPaginatedResponse'), require('../model/SearchInboundMessagesPaginatedResponse'), require('../model/SearchListsPaginatedResponse'), require('../model/SearchOutboundMessagesPaginatedResponse'), require('../model/SearchScheduledMessagesPaginatedResponse'), require('../model/SearchTemplatesPaginatedResponse'), require('../model/SendMessageInputObject'), require('../model/SendMessageResponse'), require('../model/SendPhoneVerificationCodeInputObject'), require('../model/SendPhoneVerificationCodeResponse'), require('../model/SenderId'), require('../model/SetChatStatusInputObject'), require('../model/Survey'), require('../model/SurveyNode'), require('../model/UnauthorizedResponse'), require('../model/UnblockContactInputObject'), require('../model/UnblockContactsBulkInputObject'), require('../model/UnmuteChatsBulkInputObject'), require('../model/UnsubscribeContactInputObject'), require('../model/UnsubscribedContact'), require('../model/UpdateBalanceNotificationSettingsInputObject'), require('../model/UpdateCallbackSettingsInputObject'), require('../model/UpdateChatDesktopNotificationSettingsInputObject'), require('../model/UpdateContactInputObject'), require('../model/UpdateContactNoteInputObject'), require('../model/UpdateCurrentUserInputObject'), require('../model/UpdateCurrentUserResponse'), require('../model/UpdateCustomFieldInputObject'), require('../model/UpdateCustomFieldValueInputObject'), require('../model/UpdateInboundMessagesNotificationSettingsInputObject'), require('../model/UpdateListObject'), require('../model/UpdatePasswordInputObject'), require('../model/UpdateSenderSettingInputObject'), require('../model/UpdateSurveyInputObject'), require('../model/UpdateSurveyNodeInputObject'), require('../model/UpdateTemplateInputObject'), require('../model/UploadMessageAttachmentResponse'), require('../model/User'), require('../model/UserCustomField'), require('../model/UsersInbound'));
+    module.exports = factory(require('../ApiClient'), require('../model/AssignContactsToListInputObject'), require('../model/BadRequestResponse'), require('../model/BlockContactInputObject'), require('../model/BulkSession'), require('../model/BuyDedicatedNumberInputObject'), require('../model/Chat'), require('../model/CheckPhoneVerificationCodeInputObject'), require('../model/ClearAndAssignContactsToListInputObject'), require('../model/CloseChatsBulkInputObject'), require('../model/Contact'), require('../model/ContactNote'), require('../model/CreateContactInputObject'), require('../model/CreateContactNoteInputObject'), require('../model/CreateCustomFieldInputObject'), require('../model/CreateListInputObject'), require('../model/CreateTemplateInputObject'), require('../model/DeleteChatMessagesBulkInputObject'), require('../model/DeleteChatsBulkInputObject'), require('../model/DeleteContacsFromListObject'), require('../model/DeleteContactNotesBulkInputObject'), require('../model/DeleteContactsByIdsInputObject'), require('../model/DeleteInboundMessagesBulkInputObject'), require('../model/DeleteListContactsBulkInputObject'), require('../model/DeleteListsBulkInputObject'), require('../model/DeleteMessageSessionsBulkInputObject'), require('../model/DeleteOutboundMessagesBulkInputObject'), require('../model/DeleteScheduledMessagesBulkInputObject'), require('../model/DeleteTemplatesBulkInputObject'), require('../model/DoCarrierLookupResponse'), require('../model/DoEmailLookupResponse'), require('../model/GetAllBulkSessionsPaginatedResponse'), require('../model/GetAllChatsPaginatedResponse'), require('../model/GetAllInboundMessagesPaginatedResponse'), require('../model/GetAllMessageSessionsPaginatedResponse'), require('../model/GetAllOutboundMessagesPaginatedResponse'), require('../model/GetAllScheduledMessagesPaginatedResponse'), require('../model/GetAllTemplatesPaginatedResponse'), require('../model/GetAvailableDedicatedNumbersResponse'), require('../model/GetAvailableSenderSettingOptionsResponse'), require('../model/GetBalanceNotificationOptionsResponse'), require('../model/GetBalanceNotificationSettingsResponse'), require('../model/GetBlockedContactsPaginatedResponse'), require('../model/GetCallbackSettingsResponse'), require('../model/GetChatMessagesPaginatedResponse'), require('../model/GetContactNotesPaginatedResponse'), require('../model/GetContactsAutocompleteResponse'), require('../model/GetContactsByListIdPaginatedResponse'), require('../model/GetContactsPaginatedResponse'), require('../model/GetCountriesResponse'), require('../model/GetCustomFieldsPaginatedResponse'), require('../model/GetDisallowedRulesResponse'), require('../model/GetFavouritesPaginatedResponse'), require('../model/GetInboundMessagesNotificationSettingsResponse'), require('../model/GetInvoicesPaginatedResponse'), require('../model/GetListContactsIdsResponse'), require('../model/GetListsOfContactPaginatedResponse'), require('../model/GetListsPaginatedResponse'), require('../model/GetMessagePreviewResponse'), require('../model/GetMessagePriceResponse'), require('../model/GetMessageSessionStatResponse'), require('../model/GetMessagesBySessionIdPaginatedResponse'), require('../model/GetMessagingCountersResponse'), require('../model/GetMessagingStatResponse'), require('../model/GetOutboundMessagesHistoryPaginatedResponse'), require('../model/GetSenderIdsPaginatedResponse'), require('../model/GetSenderSettingsResponse'), require('../model/GetSpendingStatPaginatedResponse'), require('../model/GetSubaccountsWithTokensInputObject'), require('../model/GetSubaccountsWithTokensResponse'), require('../model/GetTimezonesResponse'), require('../model/GetUnreadMessagesTotalResponse'), require('../model/GetUnsubscribersPaginatedResponse'), require('../model/GetUserDedicatedNumbersPaginatedResponse'), require('../model/InviteSubaccountInputObject'), require('../model/MarkChatsReadBulkInputObject'), require('../model/MarkChatsUnreadBulkInputObject'), require('../model/MessageIn'), require('../model/MessageOut'), require('../model/MessageSession'), require('../model/MessageTemplate'), require('../model/MessagesIcs'), require('../model/MuteChatInputObject'), require('../model/MuteChatsBulkInputObject'), require('../model/NotFoundResponse'), require('../model/ReopenChatsBulkInputObject'), require('../model/RequestNewSubaccountTokenInputObject'), require('../model/RequestSenderIdInputObject'), require('../model/ResourceLinkResponse'), require('../model/SearchChatsByIdsPaginatedResponse'), require('../model/SearchChatsByReceipentPaginatedResponse'), require('../model/SearchChatsPaginatedResponse'), require('../model/SearchContactsPaginatedResponse'), require('../model/SearchInboundMessagesPaginatedResponse'), require('../model/SearchListsPaginatedResponse'), require('../model/SearchOutboundMessagesPaginatedResponse'), require('../model/SearchScheduledMessagesPaginatedResponse'), require('../model/SearchTemplatesPaginatedResponse'), require('../model/SendMessageInputObject'), require('../model/SendMessageResponse'), require('../model/SendPhoneVerificationCodeInputObject'), require('../model/SendPhoneVerificationCodeResponse'), require('../model/SenderId'), require('../model/SetChatStatusInputObject'), require('../model/UnauthorizedResponse'), require('../model/UnblockContactInputObject'), require('../model/UnblockContactsBulkInputObject'), require('../model/UnmuteChatsBulkInputObject'), require('../model/UnsubscribeContactInputObject'), require('../model/UnsubscribedContact'), require('../model/UpdateBalanceNotificationSettingsInputObject'), require('../model/UpdateCallbackSettingsInputObject'), require('../model/UpdateChatDesktopNotificationSettingsInputObject'), require('../model/UpdateContactInputObject'), require('../model/UpdateContactNoteInputObject'), require('../model/UpdateCurrentUserInputObject'), require('../model/UpdateCurrentUserResponse'), require('../model/UpdateCustomFieldInputObject'), require('../model/UpdateCustomFieldValueInputObject'), require('../model/UpdateInboundMessagesNotificationSettingsInputObject'), require('../model/UpdateListObject'), require('../model/UpdateSenderSettingInputObject'), require('../model/UpdateTemplateInputObject'), require('../model/UploadMessageAttachmentResponse'), require('../model/User'), require('../model/UserCustomField'), require('../model/UsersInbound'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.TextMagicApi = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.AssignContactsToListInputObject, root.TextmagicClient.BadRequestResponse, root.TextmagicClient.BlockContactInputObject, root.TextmagicClient.BulkSession, root.TextmagicClient.BuyDedicatedNumberInputObject, root.TextmagicClient.Chat, root.TextmagicClient.CheckPhoneVerificationCodeInputObject, root.TextmagicClient.CheckPhoneVerificationCodeInputObject1, root.TextmagicClient.ClearAndAssignContactsToListInputObject, root.TextmagicClient.CloseChatsBulkInputObject, root.TextmagicClient.Contact, root.TextmagicClient.ContactNote, root.TextmagicClient.CreateContactInputObject, root.TextmagicClient.CreateContactNoteInputObject, root.TextmagicClient.CreateCustomFieldInputObject, root.TextmagicClient.CreateListInputObject, root.TextmagicClient.CreatePushTokenInputObject, root.TextmagicClient.CreateSurveyInputObject, root.TextmagicClient.CreateSurveyNodeInputObject, root.TextmagicClient.CreateTemplateInputObject, root.TextmagicClient.DeleteChatMessagesBulkInputObject, root.TextmagicClient.DeleteChatsBulkInputObject, root.TextmagicClient.DeleteContacsFromListObject, root.TextmagicClient.DeleteContactNotesBulkInputObject, root.TextmagicClient.DeleteContactsByIdsInputObject, root.TextmagicClient.DeleteInboundMessagesBulkInputObject, root.TextmagicClient.DeleteListContactsBulkInputObject, root.TextmagicClient.DeleteListsBulkInputObject, root.TextmagicClient.DeleteMessageSessionsBulkInputObject, root.TextmagicClient.DeleteOutboundMessagesBulkInputObject, root.TextmagicClient.DeleteScheduledMessagesBulkInputObject, root.TextmagicClient.DeleteTemplatesBulkInputObject, root.TextmagicClient.DoAuthInputObject, root.TextmagicClient.DoAuthResponse, root.TextmagicClient.DoCarrierLookupResponse, root.TextmagicClient.DoEmailLookupResponse, root.TextmagicClient.GetAllBulkSessionsPaginatedResponse, root.TextmagicClient.GetAllChatsPaginatedResponse, root.TextmagicClient.GetAllInboundMessagesPaginatedResponse, root.TextmagicClient.GetAllMessageSessionsPaginatedResponse, root.TextmagicClient.GetAllOutboundMessagesPaginatedResponse, root.TextmagicClient.GetAllScheduledMessagesPaginatedResponse, root.TextmagicClient.GetAllTemplatesPaginatedResponse, root.TextmagicClient.GetAvailableDedicatedNumbersResponse, root.TextmagicClient.GetAvailableSenderSettingOptionsResponse, root.TextmagicClient.GetBalanceNotificationOptionsResponse, root.TextmagicClient.GetBalanceNotificationSettingsResponse, root.TextmagicClient.GetBlockedContactsPaginatedResponse, root.TextmagicClient.GetCallbackSettingsResponse, root.TextmagicClient.GetChatMessagesPaginatedResponse, root.TextmagicClient.GetContactNotesPaginatedResponse, root.TextmagicClient.GetContactsAutocompleteResponse, root.TextmagicClient.GetContactsByListIdPaginatedResponse, root.TextmagicClient.GetContactsPaginatedResponse, root.TextmagicClient.GetCountriesResponse, root.TextmagicClient.GetCustomFieldsPaginatedResponse, root.TextmagicClient.GetDisallowedRulesResponse, root.TextmagicClient.GetFavouritesPaginatedResponse, root.TextmagicClient.GetInboundMessagesNotificationSettingsResponse, root.TextmagicClient.GetInvoicesPaginatedResponse, root.TextmagicClient.GetListContactsIdsResponse, root.TextmagicClient.GetListsOfContactPaginatedResponse, root.TextmagicClient.GetListsPaginatedResponse, root.TextmagicClient.GetMessagePreviewResponse, root.TextmagicClient.GetMessagePriceResponse, root.TextmagicClient.GetMessageSessionStatResponse, root.TextmagicClient.GetMessagesBySessionIdPaginatedResponse, root.TextmagicClient.GetMessagingCountersResponse, root.TextmagicClient.GetMessagingStatResponse, root.TextmagicClient.GetOutboundMessagesHistoryPaginatedResponse, root.TextmagicClient.GetPushTokensResponse, root.TextmagicClient.GetSenderIdsPaginatedResponse, root.TextmagicClient.GetSenderSettingsResponse, root.TextmagicClient.GetSpendingStatPaginatedResponse, root.TextmagicClient.GetSubaccountsWithTokensInputObject, root.TextmagicClient.GetSubaccountsWithTokensResponse, root.TextmagicClient.GetSurveyNodesResponse, root.TextmagicClient.GetSurveysPaginatedResponse, root.TextmagicClient.GetTimezonesResponse, root.TextmagicClient.GetUnreadMessagesTotalResponse, root.TextmagicClient.GetUnsubscribersPaginatedResponse, root.TextmagicClient.GetUserDedicatedNumbersPaginatedResponse, root.TextmagicClient.InviteSubaccountInputObject, root.TextmagicClient.MarkChatsReadBulkInputObject, root.TextmagicClient.MarkChatsUnreadBulkInputObject, root.TextmagicClient.MergeSurveyNodesInputObject, root.TextmagicClient.MessageIn, root.TextmagicClient.MessageOut, root.TextmagicClient.MessageSession, root.TextmagicClient.MessageTemplate, root.TextmagicClient.MessagesIcs, root.TextmagicClient.MuteChatInputObject, root.TextmagicClient.MuteChatsBulkInputObject, root.TextmagicClient.NotFoundResponse, root.TextmagicClient.ReopenChatsBulkInputObject, root.TextmagicClient.RequestNewSubaccountTokenInputObject, root.TextmagicClient.RequestSenderIdInputObject, root.TextmagicClient.ResourceLinkResponse, root.TextmagicClient.SearchChatsByIdsPaginatedResponse, root.TextmagicClient.SearchChatsByReceipentPaginatedResponse, root.TextmagicClient.SearchChatsPaginatedResponse, root.TextmagicClient.SearchContactsPaginatedResponse, root.TextmagicClient.SearchInboundMessagesPaginatedResponse, root.TextmagicClient.SearchListsPaginatedResponse, root.TextmagicClient.SearchOutboundMessagesPaginatedResponse, root.TextmagicClient.SearchScheduledMessagesPaginatedResponse, root.TextmagicClient.SearchTemplatesPaginatedResponse, root.TextmagicClient.SendMessageInputObject, root.TextmagicClient.SendMessageResponse, root.TextmagicClient.SendPhoneVerificationCodeInputObject, root.TextmagicClient.SendPhoneVerificationCodeResponse, root.TextmagicClient.SenderId, root.TextmagicClient.SetChatStatusInputObject, root.TextmagicClient.Survey, root.TextmagicClient.SurveyNode, root.TextmagicClient.UnauthorizedResponse, root.TextmagicClient.UnblockContactInputObject, root.TextmagicClient.UnblockContactsBulkInputObject, root.TextmagicClient.UnmuteChatsBulkInputObject, root.TextmagicClient.UnsubscribeContactInputObject, root.TextmagicClient.UnsubscribedContact, root.TextmagicClient.UpdateBalanceNotificationSettingsInputObject, root.TextmagicClient.UpdateCallbackSettingsInputObject, root.TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject, root.TextmagicClient.UpdateContactInputObject, root.TextmagicClient.UpdateContactNoteInputObject, root.TextmagicClient.UpdateCurrentUserInputObject, root.TextmagicClient.UpdateCurrentUserResponse, root.TextmagicClient.UpdateCustomFieldInputObject, root.TextmagicClient.UpdateCustomFieldValueInputObject, root.TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject, root.TextmagicClient.UpdateListObject, root.TextmagicClient.UpdatePasswordInputObject, root.TextmagicClient.UpdateSenderSettingInputObject, root.TextmagicClient.UpdateSurveyInputObject, root.TextmagicClient.UpdateSurveyNodeInputObject, root.TextmagicClient.UpdateTemplateInputObject, root.TextmagicClient.UploadMessageAttachmentResponse, root.TextmagicClient.User, root.TextmagicClient.UserCustomField, root.TextmagicClient.UsersInbound);
+    root.TextmagicClient.TextMagicApi = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.AssignContactsToListInputObject, root.TextmagicClient.BadRequestResponse, root.TextmagicClient.BlockContactInputObject, root.TextmagicClient.BulkSession, root.TextmagicClient.BuyDedicatedNumberInputObject, root.TextmagicClient.Chat, root.TextmagicClient.CheckPhoneVerificationCodeInputObject, root.TextmagicClient.ClearAndAssignContactsToListInputObject, root.TextmagicClient.CloseChatsBulkInputObject, root.TextmagicClient.Contact, root.TextmagicClient.ContactNote, root.TextmagicClient.CreateContactInputObject, root.TextmagicClient.CreateContactNoteInputObject, root.TextmagicClient.CreateCustomFieldInputObject, root.TextmagicClient.CreateListInputObject, root.TextmagicClient.CreateTemplateInputObject, root.TextmagicClient.DeleteChatMessagesBulkInputObject, root.TextmagicClient.DeleteChatsBulkInputObject, root.TextmagicClient.DeleteContacsFromListObject, root.TextmagicClient.DeleteContactNotesBulkInputObject, root.TextmagicClient.DeleteContactsByIdsInputObject, root.TextmagicClient.DeleteInboundMessagesBulkInputObject, root.TextmagicClient.DeleteListContactsBulkInputObject, root.TextmagicClient.DeleteListsBulkInputObject, root.TextmagicClient.DeleteMessageSessionsBulkInputObject, root.TextmagicClient.DeleteOutboundMessagesBulkInputObject, root.TextmagicClient.DeleteScheduledMessagesBulkInputObject, root.TextmagicClient.DeleteTemplatesBulkInputObject, root.TextmagicClient.DoCarrierLookupResponse, root.TextmagicClient.DoEmailLookupResponse, root.TextmagicClient.GetAllBulkSessionsPaginatedResponse, root.TextmagicClient.GetAllChatsPaginatedResponse, root.TextmagicClient.GetAllInboundMessagesPaginatedResponse, root.TextmagicClient.GetAllMessageSessionsPaginatedResponse, root.TextmagicClient.GetAllOutboundMessagesPaginatedResponse, root.TextmagicClient.GetAllScheduledMessagesPaginatedResponse, root.TextmagicClient.GetAllTemplatesPaginatedResponse, root.TextmagicClient.GetAvailableDedicatedNumbersResponse, root.TextmagicClient.GetAvailableSenderSettingOptionsResponse, root.TextmagicClient.GetBalanceNotificationOptionsResponse, root.TextmagicClient.GetBalanceNotificationSettingsResponse, root.TextmagicClient.GetBlockedContactsPaginatedResponse, root.TextmagicClient.GetCallbackSettingsResponse, root.TextmagicClient.GetChatMessagesPaginatedResponse, root.TextmagicClient.GetContactNotesPaginatedResponse, root.TextmagicClient.GetContactsAutocompleteResponse, root.TextmagicClient.GetContactsByListIdPaginatedResponse, root.TextmagicClient.GetContactsPaginatedResponse, root.TextmagicClient.GetCountriesResponse, root.TextmagicClient.GetCustomFieldsPaginatedResponse, root.TextmagicClient.GetDisallowedRulesResponse, root.TextmagicClient.GetFavouritesPaginatedResponse, root.TextmagicClient.GetInboundMessagesNotificationSettingsResponse, root.TextmagicClient.GetInvoicesPaginatedResponse, root.TextmagicClient.GetListContactsIdsResponse, root.TextmagicClient.GetListsOfContactPaginatedResponse, root.TextmagicClient.GetListsPaginatedResponse, root.TextmagicClient.GetMessagePreviewResponse, root.TextmagicClient.GetMessagePriceResponse, root.TextmagicClient.GetMessageSessionStatResponse, root.TextmagicClient.GetMessagesBySessionIdPaginatedResponse, root.TextmagicClient.GetMessagingCountersResponse, root.TextmagicClient.GetMessagingStatResponse, root.TextmagicClient.GetOutboundMessagesHistoryPaginatedResponse, root.TextmagicClient.GetSenderIdsPaginatedResponse, root.TextmagicClient.GetSenderSettingsResponse, root.TextmagicClient.GetSpendingStatPaginatedResponse, root.TextmagicClient.GetSubaccountsWithTokensInputObject, root.TextmagicClient.GetSubaccountsWithTokensResponse, root.TextmagicClient.GetTimezonesResponse, root.TextmagicClient.GetUnreadMessagesTotalResponse, root.TextmagicClient.GetUnsubscribersPaginatedResponse, root.TextmagicClient.GetUserDedicatedNumbersPaginatedResponse, root.TextmagicClient.InviteSubaccountInputObject, root.TextmagicClient.MarkChatsReadBulkInputObject, root.TextmagicClient.MarkChatsUnreadBulkInputObject, root.TextmagicClient.MessageIn, root.TextmagicClient.MessageOut, root.TextmagicClient.MessageSession, root.TextmagicClient.MessageTemplate, root.TextmagicClient.MessagesIcs, root.TextmagicClient.MuteChatInputObject, root.TextmagicClient.MuteChatsBulkInputObject, root.TextmagicClient.NotFoundResponse, root.TextmagicClient.ReopenChatsBulkInputObject, root.TextmagicClient.RequestNewSubaccountTokenInputObject, root.TextmagicClient.RequestSenderIdInputObject, root.TextmagicClient.ResourceLinkResponse, root.TextmagicClient.SearchChatsByIdsPaginatedResponse, root.TextmagicClient.SearchChatsByReceipentPaginatedResponse, root.TextmagicClient.SearchChatsPaginatedResponse, root.TextmagicClient.SearchContactsPaginatedResponse, root.TextmagicClient.SearchInboundMessagesPaginatedResponse, root.TextmagicClient.SearchListsPaginatedResponse, root.TextmagicClient.SearchOutboundMessagesPaginatedResponse, root.TextmagicClient.SearchScheduledMessagesPaginatedResponse, root.TextmagicClient.SearchTemplatesPaginatedResponse, root.TextmagicClient.SendMessageInputObject, root.TextmagicClient.SendMessageResponse, root.TextmagicClient.SendPhoneVerificationCodeInputObject, root.TextmagicClient.SendPhoneVerificationCodeResponse, root.TextmagicClient.SenderId, root.TextmagicClient.SetChatStatusInputObject, root.TextmagicClient.UnauthorizedResponse, root.TextmagicClient.UnblockContactInputObject, root.TextmagicClient.UnblockContactsBulkInputObject, root.TextmagicClient.UnmuteChatsBulkInputObject, root.TextmagicClient.UnsubscribeContactInputObject, root.TextmagicClient.UnsubscribedContact, root.TextmagicClient.UpdateBalanceNotificationSettingsInputObject, root.TextmagicClient.UpdateCallbackSettingsInputObject, root.TextmagicClient.UpdateChatDesktopNotificationSettingsInputObject, root.TextmagicClient.UpdateContactInputObject, root.TextmagicClient.UpdateContactNoteInputObject, root.TextmagicClient.UpdateCurrentUserInputObject, root.TextmagicClient.UpdateCurrentUserResponse, root.TextmagicClient.UpdateCustomFieldInputObject, root.TextmagicClient.UpdateCustomFieldValueInputObject, root.TextmagicClient.UpdateInboundMessagesNotificationSettingsInputObject, root.TextmagicClient.UpdateListObject, root.TextmagicClient.UpdateSenderSettingInputObject, root.TextmagicClient.UpdateTemplateInputObject, root.TextmagicClient.UploadMessageAttachmentResponse, root.TextmagicClient.User, root.TextmagicClient.UserCustomField, root.TextmagicClient.UsersInbound);
   }
-}(this, function(ApiClient, AssignContactsToListInputObject, BadRequestResponse, BlockContactInputObject, BulkSession, BuyDedicatedNumberInputObject, Chat, CheckPhoneVerificationCodeInputObject, CheckPhoneVerificationCodeInputObject1, ClearAndAssignContactsToListInputObject, CloseChatsBulkInputObject, Contact, ContactNote, CreateContactInputObject, CreateContactNoteInputObject, CreateCustomFieldInputObject, CreateListInputObject, CreatePushTokenInputObject, CreateSurveyInputObject, CreateSurveyNodeInputObject, CreateTemplateInputObject, DeleteChatMessagesBulkInputObject, DeleteChatsBulkInputObject, DeleteContacsFromListObject, DeleteContactNotesBulkInputObject, DeleteContactsByIdsInputObject, DeleteInboundMessagesBulkInputObject, DeleteListContactsBulkInputObject, DeleteListsBulkInputObject, DeleteMessageSessionsBulkInputObject, DeleteOutboundMessagesBulkInputObject, DeleteScheduledMessagesBulkInputObject, DeleteTemplatesBulkInputObject, DoAuthInputObject, DoAuthResponse, DoCarrierLookupResponse, DoEmailLookupResponse, GetAllBulkSessionsPaginatedResponse, GetAllChatsPaginatedResponse, GetAllInboundMessagesPaginatedResponse, GetAllMessageSessionsPaginatedResponse, GetAllOutboundMessagesPaginatedResponse, GetAllScheduledMessagesPaginatedResponse, GetAllTemplatesPaginatedResponse, GetAvailableDedicatedNumbersResponse, GetAvailableSenderSettingOptionsResponse, GetBalanceNotificationOptionsResponse, GetBalanceNotificationSettingsResponse, GetBlockedContactsPaginatedResponse, GetCallbackSettingsResponse, GetChatMessagesPaginatedResponse, GetContactNotesPaginatedResponse, GetContactsAutocompleteResponse, GetContactsByListIdPaginatedResponse, GetContactsPaginatedResponse, GetCountriesResponse, GetCustomFieldsPaginatedResponse, GetDisallowedRulesResponse, GetFavouritesPaginatedResponse, GetInboundMessagesNotificationSettingsResponse, GetInvoicesPaginatedResponse, GetListContactsIdsResponse, GetListsOfContactPaginatedResponse, GetListsPaginatedResponse, GetMessagePreviewResponse, GetMessagePriceResponse, GetMessageSessionStatResponse, GetMessagesBySessionIdPaginatedResponse, GetMessagingCountersResponse, GetMessagingStatResponse, GetOutboundMessagesHistoryPaginatedResponse, GetPushTokensResponse, GetSenderIdsPaginatedResponse, GetSenderSettingsResponse, GetSpendingStatPaginatedResponse, GetSubaccountsWithTokensInputObject, GetSubaccountsWithTokensResponse, GetSurveyNodesResponse, GetSurveysPaginatedResponse, GetTimezonesResponse, GetUnreadMessagesTotalResponse, GetUnsubscribersPaginatedResponse, GetUserDedicatedNumbersPaginatedResponse, InviteSubaccountInputObject, MarkChatsReadBulkInputObject, MarkChatsUnreadBulkInputObject, MergeSurveyNodesInputObject, MessageIn, MessageOut, MessageSession, MessageTemplate, MessagesIcs, MuteChatInputObject, MuteChatsBulkInputObject, NotFoundResponse, ReopenChatsBulkInputObject, RequestNewSubaccountTokenInputObject, RequestSenderIdInputObject, ResourceLinkResponse, SearchChatsByIdsPaginatedResponse, SearchChatsByReceipentPaginatedResponse, SearchChatsPaginatedResponse, SearchContactsPaginatedResponse, SearchInboundMessagesPaginatedResponse, SearchListsPaginatedResponse, SearchOutboundMessagesPaginatedResponse, SearchScheduledMessagesPaginatedResponse, SearchTemplatesPaginatedResponse, SendMessageInputObject, SendMessageResponse, SendPhoneVerificationCodeInputObject, SendPhoneVerificationCodeResponse, SenderId, SetChatStatusInputObject, Survey, SurveyNode, UnauthorizedResponse, UnblockContactInputObject, UnblockContactsBulkInputObject, UnmuteChatsBulkInputObject, UnsubscribeContactInputObject, UnsubscribedContact, UpdateBalanceNotificationSettingsInputObject, UpdateCallbackSettingsInputObject, UpdateChatDesktopNotificationSettingsInputObject, UpdateContactInputObject, UpdateContactNoteInputObject, UpdateCurrentUserInputObject, UpdateCurrentUserResponse, UpdateCustomFieldInputObject, UpdateCustomFieldValueInputObject, UpdateInboundMessagesNotificationSettingsInputObject, UpdateListObject, UpdatePasswordInputObject, UpdateSenderSettingInputObject, UpdateSurveyInputObject, UpdateSurveyNodeInputObject, UpdateTemplateInputObject, UploadMessageAttachmentResponse, User, UserCustomField, UsersInbound) {
+}(this, function(ApiClient, AssignContactsToListInputObject, BadRequestResponse, BlockContactInputObject, BulkSession, BuyDedicatedNumberInputObject, Chat, CheckPhoneVerificationCodeInputObject, ClearAndAssignContactsToListInputObject, CloseChatsBulkInputObject, Contact, ContactNote, CreateContactInputObject, CreateContactNoteInputObject, CreateCustomFieldInputObject, CreateListInputObject, CreateTemplateInputObject, DeleteChatMessagesBulkInputObject, DeleteChatsBulkInputObject, DeleteContacsFromListObject, DeleteContactNotesBulkInputObject, DeleteContactsByIdsInputObject, DeleteInboundMessagesBulkInputObject, DeleteListContactsBulkInputObject, DeleteListsBulkInputObject, DeleteMessageSessionsBulkInputObject, DeleteOutboundMessagesBulkInputObject, DeleteScheduledMessagesBulkInputObject, DeleteTemplatesBulkInputObject, DoCarrierLookupResponse, DoEmailLookupResponse, GetAllBulkSessionsPaginatedResponse, GetAllChatsPaginatedResponse, GetAllInboundMessagesPaginatedResponse, GetAllMessageSessionsPaginatedResponse, GetAllOutboundMessagesPaginatedResponse, GetAllScheduledMessagesPaginatedResponse, GetAllTemplatesPaginatedResponse, GetAvailableDedicatedNumbersResponse, GetAvailableSenderSettingOptionsResponse, GetBalanceNotificationOptionsResponse, GetBalanceNotificationSettingsResponse, GetBlockedContactsPaginatedResponse, GetCallbackSettingsResponse, GetChatMessagesPaginatedResponse, GetContactNotesPaginatedResponse, GetContactsAutocompleteResponse, GetContactsByListIdPaginatedResponse, GetContactsPaginatedResponse, GetCountriesResponse, GetCustomFieldsPaginatedResponse, GetDisallowedRulesResponse, GetFavouritesPaginatedResponse, GetInboundMessagesNotificationSettingsResponse, GetInvoicesPaginatedResponse, GetListContactsIdsResponse, GetListsOfContactPaginatedResponse, GetListsPaginatedResponse, GetMessagePreviewResponse, GetMessagePriceResponse, GetMessageSessionStatResponse, GetMessagesBySessionIdPaginatedResponse, GetMessagingCountersResponse, GetMessagingStatResponse, GetOutboundMessagesHistoryPaginatedResponse, GetSenderIdsPaginatedResponse, GetSenderSettingsResponse, GetSpendingStatPaginatedResponse, GetSubaccountsWithTokensInputObject, GetSubaccountsWithTokensResponse, GetTimezonesResponse, GetUnreadMessagesTotalResponse, GetUnsubscribersPaginatedResponse, GetUserDedicatedNumbersPaginatedResponse, InviteSubaccountInputObject, MarkChatsReadBulkInputObject, MarkChatsUnreadBulkInputObject, MessageIn, MessageOut, MessageSession, MessageTemplate, MessagesIcs, MuteChatInputObject, MuteChatsBulkInputObject, NotFoundResponse, ReopenChatsBulkInputObject, RequestNewSubaccountTokenInputObject, RequestSenderIdInputObject, ResourceLinkResponse, SearchChatsByIdsPaginatedResponse, SearchChatsByReceipentPaginatedResponse, SearchChatsPaginatedResponse, SearchContactsPaginatedResponse, SearchInboundMessagesPaginatedResponse, SearchListsPaginatedResponse, SearchOutboundMessagesPaginatedResponse, SearchScheduledMessagesPaginatedResponse, SearchTemplatesPaginatedResponse, SendMessageInputObject, SendMessageResponse, SendPhoneVerificationCodeInputObject, SendPhoneVerificationCodeResponse, SenderId, SetChatStatusInputObject, UnauthorizedResponse, UnblockContactInputObject, UnblockContactsBulkInputObject, UnmuteChatsBulkInputObject, UnsubscribeContactInputObject, UnsubscribedContact, UpdateBalanceNotificationSettingsInputObject, UpdateCallbackSettingsInputObject, UpdateChatDesktopNotificationSettingsInputObject, UpdateContactInputObject, UpdateContactNoteInputObject, UpdateCurrentUserInputObject, UpdateCurrentUserResponse, UpdateCustomFieldInputObject, UpdateCustomFieldValueInputObject, UpdateInboundMessagesNotificationSettingsInputObject, UpdateListObject, UpdateSenderSettingInputObject, UpdateTemplateInputObject, UploadMessageAttachmentResponse, User, UserCustomField, UsersInbound) {
   'use strict';
 
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.544
+   * @version 2.0.545
    */
 
   /**
@@ -213,59 +213,6 @@
 
 
     /**
-     * Cancel a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.cancelSurveyWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling cancelSurvey");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}/cancel', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Cancel a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.cancelSurvey = function(id) {
-      return this.cancelSurveyWithHttpInfo(id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Cancel verification process
      * You can cancel the verification not earlier than 30 seconds after the initial request.
      * @param {String} verifyId the verifyId that you received in Step 1.
@@ -319,61 +266,9 @@
 
 
     /**
-     * Check user phone verification code
-     * 
-     * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.checkPhoneVerificationCodeWithHttpInfo = function(checkPhoneVerificationCodeInputObject) {
-      var postBody = checkPhoneVerificationCodeInputObject;
-
-      // verify the required parameter 'checkPhoneVerificationCodeInputObject' is set
-      if (checkPhoneVerificationCodeInputObject === undefined || checkPhoneVerificationCodeInputObject === null) {
-        throw new Error("Missing the required parameter 'checkPhoneVerificationCodeInputObject' when calling checkPhoneVerificationCode");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/user/phone/verification', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Check user phone verification code
-     * 
-     * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.checkPhoneVerificationCode = function(checkPhoneVerificationCodeInputObject) {
-      return this.checkPhoneVerificationCodeWithHttpInfo(checkPhoneVerificationCodeInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Step 2: Check the verification code 
      * Check received code from user with the code which was actually sent.
-     * @param {module:model/CheckPhoneVerificationCodeInputObject1} checkPhoneVerificationCodeInputObject 
+     * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
     this.checkPhoneVerificationCodeTFAWithHttpInfo = function(checkPhoneVerificationCodeInputObject) {
@@ -411,7 +306,7 @@
     /**
      * Step 2: Check the verification code 
      * Check received code from user with the code which was actually sent.
-     * @param {module:model/CheckPhoneVerificationCodeInputObject1} checkPhoneVerificationCodeInputObject 
+     * @param {module:model/CheckPhoneVerificationCodeInputObject} checkPhoneVerificationCodeInputObject 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
     this.checkPhoneVerificationCodeTFA = function(checkPhoneVerificationCodeInputObject) {
@@ -842,170 +737,6 @@
      */
     this.createList = function(createListInputObject) {
       return this.createListWithHttpInfo(createListInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Add or update a device token.
-     * 
-     * @param {module:model/CreatePushTokenInputObject} createPushTokenInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.createPushTokenWithHttpInfo = function(createPushTokenInputObject) {
-      var postBody = createPushTokenInputObject;
-
-      // verify the required parameter 'createPushTokenInputObject' is set
-      if (createPushTokenInputObject === undefined || createPushTokenInputObject === null) {
-        throw new Error("Missing the required parameter 'createPushTokenInputObject' when calling createPushToken");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/push/tokens', 'POST',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Add or update a device token.
-     * 
-     * @param {module:model/CreatePushTokenInputObject} createPushTokenInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.createPushToken = function(createPushTokenInputObject) {
-      return this.createPushTokenWithHttpInfo(createPushTokenInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Create a new survey from the submitted data.
-     * 
-     * @param {module:model/CreateSurveyInputObject} createSurveyInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.createSurveyWithHttpInfo = function(createSurveyInputObject) {
-      var postBody = createSurveyInputObject;
-
-      // verify the required parameter 'createSurveyInputObject' is set
-      if (createSurveyInputObject === undefined || createSurveyInputObject === null) {
-        throw new Error("Missing the required parameter 'createSurveyInputObject' when calling createSurvey");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys', 'POST',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Create a new survey from the submitted data.
-     * 
-     * @param {module:model/CreateSurveyInputObject} createSurveyInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.createSurvey = function(createSurveyInputObject) {
-      return this.createSurveyWithHttpInfo(createSurveyInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Create a new node from the submitted data.
-     * 
-     * @param {module:model/CreateSurveyNodeInputObject} createSurveyNodeInputObject 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.createSurveyNodeWithHttpInfo = function(createSurveyNodeInputObject, id) {
-      var postBody = createSurveyNodeInputObject;
-
-      // verify the required parameter 'createSurveyNodeInputObject' is set
-      if (createSurveyNodeInputObject === undefined || createSurveyNodeInputObject === null) {
-        throw new Error("Missing the required parameter 'createSurveyNodeInputObject' when calling createSurveyNode");
-      }
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling createSurveyNode");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}/nodes', 'POST',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Create a new node from the submitted data.
-     * 
-     * @param {module:model/CreateSurveyNodeInputObject} createSurveyNodeInputObject 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.createSurveyNode = function(createSurveyNodeInputObject, id) {
-      return this.createSurveyNodeWithHttpInfo(createSurveyNodeInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -2282,67 +2013,6 @@
 
 
     /**
-     * Delete a push notification device token.
-     * 
-     * @param {String} type 
-     * @param {Number} deviceId 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.deletePushTokenWithHttpInfo = function(type, deviceId) {
-      var postBody = null;
-
-      // verify the required parameter 'type' is set
-      if (type === undefined || type === null) {
-        throw new Error("Missing the required parameter 'type' when calling deletePushToken");
-      }
-
-      // verify the required parameter 'deviceId' is set
-      if (deviceId === undefined || deviceId === null) {
-        throw new Error("Missing the required parameter 'deviceId' when calling deletePushToken");
-      }
-
-
-      var pathParams = {
-        'type': type,
-        'deviceId': deviceId
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = [];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/push/tokens/{type}/{deviceId}', 'DELETE',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Delete a push notification device token.
-     * 
-     * @param {String} type 
-     * @param {Number} deviceId 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.deletePushToken = function(type, deviceId) {
-      return this.deletePushTokenWithHttpInfo(type, deviceId)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Delete a single scheduled message
      * 
      * @param {Number} id 
@@ -2501,112 +2171,6 @@
 
 
     /**
-     * Delete a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.deleteSurveyWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling deleteSurvey");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = [];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}', 'DELETE',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Delete a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.deleteSurvey = function(id) {
-      return this.deleteSurveyWithHttpInfo(id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Delete a node.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.deleteSurveyNodeWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling deleteSurveyNode");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = [];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/nodes/{id}', 'DELETE',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Delete a node.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.deleteSurveyNode = function(id) {
-      return this.deleteSurveyNodeWithHttpInfo(id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Delete a template
      * 
      * @param {Number} id 
@@ -2705,58 +2269,6 @@
      */
     this.deleteTemplatesBulk = function(deleteTemplatesBulkInputObject) {
       return this.deleteTemplatesBulkWithHttpInfo(deleteTemplatesBulkInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Authenticate user by given username and password.
-     * Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)
-     * @param {module:model/DoAuthInputObject} doAuthInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DoAuthResponse} and HTTP response
-     */
-    this.doAuthWithHttpInfo = function(doAuthInputObject) {
-      var postBody = doAuthInputObject;
-
-      // verify the required parameter 'doAuthInputObject' is set
-      if (doAuthInputObject === undefined || doAuthInputObject === null) {
-        throw new Error("Missing the required parameter 'doAuthInputObject' when calling doAuth");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = [];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = DoAuthResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/auth', 'POST',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Authenticate user by given username and password.
-     * Returning a username and token that you should pass to the all requests (in X-TM-Username and X-TM-Key, respectively)
-     * @param {module:model/DoAuthInputObject} doAuthInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DoAuthResponse}
-     */
-    this.doAuth = function(doAuthInputObject) {
-      return this.doAuthWithHttpInfo(doAuthInputObject)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -2869,59 +2381,6 @@
      */
     this.doEmailLookup = function(email) {
       return this.doEmailLookupWithHttpInfo(email)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Duplicate a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.duplicateSurveyWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling duplicateSurvey");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}/duplicate', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Duplicate a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.duplicateSurvey = function(id) {
-      return this.duplicateSurveyWithHttpInfo(id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -5697,51 +5156,6 @@
 
 
     /**
-     * Get all device tokens assigned to the current account
-     * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetPushTokensResponse} and HTTP response
-     */
-    this.getPushTokensWithHttpInfo = function() {
-      var postBody = null;
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = GetPushTokensResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/push/tokens', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Get all device tokens assigned to the current account
-     * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetPushTokensResponse}
-     */
-    this.getPushTokens = function() {
-      return this.getPushTokensWithHttpInfo()
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Get a single scheduled message
      * 
      * @param {Number} id 
@@ -6174,219 +5588,6 @@
      */
     this.getSubaccountsWithTokens = function(getSubaccountsWithTokensInputObject, opts) {
       return this.getSubaccountsWithTokensWithHttpInfo(getSubaccountsWithTokensInputObject, opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Get a survey by id.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/Survey} and HTTP response
-     */
-    this.getSurveyWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling getSurvey");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = Survey;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Get a survey by id.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/Survey}
-     */
-    this.getSurvey = function(id) {
-      return this.getSurveyWithHttpInfo(id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Get a node by id.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SurveyNode} and HTTP response
-     */
-    this.getSurveyNodeWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling getSurveyNode");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = SurveyNode;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/nodes/{id}', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Get a node by id.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SurveyNode}
-     */
-    this.getSurveyNode = function(id) {
-      return this.getSurveyNodeWithHttpInfo(id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Fetch nodes by given survey id.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSurveyNodesResponse} and HTTP response
-     */
-    this.getSurveyNodesWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling getSurveyNodes");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = GetSurveyNodesResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}/nodes', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Fetch nodes by given survey id.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSurveyNodesResponse}
-     */
-    this.getSurveyNodes = function(id) {
-      return this.getSurveyNodesWithHttpInfo(id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Get all user surveys.
-     * 
-     * @param {Object} opts Optional parameters
-     * @param {Number} opts.page Fetch specified results page. (default to 1)
-     * @param {Number} opts.limit The number of results per page. (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetSurveysPaginatedResponse} and HTTP response
-     */
-    this.getSurveysWithHttpInfo = function(opts) {
-      opts = opts || {};
-      var postBody = null;
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-        'page': opts['page'],
-        'limit': opts['limit'],
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = GetSurveysPaginatedResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Get all user surveys.
-     * 
-     * @param {Object} opts Optional parameters
-     * @param {Number} opts.page Fetch specified results page. (default to 1)
-     * @param {Number} opts.limit The number of results per page. (default to 10)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetSurveysPaginatedResponse}
-     */
-    this.getSurveys = function(opts) {
-      return this.getSurveysWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -6863,58 +6064,6 @@
 
 
     /**
-     * Merge two question nodes.
-     * 
-     * @param {module:model/MergeSurveyNodesInputObject} mergeSurveyNodesInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.mergeSurveyNodesWithHttpInfo = function(mergeSurveyNodesInputObject) {
-      var postBody = mergeSurveyNodesInputObject;
-
-      // verify the required parameter 'mergeSurveyNodesInputObject' is set
-      if (mergeSurveyNodesInputObject === undefined || mergeSurveyNodesInputObject === null) {
-        throw new Error("Missing the required parameter 'mergeSurveyNodesInputObject' when calling mergeSurveyNodes");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = [];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/nodes/merge', 'POST',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Merge two question nodes.
-     * 
-     * @param {module:model/MergeSurveyNodesInputObject} mergeSurveyNodesInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.mergeSurveyNodes = function(mergeSurveyNodesInputObject) {
-      return this.mergeSurveyNodesWithHttpInfo(mergeSurveyNodesInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Mute chat sounds
      * 
      * @param {module:model/MuteChatInputObject} muteChatInputObject 
@@ -7168,59 +6317,6 @@
      */
     this.requestSenderId = function(requestSenderIdInputObject) {
       return this.requestSenderIdWithHttpInfo(requestSenderIdInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Reset a survey flow.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.resetSurveyWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling resetSurvey");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}/reset', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Reset a survey flow.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.resetSurvey = function(id) {
-      return this.resetSurveyWithHttpInfo(id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -7828,51 +6924,6 @@
 
 
     /**
-     * Send user email verification
-     * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.sendEmailVerificationCodeWithHttpInfo = function() {
-      var postBody = null;
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/user/email/verification', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Send user email verification
-     * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.sendEmailVerificationCode = function() {
-      return this.sendEmailVerificationCodeWithHttpInfo()
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Send message
      * The main entrypoint to send messages. See examples above for the reference.
      * @param {module:model/SendMessageInputObject} sendMessageInputObject 
@@ -7918,51 +6969,6 @@
      */
     this.sendMessage = function(sendMessageInputObject) {
       return this.sendMessageWithHttpInfo(sendMessageInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Send user phone verification
-     * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.sendPhoneVerificationCodeWithHttpInfo = function() {
-      var postBody = null;
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/user/phone/verification', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Send user phone verification
-     * 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.sendPhoneVerificationCode = function() {
-      return this.sendPhoneVerificationCodeWithHttpInfo()
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8067,59 +7073,6 @@
      */
     this.setChatStatus = function(setChatStatusInputObject) {
       return this.setChatStatusWithHttpInfo(setChatStatusInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Start a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.startSurveyWithHttpInfo = function(id) {
-      var postBody = null;
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling startSurvey");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}/start', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Start a survey.
-     * 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.startSurvey = function(id) {
-      return this.startSurveyWithHttpInfo(id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -8893,58 +7846,6 @@
 
 
     /**
-     * Change user password.
-     * 
-     * @param {module:model/UpdatePasswordInputObject} updatePasswordInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
-     */
-    this.updatePasswordWithHttpInfo = function(updatePasswordInputObject) {
-      var postBody = updatePasswordInputObject;
-
-      // verify the required parameter 'updatePasswordInputObject' is set
-      if (updatePasswordInputObject === undefined || updatePasswordInputObject === null) {
-        throw new Error("Missing the required parameter 'updatePasswordInputObject' when calling updatePassword");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = [];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/api/v2/user/password/change', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Change user password.
-     * 
-     * @param {module:model/UpdatePasswordInputObject} updatePasswordInputObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}
-     */
-    this.updatePassword = function(updatePasswordInputObject) {
-      return this.updatePasswordWithHttpInfo(updatePasswordInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
      * Change sender settings
      * 
      * @param {module:model/UpdateSenderSettingInputObject} updateSenderSettingInputObject 
@@ -8990,126 +7891,6 @@
      */
     this.updateSenderSetting = function(updateSenderSettingInputObject) {
       return this.updateSenderSettingWithHttpInfo(updateSenderSettingInputObject)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Update existing survey.
-     * 
-     * @param {module:model/UpdateSurveyInputObject} updateSurveyInputObject 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.updateSurveyWithHttpInfo = function(updateSurveyInputObject, id) {
-      var postBody = updateSurveyInputObject;
-
-      // verify the required parameter 'updateSurveyInputObject' is set
-      if (updateSurveyInputObject === undefined || updateSurveyInputObject === null) {
-        throw new Error("Missing the required parameter 'updateSurveyInputObject' when calling updateSurvey");
-      }
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling updateSurvey");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/{id}', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Update existing survey.
-     * 
-     * @param {module:model/UpdateSurveyInputObject} updateSurveyInputObject 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.updateSurvey = function(updateSurveyInputObject, id) {
-      return this.updateSurveyWithHttpInfo(updateSurveyInputObject, id)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Update existing node.
-     * 
-     * @param {module:model/UpdateSurveyNodeInputObject} updateSurveyNodeInputObject 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
-     */
-    this.updateSurveyNodeWithHttpInfo = function(updateSurveyNodeInputObject, id) {
-      var postBody = updateSurveyNodeInputObject;
-
-      // verify the required parameter 'updateSurveyNodeInputObject' is set
-      if (updateSurveyNodeInputObject === undefined || updateSurveyNodeInputObject === null) {
-        throw new Error("Missing the required parameter 'updateSurveyNodeInputObject' when calling updateSurveyNode");
-      }
-
-      // verify the required parameter 'id' is set
-      if (id === undefined || id === null) {
-        throw new Error("Missing the required parameter 'id' when calling updateSurveyNode");
-      }
-
-
-      var pathParams = {
-        'id': id
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['BasicAuth'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = ResourceLinkResponse;
-
-      return this.apiClient.callApi(
-        '/api/v2/surveys/nodes/{id}', 'PUT',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType
-      );
-    }
-
-    /**
-     * Update existing node.
-     * 
-     * @param {module:model/UpdateSurveyNodeInputObject} updateSurveyNodeInputObject 
-     * @param {Number} id 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
-     */
-    this.updateSurveyNode = function(updateSurveyNodeInputObject, id) {
-      return this.updateSurveyNodeWithHttpInfo(updateSurveyNodeInputObject, id)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

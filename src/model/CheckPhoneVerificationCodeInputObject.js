@@ -36,20 +36,21 @@
   /**
    * The CheckPhoneVerificationCodeInputObject model module.
    * @module model/CheckPhoneVerificationCodeInputObject
-   * @version 2.0.544
+   * @version 2.0.545
    */
 
   /**
    * Constructs a new <code>CheckPhoneVerificationCodeInputObject</code>.
-   * Confirmation code to check
    * @alias module:model/CheckPhoneVerificationCodeInputObject
    * @class
-   * @param code {Number} 
+   * @param code {Number} Verification code that was received by the user and entered into the form field.
+   * @param verifyId {String} VerifyId from Step 1 to match both requests together.
    */
-  var exports = function(code) {
+  var exports = function(code, verifyId) {
     var _this = this;
 
     _this['code'] = code;
+    _this['verifyId'] = verifyId;
   };
 
   /**
@@ -66,14 +67,23 @@
       if (data.hasOwnProperty('code')) {
         obj['code'] = ApiClient.convertToType(data['code'], 'Number');
       }
+      if (data.hasOwnProperty('verifyId')) {
+        obj['verifyId'] = ApiClient.convertToType(data['verifyId'], 'String');
+      }
     }
     return obj;
   }
 
   /**
+   * Verification code that was received by the user and entered into the form field.
    * @member {Number} code
    */
   exports.prototype['code'] = undefined;
+  /**
+   * VerifyId from Step 1 to match both requests together.
+   * @member {String} verifyId
+   */
+  exports.prototype['verifyId'] = undefined;
 
 
 
