@@ -36,7 +36,7 @@
   /**
    * The DeleteListContactsBulkInputObject model module.
    * @module model/DeleteListContactsBulkInputObject
-   * @version 2.0.543
+   * @version 2.0.544
    */
 
   /**

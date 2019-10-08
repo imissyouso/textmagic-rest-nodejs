@@ -730,16 +730,6 @@
         done();
       });
     });
-    describe('getCallsPrices', function() {
-      it('should call getCallsPrices successfully', function(done) {
-        //uncomment below and update the code to test getCallsPrices
-        //instance.getCallsPrices(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getChat', function() {
       it('should call getChat successfully', function(done) {
         //uncomment below and update the code to test getChat
@@ -794,16 +784,6 @@
       it('should call getContactIfBlocked successfully', function(done) {
         //uncomment below and update the code to test getContactIfBlocked
         //instance.getContactIfBlocked(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getContactImportSessionProgress', function() {
-      it('should call getContactImportSessionProgress successfully', function(done) {
-        //uncomment below and update the code to test getContactImportSessionProgress
-        //instance.getContactImportSessionProgress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
