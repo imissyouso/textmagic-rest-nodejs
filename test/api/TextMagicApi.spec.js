@@ -1150,16 +1150,6 @@
         done();
       });
     });
-    describe('getState', function() {
-      it('should call getState successfully', function(done) {
-        //uncomment below and update the code to test getState
-        //instance.getState(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getSubaccount', function() {
       it('should call getSubaccount successfully', function(done) {
         //uncomment below and update the code to test getSubaccount
@@ -1290,16 +1280,6 @@
         done();
       });
     });
-    describe('getVersions', function() {
-      it('should call getVersions successfully', function(done) {
-        //uncomment below and update the code to test getVersions
-        //instance.getVersions(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('inviteSubaccount', function() {
       it('should call inviteSubaccount successfully', function(done) {
         //uncomment below and update the code to test inviteSubaccount
@@ -1354,16 +1334,6 @@
       it('should call muteChatsBulk successfully', function(done) {
         //uncomment below and update the code to test muteChatsBulk
         //instance.muteChatsBulk(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('ping', function() {
-      it('should call ping successfully', function(done) {
-        //uncomment below and update the code to test ping
-        //instance.ping(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

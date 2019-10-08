@@ -114,7 +114,6 @@ Method | HTTP request | Description
 [**getSenderIds**](TextMagicApi.md#getSenderIds) | **GET** /api/v2/senderids | Get all your approved Sender IDs
 [**getSenderSettings**](TextMagicApi.md#getSenderSettings) | **GET** /api/v2/sender/settings | Get current sender settings
 [**getSpendingStat**](TextMagicApi.md#getSpendingStat) | **GET** /api/v2/stats/spending | Get spending statistics
-[**getState**](TextMagicApi.md#getState) | **GET** /api/v2/state | Get current entities state
 [**getSubaccount**](TextMagicApi.md#getSubaccount) | **GET** /api/v2/subaccounts/{id} | Get sub-account information
 [**getSubaccounts**](TextMagicApi.md#getSubaccounts) | **GET** /api/v2/subaccounts | Get sub-accounts list
 [**getSubaccountsWithTokens**](TextMagicApi.md#getSubaccountsWithTokens) | **POST** /api/v2/subaccounts/tokens/list | Get all sub-accounts with their REST API tokens associated with app name
@@ -128,14 +127,12 @@ Method | HTTP request | Description
 [**getUnsubscribedContact**](TextMagicApi.md#getUnsubscribedContact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
 [**getUnsubscribers**](TextMagicApi.md#getUnsubscribers) | **GET** /api/v2/unsubscribers | Get all unsubscribed contacts
 [**getUserDedicatedNumbers**](TextMagicApi.md#getUserDedicatedNumbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
-[**getVersions**](TextMagicApi.md#getVersions) | **GET** /api/v2/versions | Get minimal valid apps versions
 [**inviteSubaccount**](TextMagicApi.md#inviteSubaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**markChatsReadBulk**](TextMagicApi.md#markChatsReadBulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
 [**markChatsUnreadBulk**](TextMagicApi.md#markChatsUnreadBulk) | **POST** /api/v2/chats/unread/bulk | Mark chats as unread (bulk)
 [**mergeSurveyNodes**](TextMagicApi.md#mergeSurveyNodes) | **POST** /api/v2/surveys/nodes/merge | Merge two question nodes.
 [**muteChat**](TextMagicApi.md#muteChat) | **POST** /api/v2/chats/mute | Mute chat sounds
 [**muteChatsBulk**](TextMagicApi.md#muteChatsBulk) | **POST** /api/v2/chats/mute/bulk | Mute chats (bulk)
-[**ping**](TextMagicApi.md#ping) | **GET** /api/v2/ping | Ping
 [**reopenChatsBulk**](TextMagicApi.md#reopenChatsBulk) | **POST** /api/v2/chats/reopen/bulk | Reopen chats (bulk)
 [**requestNewSubaccountToken**](TextMagicApi.md#requestNewSubaccountToken) | **POST** /api/v2/subaccounts/tokens | Request a new REST API token for sub-account
 [**requestSenderId**](TextMagicApi.md#requestSenderId) | **POST** /api/v2/senderids | Apply for a new Sender ID
@@ -5756,49 +5753,6 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getState"></a>
-# **getState**
-> GetStateResponse getState()
-
-Get current entities state
-
-
-
-### Example
-```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
-
-// Configure HTTP basic authorization: BasicAuth
-var BasicAuth = defaultClient.authentications['BasicAuth'];
-BasicAuth.username = 'YOUR USERNAME';
-BasicAuth.password = 'YOUR PASSWORD';
-
-var apiInstance = new TextmagicClient.TextMagicApi();
-apiInstance.getState().then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
-
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**GetStateResponse**](GetStateResponse.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
 <a name="getSubaccount"></a>
 # **getSubaccount**
 > User getSubaccount(id)
@@ -6451,49 +6405,6 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getVersions"></a>
-# **getVersions**
-> GetVersionsResponse getVersions()
-
-Get minimal valid apps versions
-
-
-
-### Example
-```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
-
-// Configure HTTP basic authorization: BasicAuth
-var BasicAuth = defaultClient.authentications['BasicAuth'];
-BasicAuth.username = 'YOUR USERNAME';
-BasicAuth.password = 'YOUR PASSWORD';
-
-var apiInstance = new TextmagicClient.TextMagicApi();
-apiInstance.getVersions().then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
-
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**GetVersionsResponse**](GetVersionsResponse.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
 <a name="inviteSubaccount"></a>
 # **inviteSubaccount**
 > inviteSubaccount(inviteSubaccountInputObject)
@@ -6787,49 +6698,6 @@ null (empty response body)
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
-
-<a name="ping"></a>
-# **ping**
-> PingResponse ping()
-
-Ping
-
-Make a simple ping request
-
-### Example
-```javascript
-var TextmagicClient = require('textmagic-client');
-var defaultClient = TextmagicClient.ApiClient.instance;
-
-// Configure HTTP basic authorization: BasicAuth
-var BasicAuth = defaultClient.authentications['BasicAuth'];
-BasicAuth.username = 'YOUR USERNAME';
-BasicAuth.password = 'YOUR PASSWORD';
-
-var apiInstance = new TextmagicClient.TextMagicApi();
-apiInstance.ping().then(function(data) {
-  console.log('API called successfully. Returned data: ' + data);
-}, function(error) {
-  console.error(error);
-});
-
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**PingResponse**](PingResponse.md)
-
-### Authorization
-
-[BasicAuth](../README.md#BasicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
 
 <a name="reopenChatsBulk"></a>
 # **reopenChatsBulk**

@@ -36,7 +36,7 @@
   /**
    * The Currency model module.
    * @module model/Currency
-   * @version 2.0.520
+   * @version 2.0.543
    */
 
   /**
