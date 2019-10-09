@@ -36,7 +36,7 @@
   /**
    * The MessageOut model module.
    * @module model/MessageOut
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
@@ -52,7 +52,7 @@
    * @param avatar {String} 
    * @param charset {String} Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
    * @param charsetLabel {String} 
-   * @param firstName {String} Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/tag#Contacts) (even if you submitted phone number instead of contact ID). 
+   * @param firstName {String} Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID). 
    * @param lastName {String} Contact last name.
    * @param country {String} Two-letter ISO country code of the recipient phone number. 
    * @param partsCount {Number} Message parts (multiples of 160 characters) count.
@@ -244,7 +244,7 @@
    */
   exports.prototype['charsetLabel'] = undefined;
   /**
-   * Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/tag#Contacts) (even if you submitted phone number instead of contact ID). 
+   * Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID). 
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;

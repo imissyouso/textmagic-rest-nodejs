@@ -36,7 +36,7 @@
   /**
    * The MessagingStatItem model module.
    * @module model/MessagingStatItem
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
@@ -46,7 +46,7 @@
    * @param replyRate {Number} the number of incoming messages divided by the number of total messages.
    * @param _date {Date} Time interval start, empty if the **by** parameter was set to **off**. 
    * @param deliveryRate {Number} Message delivery rate:the number of delivered messages divided by the number of total messages.
-   * @param costs {Number} Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/tag#User) currency. 
+   * @param costs {Number} Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency. 
    * @param messagesReceived {Number} Total received messages count.
    * @param messagesSentDelivered {Number} Delivered messages count. As messages are retried for up to 48 hours, this value could change.
    * @param messagesSentAccepted {Number} Messages accepted for delivery (in queue), but not yet delivered.
@@ -135,7 +135,7 @@
    */
   exports.prototype['deliveryRate'] = undefined;
   /**
-   * Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/tag#User) currency. 
+   * Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency. 
    * @member {Number} costs
    */
   exports.prototype['costs'] = undefined;

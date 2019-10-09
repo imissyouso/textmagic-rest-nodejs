@@ -36,7 +36,7 @@
   /**
    * The Contact model module.
    * @module model/Contact
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
@@ -52,7 +52,7 @@
    * @param phone {String} Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
    * @param email {String} Contact email address.
    * @param country {module:model/Country} Contact country.
-   * @param customFields {Array.<module:model/ContactCustomField>} See [Custom Fields](http://docs.textmagictesting.com/tag#Custom-Fields) section.
+   * @param customFields {Array.<module:model/ContactCustomField>} See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.
    * @param user {module:model/User} 
    * @param lists {Array.<Array>} 
    * @param phoneType {String} 
@@ -183,7 +183,7 @@
    */
   exports.prototype['country'] = undefined;
   /**
-   * See [Custom Fields](http://docs.textmagictesting.com/tag#Custom-Fields) section.
+   * See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.
    * @member {Array.<module:model/ContactCustomField>} customFields
    */
   exports.prototype['customFields'] = undefined;

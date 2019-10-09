@@ -36,7 +36,7 @@
   /**
    * The UpdateCustomFieldValueInputObject model module.
    * @module model/UpdateCustomFieldValueInputObject
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
@@ -73,7 +73,7 @@
   }
 
   /**
-   * [Contact](http://docs.textmagictesting.com/tag#Contacts) 
+   * [Contact](http://docs.textmagictesting.com/#tag/Contacts) 
    * @member {Number} contactId
    */
   exports.prototype['contactId'] = undefined;

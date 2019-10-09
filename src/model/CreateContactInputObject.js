@@ -36,7 +36,7 @@
   /**
    * The CreateContactInputObject model module.
    * @module model/CreateContactInputObject
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
@@ -44,7 +44,7 @@
    * @alias module:model/CreateContactInputObject
    * @class
    * @param phone {String} Phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164).
-   * @param lists {String} Contact [list](http://docs.textmagictesting.com/tag#Lists) ID. Each contact must be assigned to at least one list.
+   * @param lists {String} Contact [list](http://docs.textmagictesting.com/#tag/Lists) ID. Each contact must be assigned to at least one list.
    */
   var exports = function(phone, lists) {
     var _this = this;
@@ -140,7 +140,7 @@
    */
   exports.prototype['companyName'] = undefined;
   /**
-   * Contact [list](http://docs.textmagictesting.com/tag#Lists) ID. Each contact must be assigned to at least one list.
+   * Contact [list](http://docs.textmagictesting.com/#tag/Lists) ID. Each contact must be assigned to at least one list.
    * @member {String} lists
    */
   exports.prototype['lists'] = undefined;

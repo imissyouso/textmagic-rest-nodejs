@@ -36,7 +36,7 @@
   /**
    * The GetAvailableDedicatedNumbersResponse model module.
    * @module model/GetAvailableDedicatedNumbersResponse
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
@@ -44,7 +44,7 @@
    * @alias module:model/GetAvailableDedicatedNumbersResponse
    * @class
    * @param numbers {Array.<String>} Array of phone number strings.
-   * @param price {Number} Dedicated number monthly fee for this country. Returned in current [account](http://docs.textmagictesting.com/tag#User) currency.
+   * @param price {Number} Dedicated number monthly fee for this country. Returned in current [account](http://docs.textmagictesting.com/#tag/User) currency.
    */
   var exports = function(numbers, price) {
     var _this = this;
@@ -80,7 +80,7 @@
    */
   exports.prototype['numbers'] = undefined;
   /**
-   * Dedicated number monthly fee for this country. Returned in current [account](http://docs.textmagictesting.com/tag#User) currency.
+   * Dedicated number monthly fee for this country. Returned in current [account](http://docs.textmagictesting.com/#tag/User) currency.
    * @member {Number} price
    */
   exports.prototype['price'] = undefined;

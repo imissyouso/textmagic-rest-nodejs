@@ -36,7 +36,7 @@
   /**
    * The GetCountriesResponse model module.
    * @module model/GetCountriesResponse
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**

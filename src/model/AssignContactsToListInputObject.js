@@ -36,14 +36,14 @@
   /**
    * The AssignContactsToListInputObject model module.
    * @module model/AssignContactsToListInputObject
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
    * Constructs a new <code>AssignContactsToListInputObject</code>.
    * @alias module:model/AssignContactsToListInputObject
    * @class
-   * @param contacts {String} Comma-separated array of [Contacts](http://docs.textmagictesting.com/tag#Contacts) IDs.
+   * @param contacts {String} Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs.
    */
   var exports = function(contacts) {
     var _this = this;
@@ -70,7 +70,7 @@
   }
 
   /**
-   * Comma-separated array of [Contacts](http://docs.textmagictesting.com/tag#Contacts) IDs.
+   * Comma-separated array of [Contacts](http://docs.textmagictesting.com/#tag/Contacts) IDs.
    * @member {String} contacts
    */
   exports.prototype['contacts'] = undefined;

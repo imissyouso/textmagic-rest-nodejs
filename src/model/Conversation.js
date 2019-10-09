@@ -36,7 +36,7 @@
   /**
    * The Conversation model module.
    * @module model/Conversation
-   * @version 2.0.577
+   * @version 2.0.589
    */
 
   /**
@@ -49,7 +49,7 @@
    * @param messageTime {Date} Time when message arrived at TextMagic.
    * @param text {String} Message text.
    * @param receiver {String} Receiver phone number.
-   * @param status {String} Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/section#Delivery-status-codes) for details.
+   * @param status {String} Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.
    * @param firstName {String} Contact first name.
    * @param lastName {String} Contact last name.
    * @param sessionId {Number} 
@@ -144,7 +144,7 @@
    */
   exports.prototype['receiver'] = undefined;
   /**
-   * Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/section#Delivery-status-codes) for details.
+   * Message status (for chats outbound only). See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details.
    * @member {String} status
    */
   exports.prototype['status'] = undefined;
