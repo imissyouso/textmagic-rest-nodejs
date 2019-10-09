@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **replyRate** | **Number** | the number of incoming messages divided by the number of total messages. | 
 **_date** | **Date** | Time interval start, empty if the **by** parameter was set to **off**.  | 
 **deliveryRate** | **Number** | Message delivery rate:the number of delivered messages divided by the number of total messages. | 
-**costs** | **Number** | Cost for sent messages during this period. The costs are in the [Account](/docs/api/account/) currency. TODO  | 
+**costs** | **Number** | Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/tag#User) currency.  | 
 **messagesReceived** | **Number** | Total received messages count. | 
 **messagesSentDelivered** | **Number** | Delivered messages count. As messages are retried for up to 48 hours, this value could change. | 
 **messagesSentAccepted** | **Number** | Messages accepted for delivery (in queue), but not yet delivered. | 

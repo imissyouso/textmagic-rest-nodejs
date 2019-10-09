@@ -36,7 +36,7 @@
   /**
    * The GetAllChatsPaginatedResponse model module.
    * @module model/GetAllChatsPaginatedResponse
-   * @version 2.0.545
+   * @version 2.0.577
    */
 
   /**

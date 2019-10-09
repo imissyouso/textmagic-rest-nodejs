@@ -36,7 +36,7 @@
   /**
    * The SearchContactsPaginatedResponse model module.
    * @module model/SearchContactsPaginatedResponse
-   * @version 2.0.545
+   * @version 2.0.577
    */
 
   /**

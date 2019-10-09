@@ -36,14 +36,14 @@
   /**
    * The DeleteContacsFromListObject model module.
    * @module model/DeleteContacsFromListObject
-   * @version 2.0.545
+   * @version 2.0.577
    */
 
   /**
    * Constructs a new <code>DeleteContacsFromListObject</code>.
    * @alias module:model/DeleteContacsFromListObject
    * @class
-   * @param contacts {String} Comma-separated array of [Contacts](/docs/api/contacts/) IDs. 
+   * @param contacts {String} Comma-separated array of [Contacts](http://docs.textmagictesting.com/tag#Contacts) IDs. 
    */
   var exports = function(contacts) {
     var _this = this;
@@ -70,7 +70,7 @@
   }
 
   /**
-   * Comma-separated array of [Contacts](/docs/api/contacts/) IDs. 
+   * Comma-separated array of [Contacts](http://docs.textmagictesting.com/tag#Contacts) IDs. 
    * @member {String} contacts
    */
   exports.prototype['contacts'] = undefined;

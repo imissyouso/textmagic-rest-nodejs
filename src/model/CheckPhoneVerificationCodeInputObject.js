@@ -36,7 +36,7 @@
   /**
    * The CheckPhoneVerificationCodeInputObject model module.
    * @module model/CheckPhoneVerificationCodeInputObject
-   * @version 2.0.545
+   * @version 2.0.577
    */
 
   /**
