@@ -3,22 +3,44 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | 
-**username** | **String** |  | 
-**firstName** | **String** |  | 
-**lastName** | **String** |  | 
+**id** | **Number** | Sub-account ID. | 
+**username** | **String** | Username. | 
+**firstName** | **String** | Account first name. | 
+**lastName** | **String** | Account last name. | 
 **email** | **String** |  | 
-**status** | **String** |  | 
-**balance** | **Number** |  | 
-**phone** | **String** |  | 
-**company** | **String** |  | 
+**status** | **String** | Current account status: * **A** for Active * **T** for Trial.  | 
+**balance** | **Number** | Account balance (in account currency). | 
+**phone** | **String** | Contact phone number. | 
+**company** | **String** | Account company name. | 
 **currency** | [**Currency**](Currency.md) |  | 
 **country** | [**Country**](Country.md) |  | 
 **timezone** | [**Timezone**](Timezone.md) |  | 
-**subaccountType** | **String** |  | 
-**emailAccepted** | **Boolean** |  | 
-**phoneAccepted** | **Boolean** |  | 
+**subaccountType** | **String** | Type of account: *   **A** for Administrator sub-account *   **U** for Regular User  | 
+**emailAccepted** | **Boolean** | Is account has confirmed Email. | 
+**phoneAccepted** | **Boolean** | Is account has confirmed Phone number. | 
 **avatar** | [**UserImage**](UserImage.md) |  | 
-**token** | **String** |  | 
+**token** | **String** | Access token of account. | 
+
+
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
+
+
+* `A` (value: `"A"`)
+
+* `T` (value: `"T"`)
+
+
+
+
+<a name="SubaccountTypeEnum"></a>
+## Enum: SubaccountTypeEnum
+
+
+* `A` (value: `"A"`)
+
+* `U` (value: `"U"`)
+
+
 
 

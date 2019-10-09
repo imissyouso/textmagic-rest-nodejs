@@ -36,7 +36,7 @@
   /**
    * The FavoriteContact model module.
    * @module model/FavoriteContact
-   * @version 2.0.589
+   * @version 2.0.592
    */
 
   /**
@@ -44,10 +44,10 @@
    * @alias module:model/FavoriteContact
    * @class
    * @param entityId {Number} 
-   * @param entityType {module:model/FavoriteContact.EntityTypeEnum} 
-   * @param primaryLabel {String} Contact first name/last name if entityType is \\'contact\\', List name if entity type is \\'list\\'
-   * @param secondaryLabel {String} Phone number if entityType is \\'contact\\', List contacts number if entity type is \\'list\\'
-   * @param tertiaryLabel {String} Contact country if entityType is \\'contact\\' else null
+   * @param entityType {module:model/FavoriteContact.EntityTypeEnum} Entity type which should be marked as **favourite**.
+   * @param primaryLabel {String} Contact first name/last name if entityType is **contact**, List name if entity type is **list**
+   * @param secondaryLabel {String} Phone number if entityType is **contact**, List contacts number if entity type is **list**
+   * @param tertiaryLabel {String} Contact country if entityType is **contact** else null
    * @param avatar {String} 
    */
   var exports = function(entityId, entityType, primaryLabel, secondaryLabel, tertiaryLabel, avatar) {
@@ -99,22 +99,22 @@
    */
   exports.prototype['entityId'] = undefined;
   /**
-   * 
+   * Entity type which should be marked as **favourite**.
    * @member {module:model/FavoriteContact.EntityTypeEnum} entityType
    */
   exports.prototype['entityType'] = undefined;
   /**
-   * Contact first name/last name if entityType is \\'contact\\', List name if entity type is \\'list\\'
+   * Contact first name/last name if entityType is **contact**, List name if entity type is **list**
    * @member {String} primaryLabel
    */
   exports.prototype['primaryLabel'] = undefined;
   /**
-   * Phone number if entityType is \\'contact\\', List contacts number if entity type is \\'list\\'
+   * Phone number if entityType is **contact**, List contacts number if entity type is **list**
    * @member {String} secondaryLabel
    */
   exports.prototype['secondaryLabel'] = undefined;
   /**
-   * Contact country if entityType is \\'contact\\' else null
+   * Contact country if entityType is **contact** else null
    * @member {String} tertiaryLabel
    */
   exports.prototype['tertiaryLabel'] = undefined;
