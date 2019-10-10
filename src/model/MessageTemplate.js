@@ -36,7 +36,7 @@
   /**
    * The MessageTemplate model module.
    * @module model/MessageTemplate
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -45,7 +45,7 @@
    * @class
    * @param id {Number} Template ID.
    * @param name {String} Template name.
-   * @param content {String} Template text. May contain the tags listed below TODO.
+   * @param content {String} Template text. May contain the tags. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    * @param lastModified {Date} Time when template was last modified.
    */
   var exports = function(id, name, content, lastModified) {
@@ -95,7 +95,7 @@
    */
   exports.prototype['name'] = undefined;
   /**
-   * Template text. May contain the tags listed below TODO.
+   * Template text. May contain the tags. See [Custom fields list](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    * @member {String} content
    */
   exports.prototype['content'] = undefined;

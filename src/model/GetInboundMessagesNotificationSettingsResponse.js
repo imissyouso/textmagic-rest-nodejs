@@ -36,20 +36,20 @@
   /**
    * The GetInboundMessagesNotificationSettingsResponse model module.
    * @module model/GetInboundMessagesNotificationSettingsResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>GetInboundMessagesNotificationSettingsResponse</code>.
    * @alias module:model/GetInboundMessagesNotificationSettingsResponse
    * @class
-   * @param inboundMessageNotification {Boolean} Should user receive notification about new incoming messages
-   * @param forwardedCallNotification {Boolean} Should user receive notification about new forwarded calls
-   * @param includeSmsHistory {Boolean} Include SMS history into notification Email
-   * @param sendInHtmlFormat {Boolean} Send Email notification in HTML format
-   * @param alertEmail1 {String} New message notification email 2
-   * @param alertEmail2 {String} New message notification email 2
-   * @param alertEmail3 {String} New message notification email 3
+   * @param inboundMessageNotification {Boolean} Should user receive notification about new incoming messages.
+   * @param forwardedCallNotification {Boolean} Should user receive notification about new forwarded calls.
+   * @param includeSmsHistory {Boolean} Include SMS history into notification Email.
+   * @param sendInHtmlFormat {Boolean} Send Email notification in HTML format.
+   * @param alertEmail1 {String} New message notification email 2.
+   * @param alertEmail2 {String} New message notification email 2.
+   * @param alertEmail3 {String} New message notification email 3.
    */
   var exports = function(inboundMessageNotification, forwardedCallNotification, includeSmsHistory, sendInHtmlFormat, alertEmail1, alertEmail2, alertEmail3) {
     var _this = this;
@@ -100,37 +100,37 @@
   }
 
   /**
-   * Should user receive notification about new incoming messages
+   * Should user receive notification about new incoming messages.
    * @member {Boolean} inboundMessageNotification
    */
   exports.prototype['inboundMessageNotification'] = undefined;
   /**
-   * Should user receive notification about new forwarded calls
+   * Should user receive notification about new forwarded calls.
    * @member {Boolean} forwardedCallNotification
    */
   exports.prototype['forwardedCallNotification'] = undefined;
   /**
-   * Include SMS history into notification Email
+   * Include SMS history into notification Email.
    * @member {Boolean} includeSmsHistory
    */
   exports.prototype['includeSmsHistory'] = undefined;
   /**
-   * Send Email notification in HTML format
+   * Send Email notification in HTML format.
    * @member {Boolean} sendInHtmlFormat
    */
   exports.prototype['sendInHtmlFormat'] = undefined;
   /**
-   * New message notification email 2
+   * New message notification email 2.
    * @member {String} alertEmail1
    */
   exports.prototype['alertEmail1'] = undefined;
   /**
-   * New message notification email 2
+   * New message notification email 2.
    * @member {String} alertEmail2
    */
   exports.prototype['alertEmail2'] = undefined;
   /**
-   * New message notification email 3
+   * New message notification email 3.
    * @member {String} alertEmail3
    */
   exports.prototype['alertEmail3'] = undefined;

@@ -36,14 +36,14 @@
   /**
    * The ContactImage model module.
    * @module model/ContactImage
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>ContactImage</code>.
    * @alias module:model/ContactImage
    * @class
-   * @param href {String} 
+   * @param href {String} URI of a contact avatar.
    */
   var exports = function(href) {
     var _this = this;
@@ -70,6 +70,7 @@
   }
 
   /**
+   * URI of a contact avatar.
    * @member {String} href
    */
   exports.prototype['href'] = undefined;

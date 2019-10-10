@@ -36,7 +36,7 @@
   /**
    * The MessageIn model module.
    * @module model/MessageIn
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -132,14 +132,17 @@
    */
   exports.prototype['text'] = undefined;
   /**
+   * Sender contact ID.
    * @member {Number} contactId
    */
   exports.prototype['contactId'] = undefined;
   /**
+   * Sender contact first name.
    * @member {String} firstName
    */
   exports.prototype['firstName'] = undefined;
   /**
+   * Sender contact last name.
    * @member {String} lastName
    */
   exports.prototype['lastName'] = undefined;

@@ -36,7 +36,7 @@
   /**
    * The UnblockContactInputObject model module.
    * @module model/UnblockContactInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -69,7 +69,7 @@
   }
 
   /**
-   * Contact phone number
+   * Contact phone number.
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;

@@ -36,7 +36,7 @@
   /**
    * The UpdateTemplateInputObject model module.
    * @module model/UpdateTemplateInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -44,7 +44,7 @@
    * @alias module:model/UpdateTemplateInputObject
    * @class
    * @param name {String} Template name
-   * @param content {String} Template text. May contain tags inside braces
+   * @param content {String} Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    */
   var exports = function(name, content) {
     var _this = this;
@@ -80,7 +80,7 @@
    */
   exports.prototype['name'] = undefined;
   /**
-   * Template text. May contain tags inside braces
+   * Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    * @member {String} content
    */
   exports.prototype['content'] = undefined;

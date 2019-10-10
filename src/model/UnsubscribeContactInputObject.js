@@ -36,7 +36,7 @@
   /**
    * The UnsubscribeContactInputObject model module.
    * @module model/UnsubscribeContactInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -73,12 +73,12 @@
   }
 
   /**
-   * Contact phone number
+   * Contact phone number.
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
   /**
-   * Default is 0 (false). If set to 1 incoming messages from this number will be blocked.
+   * If set to 1 incoming messages from this number will be blocked.
    * @member {Number} blockIncoming
    */
   exports.prototype['blockIncoming'] = undefined;

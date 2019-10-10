@@ -36,7 +36,7 @@
   /**
    * The UnblockContactsBulkInputObject model module.
    * @module model/UnblockContactsBulkInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -73,7 +73,7 @@
   }
 
   /**
-   * Entity ID(s), separated by comma
+   * Entity ID(s), separated by comma.
    * @member {String} ids
    */
   exports.prototype['ids'] = undefined;

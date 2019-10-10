@@ -36,17 +36,17 @@
   /**
    * The UploadMessageAttachmentResponse model module.
    * @module model/UploadMessageAttachmentResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>UploadMessageAttachmentResponse</code>.
    * @alias module:model/UploadMessageAttachmentResponse
    * @class
-   * @param chars {Number} 
-   * @param href {String} 
-   * @param name {String} 
-   * @param size {Number} 
+   * @param chars {Number} `href` field characters count. 
+   * @param href {String} This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), it will save you 8 characters. 
+   * @param name {String} File name of uploaded file. 
+   * @param size {Number} Attachment size in bytes.
    */
   var exports = function(chars, href, name, size) {
     var _this = this;
@@ -85,18 +85,22 @@
   }
 
   /**
+   * `href` field characters count. 
    * @member {Number} chars
    */
   exports.prototype['chars'] = undefined;
   /**
+   * This is a relative link to your file. To construct a full link, just add “[https://my.textmagic.com/”](https://my.textmagic.com/%E2%80%9D) to the beginning (like this: [https://my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9)). For most modern devices, you can omit “https://” part and write just [my.textmagic.com/click/Zwcj9](https://my.textmagic.com/click/Zwcj9), it will save you 8 characters. 
    * @member {String} href
    */
   exports.prototype['href'] = undefined;
   /**
+   * File name of uploaded file. 
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
+   * Attachment size in bytes.
    * @member {Number} size
    */
   exports.prototype['size'] = undefined;

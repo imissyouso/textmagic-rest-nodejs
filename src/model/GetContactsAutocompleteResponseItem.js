@@ -36,7 +36,7 @@
   /**
    * The GetContactsAutocompleteResponseItem model module.
    * @module model/GetContactsAutocompleteResponseItem
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -45,12 +45,12 @@
    * @class
    * @param entityId {Number} Id of entity. 0 if object is a Reply
    * @param entityType {module:model/GetContactsAutocompleteResponseItem.EntityTypeEnum} 
-   * @param value {String} Id of contact/list if entityType is contact/list OR phone number if entityType is reply
-   * @param label {String} Name of the contact/list if entityType is contact/list OR phone number if entityType is reply
-   * @param sharedBy {String} If contact or list was shared by another user then name if this user will be shown
-   * @param avatar {String} 
-   * @param favorited {Boolean} If contact was marked as favourited
-   * @param userId {Number} Owner id of the contact/list (if it was shared)
+   * @param value {String} Id of contact/list if entityType is contact/list OR phone number if entityType is reply.
+   * @param label {String} Name of the contact/list if entityType is contact/list OR phone number if entityType is reply.
+   * @param sharedBy {String} If contact or list was shared by another user then name if this user will be shown.
+   * @param avatar {String} Contact avatar URI.
+   * @param favorited {Boolean} If contact has been marked as favorite.
+   * @param userId {Number} Owner id of the contact/list (if it was shared).
    * @param countryName {String} 
    * @param qposition {Number} 
    * @param rposition {Number} 
@@ -130,31 +130,32 @@
    */
   exports.prototype['entityType'] = undefined;
   /**
-   * Id of contact/list if entityType is contact/list OR phone number if entityType is reply
+   * Id of contact/list if entityType is contact/list OR phone number if entityType is reply.
    * @member {String} value
    */
   exports.prototype['value'] = undefined;
   /**
-   * Name of the contact/list if entityType is contact/list OR phone number if entityType is reply
+   * Name of the contact/list if entityType is contact/list OR phone number if entityType is reply.
    * @member {String} label
    */
   exports.prototype['label'] = undefined;
   /**
-   * If contact or list was shared by another user then name if this user will be shown
+   * If contact or list was shared by another user then name if this user will be shown.
    * @member {String} sharedBy
    */
   exports.prototype['sharedBy'] = undefined;
   /**
+   * Contact avatar URI.
    * @member {String} avatar
    */
   exports.prototype['avatar'] = undefined;
   /**
-   * If contact was marked as favourited
+   * If contact has been marked as favorite.
    * @member {Boolean} favorited
    */
   exports.prototype['favorited'] = undefined;
   /**
-   * Owner id of the contact/list (if it was shared)
+   * Owner id of the contact/list (if it was shared).
    * @member {Number} userId
    */
   exports.prototype['userId'] = undefined;

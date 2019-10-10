@@ -36,7 +36,7 @@
   /**
    * The MessageOut model module.
    * @module model/MessageOut
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -45,9 +45,9 @@
    * @class
    * @param id {Number} Message ID.
    * @param text {String} 
-   * @param status {module:model/MessageOut.StatusEnum} Delivery status of the message. TODO: Please see the table below to see different delivery statuses. 
-   * @param contactId {Number} 
-   * @param sessionId {Number} 
+   * @param status {module:model/MessageOut.StatusEnum} Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. 
+   * @param contactId {Number} Recipient contact ID.
+   * @param sessionId {Number} Message Session ID of a Message.
    * @param messageTime {Date} Sending time.
    * @param avatar {String} 
    * @param charset {String} Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
@@ -209,15 +209,17 @@
    */
   exports.prototype['text'] = undefined;
   /**
-   * Delivery status of the message. TODO: Please see the table below to see different delivery statuses. 
+   * Delivery status of the message. See [message delivery statuses](http://docs.textmagictesting.com/#section/Delivery-status-codes) for details. 
    * @member {module:model/MessageOut.StatusEnum} status
    */
   exports.prototype['status'] = undefined;
   /**
+   * Recipient contact ID.
    * @member {Number} contactId
    */
   exports.prototype['contactId'] = undefined;
   /**
+   * Message Session ID of a Message.
    * @member {Number} sessionId
    */
   exports.prototype['sessionId'] = undefined;
@@ -231,6 +233,7 @@
    */
   exports.prototype['avatar'] = undefined;
   /**
+   * Indicates that message has been deleted.
    * @member {Boolean} deleted
    */
   exports.prototype['deleted'] = undefined;
@@ -259,10 +262,12 @@
    */
   exports.prototype['country'] = undefined;
   /**
+   * Receipent phone number.
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
   /**
+   * Message price.
    * @member {Number} price
    */
   exports.prototype['price'] = undefined;
@@ -276,6 +281,7 @@
    */
   exports.prototype['fromEmail'] = undefined;
   /**
+   * Phone number which is used to send SMS.
    * @member {String} fromNumber
    */
   exports.prototype['fromNumber'] = undefined;

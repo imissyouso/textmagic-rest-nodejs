@@ -36,14 +36,14 @@
   /**
    * The UpdateContactNoteInputObject model module.
    * @module model/UpdateContactNoteInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>UpdateContactNoteInputObject</code>.
    * @alias module:model/UpdateContactNoteInputObject
    * @class
-   * @param note {String} 
+   * @param note {String} Contact Note text.
    */
   var exports = function(note) {
     var _this = this;
@@ -70,6 +70,7 @@
   }
 
   /**
+   * Contact Note text.
    * @member {String} note
    */
   exports.prototype['note'] = undefined;

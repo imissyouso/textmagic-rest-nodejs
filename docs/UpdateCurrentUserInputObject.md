@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **email** | **String** |  | [optional] 
 **phone** | **String** |  | [optional] 
 **company** | **String** | Account company name. | [optional] 
-**timezone** | **Number** | The timezome internal id | [optional] 
+**timezone** | **Number** | The timezome internal id. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones). | [optional] 
 
 

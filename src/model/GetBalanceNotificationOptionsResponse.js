@@ -36,24 +36,24 @@
   /**
    * The GetBalanceNotificationOptionsResponse model module.
    * @module model/GetBalanceNotificationOptionsResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>GetBalanceNotificationOptionsResponse</code>.
    * @alias module:model/GetBalanceNotificationOptionsResponse
    * @class
-   * @param _1 {String} Contains sign of currency in Unicode hex code
-   * @param _2 {String} Contains sign of currency in Unicode hex code
-   * @param _3 {String} Contains sign of currency in Unicode hex code
-   * @param _5 {String} Contains sign of currency in Unicode hex code
-   * @param _10 {String} Contains sign of currency in Unicode hex code
-   * @param _20 {String} Contains sign of currency in Unicode hex code
-   * @param _30 {String} Contains sign of currency in Unicode hex code
-   * @param _50 {String} Contains sign of currency in Unicode hex code
-   * @param _100 {String} Contains sign of currency in Unicode hex code
-   * @param _500 {String} Contains sign of currency in Unicode hex code
-   * @param _1000 {String} Contains sign of currency in Unicode hex code
+   * @param _1 {String} Contains sign of currency in Unicode hex code.
+   * @param _2 {String} Contains sign of currency in Unicode hex code.
+   * @param _3 {String} Contains sign of currency in Unicode hex code.
+   * @param _5 {String} Contains sign of currency in Unicode hex code.
+   * @param _10 {String} Contains sign of currency in Unicode hex code.
+   * @param _20 {String} Contains sign of currency in Unicode hex code.
+   * @param _30 {String} Contains sign of currency in Unicode hex code.
+   * @param _50 {String} Contains sign of currency in Unicode hex code.
+   * @param _100 {String} Contains sign of currency in Unicode hex code.
+   * @param _500 {String} Contains sign of currency in Unicode hex code.
+   * @param _1000 {String} Contains sign of currency in Unicode hex code.
    */
   var exports = function(_1, _2, _3, _5, _10, _20, _30, _50, _100, _500, _1000) {
     var _this = this;
@@ -120,57 +120,57 @@
   }
 
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 1
    */
   exports.prototype['1'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 2
    */
   exports.prototype['2'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 3
    */
   exports.prototype['3'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 5
    */
   exports.prototype['5'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 10
    */
   exports.prototype['10'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 20
    */
   exports.prototype['20'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 30
    */
   exports.prototype['30'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 50
    */
   exports.prototype['50'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 100
    */
   exports.prototype['100'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 500
    */
   exports.prototype['500'] = undefined;
   /**
-   * Contains sign of currency in Unicode hex code
+   * Contains sign of currency in Unicode hex code.
    * @member {String} 1000
    */
   exports.prototype['1000'] = undefined;

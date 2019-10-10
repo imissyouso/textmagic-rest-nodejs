@@ -36,20 +36,20 @@
   /**
    * The GetMessageSessionStatResponse model module.
    * @module model/GetMessageSessionStatResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>GetMessageSessionStatResponse</code>.
    * @alias module:model/GetMessageSessionStatResponse
    * @class
-   * @param failed {Number} 
-   * @param delivered {Number} 
-   * @param accepted {Number} 
-   * @param rejected {Number} 
-   * @param scheduled {Number} 
+   * @param failed {Number} Amount of failed messages.
+   * @param delivered {Number} Amount of delivered messages.
+   * @param accepted {Number} Amount of accepted messages.
+   * @param rejected {Number} Amount of rejected messages.
+   * @param scheduled {Number} Amount of schedules messages.
    * @param all {Number} 
-   * @param sent {Number} 
+   * @param sent {Number} Total sent messages.
    */
   var exports = function(failed, delivered, accepted, rejected, scheduled, all, sent) {
     var _this = this;
@@ -100,22 +100,27 @@
   }
 
   /**
+   * Amount of failed messages.
    * @member {Number} failed
    */
   exports.prototype['failed'] = undefined;
   /**
+   * Amount of delivered messages.
    * @member {Number} delivered
    */
   exports.prototype['delivered'] = undefined;
   /**
+   * Amount of accepted messages.
    * @member {Number} accepted
    */
   exports.prototype['accepted'] = undefined;
   /**
+   * Amount of rejected messages.
    * @member {Number} rejected
    */
   exports.prototype['rejected'] = undefined;
   /**
+   * Amount of schedules messages.
    * @member {Number} scheduled
    */
   exports.prototype['scheduled'] = undefined;
@@ -124,6 +129,7 @@
    */
   exports.prototype['all'] = undefined;
   /**
+   * Total sent messages.
    * @member {Number} sent
    */
   exports.prototype['sent'] = undefined;

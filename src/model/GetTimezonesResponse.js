@@ -36,7 +36,7 @@
   /**
    * The GetTimezonesResponse model module.
    * @module model/GetTimezonesResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**

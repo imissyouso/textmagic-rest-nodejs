@@ -36,15 +36,15 @@
   /**
    * The CreateTemplateInputObject model module.
    * @module model/CreateTemplateInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>CreateTemplateInputObject</code>.
    * @alias module:model/CreateTemplateInputObject
    * @class
-   * @param name {String} Template name
-   * @param content {String} Template text. May contain tags inside braces
+   * @param name {String} Template name.
+   * @param content {String} Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    */
   var exports = function(name, content) {
     var _this = this;
@@ -75,12 +75,12 @@
   }
 
   /**
-   * Template name
+   * Template name.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
-   * Template text. May contain tags inside braces
+   * Template text. May contain tags inside braces. See [Get timezones](http://docs.textmagictesting.com/#section/Custom-fields-list-(Merge-tags)).
    * @member {String} content
    */
   exports.prototype['content'] = undefined;

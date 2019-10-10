@@ -36,20 +36,20 @@
   /**
    * The BulkSession model module.
    * @module model/BulkSession
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>BulkSession</code>.
    * @alias module:model/BulkSession
    * @class
-   * @param id {Number} 
-   * @param status {String} 
-   * @param itemsProcessed {Number} 
-   * @param itemsTotal {Number} 
-   * @param createdAt {Date} 
+   * @param id {Number} Bulk Session ID.
+   * @param status {module:model/BulkSession.StatusEnum} * **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended 
+   * @param itemsProcessed {Number} Amount of messages which is already processed.
+   * @param itemsTotal {Number} Total amount of messages to be processed.
+   * @param createdAt {Date} Creation date and time of a Bulk Session.
    * @param session {module:model/MessageSession} 
-   * @param text {String} 
+   * @param text {String} Message text of a Bulk Session.
    */
   var exports = function(id, status, itemsProcessed, itemsTotal, createdAt, session, text) {
     var _this = this;
@@ -100,22 +100,27 @@
   }
 
   /**
+   * Bulk Session ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} status
+   * * **n** - bulk session is just created * **w** - work in progress * **f** - failed * **c** - completed with success * **s** - suspended 
+   * @member {module:model/BulkSession.StatusEnum} status
    */
   exports.prototype['status'] = undefined;
   /**
+   * Amount of messages which is already processed.
    * @member {Number} itemsProcessed
    */
   exports.prototype['itemsProcessed'] = undefined;
   /**
+   * Total amount of messages to be processed.
    * @member {Number} itemsTotal
    */
   exports.prototype['itemsTotal'] = undefined;
   /**
+   * Creation date and time of a Bulk Session.
    * @member {Date} createdAt
    */
   exports.prototype['createdAt'] = undefined;
@@ -124,10 +129,43 @@
    */
   exports.prototype['session'] = undefined;
   /**
+   * Message text of a Bulk Session.
    * @member {String} text
    */
   exports.prototype['text'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>status</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.StatusEnum = {
+    /**
+     * value: "n"
+     * @const
+     */
+    "n": "n",
+    /**
+     * value: "w"
+     * @const
+     */
+    "w": "w",
+    /**
+     * value: "f"
+     * @const
+     */
+    "f": "f",
+    /**
+     * value: "c"
+     * @const
+     */
+    "c": "c",
+    /**
+     * value: "s"
+     * @const
+     */
+    "s": "s"  };
 
 
   return exports;

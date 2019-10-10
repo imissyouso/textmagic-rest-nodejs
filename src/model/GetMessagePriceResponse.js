@@ -36,16 +36,16 @@
   /**
    * The GetMessagePriceResponse model module.
    * @module model/GetMessagePriceResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>GetMessagePriceResponse</code>.
    * @alias module:model/GetMessagePriceResponse
    * @class
-   * @param total {Number} 
-   * @param parts {Number} 
-   * @param countries {Object} 
+   * @param total {Number} Total price of the mesasge.
+   * @param parts {Number} Message parts (multiples of 160 characters) count.
+   * @param countries {Object} List of countries where message will be sent with pricing explanation.
    */
   var exports = function(total, parts, countries) {
     var _this = this;
@@ -80,14 +80,17 @@
   }
 
   /**
+   * Total price of the mesasge.
    * @member {Number} total
    */
   exports.prototype['total'] = undefined;
   /**
+   * Message parts (multiples of 160 characters) count.
    * @member {Number} parts
    */
   exports.prototype['parts'] = undefined;
   /**
+   * List of countries where message will be sent with pricing explanation.
    * @member {Object} countries
    */
   exports.prototype['countries'] = undefined;

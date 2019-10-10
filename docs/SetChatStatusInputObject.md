@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** | Chat ID | 
-**status** | **String** | Status | 
+**id** | **Number** | Chat ID. | 
+**status** | **String** | Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted  | 
 
 
 <a name="StatusEnum"></a>

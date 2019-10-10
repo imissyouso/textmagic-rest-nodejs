@@ -36,15 +36,15 @@
   /**
    * The MuteChatInputObject model module.
    * @module model/MuteChatInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>MuteChatInputObject</code>.
    * @alias module:model/MuteChatInputObject
    * @class
-   * @param id {Number} Chat ID
-   * @param mute {Boolean} Mute value
+   * @param id {Number} Chat ID.
+   * @param mute {Boolean} Mute notifications sound.
    */
   var exports = function(id, mute) {
     var _this = this;
@@ -79,17 +79,17 @@
   }
 
   /**
-   * Chat ID
+   * Chat ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * Mute value
+   * Mute notifications sound.
    * @member {Boolean} mute
    */
   exports.prototype['mute'] = undefined;
   /**
-   * Mute for N hours
+   * Mute for N hours.
    * @member {Number} for
    */
   exports.prototype['for'] = undefined;

@@ -36,7 +36,7 @@
   /**
    * The User model module.
    * @module model/User
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -50,14 +50,14 @@
    * @param email {String} User email address.
    * @param status {module:model/User.StatusEnum} Current account status: * **A** for Active * **T** for Trial. 
    * @param balance {Number} Account balance (in account currency).
-   * @param phone {String} 
+   * @param phone {String} User phone number
    * @param company {String} Account company name.
    * @param currency {module:model/Currency} 
    * @param country {module:model/Country} 
    * @param timezone {module:model/Timezone} 
    * @param subaccountType {module:model/User.SubaccountTypeEnum} Type of account: * **P** for Parent User * **A** for Administrator Sub-Account * **U** for Regular User 
-   * @param emailAccepted {Boolean} 
-   * @param phoneAccepted {Boolean} 
+   * @param emailAccepted {Boolean} Is account has confirmed Email.
+   * @param phoneAccepted {Boolean} Is account has confirmed Phone number.
    * @param avatar {module:model/UserImage} 
    */
   var exports = function(id, username, firstName, lastName, email, status, balance, phone, company, currency, country, timezone, subaccountType, emailAccepted, phoneAccepted, avatar) {
@@ -154,8 +154,8 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * Format for representation of time
-   * @member {String} displayTimeFormat
+   * User's prefered format of time display * *12h* - AM/PM format * *24h* - 24 hour clock format 
+   * @member {module:model/User.DisplayTimeFormatEnum} displayTimeFormat
    */
   exports.prototype['displayTimeFormat'] = undefined;
   /**
@@ -189,6 +189,7 @@
    */
   exports.prototype['balance'] = undefined;
   /**
+   * User phone number
    * @member {String} phone
    */
   exports.prototype['phone'] = undefined;
@@ -215,10 +216,12 @@
    */
   exports.prototype['subaccountType'] = undefined;
   /**
+   * Is account has confirmed Email.
    * @member {Boolean} emailAccepted
    */
   exports.prototype['emailAccepted'] = undefined;
   /**
+   * Is account has confirmed Phone number.
    * @member {Boolean} phoneAccepted
    */
   exports.prototype['phoneAccepted'] = undefined;
@@ -227,6 +230,23 @@
    */
   exports.prototype['avatar'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>displayTimeFormat</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.DisplayTimeFormatEnum = {
+    /**
+     * value: "12h"
+     * @const
+     */
+    "12h": "12h",
+    /**
+     * value: "24h"
+     * @const
+     */
+    "24h": "24h"  };
 
   /**
    * Allowed values for the <code>status</code> property.

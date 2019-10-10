@@ -36,16 +36,16 @@
   /**
    * The UpdateInboundMessagesNotificationSettingsInputObject model module.
    * @module model/UpdateInboundMessagesNotificationSettingsInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>UpdateInboundMessagesNotificationSettingsInputObject</code>.
    * @alias module:model/UpdateInboundMessagesNotificationSettingsInputObject
    * @class
-   * @param inboundMessageNotification {Boolean} Should user receive notification about new incoming messages
-   * @param includeSmsHistory {Boolean} Include SMS history into notification Email
-   * @param sendInHtmlFormat {Boolean} Send Email notification in HTML format
+   * @param inboundMessageNotification {Boolean} Should user receive notification about new incoming messages.
+   * @param includeSmsHistory {Boolean} Include SMS history into notification Email.
+   * @param sendInHtmlFormat {Boolean} Send Email notification in HTML format.
    */
   var exports = function(inboundMessageNotification, includeSmsHistory, sendInHtmlFormat) {
     var _this = this;
@@ -92,32 +92,32 @@
   }
 
   /**
-   * Should user receive notification about new incoming messages
+   * Should user receive notification about new incoming messages.
    * @member {Boolean} inboundMessageNotification
    */
   exports.prototype['inboundMessageNotification'] = undefined;
   /**
-   * Include SMS history into notification Email
+   * Include SMS history into notification Email.
    * @member {Boolean} includeSmsHistory
    */
   exports.prototype['includeSmsHistory'] = undefined;
   /**
-   * Send Email notification in HTML format
+   * Send Email notification in HTML format.
    * @member {Boolean} sendInHtmlFormat
    */
   exports.prototype['sendInHtmlFormat'] = undefined;
   /**
-   * New message notification email 2
+   * New message notification email 2.
    * @member {String} alertEmail1
    */
   exports.prototype['alertEmail1'] = undefined;
   /**
-   * New message notification email 2
+   * New message notification email 2.
    * @member {String} alertEmail2
    */
   exports.prototype['alertEmail2'] = undefined;
   /**
-   * New message notification email 3
+   * New message notification email 3.
    * @member {String} alertEmail3
    */
   exports.prototype['alertEmail3'] = undefined;

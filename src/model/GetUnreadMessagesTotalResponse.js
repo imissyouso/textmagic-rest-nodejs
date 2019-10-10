@@ -36,14 +36,14 @@
   /**
    * The GetUnreadMessagesTotalResponse model module.
    * @module model/GetUnreadMessagesTotalResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>GetUnreadMessagesTotalResponse</code>.
    * @alias module:model/GetUnreadMessagesTotalResponse
    * @class
-   * @param total {Number} 
+   * @param total {Number} Amount of unread messages.
    */
   var exports = function(total) {
     var _this = this;
@@ -70,6 +70,7 @@
   }
 
   /**
+   * Amount of unread messages.
    * @member {Number} total
    */
   exports.prototype['total'] = undefined;

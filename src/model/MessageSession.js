@@ -36,7 +36,7 @@
   /**
    * The MessageSession model module.
    * @module model/MessageSession
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -50,7 +50,7 @@
    * @param referenceId {String} Custom reference ID (see [Messages: Send](http://docs.textmagictesting.com/#tag/Send-Email-to-SMS) for details). 
    * @param price {Number} Session cost (in account currency).
    * @param numbersCount {Number} Session recipient count.
-   * @param destination {String} 
+   * @param destination {module:model/MessageSession.DestinationEnum} Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast 
    */
   var exports = function(id, startTime, text, source, referenceId, price, numbersCount, destination) {
     var _this = this;
@@ -140,10 +140,33 @@
    */
   exports.prototype['numbersCount'] = undefined;
   /**
-   * @member {String} destination
+   * Destination type of a Message Session: * **t** - text SMS * **s** - text to speech * **v** - voice broadcast 
+   * @member {module:model/MessageSession.DestinationEnum} destination
    */
   exports.prototype['destination'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>destination</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.DestinationEnum = {
+    /**
+     * value: "t"
+     * @const
+     */
+    "t": "t",
+    /**
+     * value: "s"
+     * @const
+     */
+    "s": "s",
+    /**
+     * value: "v"
+     * @const
+     */
+    "v": "v"  };
 
 
   return exports;

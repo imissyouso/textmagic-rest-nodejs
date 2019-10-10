@@ -36,15 +36,15 @@
   /**
    * The SetChatStatusInputObject model module.
    * @module model/SetChatStatusInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>SetChatStatusInputObject</code>.
    * @alias module:model/SetChatStatusInputObject
    * @class
-   * @param id {Number} Chat ID
-   * @param status {module:model/SetChatStatusInputObject.StatusEnum} Status
+   * @param id {Number} Chat ID.
+   * @param status {module:model/SetChatStatusInputObject.StatusEnum} Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
    */
   var exports = function(id, status) {
     var _this = this;
@@ -75,12 +75,12 @@
   }
 
   /**
-   * Chat ID
+   * Chat ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * Status
+   * Chat status:   * **a** - Active   * **c** - Closed   * **d** - Deleted 
    * @member {module:model/SetChatStatusInputObject.StatusEnum} status
    */
   exports.prototype['status'] = undefined;

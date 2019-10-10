@@ -36,7 +36,7 @@
   /**
    * The GetContactImportSessionProgressResponse model module.
    * @module model/GetContactImportSessionProgressResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -44,7 +44,7 @@
    * @alias module:model/GetContactImportSessionProgressResponse
    * @class
    * @param status {Number} 
-   * @param processed {Number} How many contacts have been imported
+   * @param processed {Number} How many contacts have been imported.
    */
   var exports = function(status, processed) {
     var _this = this;
@@ -79,7 +79,7 @@
    */
   exports.prototype['status'] = undefined;
   /**
-   * How many contacts have been imported
+   * How many contacts have been imported.
    * @member {Number} processed
    */
   exports.prototype['processed'] = undefined;

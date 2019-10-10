@@ -36,16 +36,16 @@
   /**
    * The ContactNote model module.
    * @module model/ContactNote
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>ContactNote</code>.
    * @alias module:model/ContactNote
    * @class
-   * @param id {Number} 
-   * @param createdAt {Date} 
-   * @param note {String} 
+   * @param id {Number} Contact note ID.
+   * @param createdAt {Date} Contact note creation time.
+   * @param note {String} Contact note text.
    * @param user {module:model/User} 
    */
   var exports = function(id, createdAt, note, user) {
@@ -85,14 +85,17 @@
   }
 
   /**
+   * Contact note ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * Contact note creation time.
    * @member {Date} createdAt
    */
   exports.prototype['createdAt'] = undefined;
   /**
+   * Contact note text.
    * @member {String} note
    */
   exports.prototype['note'] = undefined;

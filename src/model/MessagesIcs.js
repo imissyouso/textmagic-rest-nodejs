@@ -36,7 +36,7 @@
   /**
    * The MessagesIcs model module.
    * @module model/MessagesIcs
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -47,7 +47,7 @@
    * @param nextSend {Date} Next send date in [ISO 8601](https://en.wikipedia.org/?title=ISO_8601) format. 
    * @param rrule {String} [iCal RRULE](http://www.kanzaki.com/docs/ical/rrule.html) string. 
    * @param session {module:model/MessageSession} 
-   * @param lastSent {Date} 
+   * @param lastSent {Date} Date and time when last message has been sent.
    * @param contactName {String} 
    * @param parameters {module:model/MessagesIcsParameters} 
    * @param type {String} 
@@ -55,11 +55,11 @@
    * @param textParameters {module:model/MessagesIcsTextParameters} 
    * @param firstOccurrence {Date} 
    * @param lastOccurrence {Date} 
-   * @param recipientsCount {Number} 
-   * @param timezone {String} 
-   * @param completed {Boolean} 
-   * @param avatar {String} 
-   * @param createdAt {Date} 
+   * @param recipientsCount {Number} Amount of actual recipients.
+   * @param timezone {String} User-friendly timezone name (with spaces replaced by underscores).
+   * @param completed {Boolean} Indicates that schedling has been completed.
+   * @param avatar {String} null
+   * @param createdAt {Date} Scheduling creation time.
    */
   var exports = function(id, nextSend, rrule, session, lastSent, contactName, parameters, type, summary, textParameters, firstOccurrence, lastOccurrence, recipientsCount, timezone, completed, avatar, createdAt) {
     var _this = this;
@@ -169,6 +169,7 @@
    */
   exports.prototype['session'] = undefined;
   /**
+   * Date and time when last message has been sent.
    * @member {Date} lastSent
    */
   exports.prototype['lastSent'] = undefined;
@@ -201,22 +202,27 @@
    */
   exports.prototype['lastOccurrence'] = undefined;
   /**
+   * Amount of actual recipients.
    * @member {Number} recipientsCount
    */
   exports.prototype['recipientsCount'] = undefined;
   /**
+   * User-friendly timezone name (with spaces replaced by underscores).
    * @member {String} timezone
    */
   exports.prototype['timezone'] = undefined;
   /**
+   * Indicates that schedling has been completed.
    * @member {Boolean} completed
    */
   exports.prototype['completed'] = undefined;
   /**
+   * null
    * @member {String} avatar
    */
   exports.prototype['avatar'] = undefined;
   /**
+   * Scheduling creation time.
    * @member {Date} createdAt
    */
   exports.prototype['createdAt'] = undefined;

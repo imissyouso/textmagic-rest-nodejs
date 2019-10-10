@@ -36,14 +36,14 @@
   /**
    * The GetAvailableDedicatedNumbersResponse model module.
    * @module model/GetAvailableDedicatedNumbersResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>GetAvailableDedicatedNumbersResponse</code>.
    * @alias module:model/GetAvailableDedicatedNumbersResponse
    * @class
-   * @param numbers {Array.<String>} Array of phone number strings.
+   * @param numbers {Array.<String>} Array of phone numbers.
    * @param price {Number} Dedicated number monthly fee for this country. Returned in current [account](http://docs.textmagictesting.com/#tag/User) currency.
    */
   var exports = function(numbers, price) {
@@ -75,7 +75,7 @@
   }
 
   /**
-   * Array of phone number strings.
+   * Array of phone numbers.
    * @member {Array.<String>} numbers
    */
   exports.prototype['numbers'] = undefined;

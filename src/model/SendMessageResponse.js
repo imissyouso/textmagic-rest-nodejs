@@ -36,21 +36,21 @@
   /**
    * The SendMessageResponse model module.
    * @module model/SendMessageResponse
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>SendMessageResponse</code>.
    * @alias module:model/SendMessageResponse
    * @class
-   * @param id {Number} 
-   * @param href {String} 
+   * @param id {Number} Message ID.
+   * @param href {String} URI of message session.
    * @param type {String} 
-   * @param sessionId {Number} 
-   * @param bulkId {Number} 
+   * @param sessionId {Number} Message session ID.
+   * @param bulkId {Number} Bulk Session ID. See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session).
    * @param messageId {Number} 
-   * @param scheduleId {Number} 
-   * @param chatId {Number} 
+   * @param scheduleId {Number} Message Schedule ID.
+   * @param chatId {Number} Message Chat ID.
    */
   var exports = function(id, href, type, sessionId, bulkId, messageId, scheduleId, chatId) {
     var _this = this;
@@ -105,10 +105,12 @@
   }
 
   /**
+   * Message ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
+   * URI of message session.
    * @member {String} href
    */
   exports.prototype['href'] = undefined;
@@ -117,10 +119,12 @@
    */
   exports.prototype['type'] = undefined;
   /**
+   * Message session ID.
    * @member {Number} sessionId
    */
   exports.prototype['sessionId'] = undefined;
   /**
+   * Bulk Session ID. See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session).
    * @member {Number} bulkId
    */
   exports.prototype['bulkId'] = undefined;
@@ -129,10 +133,12 @@
    */
   exports.prototype['messageId'] = undefined;
   /**
+   * Message Schedule ID.
    * @member {Number} scheduleId
    */
   exports.prototype['scheduleId'] = undefined;
   /**
+   * Message Chat ID.
    * @member {Number} chatId
    */
   exports.prototype['chatId'] = undefined;

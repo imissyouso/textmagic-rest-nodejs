@@ -36,7 +36,7 @@
   /**
    * The UpdateContactInputObject model module.
    * @module model/UpdateContactInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -145,17 +145,17 @@
    */
   exports.prototype['lists'] = undefined;
   /**
-   * Is contact favorited
+   * Is contact marked as favorite.
    * @member {Boolean} favorited
    */
   exports.prototype['favorited'] = undefined;
   /**
-   * Is contact blocked for outgoing and incoming messaging
+   * Is contact blocked for outgoing and incoming messaging.
    * @member {Boolean} blocked
    */
   exports.prototype['blocked'] = undefined;
   /**
-   * Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection)
+   * Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection).
    * @member {Number} type
    */
   exports.prototype['type'] = undefined;
@@ -164,12 +164,12 @@
    */
   exports.prototype['customFieldValues'] = undefined;
   /**
-   * Treat phone number passed in request body as local
+   * Treat phone number passed in request body as **local**.
    * @member {Number} local
    */
   exports.prototype['local'] = undefined;
   /**
-   * 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country
+   * 2-letter ISO country code for local phone numbers, used when **local** is set to true.
    * @member {String} country
    */
   exports.prototype['country'] = undefined;

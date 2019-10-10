@@ -36,17 +36,17 @@
   /**
    * The MessagesIcsTextParameters model module.
    * @module model/MessagesIcsTextParameters
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>MessagesIcsTextParameters</code>.
    * @alias module:model/MessagesIcsTextParameters
    * @class
-   * @param cost {Number} 
-   * @param parts {Number} 
+   * @param cost {Number} Cost to check one number is constant – 0.04 in your account currency.
+   * @param parts {Number} Message parts (multiples of 160 characters) count.
    * @param chars {Number} 
-   * @param encoding {String} 
+   * @param encoding {module:model/MessagesIcsTextParameters.EncodingEnum} Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS 
    * @param countries {Array.<String>} 
    * @param charsetLabel {String} 
    */
@@ -95,10 +95,12 @@
   }
 
   /**
+   * Cost to check one number is constant – 0.04 in your account currency.
    * @member {Number} cost
    */
   exports.prototype['cost'] = undefined;
   /**
+   * Message parts (multiples of 160 characters) count.
    * @member {Number} parts
    */
   exports.prototype['parts'] = undefined;
@@ -107,7 +109,8 @@
    */
   exports.prototype['chars'] = undefined;
   /**
-   * @member {String} encoding
+   * Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS 
+   * @member {module:model/MessagesIcsTextParameters.EncodingEnum} encoding
    */
   exports.prototype['encoding'] = undefined;
   /**
@@ -119,6 +122,23 @@
    */
   exports.prototype['charsetLabel'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>encoding</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.EncodingEnum = {
+    /**
+     * value: "ISO-8859-1"
+     * @const
+     */
+    "ISO-8859-1": "ISO-8859-1",
+    /**
+     * value: "UTF-16BE"
+     * @const
+     */
+    "UTF-16BE": "UTF-16BE"  };
 
 
   return exports;

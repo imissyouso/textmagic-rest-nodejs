@@ -36,7 +36,7 @@
   /**
    * The UpdateCurrentUserInputObject model module.
    * @module model/UpdateCurrentUserInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
@@ -120,7 +120,7 @@
    */
   exports.prototype['company'] = undefined;
   /**
-   * The timezome internal id
+   * The timezome internal id. See [Get timezones](http://docs.textmagictesting.com/#operation/getTimezones).
    * @member {Number} timezone
    */
   exports.prototype['timezone'] = undefined;

@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **receiver** | **String** | The receiver’s phone number (i.e. your dedicated or shared reply number). | 
 **messageTime** | **Date** | The time when the message reached the TextMagic API endpoint. | 
 **text** | **String** | The text from the received message. | 
-**contactId** | **Number** |  | [optional] 
-**firstName** | **String** |  | [optional] 
-**lastName** | **String** |  | [optional] 
+**contactId** | **Number** | Sender contact ID. | [optional] 
+**firstName** | **String** | Sender contact first name. | [optional] 
+**lastName** | **String** | Sender contact last name. | [optional] 
 **avatar** | **String** |  | 
 
 

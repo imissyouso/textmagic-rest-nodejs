@@ -36,14 +36,14 @@
   /**
    * The MessagesIcsParameters model module.
    * @module model/MessagesIcsParameters
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>MessagesIcsParameters</code>.
    * @alias module:model/MessagesIcsParameters
    * @class
-   * @param text {String} 
+   * @param text {String} Scheduled message text.
    * @param recipients {module:model/MessagesIcsParametersRecipients} 
    */
   var exports = function(text, recipients) {
@@ -75,6 +75,7 @@
   }
 
   /**
+   * Scheduled message text.
    * @member {String} text
    */
   exports.prototype['text'] = undefined;

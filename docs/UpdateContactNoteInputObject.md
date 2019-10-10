@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**note** | **String** |  | 
+**note** | **String** | Contact Note text. | 
 
 

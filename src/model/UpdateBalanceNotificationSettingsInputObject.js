@@ -36,14 +36,14 @@
   /**
    * The UpdateBalanceNotificationSettingsInputObject model module.
    * @module model/UpdateBalanceNotificationSettingsInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>UpdateBalanceNotificationSettingsInputObject</code>.
    * @alias module:model/UpdateBalanceNotificationSettingsInputObject
    * @class
-   * @param alertBalance {String} If balance is below this value, user receive low balance notification
+   * @param alertBalance {String} If balance is below this value, user receive low balance notification.
    */
   var exports = function(alertBalance) {
     var _this = this;
@@ -90,32 +90,32 @@
   }
 
   /**
-   * Should user receive low balance notification
+   * Should user receive low balance notification.
    * @member {Boolean} lowBalanceNotification
    */
   exports.prototype['lowBalanceNotification'] = undefined;
   /**
-   * If balance is below this value, user receive low balance notification
+   * If balance is below this value, user receive low balance notification.
    * @member {String} alertBalance
    */
   exports.prototype['alertBalance'] = undefined;
   /**
-   * Low balance notification phone number
+   * Low balance notification phone number.
    * @member {String} alertPhone
    */
   exports.prototype['alertPhone'] = undefined;
   /**
-   * Low balance notification email 1
+   * Low balance notification email 1.
    * @member {String} alertEmail1
    */
   exports.prototype['alertEmail1'] = undefined;
   /**
-   * Low balance notification email 2
+   * Low balance notification email 2.
    * @member {String} alertEmail2
    */
   exports.prototype['alertEmail2'] = undefined;
   /**
-   * Low balance notification email 3
+   * Low balance notification email 3.
    * @member {String} alertEmail3
    */
   exports.prototype['alertEmail3'] = undefined;

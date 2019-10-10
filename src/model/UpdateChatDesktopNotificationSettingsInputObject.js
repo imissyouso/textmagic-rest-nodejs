@@ -36,15 +36,15 @@
   /**
    * The UpdateChatDesktopNotificationSettingsInputObject model module.
    * @module model/UpdateChatDesktopNotificationSettingsInputObject
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>UpdateChatDesktopNotificationSettingsInputObject</code>.
    * @alias module:model/UpdateChatDesktopNotificationSettingsInputObject
    * @class
-   * @param playSound {Boolean} Notification sound is enable/disabled
-   * @param showNotifications {Boolean} Show desktop notifications about new messages
+   * @param playSound {Boolean} Enable notification sound?
+   * @param showNotifications {Boolean} Show desktop notifications about new messages.
    */
   var exports = function(playSound, showNotifications) {
     var _this = this;
@@ -83,12 +83,12 @@
   }
 
   /**
-   * Notification sound is enable/disabled
+   * Enable notification sound?
    * @member {Boolean} playSound
    */
   exports.prototype['playSound'] = undefined;
   /**
-   * Show desktop notifications about new messages
+   * Show desktop notifications about new messages.
    * @member {Boolean} showNotifications
    */
   exports.prototype['showNotifications'] = undefined;
@@ -98,7 +98,7 @@
    */
   exports.prototype['showText'] = undefined;
   /**
-   * Sound Id of a notification
+   * Sound Id of a notification.
    * @member {Number} soundId
    */
   exports.prototype['soundId'] = undefined;

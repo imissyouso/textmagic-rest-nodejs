@@ -36,14 +36,14 @@
   /**
    * The UserImage model module.
    * @module model/UserImage
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>UserImage</code>.
    * @alias module:model/UserImage
    * @class
-   * @param href {String} 
+   * @param href {String} URI of a user avatar.
    */
   var exports = function(href) {
     var _this = this;
@@ -70,6 +70,7 @@
   }
 
   /**
+   * URI of a user avatar.
    * @member {String} href
    */
   exports.prototype['href'] = undefined;

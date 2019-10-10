@@ -36,15 +36,15 @@
   /**
    * The UserStatement model module.
    * @module model/UserStatement
-   * @version 2.0.604
+   * @version 2.0.605
    */
 
   /**
    * Constructs a new <code>UserStatement</code>.
    * @alias module:model/UserStatement
    * @class
-   * @param id {Number} 
-   * @param userId {Number} User statement ID.
+   * @param id {Number} User statement ID.
+   * @param userId {Number} User ID.
    * @param _date {Date} User statement date.
    * @param balance {Number} 
    * @param delta {Number} Balance change amount.
@@ -105,11 +105,12 @@
   }
 
   /**
+   * User statement ID.
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * User statement ID.
+   * User ID.
    * @member {Number} userId
    */
   exports.prototype['userId'] = undefined;
