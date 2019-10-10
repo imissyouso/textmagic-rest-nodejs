@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**replyRate** | **Number** | the number of incoming messages divided by the number of total messages. | 
+**replyRate** | **Number** | The number of incoming messages divided by the number of total messages. | 
 **_date** | **Date** | Time interval start, empty if the **by** parameter was set to **off**.  | 
 **deliveryRate** | **Number** | Message delivery rate:the number of delivered messages divided by the number of total messages. | 
 **costs** | **Number** | Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency.  | 

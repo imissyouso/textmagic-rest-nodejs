@@ -1160,6 +1160,16 @@
         done();
       });
     });
+    describe('ping', function() {
+      it('should call ping successfully', function(done) {
+        //uncomment below and update the code to test ping
+        //instance.ping(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('reopenChatsBulk', function() {
       it('should call reopenChatsBulk successfully', function(done) {
         //uncomment below and update the code to test reopenChatsBulk

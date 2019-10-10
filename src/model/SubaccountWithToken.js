@@ -36,7 +36,7 @@
   /**
    * The SubaccountWithToken model module.
    * @module model/SubaccountWithToken
-   * @version 2.0.592
+   * @version 2.0.604
    */
 
   /**
@@ -47,7 +47,7 @@
    * @param username {String} Username.
    * @param firstName {String} Account first name.
    * @param lastName {String} Account last name.
-   * @param email {String} 
+   * @param email {String} Account Email address.
    * @param status {module:model/SubaccountWithToken.StatusEnum} Current account status: * **A** for Active * **T** for Trial. 
    * @param balance {Number} Account balance (in account currency).
    * @param phone {String} Contact phone number.
@@ -170,6 +170,7 @@
    */
   exports.prototype['lastName'] = undefined;
   /**
+   * Account Email address.
    * @member {String} email
    */
   exports.prototype['email'] = undefined;

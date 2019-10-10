@@ -36,14 +36,14 @@
   /**
    * The MessagingStatItem model module.
    * @module model/MessagingStatItem
-   * @version 2.0.592
+   * @version 2.0.604
    */
 
   /**
    * Constructs a new <code>MessagingStatItem</code>.
    * @alias module:model/MessagingStatItem
    * @class
-   * @param replyRate {Number} the number of incoming messages divided by the number of total messages.
+   * @param replyRate {Number} The number of incoming messages divided by the number of total messages.
    * @param _date {Date} Time interval start, empty if the **by** parameter was set to **off**. 
    * @param deliveryRate {Number} Message delivery rate:the number of delivered messages divided by the number of total messages.
    * @param costs {Number} Cost for sent messages during this period. The costs are in the [Account](http://docs.textmagictesting.com/#tag/User) currency. 
@@ -120,7 +120,7 @@
   }
 
   /**
-   * the number of incoming messages divided by the number of total messages.
+   * The number of incoming messages divided by the number of total messages.
    * @member {Number} replyRate
    */
   exports.prototype['replyRate'] = undefined;

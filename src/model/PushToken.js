@@ -36,15 +36,15 @@
   /**
    * The PushToken model module.
    * @module model/PushToken
-   * @version 2.0.592
+   * @version 2.0.604
    */
 
   /**
    * Constructs a new <code>PushToken</code>.
    * @alias module:model/PushToken
    * @class
-   * @param type {String} 
-   * @param token {String} 
+   * @param type {module:model/PushToken.TypeEnum} type of the token: * **GCM** — Google Cloud Messaging * **APN** — Apple Push Notification * **FCM** — Firebase Cloud Messaging 
+   * @param token {String} Push token value.
    */
   var exports = function(type, token) {
     var _this = this;
@@ -75,14 +75,38 @@
   }
 
   /**
-   * @member {String} type
+   * type of the token: * **GCM** — Google Cloud Messaging * **APN** — Apple Push Notification * **FCM** — Firebase Cloud Messaging 
+   * @member {module:model/PushToken.TypeEnum} type
    */
   exports.prototype['type'] = undefined;
   /**
+   * Push token value.
    * @member {String} token
    */
   exports.prototype['token'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>type</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.TypeEnum = {
+    /**
+     * value: "a"
+     * @const
+     */
+    "a": "a",
+    /**
+     * value: "g"
+     * @const
+     */
+    "g": "g",
+    /**
+     * value: "f"
+     * @const
+     */
+    "f": "f"  };
 
 
   return exports;

@@ -36,7 +36,7 @@
   /**
    * The ListImage model module.
    * @module model/ListImage
-   * @version 2.0.592
+   * @version 2.0.604
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The GetDisallowedRulesResponse model module.
    * @module model/GetDisallowedRulesResponse
-   * @version 2.0.592
+   * @version 2.0.604
    */
 
   /**

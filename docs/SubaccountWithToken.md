@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **username** | **String** | Username. | 
 **firstName** | **String** | Account first name. | 
 **lastName** | **String** | Account last name. | 
-**email** | **String** |  | 
+**email** | **String** | Account Email address. | 
 **status** | **String** | Current account status: * **A** for Active * **T** for Trial.  | 
 **balance** | **Number** | Account balance (in account currency). | 
 **phone** | **String** | Contact phone number. | 
