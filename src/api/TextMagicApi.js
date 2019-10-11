@@ -33,7 +33,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.605
+   * @version 2.0.610
    */
 
   /**
@@ -559,7 +559,7 @@
       var returnType = ResourceLinkResponse;
 
       return this.apiClient.callApi(
-        '/api/v2/contacts', 'POST',
+        '/api/v2/contacts/normalized', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -1586,7 +1586,7 @@
 
     /**
      * Delete a list
-     * &gt; When you delete a list, the contacts in it are deleted as well unless they were saved in other list. 
+     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -1625,7 +1625,7 @@
 
     /**
      * Delete a list
-     * &gt; When you delete a list, the contacts in it are deleted as well unless they were saved in other list. 
+     * This command has no parameters. If successful, this command will return the standard delete response (204 No Content), otherwise a standard error response will be returned.  When you delete a list, the contacts in it are deleted as well unless they were saved in other list.
      * @param {Number} id 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -4719,7 +4719,7 @@
       var returnType = GetMessagePriceResponse;
 
       return this.apiClient.callApi(
-        '/api/v2/messages/price', 'GET',
+        '/api/v2/messages/price/normalized', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -5345,7 +5345,7 @@
       var returnType = GetSenderSettingsResponse;
 
       return this.apiClient.callApi(
-        '/api/v2/sender/settings', 'GET',
+        '/api/v2/sender/settings/normalized', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -7527,7 +7527,7 @@
       var returnType = ResourceLinkResponse;
 
       return this.apiClient.callApi(
-        '/api/v2/contacts/{id}', 'PUT',
+        '/api/v2/contact/{id}/normalized', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
@@ -7922,7 +7922,7 @@
       var returnType = null;
 
       return this.apiClient.callApi(
-        '/api/v2/sender/settings', 'PUT',
+        '/api/v2/sender/settings/normalized', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );

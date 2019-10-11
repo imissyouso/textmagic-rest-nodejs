@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user** | **Object** |  | 
-**special** | **Object** |  | 
-**other** | **Object** |  | 
+**user** | [**[SenderSettingsItem]**](SenderSettingsItem.md) |  | 
+**special** | [**[SenderSettingsItem]**](SenderSettingsItem.md) |  | 
+**other** | [**[SenderSettingsItem]**](SenderSettingsItem.md) |  | 
 
 

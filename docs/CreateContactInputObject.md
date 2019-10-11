@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **favorited** | **Boolean** | Is contact marked as favorite. | [optional] 
 **blocked** | **Boolean** | Is contact blocked for outgoing and incoming messaging. | [optional] 
 **type** | **Number** | Force type of phone. Possible values: 0 - landline, 1 - mobile. Default is -1 (auto detection). | [optional] 
-**customFieldValues** | **Object** |  | [optional] 
+**customFieldValues** | [**[CustomFieldListItem]**](CustomFieldListItem.md) |  | [optional] 
 **local** | **Number** | Treat phone number passed in request body as local | [optional] 
 **country** | **String** | 2-letter ISO country code for local phone numbers, used when local is  set to true. Default is account country | [optional] 
 

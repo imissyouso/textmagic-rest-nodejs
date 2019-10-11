@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/CustomFieldListItem'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./CustomFieldListItem'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.UpdateContactInputObject = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicClient.UpdateContactInputObject = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.CustomFieldListItem);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, CustomFieldListItem) {
   'use strict';
 
 
@@ -36,7 +36,7 @@
   /**
    * The UpdateContactInputObject model module.
    * @module model/UpdateContactInputObject
-   * @version 2.0.605
+   * @version 2.0.610
    */
 
   /**
@@ -102,7 +102,7 @@
         obj['type'] = ApiClient.convertToType(data['type'], 'Number');
       }
       if (data.hasOwnProperty('customFieldValues')) {
-        obj['customFieldValues'] = ApiClient.convertToType(data['customFieldValues'], Object);
+        obj['customFieldValues'] = ApiClient.convertToType(data['customFieldValues'], [CustomFieldListItem]);
       }
       if (data.hasOwnProperty('local')) {
         obj['local'] = ApiClient.convertToType(data['local'], 'Number');
@@ -160,7 +160,7 @@
    */
   exports.prototype['type'] = undefined;
   /**
-   * @member {Object} customFieldValues
+   * @member {Array.<module:model/CustomFieldListItem>} customFieldValues
    */
   exports.prototype['customFieldValues'] = undefined;
   /**

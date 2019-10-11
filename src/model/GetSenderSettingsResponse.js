@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/SenderSettingsItem'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./SenderSettingsItem'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.GetSenderSettingsResponse = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicClient.GetSenderSettingsResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.SenderSettingsItem);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, SenderSettingsItem) {
   'use strict';
 
 
@@ -36,16 +36,16 @@
   /**
    * The GetSenderSettingsResponse model module.
    * @module model/GetSenderSettingsResponse
-   * @version 2.0.605
+   * @version 2.0.610
    */
 
   /**
    * Constructs a new <code>GetSenderSettingsResponse</code>.
    * @alias module:model/GetSenderSettingsResponse
    * @class
-   * @param user {Object} 
-   * @param special {Object} 
-   * @param other {Object} 
+   * @param user {Array.<module:model/SenderSettingsItem>} 
+   * @param special {Array.<module:model/SenderSettingsItem>} 
+   * @param other {Array.<module:model/SenderSettingsItem>} 
    */
   var exports = function(user, special, other) {
     var _this = this;
@@ -67,28 +67,28 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('user')) {
-        obj['user'] = ApiClient.convertToType(data['user'], Object);
+        obj['user'] = ApiClient.convertToType(data['user'], [SenderSettingsItem]);
       }
       if (data.hasOwnProperty('special')) {
-        obj['special'] = ApiClient.convertToType(data['special'], Object);
+        obj['special'] = ApiClient.convertToType(data['special'], [SenderSettingsItem]);
       }
       if (data.hasOwnProperty('other')) {
-        obj['other'] = ApiClient.convertToType(data['other'], Object);
+        obj['other'] = ApiClient.convertToType(data['other'], [SenderSettingsItem]);
       }
     }
     return obj;
   }
 
   /**
-   * @member {Object} user
+   * @member {Array.<module:model/SenderSettingsItem>} user
    */
   exports.prototype['user'] = undefined;
   /**
-   * @member {Object} special
+   * @member {Array.<module:model/SenderSettingsItem>} special
    */
   exports.prototype['special'] = undefined;
   /**
-   * @member {Object} other
+   * @member {Array.<module:model/SenderSettingsItem>} other
    */
   exports.prototype['other'] = undefined;
 

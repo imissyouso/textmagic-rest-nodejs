@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/GetMessagePriceResponseCountriesItem'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./GetMessagePriceResponseCountriesItem'));
   } else {
     // Browser globals (root is window)
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.GetMessagePriceResponse = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicClient.GetMessagePriceResponse = factory(root.TextmagicClient.ApiClient, root.TextmagicClient.GetMessagePriceResponseCountriesItem);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, GetMessagePriceResponseCountriesItem) {
   'use strict';
 
 
@@ -36,7 +36,7 @@
   /**
    * The GetMessagePriceResponse model module.
    * @module model/GetMessagePriceResponse
-   * @version 2.0.605
+   * @version 2.0.610
    */
 
   /**
@@ -45,7 +45,7 @@
    * @class
    * @param total {Number} Total price of the mesasge.
    * @param parts {Number} Message parts (multiples of 160 characters) count.
-   * @param countries {Object} List of countries where message will be sent with pricing explanation.
+   * @param countries {Array.<module:model/GetMessagePriceResponseCountriesItem>} 
    */
   var exports = function(total, parts, countries) {
     var _this = this;
@@ -73,7 +73,7 @@
         obj['parts'] = ApiClient.convertToType(data['parts'], 'Number');
       }
       if (data.hasOwnProperty('countries')) {
-        obj['countries'] = ApiClient.convertToType(data['countries'], Object);
+        obj['countries'] = ApiClient.convertToType(data['countries'], [GetMessagePriceResponseCountriesItem]);
       }
     }
     return obj;
@@ -90,8 +90,7 @@
    */
   exports.prototype['parts'] = undefined;
   /**
-   * List of countries where message will be sent with pricing explanation.
-   * @member {Object} countries
+   * @member {Array.<module:model/GetMessagePriceResponseCountriesItem>} countries
    */
   exports.prototype['countries'] = undefined;
 

@@ -36,7 +36,7 @@
   /**
    * The GetContactsAutocompleteResponse model module.
    * @module model/GetContactsAutocompleteResponse
-   * @version 2.0.605
+   * @version 2.0.610
    */
 
   /**
