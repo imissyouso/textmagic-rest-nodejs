@@ -36,7 +36,7 @@
   /**
    * The GetSurveyNodesResponse model module.
    * @module model/GetSurveyNodesResponse
-   * @version 2.0.610
+   * @version 2.0.611
    */
 
   /**

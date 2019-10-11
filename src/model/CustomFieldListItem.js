@@ -36,7 +36,7 @@
   /**
    * The CustomFieldListItem model module.
    * @module model/CustomFieldListItem
-   * @version 2.0.610
+   * @version 2.0.611
    */
 
   /**

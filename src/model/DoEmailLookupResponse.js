@@ -36,7 +36,7 @@
   /**
    * The DoEmailLookupResponse model module.
    * @module model/DoEmailLookupResponse
-   * @version 2.0.610
+   * @version 2.0.611
    */
 
   /**

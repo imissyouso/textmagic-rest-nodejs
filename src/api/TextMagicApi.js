@@ -33,7 +33,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.610
+   * @version 2.0.611
    */
 
   /**
@@ -7527,7 +7527,7 @@
       var returnType = ResourceLinkResponse;
 
       return this.apiClient.callApi(
-        '/api/v2/contact/{id}/normalized', 'PUT',
+        '/api/v2/contacts/{id}/normalized', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );

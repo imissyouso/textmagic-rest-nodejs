@@ -36,7 +36,7 @@
   /**
    * The GetContactNotesPaginatedResponse model module.
    * @module model/GetContactNotesPaginatedResponse
-   * @version 2.0.610
+   * @version 2.0.611
    */
 
   /**

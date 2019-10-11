@@ -36,7 +36,7 @@
   /**
    * The ContactCustomField model module.
    * @module model/ContactCustomField
-   * @version 2.0.610
+   * @version 2.0.611
    */
 
   /**

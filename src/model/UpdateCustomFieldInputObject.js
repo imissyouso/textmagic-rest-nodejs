@@ -36,7 +36,7 @@
   /**
    * The UpdateCustomFieldInputObject model module.
    * @module model/UpdateCustomFieldInputObject
-   * @version 2.0.610
+   * @version 2.0.611
    */
 
   /**
