@@ -36,7 +36,7 @@
   /**
    * The ImportContactsInputObject model module.
    * @module model/ImportContactsInputObject
-   * @version 2.0.612
+   * @version 2.0.613
    */
 
   /**

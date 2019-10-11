@@ -36,7 +36,7 @@
   /**
    * The ImportColumnMappingItem model module.
    * @module model/ImportColumnMappingItem
-   * @version 2.0.612
+   * @version 2.0.613
    */
 
   /**

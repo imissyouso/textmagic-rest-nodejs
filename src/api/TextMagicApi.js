@@ -33,7 +33,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.612
+   * @version 2.0.613
    */
 
   /**
@@ -5946,7 +5946,7 @@
       var returnType = null;
 
       return this.apiClient.callApi(
-        '/api/v2/contacts/import', 'POST',
+        '/api/v2/contacts/import/normalized', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );
