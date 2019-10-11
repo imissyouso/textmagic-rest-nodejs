@@ -1110,6 +1110,16 @@
         done();
       });
     });
+    describe('importContacts', function() {
+      it('should call importContacts successfully', function(done) {
+        //uncomment below and update the code to test importContacts
+        //instance.importContacts(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('inviteSubaccount', function() {
       it('should call inviteSubaccount successfully', function(done) {
         //uncomment below and update the code to test inviteSubaccount

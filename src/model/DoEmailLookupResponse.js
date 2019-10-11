@@ -36,7 +36,7 @@
   /**
    * The DoEmailLookupResponse model module.
    * @module model/DoEmailLookupResponse
-   * @version 2.0.611
+   * @version 2.0.612
    */
 
   /**
@@ -59,7 +59,7 @@
    * @param isInWhiteList {Boolean} `true` if the email address exists in TextMagic whitelist. 
    * @param isInBlackList {Boolean} `true` if the email address exists in TextMagic blacklist. 
    * @param hasMx {Boolean} `true` if the email address domain has an MX record. 
-   * @param hasAa {Boolean} 
+   * @param hasAa {Boolean} `true` if the email address domain has an A record (IPv4). 
    * @param hasAaaa {Boolean} `true` if the email address domain has an AAAA record (IPv6). 
    */
   var exports = function(address, status, deliverability, reason, risk, addressType, isDisposableAddress, suggestion, emailRole, localPart, domainPart, exchange, preference, isInWhiteList, isInBlackList, hasMx, hasAa, hasAaaa) {
@@ -235,6 +235,7 @@
    */
   exports.prototype['hasMx'] = undefined;
   /**
+   * `true` if the email address domain has an A record (IPv4). 
    * @member {Boolean} hasAa
    */
   exports.prototype['hasAa'] = undefined;

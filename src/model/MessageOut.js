@@ -36,7 +36,7 @@
   /**
    * The MessageOut model module.
    * @module model/MessageOut
-   * @version 2.0.611
+   * @version 2.0.612
    */
 
   /**
