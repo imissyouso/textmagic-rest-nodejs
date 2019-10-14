@@ -36,7 +36,7 @@
   /**
    * The InviteSubaccountInputObject model module.
    * @module model/InviteSubaccountInputObject
-   * @version 2.0.613
+   * @version 2.0.614
    */
 
   /**

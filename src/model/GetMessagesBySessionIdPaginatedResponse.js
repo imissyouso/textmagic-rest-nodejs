@@ -36,7 +36,7 @@
   /**
    * The GetMessagesBySessionIdPaginatedResponse model module.
    * @module model/GetMessagesBySessionIdPaginatedResponse
-   * @version 2.0.613
+   * @version 2.0.614
    */
 
   /**

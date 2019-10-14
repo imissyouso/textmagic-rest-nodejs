@@ -36,7 +36,7 @@
   /**
    * The GetSurveysPaginatedResponse model module.
    * @module model/GetSurveysPaginatedResponse
-   * @version 2.0.613
+   * @version 2.0.614
    */
 
   /**
