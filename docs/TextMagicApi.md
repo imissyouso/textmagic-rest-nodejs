@@ -110,6 +110,7 @@ Method | HTTP request | Description
 [**getUnsubscribedContact**](TextMagicApi.md#getUnsubscribedContact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
 [**getUnsubscribers**](TextMagicApi.md#getUnsubscribers) | **GET** /api/v2/unsubscribers | Get all unsubscribed contacts
 [**getUserDedicatedNumbers**](TextMagicApi.md#getUserDedicatedNumbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
+[**importContacts**](TextMagicApi.md#importContacts) | **POST** /api/v2/contacts/import/normalized | Import contacts from the CSV, XLS or XLSX file.
 [**inviteSubaccount**](TextMagicApi.md#inviteSubaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**markChatsReadBulk**](TextMagicApi.md#markChatsReadBulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
 [**markChatsUnreadBulk**](TextMagicApi.md#markChatsUnreadBulk) | **POST** /api/v2/chats/unread/bulk | Mark chats as unread (bulk)
@@ -5555,6 +5556,58 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="importContacts"></a>
+# **importContacts**
+> importContacts(file, importContactsInputObject)
+
+Import contacts from the CSV, XLS or XLSX file.
+
+
+
+### Example
+```javascript
+var TextmagicClient = require('textmagic-client');
+var defaultClient = TextmagicClient.ApiClient.instance;
+
+// Configure HTTP basic authorization: BasicAuth
+var BasicAuth = defaultClient.authentications['BasicAuth'];
+BasicAuth.username = 'YOUR USERNAME';
+BasicAuth.password = 'YOUR PASSWORD';
+
+var apiInstance = new TextmagicClient.TextMagicApi();
+
+var file = "/path/to/file.txt"; // File | File containing contacts in csv or xls(x) formats
+
+var importContactsInputObject = new TextmagicClient.ImportContactsInputObject(); // ImportContactsInputObject | 
+
+apiInstance.importContacts(file, importContactsInputObject).then(function() {
+  console.log('API called successfully.');
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **File**| File containing contacts in csv or xls(x) formats | 
+ **importContactsInputObject** | [**ImportContactsInputObject**](ImportContactsInputObject.md)|  | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 <a name="inviteSubaccount"></a>
