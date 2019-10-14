@@ -5560,7 +5560,7 @@ Name | Type | Description  | Notes
 
 <a name="importContacts"></a>
 # **importContacts**
-> importContacts(file, column)
+> importContacts(file, column, opts)
 
 Import contacts from the CSV, XLS or XLSX file.
 
@@ -5580,9 +5580,13 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var file = "/path/to/file.txt"; // File | File containing contacts in csv or xls(x) formats
 
-var column = [new TextmagicClient.ImportColumnMappingItem()]; // [ImportColumnMappingItem] | 
+var column = "column_example"; // String | 
 
-apiInstance.importContacts(file, column).then(function() {
+var opts = { 
+  'listName': "listName_example", // String | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end.
+  'listId': 56 // Number | List ID contacts will be imported to.
+};
+apiInstance.importContacts(file, column, opts).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -5595,7 +5599,9 @@ apiInstance.importContacts(file, column).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **File**| File containing contacts in csv or xls(x) formats | 
- **column** | [**[ImportColumnMappingItem]**](ImportColumnMappingItem.md)|  | 
+ **column** | **String**|  | 
+ **listName** | **String**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. | [optional] 
+ **listId** | **Number**| List ID contacts will be imported to. | [optional] 
 
 ### Return type
 
