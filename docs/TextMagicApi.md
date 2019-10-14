@@ -5560,7 +5560,7 @@ Name | Type | Description  | Notes
 
 <a name="importContacts"></a>
 # **importContacts**
-> importContacts(file, importContactsInputObject)
+> importContacts(file, column)
 
 Import contacts from the CSV, XLS or XLSX file.
 
@@ -5580,9 +5580,9 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var file = "/path/to/file.txt"; // File | File containing contacts in csv or xls(x) formats
 
-var importContactsInputObject = new TextmagicClient.ImportContactsInputObject(); // ImportContactsInputObject | 
+var column = [new TextmagicClient.ImportColumnMappingItem()]; // [ImportColumnMappingItem] | 
 
-apiInstance.importContacts(file, importContactsInputObject).then(function() {
+apiInstance.importContacts(file, column).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -5595,7 +5595,7 @@ apiInstance.importContacts(file, importContactsInputObject).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **File**| File containing contacts in csv or xls(x) formats | 
- **importContactsInputObject** | [**ImportContactsInputObject**](ImportContactsInputObject.md)|  | 
+ **column** | [**[ImportColumnMappingItem]**](ImportColumnMappingItem.md)|  | 
 
 ### Return type
 
