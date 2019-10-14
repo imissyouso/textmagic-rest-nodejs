@@ -5560,7 +5560,7 @@ Name | Type | Description  | Notes
 
 <a name="importContacts"></a>
 # **importContacts**
-> importContacts(file, column, opts)
+> importContacts(file, opts)
 
 Import contacts from the CSV, XLS or XLSX file.
 
@@ -5580,13 +5580,12 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var file = "/path/to/file.txt"; // File | File containing contacts in csv or xls(x) formats
 
-var column = "column_example"; // String | 
-
 var opts = { 
+  'column': "column_example", // String | 
   'listName': "listName_example", // String | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end.
   'listId': 56 // Number | List ID contacts will be imported to.
 };
-apiInstance.importContacts(file, column, opts).then(function() {
+apiInstance.importContacts(file, opts).then(function() {
   console.log('API called successfully.');
 }, function(error) {
   console.error(error);
@@ -5599,7 +5598,7 @@ apiInstance.importContacts(file, column, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **File**| File containing contacts in csv or xls(x) formats | 
- **column** | **String**|  | 
+ **column** | **String**|  | [optional] 
  **listName** | **String**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. | [optional] 
  **listId** | **Number**| List ID contacts will be imported to. | [optional] 
 

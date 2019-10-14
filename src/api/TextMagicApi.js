@@ -33,7 +33,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.617
+   * @version 2.0.618
    */
 
   /**
@@ -5911,13 +5911,13 @@
      * Import contacts from the CSV, XLS or XLSX file.
      * 
      * @param {File} file File containing contacts in csv or xls(x) formats
-     * @param {String} column 
      * @param {Object} opts Optional parameters
+     * @param {String} opts.column 
      * @param {String} opts.listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end.
      * @param {Number} opts.listId List ID contacts will be imported to.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
-    this.importContactsWithHttpInfo = function(file, column, opts) {
+    this.importContactsWithHttpInfo = function(file, opts) {
       opts = opts || {};
       var postBody = null;
 
@@ -5926,16 +5926,11 @@
         throw new Error("Missing the required parameter 'file' when calling importContacts");
       }
 
-      // verify the required parameter 'column' is set
-      if (column === undefined || column === null) {
-        throw new Error("Missing the required parameter 'column' when calling importContacts");
-      }
-
 
       var pathParams = {
       };
       var queryParams = {
-        'column': column,
+        'column': opts['column'],
         'listName': opts['listName'],
         'listId': opts['listId'],
       };
@@ -5963,14 +5958,14 @@
      * Import contacts from the CSV, XLS or XLSX file.
      * 
      * @param {File} file File containing contacts in csv or xls(x) formats
-     * @param {String} column 
      * @param {Object} opts Optional parameters
+     * @param {String} opts.column 
      * @param {String} opts.listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end.
      * @param {Number} opts.listId List ID contacts will be imported to.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
-    this.importContacts = function(file, column, opts) {
-      return this.importContactsWithHttpInfo(file, column, opts)
+    this.importContacts = function(file, opts) {
+      return this.importContactsWithHttpInfo(file, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

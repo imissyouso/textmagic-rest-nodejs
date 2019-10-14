@@ -36,7 +36,7 @@
   /**
    * The BlockContactInputObject model module.
    * @module model/BlockContactInputObject
-   * @version 2.0.617
+   * @version 2.0.618
    */
 
   /**

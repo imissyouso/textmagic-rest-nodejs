@@ -36,7 +36,7 @@
   /**
    * The MarkChatsUnreadBulkInputObject model module.
    * @module model/MarkChatsUnreadBulkInputObject
-   * @version 2.0.617
+   * @version 2.0.618
    */
 
   /**
