@@ -33,7 +33,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.626
+   * @version 2.0.629
    */
 
   /**
@@ -5964,13 +5964,13 @@
      * Import contacts
      * Import contacts from the CSV, XLS or XLSX file.
      * @param {File} file File containing contacts in csv or xls(x) formats
+     * @param {String} column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. 
      * @param {Object} opts Optional parameters
-     * @param {String} opts.column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. 
      * @param {Number} opts.listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified. 
      * @param {String} opts.listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ResourceLinkResponse} and HTTP response
      */
-    this.importContactsWithHttpInfo = function(file, opts) {
+    this.importContactsWithHttpInfo = function(file, column, opts) {
       opts = opts || {};
       var postBody = null;
 
@@ -5979,11 +5979,16 @@
         throw new Error("Missing the required parameter 'file' when calling importContacts");
       }
 
+      // verify the required parameter 'column' is set
+      if (column === undefined || column === null) {
+        throw new Error("Missing the required parameter 'column' when calling importContacts");
+      }
+
 
       var pathParams = {
       };
       var queryParams = {
-        'column': opts['column'],
+        'column': column,
         'listId': opts['listId'],
         'listName': opts['listName'],
       };
@@ -6011,14 +6016,14 @@
      * Import contacts
      * Import contacts from the CSV, XLS or XLSX file.
      * @param {File} file File containing contacts in csv or xls(x) formats
+     * @param {String} column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. 
      * @param {Object} opts Optional parameters
-     * @param {String} opts.column Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required. 
      * @param {Number} opts.listId List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified. 
      * @param {String} opts.listName List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified. 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ResourceLinkResponse}
      */
-    this.importContacts = function(file, opts) {
-      return this.importContactsWithHttpInfo(file, opts)
+    this.importContacts = function(file, column, opts) {
+      return this.importContactsWithHttpInfo(file, column, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

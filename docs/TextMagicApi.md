@@ -5610,7 +5610,7 @@ Name | Type | Description  | Notes
 
 <a name="importContacts"></a>
 # **importContacts**
-> ResourceLinkResponse importContacts(file, opts)
+> ResourceLinkResponse importContacts(file, column, opts)
 
 Import contacts
 
@@ -5630,12 +5630,13 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var file = "/path/to/file.txt"; // File | File containing contacts in csv or xls(x) formats
 
+var column = "\"0:firstName;1:lastName;3:phone;4:email\""; // String | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
+
 var opts = { 
-  'column': "\"0:firstName;1:lastName;3:phone;4:email\"", // String | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
-  'listId': 364, // Number | List ID contacts will be imported to. Ignored if `listName` is specified. 
+  'listId': null, // Number | List ID contacts will be imported to. Ignored if `listName` is specified. 
   'listName': "\"A new list\"" // String | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
 };
-apiInstance.importContacts(file, opts).then(function(data) {
+apiInstance.importContacts(file, column, opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
@@ -5648,7 +5649,7 @@ apiInstance.importContacts(file, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **File**| File containing contacts in csv or xls(x) formats | 
- **column** | **String**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | [optional] 
+ **column** | **String**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | 
  **listId** | **Number**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
  **listName** | **String**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional] 
 
