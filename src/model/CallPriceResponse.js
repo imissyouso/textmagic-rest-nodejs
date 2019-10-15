@@ -25,7 +25,7 @@
     if (!root.TextmagicClient) {
       root.TextmagicClient = {};
     }
-    root.TextmagicClient.GetCallsPricesResponse = factory(root.TextmagicClient.ApiClient);
+    root.TextmagicClient.CallPriceResponse = factory(root.TextmagicClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,14 +34,14 @@
 
 
   /**
-   * The GetCallsPricesResponse model module.
-   * @module model/GetCallsPricesResponse
+   * The CallPriceResponse model module.
+   * @module model/CallPriceResponse
    * @version 2.0.631
    */
 
   /**
-   * Constructs a new <code>GetCallsPricesResponse</code>.
-   * @alias module:model/GetCallsPricesResponse
+   * Constructs a new <code>CallPriceResponse</code>.
+   * @alias module:model/CallPriceResponse
    * @class
    * @param outbound {Number} Price for outbound message
    * @param inbound {Number} Price for inbound message
@@ -58,11 +58,11 @@
   };
 
   /**
-   * Constructs a <code>GetCallsPricesResponse</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CallPriceResponse</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/GetCallsPricesResponse} obj Optional instance to populate.
-   * @return {module:model/GetCallsPricesResponse} The populated <code>GetCallsPricesResponse</code> instance.
+   * @param {module:model/CallPriceResponse} obj Optional instance to populate.
+   * @return {module:model/CallPriceResponse} The populated <code>CallPriceResponse</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {

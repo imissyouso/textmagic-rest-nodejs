@@ -33,7 +33,7 @@
   /**
    * TextMagic service.
    * @module api/TextMagicApi
-   * @version 2.0.630
+   * @version 2.0.631
    */
 
   /**
@@ -8045,7 +8045,7 @@
       var returnType = null;
 
       return this.apiClient.callApi(
-        '/api/v2/sender/settings/normalized', 'PUT',
+        '/api/v2/sender/settings', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType
       );

@@ -36,7 +36,7 @@
   /**
    * The DoEmailLookupResponse model module.
    * @module model/DoEmailLookupResponse
-   * @version 2.0.630
+   * @version 2.0.631
    */
 
   /**
@@ -283,7 +283,12 @@
      * value: "low"
      * @const
      */
-    "low": "low"  };
+    "low": "low",
+    /**
+     * value: "unknown"
+     * @const
+     */
+    "unknown": "unknown"  };
 
   /**
    * Allowed values for the <code>addressType</code> property.

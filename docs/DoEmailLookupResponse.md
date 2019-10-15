@@ -44,6 +44,8 @@ Name | Type | Description | Notes
 
 * `low` (value: `"low"`)
 
+* `unknown` (value: `"unknown"`)
+
 
 
 

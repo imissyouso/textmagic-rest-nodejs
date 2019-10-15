@@ -36,7 +36,7 @@
   /**
    * The GetMessagePriceResponseCountriesItem model module.
    * @module model/GetMessagePriceResponseCountriesItem
-   * @version 2.0.630
+   * @version 2.0.631
    */
 
   /**
