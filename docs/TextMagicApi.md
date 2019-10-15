@@ -5633,7 +5633,7 @@ var file = "/path/to/file.txt"; // File | File containing contacts in csv or xls
 var column = "\"0:firstName;1:lastName;3:phone;4:email\""; // String | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
 
 var opts = { 
-  'listId': null, // Number | List ID contacts will be imported to. Ignored if `listName` is specified. 
+  'listId': 443, // Number | List ID contacts will be imported to. Ignored if `listName` is specified. 
   'listName': "\"A new list\"" // String | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
 };
 apiInstance.importContacts(file, column, opts).then(function(data) {

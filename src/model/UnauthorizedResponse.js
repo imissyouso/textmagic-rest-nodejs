@@ -36,7 +36,7 @@
   /**
    * The UnauthorizedResponse model module.
    * @module model/UnauthorizedResponse
-   * @version 2.0.629
+   * @version 2.0.630
    */
 
   /**

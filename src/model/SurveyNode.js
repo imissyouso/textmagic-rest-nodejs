@@ -36,7 +36,7 @@
   /**
    * The SurveyNode model module.
    * @module model/SurveyNode
-   * @version 2.0.629
+   * @version 2.0.630
    */
 
   /**
