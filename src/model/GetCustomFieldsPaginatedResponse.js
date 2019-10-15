@@ -36,7 +36,7 @@
   /**
    * The GetCustomFieldsPaginatedResponse model module.
    * @module model/GetCustomFieldsPaginatedResponse
-   * @version 2.0.618
+   * @version 2.0.626
    */
 
   /**

@@ -690,6 +690,16 @@
         done();
       });
     });
+    describe('getContactImportSessionProgress', function() {
+      it('should call getContactImportSessionProgress successfully', function(done) {
+        //uncomment below and update the code to test getContactImportSessionProgress
+        //instance.getContactImportSessionProgress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getContactNote', function() {
       it('should call getContactNote successfully', function(done) {
         //uncomment below and update the code to test getContactNote

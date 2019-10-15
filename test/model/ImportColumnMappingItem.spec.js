@@ -56,13 +56,13 @@
       //expect(instance).to.be.a(TextmagicClient.ImportColumnMappingItem);
     });
 
-    it('should have the property columnPositionInFile (base name: "column_position_in_file")', function() {
+    it('should have the property columnPositionInFile (base name: "columnPositionInFile")', function() {
       // uncomment below and update the code to test the property columnPositionInFile
       //var instance = new TextmagicClient.ImportColumnMappingItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property fieldOrCustomFieldId (base name: "field_or_custom_field_id")', function() {
+    it('should have the property fieldOrCustomFieldId (base name: "fieldOrCustomFieldId")', function() {
       // uncomment below and update the code to test the property fieldOrCustomFieldId
       //var instance = new TextmagicClient.ImportColumnMappingItem();
       //expect(instance).to.be();

@@ -36,7 +36,7 @@
   /**
    * The MessagesIcs model module.
    * @module model/MessagesIcs
-   * @version 2.0.618
+   * @version 2.0.626
    */
 
   /**
@@ -58,7 +58,7 @@
    * @param recipientsCount {Number} Amount of actual recipients.
    * @param timezone {String} User-friendly timezone name (with spaces replaced by underscores).
    * @param completed {Boolean} Indicates that schedling has been completed.
-   * @param avatar {String} null
+   * @param avatar {String} TODO
    * @param createdAt {Date} Scheduling creation time.
    */
   var exports = function(id, nextSend, rrule, session, lastSent, contactName, parameters, type, summary, textParameters, firstOccurrence, lastOccurrence, recipientsCount, timezone, completed, avatar, createdAt) {
@@ -217,7 +217,7 @@
    */
   exports.prototype['completed'] = undefined;
   /**
-   * null
+   * TODO
    * @member {String} avatar
    */
   exports.prototype['avatar'] = undefined;

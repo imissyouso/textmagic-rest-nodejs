@@ -56,6 +56,30 @@
       //expect(instance).to.be.a(TextmagicClient.GetCallsPricesResponse);
     });
 
+    it('should have the property outbound (base name: "outbound")', function() {
+      // uncomment below and update the code to test the property outbound
+      //var instance = new TextmagicClient.GetCallsPricesResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property inbound (base name: "inbound")', function() {
+      // uncomment below and update the code to test the property inbound
+      //var instance = new TextmagicClient.GetCallsPricesResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property forward (base name: "forward")', function() {
+      // uncomment below and update the code to test the property forward
+      //var instance = new TextmagicClient.GetCallsPricesResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property country (base name: "country")', function() {
+      // uncomment below and update the code to test the property country
+      //var instance = new TextmagicClient.GetCallsPricesResponse();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

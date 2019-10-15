@@ -36,19 +36,21 @@
   /**
    * The ImportColumnMappingItem model module.
    * @module model/ImportColumnMappingItem
-   * @version 2.0.618
+   * @version 2.0.626
    */
 
   /**
    * Constructs a new <code>ImportColumnMappingItem</code>.
    * @alias module:model/ImportColumnMappingItem
    * @class
+   * @param columnPositionInFile {String} Column position in file (indexed from 0)
+   * @param fieldOrCustomFieldId {String} Field or custom field id
    */
-  var exports = function() {
+  var exports = function(columnPositionInFile, fieldOrCustomFieldId) {
     var _this = this;
 
-
-
+    _this['columnPositionInFile'] = columnPositionInFile;
+    _this['fieldOrCustomFieldId'] = fieldOrCustomFieldId;
   };
 
   /**
@@ -62,11 +64,11 @@
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('column_position_in_file')) {
-        obj['column_position_in_file'] = ApiClient.convertToType(data['column_position_in_file'], 'String');
+      if (data.hasOwnProperty('columnPositionInFile')) {
+        obj['columnPositionInFile'] = ApiClient.convertToType(data['columnPositionInFile'], 'String');
       }
-      if (data.hasOwnProperty('field_or_custom_field_id')) {
-        obj['field_or_custom_field_id'] = ApiClient.convertToType(data['field_or_custom_field_id'], 'String');
+      if (data.hasOwnProperty('fieldOrCustomFieldId')) {
+        obj['fieldOrCustomFieldId'] = ApiClient.convertToType(data['fieldOrCustomFieldId'], 'String');
       }
     }
     return obj;
@@ -74,14 +76,14 @@
 
   /**
    * Column position in file (indexed from 0)
-   * @member {String} column_position_in_file
+   * @member {String} columnPositionInFile
    */
-  exports.prototype['column_position_in_file'] = undefined;
+  exports.prototype['columnPositionInFile'] = undefined;
   /**
    * Field or custom field id
-   * @member {String} field_or_custom_field_id
+   * @member {String} fieldOrCustomFieldId
    */
-  exports.prototype['field_or_custom_field_id'] = undefined;
+  exports.prototype['fieldOrCustomFieldId'] = undefined;
 
 
 

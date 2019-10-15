@@ -36,7 +36,7 @@
   /**
    * The GetSpendingStatPaginatedResponse model module.
    * @module model/GetSpendingStatPaginatedResponse
-   * @version 2.0.618
+   * @version 2.0.626
    */
 
   /**

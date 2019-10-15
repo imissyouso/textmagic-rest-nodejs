@@ -62,7 +62,7 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property userInboundId (base name: "user_inbound_id")', function() {
+    it('should have the property userInboundId (base name: "userInboundId")', function() {
       // uncomment below and update the code to test the property userInboundId
       //var instance = new TextmagicClient.UpdateSurveyCountryItem();
       //expect(instance).to.be();

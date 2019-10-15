@@ -62,13 +62,13 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property countryName (base name: "country_name")', function() {
+    it('should have the property countryName (base name: "countryName")', function() {
       // uncomment below and update the code to test the property countryName
       //var instance = new TextmagicClient.GetMessagePriceResponseCountriesItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property allowDedicated (base name: "allow_dedicated")', function() {
+    it('should have the property allowDedicated (base name: "allowDedicated")', function() {
       // uncomment below and update the code to test the property allowDedicated
       //var instance = new TextmagicClient.GetMessagePriceResponseCountriesItem();
       //expect(instance).to.be();

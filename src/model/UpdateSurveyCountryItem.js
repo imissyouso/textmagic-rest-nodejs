@@ -36,7 +36,7 @@
   /**
    * The UpdateSurveyCountryItem model module.
    * @module model/UpdateSurveyCountryItem
-   * @version 2.0.618
+   * @version 2.0.626
    */
 
   /**
@@ -50,7 +50,7 @@
     var _this = this;
 
     _this['country'] = country;
-    _this['user_inbound_id'] = userInboundId;
+    _this['userInboundId'] = userInboundId;
   };
 
   /**
@@ -67,8 +67,8 @@
       if (data.hasOwnProperty('country')) {
         obj['country'] = ApiClient.convertToType(data['country'], 'String');
       }
-      if (data.hasOwnProperty('user_inbound_id')) {
-        obj['user_inbound_id'] = ApiClient.convertToType(data['user_inbound_id'], 'Number');
+      if (data.hasOwnProperty('userInboundId')) {
+        obj['userInboundId'] = ApiClient.convertToType(data['userInboundId'], 'Number');
       }
     }
     return obj;
@@ -81,9 +81,9 @@
   exports.prototype['country'] = undefined;
   /**
    * User inbound phone ID
-   * @member {Number} user_inbound_id
+   * @member {Number} userInboundId
    */
-  exports.prototype['user_inbound_id'] = undefined;
+  exports.prototype['userInboundId'] = undefined;
 
 
 

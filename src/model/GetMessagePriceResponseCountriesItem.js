@@ -36,7 +36,7 @@
   /**
    * The GetMessagePriceResponseCountriesItem model module.
    * @module model/GetMessagePriceResponseCountriesItem
-   * @version 2.0.618
+   * @version 2.0.626
    */
 
   /**
@@ -55,8 +55,8 @@
     var _this = this;
 
     _this['country'] = country;
-    _this['country_name'] = countryName;
-    _this['allow_dedicated'] = allowDedicated;
+    _this['countryName'] = countryName;
+    _this['allowDedicated'] = allowDedicated;
     _this['count'] = count;
     _this['max'] = max;
     _this['sum'] = sum;
@@ -77,11 +77,11 @@
       if (data.hasOwnProperty('country')) {
         obj['country'] = ApiClient.convertToType(data['country'], 'String');
       }
-      if (data.hasOwnProperty('country_name')) {
-        obj['country_name'] = ApiClient.convertToType(data['country_name'], 'String');
+      if (data.hasOwnProperty('countryName')) {
+        obj['countryName'] = ApiClient.convertToType(data['countryName'], 'String');
       }
-      if (data.hasOwnProperty('allow_dedicated')) {
-        obj['allow_dedicated'] = ApiClient.convertToType(data['allow_dedicated'], 'Boolean');
+      if (data.hasOwnProperty('allowDedicated')) {
+        obj['allowDedicated'] = ApiClient.convertToType(data['allowDedicated'], 'Boolean');
       }
       if (data.hasOwnProperty('count')) {
         obj['count'] = ApiClient.convertToType(data['count'], 'Number');
@@ -106,14 +106,14 @@
   exports.prototype['country'] = undefined;
   /**
    * Country name
-   * @member {String} country_name
+   * @member {String} countryName
    */
-  exports.prototype['country_name'] = undefined;
+  exports.prototype['countryName'] = undefined;
   /**
    * Is allow to use dedicated number
-   * @member {Boolean} allow_dedicated
+   * @member {Boolean} allowDedicated
    */
-  exports.prototype['allow_dedicated'] = undefined;
+  exports.prototype['allowDedicated'] = undefined;
   /**
    * Parts count to send
    * @member {Number} count

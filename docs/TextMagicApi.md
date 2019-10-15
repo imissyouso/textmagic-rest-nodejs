@@ -68,6 +68,7 @@ Method | HTTP request | Description
 [**getContact**](TextMagicApi.md#getContact) | **GET** /api/v2/contacts/{id} | Get the details of a specific contact
 [**getContactByPhone**](TextMagicApi.md#getContactByPhone) | **GET** /api/v2/contacts/phone/{phone} | Get the details of a specific contact by phone number
 [**getContactIfBlocked**](TextMagicApi.md#getContactIfBlocked) | **GET** /api/v2/contacts/block/phone | Check is that phone number blocked
+[**getContactImportSessionProgress**](TextMagicApi.md#getContactImportSessionProgress) | **GET** /api/v2/contacts/import/progress/{id} | Check import progress
 [**getContactNote**](TextMagicApi.md#getContactNote) | **GET** /api/v2/notes/{id} | Get a contact note
 [**getContactNotes**](TextMagicApi.md#getContactNotes) | **GET** /api/v2/contacts/{id}/notes | Fetch notes assigned to the given contact.
 [**getContacts**](TextMagicApi.md#getContacts) | **GET** /api/v2/contacts | Get all contacts
@@ -110,7 +111,7 @@ Method | HTTP request | Description
 [**getUnsubscribedContact**](TextMagicApi.md#getUnsubscribedContact) | **GET** /api/v2/unsubscribers/{id} | Get the details of a specific unsubscribed contact
 [**getUnsubscribers**](TextMagicApi.md#getUnsubscribers) | **GET** /api/v2/unsubscribers | Get all unsubscribed contacts
 [**getUserDedicatedNumbers**](TextMagicApi.md#getUserDedicatedNumbers) | **GET** /api/v2/numbers | Get all your dedicated numbers
-[**importContacts**](TextMagicApi.md#importContacts) | **POST** /api/v2/contacts/import/normalized | Import contacts from the CSV, XLS or XLSX file.
+[**importContacts**](TextMagicApi.md#importContacts) | **POST** /api/v2/contacts/import/normalized | Import contacts
 [**inviteSubaccount**](TextMagicApi.md#inviteSubaccount) | **POST** /api/v2/subaccounts | Invite a new sub-account
 [**markChatsReadBulk**](TextMagicApi.md#markChatsReadBulk) | **POST** /api/v2/chats/read/bulk | Mark chats as read (bulk)
 [**markChatsUnreadBulk**](TextMagicApi.md#markChatsUnreadBulk) | **POST** /api/v2/chats/unread/bulk | Mark chats as unread (bulk)
@@ -666,7 +667,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var createContactNoteInputObject = new TextmagicClient.CreateContactNoteInputObject(); // CreateContactNoteInputObject | 
 
-var id = 56; // Number | 
+var id = 1; // Number | 
 
 apiInstance.createContactNote(createContactNoteInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -1142,7 +1143,7 @@ BasicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new TextmagicClient.TextMagicApi();
 
-var id = 56; // Number | 
+var id = 1; // Number | 
 
 apiInstance.deleteContactAvatar(id).then(function() {
   console.log('API called successfully.');
@@ -2718,7 +2719,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 var country = "\"GB\""; // String | Two-letter dedicated number country ISO code.
 
 var opts = { 
-  'prefix': 1, // Number | Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
+  'prefix': 447155, // Number | Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country.
   'tollfree': 0 // Number | Should we show only tollfree numbers (tollfree available only for US).
 };
 apiInstance.getAvailableDedicatedNumbers(country, opts).then(function(data) {
@@ -2734,7 +2735,7 @@ apiInstance.getAvailableDedicatedNumbers(country, opts).then(function(data) {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **country** | **String**| Two-letter dedicated number country ISO code. | 
- **prefix** | **Number**| Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional] [default to 1]
+ **prefix** | **Number**| Desired number prefix. Should include country code (i.e. 447 for UK phone number format). Leave blank to get all the available numbers for the specified country. | [optional] 
  **tollfree** | **Number**| Should we show only tollfree numbers (tollfree available only for US). | [optional] [default to 0]
 
 ### Return type
@@ -3105,7 +3106,7 @@ BasicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new TextmagicClient.TextMagicApi();
 
-var phone = "phone_example"; // String | 
+var phone = "\"447860021130\""; // String | 
 
 var opts = { 
   'upsert': 0, // Number | Create a new chat if not found
@@ -3274,7 +3275,7 @@ BasicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new TextmagicClient.TextMagicApi();
 
-var phone = "phone_example"; // String | 
+var phone = "\"447860021130\""; // String | 
 
 apiInstance.getContactByPhone(phone).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -3323,7 +3324,7 @@ BasicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new TextmagicClient.TextMagicApi();
 
-var phone = "447860021130"; // String | Phone number to check
+var phone = "\"447860021130\""; // String | Phone number to check
 
 apiInstance.getContactIfBlocked(phone).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -3342,6 +3343,55 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Contact**](Contact.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getContactImportSessionProgress"></a>
+# **getContactImportSessionProgress**
+> GetContactImportSessionProgressResponse getContactImportSessionProgress(id)
+
+Check import progress
+
+Get contact import session progress.
+
+### Example
+```javascript
+var TextmagicClient = require('textmagic-client');
+var defaultClient = TextmagicClient.ApiClient.instance;
+
+// Configure HTTP basic authorization: BasicAuth
+var BasicAuth = defaultClient.authentications['BasicAuth'];
+BasicAuth.username = 'YOUR USERNAME';
+BasicAuth.password = 'YOUR PASSWORD';
+
+var apiInstance = new TextmagicClient.TextMagicApi();
+
+var id = 1; // Number | 
+
+apiInstance.getContactImportSessionProgress(id).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**|  | 
+
+### Return type
+
+[**GetContactImportSessionProgressResponse**](GetContactImportSessionProgressResponse.md)
 
 ### Authorization
 
@@ -3372,7 +3422,7 @@ BasicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new TextmagicClient.TextMagicApi();
 
-var id = 56; // Number | 
+var id = 1; // Number | 
 
 apiInstance.getContactNote(id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -3930,7 +3980,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 var opts = { 
   'page': 1, // Number | Fetch specified results page.
   'limit': 10, // Number | The number of results per page.
-  'query': "A" // String | Find contacts or lists by specified search query
+  'query': "\"A\"" // String | Find contacts or lists by specified search query
 };
 apiInstance.getFavourites(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -3946,7 +3996,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Number**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Number**| The number of results per page. | [optional] [default to 10]
- **query** | **String**| Find contacts or lists by specified search query | [optional] [default to A]
+ **query** | **String**| Find contacts or lists by specified search query | [optional] 
 
 ### Return type
 
@@ -4711,7 +4761,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 var opts = { 
   'by': "off", // String | *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year 
   'start': 1430438400, // Number | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
-  'end': "1431648000" // String | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
+  'end': 1431648000 // Number | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
 };
 apiInstance.getMessagingStat(opts).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -4727,7 +4777,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **by** | **String**| *   **off** to get total values per specified time interval *   **day** to show values grouped by day *   **month** to show values grouped by month *   **year** to show values grouped by year  | [optional] [default to off]
  **start** | **Number**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
- **end** | **String**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
+ **end** | **Number**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
 
@@ -5072,7 +5122,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 var opts = { 
   'page': 1, // Number | Fetch specified results page.
   'limit': 10, // Number | The number of results per page.
-  'start': "2018-11-11 11:11", // Number | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
+  'start': "\"2018-11-11 11:11\"", // String | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior. 
   'end': "\"2019-11-11 11:11\"" // String | Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today. 
 };
 apiInstance.getSpendingStat(opts).then(function(data) {
@@ -5089,7 +5139,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **Number**| Fetch specified results page. | [optional] [default to 1]
  **limit** | **Number**| The number of results per page. | [optional] [default to 10]
- **start** | **Number**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
+ **start** | **String**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is 7 days prior.  | [optional] 
  **end** | **String**| Time period start in [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) format. The default is today.  | [optional] 
 
 ### Return type
@@ -5560,11 +5610,11 @@ Name | Type | Description  | Notes
 
 <a name="importContacts"></a>
 # **importContacts**
-> importContacts(file, opts)
+> ResourceLinkResponse importContacts(file, opts)
+
+Import contacts
 
 Import contacts from the CSV, XLS or XLSX file.
-
-
 
 ### Example
 ```javascript
@@ -5581,12 +5631,12 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 var file = "/path/to/file.txt"; // File | File containing contacts in csv or xls(x) formats
 
 var opts = { 
-  'column': "column_example", // String | 
-  'listName': "listName_example", // String | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end.
-  'listId': 56 // Number | List ID contacts will be imported to.
+  'column': "\"0:firstName;1:lastName;3:phone;4:email\"", // String | Import file column mapping. String must contain substrings of mapping in format `columnNumber:field` glued by `;`. For example: `0:firstName;1:lastName;3:phone;4:email` where value before `:` is a number of column in file, value after `:` is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: `firstName`, `lastName`, `phone`, `email`. Existing of `phone` mapping is required. 
+  'listId': 364, // Number | List ID contacts will be imported to. Ignored if `listName` is specified. 
+  'listName': "\"A new list\"" // String | List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if `listId` is specified. 
 };
-apiInstance.importContacts(file, opts).then(function() {
-  console.log('API called successfully.');
+apiInstance.importContacts(file, opts).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);
 });
@@ -5598,13 +5648,13 @@ apiInstance.importContacts(file, opts).then(function() {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file** | **File**| File containing contacts in csv or xls(x) formats | 
- **column** | **String**|  | [optional] 
- **listName** | **String**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. | [optional] 
- **listId** | **Number**| List ID contacts will be imported to. | [optional] 
+ **column** | **String**| Import file column mapping. String must contain substrings of mapping in format &#x60;columnNumber:field&#x60; glued by &#x60;;&#x60;. For example: &#x60;0:firstName;1:lastName;3:phone;4:email&#x60; where value before &#x60;:&#x60; is a number of column in file, value after &#x60;:&#x60; is a field of newly created contact or ID of custom field. Numbers of columns begins from zero. Allowed built-in contact fields: &#x60;firstName&#x60;, &#x60;lastName&#x60;, &#x60;phone&#x60;, &#x60;email&#x60;. Existing of &#x60;phone&#x60; mapping is required.  | [optional] 
+ **listId** | **Number**| List ID contacts will be imported to. Ignored if &#x60;listName&#x60; is specified.  | [optional] 
+ **listName** | **String**| List name. This list will be created during import. If such name is already taken, an ordinal (1, 2, ...) will be added to the end. Ignored if &#x60;listId&#x60; is specified.  | [optional] 
 
 ### Return type
 
-null (empty response body)
+[**ResourceLinkResponse**](ResourceLinkResponse.md)
 
 ### Authorization
 
@@ -7311,7 +7361,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var updateCustomFieldValueInputObject = new TextmagicClient.UpdateCustomFieldValueInputObject(); // UpdateCustomFieldValueInputObject | 
 
-var id = "id_example"; // String | 
+var id = 554; // Number | 
 
 apiInstance.updateCustomFieldValue(updateCustomFieldValueInputObject, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -7326,7 +7376,7 @@ apiInstance.updateCustomFieldValue(updateCustomFieldValueInputObject, id).then(f
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **updateCustomFieldValueInputObject** | [**UpdateCustomFieldValueInputObject**](UpdateCustomFieldValueInputObject.md)|  | 
- **id** | **String**|  | 
+ **id** | **Number**|  | 
 
 ### Return type
 
@@ -7615,7 +7665,7 @@ var apiInstance = new TextmagicClient.TextMagicApi();
 
 var image = "/path/to/file.txt"; // File | Contact avatar. Should be PNG or JPG file not more than 10 MB
 
-var id = 56; // Number | 
+var id = 1; // Number | 
 
 apiInstance.uploadContactAvatar(image, id).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
