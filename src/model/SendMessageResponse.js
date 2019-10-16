@@ -36,7 +36,7 @@
   /**
    * The SendMessageResponse model module.
    * @module model/SendMessageResponse
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -45,10 +45,10 @@
    * @class
    * @param id {Number} Message ID.
    * @param href {String} URI of message session.
-   * @param type {String} 
+   * @param type {module:model/SendMessageResponse.TypeEnum} Message response type: * **message** when message sent to a single recipient * **session** when message sent to multiple recipients * **schedule** when message has been scheduled for sending * **bulk** when message sent to multiple recipient and the number of recipients requires asynchronous processiong See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session). 
    * @param sessionId {Number} Message session ID.
    * @param bulkId {Number} Bulk Session ID. See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session).
-   * @param messageId {Number} 
+   * @param messageId {Number} Message ID.
    * @param scheduleId {Number} Message Schedule ID.
    * @param chatId {Number} Message Chat ID.
    */
@@ -115,7 +115,8 @@
    */
   exports.prototype['href'] = undefined;
   /**
-   * @member {String} type
+   * Message response type: * **message** when message sent to a single recipient * **session** when message sent to multiple recipients * **schedule** when message has been scheduled for sending * **bulk** when message sent to multiple recipient and the number of recipients requires asynchronous processiong See [Sending more than 1,000 messages in one session](http://docs.textmagictesting.com/#section/Tutorials/Sending-more-than-1000-messages-in-one-session). 
+   * @member {module:model/SendMessageResponse.TypeEnum} type
    */
   exports.prototype['type'] = undefined;
   /**
@@ -129,6 +130,7 @@
    */
   exports.prototype['bulkId'] = undefined;
   /**
+   * Message ID.
    * @member {Number} messageId
    */
   exports.prototype['messageId'] = undefined;
@@ -143,6 +145,33 @@
    */
   exports.prototype['chatId'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>type</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.TypeEnum = {
+    /**
+     * value: "message"
+     * @const
+     */
+    "message": "message",
+    /**
+     * value: "session"
+     * @const
+     */
+    "session": "session",
+    /**
+     * value: "schedule"
+     * @const
+     */
+    "schedule": "schedule",
+    /**
+     * value: "bulk"
+     * @const
+     */
+    "bulk": "bulk"  };
 
 
   return exports;

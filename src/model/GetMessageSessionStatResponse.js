@@ -36,7 +36,7 @@
   /**
    * The GetMessageSessionStatResponse model module.
    * @module model/GetMessageSessionStatResponse
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -47,9 +47,9 @@
    * @param delivered {Number} Amount of delivered messages.
    * @param accepted {Number} Amount of accepted messages.
    * @param rejected {Number} Amount of rejected messages.
-   * @param scheduled {Number} Amount of schedules messages.
-   * @param all {Number} 
-   * @param sent {Number} Total sent messages.
+   * @param scheduled {Number} Amount of scheduled messages.
+   * @param all {Number} Total amount of messages.
+   * @param sent {Number} Amount of sent but not yet delivered messages.
    */
   var exports = function(failed, delivered, accepted, rejected, scheduled, all, sent) {
     var _this = this;
@@ -120,16 +120,17 @@
    */
   exports.prototype['rejected'] = undefined;
   /**
-   * Amount of schedules messages.
+   * Amount of scheduled messages.
    * @member {Number} scheduled
    */
   exports.prototype['scheduled'] = undefined;
   /**
+   * Total amount of messages.
    * @member {Number} all
    */
   exports.prototype['all'] = undefined;
   /**
-   * Total sent messages.
+   * Amount of sent but not yet delivered messages.
    * @member {Number} sent
    */
   exports.prototype['sent'] = undefined;

@@ -36,7 +36,7 @@
   /**
    * The DoAuthResponse model module.
    * @module model/DoAuthResponse
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**

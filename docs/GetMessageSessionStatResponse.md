@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **delivered** | **Number** | Amount of delivered messages. | 
 **accepted** | **Number** | Amount of accepted messages. | 
 **rejected** | **Number** | Amount of rejected messages. | 
-**scheduled** | **Number** | Amount of schedules messages. | 
-**all** | **Number** |  | 
-**sent** | **Number** | Total sent messages. | 
+**scheduled** | **Number** | Amount of scheduled messages. | 
+**all** | **Number** | Total amount of messages. | 
+**sent** | **Number** | Amount of sent but not yet delivered messages. | 
 
 

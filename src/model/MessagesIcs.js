@@ -36,7 +36,7 @@
   /**
    * The MessagesIcs model module.
    * @module model/MessagesIcs
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -48,17 +48,17 @@
    * @param rrule {String} [iCal RRULE](http://www.kanzaki.com/docs/ical/rrule.html) string. 
    * @param session {module:model/MessageSession} 
    * @param lastSent {Date} Date and time when last message has been sent.
-   * @param contactName {String} 
+   * @param contactName {String} Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.
    * @param parameters {module:model/MessagesIcsParameters} 
-   * @param type {String} 
-   * @param summary {String} 
+   * @param type {module:model/MessagesIcs.TypeEnum} 
+   * @param summary {String} A human-readable summary of the sending schedule.
    * @param textParameters {module:model/MessagesIcsTextParameters} 
-   * @param firstOccurrence {Date} 
-   * @param lastOccurrence {Date} 
+   * @param firstOccurrence {Date} First occurence date.
+   * @param lastOccurrence {Date} Last occurence date (could be `null` if the schedule is endless).
    * @param recipientsCount {Number} Amount of actual recipients.
    * @param timezone {String} User-friendly timezone name (with spaces replaced by underscores).
    * @param completed {Boolean} Indicates that schedling has been completed.
-   * @param avatar {String} TODO
+   * @param avatar {String} A relative link to the contact avatar.
    * @param createdAt {Date} Scheduling creation time.
    */
   var exports = function(id, nextSend, rrule, session, lastSent, contactName, parameters, type, summary, textParameters, firstOccurrence, lastOccurrence, recipientsCount, timezone, completed, avatar, createdAt) {
@@ -174,6 +174,7 @@
    */
   exports.prototype['lastSent'] = undefined;
   /**
+   * Aggregated contact information. If the message scheduled to be sent to a single contact, a full name will be returned here. Otherwise, a total amount contacts will be returned.
    * @member {String} contactName
    */
   exports.prototype['contactName'] = undefined;
@@ -182,10 +183,11 @@
    */
   exports.prototype['parameters'] = undefined;
   /**
-   * @member {String} type
+   * @member {module:model/MessagesIcs.TypeEnum} type
    */
   exports.prototype['type'] = undefined;
   /**
+   * A human-readable summary of the sending schedule.
    * @member {String} summary
    */
   exports.prototype['summary'] = undefined;
@@ -194,10 +196,12 @@
    */
   exports.prototype['textParameters'] = undefined;
   /**
+   * First occurence date.
    * @member {Date} firstOccurrence
    */
   exports.prototype['firstOccurrence'] = undefined;
   /**
+   * Last occurence date (could be `null` if the schedule is endless).
    * @member {Date} lastOccurrence
    */
   exports.prototype['lastOccurrence'] = undefined;
@@ -217,7 +221,7 @@
    */
   exports.prototype['completed'] = undefined;
   /**
-   * TODO
+   * A relative link to the contact avatar.
    * @member {String} avatar
    */
   exports.prototype['avatar'] = undefined;
@@ -227,6 +231,43 @@
    */
   exports.prototype['createdAt'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>type</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.TypeEnum = {
+    /**
+     * value: "Once"
+     * @const
+     */
+    "Once": "Once",
+    /**
+     * value: "Hourly"
+     * @const
+     */
+    "Hourly": "Hourly",
+    /**
+     * value: "Daily"
+     * @const
+     */
+    "Daily": "Daily",
+    /**
+     * value: "Weekly"
+     * @const
+     */
+    "Weekly": "Weekly",
+    /**
+     * value: "Monthly"
+     * @const
+     */
+    "Monthly": "Monthly",
+    /**
+     * value: "Yearly"
+     * @const
+     */
+    "Yearly": "Yearly"  };
 
 
   return exports;

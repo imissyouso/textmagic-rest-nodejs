@@ -36,7 +36,7 @@
   /**
    * The GetContactsAutocompleteResponseItem model module.
    * @module model/GetContactsAutocompleteResponseItem
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -44,10 +44,10 @@
    * @alias module:model/GetContactsAutocompleteResponseItem
    * @class
    * @param entityId {Number} Id of entity. 0 if object is a Reply
-   * @param entityType {module:model/GetContactsAutocompleteResponseItem.EntityTypeEnum} 
+   * @param entityType {module:model/GetContactsAutocompleteResponseItem.EntityTypeEnum} Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message 
    * @param value {String} Id of contact/list if entityType is contact/list OR phone number if entityType is reply.
    * @param label {String} Name of the contact/list if entityType is contact/list OR phone number if entityType is reply.
-   * @param sharedBy {String} If contact or list was shared by another user then name if this user will be shown.
+   * @param sharedBy {String} If contact or list was shared by another sub-account then name if this user will be shown.
    * @param avatar {String} Contact avatar URI.
    * @param favorited {Boolean} If contact has been marked as favorite.
    * @param userId {Number} Owner id of the contact/list (if it was shared).
@@ -125,7 +125,7 @@
    */
   exports.prototype['entityId'] = undefined;
   /**
-   * 
+   * Entry type: * **contact** if it is related to a contact * **list** if it is related to a contact list * **reply** if it is related to an incoming message 
    * @member {module:model/GetContactsAutocompleteResponseItem.EntityTypeEnum} entityType
    */
   exports.prototype['entityType'] = undefined;
@@ -140,7 +140,7 @@
    */
   exports.prototype['label'] = undefined;
   /**
-   * If contact or list was shared by another user then name if this user will be shown.
+   * If contact or list was shared by another sub-account then name if this user will be shown.
    * @member {String} sharedBy
    */
   exports.prototype['sharedBy'] = undefined;
@@ -180,20 +180,20 @@
    */
   exports.EntityTypeEnum = {
     /**
-     * value: "list"
+     * value: "reply"
      * @const
      */
-    "list": "list",
+    "reply": "reply",
     /**
      * value: "contact"
      * @const
      */
     "contact": "contact",
     /**
-     * value: "reply"
+     * value: "list"
      * @const
      */
-    "reply": "reply"  };
+    "list": "list"  };
 
 
   return exports;

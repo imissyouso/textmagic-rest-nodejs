@@ -36,7 +36,7 @@
   /**
    * The GetInboundMessagesNotificationSettingsResponse model module.
    * @module model/GetInboundMessagesNotificationSettingsResponse
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -47,7 +47,7 @@
    * @param forwardedCallNotification {Boolean} Should user receive notification about new forwarded calls.
    * @param includeSmsHistory {Boolean} Include SMS history into notification Email.
    * @param sendInHtmlFormat {Boolean} Send Email notification in HTML format.
-   * @param alertEmail1 {String} New message notification email 2.
+   * @param alertEmail1 {String} New message notification email 1.
    * @param alertEmail2 {String} New message notification email 2.
    * @param alertEmail3 {String} New message notification email 3.
    */
@@ -120,7 +120,7 @@
    */
   exports.prototype['sendInHtmlFormat'] = undefined;
   /**
-   * New message notification email 2.
+   * New message notification email 1.
    * @member {String} alertEmail1
    */
   exports.prototype['alertEmail1'] = undefined;

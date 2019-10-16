@@ -36,7 +36,7 @@
   /**
    * The MessagesIcsTextParameters model module.
    * @module model/MessagesIcsTextParameters
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -45,10 +45,10 @@
    * @class
    * @param cost {Number} Cost to check one number is constant – 0.04 in your account currency.
    * @param parts {Number} Message parts (multiples of 160 characters) count.
-   * @param chars {Number} 
+   * @param chars {Number} Characters count.
    * @param encoding {module:model/MessagesIcsTextParameters.EncodingEnum} Message charset. Could be: * **ISO-8859-1** for plaintext SMS * **UTF-16BE** for Unicode SMS 
    * @param countries {Array.<String>} 
-   * @param charsetLabel {String} 
+   * @param charsetLabel {String} Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
    */
   var exports = function(cost, parts, chars, encoding, countries, charsetLabel) {
     var _this = this;
@@ -105,6 +105,7 @@
    */
   exports.prototype['parts'] = undefined;
   /**
+   * Characters count.
    * @member {Number} chars
    */
   exports.prototype['chars'] = undefined;
@@ -118,6 +119,7 @@
    */
   exports.prototype['countries'] = undefined;
   /**
+   * Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
    * @member {String} charsetLabel
    */
   exports.prototype['charsetLabel'] = undefined;

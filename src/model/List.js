@@ -36,7 +36,7 @@
   /**
    * The List model module.
    * @module model/List
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -49,10 +49,10 @@
    * @param favorited {Boolean} Is the List favourite? [Custom fields list](http://docs.textmagictesting.com/#operation/getFavourites).
    * @param membersCount {Number} List members count.
    * @param user {module:model/User} 
-   * @param service {Boolean} 
+   * @param service {Boolean} Internal service field.
    * @param shared {Boolean} Is the list **shared** among all sub-accounts?
    * @param avatar {module:model/ListImage} 
-   * @param isDefault {Boolean} Indicates that List is used as a default. All new contacts will be added in this List by default.
+   * @param isDefault {Boolean} Indicates that List is used as a default. All new contacts that added via Web-app will be added in this List by default.
    */
   var exports = function(id, name, description, favorited, membersCount, user, service, shared, avatar, isDefault) {
     var _this = this;
@@ -144,6 +144,7 @@
    */
   exports.prototype['user'] = undefined;
   /**
+   * Internal service field.
    * @member {Boolean} service
    */
   exports.prototype['service'] = undefined;
@@ -157,7 +158,7 @@
    */
   exports.prototype['avatar'] = undefined;
   /**
-   * Indicates that List is used as a default. All new contacts will be added in this List by default.
+   * Indicates that List is used as a default. All new contacts that added via Web-app will be added in this List by default.
    * @member {Boolean} isDefault
    */
   exports.prototype['isDefault'] = undefined;

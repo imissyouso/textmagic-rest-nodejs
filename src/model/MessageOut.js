@@ -36,7 +36,7 @@
   /**
    * The MessageOut model module.
    * @module model/MessageOut
-   * @version 2.0.631
+   * @version 2.0.639
    */
 
   /**
@@ -51,7 +51,7 @@
    * @param messageTime {Date} Sending time.
    * @param avatar {String} 
    * @param charset {String} Message charset. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS 
-   * @param charsetLabel {String} 
+   * @param charsetLabel {String} Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
    * @param firstName {String} Contact first name. Could be substituted from your [Contacts](http://docs.textmagictesting.com/#tag/Contacts) (even if you submitted phone number instead of contact ID). 
    * @param lastName {String} Contact last name.
    * @param country {String} Two-letter ISO country code of the recipient phone number. 
@@ -243,6 +243,7 @@
    */
   exports.prototype['charset'] = undefined;
   /**
+   * Human-readable message charset label. Could be: *   **ISO-8859-1** for plaintext SMS *   **UTF-16BE** for Unicode SMS *   **Voice** for voice services (Text-to-Speech or Voice Broadcast) messages 
    * @member {String} charsetLabel
    */
   exports.prototype['charsetLabel'] = undefined;
@@ -277,6 +278,7 @@
    */
   exports.prototype['partsCount'] = undefined;
   /**
+   * User email which this message came from. For Email2SMS and Distribution Lists messages it will be an original email address, in other cases it is an account email address.
    * @member {String} fromEmail
    */
   exports.prototype['fromEmail'] = undefined;
