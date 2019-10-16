@@ -36,7 +36,7 @@
   /**
    * The UnsubscribedContact model module.
    * @module model/UnsubscribedContact
-   * @version 2.0.639
+   * @version 2.0.640
    */
 
   /**

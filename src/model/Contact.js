@@ -36,7 +36,7 @@
   /**
    * The Contact model module.
    * @module model/Contact
-   * @version 2.0.639
+   * @version 2.0.640
    */
 
   /**
@@ -55,7 +55,7 @@
    * @param customFields {Array.<module:model/ContactCustomField>} See [Custom Fields](http://docs.textmagictesting.com/#tag/Custom-Fields) section.
    * @param user {module:model/User} 
    * @param lists {Array.<Array>} 
-   * @param phoneType {module:model/Contact.PhoneTypeEnum} Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. 
+   * @param phoneType {String} Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. 
    * @param avatar {module:model/ContactImage} 
    * @param notes {Array.<module:model/ContactNote>} 
    */
@@ -199,7 +199,7 @@
   exports.prototype['lists'] = undefined;
   /**
    * Phone number type: * **0** if it is fixed-line; * **1** if it is mobile; * **2** if it is mobile or fixed-line (in case we cannot distingush between fixed-line or mobile); * **3** if it is toll-free; * **4** if it is a premium rate phone; * **5** if it is a shared cost phone; * **6** if it is a VoIP; * **7** if it is a [Personal Number](); * **8** if it is a pager; * **9** if it is an Universal Access Number; * **10** if the phone type is unknown; * **-1** if the phone type is not yet processed or cannot be determined. 
-   * @member {module:model/Contact.PhoneTypeEnum} phoneType
+   * @member {String} phoneType
    */
   exports.prototype['phoneType'] = undefined;
   /**
@@ -211,73 +211,6 @@
    */
   exports.prototype['notes'] = undefined;
 
-
-  /**
-   * Allowed values for the <code>phoneType</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.PhoneTypeEnum = {
-    /**
-     * value: "-1"
-     * @const
-     */
-    "-1": "-1",
-    /**
-     * value: "0"
-     * @const
-     */
-    "0": "0",
-    /**
-     * value: "1"
-     * @const
-     */
-    "1": "1",
-    /**
-     * value: "2"
-     * @const
-     */
-    "2": "2",
-    /**
-     * value: "3"
-     * @const
-     */
-    "3": "3",
-    /**
-     * value: "4"
-     * @const
-     */
-    "4": "4",
-    /**
-     * value: "5"
-     * @const
-     */
-    "5": "5",
-    /**
-     * value: "6"
-     * @const
-     */
-    "6": "6",
-    /**
-     * value: "7"
-     * @const
-     */
-    "7": "7",
-    /**
-     * value: "8"
-     * @const
-     */
-    "8": "8",
-    /**
-     * value: "9"
-     * @const
-     */
-    "9": "9",
-    /**
-     * value: "10"
-     * @const
-     */
-    "10": "10"  };
 
 
   return exports;

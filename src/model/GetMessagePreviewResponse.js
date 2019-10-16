@@ -36,7 +36,7 @@
   /**
    * The GetMessagePreviewResponse model module.
    * @module model/GetMessagePreviewResponse
-   * @version 2.0.639
+   * @version 2.0.640
    */
 
   /**

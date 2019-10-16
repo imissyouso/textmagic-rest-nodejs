@@ -36,7 +36,7 @@
   /**
    * The RequestNewSubaccountTokenInputObject model module.
    * @module model/RequestNewSubaccountTokenInputObject
-   * @version 2.0.639
+   * @version 2.0.640
    */
 
   /**
