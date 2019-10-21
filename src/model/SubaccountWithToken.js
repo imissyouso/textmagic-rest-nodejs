@@ -36,7 +36,7 @@
   /**
    * The SubaccountWithToken model module.
    * @module model/SubaccountWithToken
-   * @version 2.0.640
+   * @version 2.0.650
    */
 
   /**

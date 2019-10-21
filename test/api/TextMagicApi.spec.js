@@ -800,16 +800,6 @@
         done();
       });
     });
-    describe('getDisallowedRules', function() {
-      it('should call getDisallowedRules successfully', function(done) {
-        //uncomment below and update the code to test getDisallowedRules
-        //instance.getDisallowedRules(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getFavourites', function() {
       it('should call getFavourites successfully', function(done) {
         //uncomment below and update the code to test getFavourites

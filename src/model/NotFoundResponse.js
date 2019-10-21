@@ -36,11 +36,12 @@
   /**
    * The NotFoundResponse model module.
    * @module model/NotFoundResponse
-   * @version 2.0.640
+   * @version 2.0.650
    */
 
   /**
    * Constructs a new <code>NotFoundResponse</code>.
+   * Returned when requested entity was not found.
    * @alias module:model/NotFoundResponse
    * @class
    */
@@ -73,10 +74,12 @@
   }
 
   /**
+   * Error code. Meanings of error codes are similar to [HTTP response codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
    * @member {Number} code
    */
   exports.prototype['code'] = undefined;
   /**
+   * Brief error message. You could display this message to your user or save it in a log.
    * @member {String} message
    */
   exports.prototype['message'] = undefined;

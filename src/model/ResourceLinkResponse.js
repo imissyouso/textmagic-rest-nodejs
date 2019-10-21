@@ -36,11 +36,12 @@
   /**
    * The ResourceLinkResponse model module.
    * @module model/ResourceLinkResponse
-   * @version 2.0.640
+   * @version 2.0.650
    */
 
   /**
    * Constructs a new <code>ResourceLinkResponse</code>.
+   * Response contains paginated list of data items.
    * @alias module:model/ResourceLinkResponse
    * @class
    * @param id {Number} Resource ID.

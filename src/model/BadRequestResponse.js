@@ -36,12 +36,12 @@
   /**
    * The BadRequestResponse model module.
    * @module model/BadRequestResponse
-   * @version 2.0.640
+   * @version 2.0.650
    */
 
   /**
    * Constructs a new <code>BadRequestResponse</code>.
-   * Returned when the form has errors
+   * Returned when input data validation process has been failed.
    * @alias module:model/BadRequestResponse
    * @class
    */
@@ -78,7 +78,7 @@
   }
 
   /**
-   * HTTP error code.
+   * Error code. Meanings of error codes are similar to [HTTP response codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
    * @member {Number} code
    */
   exports.prototype['code'] = undefined;

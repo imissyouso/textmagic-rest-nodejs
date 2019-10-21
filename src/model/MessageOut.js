@@ -36,7 +36,7 @@
   /**
    * The MessageOut model module.
    * @module model/MessageOut
-   * @version 2.0.640
+   * @version 2.0.650
    */
 
   /**
@@ -78,14 +78,6 @@
 
 
     _this['partsCount'] = partsCount;
-
-
-
-
-
-
-
-
 
 
   };
@@ -160,30 +152,6 @@
       }
       if (data.hasOwnProperty('fromNumber')) {
         obj['fromNumber'] = ApiClient.convertToType(data['fromNumber'], 'String');
-      }
-      if (data.hasOwnProperty('smscId')) {
-        obj['smscId'] = ApiClient.convertToType(data['smscId'], 'String');
-      }
-      if (data.hasOwnProperty('contact')) {
-        obj['contact'] = ApiClient.convertToType(data['contact'], 'String');
-      }
-      if (data.hasOwnProperty('source')) {
-        obj['source'] = ApiClient.convertToType(data['source'], 'String');
-      }
-      if (data.hasOwnProperty('deliveredCount')) {
-        obj['deliveredCount'] = ApiClient.convertToType(data['deliveredCount'], 'Number');
-      }
-      if (data.hasOwnProperty('numbersCount')) {
-        obj['numbersCount'] = ApiClient.convertToType(data['numbersCount'], 'Number');
-      }
-      if (data.hasOwnProperty('userId')) {
-        obj['userId'] = ApiClient.convertToType(data['userId'], 'Number');
-      }
-      if (data.hasOwnProperty('creditsPrice')) {
-        obj['creditsPrice'] = ApiClient.convertToType(data['creditsPrice'], 'String');
-      }
-      if (data.hasOwnProperty('chars')) {
-        obj['chars'] = ApiClient.convertToType(data['chars'], 'Number');
       }
     }
     return obj;
@@ -287,38 +255,6 @@
    * @member {String} fromNumber
    */
   exports.prototype['fromNumber'] = undefined;
-  /**
-   * @member {String} smscId
-   */
-  exports.prototype['smscId'] = undefined;
-  /**
-   * @member {String} contact
-   */
-  exports.prototype['contact'] = undefined;
-  /**
-   * @member {String} source
-   */
-  exports.prototype['source'] = undefined;
-  /**
-   * @member {Number} deliveredCount
-   */
-  exports.prototype['deliveredCount'] = undefined;
-  /**
-   * @member {Number} numbersCount
-   */
-  exports.prototype['numbersCount'] = undefined;
-  /**
-   * @member {Number} userId
-   */
-  exports.prototype['userId'] = undefined;
-  /**
-   * @member {String} creditsPrice
-   */
-  exports.prototype['creditsPrice'] = undefined;
-  /**
-   * @member {Number} chars
-   */
-  exports.prototype['chars'] = undefined;
 
 
   /**

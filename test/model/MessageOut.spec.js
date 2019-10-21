@@ -176,54 +176,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property smscId (base name: "smscId")', function() {
-      // uncomment below and update the code to test the property smscId
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property contact (base name: "contact")', function() {
-      // uncomment below and update the code to test the property contact
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property source (base name: "source")', function() {
-      // uncomment below and update the code to test the property source
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property deliveredCount (base name: "deliveredCount")', function() {
-      // uncomment below and update the code to test the property deliveredCount
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property numbersCount (base name: "numbersCount")', function() {
-      // uncomment below and update the code to test the property numbersCount
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property userId (base name: "userId")', function() {
-      // uncomment below and update the code to test the property userId
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property creditsPrice (base name: "creditsPrice")', function() {
-      // uncomment below and update the code to test the property creditsPrice
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property chars (base name: "chars")', function() {
-      // uncomment below and update the code to test the property chars
-      //var instance = new TextmagicClient.MessageOut();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

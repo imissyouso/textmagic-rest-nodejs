@@ -36,7 +36,7 @@
   /**
    * The SendMessageInputObject model module.
    * @module model/SendMessageInputObject
-   * @version 2.0.640
+   * @version 2.0.650
    */
 
   /**
@@ -115,8 +115,8 @@
       if (data.hasOwnProperty('from')) {
         obj['from'] = ApiClient.convertToType(data['from'], 'String');
       }
-      if (data.hasOwnProperty('rule')) {
-        obj['rule'] = ApiClient.convertToType(data['rule'], 'String');
+      if (data.hasOwnProperty('rrule')) {
+        obj['rrule'] = ApiClient.convertToType(data['rrule'], 'String');
       }
       if (data.hasOwnProperty('createChat')) {
         obj['createChat'] = ApiClient.convertToType(data['createChat'], 'Boolean');
@@ -197,9 +197,9 @@
   exports.prototype['from'] = undefined;
   /**
    * iCal RRULE parameter to create recurrent scheduled messages. When used, sendingTime is mandatory as start point of sending. See https://www.textmagic.com/free-tools/rrule-generator for format details.
-   * @member {String} rule
+   * @member {String} rrule
    */
-  exports.prototype['rule'] = undefined;
+  exports.prototype['rrule'] = undefined;
   /**
    * Should sending method try to create new Chat(if not exist) with specified recipients.
    * @member {Boolean} createChat

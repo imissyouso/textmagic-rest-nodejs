@@ -128,8 +128,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property rule (base name: "rule")', function() {
-      // uncomment below and update the code to test the property rule
+    it('should have the property rrule (base name: "rrule")', function() {
+      // uncomment below and update the code to test the property rrule
       //var instance = new TextmagicClient.SendMessageInputObject();
       //expect(instance).to.be();
     });
